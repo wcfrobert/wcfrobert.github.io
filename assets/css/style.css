@@ -13,9 +13,14 @@ Main Color Blue:  rgb(67, 91, 226)
 GENERAL STYLE
 ############################################
 */
+* {
+	box-sizing: border-box;
+}
+
 .container {
 	width: 90%;
 	margin: 0 auto;
+	font-family: 'Lora', serif;
 }
 
 hr {
@@ -25,6 +30,13 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+.hr-half {
+	width: 50%;
+	border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
 
 
 /*
@@ -99,27 +111,114 @@ nav a:hover::after {
 
 /*
 ############################################
-PART 2: BODY STYLES
+PART 2: JUMBOTRON STYLES
 ############################################
 */
+.jumbotron {
+	padding-top: 90px;
+	animation-name: fadein;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.5s;
+	opacity: 1;
+}
+
 .avatar {
 	vertical-align: middle;
 	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+	margin-right: auto;
+	margin-left: auto;
 	width: 160px;
 	height: auto;
-	padding-top: 90px;
-  }
+}
 
-section {
-	height: 1000px;
+.avatar:hover {
+	cursor: pointer;
+}
+
+@keyframes fadein {
+	0% {
+		padding-top: 70px;
+		opacity: 0;
+	}
+	100% {
+		padding-top: 90px;
+		opacity: 1;
+	}
+}
+
+.jumbotron h1 {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-weight: 400;
+	font-size: 32px;
+	color: rgb(88, 90, 105);
+	margin-bottom: 5px;
+}
+
+.jumbotron p {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(153, 156, 179);
+}
+
+.jumbotron:after {
+	/*clear fix*/
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.jumbotron .quick-link ul{
+	text-align: center;
+}
+
+.jumbotron .quick-link li{
+	display: inline-block;
+	list-style: none;
+	background-image: url("http://placehold.it/16x16");
+	background-position: left center;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+
+.author-more {
+	margin-top: 40px;
+	text-align: center;
+}
+.button1 {
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 40px;
+	color: white;
+	background-color:rgb(67, 91, 226);
+	text-decoration: none;
 }
 
 
 /*
 ############################################
-PART 3: FOOTER STYLES
+PART 3: BODY STYLES
+############################################
+*/
+
+
+
+/*
+############################################
+PART 4: FOOTER STYLES
 ############################################
 */
 footer {
