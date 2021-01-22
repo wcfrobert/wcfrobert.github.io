@@ -38,6 +38,9 @@ hr {
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
+.placeholder-section {
+	height: 500px;
+}
 
 /*
 ############################################
@@ -81,6 +84,7 @@ nav li {
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	font-size: 16px;
+	color:rgb(88, 90, 105);
 }
 
 nav a {
@@ -115,25 +119,27 @@ PART 2: JUMBOTRON STYLES
 ############################################
 */
 .jumbotron {
-	padding-top: 90px;
+	padding-top: 80px;
 	animation-name: fadein;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
-	animation-duration: 0.5s;
+	animation-duration: 0.75s;
 	opacity: 1;
 }
 
 .avatar {
-	vertical-align: middle;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	width: 160px;
 	height: auto;
+	transition: all 0.15s;
+	border-radius: 50%;
 }
 
 .avatar:hover {
-	cursor: pointer;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 10px rgba(67, 91, 226, 1);
 }
 
 @keyframes fadein {
@@ -142,7 +148,7 @@ PART 2: JUMBOTRON STYLES
 		opacity: 0;
 	}
 	100% {
-		padding-top: 90px;
+		padding-top: 80px;
 		opacity: 1;
 	}
 }
@@ -175,37 +181,63 @@ PART 2: JUMBOTRON STYLES
   	clear: both;
 }
 
-.jumbotron .quick-link ul{
-	text-align: center;
-}
-
-.jumbotron .quick-link li{
-	display: inline-block;
-	list-style: none;
-	background-image: url("http://placehold.it/16x16");
-	background-position: left center;
-	background-repeat: no-repeat;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-
-
-
 .author-more {
-	margin-top: 40px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	text-align: center;
 }
-.button1 {
+.button {
 	display: inline-block;
-	padding: 15px 30px;
+	padding: 10px 25px;
 	font-size: 14px;
 	font-weight: bold;
 	border-radius: 40px;
 	color: white;
 	background-color:rgb(67, 91, 226);
+	border: solid 2px rgb(67, 91, 226);
 	text-decoration: none;
+	transition: all 0.2s
 }
+
+.button:hover {
+	background-color: white;
+	color: rgb(67, 91, 226);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-4px);
+}
+
+
+
+.jumbotron .quick-link ul{
+	text-align: center;
+	padding-inline-start: 0px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.jumbotron .quick-link li{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 12px;
+}
+
+.jumbotron .quick-link .li:hover {
+	fill: rgb(67, 91, 226);
+}
+
+
+
+
+.quick-link a {
+	text-decoration: none;
+	color: rgb(153, 156, 179);
+}
+
+.quick-link a:hover {
+	color:rgb(67, 91, 226);
+}
+
 
 
 /*
