@@ -1,9 +1,10 @@
 
 /*
-Title Font: Lora
-Paragraph Font: Open Sans
-Signature Font: Kalam
+General Font: font-family: 'Lora', serif;
+Paragraph Font: font-family: 'Open Sans', sans-serif;
+Signature Font: font-family: 'Kalam', cursive;
 Main Color Blue:  rgb(67, 91, 226)
+Second Color Grey: :rgb(88, 90, 105)
 */
 
 
@@ -15,6 +16,10 @@ GENERAL STYLE
 */
 * {
 	box-sizing: border-box;
+}
+
+body {
+	margin: 2px;
 }
 
 .container {
@@ -31,16 +36,13 @@ hr {
 }
 
 .hr-half {
-	width: 50%;
+	width: 75%;
 	border: 0;
     height: 1px;
     background: #333;
     background-image: linear-gradient(to right, #ccc, #333, #ccc);
 }
 
-.placeholder-section {
-	height: 500px;
-}
 
 /*
 ############################################
@@ -222,29 +224,136 @@ PART 2: JUMBOTRON STYLES
 	font-size: 12px;
 }
 
-.jumbotron .quick-link .li:hover {
-	fill: rgb(67, 91, 226);
-}
-
-
-
-
 .quick-link a {
 	text-decoration: none;
 	color: rgb(153, 156, 179);
 }
 
-.quick-link a:hover {
+.quick-link li:hover svg{
 	color:rgb(67, 91, 226);
+	text-decoration: underline;
+	fill:rgb(67, 91, 226);
 }
 
+.quick-link li:hover a{
+	color:rgb(67, 91, 226);
+	text-decoration: underline;
+}
 
 
 /*
 ############################################
-PART 3: BODY STYLES
+PART 3: BODY STYLES - Education and Work
 ############################################
 */
+.resume-content {
+	width: 70%;
+	margin: auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.resume-content h1 {
+	display: inline-block;
+	margin-top: 16px;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 30px;
+	font-weight: bold;
+	color:rgb(67, 91, 226);
+	margin-bottom: 1px;
+}
+.resume-content h1:hover {
+	cursor: pointer;
+}
+.resume-content h1::after {
+	content: '';
+	display: block;
+	height: 4px;
+	width: 0%;
+	background-color:rgb(67, 91, 226);
+	transition: width 0.2s;
+}
+.resume-content h1:hover::after {
+	width: 100%;
+}
+
+
+
+.resume-content .uni-company {
+	margin-left: 25px;
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+input[type='checkbox'] {
+	display: none;
+}
+.resume-content .role-label {
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 3px;
+	margin-top: 16px;
+	margin-bottom: 1px;
+}
+.resume-content .details {
+	font-size: 14px;
+	margin-left: 25px;
+	margin-top: 5px;
+	color:rgb(144, 145, 158);
+	max-height: 0px;
+	overflow: hidden;
+	transition: max-height .3s ease-in-out;
+}
+.role:checked + .role-label +.uni-company + .details {
+	max-height: 100vh;
+}
+
+
+.plus-button {
+	position: relative;
+	display: inline-block;
+    width: 14px;
+	height: 14px;
+	top: 2px;
+}
+.plus-button:before{
+	content: "";
+	position: absolute;
+	background-color: grey;
+	transition: transform 0.25s ease-out;
+	top: 0;
+	left: 50%;
+	width: 4px;
+	height: 100%;
+	margin-left: -2px;
+}
+.plus-button:after{
+	content: "";
+	position: absolute;
+	background-color: grey;
+	transition: transform 0.25s ease-out;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	margin-top: -2px;
+}
+.role:checked + .role-label .plus-button:before {
+	cursor: pointer;
+	transform: rotate(90deg);
+}
+.role:checked + .role-label .plus-button:after {
+	cursor: pointer;
+	transform: rotate(180deg);
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -253,25 +362,64 @@ PART 3: BODY STYLES
 PART 4: FOOTER STYLES
 ############################################
 */
-footer {
+.footer1 {
 	width: 100%;
 	background-color: rgb(53, 49, 49);
 	font-family: lora, serif;
 	color: white;
-	height: 100px;
+	height: 70px;
+	font-size: 12px;
+	display: grid;
+	grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.footer1 a {
+	color: white;
+}
+
+.footer1 .grid-item1 img {
+	margin-top: 22px;
+	margin-left: 15px;
+	position: relative;
+}
+.footer1 .grid-item1 .designed {
+	display: inline-block;
+	position: absolute;
+	margin-top: 28px;
+	margin-left: 8px;
+}
+
+
+
+.footer1 .grid-item2 {
+	text-align: center;
+	padding-top: 15px;
+}
+.footer1 .grid-item2 svg {
+	display: inline-block;
+	width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer1 .grid-item2 svg:hover path {
+	fill:rgb(67, 91, 226);
+}
+
+.footer1 .grid-item2 svg:hover circle {
+	fill:white;
+}
+
+
+.footer1 .grid-item3 {
+	text-align: right;
+	display: inline-block;
 	position: relative;
 }
 
-footer .footer-notes{
+.footer1 .grid-item3 .positioning{
 	position: absolute;
-	bottom: 2px;
-	right: 2px;
-	font-size: 14px;
+	bottom: 20px;
+	right: 1px;
 }
 
-footer .copyright {
-	position: absolute;
-	bottom: 2px;
-	left: 2px;
-	font-size: 14px;
-}
