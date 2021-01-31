@@ -60,6 +60,8 @@ header #name {
 	font-size: 19px;
 	float: left;
 	cursor: pointer;
+	text-decoration: none;
+	color: black;
 }
 
 header #name:hover {
