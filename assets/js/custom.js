@@ -13,7 +13,7 @@ for(let i=0;i<tabPanes.length;i++){
         tabPanes[i].classList.add("active-tab");
 
         // change tab indicator position based on index of pane clicked
-        _class("tab-indicator")[0].style.top = `calc(45px + ${i*50}px)`;
+        _class("tab-indicator")[0].style.top = `calc(25px + ${i*50}px)`;
 
         // swap active for tab content as well
         _class("tab-content")[0].getElementsByClassName("active-tab")[0].classList.remove("active-tab");

@@ -14,6 +14,10 @@ Second Color Grey: :rgb(88, 90, 105)
 GENERAL STYLE
 ############################################
 */
+html {
+	scroll-behavior: smooth;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -282,7 +286,7 @@ PART 3: BODY STYLES - Education and Work
 
 .resume-content .uni-company {
 	max-height: 25px;
-	margin-left: 25px;
+	margin-left: 22px;
 	margin-top: 3px;
 	margin-bottom: 5px;
 }
@@ -375,27 +379,27 @@ PART 3: BODY STYLES - Education and Work
 	text-align: center;
 	font-size: 28px;
 	font-weight: bold;
-	font-family: lora, serif;
+	font-family: "lora", serif;
 }
 
 .resume-content .tabs {
 	position:absolute;
 	margin:auto;
-  	width:60%;
+  	width:54%;
   	height:700px;
-  	padding:20px 20px;
-  	background:#f5f5f5;
-  	box-shadow:5px 5px 10px 5px #ccc;
-  	overflow:hidden;
+  	padding:20px 0px;
+	overflow: hidden;
+	  
 }
 
 .resume-content .tabs .tab-header {
 	float:left;
-	width:350px;
+	width:275px;
 	height:100%;
 	border-right:1px solid #ccc;
-	padding: 25px 0px;
-	font-weight: bold;
+	padding: 5px 0px;
+	font-weight: bold1;
+	font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -403,29 +407,30 @@ PART 3: BODY STYLES - Education and Work
 	height:50px;
 	line-height:50px;
 	font-size:16px;
-	font-weight:600;
-	color:#888;
+	color:grey;
 	cursor:pointer;
-	padding-left:10px;
 }
-
 .resume-content .tabs .tab-header > div:hover,
 .resume-content .tabs .tab-header > div.active-tab {
-  color:rgb(67, 91, 226)
-
+  color:rgb(67, 91, 226);
 }
 
+
+
 .resume-content .tabs .tab-content {
-	margin: auto;
-	max-width: 64%;
-	position:relative;
-	height:100%;
-	overflow:hidden;
+	max-width:69%;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+	height: 100%;
+	overflow: hidden;
   }
 .resume-content .tabs .tab-content img {
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
+	height: auto;
+	max-width: 70%;
 }
 
 
@@ -433,7 +438,7 @@ PART 3: BODY STYLES - Education and Work
 
 .resume-content .tabs .tab-content > div {
 	position:absolute;
-	bottom:200%;
+	top:200%;
   	transition:all 500ms ease-in-out;
 }
 .resume-content .tabs .tab-content > div.active-tab {
@@ -444,8 +449,8 @@ PART 3: BODY STYLES - Education and Work
 	width:5px;
 	height:50px;
 	background:rgb(67, 91, 226);
-	left:369px;
-	top:45px;
+	left:270px;
+	top:25px;
 	transition:all 500ms ease-in-out;
   }
 
