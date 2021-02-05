@@ -80,7 +80,7 @@
 
 
 
-    <!-- BODY -->
+    <!-- BODY: Backgrounds -->
     <section class='resume-content'> 
       <h1>Education</h1>
       <br>
@@ -134,7 +134,7 @@
 
 
 
-
+    <!-- BODY: Experience -->
     <section class='resume-content'> 
       <h1>Experience</h1>
       <br>
@@ -227,7 +227,7 @@
 
 
 
-
+    <!-- BODY: Projects -->
     <section class='resume-content' style="height:750px;" id="my-projects"> 
       <h1>Project</h1>
       <br>
@@ -240,7 +240,6 @@
           <div>Structural Framing Generation</div>
           <div>Generative Design</div>
           <div>Parametrically Defined Structure</div>
-          <div>Geometry Extraction</div>
           <div>Portfolio Website</div>
           <div>Massive Popsicle Bridge</div>
           <div>Massive Gingerbread House</div>
@@ -250,67 +249,77 @@
 
         <div class="tab-content">
           <div class="active-tab">
-            <div class="project-title">Title</div>
-            <img src="assets/img/profile-pic.jpg" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
+            <div class="project-title"></div>
+            <img src="assets/img/msapy.gif" alt="animated-gif">
+            <p>
+              MSApy (Matrix Structural Analysis in Python) is an open-sourced structural analysis package written in Python. My objective was to create a barebone, easy-to use implementation of the direct stiffness method for analysis of any three-dimensional truss or frame structures. Perform analysis right in your browser in your notebook. <a href="https://github.com/wcfrobert/MSApy">source code here.</a>
+              <br>
+              <br>
+              The ability to perform first-order elastic analysis directly on Python, without relying on third-party APIs, opens the door for conceptual design that can be implemented programmatically and takes advantage of the abundance of powerful python libraries. Furthermore, I implemented a powerful visualization engine with Plotly.
+              <br>
+              <br>
+              The library is written in about 1200 lines of code. Highly scalable and flexible with object-oriented programming design. Some features: Timenshenko frame elements which accounts for shear deformation. support settlement, temperature load, self-weight modifiers, member-end hinges, etc.
+            </p>
+          </div>
+
+          <div>
+            <div class="project-title"></div>
+            <img src="assets/img/framing.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              Many structures have repeating elements that can be automatically generated based on a pre-specified set of rules. I wrote a Dynamo script that allows parametric generation of structural framing in Revit. Rather than creating a simple and boring portal frame, I thought it’d be a lot more exciting to loop it around on itself and create a circular structure; similar to the Apple Headquarter building in Cupertino.
+            </p>
           </div>
           
           <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/linkedin.png" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
-          </div>
-            
-          <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/logo-black.png" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
+            <div class="project-title"></div>
+            <img src="assets/img/generative.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              Autodesk’s “Generative Design”, formerly known as Project Refinery, is an easy-to-use optimization tool that uses genetic algorithms to quickly generate alternatives based on preset goals, constraints, and inputs to arrive at the best performing option. 
+              <br>
+              <br>
+              I made a simple model here that explores the question: “Given a fixed boundary or building footprint, with the same loading condition. Is it better to have smaller members spaced closely together, or large sections spaced farther apart”. Other evaluation criteria include roof’s performance (measured by deflection), efficiency (measured by weight), and cost (measured by assumed material and labor cost per beam).
+            </p>
           </div>
 
           <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/logo-blue.png" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
+            <div class="project-title"></div>
+            <img src="assets/img/parametric.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              This is more of an artist endeavor than an engineering one. What you see above is a fully parametric bus shelter with the geometry mathematically defined and easily customizable. The final product is a gravity defying structure with bold and elegant curves. The spiral columns are defined by three concentric circles of varying diameter and the roof is defined a surface lofted onto three sinusoids.
+            </p>
+          </div>
+
+
+          <div>
+            <div class="project-title"></div>
+            <img src="assets/img/person-website.gif" alt="animated-gif">
+            <p>
+              Design, calligraphy, and front-end web development had always piqued my interest. I took a web development courses on my spare time and built a portfolio website from scratch. The website is fully responsive and work on all mobile devices. It comes with a minimalist design and subtle yet noticeable animations. Written in HTML, CSS, and JS. The website is hosted on Github. You can find the
+              <a href="https://github.com/wcfrobert/wcfrobert.github.io">source hode here.</a>
+            </p>
           </div>
 
           <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/profile-pic.jpg" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
+            <div class="project-title"></div>
+            <img src="assets/img/bridge.gif" alt="animated-gif">
+            <p>
+              What you are looking at above is a massive 2000+ sticks popsicle bridge shattering under 5500 lbs of force! That is not a typo. The bridge took about a month to make and is entirely made of popsicles and Elmer’s glue. Nothing else. The tied-arch configuration allows load to travel efficiently to the supports and the bottom chord resists the outward thrust. This bridge won Bronze medal at the National 2017 Troitsky Popsicle Bridge Building Contest in Canada.
+            </p>
           </div>
 
           <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/linkedin.png" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
+            <div class="project-title"></div>
+            <img src="assets/img/gingerbread.jpg" alt="animated-gif" style="max-width: 40%;">
+            <p>
+              I can’t think of a better way to celebrate Christmas under quarantine than to build a massive gingerbread tower measuring over 35 ft tall! Behold: “181 Fremont with a Santa Hat”. Made from 3 bags of flour, 3 bags of confectioners sugar, 4 bottles of molasses, and 6 sticks of butter. 
+            </p>
           </div>
 
-          <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/profile-pic.jpg" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
-          </div>
 
-          <div>
-            <div class="project-title">Title</div>
-            <img src="assets/img/profile-pic.jpg" alt="animated-gif">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus minus sequi aliquam expedita, at eius perferendis, provident reiciendis 
-              libero vitae iste mollitia quibusdam voluptas possimus voluptatibus quos labore fugit a!</p>
-          </div>
         </div>
-
       </div>
 
-
     </section>
-    <hr class="hr-half">
 
 
 
@@ -320,15 +329,19 @@
 
 
 
-    <section class='resume-content'> 
-      <h1>Activities</h1>
-      <br>
-    </section>
+
+
+
+
+
+
+
 
 
 
 
   </div>
+
 
 
   <!-- FOOTER -->
@@ -371,10 +384,9 @@
       <div class="positioning">
         Powered by Github Pages. <a href="https://github.com/wcfrobert/wcfrobert.github.io">Source code</a>
         <br>
-        Copyright &copy; (2021) Robert Wang. All rights reserved.
+        Copyright &copy; (2021) Robert Wang
       </div>
     </div>
-
   </footer>
 
 

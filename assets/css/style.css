@@ -367,7 +367,7 @@ input[type='checkbox'] {
 
 /*
 ############################################
-PART 3: BODY STYLES - Education and Work
+PART 4: BODY STYLES - Project
 ############################################
 */
 .resume-content .spacer {
@@ -375,10 +375,8 @@ PART 3: BODY STYLES - Education and Work
 }
 
 .resume-content .tab-content .project-title {
-	color:rgb(67, 91, 226);
 	text-align: center;
-	font-size: 28px;
-	font-weight: bold;
+	font-size: 22px;
 	font-family: "lora", serif;
 }
 
@@ -432,6 +430,10 @@ PART 3: BODY STYLES - Education and Work
 	height: auto;
 	max-width: 70%;
 }
+.resume-content .tabs .tab-content p {
+	font-size: 14px;
+	color :rgba(61, 55, 55, 0.8);
+}
 
 
 
@@ -455,9 +457,113 @@ PART 3: BODY STYLES - Education and Work
   }
 
 
+
+
+
 /*
 ############################################
-PART 4: FOOTER STYLES
+PART 5: BODY STYLES - Activities
+############################################
+*/
+.resume-content .slideshow img	{
+	width: 100%;
+}
+
+.resume-content .slideshow {
+	padding-top: 20px;
+	max-width: 80%;
+	position: relative;
+	margin: auto;
+}
+
+.resume-content .prev, .resume-content .next {
+	cursor: pointer;
+	position: absolute;
+	color: white;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.3s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+.resume-content .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.resume-content .prev:hover, .resume-content .next:hover {
+	background-color: rgba(61, 55, 55, 0.8);
+}
+
+.resume-content .caption {
+	color: white;
+	background-color: rgb(0, 0, 0,0.8);
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
+	bottom: 15px;
+	width: 100%;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
+}
+  
+  /* Fading animation */
+  .fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4} 
+	to {opacity: 1}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+############################################
+PART 6: FOOTER STYLES
 ############################################
 */
 .footer1 {
@@ -470,20 +576,19 @@ PART 4: FOOTER STYLES
 	display: grid;
 	grid-template-columns: 33.33% 33.33% 33.33%;
 }
-
 .footer1 a {
 	color: white;
 }
 
+
 .footer1 .grid-item1 img {
 	margin-top: 22px;
 	margin-left: 15px;
-	position: relative;
 }
 .footer1 .grid-item1 .designed {
 	display: inline-block;
 	position: absolute;
-	margin-top: 28px;
+	margin-top: 27px;
 	margin-left: 8px;
 }
 
@@ -499,7 +604,6 @@ PART 4: FOOTER STYLES
 	margin-left: 10px;
 	margin-right: 10px;
 }
-
 .footer1 .grid-item2 svg:hover path {
 	fill:rgb(67, 91, 226);
 }
@@ -519,5 +623,6 @@ PART 4: FOOTER STYLES
 	position: absolute;
 	bottom: 20px;
 	right: 1px;
+	padding-right: 5px;
 }
 
