@@ -1,5 +1,5 @@
 ---
-layout: test
+layout: blog-post
 title:  "Welcome to Jekyll!"
 date:   2020-11-18 22:10:44 -0800
 categories: jekyll update

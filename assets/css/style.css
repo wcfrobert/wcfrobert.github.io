@@ -555,8 +555,6 @@ PART 6: FOOTER STYLES
 	margin-left: 8px;
 }
 
-
-
 .footer1 .grid-item2 {
 	text-align: center;
 	padding-top: 15px;
@@ -589,3 +587,25 @@ PART 6: FOOTER STYLES
 	padding-right: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*
+############################################
+PART 7: BLOG POSTS
+############################################
+*/
+.blog-post h1,h2,h3,h4 {
+	font-family: 'Lora', serif;
+}
+
+.blog-post p{
+	font-family: 'Open Sans', sans-serif;
+}

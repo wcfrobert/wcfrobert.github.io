@@ -3,14 +3,18 @@
 <head>
   <meta charset ="utf-8">
   <title>Robert Wang</title>
-  <link rel="shortcut icon" type="image/png" href="assets/img/logo-blue.png"/>
+  <link rel="shortcut icon" type="image/png" href="/assets/img/logo-blue.png"/>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- MathJax Latex Plugin-->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 
@@ -19,59 +23,32 @@
   <div class="container">
     <!-- HEADER -->
     <header>
-      <a href="index.html" id="name">Robert Wang</a>
+      <a href="/index.html" id="name">Robert Wang</a>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="cv.pdf" target="_blank">CV</a></li>
-          <li><a href="engineering.html">Engineering</a></li>
-          <li><a href="musing.html">Musing</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/cv.pdf" target="_blank">CV</a></li>
+          <li><a href="/engineering.html">Engineering</a></li>
+          <li><a href="/musing.html">Musing</a></li>
+          <li><a href="/about.html">About</a></li>
         </ul>
       </nav>
     </header>
     <hr>
-  </div>
 
 
 
-  <!-- Hero Image -->
-  <div class="aboutpage">
-    <div class="column">
-      <img src="assets/img/aboutpic.jpeg" alt="profilepic" class="aboutpic">
+    <div class="blog-post">
+      {{content}}
     </div>
-    <div class="column">
-      <h1 class="aboutme-title">About Me</h1>
-      <p class="aboutme">
-        Hello there! My name is Robert. Welcome to my website.
-        I grew up in Toronto, Canada. Currently living in the Bay area as a structural engineer in training; Hoping to eventually get my SE license.
-        <br>
-        <br>
-        When I’m not crunching numbers and tinkering with new toys, you’ll find me playing tennis and doing some rock-climbing!
-      </p>
-      <div class="author-more" style="left:-190px; position: relative;">
-        <a href="mailto:temprobertdev@gmail.com?subject=Hello :D" class="button">Say Hello</a>
-      </div>
-    </div>
-    
-    
-    
+  
+
+
   </div>
-
-
-
-
-
-
-
-
-
-
-
   <!-- FOOTER -->
   <footer class="footer1">
     <div class="grid-item1">
-      <img src="assets/img/logo-blue.png" width="25" height="25"> 
+      <img src="/assets/img/logo-blue.png" width="25" height="25"> 
       <div class="designed">Designed and coded by Robert Wang</div>
     </div>
 
@@ -108,14 +85,11 @@
       <div class="positioning">
         Powered by Github Pages. <a href="https://github.com/wcfrobert/wcfrobert.github.io">Source code</a>
         <br>
-        Copyright &copy; (2021) Robert Wang
+        Copyright &copy; (2021) Robert Wang. All rights reserved.
       </div>
     </div>
+
   </footer>
-
-
-
-<script src="assets/js/custom.js"></script>
 
 
 
