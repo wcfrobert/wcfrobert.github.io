@@ -499,7 +499,7 @@ PART 5: BODY STYLES - About Page
 
 .aboutpage .aboutme-title {
 	font-size: 28px;
-	left: -78px; 
+	text-align: center;
 	position: relative;
 	color:rgb(67, 91, 226);
 
