@@ -1,57 +1,37 @@
 ---
 layout: blog-post
-title: "This is a test post"
+title: "First Post Style Guide"
 date: 2021-02-15
 image: /assets/img/blog/hellofresh1.jpg
 comments: true
 ---
 
-A paragraph looks like this — dolor amet cray stumptown fingerstache neutra food truck seitan poke cardigan waistcoat VHS snackwave celiac hella. Godard seitan shoreditch flexitarian next level trust fund man braid vegan listicle keytar bitters. Disrupt cray fashion axe unicorn lomo shaman poke glossier keffiyeh snackwave austin tattooed seitan hexagon lo-fi. Lumbersexual irony vaporware, butcher shaman church-key iceland.
+![](https://t4.ftcdn.net/jpg/02/91/24/27/360_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg)
 
-### Headings by default:
+Above is an image. This is a paragraph. The font used is 20px lora. A serif font. The line-height is 1.6 and there is about 70 characters per line to improve readability. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
-# H1 For example
-## H2 For example
-### H3 For example
-#### H4 For example
-##### H5 For example
-###### H6 For example
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
-{% highlight markdown %}
-## Heading first level
-### Heading second level
-#### Heading third level
-{% endhighlight %}
+## H2 - Main Section Titles
+### H3 - Sub-section Titles
+#### H4 - Occasionally Another Level
+***
+
+## Lists
+### Ordered List:
+
+1. first
+2. second
+3. third
 
 ***
 
-### Lists
+### Unordered list:
 
-#### Ordered list example:
+* item 1
+* item 3
+* item 3
 
-1. Poutine drinking vinegar bitters.
-2. Coloring book distillery fanny pack.
-3. Venmo biodiesel gentrify enamel pin meditation.
-4. Jean shorts shaman listicle pickled portland.
-5. Salvia mumblecore brunch iPhone migas.
-
-***
-
-#### Unordered list example:
-
-* Bitters semiotics vice thundercats synth.
-* Literally cred narwhal bitters wayfarers.
-* Kale chips chartreuse paleo tbh street art marfa.
-* Mlkshk polaroid sriracha brooklyn.
-* Pug you probably haven't heard of them air plant man bun.
-
-{% highlight markdown %}
-1. Order list item 1
-2. Order list item 1
-
-* Unordered list item 1
-* Unordered list item 2
-{% endhighlight %}
 
 ***
 
@@ -81,17 +61,24 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 
 ### Syntax Highlighter
 
-{% highlight js %}
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
+{% highlight python %}
+  # recursive implementation of golden section search
+  import math
+  invphi = (math.sqrt(5) - 1) / 2  # 1 / phi
+  invphi2 = (3 - math.sqrt(5)) / 2  # 1 / phi^2
+
+  def gssrec(f, a, b, tol=1e-5, h=None, c=None, d=None, fc=None, fd=None):
+      (a, b) = (min(a, b), max(a, b))
+      if h is None: h = b - a
+      if h <= tol: return (a, b)
+      if c is None: c = a + invphi2 * h
+      if d is None: d = a + invphi * h
+      if fc is None: fc = f(c)
+      if fd is None: fd = f(d)
+      if fc < fd:
+          return gssrec(f, a, d, tol, h * invphi, c=None, fc=None, d=c, fd=fc)
+      else:
+          return gssrec(f, c, b, tol, h * invphi, c=d, fc=fd, d=None, fd=None)
 {% endhighlight %}
 
 ***
@@ -104,4 +91,5 @@ A paragraph looks like this — dolor amet cray stumptown fingerstache neutra fo
 
 ### Videos
 
-<iframe src="https://www.youtube.com/watch?v=Hp_Eg8NMfT0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/lM02vNMRRB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

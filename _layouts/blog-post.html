@@ -37,36 +37,38 @@
     <hr>
 
 
-
     <div class="blog-post">
       <h1>{{page.title}}</h1>
-      <div>
-        published on {{page.date}}
-      </div>
-      <span class="reading-time" title="Estimated read time">
+      
+      <div class="reading-time" title="Estimated read time">
+        <div>
+          Published: {{page.date | date_to_string}}
+        </div>
         {% assign words = content | number_of_words %}
           {% if words < 360 %}
             1 min
           {% else %}
             {{ words | divided_by:180 }} mins
           {% endif %}
-      </span>
-
+           read
+      </div>
 
 
       {{content}}
 
 
-      <span class="disqus-comment-count" data-disqus-url="http://example.com/article1.html">First article</span>
 
-      <hr style="margin-top: 40px">
+      <hr style="margin-top: 90px; margin-bottom: 30px;">
       <a class="blog-comments">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
           <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
         </svg>
-        <span class="disqus-comment-count" data-disqus-url="http://example.com/article1.html">COMMENTS</span>
+        <span class="disqus-comment-count" data-disqus-url="{{site.url}}{{page.url}}">COMMENTS</span>
       </a>
 
+
+
+      
       {% if page.comments %}
         <div id="disqus_thread"></div>
         <script>
@@ -91,9 +93,6 @@
 
     </div>
   
-
-
-
 
 
 

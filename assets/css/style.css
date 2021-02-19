@@ -491,17 +491,14 @@ PART 5: BODY STYLES - About Page
 .aboutpage .aboutme {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
-	width: 590px;
 	text-align: left;
-	margin: auto;
 	color:rgb(88, 90, 105);
 }
 
 .aboutpage .aboutme-title {
 	font-size: 28px;
-	text-align: center;
-	position: relative;
 	color:rgb(67, 91, 226);
+	text-align: left;
 
 }
 
@@ -598,22 +595,38 @@ PART 7: BLOG POSTS
 ############################################
 */
 .blog-post {
-	width: 75%;
+	width: 55%;
 	margin: auto;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'lora', serif;
+	margin-top: 60px;
+	font-size: 21px;
 }
-.blog-post h1,h2,h3,h4 {
-	font-family: 'Lora', serif;
-	font-weight: 400;
+.blog-post img {
+	width:100%;
 }
 .blog-post h1 {
-	text-align: center;
+	font-size: 44px;
+	margin-bottom: 5px;
+}
+.blog-post p{
+	font-size: 21px;
+	color:rgba(61, 55, 55);
+	line-height: 1.6;
+}
+.blog-post h2 {
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+.blog-post h3, h4 {
 	font-weight: 400;
-	font-size: 36px;
+	text-decoration: underline;
 }
 
-.blog-post p{
-	
+
+.blog-post .reading-time {
+	color: rgb(144, 145, 158);
+	font-size: 16px;
+	margin-bottom: 55px;
 }
 
 .blog-comments:hover {
@@ -621,7 +634,7 @@ PART 7: BLOG POSTS
 	color:rgb(67, 91, 226);
 }
 /*murphy code snippet*/
-.highlight {border-style: inset;}
+.highlight {border-style: inset; font-size: 16px; margin: 1px;}
 .highlight .hll { background-color: #ffffcc;}
 .highlight .c { color: #606060; font-style: italic } /* Comment */
 .highlight .err { color: #F00000; background-color: #F0A0A0 } /* Error */
