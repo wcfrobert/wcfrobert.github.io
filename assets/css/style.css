@@ -616,6 +616,10 @@ PART 7: BLOG POSTS
 	
 }
 
+.blog-comments:hover {
+	cursor: pointer;
+	color:rgb(67, 91, 226);
+}
 /*murphy code snippet*/
 .highlight {border-style: inset;}
 .highlight .hll { background-color: #ffffcc;}
