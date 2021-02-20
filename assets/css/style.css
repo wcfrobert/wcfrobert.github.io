@@ -607,7 +607,8 @@ PART 7: BLOG POSTS
 	width:100%;
 }
 .blog-post h1 {
-	font-size: 44px;
+	font-weight: 400;
+	font-size: 46px;
 	margin-bottom: 5px;
 	color: black;
 }
@@ -642,12 +643,44 @@ th, td {
 	text-align: center;
 	padding: 15px;
 }
+.blog-post img + em {
+	color: rgb(88, 90, 105);
+	font-size: 17px;
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	display: block;
+	font-family:'lora', sans-serif;
+}
 
 .blog-post .reading-time {
 	color: rgb(144, 145, 158);
 	font-size: 18px;
-	margin-bottom: 55px;
+	margin-bottom: 65px;
 }
+
+.blog-post .post-tag {
+	margin-left: 10px;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 3px;
+	height: 2em;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	color: white;
+	background-color: rgb(67, 91, 226);
+	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+
+
+
+
 .blog-comments:hover {
 	cursor: pointer;
 	color:rgb(67, 91, 226);

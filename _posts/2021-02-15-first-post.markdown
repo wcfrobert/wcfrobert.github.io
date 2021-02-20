@@ -3,9 +3,11 @@ layout: blog-post
 title: "First Post - Style Guide"
 date: 2021-02-15
 image: /assets/img/blog/hellofresh1.jpg
+tags: debugging jekyll tagging
 ---
 
 ![](https://t4.ftcdn.net/jpg/02/91/24/27/360_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg)
+*Figure 1: Image caption by inserting emphasis text after image in markdown*
 
 Above is an image. This is a paragraph. The font used is 20px lora. A serif font. The line-height is 1.6 and there is about 70 characters per line to improve readability. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 

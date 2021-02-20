@@ -37,8 +37,14 @@
     <hr>
 
     <!-- BODY -->
-    <div style="height: 500px;">
-      <div style="text-align: center; font-size:36px;">UNDER DEVELOPMENT</div>
+    <div class="jumbotron">
+      My thoughts (I refuse to call it a blog)
+      There is no thought without expression, no content without form. An idea, however profound, does not really exist until you can write it down.
+    </div>
+
+    <a href="tags.html">Browse by tags</a>
+
+    <div>
       <ul>
         {% for post in site.posts %}
           <li>
@@ -46,8 +52,6 @@
           </li>
         {% endfor %}
       </ul>
-
-
     </div>
 
 
