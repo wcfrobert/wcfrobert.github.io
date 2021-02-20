@@ -1,9 +1,8 @@
 ---
 layout: blog-post
-title: "First Post Style Guide"
+title: "First Post - Style Guide"
 date: 2021-02-15
 image: /assets/img/blog/hellofresh1.jpg
-comments: true
 ---
 
 ![](https://t4.ftcdn.net/jpg/02/91/24/27/360_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg)
@@ -12,10 +11,11 @@ Above is an image. This is a paragraph. The font used is 20px lora. A serif font
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
+***
 ## H2 - Main Section Titles
 ### H3 - Sub-section Titles
 #### H4 - Occasionally Another Level
-***
+
 
 ## Lists
 ### Ordered List:
@@ -24,8 +24,6 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 2. second
 3. third
 
-***
-
 ### Unordered list:
 
 * item 1
@@ -33,33 +31,23 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 * item 3
 
 
-***
+## Tables
 
-### Table
+| a | b | c | d | e  |
+|---|---|---|---|----|
+| 1 | 2 | 3 | 4 | 5  |
+| f | g | h | i | j  |
+| 6 | 7 | 8 | 9 | 10 |
 
-<div class="table-container">
-  <table>
-    <tr><th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th><th>Header 5</th></tr>
-    <tr><td>Row:1 Cell:1</td><td>Row:1 Cell:2</td><td>Row:1 Cell:3</td><td>Row:1 Cell:4</td><td>Row:1 Cell:5</td></tr>
-    <tr><td>Row:2 Cell:1</td><td>Row:2 Cell:2</td><td>Row:2 Cell:3</td><td>Row:2 Cell:4</td><td>Row:2 Cell:5</td></tr>
-    <tr><td>Row:3 Cell:1</td><td>Row:3 Cell:2</td><td>Row:3 Cell:3</td><td>Row:3 Cell:4</td><td>Row:3 Cell:5</td></tr>
-    <tr><td>Row:4 Cell:1</td><td>Row:4 Cell:2</td><td>Row:4 Cell:3</td><td>Row:4 Cell:4</td><td>Row:4 Cell:5</td></tr>
-    <tr><td>Row:5 Cell:1</td><td>Row:5 Cell:2</td><td>Row:5 Cell:3</td><td>Row:5 Cell:4</td><td>Row:5 Cell:5</td></tr>
-    <tr><td>Row:6 Cell:1</td><td>Row:6 Cell:2</td><td>Row:6 Cell:3</td><td>Row:6 Cell:4</td><td>Row:6 Cell:5</td></tr>
-  </table>
-</div>
 
-***
-
-### Quotes
+## Quotes
 
 #### A quote looks like this:
+> Life can only be understood backwards; but it must be lived forwards. — Soren Kierkegaard
 
-> Never put off till tomorrow what may be done day after tomorrow just as well. — Mark Twain
 
-***
 
-### Syntax Highlighter
+### Code Snippet
 
 {% highlight python %}
   # recursive implementation of golden section search
@@ -81,15 +69,9 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
           return gssrec(f, c, b, tol, h * invphi, c=d, fc=fd, d=None, fd=None)
 {% endhighlight %}
 
-***
 
-### Images
+## Videos
 
-![](https://t4.ftcdn.net/jpg/02/91/24/27/360_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg)
-
-***
-
-### Videos
-
-
+<div class="video-container">
 <iframe width="420" height="315" src="https://www.youtube.com/embed/lM02vNMRRB0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
