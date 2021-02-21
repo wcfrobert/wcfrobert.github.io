@@ -610,10 +610,10 @@ PART 7: BLOG INDEX PAGE
 	display: block;
 	color: rgb(54, 55, 59);
 	text-align: center;
-	min-height: 70px;
-	border-radius: 5px;
+	min-height: 9rem;
+	border-radius: 15px;
 	background-color: white; 
-	width: 50%;
+	width: 69%;
 	margin: auto;
 	margin-top: 15px;
 	transition: all 0.1s;
@@ -624,18 +624,56 @@ PART 7: BLOG INDEX PAGE
 	transform: translateY(-2px);
 }
 
-.blog-index-page .blog-post-box .post-words {
-	width: 79%;
-	height: auto;
-	display: inline-block;
-}
+
+
+
+
 .blog-index-page .blog-post-box .post-thumbnail {
-	width: 20%;
+	width: 30%;
+	margin: 0px;
+    max-width: 100%;
+	min-height: 9rem;
+	display: inline-block;
+	background-size: cover;
+	float: left;
+}
+.blog-index-page .blog-post-box .post-words {
+	width: 70%;
 	height: auto;
 	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
 }
 
 
+.blog-post-box .post-title {
+	margin-left: 1rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 32px;
+	text-align: left;
+	font-weight: 400;
+}
+.blog-post-box .post-description {
+	margin-left: 1rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(54, 55, 59);
+	font-size: 18px;
+	text-align: left;
+	font-weight: 400;
+}
+.blog-post-box .post-date, .post-taglist, .post-readtime {
+	margin-left: 1rem;
+	font-family: 'Open Sans', sans-serif;
+	color: rgb(65, 66, 71);
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	font-weight: 400;
+	display: inline;
+}
 
 
 /*

@@ -1,0 +1,22 @@
+---
+permalink: /years.html
+layout: typical
+---
+
+
+<div class="container">
+  <h1 style="color: rgb(67, 91, 226)">Posts by Year</h1>
+  {% for post in site.posts %}
+    {% assign currentdate = post.date | date: "%Y" %}
+
+    {% if currentdate != date %}
+      {% unless forloop.first %}</ul>{% endunless %}
+      <h3>{{ currentdate }}</h3>
+      <ul>
+      {% assign date = currentdate %}
+    {% endif %}
+
+    <li><a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a></li>
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
