@@ -1,12 +1,14 @@
 ---
 layout: blog-post
-title: "First Post - Style Guide"
+categories: blog
+title: "The First Post!"
+description: "If this is the only post you see, contact me and tell me to stop being lazy"
 date: 2021-02-15
-image: /assets/img/blog/hellofresh1.jpg
-tags: debugging jekyll tagging
+image: assets/img/blog/nature.png
+tags: debugging jekyll
 ---
 
-![](https://t4.ftcdn.net/jpg/02/91/24/27/360_F_291242770_z3XC7rJB1Mvc5jVMsEY9Dx2xMrX4sxUi.jpg)
+![](/assets/img/blog/nature.png)
 *Figure 1: Image caption by inserting emphasis text after image in markdown*
 
 Above is an image. This is a paragraph. The font used is 20px lora. A serif font. The line-height is 1.6 and there is about 70 characters per line to improve readability. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
@@ -44,10 +46,14 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 
 ## Quotes
 
-#### A quote looks like this:
+### A quote looks like this:
 > Life can only be understood backwards; but it must be lived forwards. — Soren Kierkegaard
 
+### LaTex Equations
 
+$$
+(\frac{m}{\Delta t ^2}  + \frac{c}{2\Delta t})u_{j+1} = P_j -(\frac{m}{\Delta t ^2}  - \frac{c}{2\Delta t})u_{j-1} - (k-\frac{2m}{\Delta t^2})u_j
+$$
 
 ### Code Snippet
 

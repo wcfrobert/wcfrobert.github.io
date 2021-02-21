@@ -581,17 +581,66 @@ PART 6: FOOTER STYLES
 
 
 
+/*
+############################################
+PART 7: BLOG INDEX PAGE
+############################################
+*/
+.jumbotron .blog-h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.jumbotron .blog-p {
+	width: 45ch;
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
 
+.blog-index-page {
+	text-align: center;
+	margin: auto;
+	background-color:#f9f9fc;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.blog-index-page .blog-post-box {
+	font-size: 24px;
+	text-decoration: none;
+	display: block;
+	color: rgb(54, 55, 59);
+	text-align: center;
+	min-height: 70px;
+	border-radius: 5px;
+	background-color: white; 
+	width: 50%;
+	margin: auto;
+	margin-top: 15px;
+	transition: all 0.1s;
+	cursor: pointer;
+}
+.blog-index-page .blog-post-box:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
+}
 
-
-
+.blog-index-page .blog-post-box .post-words {
+	width: 79%;
+	height: auto;
+	display: inline-block;
+}
+.blog-index-page .blog-post-box .post-thumbnail {
+	width: 20%;
+	height: auto;
+	display: inline-block;
+}
 
 
 
 
 /*
 ############################################
-PART 7: BLOG POSTS
+PART 8: BLOG POSTS
 ############################################
 */
 .blog-post {
@@ -676,11 +725,6 @@ th, td {
 	cursor: pointer;
 	text-decoration: none;
 }
-
-
-
-
-
 .blog-comments:hover {
 	cursor: pointer;
 	color:rgb(67, 91, 226);
