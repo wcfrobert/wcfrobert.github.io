@@ -49,27 +49,27 @@
 
   <div class="blog-index-page">
     
-    {% for post in site.posts %}
-    <a class="blog-post-box" href="{{ post.url }}">
-      {% if post.image %}
-      <div class="post-thumbnail" style="background-image: url({{post.image}})"></div>
-      {% endif %}
-      <div class="post-words" style=" {% if post.image==False %} width: 100% {% endif %}">
-        <h3 class="post-title">{{ post.title }}</h3>
-        <p class="post-description">{{ post.description }}</p>
-        <p class="post-date">{{post.date | date: '%b %d, %Y'}} </p>
-        <p class="post-readtime">
-          {% assign words = post.content | number_of_words %}
-            {% if words < 360 %}
-              1 min
-            {% else %}
-              {{ words | divided_by:180 }} mins
-            {% endif %}
-            read
-        </p>
-        <p class="post-taglist"> | tags: {{post.tags | join: ", " }}</p>
-      </div>
-    </a>
+    {% for post in site.categories["blog"] %}
+      <a class="blog-post-box" href="{{ post.url }}">
+        {% if post.image %}
+        <div class="post-thumbnail" style="background-image: url({{post.image}})"></div>
+        {% endif %}
+        <div class="post-words" style=" {% if post.image==False %} width: 100% {% endif %}">
+          <h3 class="post-title">{{ post.title }} {{post.categories}}</h3>
+          <p class="post-description">{{ post.description }}</p>
+          <p class="post-date">{{post.date | date: '%b %d, %Y'}} </p>
+          <p class="post-readtime">
+            {% assign words = post.content | number_of_words %}
+              {% if words < 360 %}
+                1 mins
+              {% else %}
+                {{ words | divided_by:180 }} mins
+              {% endif %}
+              read
+          </p>
+          <p class="post-taglist">| tags: {{post.tags | join: ", " }}</p>
+        </div>
+      </a>
     {% endfor %}
 
   </div>

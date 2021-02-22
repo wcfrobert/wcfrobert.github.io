@@ -1,3 +1,7 @@
+---
+
+---
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,12 +36,46 @@
     </header>
     <hr>
 
+    <!-- BODY -->
+    <div class="jumbotron">
+      <h1 class="blog-h1">Engineering Notebook</h1>
+      <p class="blog-p">A collection of my personal notes. Mainly for my reference. Ideally It would be of some use to you as well.</p>
+      <div class="author-more">
+        <a href="tags.html" class="button">Browse by Tag</a>
+        <a href="years.html" class="button">Browse by Year</a>
+      </div>
+    </div>
+  </div>
 
-    <div style="height: 500px; font-size: 36px; text-align:center;">UNDER DEVELOPMENT</div>
-
-
+  <div class="blog-index-page">
+    
+    {% for post in site.categories["engineering"] %}
+    <a class="blog-post-box" href="{{ post.url }}">
+      {% if post.image %}
+      <div class="post-thumbnail" style="background-image: url({{post.image}})"></div>
+      {% endif %}
+      <div class="post-words" style=" {% if post.image==False %} width: 100% {% endif %}">
+        <h3 class="post-title">{{ post.title }}</h3>
+        <p class="post-description">{{ post.description }}</p>
+        <p class="post-date">{{post.date | date: '%b %d, %Y'}} </p>
+        <p class="post-readtime">
+          {% assign words = post.content | number_of_words %}
+            {% if words < 360 %}
+              1 mins
+            {% else %}
+              {{ words | divided_by:180 }} mins
+            {% endif %}
+            read
+        </p>
+        <p class="post-taglist">| tags: {{post.tags | join: ", " }}</p>
+      </div>
+    </a>
+    {% endfor %}
 
   </div>
+
+
+
   <!-- FOOTER -->
   <footer class="footer1">
     <div class="grid-item1">

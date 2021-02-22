@@ -618,27 +618,25 @@ PART 7: BLOG INDEX PAGE
 	margin-top: 15px;
 	transition: all 0.1s;
 	cursor: pointer;
+	overflow: hidden;
 }
 .blog-index-page .blog-post-box:hover {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	transform: translateY(-2px);
 }
 
-
-
-
-
 .blog-index-page .blog-post-box .post-thumbnail {
-	width: 30%;
+	width: 25%;
 	margin: 0px;
     max-width: 100%;
-	min-height: 9rem;
-	display: inline-block;
+	min-height: 10rem;
 	background-size: cover;
+	background-position: 50% 50%;
+	display: inline-block;
 	float: left;
 }
 .blog-index-page .blog-post-box .post-words {
-	width: 70%;
+	width: 75%;
 	height: auto;
 	display: inline-block;
 	vertical-align: top;
