@@ -5,3 +5,4 @@ _site
 .git
 .vscode
 vendor
+.blogdraft

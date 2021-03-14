@@ -614,6 +614,7 @@ PART 7: BLOG INDEX PAGE
 	border-radius: 15px;
 	background-color: white; 
 	width: 69%;
+	max-width: 900px;
 	margin: auto;
 	margin-top: 15px;
 	transition: all 0.1s;
@@ -686,7 +687,7 @@ PART 8: BLOG POSTS
 	margin-top: 60px;
 	margin-bottom: 20px;
 	font-size: 21px;
-	color:rgba(61, 55, 55);
+	color:rgb(2, 2, 2);
 }
 .blog-post img {
 	width:100%;
