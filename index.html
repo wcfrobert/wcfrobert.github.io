@@ -251,6 +251,7 @@
       <div class="tabs">
         <div class="tab-header">
           <div class="active-tab">MSApy</div>
+          <div>SpColumn Automation</div>
           <div>Structural Framing Generation</div>
           <div>Generative Design</div>
           <div>Parametrically Defined Structure</div>
@@ -275,6 +276,21 @@
               The library is written in about 1200 lines of code. Highly scalable and flexible with object-oriented programming design. Some features: Timenshenko frame elements which accounts for shear deformation. support settlement, temperature load, self-weight modifiers, member-end hinges, etc.
             </p>
           </div>
+
+
+          <div>
+            <div class="project-title"></div>
+            <img src="assets/img/spcolumn.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              spColumn is a concrete design software commonly used for strain compatibility of concrete columns and walls. One of the best features of the program is that it allows user to create model files in “.cti” format; which are plain text files that can be opened and viewed by any text editor. Furthermore, .cti files can be executed in batches from the command line, allowing for great flexibility in automation. <a href="https://structurepoint.org/spColumn-Online-Manual/spColumn/Appendix/spColumn_Text_Input_CTI_file_format.htm">More info from StructurePoint here.</a>
+              <br>
+              <br>
+              I created a python script that extract column/wall info from an input spreadsheet to batch generate and analyze spColumn section as well as export results in .png format. With this tool, you can perform hundreds section analysis in mere seconds. Supports rectangular columns, I-shape, C-shape, L-shape, and T-shape walls.
+              <a href="https://github.com/wcfrobert/spColumn-Batcher">Source code here.</a>
+
+            </p>
+          </div>
+
 
           <div>
             <div class="project-title"></div>
