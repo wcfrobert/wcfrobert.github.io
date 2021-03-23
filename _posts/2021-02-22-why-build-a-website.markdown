@@ -4,7 +4,7 @@ categories: blog
 title: "Why Build a Website from Scratch?"
 description: "The smallest dog barks the loudest?"
 date: 2021-02-22
-image: assets/img/blog/coding.jpg
+image: assets/img/blog/coding.png
 tags: thoughts
 ---
 
