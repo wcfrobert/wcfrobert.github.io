@@ -5,7 +5,7 @@ title: "The First Post!"
 description: "If you only see one post, contact me and tell me to stop being lazy"
 date: 2021-02-15
 image: assets/img/blog/nature.jpg
-tags: debugging jekyll
+tags: blog
 ---
 ## Preface
 
@@ -38,6 +38,7 @@ All headings within articles should be H2. Below is an image. This is an emoji :
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
+
 
 ***
 ## H2 - Main Section Titles

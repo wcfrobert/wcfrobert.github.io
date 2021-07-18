@@ -39,7 +39,7 @@ hr {
 }
 
 .hr-half {
-	width: 60%;
+	max-width: 700px;
 	border: 0;
     height: 1px;
     background: #333;
@@ -47,17 +47,33 @@ hr {
 }
 
 
+
 /*
 ############################################
 PART 1: HEADER STYLES
 ############################################
 */
-header {
-	margin-top: 24px;
-	margin-bottom: 12px;
+/*general formatting of navbar, flexbox*/
+#navbar {
+	height: 50px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	background-color: white;
+	z-index: 9999;
+}
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
 }
 
-header #name {
+/*format name on the left hand side*/
+.name {
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
 	font-family: 'Lora', serif;
 	font-weight: 700;
 	font-size: 19px;
@@ -65,58 +81,134 @@ header #name {
 	cursor: pointer;
 	text-decoration: none;
 	color: black;
+	padding-top: 5px;
+}
+.name:hover{color:rgb(67, 91, 226);}
+
+
+/* hamburger menu with 3 horizontal bars */
+.navbar-toggle {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon-bar {
+    display: block;
+    width: 25px;
+    height: 4px;
+    margin: 2px;
+    transition: background-color 0.2s ease-in-out,
+                transform 0.2s ease-in-out,
+                opacity 0.2s ease-in-out;
+    background-color: rgb(88, 90, 105);
+}
+.navbar-toggle:hover .icon-bar {background-color: rgb(67, 91, 226)}
+/* JS adds .opened class to navbar, adding these properties. Make hamburger menu into x by rotating bars */
+#navbar.opened .navbar-toggle .icon-bar:first-child,
+#navbar.opened .navbar-toggle .icon-bar:last-child {position: absolute; margin: 0; width: 30px;}
+#navbar.opened .navbar-toggle .icon-bar:first-child {transform: rotate(45deg);}
+#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {opacity: 0;}
+#navbar.opened .navbar-toggle .icon-bar:last-child {transform: rotate(-45deg);}
+
+/* format menu bar. initially hidden 60 px below top of screen */
+.navbar-menu {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    right: 0;
 }
 
-header #name:hover {
-	color:rgb(67, 91, 226);
+/*change max height and visibility of menu when clicked on hamburger menu*/
+#navbar.opened .navbar-menu {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#navbar.opened .navbar-links {
+    padding: 1em;
+    max-height: none;
 }
 
-header:after {
-	/*clear fix*/
-	content: "";
-  	display: table;
-  	clear: both;
+/* navbar list of links*/
+.navbar-link {
+	margin-top: 10px;
+	color: black;
+	transition: all 0.2s;
+	text-decoration: none;
+	display: flex;
 }
 
-nav ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	float: right;
+.navbar-links {
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    margin: 1.4rem;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-nav li {
-	display: inline-block;
-	margin-left: 70px;
+.navbar-link:hover {color: rgb(67, 91, 226); text-decoration: underline;}
+
+.navbar-item {
+    margin: 0.4em;
 	font-family: 'Lora', serif;
 	font-weight: 400;
 	font-size: 16px;
 	color:rgb(88, 90, 105);
 }
 
-nav a {
-	color: black;
-	text-decoration: none;
-	transition: color 0.2s; 
+/*media query to show/hide hamburger menu depending on screen size*/
+/*mobile-first. property applies when screen width exceeds 800 px*/
+/*hamburger becomes invisible, navbar menu follows name*/
+@media screen and (min-width: 800px) {
+    .navbar-toggle {display: none;}
+
+    #navbar .navbar-menu,
+    #navbar.opened .navbar-menu {
+        visibility: visible;
+        opacity: 1;
+        position: static;
+        display: block;
+        height: 100%;
+    }
+
+    #navbar .navbar-links,
+    #navbar.opened .navbar-links {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+        flex-direction: row;
+        list-style-type: none;
+        max-height: max-content;
+        width: 100%;
+        height: 100%;
+    }
+    #navbar .navbar-link:last-child {margin-right: 0;}
+    #navbar .navbar-link {margin-left: 60px;}
+    #navbar {position: static;}
 }
 
-nav a:hover {
-	color: rgb(67, 91, 226);
-}
 
 
-nav a::after {
-	content: '';
-	display: block;
-	height: 2px;
-	width: 0%;
-	background-color:rgb(67, 91, 226);
-	transition: width 0.2s;
-}
 
-nav a:hover::after {
-	width: 100%;
-}
 
 
 
@@ -214,7 +306,6 @@ PART 2: JUMBOTRON STYLES
 }
 
 
-
 .jumbotron .quick-link ul{
 	text-align: center;
 	padding-inline-start: 0px;
@@ -252,9 +343,12 @@ PART 3: BODY STYLES - Education and Work
 ############################################
 */
 .resume-content {
-	width: 60%;
-	margin: auto;
+	width: 650px;
+	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 800px) {
+.resume-content {width: 100%;}
 }
 
 .resume-content h1 {
@@ -382,7 +476,7 @@ PART 4: BODY STYLES - Project
 .resume-content .tabs {
 	position:absolute;
 	margin:auto;
-  	width:54%;
+  	width:700px;
   	height:700px;
   	padding:20px 0px;
 	overflow: hidden;
@@ -526,58 +620,22 @@ PART 6: FOOTER STYLES
 	background-color: rgb(53, 49, 49);
 	font-family: lora, serif;
 	color: white;
-	height: 70px;
+	height: 90px;
 	font-size: 12px;
-	display: grid;
-	grid-template-columns: 33.33% 33.33% 33.33%;
-}
-.footer1 a {
-	color: white;
-}
-
-
-.footer1 .grid-item1 img {
-	margin-top: 22px;
-	margin-left: 15px;
-}
-.footer1 .grid-item1 .designed {
-	display: inline-block;
-	position: absolute;
-	margin-top: 27px;
-	margin-left: 8px;
-}
-
-.footer1 .grid-item2 {
 	text-align: center;
-	padding-top: 15px;
 }
-.footer1 .grid-item2 svg {
+
+.footer1 svg {
 	display: inline-block;
 	width: 50px;
 	margin-left: 10px;
 	margin-right: 10px;
-}
-.footer1 .grid-item2 svg:hover path {
-	fill:rgb(67, 91, 226);
+	margin-top: 10px;
 }
 
-.footer1 .grid-item2 svg:hover circle {
-	fill:white;
-}
-
-
-.footer1 .grid-item3 {
-	text-align: right;
-	display: inline-block;
-	position: relative;
-}
-
-.footer1 .grid-item3 .positioning{
-	position: absolute;
-	bottom: 20px;
-	right: 1px;
-	padding-right: 5px;
-}
+.footer1 .copyright-footer {margin-top: 6px;}
+.footer1 svg:hover path {fill:rgb(67, 91, 226)}
+.footer1 svg:hover circle {fill:white;}
 
 
 
@@ -649,7 +707,7 @@ PART 7: BLOG INDEX PAGE
 	margin-left: 1rem;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	font-size: 32px;
+	font-size: 28px;
 	text-align: left;
 	font-weight: 400;
 }
@@ -657,9 +715,10 @@ PART 7: BLOG INDEX PAGE
 	margin-left: 1rem;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	margin-right: 1rem;
 	font-family: 'Open Sans', sans-serif;
 	color: rgb(54, 55, 59);
-	font-size: 18px;
+	font-size: 16px;
 	text-align: left;
 	font-weight: 400;
 }

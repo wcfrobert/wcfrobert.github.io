@@ -1,0 +1,42 @@
+---
+permalink: /test.html
+layout: typical
+---
+
+
+    <div class="jumbotron">
+      <h1 class="blog-h1">Engineering Notebook</h1>
+      <p class="blog-p">A collection of my personal notes</p>
+      <div class="author-more">
+        <a href="tags.html" class="button">Browse by Tag</a>
+        <a href="years.html" class="button">Browse by Year</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog-index-page">
+    {% for post in site.categories["engineering"] %}
+    <a class="blog-post-box" href="{{ post.url }}" style="min-height:0px">
+      <div class="post-words" style="width: 100%">
+        <h3 class="post-title" style="font-size: 24px">{{ post.title }}</h3>
+
+        <div>
+          <p class="post-date">{{post.date | date: '%b %d, %Y'}} </p>
+          <p class="post-readtime">
+            {% assign words = post.content | number_of_words %}
+            {% if words < 360 %}
+              1 mins
+            {% else %}
+              {{ words | divided_by:180 }} mins
+            {% endif %}
+            read
+          </p>
+          <p class="post-taglist">| tags: {{post.tags | join: ", " }}</p>
+        </div>
+        
+
+      </div>
+    </a>
+    {% endfor %}
+
+  </div>

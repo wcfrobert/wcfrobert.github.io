@@ -5,7 +5,7 @@ title: "Right-Hand Rule Simplified"
 description: "Which finger points which way? What does it all mean?"
 image: assets/img/blog/thumbup.png
 date: 2021-03-25
-tags: analysis fundamentals
+tags: tips-tricks
 ---
 
 If you have have taken any engineering or physics class in highschool or university, you have undoubtedly heard of the "right-hand rule". It is apparently a useful mnemonic for remembering conventions and orientation of axes. I can't really vouch for its usefulness given the fact that I keep having to do quick google searches to remind myself which finger points in which direction.

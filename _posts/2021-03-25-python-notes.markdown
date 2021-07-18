@@ -5,7 +5,7 @@ title: "Personal Python Handbook"
 description: "I've gathered a whole bunch of code snippets and syntax examples that helps me along in my side projects"
 image: assets/img/blog/python.png
 date: 2021-03-25
-tags: python
+tags: programming
 ---
 
 In this notebook, I've gathered a whole bunch of code snippets and syntax examples that helps me along in my side projects. I thought of putting a collection together like this after searching the same syntactical and how-to question over and over and going to the same StackOverflow page.

@@ -1,24 +1,40 @@
 ---
 layout: blog-post
 categories: blog
-title: "Every HelloFresh Meal I've Cooked So Far"
-description: "HelloFresh is a meal kit delivery service I've been using it for the past 3 months. Here are some of my creations along with my notes and thoughts"
+title: "Every Meal I've Cooked So Far With HelloFresh"
+description: "HelloFresh is a meal kit delivery service I've been using it for the past 4 months. Here is a gallery of 52 different meals"
 date: 2021-03-22
 image: assets/img/blog/hellofresh1.jpg
-tags: hellofresh cooking
+tags: blog
 ---
 
 ## Meal Kit Delivery?
+![recipes](/assets/img/blog/hellofresh0.jpg)
+*Figure 1: All The Recipes I've Tried Over the Past Four Months*
 
 Back in January, I started using this subscription meal kit service called "HelloFresh". In essence, each week they deliver to you a box of groceries and recipe cards; thus saving you from a grocery trip and finding the right ingredients. With the promotion, Each serving is about 8 dollars, I think the non-promotion price is around 11 dollars per meal. Some people might find that expensive, but It's actually a lot cheaper than my usual spending habits where I spend at least 30 dollars a day on take out. I find that at least for me, "HelloFresh" forces me to switch up my diet and try different type of cuisine. I am trying to eat healthy this year.
 
 Since everything is pre-packaged, I find that I am also wasting a lot less food than I normally would. No more unnecessary stress of worrying about food going bad in the fridge.
 
-The only con I see right now is the time it takes to cut, cook, and clean. I honestly find cutting and cooking kind of entertaining, but I absolutely dread dish-cleaning. Since I only have a few plates and cutleries, it doesn't make sense to use the dish-washer for 2 plates and a fork. 
+## Pro and Cons
+List of Pros:
+* Convenient, no more grocery trips
+* Less food waste and stressing about food going back in the fridge
+* Get to try different recipes and venture out of what you usually make
 
-I find it amusing to make a meal and then take some nice photos of it. Thus came to fruition my HelloFresh album. Overtime, I thought to myself "why not add some commentary and make it a blog post?" Perhaps someone out there might find it useful.
 
-I will be using a 5-star rating system with two of the most important parameters I consider in any meal: taste and convenience.
+List of Cons:
+* Much cheaper to just go get grocery and spend some time planning meals each week
+* Takes time to cut, cook, and clean
+* Actually not as healthy and fresh and you might think
+
+All in all, HelloFresh definitely is not for everyone. However, I do find it well-suited for my current life style and habits so I will keep using it until I get tired of all the receipes.
+
+## Photos!
+
+I found it kind of amusing to make a meal and then take some nice photos of it. I don't like to post stuff on social media so I'll post here instead. Thus came to fruition my HelloFresh album. There is over 100 photos on this page so please be patient as it may take some time to load...
+
+I will be using a 5-star rating system based on taste.
 
 | **Stars** | **Taste** |
 | - | - |
@@ -188,3 +204,129 @@ I will be using a 5-star rating system with two of the most important parameters
 ### Meal 25: Warm Buttered Shrimp Rolls (4/5)
 
 | <img src="/assets/img/blog/hellofresh25.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh25me.jpg" style="zoom:25%;" /> |
+
+
+### Meal 26: Cheesy Smothered Mushroom Chicken v2 (4/5)
+
+| <img src="/assets/img/blog/hellofresh7.jpg" style="zoom:70%;" /> | <img src="/assets/img/blog/hellofresh26me.jpg" style="zoom:15%;" /> |
+
+
+### Meal 27: Middle Eastern Chickpea Bowls (4/5)
+
+| <img src="/assets/img/blog/hellofresh27.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh27me.jpg" style="zoom:25%;" /> |
+
+
+### Meal 28: Ancho BBQ Sloppy Joes (4/5)
+
+| <img src="/assets/img/blog/hellofresh28.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh28me.jpg" style="zoom:25%;" /> |
+
+### Meal 29: Turkey Meatball Penne (4/5)
+
+| <img src="/assets/img/blog/hellofresh29.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh29me.jpg" style="zoom:25%;" /> |
+
+<br>
+
+## April
+
+### Meal 30: Szechuan Beef Noodles (2/5)
+
+| <img src="/assets/img/blog/hellofresh30.jpg" style="zoom:15%;" /> | <img src="/assets/img/blog/hellofresh30me.jpg" style="zoom:35%;" /> |
+
+### Meal 31: Greek Goddess Bulgur Bowls (4/5)
+
+| <img src="/assets/img/blog/hellofresh31.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh31me.jpg" style="zoom:25%;" /> |
+
+### Meal 32: Mushroom & Chive Risotto (3/5)
+
+| <img src="/assets/img/blog/hellofresh32.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh32me.jpg" style="zoom:25%;" /> |
+
+
+
+### Meal 33: Beef FLautas Supreme (3/5)
+
+| <img src="/assets/img/blog/hellofresh33.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh33me.jpg" style="zoom:25%;" /> |
+
+### Meal 34: Steakhouse Pork Chops(3/5)
+
+| <img src="/assets/img/blog/hellofresh34.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh34me.jpg" style="zoom:25%;" /> |
+
+### Meal 35: Yogurt-Marinated Chicken & Garlic Sauce (3/5)
+
+| <img src="/assets/img/blog/hellofresh35.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh35me.jpg" style="zoom:25%;" /> |
+
+
+
+
+### Meal 36: Shrimp Spaghetti with a Kick (5/5)
+
+| <img src="/assets/img/blog/hellofresh36.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh36me.jpg" style="zoom:25%;" /> |
+
+### Meal 37: Pork Sausage & Bell Pepper Risotto (3/5)
+
+| <img src="/assets/img/blog/hellofresh37.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh37me.jpg" style="zoom:25%;" /> |
+
+### Meal 38: Zucchini & Mushroom Bibimbap Bowl (5/5)
+
+| <img src="/assets/img/blog/hellofresh38.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh38me.jpg" style="zoom:25%;" /> |
+
+
+
+### Meal 39: Italian Meatloaves (2/5)
+
+| <img src="/assets/img/blog/hellofresh39.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh39me.jpg" style="zoom:25%;" /> |
+
+### Meal 40: Thai Coconut Curry Chicken (5/5)
+
+| <img src="/assets/img/blog/hellofresh40.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh40me.jpg" style="zoom:25%;" /> |
+
+### Meal 41: Chicken Sausage Spaghetti Bolognese v2 (4/5)
+
+| <img src="/assets/img/blog/hellofresh18.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh41me.jpg" style="zoom:25%;" /> |
+
+
+
+### Meal 42: Cheesy Smothered Mushroom Chicken v3 (4/5)
+
+| <img src="/assets/img/blog/hellofresh7.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh42me.jpg" style="zoom:10%;" /> |
+
+### Meal 43: Southwest Stuffed Zucchini Boats (5/5)
+
+| <img src="/assets/img/blog/hellofresh43.jpg" style="zoom:48%;" /> | <img src="/assets/img/blog/hellofresh43me.jpg" style="zoom:25%;" /> |
+
+### Meal 44: Firecracker Meatballs v2 (4/5)
+
+| <img src="/assets/img/blog/hellofresh15.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh44me.jpg" style="zoom:25%;" /> |
+
+
+
+### Meal 45: Chicken Sausage, Couscous & Kale Soup (3/5)
+
+| <img src="/assets/img/blog/hellofresh45.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh45me.jpg" style="zoom:25%;" /> |
+
+### Meal 46: Walnut-Crusted Salmon (4/5)
+
+| <img src="/assets/img/blog/hellofresh46.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh46me.jpg" style="zoom:25%;" /> |
+
+### Meal 47: Triple Mushroom Truffle Gnocchi (3/5)
+
+| <img src="/assets/img/blog/hellofresh47.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh47me.jpg" style="zoom:25%;" /> |
+
+### Meal 48: Gnocchi With Spinach & Tomatoes (3/5)
+
+| <img src="/assets/img/blog/hellofresh48.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh48me.jpg" style="zoom:25%;" /> |
+
+### Meal 49: Southwestern Shrimp Tacos (4/5)
+
+| <img src="/assets/img/blog/hellofresh49.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh49me.jpg" style="zoom:25%;" /> |
+
+### Meal 50: Sesame-Soy Beef Bowls (5/5)
+
+| <img src="/assets/img/blog/hellofresh50.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh50me.jpg" style="zoom:25%;" /> |
+
+### Meal 51: Dynamite Mushroom Tempura (1/5)
+
+| <img src="/assets/img/blog/hellofresh51.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh51me.jpg" style="zoom:25%;" /> |
+
+### Meal 52: Beef & Veggie Bibimbap (5/5)
+
+| <img src="/assets/img/blog/hellofresh52.jpg" style="zoom:50%;" /> | <img src="/assets/img/blog/hellofresh52me.jpg" style="zoom:25%;" /> |
