@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "Update After 4 Months of Absence"
-description: "The smallest dog barks the loudest?"
+description: "A quick update to my imaginary audience after being absent for a while"
 date: 2021-07-16
 image: assets/img/blog/PE-exam.png
 tags: blog
