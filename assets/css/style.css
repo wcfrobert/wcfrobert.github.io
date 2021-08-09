@@ -739,14 +739,24 @@ PART 7: BLOG INDEX PAGE
 PART 8: BLOG POSTS
 ############################################
 */
+.blog-wrapper {
+	background-color: #484d52;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: -5.5%;
+	margin-right: -5.5%;
+}
+
 .blog-post {
-	width: 65ch;
+	width: 85ch;
+	max-width: 100%;
+	padding: 100px;
+	padding-top: 50px;
 	margin: auto;
 	font-family: 'lora', serif;
-	margin-top: 60px;
-	margin-bottom: 20px;
 	font-size: 21px;
 	color:rgb(2, 2, 2);
+	background-color: white;
 }
 .blog-post img {
 	display: block;
