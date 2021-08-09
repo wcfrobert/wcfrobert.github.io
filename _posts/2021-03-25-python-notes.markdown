@@ -64,12 +64,12 @@ In this notebook, I've gathered a whole bunch of code snippets and syntax exampl
 ### Fundamentals
 * The most important skill to learn in programming is how to break down (decompose) a large problem into smaller pieces. One common approach is to tackle the problem "top-down". Outline the solution in abstract form and divide tasks into functions. You can call the function *that you are going to write* thus putting structure to your thought process
 
-{% highlight python %}
+```python
 def main():
     a=task1()
     b=task2()
     task3()
-{% endhighlight %}
+```
 
 * When debugging, forget temporarily why you are writing the program. Read the code without any bias of what *you* want it to do
 * Always put concise comment. You will likely spend more time reading code than writing them
@@ -82,7 +82,7 @@ There are three ways to work with Python:
 
 * Option 1: Write code in a text editor like [Sublime Text](https://www.sublimetext.com/), then run script from Terminal (cmd, PowerShell, Bash, etc) as shown in the code snippet below
 
-{% highlight python %}
+```python
 # If you ever need to run code from the terminal. Type in command line:
 python myscript.py arg1 arg2
 
@@ -100,7 +100,7 @@ if len(sys.argv) < 3:
     print("Example:")
     print('    $ python3 generatedata.py \"reffile.txt\" \"readsfile.txt\" \"alignfile.txt\"')
     sys.exit()
-{% endhighlight %}
+```
 
 * Option 2: Write, debug, and run code from a Integrated Developer Environment (IDE). (Pycharm, Spyder, VSCode, etc)
     * Spyder is most similar to Matlab's "code as you go" style with *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
@@ -120,7 +120,7 @@ The basic code structure follows something like shown. Since any python code can
 
 For instance, say our script is called myscript.py. If we run it in the terminal, its "\_\_name\_\_" is "\_\_main\_\_" . If the script is imported, then the "\_\_name\_\_" is "\_\_myscript\_\_".
 
-{% highlight python%}
+```python
 # Have imports in alphabetical order if there are a lot
 import numpy
 
@@ -132,11 +132,11 @@ def myfunction():
 
 if __name__ = "__main__":
     main():
-{% endhighlight %}
+```
 
 
 ### Basics
-{% highlight python %}
+```python
 # Comment with # or triple quote """
 # End lines that are too long with back slash \
 if 1900 < year < 2100 and 1 <= month <= 12 \
@@ -166,11 +166,11 @@ import math
 math.sin(x)
 math.sqrt(x)		# or just use x**(1/2)
 math.isclose(a,b)	# never compare two floats using ==. Use this instead
-{% endhighlight %}
+```
 
 
 ### Functions
-{% highlight python %}
+```python
 # Defining functions
 def someFunction(arg1,arg2,arg3=defaultval,*kwargs):
 	if condition:
@@ -191,11 +191,11 @@ def test_args_kwargs(othervar = 3, arg1, arg2, arg3, , test = 4):
 arg1: 5
 arg2: two
 arg3: 3
-{% endhighlight %}
+```
 
 
 ### Flow Control
-{% highlight python %}
+```python
 # If statements. The "pass" syntax is just a blank filler statement
 if condition:
     pass
@@ -216,11 +216,13 @@ for i in range(10): #Loops from 0,1,2,...,9
 
 for i in range(4,10): # Loops from 4,5,6,7,8,9
     pass # 10-4 = 6 loops
-{% endhighlight %}
+
+for i in reversed(range(3)): # Loop from 2,1,0
+```
 
 
 ### Raising Exceptions
-{% highlight python %}
+```python
 # Raising Exceptions and Errors
 if somecondition:
     raise RuntimeError('Mismatch dimension for pressure coefficient')
@@ -232,11 +234,11 @@ try:
     step3=float(step2)
 except ValueError:
     raise RuntimeError('wrong data type')
-{% endhighlight %}
+```
 
 
 ### Importing Modules
-{% highlight python %}
+```python
 # python code can be considered a module. When you import a module
 # you are allowed to use all its defined functions
 
@@ -252,7 +254,7 @@ sqrt(25)
 # All variables in mymodule namespace gets copied over. Say the module you are
 # importing also imports moduleX. You will now have access to moduleX as well
 from mymodule import *
-{% endhighlight %}
+```
 
 
 
@@ -274,7 +276,7 @@ Working with containers is perhaps the most important skill to have at least for
 Strings can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
 ### Lists []
-{% highlight python %}
+```python
 # Fundamentals
 myList = []
 mylist.append('new item')
@@ -331,7 +333,7 @@ if len(list):
 
 # Sets, strings, dictionaries, tuples can all be converted to list
 list(myset), list(string), list(tuples), list(mydict.values())
-{% endhighlight %}
+```
 
 
 
@@ -339,7 +341,7 @@ list(myset), list(string), list(tuples), list(mydict.values())
 ### Strings ""
 String operations are sometimes called "parsing" strings. It is one of the most common tasks in programming. Mastering string parsing will also translate to a mastery of operating with lists.
 
-{% highlight python %}
+```python
 # String Slicing
 mystr='abcdefghijklmn'
 mystr[1] 		# returns b
@@ -364,7 +366,7 @@ mystring[3] = "a"				# THIS IS NOT ALLOWED
 
 # Other useful string operations for parsing
 concat = str1 + str2		# concatenate strings
-string.in("word")		# checks if "word" is in the string. Returns boolean
+"word" in string		# checks if "word" is in the string. Returns boolean
 string.find("word")		# find the index where "word" occurs. Returns -1 if failed
 string.strip() 			# removes spaces and \n \t
 string.strip(",.abc:;") 	# remove occurence of these characters
@@ -376,7 +378,7 @@ string.lowercase()		# convert all to lowercase
 string.swapcase()		# swap lower and upper case. Vice versa
 string.startwith("2020")	# see if string starts with prefix "2020"
 string.endswith(".jpeg")	# see if string ends in suffix ".jpeg"
-{% endhighlight %}
+```
 
 The figure below illustrates a good way of thinking about list/spring slicing in Python:
 
@@ -387,7 +389,7 @@ The figure below illustrates a good way of thinking about list/spring slicing in
 
 
 ### Dictionaries {}
-{% highlight python %}
+```python
 # Dictionaries are key-value Pairs. Key must be unique, value doesn't have to be
 # Basics
 myDict = {}
@@ -412,11 +414,11 @@ list(mydict.values) 		    # create a list of keys or values
 mydict[key1]=None 			# if you want to disassociate a value to key
 mydict.pop(key) 			# remove entire key-value pair
 del mydict[key]				# remove entire key-value pair
-{% endhighlight %}
+```
 
 
 ### Tuples ()
-{% highlight python %}
+```python
 # Tuple are just lists that cannot be modified nor appended
 myTuple = (1,2,3)
 
@@ -428,11 +430,11 @@ var1,var2 = mytuple
 def func():
     return a,b
 var1,var2 = func()
-{% endhighlight %}
+```
 
 
 ### Sets {}
-{% highlight python %}
+```python
 # Sets are kind of like list, but they only contain unique entries
 myset = set(myList)
 myset ={1,2,3}
@@ -447,7 +449,7 @@ difference(set1,set2) 		# returns value that only occur in set1 but not set2
 issubset(set1,set2)		# Check if set1 is subset of set2
 issuperset(set1,set2)		# Check if set1 is superset of set2
 discard(set1,set2) 		# Discard element from set1 if it exists in set 2
-{% endhighlight %}
+```
 
 
 
@@ -458,7 +460,7 @@ discard(set1,set2) 		# Discard element from set1 if it exists in set 2
 ## 4.0 File I/O
 Reading and writing files in your operating system. One thing to always remember is that all data read will be in string format. 
 
-{% highlight python %}
+```python
 # Open and read file in python. Make sure to close it after
 f1 = open('xy.txt','r')
 someoperation()
@@ -487,7 +489,7 @@ linesdata=f1.readlines()
 with open(outputfilename,'w') as f2:
     for items in mylist:
         f2.write('{},{},{}\n'.format(items[0],items[1],items[3]))
-{% endhighlight %}
+```
 
 
 
@@ -517,7 +519,7 @@ Some key terms that you will see very often:
 
 Note that the crucial piece of syntax is the dot notation access, which allows you to access methods and properties of an object. When an object is instantiated, the commands within the *constructor* runs first.
 
-{% highlight python %}
+```python
 # Typical class definition. Note places where "self" is required
 class myclass:
     def __init__(self,arg1,arg2):
@@ -538,7 +540,7 @@ a.ComputeLength
 # inheritence
 class class1(myclass):
     pass
-{% endhighlight %}
+```
 
 
 
@@ -553,17 +555,17 @@ For scientist and engineers, you will spend most of your time working with numpy
 If you are already familiar with Matlab. This quick start guide is all you need: https://numpy.org/doc/stable/user/numpy-for-matlab-users.html. If a command exists in Matlab, it will likely also exist in numpy; often with the same syntax. The most tricky thing to get used to is 0-based indexing and slicing!
 
 ### Importing
-{% highlight python %}
+```python
 import numpy as np
 import scipy as sp
 # Scipy sub-packages have to be imported separately. There are also sub-sub-packages!
 import scipy.sparse
 import scipy.sparse.linalg
-{% endhighlight %}
+```
 
 
 ### Basic Commands
-{% highlight python %}
+```python
 """
 All matrices and vectors are considered np.arrays.
 
@@ -611,7 +613,7 @@ np.one((m,n))		# matrix filled with 1
 np.one((m,n))*N		# matrix filled with N
 np.zero((m,n))		# matrix filled with 0
 # https://numpy.org/doc/stable/user/numpy-for-matlab-users.html for more
-{% endhighlight %}
+```
 
 
 
@@ -624,7 +626,7 @@ There are three very important distinctions to be made between Matlab and Python
 
 Python uses 0-based indexing which may take some getting used to if you are proficient in Matlab already. In the case of indexing a single element, you just need to remember to <u>subtract by one for each index</u>.
 
-{% highlight python %}
+```python
 # For single index. Just subtract by one. e.g. for the (2,3) element of A
 A[1,2]
 
@@ -634,7 +636,7 @@ A[-1]
 # For an entire column or row
 A[:,0]		# first column
 A[3,:]		# fourth row
-{% endhighlight %}
+```
 
 Slicing works differently. When slicing from A to B, A is inclusive whereas B is not! Let's do an example:
 
@@ -656,7 +658,7 @@ Meaning row 2->3 and column 3->4. In Matlab, it's fairly intuitive A(2:3, 3:4). 
 ![](/assets/img/blog/matrixslice.png)
 *Figure: Illustration Showing Indexing of Matrices*
 
-{% highlight python %}
+```python
 # Notice we need to add .copy() to pass a copy rather than a reference
 a = A[1:3,:].copy()		# second to third row
 a = A[:,1:2].copy()		# is actually equivalent to A[:,1].
@@ -664,7 +666,7 @@ a = A[:,1].copy()		# however, this returns a flexible numpy array rather than a 
 
 # Mesh indexing (e.g. in Matlab A([2,4,6],[1,3]))
 A[np.ix_([1,3,5],[0,2])]
-{% endhighlight %}
+```
 
 Additionally, we can create sub-matrices by passing to it list of index.  This process is illustrated in the figure below:
 
@@ -674,7 +676,7 @@ Additionally, we can create sub-matrices by passing to it list of index.  This p
 
 
 ### Other Common Operations
-{% highlight python %}
+```python
 # Finding max/min value within row or column
 a.max()		        # returns scalar. Max in entire matrix
 a.max(0)	        # returns vector. Max in each column
@@ -693,7 +695,7 @@ np.block([
     [a,b],
     [c,d] 
 ])
-{% endhighlight %}
+```
 
 
 
@@ -708,7 +710,7 @@ Here are the most basic commands. Please note that all assignments are passed by
 
 
 ### Basics
-{% highlight python %}
+```python
 # Initiating symbols
 A,B,c,d,e = sy.symbols('A B c d e')
 
@@ -730,11 +732,11 @@ sy.Matrix([
 # Solving. First rewrite expression with one side = 0
 f = 2*x**2 + 3*x - 13
 sy.solveset(f,x)
-{% endhighlight %}
+```
 
 
 ### Substitution and Simplifying
-{% highlight python %}
+```python
 # Simplifying
 sy.simplify(f)
 
@@ -742,18 +744,18 @@ sy.simplify(f)
 f2 = f.subs([(a,10),(b,22)])        # substitute a=10 and b=22
 sy.N(f2)                            # convert symbol to float
 f2.evalf()                          # another way of doing the same thing
-{% endhighlight %}
+```
 
 Note that all variables stay a "symbol" even if you have already substituted everything. For instance, f = a + b. Both a and b are equal to 10. Then f = 20. At this moment the number 20 is actually still a symbol until you use sy.N() or .evalf().
 
 
 ### Plotting
-{% highlight python %}
+```python
 import sympy as sy
 from sympy.plotting import plot3d
 x, y = sy.symbols('x y')
 plot3d(sy.cos(x*3)*sy.cos(y*5)-y, (x, -1, 1), (y, -1, 1))
-{% endhighlight %}
+```
 
 
 
@@ -765,10 +767,10 @@ The number of attributes to a Plotly figure can be overwhelming.
 
 Under the hood, your python code is actually converted to a JSON file which is then interpreted by a JavaScript library. You can actually convert your figure to a JSON format or a python dictionary format:
 
-{% highlight python %}
+```python
 fig.to_json()
 fig.to_dict()
-{% endhighlight %}
+```
 
 This one-page reference here is a must-have: [https://plotly.com/python/reference/](https://plotly.com/python/reference/)
 
@@ -787,7 +789,7 @@ As you can see, the data structure gets convoluted fast and you start having a d
 
 * Creating figure by creating a python dictionary
 
-{% highlight python %}
+```python
 import plotly.io as pio
 fig = dict(
     {
@@ -802,25 +804,25 @@ mydict1 = dict(mykey = 123) #OK
 mydict2 = {'mykey':123} #OK
 mydict3 = {mykey=123} #NOT OK
 mydict4 = {mykey:123} #NOT OK
-{% endhighlight %}
+```
 
 * Creating a figure by using the graph-object class (RECOMMENDED)
 
-{% highlight python %}
+```python
 import plotly.graph_objects as go
 fig = go.Figure(
     data = [go.Bar(x=[1, 2, 3], y=[1, 3, 2])],
     layout = go.Layout(title={'text': "this is a title"})
 )
 fig.show()
-{% endhighlight %}
+```
 
 The recommended workflow by plotly is to create a graph object first with default values (using plotly express), then using .add_trace() and .update_layout() to polish your figure.
 
 
 
 ### Example
-{% highlight python %}
+```python
 # Import module
 import plotly.graph_objects as go
 
@@ -862,7 +864,7 @@ fig.update_layout(
     annotations=my_footnote, scene_camera=my_camera, scene_dragmode='orbit',
     margin=dict(l=50,r=50,b=100,t=10,pad=4), height=650
 )
-{% endhighlight %}
+```
 
 
 ### Frames - Animations
@@ -870,7 +872,7 @@ An inconvenient aspect of animation in Plotly is that, unlike layout and data, y
 
 Animation example with [play] button:
 
-{% highlight python %}
+```python
 import plotly.graph_objects as go
 import numpy as np
 
@@ -952,13 +954,13 @@ fig = go.Figure(
 )
 
 fig.show()
-{% endhighlight %}
+```
 
 
 
 Animation example with play, pause, and slider:
 
-{% highlight python %}
+```python
 # Create figure
 fig = go.Figure()
 
@@ -1062,12 +1064,12 @@ fig = go.Figure(
 )
 
 fig.show()
-{% endhighlight %}
+```
 
 
 
 ### How-To's
-{% highlight python %}
+```python
 # Adding buttons that change camera angle:
 button1 = dict(
 	method = "relayout",
@@ -1101,7 +1103,7 @@ X = go.Scatter3d(
 	textposition="middle right",
 	textfont=dict(family="Arial", size=6, color="blue")
 )
-{% endhighlight %}
+```
 
 
 Quick reference:
@@ -1176,7 +1178,7 @@ First of all we must have multiple images to allow for post-process removal. At 
 
 
 ### Graphics and Animation
-{% highlight python %}
+```python
 import time
 import tkinter
 
@@ -1218,7 +1220,7 @@ mouse_x = canvas.winfo_pointerx()
 
 # Find list of element in a rectangular area
 results = canvas.find_overlapping(x1,y1,x2,y2)
-{% endhighlight %}
+```
 
 
 
@@ -1255,12 +1257,12 @@ Heaps are used for dynamic memory allocation that you have to manage carefully. 
 
 In python, you never have to worry about memory as it is automatically managed for you. The downside is some loss in speed (this is why programmers sometimes implement code initially in python and then convert to C++ when performance is a concern)
 
-{% highlight python %}
+```python
 # Garbage collector in python
 a=[1,2,3,4]
 a='new string'
 # the list 'a' is now unreferenced is garbage collected
-{% endhighlight %}
+```
 
 
 
@@ -1274,7 +1276,7 @@ For styling and standard formatting of your code. Refer to PEP 8: [Python Style 
 
 ### Basics
 
-{% highlight python %}
+```python
 # Always use 4-space indentation. Never mix & match. Most editors have options 
 # to convert tab to 4 spaces
 	# Tab indentation
@@ -1289,10 +1291,10 @@ For styling and standard formatting of your code. Refer to PEP 8: [Python Style 
 
 # Comments start with space and capital letter
 myvar = 1 # Inline comment can be distracting
-{% endhighlight %}
+```
 
 ### Common
-{% highlight python %}
+```python
 # Don't compare boolean values to True or False
 if boolean:
     print("Don't do boolean == True or False")
@@ -1325,11 +1327,11 @@ np.array([
 a = income + 3*(a + n) - 3
 b = c
 somelist = [a, b, c, d]
-{% endhighlight %}
+```
 
 ### Docstring standard
 
-{% highlight python %}
+```python
 def myfunction(arg1,arg2):
     """Single-line docstring. Do something and return value a"""
     return a
@@ -1346,7 +1348,17 @@ class myclass
     	Description of what is returned
     """
     return a
-{% endhighlight %}
+
+def function_with_doctest(a,b):
+  """
+  >>> function_with_doctest(2,3)
+  6
+  >>> function_with_doctest("a",3)
+  "aaa"
+  """
+  return a*b
+  # run this doc test in console by: py -m doctest -v filewithfunction.py
+```
 
 
 
@@ -1355,7 +1367,7 @@ class myclass
 ## Personal Notes
 I put random notes here. Pretty much anything I found helpful can appear here. Slowly they will migrate to the other sections
 
-{% highlight python %}
+```python
 # Never check condition where float == exact value
 b==17
 # Instead use is close command
@@ -1423,5 +1435,5 @@ def getText(filename):
     fullText=[]
     for paragraph in doc.paragraphs:
         fullText.append(paragraph.text)
-{% endhighlight %}
+```
 
