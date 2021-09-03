@@ -73,11 +73,7 @@ I decided to give it another listen after rediscovering one of my favorite poems
 > Pro patria mori.
 
 
-Goodness gracious... phenomenal writing and such vivid and macabre imagery of a gas attack. How can anyone fathom what those men went through. Aside from the beautiful and hard-hitting prose, I am especially fascinated by the juxtaposition of industrialized warfare in the 20th centry vs. old romantic ideals of patriotism and dying for one's country. Hence the title of the poem: "Dulce et decorum est pro patria mori" which is Latin for: "it is sweet and fitting to die for one's country."
-
-On one hand, you have the perennial ideals of courage, bravery, sacrifice, patriotism, charging oneself into the unknown to defend one's country. I think there is something inherently beautiful about that. On the other hand, you have people living in trenches with their clothing rotting on their skins and shells falling day and night. Counting the days until they have to go over the trench just to be strafed by machine gun fire. Or to be blown to pieces by shells. What honor can one gain From that? We are literally gassing each other like pests. And all of this for what again?
-
-The fatalities of war is definitely a dark topic, but one that really puts things into perspective and illustrates some of the extremes of the human condition.
+Phenomenal writing and such vivid and macabre imagery of a gas attack. Aside from the beautiful and hard-hitting prose, I am fascinated by the juxtaposition of industrialized warfare in the 20th centry vs. old romantic ideals of patriotism and dying for one's country. Hence the title of the poem: "Dulce et decorum est pro patria mori" which is Latin for: "it is sweet and fitting to die for one's country."
 
 A few interesting facts I've learned from Dan Carlin's Podcast:
 

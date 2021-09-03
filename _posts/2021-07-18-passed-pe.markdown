@@ -14,7 +14,7 @@ When I made this website back in January, I told myself I would keep updating th
 
 First of all, I'm quite happy to have passed the national Professional Engineering (PE) exam this past April. It's offered twice a year by NCEES and it is the first step to becoming a license engineer in the US. In other states, I would have already become a licensed engineer. But California is more stringent and I have to go through two more 3-hour exams; one related to seismic design, and another related to surveying.
 
-This is probably one of the more grueling exams I've ever been through. It's not hard, just extremely very long. The whole exam is split into two portions, each lasting 4 hours for a total of 8 hours. You are essentially grinding through questions from 8 AM to 6 PM. Near the end of the exam, I was so over it both mentally and physically... Can't wait for the 16 hour SE exam...
+This is probably one of the more grueling exams I've ever been through. It's not hard, just extremely very long. The whole exam is split into two portions, each lasting 4 hours for a total of 8 hours. You are essentially grinding through questions from 8 AM to 6 PM. Near the end of the exam, I was so over it both mentally and physically.
 
 The first half of the exam is the breadth section, which tests your knowledge on literally everything you learned back in college. I use the word "literally" with the correct dictionary definition. The breadth section covers everything from Bernoulli's principle, to open-channel flow, to traffic models, to engineering economics. The scope is every civil engineering related course you have taken in college. Luckily the questions are quite straight forward, and it is open-book...
 
@@ -22,18 +22,18 @@ The second half of the exam is the depth section, where you get tested on a more
 
 My study schedule for the exam was probably less than optimal. I studied for the structural depths section on and off for about 2 weeks. I studied by doing every question in the "5-minute solution" text (which adds up to about 100 questions). The actual questions on the exam were much easier. 
 
-As for the breadth section, it was an absolute disaster. I procrastinated (as expected from yours truly) and left 5 days to study for the entire breadth section of the exam. I kept convincing myself it was going to be easy based on what I've heard from co-workers and friends who took the exam last year. I left 1 day for each topic (hydrology, hydraulics, traffics/curves, economics, geotechnical). And its not even a full day mind you. I was studying after work in the evenings. In the end, I ended up learning new things during the exam from the civil engineering reference book... It was not optimal.
+As for the breadth section, it was an absolute disaster. I procrastinated (as expected from yours truly) and left 5 days to study for the entire breadth section of the exam. I kept convincing myself it was going to be easy based on what I've heard from co-workers and friends who took the exam last year. I left 1 day for each topic (hydrology, hydraulics, traffics/curves, economics, geotechnical). And its not even a full day mind you. I was studying after work in the evenings. In the end, I ended up learning new things during the exam from the reference book... Not optimal.
 
-Oh did I mention I got a puppy right as I was preparing for the exam? So glad I passed...
+Oh did I mention I got a puppy right as I was preparing for the exam?
 
 
 
 ## Meet Rukawa
 ![puppy](/assets/img/blog/rukawa.png)
 
-Meet Rukawa, a fully akc-registered red standard poodle. He is quite the goofball. I'll probably make another post dedicated to him. I just want to say how much I underestimated the mental/physical exertion required to raise a puppy. I was a zombie by the end of first week. 
+Meet Rukawa, a red standard poodle. He is quite the goofball. I'll probably make another post dedicated to him. I just want to say how much I underestimated the mental/physical exertion required to raise a puppy. I was a zombie by the end of first week. 
 
-For those of you wanting to raise a puppy, it's pretty much practice round for raising a kid. Say goodbye to leisure time for the first month. Also good luck getting any sleep. Back in February, Every night I took Rukawa outside for potty at 11pm, woke up at 3am for another round, and then woke up bright and early at 7am to pleasant sound of barking for another round of potty. Since your puppy is likely not potty/crate trained, you will likely have to clean up pee and poop every few hours. The puppy will also whine and bark and you won't have any idea why. 
+For those of you wanting to raise a puppy, it's pretty much practice round for raising a kid. Say goodbye to leisure time for the first month. Also good luck getting any sleep. Back in February, Every night I had to take Rukawa outside for potty at 11pm, wake up at 3am for another round, and then wake up bright and early at 7am to pleasant sound of barking for another round of potty. Since your puppy is likely not potty/crate trained, you will likely have to clean up pee and poop every few hours. The puppy will also whine and bark and you won't have any idea why. 
 
 In exchange, you receive unconditional love from the cutest, most precious thing in the world. I'll finish this post with a quote from Dale Carnegie's self-help book "How to Win Friends and Influence People":
 

@@ -578,7 +578,7 @@ PART 5: BODY STYLES - About Page
 }
 .aboutpage .aboutpic {
 	margin-top: 80px;
-	width: 600px;
+	width: 450px;
 	border-radius: 5%;
 }
 
@@ -791,9 +791,9 @@ PART 8: BLOG POSTS
 	color: black;
 }
 .blog-post blockquote {
-	font-style: italic;
 	border-left: rgb(67, 91, 226) 2px solid;
 	padding-left: 15px;
+	color: rgb(67, 91, 226);
 }
 table {
 	border: 1px solid #ddd;
