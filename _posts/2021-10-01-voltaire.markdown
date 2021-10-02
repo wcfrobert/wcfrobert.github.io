@@ -1,0 +1,58 @@
+---
+layout: blog-post
+categories: blog
+title: "Voltaire on The Great Lisbon Earthquake"
+description: "A Critique of Philosophical Optimism"
+date: 2021-10-01
+image: assets/img/blog/earthquake.png
+tags: blog
+---
+
+In light of the tragic earthquake in Haiti, a famous poem by Voltaire came to my mind. "Poème sur le désastre de Lisbonne", or "Poem on the Disaster of Lisbon" is about the the great Lisbon earthquake in 1755.
+
+> Unlucky mortals! O deplorable earth!
+
+> All humanity huddles in fear!
+
+> The endless subject of useless pain!
+
+> Come philosophers who cry, "All is well,"
+
+> And contemplate the ruins of this world.
+
+> Behold the debris and ashes of the fallen - 
+
+> These women and children heaped in common ruin,
+
+> These scattered limbs under the broken marble.
+
+> See the hundred thousand whom the earth devours!
+
+> Torn and bloody, they are still breathing,
+
+> Entombed beneath roofs, and they die without
+
+> Relief from the horror of their suffering lives.
+
+> As the dying voices call out, will you dare respond
+
+> To this appalling spectacle of smoldering ashes with:
+
+> "This is the necessary effect of the eternal laws freely chosen by God?"
+
+> Seeing this mass of victims, will you say,
+
+> "God is avenged. Their death is the price of their crimes"?
+
+> What crime, what fault had the young committed,
+
+> Who lie bleeding at their mother's breast?
+
+> DId the fallen Lisbon indulge in more vices
+
+> Than Long or Paris, which live in pleasure?
+
+> Lisbon is no more but they dance in paris.
+
+
+

@@ -12,9 +12,9 @@ Look I know the title is terrible. It is obviously a play on the Mike Posner's s
 
 ## Friedrich Nietzsche
 
-Friedrich Nietzsche was a 19th century German philosopher who needs no introduction. He is likely the most well-known philosopher to the average person other than Plato and Descartes. Most attribute his writing to that of a nihilist. I don't study philosophy, and I don't think I can comment much from my cursory and very superficial reading of some of his work. What I can say though, is that I am a big fan of his idea of self-overcoming, will to power, ubermensch, death of moral objectivity (i.e. death of god). Here are some quotes:
+Friedrich Nietzsche was a 19th century German philosopher who needs no introduction. Most attribute his writing to that of a nihilist. I don't study philosophy so I can't really comment either way. What I can say though, is that I am a big fan of his idea of self-overcoming, will to power, ubermensch, death of moral objectivity (i.e. death of god). Here are some of my favorite Nietzsche quotes:
 
-> "The secret of realizing the greatest fruitfulness and the greatest enjoyment of existence is: to live dangerously! Build your cities on the slopes of Vesuvius! Send your ships out into uncharted seas! Live in conflict with your equals and with yourselves! Be robbers and ravagers as soon as you ca not be rulers and owners, you men of knowledge! The time will soon past when you could be content to live concealed int he woods like timid deer!"
+> "The secret of realizing the greatest fruitfulness and the greatest enjoyment of existence is: to live dangerously! Build your cities on the slopes of Vesuvius! Send your ships out into uncharted seas! Live in conflict with your equals and with yourselves! Be robbers and ravagers as soon as you ca not be rulers and owners, you men of knowledge! The time will soon past when you could be content to live concealed in the woods like timid deer!"
 
 > "To those human beings who are of any concern to me I wish suffering, desolation, sickness, ill-treatment, indignities—I wish that they should not remain unfamiliar with profound self-contempt, the torture of self-mistrust, the wretchedness of the vanquished: I have no pity for them, because I wish them the only thing that can prove today whether one is worth of anything or not—that one endures"
 
@@ -30,7 +30,7 @@ Friedrich Nietzsche was a 19th century German philosopher who needs no introduct
 
 ## Emil Cioran Quotes
 
-Emil Cioran was a 20th century Romanian philosopher and essayist well known for his philosophical pessimism and his work regarding suffering, decay, and nihilism. Look, I know what this looks like... I am not a pessimist, nor am I in a state of deep despair, nor have I read any of Cioran's work seriously. I just like some of Emil Cioran's quote. It's provocative.
+Emil Cioran was a 20th century Romanian philosopher and essayist well known for his philosophical pessimism and his work regarding suffering, decay, and nihilism. I am not a pessimist, nor am I in a state of deep despair, nor have I studied any of Cioran's work at any depth. I just happen to enjoy some of his quotes. It's provocative.
 
 > "It is not worth the bother of killing yourself, since you always kill yourself too late."
 
