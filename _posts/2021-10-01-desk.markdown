@@ -2,13 +2,32 @@
 layout: blog-post
 categories: blog
 title: "Standing Desk Setup"
-description: "I made my own standing desk for about $350"
+description: "I made my own standing desk for about $400"
 date: 2021-10-01
 image: assets/img/blog/desk1.png
 tags: blog
 ---
 
-temp
+![test](/assets/img/blog/desk1.png)
 
+Look at this beautiful desk setup. Although it looks impeccable, it is merely a fabrication just like the rest of my personality. It's usually 100x more cluttered. Anyways, for those who are not aware, standing desks range from cheap to really expensive (costing thousands of dollars!). The manufacturers can go into great technical length of why their desks are so expensive, and you can really fall into a rabbit hole. Ultimately, only 2 factors are of any importance to me:
 
+1. Doesn't wobble
+2. Looks okay
 
+Things like how high the desk stands, or cable management, or memory functions are of minor importance.
+
+## Making My Own Desk
+After some research, it became evident to me that the best and most economical solution would be to make my own standing desk.
+1. TopSky Standing Desk Frame: $250 ([Amazon Link](https://www.amazon.com/gp/product/B08C2LC3H2/ref=ppx_yo_dt_b_asin_title_o08_s00?ie=UTF8&th=1))
+2. Ikea Gerton Table Top: $100. (Discontinued)
+3. Miscellaneous items:
+    1. Varathane polyurethane satin finish
+    2. Sand paper
+    3. Paint brush
+
+The Ikea table top is unfinished and must be treated with the standard poly-sand-poly-sand-poly procedure. I think 3 layers of polyurethane protection is enough. Some prefer to also stain the wood for a dark brown finish. I think I prefer the lighter beech color.
+
+The table top from Ikea is just superb. It is also extremely heavy because it is not made from light particle board but actual lumber! Since Ikea Gerton has since been discontinued, the best option if you were to build your own desk would be kitchen butcher blocks rather than desk tops.
+
+And voila! A fully functional standing desk that I've used standing up maybe twice in the past 4 months...
