@@ -1,10 +1,10 @@
 ---
 layout: blog-post
 categories: engineering
-title: "Local and Global Axes. Why Convention Matters"
-description: "How are local axes of line elements defined in FEM modeling?"
+title: "Local and Global Axes"
+description: "Why convention matters and how local axes are defined in FEM modeling?"
 image: assets/img/blog/localaxis.png
-date: 2021-10-21
+date: 2021-10-20
 tags: analysis
 ---
 
