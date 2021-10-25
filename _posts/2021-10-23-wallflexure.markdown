@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 categories: engineering
-title: "A Superior Approximation of Shear Wall P+M Interaction"
+title: "A Better Approximation of Shear Wall P+M Interaction"
 description: "A simple equation for in-plane flexure strength of walls. Say goodbye to strain compatibility"
 image: assets/img/blog/shearwall.png
 date: 2021-10-22
@@ -118,12 +118,9 @@ $$M_{n} = M_{n1} + M_{n2} $$
 
 And voila, an approximate flexure+axial interaction equation that can be calculated by hand fairly quickly. Here is an implementation of it in python.
 
+Please note that the approximation is limited to symmetrical planar walls without any irregularities.
+
 {% highlight python %}
-
-
-
-
-
 
 def approx_PM(Pu,fy,lw,tw,fpc,lwb,lww,Ag,Aweb,Abe):   
     """
@@ -195,3 +192,32 @@ def approx_PM(Pu,fy,lw,tw,fpc,lwb,lww,Ag,Aweb,Abe):
 
 
 ## How well does it work?
+Here is an animated comparison of nominal interaction curve and depth of neutral axis between the approximate solution vs. strain compatibility analysis. The wall under consideration has typical design parameters:
+* wall length ranges from 60 inch to 360 inch
+* 6 ksi concrete and 60 ksi reinforcement
+* 24 inch thick wall, 2 inch clear cover to reinforcement
+* #6 @ 6" each way each face in web region
+* 24 inch boundary element with (12) #10
+
+| ![](/assets/img/blog/shearwallanimated1.gif) | ![](/assets/img/blog/shearwallanimated2.gif) |
+
+Two things to note:
+* The approximate solution is stupidly accurate for neutral axis depth (c)
+* The approximate interaction curve is also surprisingly accurate except for high compressive strain near the top of the curve
+
+The inaccuracy at high compression demand is reasonable given our assumption of yielded steel. To obtain a better fit near the top of the interaction curve, we may add in an adjustment factor $$\zeta$$ to our equation in step 5. 
+
+$$M_{n1} = f_yA_{sl1}(1+\frac{P_u}{f_yA_{sl1}}) \times 0.5L(1-\zeta\frac{c}{L})$$
+
+$$\zeta = 0.8 \;to\; 0.9$$
+
+Here is a typical shear wall with $$\zeta$$ factor set to 0.83. Look how accurate you can get
+<img src="/assets/img/blog/shearwall5.png" style="width:70%;"/>
+
+Admittedly this adjustment isn't required as the solution is accurate enough and conservative. You can adjust $$\zeta$$ to your liking, but I find values between 0.8 to 0.9 to work well for 6 ksi concrete and 60 ksi steel. Please note that $$f'_c$$ and $$f_y$$ seems to dramatically affect how well the fit is. Try for yourself. Perhaps it would be better to leave it at 1.0.
+
+I made an interactive Jupyter notebook where you can use sliders to vary different design parameters. Take a look!
+
+<img src="/assets/img/blog/shearwallanimated3.gif" style="width:70%;"/>
+
+<a href="/assets/ShearWallFlexureComparison.ipynb"> Download Notebook Here</a>
