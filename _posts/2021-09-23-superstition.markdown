@@ -5,7 +5,7 @@ title: "Superstition"
 description: "Enlightenment is man's emergence from his self-incurred immaturity"
 date: 2021-09-23
 image: assets/img/blog/superstition.png
-tags: blog
+tags: thoughts
 ---
 
 I have always been a big fan of history and philosophy podcasts. One of my all-time favorite is a podcast called [Philosophize This!](https://www.philosophizethis.org/). Anyways, I recently came across an episode on superstition, which is completely world-changing for me. I had always considered the days of snake-oil salesman and weird superstitions to be bygones. But as it turns out, we are not as immune to superstition as we'd like to think. (e.g. CBD, essential oil, all sorts of unique diets)

@@ -5,7 +5,7 @@ title: "A Lone Night in California Reading Nietzsche and Emil Cioran Quotes"
 description: "Keep Going"
 date: 2021-09-23
 image: assets/img/blog/mikeposner.png
-tags: blog
+tags: thoughts
 ---
 
 Look I know the title is terrible. It is obviously a play on the Mike Posner's song "A Lonely Night in Mexico Thinking About Big Sean and Avicii". Great song by the way, it's the 16th and final track on his Album "Keep Going".

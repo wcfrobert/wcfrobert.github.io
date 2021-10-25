@@ -5,7 +5,7 @@ title: "Dulce et Decorum Est..."
 description: "One of my favorite war time poem of all time by Wilfred Owen"
 date: 2021-08-08
 image: assets/img/blog/dulce.jpg
-tags: blog
+tags: thoughts
 ---
 
 

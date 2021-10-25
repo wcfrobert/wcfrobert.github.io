@@ -5,7 +5,7 @@ title: "Voltaire on The Great Lisbon Earthquake"
 description: "A Critique of Philosophical Optimism"
 date: 2021-10-01
 image: assets/img/blog/earthquake.png
-tags: blog
+tags: thoughts
 ---
 
 In light of the recent tragic earthquake in Haiti, a poem came to mind: "Poème sur le désastre de Lisbonne", or "Poem on the Disaster of Lisbon" written by none other than Voltaire. As the name suggests, it is about the the great Lisbon earthquake which occurred in 1755. More importantly, It is a harsh critique of an idea espoused by many thinker of the time, most notably Gottfried Leibniz and his idea of "The best of all possible worlds"; which can be concisely summarized in 5 logical steps:
