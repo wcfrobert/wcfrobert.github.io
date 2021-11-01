@@ -12,7 +12,7 @@ tags: concrete
 
 Strain compatibility analysis has always been a staple of concrete design. Indeed, it often seems like the only thing grounded in theory. Everything else seems to be empirically derived and based on regression of experimental data. I've always been a fan of strain compatibility because it is just so easy and clean to understand. You assume a linear strain profile, apply Hooke's law, and iterate depth of neutral axis until internal equilibrium is satisfied:
 
-$$C+\sum T - P_{ext}= 0  \;,\; \sum M_{centroid}=0$$
+$$P_{n}=C + \sum T  \;,\; M_n = Cy + \sum T_i(0.5h-d_i)=0$$
 
 When it comes to column or wall design. The knee-jerk reaction for many is to open up some spreadsheet, or software like spColumn to perform strain compatibility analysis to ensure the demand (P,M) falls within the interaction surface.
 

@@ -8,7 +8,7 @@ date: 2021-03-25
 tags: programming
 ---
 
-In this notebook, I've gathered a whole bunch of code snippets and syntax examples that helps me along in my side projects. I thought of putting a collection together like this after searching the same syntactical and how-to question over and over and going to the same StackOverflow page.
+In this notebook, I've gathered a whole bunch of code snippets that helps me along in my side projects.
 
 - [1.0 Getting Started](#10-getting-started)
   * [Fundamentals](#fundamentals)
@@ -61,8 +61,8 @@ In this notebook, I've gathered a whole bunch of code snippets and syntax exampl
 <hr>
 
 ## 1.0 Getting Started
-### Fundamentals
-* The most important skill to learn in programming is how to break down (decompose) a large problem into smaller pieces. One common approach is to tackle the problem "top-down". Outline the solution in abstract form and divide tasks into functions. You can call the function *that you are going to write* thus putting structure to your thought process
+### Programming Tips
+* The most important skill in programming is breaking down (decompose) a large problem into smaller pieces. One common approach is to tackle the problem "top-down". Outline the solution in abstract form and divide tasks into functions. You can call the function *that you are going to write* thus putting structure to your thought process
 
 ```python
 def main():
@@ -70,13 +70,11 @@ def main():
     b=task2()
     task3()
 ```
-
-* When debugging, forget temporarily why you are writing the program. Read the code without any bias of what *you* want it to do
 * Always put concise comment. You will likely spend more time reading code than writing them
 
 
 ### Installing Python
-To get started, we need to install python. There are different ways of doing this but by far the most expedient way to install python along with hundreds of its useful packages is to install [Anaconda](https://www.anaconda.com/). Otherwise you would have to install and manage package along with its dependencies yourself which no one wants to do.
+To get started, we need to install python. There are different ways of doing this but by far the most expedient way to install python along with hundreds of its useful packages is to install [Anaconda](https://www.anaconda.com/). Otherwise you would have to install and manage package along with its dependencies yourself.
 
 There are three ways to work with Python:
 
@@ -103,7 +101,7 @@ if len(sys.argv) < 3:
 ```
 
 * Option 2: Write, debug, and run code from a Integrated Developer Environment (IDE). (Pycharm, Spyder, VSCode, etc)
-    * Spyder is most similar to Matlab's "code as you go" style with *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
+    * Spyder along with its Ipython console is most similar to Matlab's *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
 * Option 3: Work in notebooks like [Jupyter Notebook](https://jupyter.org/), or Google Colab. This is most popular with Data Scientist because you can annotate and provide visualizations as you code (as if you are writing in a notebook)
 
 
@@ -266,12 +264,12 @@ from mymodule import *
 <hr>
 
 ## 3.0 Containers
-Working with containers is perhaps the most important skill to have at least for engineers and scientist. There are four main types of containers:
+Working with containers is probably the most important skill to have. There are four main types of containers:
 
 1. List - Ordered and mutable (can be modified). Lists are used when you want to easily append or index
 2. Tuples - Ordered list can is immutable (cannot be modified). Cannot assign any value to a tuple index
 3. Sets - Lists with only unique elements. Use when we care about existence but not duplicity. It is also useful for finding intersection/union of two sets
-4. Dictionaries - Conventionally referred to as a map. It is a key-value pair. Order is not guaranteed and you should NEVER try to sort or index a dictionary. If you are, there is probably a better way to approach the problem
+4. Dictionaries - Conventionally referred to as a map. It is a key-value pair. Order is not guaranteed and you should NEVER try to sort or index a dictionary. If you are, there is probably a better way to approach the problem.
 
 Strings can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
