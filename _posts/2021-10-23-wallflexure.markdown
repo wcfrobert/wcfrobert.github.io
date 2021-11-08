@@ -2,7 +2,7 @@
 layout: blog-post
 categories: engineering
 title: "A Better Approximation of Shear Wall P+M Interaction"
-description: "A simple equation for in-plane flexure strength of walls. Say goodbye to strain compatibility"
+description: "A simple equation for in-plane flexure strength of walls"
 image: assets/img/blog/shearwall.png
 date: 2021-10-22
 tags: concrete
