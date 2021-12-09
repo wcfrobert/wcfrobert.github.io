@@ -32,6 +32,8 @@ tags: concrete primer
   * [3.6 Tension Lap Splice](#36-tension-lap-splice)
   * [3.7 Compression Development Length](#37-compression-development-length)
 
+
+<div style="page-break-after: always;"></div>
 <hr>
 # 1.0 The Basics
 <hr>
@@ -139,7 +141,7 @@ Higher resistance factor corresponds to higher ductility. Excessive deflection a
 Spiral ties confine the section better and thus we are able to get a higher resistance factor for compression-controlled to transition sections.
 
 
-
+<div style="page-break-after: always;"></div>
 <hr>
 # 2.0 Section Strength
 <hr>
@@ -219,6 +221,9 @@ Couple of notes on the state of practice for concrete design:
 * For multiple layers of tension bars, "jd" is calculated with respect to centroid of those bars. However, $$\phi$$ factor is still based on the outermost bar.
 
 
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 ## 2.3 One-Way Shear Capacity
 There were some drastic change to the shear capacity equation in ACI 318-19 compared to ACI 318-14. The equation now considers a "size effect" as well as the effect longitudinal reinforcement ratio has on shear capacity. No longer can we use the simple $$2\sqrt{f'_c}$$ unless a minimum amount of transverse ties are provided.
@@ -228,7 +233,6 @@ There were some drastic change to the shear capacity equation in ACI 318-19 comp
 22.5.1.1 - Shear capacity of a section comes from concrete and transverse ties.
 
 $$V_n = V_c + V_s \tag {20}$$
-
 
 
 22.5.5.1 - Shear capacity contribution from concrete
@@ -288,7 +292,7 @@ $$\frac{v_{ux}}{\phi v_{nx}} + \frac{v_{uy}}{\phi v_{ny}} \leq 1.5 \tag {28}$$
 
 
 
-
+<div style="page-break-after: always;"></div>
 <hr>
 ## 2.4 Punching Shear Capacity
 
@@ -409,6 +413,7 @@ $$v_c = 2 \lambda_s \lambda \sqrt{f'_c} \tag {41}$$
 Finally, similar to one-way shear, there are some material property requirements. f'c is limited to 100 ksi per 22.6.3.1, fyt is limited to 60 ksi per 22.6.3.2. Material upper bound strength intended to prevent excessive cracking. Also because of lack of test data.
 
 
+<div style="page-break-after: always;"></div>
 <hr>
 ## 2.5 Shear Friction
 
@@ -458,7 +463,7 @@ R22.9.4.6 - Moment acting on the slip surface is often ignored because net axial
 $$V_{vf} = (\mu sin \alpha + cos \alpha) A_{vf} f_y + N_c \tag {48} $$
 
 
-
+<div style="page-break-after: always;"></div>
 <hr>
 ## 2.6 Torsion
 
@@ -551,7 +556,7 @@ $$A_{s,flexure} = \frac{Mu}{\phi f_y jd} \tag {60}$$
 if $$A_{s,flexure} + A_l/4 < A_{s,provided}$$, then we are okay. Otherwise increase longitudinal steel.
 
 
-
+<div style="page-break-after: always;"></div>
 <hr>
 ## 2.7 Bearing
 
@@ -574,6 +579,9 @@ $$\gamma =  min(2,\sqrt{A_2 / A_1}) \tag {62}$$
 *Figure 9: Bearing Area Definition*
 
 
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 # 3.0 Reinforcement Detailing
 <hr>
@@ -670,6 +678,8 @@ $$
 <img src="/assets/img/blog/aciprimer18.png" style="width:55%;"/>
 *Figure 12: Compression Development Length (ldc) Factors*
 
+
+<div style="page-break-after: always;"></div>
 <hr>
 ## Development Length Design Table
 
@@ -685,7 +695,7 @@ Here are some useful design charts assuming some of the most common design prope
 Multiply the charted value by the following modification factors if appropriate. However, Ld must not be less than 12" and Ldt/Ldh must not be less than 6".
 * multiply ld, ldh, and ldt by 1.33 if using light-weight concrete
 * multiply ld by 1.53 for GR 80 bars
-* multiply ld by 0.77 if top bar with more than 12" of concrete placed below
+* multiply ld by 1.33 if top bar with more than 12" of concrete placed below
 * multiply ldt and ldh by 1.6 is spacing exceeds 6db
 * multiply ldt and ldh by 1.25 if side cover exceeds 6db
 
