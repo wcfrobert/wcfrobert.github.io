@@ -10,13 +10,11 @@ tags: thoughts
 
 ## Julius Caesar
 
-Julius Caesar, while serving his quaestorship in Hispania (modern day Spain), was said to have encountered a statue of Alexander the Great. Standing before the statue, he suddenly wept...
+Julius Caesar, while serving his quaestorship in Hispania (modern day Spain), was said to have encountered a statue of Alexander the Great. Standing before the statue, he wept...
 
 > "Alexander had conquered the known world before the age of 33. What have I done with my life?"
 
-Of course, this was before he would go on to achieve victory against the Gauls in the Gallic wars, before he would go on to declare civil war by crossing the Rubicon, and before he would single handedly change the fate of the Roman Republic.
-
-Stories like these are so delightful. Not only do they add a human element to historical great figures that can otherwise seem mythological, they also add a layer of drama that give history so much color and emotion.
+Of course, this was before he would go on to achieve victories in the Gallic wars, before he would go on to declare civil war by crossing the Rubicon, and before he would single handedly change the fate of the Roman Republic. Stories like these are so delightful. Not only do they add a human element to historical great figures that can otherwise seem mythological, they also add a layer of drama that give history so much color and emotion.
 
 Caesars' profound self-contempt, and ambition to strive for more is perhaps more inspiring and relatable than Alexander. Alexander was handed the most powerful military at the age 20 when his father, king Philip II, was assassinated. He was born into royalty and was tutored by Aristotle. Although Alexander was a formidable individual by all accounts, he was in some ways destined for greatness. By comparison, Caesar went from essentially exiled at age of 16, to slowly climbing the Roman political system, to ultimately becoming the most powerful figure in the Roman Republic.
 
@@ -24,7 +22,7 @@ Caesars' profound self-contempt, and ambition to strive for more is perhaps more
 
 Leonardo Da Vinci was also no stranger to inner turmoil. Although he rarely divulged explicitly on his own emotions in his notebook, we occasionally catch a glimpse of gloom through his expressions and artistic sketches.
 
-In 1480, at the age of 28, Leonardo had already shown signs of brilliance. It was said that while working as a pupil under Andrea del Verrocchio on the painting "The Baptism of Christ", his genius - from his understanding of color, lighting, skin tones, movement, to the subtle and scientifically accurate water ripples -  so far outclassed that of Verrocchio that he allegedly quit painting forever. The veracity of this story is debated but what's known for certain is that Verrocchio did suddenly stop outputting paintings afterwards.
+In 1480, at the age of 28, Leonardo had already shown signs of brilliance. It was said that while working as a pupil under Andrea del Verrocchio on the painting "The Baptism of Christ", his genius - from his understanding of color, lighting, skin tones, movement, to the subtle and scientifically accurate water ripples -  so far outclassed that of Verrocchio that Verrocchio allegedly quit painting forever. The veracity of this story is debated but what's known for certain is that Verrocchio did suddenly stop outputting paintings afterwards.
 
 <img src="/assets/img/blog/davinci.png" style="width:50%;"/>
 *Figure 1: The Baptism of Christ by Verrocchio and Leonardo*
