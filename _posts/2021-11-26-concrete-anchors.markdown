@@ -12,26 +12,6 @@ tags: concrete primer
 *Please note that these notes are for my own use. It is not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
-- [1.0 Fundamentals](#10-fundamentals)
-- [2.0 ACI 318-19 Design Criteria](#20-aci-318-19-design-criteria)
-- [3.0 Tensile Strength](#30-tensile-strength)
-  * [3.1 Failure Mode 1: Steel Failure](#31-failure-mode-1--steel-failure)
-  * [3.2 Failure Mode 2: Anchor Pullout](#32-failure-mode-2--anchor-pullout)
-  * [3.3 Failure Mode 3: Concrete Breakout](#33-failure-mode-3--concrete-breakout)
-  * [3.4 Failure Mode 4: Concrete Splitting](#34-failure-mode-4--concrete-splitting)
-  * [3.5 Failure Mode 5: Side Face Blowout](#35-failure-mode-5--side-face-blowout)
-  * [3.6 Failure Mode 6: Epoxy Anchor Bond Failure](#36-failure-mode-6--epoxy-anchor-bond-failure)
-  * [3.7 Failure Mode 7: Breakout Anchor Reinforcement](#37-failure-mode-7--breakout-anchor-reinforcement)
-- [4.0 Shear Strength](#40-shear-strength)
-  * [4.1 Failure Mode 1: Steel Failure](#41-failure-mode-1--steel-failure)
-  * [4.2 Failure Mode 2: Anchor Pryout](#42-failure-mode-2--anchor-pryout)
-  * [4.3 Failure Mode 3: Shear Edge Breakout](#43-failure-mode-3--shear-edge-breakout)
-  * [4.4 Failure Mode 4: Shear with Lever Arm (ETAG 001 Annex C)](#44-failure-mode-4--shear-with-lever-arm--etag-001-annex-c-)
-- [5.0 Shear Lugs](#50-shear-lugs)
-  * [5.1 General](#51-general)
-  * [5.2 Bearing Strength](#52-bearing-strength)
-  * [5.3 Breakout Capacity](#53-breakout-capacity)
-
 
 
 
@@ -188,7 +168,7 @@ $$E_h = \Omega_o E \tag 4$$
 
 
 
-## 3.1 Failure Mode 1: Steel Failure
+## 3.1 Failure Mode - 1 Steel Failure
 
 17.6.1.1 - Nominal steel strength of anchor in tension is calculated as follows:
 
@@ -217,7 +197,7 @@ Alternatively, follow the AISC 360 provisions and use gross area along with a re
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.2 Failure Mode 2: Anchor Pullout
+## 3.2 Failure Mode 2 - Anchor Pullout
 
 Pullout is calculated as the force at the onset of local concrete crushing at the bearing end of the anchor head. This is thought to be the beginning of a pullout failure because of the rapid decrease in stiffness afterwards. In other words, pullout capacity is purely a function of end bearing area, and is not related to embedment length (friction neglected).
 
@@ -250,7 +230,7 @@ $$0.75 \phi N_{pn} \tag 9$$
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.3 Failure Mode 3: Concrete Breakout
+## 3.3 Failure Mode 3 - Concrete Breakout
 
 <img src="/assets/img/blog/anchorbreakout.png" style="width:45%;"/>
 *Figure 3: Concrete Tension Breakout Failure Cone*
@@ -373,7 +353,7 @@ $$0.75 \phi N_{cb} \tag {22}$$
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.4 Failure Mode 4: Concrete Splitting
+## 3.4 Failure Mode 4 - Concrete Splitting
 
 There is no capacity to calculate for concrete splitting failure. Instead, ACI 318 forces specific detailing requirements to preclude the possibility of splitting failure. Also most manufacturer ESR report will have these information. Here are some of the most important ones:
 
@@ -394,7 +374,7 @@ There is no capacity to calculate for concrete splitting failure. Instead, ACI 3
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.5 Failure Mode 5: Side Face Blowout
+## 3.5 Failure Mode 5 - Side Face Blowout
 
 This failure mode is only applicable for anchors near an edge.
 
@@ -432,7 +412,7 @@ $$0.75 \phi N_{sb} \tag {26}$$
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.6 Failure Mode 6: Epoxy Anchor Bond Failure
+## 3.6 Failure Mode 6 - Epoxy Anchor Bond Failure
 
 This failure mode is only applicable for adhesive anchors.
 
@@ -529,7 +509,7 @@ As you can probably tell already, adhesive anchors are terrible under sustained 
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 3.7 Failure Mode 7: Breakout Anchor Reinforcement
+## 3.7 Failure Mode 7 - Breakout Anchor Reinforcement
 
 <img src="/assets/img/blog/anchorsupp.png" style="width:45%;"/>
 *Figure 7: Anchor Reinforcement in Blue, Supplementary Reinforcement in Green*
@@ -573,7 +553,7 @@ There are stringent detailing requirements in order to take advantage of anchor 
 *Figure 9: Anchor Shear Failure Modes*
 
 
-## 4.1 Failure Mode 1: Steel Failure
+## 4.1 Failure Mode 1 - Steel Failure
 
 17.7.1.2b - For cast-in headed bolts and anchors:
 
@@ -602,7 +582,7 @@ The above specification is less conservative than the European equivalent ETAG A
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 4.2 Failure Mode 2: Anchor Pryout
+## 4.2 Failure Mode 2 - Anchor Pryout
 
 17.7.3 - Concrete pry out strength is simply calculated as a multiple of tension breakout strength
 
@@ -624,7 +604,7 @@ Where:
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 4.3 Failure Mode 3: Shear Edge Breakout
+## 4.3 Failure Mode 3 - Shear Edge Breakout
 
 <img src="/assets/img/blog/anchorbreakoutv.png" style="width:45%;"/>
 *Figure 10: Concrete Shear Breakout Failure Cone*
@@ -745,7 +725,7 @@ The actual breakout area must be adjusted depending on the perpendicular edge or
 
 <div style="page-break-after: always;"></div>
 <hr>
-## 4.4 Failure Mode 4: Shear with Lever Arm (ETAG 001 Annex C)
+## 4.4 Failure Mode 4 - Shear with Lever Arm (ETAG 001 Annex C)
 
 ACI 318 is silent about shear attachment with lever arm, commonly seen in cladding attachments. For more discussion on this subject, refer to the textbook "Anchorage in Concrete Construction" by Eligehausen, Malle, and Silva (2006). The research findings therein are codified in the European Organization for Technical Approval (ETAG 001 Annex C)
 
