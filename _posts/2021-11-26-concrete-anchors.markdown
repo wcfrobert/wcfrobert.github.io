@@ -21,13 +21,16 @@ tags: concrete primer
   * [3.4 Failure Mode 4: Concrete Splitting](#34-failure-mode-4--concrete-splitting)
   * [3.5 Failure Mode 5: Side Face Blowout](#35-failure-mode-5--side-face-blowout)
   * [3.6 Failure Mode 6: Epoxy Anchor Bond Failure](#36-failure-mode-6--epoxy-anchor-bond-failure)
-  * [3.7 Failure Mode 7: Anchor Breakout Reinforcement](#37-failure-mode-7--supplemental-breakout-reinforcement)
+  * [3.7 Failure Mode 7: Breakout Anchor Reinforcement](#37-failure-mode-7--breakout-anchor-reinforcement)
 - [4.0 Shear Strength](#40-shear-strength)
   * [4.1 Failure Mode 1: Steel Failure](#41-failure-mode-1--steel-failure)
   * [4.2 Failure Mode 2: Anchor Pryout](#42-failure-mode-2--anchor-pryout)
   * [4.3 Failure Mode 3: Shear Edge Breakout](#43-failure-mode-3--shear-edge-breakout)
-  * [4.4 Failure Mode 4: Reduced Steel Strength Due to Lever Arm](#44-failure-mode-4--reduced-steel-strength-due-to-lever-arm)
+  * [4.4 Failure Mode 4: Shear with Lever Arm (ETAG 001 Annex C)](#44-failure-mode-4--shear-with-lever-arm--etag-001-annex-c-)
 - [5.0 Shear Lugs](#50-shear-lugs)
+  * [5.1 General](#51-general)
+  * [5.2 Bearing Strength](#52-bearing-strength)
+  * [5.3 Breakout Capacity](#53-breakout-capacity)
 
 
 
