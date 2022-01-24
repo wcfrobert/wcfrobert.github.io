@@ -21,7 +21,7 @@ tags: concrete primer
   * [3.4 Failure Mode 4: Concrete Splitting](#34-failure-mode-4--concrete-splitting)
   * [3.5 Failure Mode 5: Side Face Blowout](#35-failure-mode-5--side-face-blowout)
   * [3.6 Failure Mode 6: Epoxy Anchor Bond Failure](#36-failure-mode-6--epoxy-anchor-bond-failure)
-  * [3.7 Failure Mode 7: Supplemental Breakout Reinforcement](#37-failure-mode-7--supplemental-breakout-reinforcement)
+  * [3.7 Failure Mode 7: Anchor Breakout Reinforcement](#37-failure-mode-7--supplemental-breakout-reinforcement)
 - [4.0 Shear Strength](#40-shear-strength)
   * [4.1 Failure Mode 1: Steel Failure](#41-failure-mode-1--steel-failure)
   * [4.2 Failure Mode 2: Anchor Pryout](#42-failure-mode-2--anchor-pryout)
@@ -130,13 +130,13 @@ Factors:
   * $$\phi = 0.60$$: Brittle steel
 * Tension Breakout, Bond, Side-Face Blow Out
   * $$\phi = 0.70$$: for cast-in anchors
-  * $$\phi = 0.75$$: for cast-in anchors w/ supplemental reinforcement
+  * $$\phi = 0.75$$: for cast-in anchors w/ anchor reinforcement
   * $$\phi = 0.65$$: for post-installed anchors (Category 1*). No supp. reinf.
   * $$\phi = 0.55$$: for post-installed anchors (Category 2*). No supp. reinf.
   * $$\phi = 0.45$$: for post-installed anchors (Category 3*). No supp. reinf.
   * Increase factor for post-installed anchor by 0.1 if supp. reinf. is present
 * Shear Breakout
-  * $$\phi = 0.75$$: shear breakout w/ supplemental reinforcement
+  * $$\phi = 0.75$$: shear breakout w/ anchor reinforcement
   * $$\phi = 0.70$$: all other cases
 * Anchor Tension Pullout
   * $$\phi = 0.70$$: for cast-in anchors
@@ -145,6 +145,8 @@ Factors:
   * $$\phi = 0.45$$: for post-installed anchors (Category 3*)
 * Shear Pryout
   * $$\phi = 0.7$$: All cases
+* Shear Lugs
+  * $$\phi = 0.65$$: Bearing and breakout
 
 *Note that anchor categories are defined in ACI 355.2 or ACI 355.4. The anchor manufacturer usually provides the appropriate category of their anchors. Category 1 indicates high reliability. Category 2 indicates medium reliability. Category 3 indicates low reliability.
 
@@ -159,7 +161,7 @@ Factors:
 $$E_h = \Omega_o E \tag 4$$
 
 17.10.5.4 - For seismic applications, concrete should be assumed to be cracked unless demonstrated otherwise. In addition, the following tension capacities must be reduced by 25%.
-* Reduce tension breakout capacity ($$0.75 \phi N_{cb} \mbox{ and }0.75 \phi N_{cbg}$$) - does not apply if breakout resisted by supplemental reinforcement
+* Reduce tension breakout capacity ($$0.75 \phi N_{cb} \mbox{ and }0.75 \phi N_{cbg}$$) - does not apply if breakout resisted by anchor reinforcement
 * Reduce anchor pullout capacity ($$0.75 \phi N_{pn}$$)
 * Reduce tension side-face breakout capacity ($$0.75 \phi N_{sb} \mbox{ and }0.75 \phi N_{sbg}$$)
 * Reduce anchor bond capacity ($$0.75 \phi N_{a} \mbox{ and }0.75 \phi N_{ag}$$)
@@ -181,6 +183,8 @@ $$E_h = \Omega_o E \tag 4$$
 <img src="/assets/img/blog/anchortension.png" style="width:65%;"/>
 *Figure 2: Anchor Tension Failure Modes*
 
+
+
 ## 3.1 Failure Mode 1: Steel Failure
 
 17.6.1.1 - Nominal steel strength of anchor in tension is calculated as follows:
@@ -199,6 +203,13 @@ n<sub>t</sub> is the number of thread per inch. Thread geometry for unified coar
 *Table 1: Net Area of Threaded Section Estimation per UNC*
 
 Alternatively, follow the AISC 360 provisions and use gross area along with a reduced material strength.
+
+
+
+
+
+
+
 
 
 <div style="page-break-after: always;"></div>
@@ -225,6 +236,14 @@ $$N_{pn} = \Psi_{c,p} \times 0.9f'_c e_h d_a \tag 8$$
 17.10.5.4 - For seismic application, reduce anchor capacity in pullout by 25%
 
 $$0.75 \phi N_{pn} \tag 9$$
+
+
+
+
+
+
+
+
 
 <div style="page-break-after: always;"></div>
 <hr>
@@ -311,7 +330,7 @@ For post-installed anchors designed for uncracked condition:
 
 $$\Psi_{cp,N} = \frac{c_{a,min}}{c_{ac}} >= \frac{1.5h_{ef}}{c_{ac}} \tag {19} $$
 
-The critical edge spacing $$c_{ac}$$ is required for post-installed anchors installed to uncracked condition without supplemental reinforcement to prevent splitting cracks.
+The critical edge spacing $$c_{ac}$$ is required for post-installed anchors installed to uncracked condition without anchor reinforcement to prevent splitting cracks.
 
 <img src="/assets/img/blog/anchorcac.png" style="width:45%;"/>
 *Table 2: Anchor Critical Edge Distance for Splitting Failure*
@@ -332,7 +351,7 @@ For anchor group with 1 or 2 edges, this can be represented in equation form as:
 
 $$A_{Nc} =  (1.5h_{ef}+s_1+c_{a1}) \times (1.5h_{ef}+s_2+c_{a2}) \tag {21} $$
 
-However, the projected area must not exceed $$(n A_{nco})$$ where n is the number of anchor in the anchor group.
+However, the projected area must not exceed $$(n A_{nco})$$ where n is the number of anchor in the anchor group. $$c_{a1}$$ is taken as the minimum edge distance.
 
 For anchor group with 3 or more edges, effective embedment depth has to be reduced per 17.6.2.1.2. See figure below for example breakout area calculation. In essence, the breakout cone will extend $$1.5h_{ef}$$ orthogonally beyond the outermost anchor unless interrupted by an edge.
 
@@ -343,6 +362,10 @@ For anchor group with 3 or more edges, effective embedment depth has to be reduc
 17.10.5.4 - For seismic application, reduce tension breakout capacity by 25%
 
 $$0.75 \phi N_{cb} \tag {22}$$
+
+
+
+
 
 
 <div style="page-break-after: always;"></div>
@@ -359,6 +382,10 @@ There is no capacity to calculate for concrete splitting failure. Instead, ACI 3
 
 <img src="/assets/img/blog/anchorsplit.png" style="width:55%;"/>
 *Table 3: Splitting Failure Spacing and Edge Distance Requirements*
+
+
+
+
 
 
 
@@ -392,6 +419,12 @@ Only the anchors close to the edge ($$c_{a1}<0.4h_{ef}$$) should be considered.
 17.10.5.4 - For seismic application, reduce side face blowout capacity by 25%
 
 $$0.75 \phi N_{sb} \tag {26}$$
+
+
+
+
+
+
 
 
 <div style="page-break-after: always;"></div>
@@ -485,6 +518,12 @@ As you can probably tell already, adhesive anchors are terrible under sustained 
 
 
 
+
+
+
+
+
+
 <div style="page-break-after: always;"></div>
 <hr>
 ## 3.7 Failure Mode 7: Breakout Anchor Reinforcement
@@ -508,8 +547,10 @@ There are stringent detailing requirements in order to take advantage of anchor 
 * For shear breakout, anchor reinf. are effective within a width equaling to $$min(0.5c_{a1},0.3c_{a2})$$
 * Available research data is based on #5 bars. Larger bend radii of larger bars may reduce effectiveness. Bar larger than #6 not recommended but not prohibited by code either.
 
-<img src="/assets/img/blog/suppanchor.png" style="width:65%;"/>
+<img src="/assets/img/blog/suppanchor.png" style="width:55%;"/>
 *Figure 8: Effective Region for Anchor Reinforcement*
+
+
 
 
 
@@ -525,20 +566,223 @@ There are stringent detailing requirements in order to take advantage of anchor 
 # 4.0 Shear Strength
 <hr>
 
-<hr>
+<img src="/assets/img/blog/anchorshear.png" style="width:75%;"/>
+*Figure 9: Anchor Shear Failure Modes*
+
+
 ## 4.1 Failure Mode 1: Steel Failure
 
+17.7.1.2b - For cast-in headed bolts and anchors:
+
+$$V_{sa} = 0.6* A_{se,N} f_{uta} \tag {38}$$
+
+17.7.1.2a - Cast-in headed stud anchors can achieve slightly higher capacity due to fixity provided by the welds between plate and anchor:
+
+$$V_{sa} = A_{se,N} f_{uta} \tag {39}$$
+
+17.7.1.2c - For post-installed anchors, look for ESR report from manufacturer
+
+where:
+* $$f_{uta}$$ = ultimate steel rupture strength (Fu) and shall not exceed 1.9Fy or 125 ksi
+* $$A_{se,N}$$ = refer to the tensile strength section for how the reduced cross-sectional area can be calculated
+
+Alternatively, follow the AISC 360 provisions and use gross area along with a reduced material strength.
+
+17.7.1.2.1 - For anchors used with built-up grout pad (as is common in base plate connections for leveling), the calculated steel shear strength must be reduced by 0.8. 
+
+The above specification is less conservative than the European equivalent ETAG Annex C by a factor of 3 to 10! I will go through this topic in more detail in section 4.4: shear with lever arm.
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 ## 4.2 Failure Mode 2: Anchor Pryout
 
+17.7.3 - Concrete pry out strength is simply calculated as a multiple of tension breakout strength
+
+(a) For a single anchor:
+
+$$V_{cp} = k_{cp} N_{cp} \tag {40}$$
+
+(b) For an anchor group:
+
+$$V_{cpg} = k_{cp} N_{cpg} \tag {41}$$
+
+Where:
+* $$k_{cp}$$ = 1.0 for embedment less than 2.5 inches, or 2.0 for embedment larger than or equal to 2.5 inches
+* $$N_{cp},N_{cpg} $$ = tension breakout capacity for cast-in/post-installed or adhesive anchors
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 ## 4.3 Failure Mode 3: Shear Edge Breakout
 
+<img src="/assets/img/blog/anchorbreakoutv.png" style="width:45%;"/>
+*Figure 10: Concrete Shear Breakout Failure Cone*
+
+17.7.2.1a - For a single anchor:
+
+$$V_{cb} = V_b \times ( \frac{A_{Vc}}{A_{Vco}} ) ( \Psi_{ed,V} \Psi_{c,V} \Psi_{h,N})  \tag {42}$$
+
+17.7.2.1b - For an anchor group:
+
+$$V_{cbg} = V_b \times (\frac{A_{Vc}}{A_{Vco}}) (\Psi_{ec,N} \Psi_{ed,N} \Psi_{c,N} \Psi_{h,N}) \tag {43}$$
+
+17.7.2.1c - Note that shear breakout may also occur for shear acting parallel to an edge. The breakout capacity in these situations is determined by assuming load acting perpendicular to the edge, then multiply by 2. Edge factor should be taken as 1 in these situations.
+
+$$V_{cb,parallel} = 2 \times V_{cb} \tag {44}$$
+
+The equations are essentially the same as tension breakout with a few subscript changes. Let's go through them one by one.
+
+
+**17.7.2.2 - Basic single anchor shear breakout capacity**
+
+17.7.2.2.1 - This is the basic concrete breakout strength, of a single anchor, in cracked concrete. We will use this value as a starting point and apply several modification factors for other conditions. The basic capacity shall be the minimum of:
+
+$$V_{b} =  (7 (\frac{l_e}{d_a}) ^{0.2} \sqrt{d_a}) \times \lambda_a \sqrt{f'_c} (c_{a1})^{1.5} \tag {45} $$
+
+$$V_{b} =  (9) \times \lambda_a \sqrt{f'_c} (c_{a1})^{1.5} \tag {46} $$
+
+where:
+* $$l_e$$ is the bearing length and shall be equal to $$h_{ef}$$ for anchor with constant stiffness over the full length and shall not exceed $$8d_a$$
+* $$l_e = 2d_a$$ for torque controlled expansion anchors with a distance sleeve separated from expansion sleeve
+
+17.7.2.2.2 - The constant "7" in equation (45) may be increased to 8 should the following conditions be satisfied:
+* Anchor is continuously welded to a steel attachment plate
+* Anchor spacing is at least 2.5 in
+* Corner reinforcement provided if $$c_{a2} <= 1.5h_{ef}$$
+* attachment plate has thickness greater than $$0.5d_{a}$$ or 3/8 in 
+
+
+**17.7.2.3 - Shear Breakout Eccentricity Factor ($$\Psi_{ec,V}$$)**
+
+This factor is unique to anchor groups. If the resultant shear on an anchor group is concentric, or if we are looking at a single anchor:
+
+$$\Psi_{ec,V} =  1.0 \tag {47} $$
+
+On the other hand, when a moment is applied to an anchor group, the resultant tension is not concentric meaning some anchors are more stressed than others.
+
+$$\Psi_{ec,V} =  \frac{1}{1+\frac{e'_V}{1.5c_{a1}}}  <=1.0 \tag {48} $$
+
+$$e_V$$ is the distance from centroid of anchor loaded in shear to the resultant shear force.
+
+<img src="/assets/img/blog/anchoreccV.png" style="width:25%;"/>
+*Figure 11: Anchor Tension Eccentricity Factors*
+
+
+**17.7.2.4 - Breakout Edge Effect Factor ($$\Psi_{ed,V}$$)**
+
+Unlike edge factor for tension, shear breakout is always near an edge. In this case, we have to adjust for the edge parallel to shear force $$c_{a2}$$ (if any)
+
+If the $$c_{a2} > 1.5c_{a1}$$ then no reduction is necessary. 
+
+$$\Psi_{ed,V} =  1.0 \tag {49} $$
+
+Otherwise:
+
+$$\Psi_{ed,V} =  0.7 + 0.3 \frac{ c_{a2} }{ 1.5c_{a1} } \tag {50} $$
+
+
+**17.7.2.5 - Breakout Cracking Factor ($$\Psi_{c,V}$$)**
+
+Modification factor for cracking in shear breakout depends on rebar condition near the edge:
+
+* $$\Psi_{c,N} = 1.0$$ no supplemental reinforcement parallel to edge (or smaller than #4)
+* $$\Psi_{c,N} = 1.2$$ reinforcement exists parallel to edge and is #4 or larger
+* $$\Psi_{c,N} = 1.4$$ reinforcement exists plus sitrrups enclose the supplemental reinf. with spacing not more than 4"
+
+
+**17.7.2.6 - Member Thickness Factor ($$\Psi_{h,V}$$)**
+
+Breakout capacity in shear is not directly proportional to member thickness ($$h_a$$). This factor accounts for this effect:
+
+$$\Psi_{h,V} = \sqrt{\frac{1.5c_{a1}}{h_a}} \tag {51} $$
+
+
+**17.7.2.1.3 - Full Projected Failure Area of Single Anchor ($$A_{Vco}$$)**
+
+Based on a 35 degree breakout cone, the projected failure area is a rectangle with side length of $$(2)1.5c_{a1}$$ and depth of $$1.5c_{a1}$$
+
+$$A_{Vco} = 4.5c_{a1}^2 \tag {52} $$
+
+17.7.2.1.4 - If anchors are located at varying distance welded to an attachment plate. Then the strength can be calculated based on the furthest anchors neglecting other rows of anchors. Refer to the figure below for a better illustration.
+
+<img src="/assets/img/blog/anchorbreakoutvN.png" style="width:60%;"/>
+*Figure 12: Difference Cases to Check For Anchor Groups*
+
+
+**17.7.2.1.1 - Actual Projected Concrete Failure Area ($$A_{Vc}$$)**
+
+The actual breakout area must be adjusted depending on the perpendicular edge or anchor groups. However, the projected area must not exceed $$(n A_{Vco})$$ where n is the number of anchor in the anchor group. See figure below for some example calculations.
+
+* Essentially the breakout depth will be equal to $$1.5c_{a1}$$ subject to limitation of member thickness
+* The width of breakout extends $$1.5c_{a1}$$ on either end unless interrupted by an edge
+
+<img src="/assets/img/blog/anchorbreakoutvex.png" style="width:60%;"/>
+*Figure 13: Concrete Breakout Area Example*
+
+
+17.7.2.1.2 - If the anchor is located in a narrow section where both this member thickness, and $$c_{a2}$$ are less than $$1.5c_{a1}$$, then $$c_{a1}$$ must be adjusted as the maximum of:
+* Larger edge distance: $$c_{a2} / 1.5$$
+* Member thickness: $$h_a / 1.5$$
+* $$s/3$$ where s is the maximum spacing perpendicular to direction of shear
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
-## 4.4 Failure Mode 4: Shear with Lever Arm
+## 4.4 Failure Mode 4: Shear with Lever Arm (ETAG 001 Annex C)
+
+ACI 318 is silent about shear attachment with lever arm, commonly seen in cladding attachments. For more discussion on this subject, refer to the textbook "Anchorage in Concrete Construction" by Eligehausen, Malle, and Silva (2006). The research findings therein are codified in the European Organization for Technical Approval (ETAG 001 Annex C)
+
+**ETAG 001 Annex C 5.2.3.2: Adjusted Shear Capacity With Lever Arm**
+
+Rather than imposing additional flexural stress onto the anchors, the additional bending induced by the eccentricity is converted to a reduced shear capacity
+
+$$V_S^M = \alpha_M M_s / L_b \tag {53} $$
+
+Where:
+* $$M_s$$ is the moment capacity of one anchor rod and can be calculated as shown. Note the use of ultimate material strength Fu, as well as reduction based on tension DCR:
+
+$$M_s = 1.2F_u (\frac{\pi d^3}{32})  (1 - \frac{T_u}{\phi T_n}) \tag {54} $$
+
+* $$L_b$$ is the stand off eccentricity as shown below to center of fixture plate. It should be adjusted for a spalling distance of $$0.5d_a$$ unless clamped to prevent spalling
+
+<img src="/assets/img/blog/anchorle.png" style="width:50%;"/>
+*Figure 14: Lever Arm Distance*
+
+* $$\alpha_M$$ adjusts the curvature assumption and ranges from 1 for single curvature bending, to 2 for double curvature bending. The assumption of single curvature bending is appropriate if the fixture can rotate freely which is not the case for base plates. Double curvature can also be achieved by clamping both sides of the plate with nuts and washers
+
+<img src="/assets/img/blog/anchorvsm.png" style="width:30%;"/>
+*Figure 15: Single and Double Curvature*
 
 
+**ETAG 001 Annex C treatment of Grout Layer**
 
+ACI does briefly mention the treatment of shear with grout pads. Per 17.7.1.2.1 the calculated steel shear strength must be reduced by 0.8 (regardless of thickness of grout). However, as we will see shortly, this is less conservative than the European equivalent standards by at least a factor of 3! Most jurisdictions in the US would be content going along with the ACI 318 grout pad 0.8 reduction. However, HCAI or DSA may have more stringent requirements. 
+
+The conservatism from the European code primarily comes from the worry that thicker grout pads may spall, leading the front anchors transferring shear primarily via bending. Section 14.4.5.2.2 of the Eligehausen textbook provides the recommendation that lever arm may be neglected only if all the following conditions are satisfied:
+
+* If grout thickness is less than $$d_a/2$$
+* If contact length of anchor to base plate is at least $$0.5 t_p$$
+* Not using oversized holes
+
+For comparison purposes, a 1.5" diameter, GR 55 anchor rod, with 2" grout layer and 2" plate has the following nominal capacity in each code:
+* ACI 318-19: **51 kips**
+* ETAG 001 Annex C: **16 kips** (assuming tension DCR = 0)
+
+If tension DCR is equal to say 40%, then the ACI capacity would remain the same, while the ETAG capacity would be reduced to ~10 kips.
 
 
 
@@ -550,5 +794,77 @@ There are stringent detailing requirements in order to take advantage of anchor 
 # 5.0 Shear Lugs
 <hr>
 
+## 5.1 General
+
+<img src="/assets/img/blog/shearlug.png" style="width:55%;"/>
+*Figure 16: Shear Lugs*
+
+Shear lugs are rectangular plates, or steel shape composed of plate-like elements welded to a base plate. They resist shear via a bearing bearing mechanism.  
+
+17.11.1.1.2 - Minimum of four anchor rods shall be provided when using a shear lug
+
+17.11.1.1.3 - The use of shear lugs enable separation of shear and tension design, provided that the anchors are not welded to the base plate. In other words, the lugs resist shear and the anchor rods resist tension. If anchors are rigidly connected, displacement compatibility implies a certain amount of shear should be resisted by the anchor rods which must be accounted for. The applied shear that each anchor carries is calculated as shown:
+
+* Anchor not welded or rigidly attached to base plate:
+
+$$V_{ua.l} = 0 \tag {55} $$
+
+* Anchor welded to base plate ($$A_{ef,sl}$$ is the bearing area of shear lug:
+
+$$V_{ua.l} = V_u (\frac{2d_a^2}{A_{ef,sl}+n2d_a^2}) \tag {56} $$
 
 
+17.11.1.1.8 - The following dimensional constraints must be satisfied in order to reduce interaction between breakout and anchor in tension.
+
+* anchor embed depth to shear lug depth ($$h_{ef}/h_{sl} >= 2.5$$)
+* anchor embed depth to distance between shear lug and centerline of anchor in tension ($$h_{ef}/c_{sl} >= 2.5$$)
+
+17.11.1.1.9 - Moment due to shear lug shall be added to the overall design moment in the base plate
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+## 5.2 Bearing Strength
+
+17.11.2.1 - Bearing capacity of shear lug can be calculated as:
+
+$$V_{brg,sl} = 1.7 f'_c A_{ef,sl} \Psi_{brg,sl} \tag {57} $$
+
+17.11.2.2 - $$\Psi_{brg,sl}$$ is the bearing factor which accounts for effect of axial load:
+
+* No axial load
+
+$$\Psi_{brg,sl} = 1.0 \tag {58}$$
+
+* Net tension (Pu is -ve)
+
+$$\Psi_{brg,sl} = 1 + \frac{P_u}{nN_{sa}} <= 1.0 \tag {59}$$
+
+* Net compression (Pu is +ve)
+
+$$\Psi_{brg,sl} = 1 + 4 \frac{P_u}{A_{bp}f'_c} <= 2.0 \tag {60}$$
+
+17.11.2.1.1 - $$A_{ef,sl}$$ is the effective bearing area an is concisely illustrated in the figure below
+
+<img src="/assets/img/blog/shearlugAe.png" style="width:50%;"/>
+*Figure 17: Shear Lug Bearing Area*
+
+
+
+
+
+<hr>
+## 5.3 Breakout Capacity
+
+17.11.3.1 - Shear breakout capacity of shear lugs are calculated in the exact same way as section 4.3 of this article. The breakout area is summarized in the figure below
+
+
+<img src="/assets/img/blog/shearlugbreakout.png" style="width:40%;"/>
+*Figure 18: Shear Lug Shear Breakout Area*
+
+Some notes regarding shear lug breakout:
+
+* $$c_{a1}$$ is taken as the distance between edge to face of shear lug
+* The basic breakout strength is taken as the ceiling value: $$V_{b} =  (9) \times \lambda_a \sqrt{f'_c} (c_{a1})^{1.5}$$
+* For shear parallel to edge, follow the same recommendation provided in section 4.3 of this article. Use $$c_{a1}$$ as distance from edge to center of shear lug. Take eccentricity factor as 1.0
