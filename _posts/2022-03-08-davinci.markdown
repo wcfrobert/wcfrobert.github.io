@@ -1,0 +1,12 @@
+---
+layout: blog-post
+categories: blog
+title: "Reading Journal: Leonardo Da Vinci"
+description: "A biography by Walter Isaacson"
+image: assets/img/blog/monalisa.png
+date: 2022-03-08
+tags: books
+---
+
+I've always been a fan of Walter Isaacson's biographies. In fact, my favorite biography - perhaps my favorite book period - is his biography on Steve Jobs which I read back in 2018. I recently picked up another one of his best-selling biography on the renaissance polymath Leonardo Da Vinci. It was quite the page turner. There were so many points in the book where I was left completely gobsmacked by Leonardo's absolute brilliance! Snippets of Leonardo's notebook can be found throughout the book and they were delightful every time.
+

@@ -168,7 +168,7 @@
       <p class="uni-company">Degenkolb Engineers. <span>2021 - present</span></p>
       <div class="details">
         <div class="inner-content">
-          Perform existing builing seismic retrofit per ASCE 41. Design and alaysis for new hospital construction projects in California.
+          Perform existing builing seismic retrofit per ASCE 41. Design and analysis for new hospital construction projects in California.
         </div>
       </div>
 
@@ -271,10 +271,11 @@
       <div class="tabs">
         <div class="tab-header">
           <div class="active-tab">MSApy</div>
-          <div>Automating Analysis in spColumn</div>
-          <div>Structural Framing Automation</div>
+          <div>EZPZ Section Analysis</div>
+          <div>Automating spColumn</div>
+          <div>Framing Automation in Dynamo</div>
           <div>Roof Optimization in Dynamo </div>
-          <div>Parametrically Defined Bus Shelter</div>
+          <div>Parametric Design - Bus Shelter</div>
           <div>Portfolio Website</div>
           <div>Massive Popsicle Bridge</div>
           <div>Massive Gingerbread House</div>
@@ -287,13 +288,26 @@
             <div class="project-title"></div>
             <img src="assets/img/msapy.gif" alt="animated-gif">
             <p>
-              MSApy (Matrix Structural Analysis in Python) is an open-source structural analysis package written in Python. My goal was to create a barebone, easy-to use implementation of the direct stiffness method for analysis of any three-dimensional truss or frame structures. Furthermore, I implemented a powerful visualization engine with Plotly. <a href="https://github.com/wcfrobert/MSApy">source code here.</a>
+              MSApy is an open-source implementation of direct stiffness method in Python. Can be used for analysis of any three-dimensional truss or frame structures. Furthermore, I implemented a nifty visualization engine with Plotly. <a href="https://github.com/wcfrobert/MSApy">source code here.</a>
               <br>
               <br>
-              The ability to perform first-order elastic analysis directly in Python, without relying on third-party APIs, opens the door for parametric design and takes advantage of the abundance of powerful python libraries. 
+              It's pretty cool to be able to perform first-order elastic analysis in Python directly. No more relying on clunking ETABS and SAP APIs. 
               <br>
               <br>
-              The library is written in about 1200 lines of code. Highly scalable and flexible with object-oriented programming design. Some features: Timenshenko frame elements which accounts for shear deformation. support settlement, temperature load, self-weight modifiers, member-end hinges, etc.
+              The package is only about 1200 lines of code with object-oriented programming design. Some features: Timenshenko frame elements which accounts for shear deformation. support settlement, temperature load, self-weight modifiers, member-end hinges, etc.
+            </p>
+          </div>
+
+          
+          <div>
+            <div class="project-title"></div>
+            <img src="assets/img/EZPZ.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              EZPZ is a light weight implementation of fiber section analysis in Python. Concrete sections may be defined using various uniaxial material models such as elastic-perfectly plastic steel fibers and Hognestad concrete fiber models. Once the section has been defined, a moment curvature analysis can be conducted with beautiful visualizations.
+              <br>
+              <br>
+              This was a very fun project and I plan to extend it in the future when I have more time. The object-oriented program design is a joy to use and very intuitive to understand.
+
             </p>
           </div>
 
@@ -305,7 +319,7 @@
               spColumn is a concrete design software commonly used for strain compatibility of concrete columns and walls. One of the best features of the program is that it allows user to create model files in “.cti” format; which are plain text files that can be opened and viewed by any text editor. Furthermore, .cti files can be executed in batches from the command line, allowing for great flexibility in automation. <a href="https://structurepoint.org/spColumn-Online-Manual/spColumn/Appendix/spColumn_Text_Input_CTI_file_format.htm">More info from StructurePoint here.</a>
               <br>
               <br>
-              I created a python script that extract column/wall info from an input spreadsheet to batch generate and analyze spColumn section as well as export results in .png format. With this tool, you can perform hundreds section analysis in mere seconds. Supports rectangular columns, I-shape, C-shape, L-shape, and T-shape walls.
+              I wrote a python script that extract column/wall info from an input spreadsheet to batch generate and analyze spColumn section as well as export results in .png format. With this tool, you can perform hundreds section analysis in mere seconds. Supports rectangular columns, I-shape, C-shape, L-shape, and T-shape walls.
 
             </p>
           </div>
@@ -323,7 +337,7 @@
             <div class="project-title"></div>
             <img src="assets/img/generative.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              Autodesk’s “Generative Design”, formerly known as Project Refinery, is an easy-to-use optimization tool that uses genetic algorithms to quickly generate alternatives based on preset goals, constraints, and inputs to arrive at the best performing option. 
+              Autodesks “Generative Design”, formerly known as Project Refinery, is an easy-to-use optimization tool that uses genetic algorithms to quickly generate alternatives based on preset goals, constraints, and inputs to arrive at the best performing option. 
               <br>
               <br>
               I made a simple model here that explores the question: “Given a fixed boundary or building footprint, with the same loading condition. Is it better to have smaller members spaced closely together, or large sections spaced farther apart”. Other evaluation criteria include roof’s performance (measured by deflection), efficiency (measured by weight), and cost (measured by an assumed material and labor cost per beam).
@@ -334,7 +348,7 @@
             <div class="project-title"></div>
             <img src="assets/img/parametric.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              This is more of an artist endeavor than an engineering one. Above is a fully parametric bus shelter with its geometry mathematically defined and easily customizable. The final product is a gravity defying structure with bold and elegant curves. The spiral column is defined by three circles of varying diameter and the roof is defined by a surface lofted onto three sinusoids.
+              This is more of an artistic endeavor than an engineering one. Above is a fully parametric bus shelter with its geometry mathematically defined and easily customizable. The final product is a gravity defying structure with bold and elegant curves. The spiral column is defined by three circles of varying diameter and the roof is defined by a surface lofted onto three sinusoids.
             </p>
           </div>
 
@@ -343,7 +357,7 @@
             <div class="project-title"></div>
             <img src="assets/img/person-website.gif" alt="animated-gif">
             <p>
-              Design, calligraphy, and front-end web development had always piqued my interest. I learned a bit of web development this past year and decided to build a portfolio website from scratch using vanilla HTML, CSS, JS; no reliance on development framework like Bootstraps nor services like Wordpress, Squarespace, or Wix. The website is responsive and features a minimalist design and subtle yet noticeable animations. All aspects of design, including the font, the color scheme, layout, and the associated backend coding were done by me. The website is hosted on Github. You can find the
+              Design, calligraphy, and front-end web development has always piqued my interest. I learned a bit of web development this past year and decided to build a portfolio website from scratch using vanilla HTML, CSS, JS; no reliance on services like Wordpress, Squarespace, or Wix. The website is responsive and features a minimalist design and subtle yet noticeable animations. All aspects of design, including the font selection, the color scheme, and layout were done by me. The website is hosted on Github. You can find the
               <a href="https://github.com/wcfrobert/wcfrobert.github.io">source code here.</a> 
             </p>
           </div>
