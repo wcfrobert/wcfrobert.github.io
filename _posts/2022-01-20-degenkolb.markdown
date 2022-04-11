@@ -15,6 +15,7 @@ Ever since then, the book has been gathering dust on my shelf. Recently, I decid
 Here are some of the things I learned reading the book:
 
 
+<hr>
 
 ## Henry J. Degenkolb
 
@@ -30,6 +31,8 @@ Here are some of the things I learned reading the book:
 
 
 
+<hr>
+
 ## Back In Those Days
 
 * Back in those days, earthquake engineering research tended to be more theoretically based. In other words, applied (experimental) research was highly looked down upon, and the university preferred to work with mathematically equations, higher abstract theory, etc.
@@ -43,6 +46,7 @@ Here are some of the things I learned reading the book:
 * There used to be a "gentleman's agreement" that US engineers didn't look at Japanese earthquakes, and vice versa. It was though that it would be an insult to them because they were competent enough to examine their own earthquakes. This ended in 1971 when Japanese engineers came to observe the San Fernando earthquake, so that kind of broke the ice
 
 
+<hr>
 
 ## Earthquake Engineering
 
@@ -53,6 +57,7 @@ Here are some of the things I learned reading the book:
 * Henry always believed in ductility. With earthquakes, the stronger you make a structure, the more load it will attract. The key is to design for ductility not strength.
 
 
+<hr>
 
 ## Mentorship
 
@@ -61,7 +66,7 @@ Here are some of the things I learned reading the book:
 * Henry realized that it is nearly impossible to hire good senior engineers. Those that are good tend to stay within their firms. Consequently, it is crucial to hire and develop young engineers from the beginning
 
 
-
+<hr>
 
 ## Engineering Practice & Fees
 
@@ -80,7 +85,7 @@ Here are some of the things I learned reading the book:
 * Henry basically priced his firm out of the average building design because its service is too expensive. The mantra has always been to offer the highest quality structural engineering service, which means being willing to say "no" to owners or architects if it doesn't make sense. For example, some engineers will do whatever the architects want as long as it doesn't violate the words of the code. This is more of a legal exercise than an engineering one. Often a structure can meet the wording of the code but still perform terribly in an earthquake.
 
 
-
+<hr>
 
 ## Opinion
 
