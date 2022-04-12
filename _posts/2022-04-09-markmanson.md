@@ -18,6 +18,18 @@ I think this is one of the most poignant and succinct self-help books I have eve
 
 This was quite a light read as well. That could be a good thing or a bad thing depending on how you look at it. You do not get the usual references to scientific journals or psychology experiments to substantiate claims, and the tone can be overly dogmatic at times. But in exchange, you get an easy read book that is funny and surprisingly insightful. I think the rigor of proving a claim can slow a book down and reduce its punchiness, a problem this book did not have. 
 
+
+
+- [Chapter 1 – Don’t Try](#chapter-1---don-t-try)
+- [Chapter 2 – Happiness is a Problem](#chapter-2---happiness-is-a-problem)
+- [Chapter 3 – You Are Not Special](#chapter-3---you-are-not-special)
+- [Chapter 4 – The Value of Suffering](#chapter-4---the-value-of-suffering)
+- [Chapter 5 – You Are Always Choosing](#chapter-5---you-are-always-choosing)
+- [Chapter 6 – You are Wrong About Everything (But So Am I)](#chapter-6---you-are-wrong-about-everything--but-so-am-i-)
+- [Chapter 7 – Failure is the Way Forward](#chapter-7---failure-is-the-way-forward)
+- [Chapter 8 – The Importance of Saying No](#chapter-8---the-importance-of-saying-no)
+- [Chapter 9 – …... And Then You Die](#chapter-9-----and-then-you-die)
+
 <hr>
 
 
