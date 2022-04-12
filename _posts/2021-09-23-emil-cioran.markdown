@@ -1,18 +1,15 @@
 ---
 layout: blog-post
 categories: blog
-title: "A Lone Night in California Reading Nietzsche and Emil Cioran Quotes"
-description: "Keep Going"
+title: "Some Nietzsche and Emil Cioran Quotes"
+description: "It's provocative... What does that even mean?... It gets the people going"
 date: 2021-09-23
 image: assets/img/blog/mikeposner.png
 tags: thoughts
 ---
 
-Look I know the title is terrible. It is obviously a play on the Mike Posner's song "A Lonely Night in Mexico Thinking About Big Sean and Avicii". Great song by the way, it's the 16th and final track on his Album "Keep Going".
 
 ## Friedrich Nietzsche
-
-Friedrich Nietzsche was a 19th century German philosopher who needs no introduction. Most attribute his writing to that of a nihilist. I don't study philosophy so I can't really comment either way. What I can say though, is that I am a big fan of his idea of self-overcoming, will to power, ubermensch, death of moral objectivity (i.e. death of god). Here are some of my favorite Nietzsche quotes:
 
 > "The secret of realizing the greatest fruitfulness and the greatest enjoyment of existence is: to live dangerously! Build your cities on the slopes of Vesuvius! Send your ships out into uncharted seas! Live in conflict with your equals and with yourselves! Be robbers and ravagers as soon as you ca not be rulers and owners, you men of knowledge! The time will soon past when you could be content to live concealed in the woods like timid deer!"
 
