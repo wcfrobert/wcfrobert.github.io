@@ -1,0 +1,12 @@
+---
+layout: blog-post
+categories: engineering
+title: "EZPZ Section Analysis Development Log"
+description: "A little side-project I've been working on. Fiber analysis made easy in Python"
+image: assets/img/blog/EZPZ.png
+date: 2022-04-12
+tags: concrete analysis
+---
+
+<img src="/assets/img/blog/EZPZ1.gif" style="width:100%;"/>
+*Figure 1: Animated Example Showing Capability of EZPZ*

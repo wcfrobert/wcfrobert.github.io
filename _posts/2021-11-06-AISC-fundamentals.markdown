@@ -193,14 +193,14 @@ Of course, do not forgot the shear component that must be superimposed. The abov
 
 ### 2.1.3 Torsion (T)
 
-<img src="/assets/img/blog/aisc6.png" style="width:30%;"/>
-*Figure 5: Eccentricity In Plane of Faying Surface Causing Torsion*
-
 This is also known as eccentricity in plane of faying surface. When  this occurs, you get a torsion effect that induces additional shear. There are two approaches in this case:
 * Elastic method
 * Instant Center of Rotation Method
 
-The former is easier to apply but extremely conservative with inconsistent safety factor (meaning it is a flawed, albeit conservative model). The latter is more accurate but requires tedious iteration (an alternative is to use design tables provided in the steel construction manual).
+<img src="/assets/img/blog/aisc6.png" style="width:30%;"/>
+*Figure 5: Eccentricity In Plane of Faying Surface Causing Torsion*
+
+The former is easier to apply but extremely conservative with inconsistent safety factor (meaning it is a flawed, albeit conservative model). The latter is more accurate but requires tedious iteration (an alternative is to use design tables provided in the steel construction manual). We will go through each one.
 
 <u>Elastic Method</u>
 
