@@ -8,7 +8,7 @@ image: assets/img/blog/earthquake.png
 tags: thoughts
 ---
 
-In light of the recent tragic earthquake in Haiti, a poem came to mind: "Poème sur le désastre de Lisbonne", or "Poem on the Disaster of Lisbon" written by none other than Voltaire. As the name suggests, it is about the the great Lisbon earthquake which occurred in 1755. More importantly, It is a harsh critique of an idea espoused by many thinker of the time, most notably Gottfried Leibniz and his idea of "The best of all possible worlds"; which can be concisely summarized in 5 logical steps:
+In light of the recent tragic earthquake in Haiti, a poem came to mind: "Poème sur le désastre de Lisbonne", or "Poem on the Disaster of Lisbon" written by Voltaire. As the name suggests, the poem is about the the great Lisbon earthquake which occurred in 1755. More importantly, It is a harsh critique of an idea espoused by many thinker of the time, most notably Gottfried Leibniz and his idea of "The best of all possible worlds"; which can be concisely summarized in 5 logical steps:
 
 1. God has the ability to create infinitely many universes
 2. Only one of these universe exist
@@ -16,7 +16,7 @@ In light of the recent tragic earthquake in Haiti, a poem came to mind: "Poème 
 4. God is good
 5. Therefore, the universe that god chose to exist has to be the best of all possible world
 
-Voltaire rejects this idea because the amount of suffering in the world is often too great to justify such optimism. Thus came to existence this hard-hitting poem which mirrors what happened in Haiti 2010 and this recent earthquake. Rest in peace to those who perished. I hope earthquake construction will continue to advance and be adopted worldwide, and prevent another disaster like this from happening.
+Voltaire rejects this idea because the amount of suffering in the world is often too great to justify such optimism. Thus came to existence this hard-hitting poem which mirrors what happened in Haiti 2010 and this recent earthquake. Rest in peace... I hope to play my part in advancing earthquake construction practices, and prevent another disaster like this from happening.
 
 
 > Unlucky mortals! O deplorable earth!
@@ -57,7 +57,7 @@ Voltaire rejects this idea because the amount of suffering in the world is often
 
 > Who lie bleeding at their mother's breast?
 
-> DId the fallen Lisbon indulge in more vices
+> Did the fallen Lisbon indulge in more vices
 
 > Than London or Paris, which live in pleasure?
 

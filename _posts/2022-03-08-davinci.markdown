@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "Reading Journal: Leonardo Da Vinci"
-description: "A biography by Walter Isaacson"
+description: "A look at the life of the most prominent renaissance man in the 15th Century"
 image: assets/img/blog/monalisa.png
 date: 2022-03-08
 tags: books

@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "Reading Journal: How to Win Friends and Influence People"
-description: "The magnum opus of self-help books"
+description: "Widely considered to be the magnum opus of self-help books"
 image: assets/img/blog/dalecarnegie.png
 date: 2022-04-10
 tags: books
