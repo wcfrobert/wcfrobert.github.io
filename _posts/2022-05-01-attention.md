@@ -10,7 +10,7 @@ tags: books
 
 Tim Wu is a Law professor at the Columbia Law School and an official in the Biden White House in charge of Technology and Competition policies. Many know him for coining the term "net neutrality". Occasionally, he contributes opinion pieces to the New York Times; many of which I am a huge fan of. His articles are always enlightening and concisely written hence why I was encouraged to get this book.
 
-"The Attention Merchant" is about the business model of big tech, in particular the advertising duopoly Facebook and Google, and the methods they employ in harvesting our attentions for advertising revenue. It is a superbly researched work and goes into depth on the history of "attention merchants" and how, despite a constantly evolving medium, their business model has never fundamentally changed: free diversion in exchange for a moment of your time.
+"The Attention Merchant" is about the business model of big tech, in particular the advertising duopoly Facebook and Google, and the methods they employ in harvesting our attentions for advertising revenue. It is a superbly researched work and goes into depth on the history of "attention merchants". As we will discover, the business model of attention capture has had a long history and Google and Facebook are certainly not the first. Despite a constantly evolving medium, the business model of attention capture has never fundamentally changed: free diversion in exchange for a moment of your time.
 
 In this decade of great technological advancement, more and more companies are vying for our precious attention. In this scramble to get into our heads, we are being pulled in every direction without any respite where we can reserve our attention for ourselves. 
 
