@@ -1,0 +1,1251 @@
+---
+layout: blog-post
+categories: engineering
+title: "Primer: ASCE 7-16 Seismic Chapters."
+description: "Collection of personal notes for California state PE Exam"
+image: assets/img/blog/seismic.png
+date: 2022-05-06
+tags: analysis primer
+---
+
+*"Primer" is a personal reference notebook and a side project where I can organize and digest some of the things I've learned on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
+
+*Please note that these notes are for my own use. It is not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
+
+
+
+- [1.0 Basic Earthquake Concepts](#10-basic-earthquake-concepts)
+  * [1.1 Basics](#11-basics)
+  * [1.2 Earthquake Faults](#12-earthquake-faults)
+  * [1.3 Seismic Waves](#13-seismic-waves)
+  * [1.4 Earthquake Strength and Intensity](#14-earthquake-strength-and-intensity)
+  * [1.5 Basics of Structural Dynamics](#15-basics-of-structural-dynamics)
+  * [1.6 Damping](#16-damping)
+  * [1.7 Earthquake Spectra](#17-earthquake-spectra)
+- [2.0 Earthquake Organizations, Codes, and Standards](#20-earthquake-organizations--codes--and-standards)
+  * [2.1 Organizations](#21-organizations)
+  * [2.2 Building Code and Standards](#22-building-code-and-standards)
+- [3.0 General Seismic Provisions](#30-general-seismic-provisions)
+  * [3.1 General Requirements of IBC](#31-general-requirements-of-ibc)
+  * [3.2 Risk Categories](#32-risk-categories)
+  * [3.3 Ground Motion Parameters](#33-ground-motion-parameters)
+  * [3.4 Site Classification](#34-site-classification)
+  * [3.5 The Design Response Spectrum](#35-the-design-response-spectrum)
+  * [3.6 Seismic Design Category (SDC) - ASCE 7-16 11.6](#36-seismic-design-category--sdc----asce-7-16-116)
+- [4.0 Seismic Provisions for Building Structures](#40-seismic-provisions-for-building-structures)
+  * [4.1 Seismic Force Resisting System (SFRS)](#41-seismic-force-resisting-system--sfrs-)
+  * [4.2 Combination of Systems](#42-combination-of-systems)
+  * [4.3 Building Irregularities](#43-building-irregularities)
+  * [4.4 Modeling](#44-modeling)
+  * [4.5 Equivalent Lateral Force Procedure (ELF)](#45-equivalent-lateral-force-procedure--elf-)
+  * [4.6 Story Drifts, Separations, P-delta](#46-story-drifts--separations--p-delta)
+  * [4.7 Simplified Procedure](#47-simplified-procedure)
+- [5.0 Seismic Effect and Load Combinations](#50-seismic-effect-and-load-combinations)
+- [6.0 Seismic Provisions for Nonstructural Components](#60-seismic-provisions-for-nonstructural-components)
+- [7.0 Seismic Provisions for Nonbuilding Structures](#70-seismic-provisions-for-nonbuilding-structures)
+- [8.0 Diaphragm and Walls](#80-diaphragm-and-walls)
+- [9.0 Wood Diaphragm and Shear Wall](#90-wood-diaphragm-and-shear-wall)
+- [10.0 Miscellaneous](#100-miscellaneous)
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 1.0 Basic Earthquake Concepts
+
+<hr>
+
+
+## 1.1 Basics
+
+* Hypocenter (focus) - the place in Earth's crust where energy is released (below ground)
+* Epicenter - the point on Earth's surface directly above hypocenter
+* Focal depth - the depth from surface to hypocenter
+* Epicentral distance - distance between epicenter and the observing station
+* Foreshocks - smaller shocks before the major event. Occurs occasionally
+* Aftershocks - smaller shocks after the major event. Always occurs with diminishing intensity
+* Fault creep - slow continuous movement which is not noticeable. 
+* Surface rupture - when movement of fault breaks through to the surface
+* Dip angle - angle of incline of the fault plane
+
+
+## 1.2 Earthquake Faults
+
+* Fault - fracture in Earth's crust (edge of tectonic plate)
+* Vertical fault movement - dip-slip fault
+  * Normal fault - Hanging wall moves down, exposing slope downwards
+  * Reverse fault - Hanging wall pushes up, creating a cliff
+* Horizontal fault movement - strike-slip fault
+  * Left/Right lateral fault
+* Both vertical and horizontal movement - oblique-slip fault
+* Most faults in California are near vertical breaks with predominantly horizontal movement. San Andreas Fault is right-lateral fault more than 600 miles long
+* Seismic sea wave (Tsunami) - occur due to vertical fault movements. Strike slip faults do not create tsunami
+
+
+## 1.3 Seismic Waves
+
+* P-waves, Primary waves, compression waves - Fastest to arrive. Similar to sound, compresses and expand earth material. Both horizontal and vertical component
+* S-waves, Secondary waves, shear waves - slower than p-wave, responsible for most of the damage near epicenter. Significant horizontal and vertical shaking
+* Surface waves, Love waves, Rayleigh waves - like long rolling ocean waves. They are the slowest and only occurs near the surface. Slow to damp out. Responsible for greatest damage far from epicenter
+* PGA - peak ground acceleration. Maximum value recorded in acceleration record. A spike.
+* EPGA - effective peak ground acceleration. Buildings don't often respond to sudden spikes of PGA. EPGA is theoretically the max ground acceleration to which a building responds to.
+
+$$EPGA = S_{MS} / 2.5$$
+
+## 1.4 Earthquake Strength and Intensity
+
+* Magnitude (M) - Richter Scale - measures earthquake's size. Magnitude (M). Richter scale is logarithmic. Each single digit increase in magnitude, shaking goes up by a factor of 10. Good for quantifying length of fault rupture, duration, and total energy release
+
+* Energy Release (E) - the energy radiated can be approximated with the following equation by Gutenberg and Richter. Each single value increase in magnitude represents 32-fold increase in amount of energy released
+
+$$ log(E) = 11.8 + 1.5 M $$
+
+* Intensity (I) - A measurement based on the amount of observed damage and is subject to human interpretation. Does not depend on measurements! Thus can assign intensity to past earthquakes. Intensity decreases the further you are from epicenter (unless significant soil amplification is present). Modified Mercalli Intensity Scale (MMI) ranges from I to X
+  * I = no damage nor shaking
+  * V = moderate shaking, very light damage
+  * X+ = extreme damage and shaking
+  * Refer to page 8 of SDR workbook for full table
+
+Longer fault rupture -> longer duration -> larger magnitude -> higher intensity
+
+* Attenuation is the decrease in seismic energy received with increasing distance from epicenter. The attenuation effect is due to viscous properties of rocks and soil, scattering, and etc.
+* Shorter period P-waves and S-waves attenuate (energy decreases) much faster
+
+
+## 1.5 Basics of Structural Dynamics
+
+Stiffness of frame members:
+
+$$k_{fix-fix} = \frac{12EI}{L^3}$$
+
+$$k_{fix-pin} = \frac{3EI}{L^3}$$
+
+
+Dynamic Properties:
+
+* Angular frequency (rad/s)
+
+$$\omega = \sqrt{K . g / W}$$
+
+* Natural frequency (Hz)
+
+$$ f = \frac{\omega}{2\pi}$$
+
+* Natural period (s)
+
+$$T = 1/f$$
+
+$$T = 2\pi \sqrt{\frac{W}{K . g}}$$
+
+* Gravity constant 
+
+$$g = 32.2 ft/s^2 ~ or ~ 386.4 in/s^2 $$
+
+
+* The first mode is the fundamental mode and has longest period. Subsequent higher modes have shorter period (approximately divide by 3 each mode up). Behavior of typical buildings dominated by first-mode
+
+## 1.6 Damping
+
+* Damping slowly brings an oscillating system to a stop. The critical damping ratio is the precise amount of damping such that the oscillation stops the quickest.
+* Buildings usually have damping no where near the critical damping (usually 2% to 5% of that)
+
+$$\beta = \frac{B}{B_{critical}}$$
+
+* Period of vibration actually increases with larger damping. however for most building structures, due to small damping:
+
+$$T_d \approx T$$
+
+## 1.7 Earthquake Spectra
+* Obtaining the entire response history of a SDOF system due to a specific ground motion record:
+  * spectral acceleration ($$S_a$$) is the peak acceleration 
+  * spectral velocity ($$S_v$$) is the peak velocity
+  * spectral displacement ($$S_d$$) is the peak displacement
+
+$$S_v = \frac{S_a}{\omega}$$
+
+$$S_d = \frac{S_a}{\omega^2}$$
+
+* For a single ground motion record, if we record the spectral acceleration for varying period of vibration (i.e. T on the x-axis, Sa on the y-axis), we obtain our response spectrum
+* Response spectra is a collection of response spectrum with varying damping ratio ($$\beta$$) and soil type (S)
+  * increasing damping ratio ($$\beta$$) flattens the spectrum curve
+  * soil type (S) affects the shape of spectrum curve. Stiffer soil have peak at shorter period, softer soil have peak into the long period range
+
+<img src="/assets/img/blog/seismic1.png" style="width:90%;"/>
+*Figure 1: Earthquake Spectra*
+
+* Resonance occurs when the structure's natural period is similar to the predominant earthquake period or the soil period. Structures have tendency to yield and as damage accumulates, its period also lengthens
+* Base shear can be calculated using an earthquake spectra (exactly for SDOF, approximate for MDOF)
+
+$$V = S_a \frac{W}{g}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 2.0 Earthquake Organizations, Codes, and Standards
+<hr>
+
+## 2.1 Organizations
+
+* NEHRP - National Earthquake Hazards Reduction Program
+  * Established in 1977 with goal of reducing risk of damage to life and property from earthquakes
+  * Works in close coordination with other agencies like NIST, FEMA, NSF, USGS to develops design and construction practices and guidelines which may be adopted in future building codes
+* ASCE - American Society of Civil Engineers
+  * Oldest national professional engineering society. Seeks to promote the Civil Engineering profession
+  * SEI - Structural Engineering Institute is a sub-division that is more concerned with structural engineering. They lead the effort in development of ASCE 7
+* ICC - International Code Council
+  * Established in 1994 as a non-profit organization
+  * Develops the International Building Code, which is in turn adopted by local state jurisdictions
+* SEAOC - Structural Engineers Association of California
+  * An association of engineers in California. It's mission is to advance the profession, provide continuing education, public outreach, and so forth
+* ATC - Applied Technology Council
+  * Established in 1973 through the efforts of SEOAC
+  * Goal is to develop sate of the art, user-friendly engineering resources
+  * e.g. ATC-7 is guidelines for wood diaphragms, ATC-20 is procedure for post-earthquake evaluation
+
+## 2.2 Building Code and Standards
+
+* FEMA 450-2003: primary resource which is used by ASCE 7-05, IBC 2006 and 2009
+* FEMA P-750-2009: primary resource which is used by ASCE 7-10, IBC 2012 and 2015
+* ASCE 7: Used to determine minimum design loads to be applied on structures
+* IBC: International Building Code. A model building code that provides the minimum regulation for building systems
+  * For single family homes, townhouses less than or equal to 3 stories, these structures are simple and can follow the more prescriptive IRC
+* IRC: International Residential Code. Stand-alone code that has prescriptive provisions for single family dwellings and townhouses.
+* CCR: California Code of Regulations has 28 parts. Title 24 is specifically for building standards and has 12 parts:
+  1. CAC = California Building Standards Administrative Code = administrative regulations
+  2. CBC = California Building Code, based on IBC
+  2. CRC = California Residential Code, based on IRC
+  3. CEC = California Electrical Code
+  4. CMC = California Mechanical Code
+  5. CPC = California Plumbing Code
+  6. California Energy Code for energy conservation
+  7. No longer used
+  8. CHBC = California Historical Building Code
+  9. CFC = California Fire Code
+  10. CEBC = California Existing Building Code
+    * Despite its name, this code only covers existing URM bearing wall buildings
+  11. California Green Building Standards Code
+  12. California Reference Standards Code
+* SEAOC Blue Book was last printed in 1999 and summarizes the recommendations of earthquake construction at the time. Engineers now should seek the commentaries of ASCE 7-16 for similar contents
+* Performance-Based Seismic Design (PBSD) is a new development that categorizes a building's seismic performance to different categories which aids the owner in decision making. SEAOC Vision 2000 was the impetus for this project
+* ASCE 41: Seismic Evaluation and Retrofit of Existing Buildings is the current standard for PBSD and is a combination of multiple decades of research. It is used mainly for existing buildings but can be used for new building via CBC clause 104.11 subject to building official approval. There are five performance levels:
+  1. S-1: Immediate Occupancy
+  2. S-2: Damage Control
+  3. S-3: Life Safety
+  4. S-4: Limited Safety
+  5. S-5: Collapse Prevention
+* To map this to ASCE 7-16:
+  * MCE = maximum considered event = 2500 yr return period
+  * DBE = design event = 2/3 MCE
+  * frequent event = return period of around 100 years
+  * For risk category II (Ie = 1.0):
+    * Collapse prevention for MCE
+    * Life safety for DCE
+    * Immediate occupancy for frequent
+  * For risk category IV (Ie = 1.5):
+    * Life safety for MCE
+    * Immediate occupancy for DCE
+    * Operational for frequent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 3.0 General Seismic Provisions
+<hr>
+
+This chapter is mostly a summary of ASCE 7 section 11 which is a guideline for constructing an earthquake spectrum for seismic design.
+
+## 3.1 General Requirements of IBC
+
+* The purpose of the IBC is to establish a set of minimum requirements. Afterwards, each jurisdiction adopt the IBC and add their own specific set of requirements. IBC derives heavily from codes and standards such as ASCE 7 and often makes reference to them. Should any differences occur, the IBC provisions should govern.
+* IBC 1603.1.5 - The following seismic design data should be made available on the construction document. This chapter will provide guidance on how to obtain the first 6, and chapter 4 will be on the rest.
+  1. Risk category
+  2. Importance factor
+  3. Mapped spectral response acceleration parameters
+  4. Site class
+  5. Design spectural response acceleration parameters
+  6. Seismic Design Category
+  7. Type of Seismic Force Resisting System (SFRS)
+  8. Design base shear (V)
+  9. Seismic response coefficient (Cs)
+  10. Response modification coefficient (R)
+  11. Analysis procedure used
+* IBC 1604.10 - Seismic detailing requirements must be met even if wind demand is higher. This is because seismic demand is inherently unpredictable and structures are design to response inelastically
+* IBC 1613.1 - The following structures are exempt from the requirements of IBC and ASCE 7:
+  * One to Two family dwellings (detached residental housing) with low seismicity (SDC = A, B, or C or Ss < 0.4)
+  * Simple wood-frame buildings with very prescriptive design per IBC 2308 or CRC
+  * Not very important storage structures only for incidental human occupancy
+  * Special structures that are not explicitly addressed and have other regulations providing seismic criteria: such as bridges, transmition towers, dams, nuclear reactors, etc.
+
+## 3.2 Risk Categories
+
+* Every building is assigned one of four risk categories. Refer to IBC 1604.5 for full list. Refer to ASCE 7-16 Table 1.5.2 for importance factors.
+
+| **Risk Categories** | **Examples**                                                     | **Importance Factor** |
+| --------------- | ------------------------------------------------------------ | ----------------- |
+| I               | Low importance - barns, temporary facilities, minor storage facilities, and etc. | 1.0               |
+| II              | Typical importance - majority of buildings will fall within this category, offices, residential buildings, and etc. | 1.0               |
+| III             | High Importance - buildings with high occupancy such as high-rises downtown, jail, public assembly hall, power station and water treatment not included in risk category IV. Buildings containing sufficient quantities of toxic materials | 1.25              |
+| IV              | Essential - facilities that must be operational after an emergency. Hospitals, police stations, emergency shelters, communication centers, emergency power stations, aviation control tower, buildings critical to national defense, water storage facilities required for fire suppression | 1.5               |
+
+* Risk category will be used to determine the following later:
+  * importance factor
+  * seismic design category
+  * spectral response parameters
+  * allowable story drift
+  * response coefficient (Cs) and base shear (V)
+  * structural observation requirements and many others
+
+## 3.3 Ground Motion Parameters
+
+The first step in constructing the design spectrum is to obtain the "Mapped MCE<sub>R</sub> Acceleration Parameters" ($$S_S ~ \mbox{and} ~ S_1$$). The values can be read from IBC Figure 1613.3.1(1) to Figure 1613.3.1(1), or figures in ASCE 7-16 chapter 22. More commonly, the are obtained through online tools such as this one: [https://seismicmaps.org/](https://seismicmaps.org/)
+
+
+
+* These two parameters are based on the "Risk-Targeted Maximum Considered Earthquake" (MCE<sub>R</sub>); which is the most severe ground motion currently considered in design (1% probability of collapse in 50 years, or a 5000 year return period)
+* The design earthquake ground motion is 2/3 of MCE<sub>R</sub>. Buildings designed to this level should have a collapse probability of nor more than 10% if the MCE<sub>R</sub> event were to occur
+
+$$DBE = \frac{2}{3} MCE_R$$
+
+## 3.4 Site Classification
+
+Another important parameter to determine before we can construct our design spectrum is the site soil properties; which is classified from A to F. It is typically determined through shear wave velocity measurements and standard penetration tests.
+* A - Hard Rock (very rare in California)
+* B - Rock
+* C - Very dense soil
+* D - Stiff soil (default if no geotechnical information is available)
+* E - Soft clay soil
+* F - special circumstance that require site-specific evaluation
+
+<img src="/assets/img/blog/seismic2.png" style="width:100%;"/>
+*Figure 2: Site Soil Classification (section 20 of ASCE 7-16)*
+
+These site classifications will be used to determine ground motion amplification. Softer soil tend to amplify seismic force more than stiffer soils.
+
+## 3.5 The Design Response Spectrum
+
+0. Collect site information, soil class, risk category, and ground motion parameters ($$S_S ~ \mbox{and} ~ S_1 ~ \mbox{and} ~ T_L$$)
+1. Determine the necessary site adjustment factors ($$F_a ~ \mbox{and} ~ F_v$$) from IBC 1613.2.3 which is more updated than ASCE 7-16
+
+    <img src="/assets/img/blog/seismic3.png" style="width:100%;"/>
+    *Figure 3: Short Period Site Coefficient Fa*
+
+    <img src="/assets/img/blog/seismic4.png" style="width:100%;"/>
+    *Figure 4: Long Period Site Coefficient Fv*
+
+
+2. Determine the site-adjusted MCE<sub>R</sub> spectral acceleration parameters (ASCE 7-16 11.4.4)
+
+    $$S_{MS} = F_a S_S$$
+
+    $$S_{M1} = F_v S_1$$
+
+    * If a site investigation per ASCE 7-16 chapter 20 was performed to validate rock condition (class B), but no shear wave velocity was taken, then take both adjustment parameter as unity (1.0)
+    * If geotechnical investigation is not available and the default site class D is selected, $$F_a$$ cannot be lower than 1.2 regardless of response parameters
+
+3. Refer to site-specific ground motion procedures of ASCE 7-16 11.4.8 to see if additional requirements apply
+    * Need to conduct site specific analysis per ASCE 7-16 section 20.3.1 for any class F sites
+    * Need to conduct site specific analysis per ASCE 7-16 section 20.3.2 for the following:
+      * seismically isolated, or specially damped structure with S<sub>1</sub> > 0.6
+      * class E structures with S<sub>s</sub> > 1.0
+        * CAN AVOID IF: T < T<sub>s</sub> and using equivalent static force procedure
+      * class D and E structures with S<sub>1</sub> > 0.2
+        * CAN AVOID IF: C<sub>s</sub> is taken as the plateau value from 0<T<1.5T<sub>s</sub>, and amplified C<sub>s</sub> value by 1.5 for 1.5T<sub>s</sub> < T < T<sub>L</sub>
+
+4. Calculate the Design Spectral Acceleration Parameter which is 2/3 of the site-adjusted value above. Note that the spectral assumes by default a 5% damping ratio (ASCE 7-16 11.4.5)
+
+    $$S_{DS} = (2/3) S_{MS}$$
+
+    $$S_{D1} = (2/3) S_{M1}$$
+
+5. Construct the design spectrum
+
+    <img src="/assets/img/blog/seismic5.png" style="width:80%;"/>
+    *Figure 5: Design Response Spectrum*
+
+* Note there are 4 distinct regions on the spectrum plot divided by four important periods (ASCE 7-16 11.4.6)
+
+$$T_0 = 0.2(S_{D1}/S_{DS})$$
+
+$$T_S = \frac{S_{D1}}{S_{DS}}$$
+
+$$T_L = \mbox{from ground motion parameter}$$
+
+1. Linear ascending region at very short period range. For static force procedure, this stage is neglected and instead the plateau value is used
+
+    $$S_a = S_{DS}(0.4 + 0.6(T/T_0))$$
+
+2. The plateau region
+
+    $$S_a = S_{DS}$$
+
+3. The tail region for moderately long period structure
+
+    $$S_a = \frac{S_{D1}}{T}$$
+
+4. The region for extremely long period structures (extremely rare)
+
+    $$S_a = \frac{S_{D1}T_L}{T^2}$$
+
+
+
+## 3.6 Seismic Design Category (SDC) - ASCE 7-16 11.6
+
+Seismic design category (SDC) ranges from A to F:
+
+* A = very low hazard
+* B = low hazard
+* C = moderate
+* D = moderate to high
+* E = high hazard
+* F = high hazard + essential facility
+
+Seismic design category is used to determine the following:
+
+* Building height restriction
+* Permitted analysis procedure
+* Permitted lateral force resisting system
+* Permitted irregularities
+* SFRS detailing implications
+* Non-structural anchorage implication
+
+SDC can be determined using the procedure below:
+
+1. If $$S_1 \geq 0.75$$, and risk category I, II, or II => SDC = E
+2. If $$S_1 \geq 0.75$$, and risk category IV => SDC = F
+3. Otherwise, SDC is determined based on $$S_{DS}$$ and $$S_{D1}$$ values and the tables below (ASCE 7-16 Table 11.6-1,2). The more severe category governs.
+
+    <img src="/assets/img/blog/seismic6.png" style="width:60%;"/>
+    *Figure 6: Seismic Design Category Determination*
+
+4. In some cases, we can use only the $$S_{DS}$$ values to determine SDC provided the following conditions are satisfied:
+  * approximate period of structure (Ta) is less than $$0.8T_s$$ (well within plateau region)
+  * period used to calculate drift is less than $$T_S$$
+  * seismic response coefficient determined as the plateau value ($$\frac{S_{DS}}{R/I_e}$$)
+  * diaphragm is rigid. If not rigid, diaphragm cannot span more than 40 ft
+
+ASCE 7-16 11.7: For structures assigned to SDC A (pretty much never in California), the seismic hazard is low enough such that lateral force can be determined through ASCE 7-16 1.4 for general integrity (also must design for wind)
+
+* Base Shear
+
+$$V = 0.01(D)$$
+
+* Vertical Distribution of Lateral Force (similar for diaphragm force)
+
+$$F_x = 0.01 D_x$$
+
+* Non-structural anchorage to main structure
+
+$$F_p = 0.05 W_p$$
+
+* Wall anchorage force
+
+$$F_p = 0.2W_p > 5 psf$$
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 4.0 Seismic Provisions for Building Structures
+<hr>
+
+The following is a summary of key provisions in ASCE 7-16 chapter 12 which is related to design of building structures.
+
+## 4.1 Seismic Force Resisting System (SFRS)
+
+* Horizontal system = diaphragm and any horizontal trusses
+* Vertical system = the lateral system (e.g. shear wall, braced frame, moment frame, etc)
+
+ASCE 7-16 Table 12.2-1 is a giant table that contains the design coefficients ($$R,\Omega_o,C_d$$) and height limitation depending on the building's SDC. Here are some of the most common values:
+
+| **Seismic Force Resisting System**          | $$R$$       | $$\Omega_o$$     | $$C_d$$      |
+|-----------------------------------------|---------|-----------|----------|
+| Special reinforced concrete shear wall  | 5, 6*   | 2.5, 2.5* | 5, 5*    |
+| Special reinforced masonry shear wall   | 5, 5.5* | 2.5, 2.5* | 3.5, 4*  |
+| Ordinary reinforced concrete shear wall | 4, 5*   | 2.5, 2.5* | 4, 4.5*  |
+| Ordinary reinforced masonry shear wall  | 2, 2*   | 2.5, 2.5* | 1.75, 2* |
+| Light-frame wood with WSP sheathing     | 6.5, 7* | 3, 2.5*   | 4, 4.5*  |
+| Special concentric braced frame         | 6       | 2         | 5        |
+| Ordinary concentric braced frame        | 3.25    | 2         | 3.25     |
+| Eccentric braced frame                  | 8       | 2         | 4        |
+| Special steel moment frame              | 8       | 3         | 5.5      |
+| Ordinary steel moment frame             | 3.5     | 3         | 3        |
+| Buckling-restrained braces              | 8       | 2.5       | 5        |
+
+Note:  Values with asterisk (\*) relates to building frame system (non-bearing). In other words, not resisting significant amount of vertical gravity load, only purpose is resisting seismic lateral load
+
+
+Definition of types of systems:
+
+1. **Bearing Wall System**: seismic element such as a shear wall that ALSO SUPPORTS significant vertical gravity load
+2. **Building Frame System**: seismic element that is mainly for lateral load. DOES NOT SUPPORT significant vertical gravity load (NOTE that many SFRS appear in BOTH categories. Need to ensure we are picking the correct one)
+3. **Moment Frames**
+4. **Dual system**: two or more types of SFRS IN THE SAME DIRECTION. Having shear wall in EW direction, and moment frame in NS direction is NOT a dual system
+5. Other less common systems like cantilever column, wall infill, etc
+
+
+What do these seismic factors mean?
+
+* $$R$$ - is a measure of inherent overstrength and ductility. Higher R = more ductility
+* $$\Omega_o$$ - factor to amplify demands to represent the maximum possible inelastic force developed during design based earthquake
+* $$C_d$$ - is a displacement amplification factor
+
+<img src="/assets/img/blog/seismic7.png" style="width:60%;"/>
+*Figure 7: Seismic Factors Meaning*
+
+The logic is as follows:
+1. Almost all conventional design software uses elastic, first-order analysis. However, designing a buildings to withstand earthquakes without yielding is cost-prohibitive, and often not possible
+2. In addition, buildings have capacity to absorb damage through deformation (ductility). As building becomes damaged, the period lengthens and damping increases, both allows the building to attracts less acceleration
+3. For most buildings, the goal is to prevent collapse, not ensuring zero damage. Therefore perhaps we can design for a smaller demand, in essence hoping ductility will take care of the rest
+4. Divide actual response by **R** to reduce the design force. And design using first-order elastic analysis despite the actual response being far into the inelastic region
+5. For elements that must remain elastic, multiply demand by $$\Omega_o$$
+6. Dividing base shear by **R** also reduces displacement as shown in the figure above. However, inelasticity inherently means more displacement. In order to ensure we don't underestimate displacement, multiply predicted value by **Cd**
+
+The table also lists permitted height of the building where NP = Not Permitted, NL = Not Limited. Alternatively, specific values are provided between 60 ft to 240 ft. Special considerations can be taken to increase the height as described in these provisions:
+* ASCE 7-16 12.2.5.4 For EBF, SCBF, BRB, steel special plate shear wall, special concrete shear wall
+* ASCE 7-16 12.2.5.6 for steel OMF
+* ASCE 7-16 12.2.5.7 for steel IMF
+
+## 4.2 Combination of Systems
+
+* **Combination of System In Different Direction**: Use the respective coefficients for each system in the two orthogonal directions
+* **Combination of System In The Same Direction**: Considered dual system. Refer to Table 12.2-1 for valid coefficient to use. If not listed, use the more stringent R value and the corresponding $$C_d$$ and $$\Omega_o$$ factors
+* **Combination of System Along Height of Building**: Example: moment frame in the superstructure transitions to basement shear wall at the bottom.
+    * If upper system has lower response modification (less ductile), use it for both 
+    * If upper system has higher response modification (more ductile), use the respective coefficients for each system. However, forces transferred from upper to lower system should by multiplied by ratio of R
+
+
+
+## 4.3 Building Irregularities
+
+Irregularities are categorized into 1.) horizontal, or 2.) vertical irregularities. Presented here is a concise summary. Refer to full table in ASCE 7-16 for more complete information
+
+<u>Horizontal Irregularities</u>
+
+| Type | Description                                                                                                 | Illustration                                |
+|------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| 1a   | **Torsional irregularity** - Taking drift values from two ends of the floorplan. Torsional irregularity exists if the maximum drift is 1.2x the average drift | <img src="/assets/img/blog/seismic8.png"/>  |
+| 1b   | **Extreme Torsional Irregularity** - Same as above but for maximum drift that is 1.4x the average drift                                                                       | <img src="/assets/img/blog/seismic9.png"/>  |
+| 2    | **Reentrant Corner** - L-shape floor plan where the projection is > 15% of the plan dimension                                                                                     | <img src="/assets/img/blog/seismic10.png"/> |
+| 3    | **Diaphragm Discontinuity** - Large opening in floor plate with open (or flexible) area > 50% of the entire enclosed area                                                                              | <img src="/assets/img/blog/seismic11.png"/> |
+| 4    | **Out-of-Plane Offset** - Vertical element of SFRS is discontinuous vertically and shifts to another grid line                                                                                   | <img src="/assets/img/blog/seismic12.png"/> |
+| 5    | **Nonparallel System** - Vertical element of SFRS is not orthogonal to each other                                                                                   | <img src="/assets/img/blog/seismic13.png"/> |
+
+
+
+<u>Vertical Irregularities</u>
+
+
+| Type | Description                                                                                     | Illustration                                |
+|------|-------------------------------------------------------------------------------------------------|---------------------------------------------|
+| 1a   | **Soft Story** - related to STIFFNESS. Exists if the story stiffness if less than 70% of the story above, or less than 80% of the average stiffness of 3 stories above  | <img src="/assets/img/blog/seismic14.png"/>  |
+| 1b   | **Extreme Soft Story** - Same as above, but replace the first and second percentage by <60% and < 70%, respectively.                                                                     | <img src="/assets/img/blog/seismic15.png"/>  |
+| 2    | **Mass Irregularity** - When mass of one floor is significantly higher than others (>150%)                                                                        | <img src="/assets/img/blog/seismic16.png"/> |
+| 3    | **Geometric Irregularity** - When horizontal dimension of SFRS changes and one story is 130% of another                                                                   | <img src="/assets/img/blog/seismic17.png"/> |
+| 4    | **In-Plane Offset** - Offset of vertical element that creates a discontinuity in overturning                                                                          | <img src="/assets/img/blog/seismic18.png"/> |
+| 5a   | **Weak Story** - related to STRENGTH. Exists if story strength (all SFRS elements) is < 80% of the story above                                                                               | <img src="/assets/img/blog/seismic19.png"/> |
+| 5b   | **Extreme Weak Story** - same as above but change percentage to < 65%                                                                        | <img src="/assets/img/blog/seismic20.png"/> |
+
+
+
+
+## 4.4 Procedure Selection and Modeling
+
+Section 12.6 of ASCE 7-16 is related to analysis procedure selection. There are 3 types:
+1. Equivalent Lateral Force (ELF)
+2. Dynamic Analysis
+  * Modal Response Spectrum (12.9.1)
+  * Linear Response History (12.9.2)
+  * Nonlinear Response History (chapter 16)
+3. Simplified Procedure
+
+Our emphasis will be mostly on the ELF and when it is permitted vs. not permitted. In summary:
+* ELF always permitted for SDC = B or C
+* ELF permitted unless structure has SDC = D, E, F and the following characteristics:
+    * Tall, long-period buildings. (height > 160 ft with $$T \geq 3.5 T_s$$)
+    * Irregular structures < 160 ft if any of the following irregularities occur:
+      * Horizontal irregularity 1a, 1b
+      * Vertical irregularity 1a, 1b, 2, 3
+
+12.7.1 - Foundation is permitted to be considered fixed for determining seismic load. Alternatively, see ASCE 7-16 chapter 19 for Soil-Structure Interaction (SSI)
+
+12.7.2 - The following mass shall be included in the effective seismic weight (W):
+* all dead load
+* 25% of live load in storage area
+* partition live load of 10 psf
+* weight of any permanent equipment
+* for snow load > 30 psf, include 20% of roof snow load
+* weight of any landscaping
+
+ASCE 7-16 has additional chapters and provisions for structures with base-isolation or special damping systems
+* ASCE 7-16 Chapter 17 = Seismically Isolated Structures
+  * Isolation decreases base shear, increases natural period. Displacement response is not reduced but concentrated at the base
+  * Isolation is most effective for structures on dense/stiff soil
+* ASCE 7-16 Chapter 18 = Structures with Damping Systems
+  * supplemental damping system absorbs damage and increases the damping ratio of the structure and hence a reduction in base shear
+  * Typically damping is achieved through inelastic action. Passive energy dissipation allows the damage to shift to dampers, greatly lowering retrofit cost post-earthquake
+
+## 4.5 Equivalent Lateral Force Procedure (ELF)
+
+Here are the steps for ELF:
+
+1. Construct design spectrum as shown in the previous chapter.
+2. Calculate the short period ($$T_S$$)(boundary of plateau)
+
+    $$T_S = \frac{S_{D1}}{S_{DS}}$$
+
+3. Calculate seismic response coefficient which could fall into three regions
+    * The plateau region
+
+      $$C_s = \frac{S_{DS}}{R/I_e}$$
+
+    * The tail region for moderately long period structure
+
+      $$C_s = \frac{S_{D1}}{T(R/I_e)}$$
+
+    * The region for extremely long period structures (extremely rare)
+
+      $$C_s = \frac{S_{D1}T_L}{T^2 (R/I_e)}$$
+
+4. Calculate minimum $$C_s$$ and determine governing value
+
+    $$C_{s,min1} = 0.044S_{DS}I_e \geq 0.01$$
+
+5. For structures with $$S_1 > 0.6$$, there is a second minimum value to check:
+
+    $$C_{s,min2} = 0.5S_1 / (R/I_e)$$
+
+6. For short-period, very regular building less than 5 stories, there may be a potential to reduce Cs. See ASCE 7-16 12.8.1.3
+
+7. Base shear is equal to:
+
+    $$V = C_s W$$
+
+8. Story force is distributed vertically as follows:
+    
+    $$F_x = C_{vx}V$$
+
+9. The distribution factor can be determined using this equation
+
+    $$C_{vx} = \frac{w_x h_x^k}{\sum w_i h_i^k}$$
+
+    The exponent "k" is supposed to take into account the "whipping" effects of higher order modes
+
+    $$
+    k = \left\{
+    \begin{array}\\
+        1 & \mbox{if } T \leq 0.5s \\
+        2 & \mbox{if } T \geq 2.5s \\
+        0.75 + 0.5T & \mbox{otherwise}
+    \end{array}
+    \right.
+    $$
+
+10. Story shear ($$V_x$$) is simply the summation of story forces above. Story overturning moment ($$OTM_x$$) is simply the summation of moment at any particular level
+
+
+## 4.6 Period Determination
+
+* T = building fundamental period determined through analysis model
+* Ta = approximate building fundamental period determined using empirical equations
+
+12.8.2 - There is an upper limit on the period that you can use for analysis
+
+$$T < C_u T_a$$
+
+<img src="/assets/img/blog/seismic21.png" style="width:50%;"/>
+*Figure 8: Cu Factor For Upper Limit Period*
+
+
+12.8.2.1 - The approximate period is mostly a function of building height:
+
+$$T_a = C_t h_n^x$$
+
+The parameter (Ct,x) can be found in the table below and is SFRS dependent. $$h_n$$ is the structure height.
+
+
+<img src="/assets/img/blog/seismic22.png" style="width:50%;"/>
+*Figure 9: Parameters for Approximate Period Determination*
+
+
+
+
+## 4.7 Story Drifts, and Separations
+
+<u>Deflection of a Level</u>
+
+Deflection is the absolute displacement relative to the ground, at the center of mass of the floor.
+
+$$\delta_x = \delta_{xe} \times \frac{C_d}{I_e}$$
+
+$$\delta_{xe}$$ is the displacement from an elastic analysis, which must be amplified for inelasticity
+
+
+<u>Story Drift</u>
+
+Drift is the relative displacement between two adjacent stories:
+
+$$\Delta_x = \delta_{x} - \delta_{x-1}$$
+
+Interstory drift ratio (IDR) is the story drift divide by the story height. The typical limit is around 2%. ASCE 7-16 Table 12.12-1 provides the allowable story drift limits.
+
+<img src="/assets/img/blog/seismic23.png" style="width:90%;"/>
+*Figure 10: Story Drift Limits*
+
+
+
+
+<u>Special Note When Calculating Drift</u>
+* 12.3.4.1 - $$\rho$$ factor can be taken as 1.0 for drift calculations. Only exception is for moment frame with SDC = D to F (see 11.12.1.1)
+* 12.8.6 - Drift should be based on Strength Design (LRFD) level loads
+* 12.8.6 - For structure with torsion irregularity, drift is calculated as the most severe between two vertically aligned points along edge of floor plate
+* 12.8.6.2 - The upper limit period ($$C_u T_a$$) need not be considered for drift calculations
+
+
+
+<u>Stuctural Separation (Seismic Isolation Joint)</u>
+
+Adequate spacing must be provided between buildings in close proximity to each other. Otherwise, pounding may occur. This is especially dangerous if the floors do not align, in which case collision could result in catastrophic column failure.
+
+* 12.12.3 - The minimum separation is calculated based on the "maximum inelastic response displacement" ($$\delta_M$$) considering the maximum displacement on the floor (translation + torsion)
+
+$$\delta_M = \delta_{max} \frac{C_d}{I_e}$$
+
+where $$\delta_{max}$$ is the maximum displacement on floor x with Ax = 1 (no torsion amplification)
+
+* 12.12.3 - For two buildings on the same property line, the minimum clearance between them should be the Square Root Sum of Squares of the two building's maximum displacements
+
+$$\delta_{MT} = \sqrt{\delta_{M1}^2 + \delta_{M2}^2} $$
+
+* For structures on different property lines, the building must be setback at least $$\delta_M$$ from the property line
+
+
+
+
+## 4.8 P-Delta, Stability, Orthogonal Effects, and Other Considerations
+
+<u>P-Delta and Stability</u>
+
+P-Delta is the development of secondary forces due to excessive lateral deformation. In ASCE 7-16, the intent of this provision is to ensure stability. Structures with very small lateral stiffness could have stability issues.
+
+12.8.7 - First calculate the stability coefficient ($$\theta$$)
+
+$$\theta = \frac{P_x \Delta_x I_e}{V_x h_{sx} C_d}$$
+
+$$P_x$$ is usually determined via drawing a large section cut, or sum up all column forces to account all vertical load at level x
+
+$$h_{sx}$$ is the story height, $$\Delta_x$$ is the design story drift, $$V_x$$ is the story force
+
+In essence, the stability coefficient is a ratio of moment due to vertical load vs. moment due to lateral load
+
+$$\theta = \frac{M_p}{M_v}$$
+
+
+* P-delta effect can be ignored if $$\theta < 0.1$$ (i.e. secondary moment is less than 10% of that induced by lateral force)
+* Otherwise, displacement and member forces must be amplified by the following factor 
+
+$$\frac{1.0}{1 - \theta}$$
+
+* if $$\theta > \theta_{max}$$, the structure is unstable and must be redesigned. $$\beta$$ is the ratio of shear demand to shear capacity between level x and level x-1. It can be conservatively taken as 1.0.
+
+$$\theta_{max} = \frac{0.5}{\beta C_d} \leq 0.25$$
+
+* If the analysis software already takes into account geometric nonlinearity (second-order analysis), the $$\theta_{max}$$ must still be checked, but can divide $$\theta$$ by $$(1-\theta)$$ before comparing to the limit.
+
+
+<u>Orthogonal Effects</u>
+
+For structures with nonparallel system irregularity:
+* If SDC = B, can apply seismic force orthogonally independently
+* If SDC = C:
+  * Can apply simultaneous orthogonal ground motion with response history analysis
+  * Alternatively, apply 100% seismic force in one direction, and 30% seismic force in the orthogonal direction with all permutation of directions for a total of 8 load combinations (100X+30Y, -100X+30Y, 100X-30Y, -100X-30Y, 30X+100Y, -30X+100Y, 30X-100Y, -30X-100Y)
+* If SDC = D, E, F, same as above, but the condition of orthogonal effects are triggered if any column is part of both orthogonal systems
+
+
+
+<u>Other Considerations</u>
+
+12.12.5 - For SDC = D,E,F, components not part of SFRS (such as gravity columns) should be designed to withstand at least the compatibility force arising from interstory drift ($$\Delta$$)
+
+12.12.4 - For elements spanning between two structures, their connection must be designed for the maximum anticipated relative displacement, and assuming
+  * structures moving in opposite direction and using the absolute sum of their displacements
+  * consider diaphragm displacement
+  * consider torsional amplification factor
+  * calculate maximum displacement as shown:
+
+$$\delta_{max} = \delta_{xe} \frac{1.5R}{I_e}$$
+
+
+
+## 4.9 Seismic Load Effect and Combinations
+
+<u>Seismic Load Effects - 12.4.2</u>
+* Horizontal seismic effect ($$E_h$$) - subject to redundancy or overstrength factor
+
+$$E_h = \pm \rho Q_E$$
+
+* Vertical seismic effect ($$E_v$$) (can be neglected for SDC = B)
+
+$$E_v = \pm (0.2S_{DS})D$$
+
+
+<u>LRFD Load Combination - 2.3.6</u>
+
+* Full: $$1.2D + 1.2F + 1.0E + f_1 L + 1.6H + f_2 S$$
+  * Simplified: $$(1.2 + 0.2S_{DS}) D + 1.0 \rho Q_E$$
+* Full: $$0.9D + 0.9F + 1.0E + 1.6H$$
+  * Simplified: $$(0.9 - 0.2S_{DS}) D + 1.0\rho Q_E$$
+
+<u>ASD Load Combination - 2.4.5</u>
+
+* Full: $$D + H + F + 0.7E$$
+  * Simplified: $$(1 + 0.14S_{DS}) D + 0.7 \rho Q_E$$
+* Full: $$D + H + F + 0.75(0.7E) + 0.75L +0.75S$$
+  * Simplified: $$(1 + 0.105S_{DS}) D + 0.75( 0.7 \rho Q_E)$$
+* Full: $$0.6D + 0.6F + 0.7E + H$$
+  * Simplified: $$(0.6 - 0.14S_{DS}) D - 0.7\rho Q_E$$
+
+$$F$$ = fluid load
+
+$$L$$ = live load or roof live load > 20 psf
+
+$$S$$ = snow load
+
+$$f_1$$ = 1.0 for public assembly with 100 psf +, or parking garage. Equal to 0.5 for other live loads
+
+$$f_2$$ = 0.2 for typical roof. 0.7 for roof that does not shed snow
+
+
+<u>Overstrength Factor - 12.4.3.1</u>
+
+Where overstrength factor ($$\Omega_o$$) needs to be applied, the seismic effect is denoted as:
+
+$$E_{mh} = \pm \Omega_o Q_E$$
+
+$$E_mh$$ can be taken based on a capacity-approach (i.e. demand need not exceed what can be developed in the load path)
+
+The load combinations with overstrength factor is the same as above, simply replace $$\rho$$ with $$\Omega_o$$
+
+Instances where omega factor needs to be applied:
+* Collector elements and their connections (more on this in chapter 7)
+* Element supporting discontinuous wall or frame (out-of-plane and in-plane offset)
+* Cantilever column SFRS foundations overturning
+
+
+<u>Redundancy Factor - 12.3.4</u>
+
+Redundancy factor ($$\rho$$) is an indicator of how many redundant load paths are available. Buildings with multiple small SFRS tend to perform better than buildings with few large SFRS.
+
+* redundancy factor ($$\rho$$) can be either 1.0 or 1.3. A value of 1.3 is assigned to be punitive against structures with low redundancy.
+* Redundancy check is performed in both orthogonal directions
+
+The value of $$\rho$$ is permitted to be taken as 1.0 for all of these cases:
+* SDC = B or C
+* Other specific design checks like calculating drift, p-delta check, design of non-structural components (Fp), nonbuilding structures not similar to buildings, collector elements and their connections where $$\Omega_o$$ is used, diaphragm load (Fpx), structure with damping system, out-of-plane wall force and anchorage.
+
+For SDC = D, E, or F, $$rho = 1.3$$ unless one of the following can be proven:
+* Structure with no plan irregularity on all levels and:
+  * At least two bays of SFRS along perimeter framing in each orthogonal direction
+  * each story resists > 35% of base shear
+  * For shear walls, the number of bays can be calculated as $$L_{wall} / h_{story}$$. (multiply by 2 for light-frame shear walls)
+* Otherwise, depending on the system, conditions in ASCE 7-16 Table 12.3-3 must be proven
+  * Essentially, we must prove that the loss of a beam, wall pier, brace, etc. does not have an outsized effect on the building's overall performance (more than 33% reduction in story strength, and no extreme torsional irregularity)
+  * The removal of elements should only be done on levels with story shear > 35% of base shear
+
+
+
+
+
+## 4.10 Simplified Procedure
+
+Refer to ASCE 7-16 12.14 for the complete list of provisions. Since the use of simplified procedure is not common in California, we will only summarize the key points here.
+
+In essence, simplified procedure is only applicable for very regular, low-risk buildings:
+* Risk category I, or II. Site class A, B, C, D, not more than 3 stories
+* Cannot be dual system or moment frame
+* In-plane and out-of-plane offset not allowed
+* Various diaphragm requirements
+* and a few others
+
+Note that $$R$$ factor shall be determined from a separate table specifically dedicated to simplified procedure (Table 12.14-1)
+
+<u>Seismic Design Category</u>
+
+12.14.8.1 - $$S_{DS}$$ shall be calculated as
+
+$$S_{DS} = \frac{2}{3} F_a S_s$$
+
+where:
+
+* $$S_s$$ is a ground motion parameter and need not exceed 1.5
+* $$F_a$$ is equal to 1.0 for rock site and 1.4 for soil site
+
+Use this $$S_{DS}$$ to determine the appropriate SDC.
+
+
+<u>Base Shear (V)</u>
+
+$$V = \frac{F S_{DS}}{R}W$$
+
+where:
+
+* $$F$$ equals 1.0 for one story building, 1.1 for two-story, 1.2 for three-story
+* $$R$$ is obtained from the specialized simplified procedure table 12.14-1
+
+
+<u>Vertical Distribution (Fx)</u>
+
+The seismic story force is simply proportional to the floor mass.
+
+$$F_x = \frac{w_x}{W}V$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 5.0 Seismic Provisions for Nonstructural Components
+<hr>
+
+## 5.1 General Requirements
+
+The following is a summary of ASCE 7-16 Chapter 13 which contains provisions related to seismic anchorage design of non-structural components such as mechanical/electrical equipment, pipes, architectural features, cladding, etc.
+
+13.1.3 - Component importance factor ($$I_p$$) shall be taken as 1.0 unless the following applies, in which case take 1.5
+
+* Component is required to function post-earthquake, such as sprinklers, egress stairs, etc.
+* Component contains highly toxic or explosive substance
+* Component is in a Risk Category IV building and its failure could impede proper operation
+* Component contains other hazardous substances
+
+13.1.4 - The following components need not be designed for seismic anchorage
+
+* Furniture, temporary or moveable equipment
+* Architecture component (except parapets) in SDC = B provided $$I_p = 1.0$$
+* M&E equipment in SDC = B
+* M&E equipment in SDC = C, provided $$I_p = 1.0$$ or is less than 20 lbs (or 5 lbs/ft)
+* M&E equipment in SDC = D, E, F provided that:
+  * less than 400 lbs with center of mass less than 4 ft AFF, component importance factor of 1.0, and flexible connection provided to the unit
+  * or it's a distribution system weighing less than 5 lbs/ft, or discrete unit weighing less than 20 lbs
+
+
+## 5.2 Seismic Demand
+
+13.3.1.1 - the component seismic design force can be calculated as
+
+$$F_p = 0.4 (\frac{a_p}{R_p / I_p}) (1 + \frac{2z}{h}) S_{DS} W_p$$
+
+subject to the following maximum and minimum values
+
+$$F_{pmax} = 1.6 S_{DS} I_p W_p$$
+
+$$F_{pmin} = 0.3 S_{DS} I_p W_p$$
+
+where:
+
+* $$a_p$$ is the component amplification factor (which accounts for flexibility of equipment and resulting dynamic amplification. 1.0 for rigid, 2.5 for highly flexible)
+* $$R_p$$ is the component response modification factor (which accounts for equipment's inherent ductility)
+* $$W_p$$ is the component weight
+* $$I_p$$ is the component importance factor
+* $$z$$ is the height in elevation of component's point of attachment
+* $$h$$ is the height of the building
+
+The z/h ratio essentially dictate an amplification of 1.0 at ground, and 3.0 at the roof.
+
+The $$F_p$$ force is applied at component's center of gravity and shall be applied independently in at least two orthogonal horizontal directions
+
+The component parameters ($$a_p, R_p, \Omega_p$$) for an exhaustive list of components can be found in ASCE 7-16
+* Mechanical and electrical: Table 13.6-1
+* Architectural: Table 13.5-1
+
+
+## 5.3 Miscellaneous Requirements
+
+13.3.1.2 - vertical seismic effect ($$E_v = 0.2 S_{DS}$$) should be considered in design. Redundancy factor is taken as 1.0
+
+$$\Omega$$ factor shall be applied when designing non-ductile anchorage into concrete or masonry. Please note this omega factor is NOT from chapter 12 and should be determined from Table 13.5-1 or 13.6-1
+
+13.4 - frictional effect by gravity should not be considered in design.
+
+13.3.2 - seismic relative displacement should be considered in design (i.e. interstory drift displacement compatibility)
+
+Other specific provisions:
+* 13.5.7 - Access floors
+* 13.5.8 - Partitions
+* 13.5.9 - Glass
+* 13.5.10 - Egress stair and ramps
+* 13.6.5 to 13.6.8 - Distribution systems: Ducts, conduit, cable trays, pipes, tubes, trapezes
+* 13.6.10 - Boilers and pressure vessels
+* 13.6.11 - Elevators
+* 13.6.12 - Roof top solar
+
+## 5.4 Out-of-Plane Wall Anchorage
+
+Out-of-plane walls also have to be anchored adequately to the diaphragm. This is usually not an issue for concrete and structural steel buildings, but is supremely important for masonry + wood buildings where past experience has shown some vulnerabilities (especially for tilt-up structures).
+
+12.11.1 - Out-of-plane wall bending design force
+
+$$F_p = 0.4S_{DS} I_e W_w \geq 0.1 W_w$$
+
+12.11.2 - Wall anchorage design force is similar with some additional factors to account for flexible diaphragm action
+
+$$F_p = 0.4 S_{DS} K_a I_e W_p \geq 0.2 K_a I_e W_p$$
+
+* Wall weight is usually given in plf. Multiply by tributary width (anchor spacing) to get weight of wall tributary to anchor ($$W_p$$). Make sure to include weight of parapet if applicable
+* Diaphragm flexibility factor ($$K_a$$) is calculated based on the diaphragm span ($$l_f$$) in feet. Use 1.0 for rigid diaphragms
+
+$$K_a = 1.0 + \frac{L_f}{100} \leq 2.0 $$
+
+* If the anchorage is not located at the roof and all diaphragms are rigid or semi-rigid, then the calculated force can be modified by the following factor
+
+$$(1 + 2z/h) / 3$$
+
+<u>Some Other Wall Anchorage Considerations - 12.11.2.2</u>
+
+* Sub-diaphragms shall has max aspect ratio of 2.5:1
+* The design force shall be amplified by 1.4 for steel strap purlin anchors
+* Metal deck should not be considered as continuous ties
+* Toenails and nail withdrawal are not permitted for anchorage
+  * Toenails are nails driven at an angle. Use framing clips instead (e.g. Simpson Strong Ties L/LS/GA)
+
+  <img src="/assets/img/blog/seismic24.png" style="width:30%;"/>
+
+* Ledgers are not permitted to be in cross-grain bending/tension (typical for tilt-up)
+  * Ledger basically splits apart. User purlin anchors instead (x1.4 amplification) (e.g. Simpson Strong Ties PA/HPA)
+
+  <img src="/assets/img/blog/seismic25.png" style="width:50%;"/>
+
+* For wood design, remember that force level has to be converted to ASD level (i.e. multiply by 0.7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 6.0 Seismic Provisions for Nonbuilding Structures
+<hr>
+
+This chapter is a summary of provisions from ASCE 7-16 Chapter 15 which is related to non-building structures (e.g. elevator tanks, chimneys, silos, telephone towers, signs, monuments).
+
+11.1.2 - Some nonbuilding structures have their own code and regulations such as highway bridges, transmission tower, hydraulic structures, buried utility lines, and nuclear reactors.
+
+15.3 - For nonbuilding structures supported by a building. Such as penthouse, helipad, etc.
+* Less than 25% of weight - Design as non-structural component (chapter 13)
+* More than 25% of weight - The supported structure should be modeled within the main building model
+
+<u>Nonbuilding Structure - Rigid</u>
+
+15.4.2 - Rigid nonbuilding structures are those with period (T) less than **0.06** seconds, for these situations, the base shear is calculated as follows. Vertical force distribution is calculated in the typical way.
+
+$$V = 0.30 S_{DS} W I_e$$
+
+
+<u>Nonbuilding Structure - Similar to Buildings - 15.5.1</u>
+
+Applies to structures that behave and is constructed like buildings and have SFRS like buildings (e.g. storage racks, towers for tanks and vessels, piers, pipe racks). All of these will have their special provisions as well within chapter 15
+
+15.5.1 - Use the same equations from ELF, except the seismic parameters ($$R,\Omega_o,C_d$$) should be determined from Table 15.4-1
+
+
+
+<u>Nonbuilding Structure - Not Similar to Buildings - 15.6</u>
+
+Applies to structure that are significantly different from buildings and do not have a dedicated SFRS. (e.g. silos, stacks, cooling tower, rollercoaster rides, signs and billboards, etc)
+
+* The seismic parameters ($$R,\Omega_o,C_d$$) shall be determined from Table 15.4-2. These parameters are generally more conservative because of the inherent lower redundancy
+* Use the same set of equations from ELF with the following modification for minimum value (eq 15.4-1). Note the second equation is only applicable for non-building structure where S1 > 0.6.
+
+$$C_{smin1} = 0.044S_{DS}I_e \geq 0.03$$
+
+$$C_{smin2} = \frac{0.8S_1}{R/I_e}$$
+
+For this category of structures, there are usually additional provisions within ASCE 7-16 that are relevant. For example, the design of tanks and vessels require the consideration of fluid-structure interaction.
+* Rigid forces (from impulsive fluid mass)
+* Sloshing forces (due to convective fluid mass from ground motion)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 7.0 Diaphragm and Walls
+<hr>
+
+The following chapter contains provision from various chapters of ASCE 7-16 (mostly chapter 12). The main topic of discussion is related to diaphragms (seismic load path). Topics will include diaphragm design forces, horizontal SFRS elements, diaphragm types, and torsion/wall rigidity considerations.
+
+## 7.1 Diaphragm Design Force
+
+12.10.1.1 - The standard ELF vertical story force distribution, which is based on the first mode, tends to underestimate required diaphragm design force (which might peak at other modes). Therefore, the diaphragm design force is calculated separately as follows:
+
+$$F_{px} = \frac{\sum_{i=x}^{n} F_i}{\sum_{i=x}^{n} w_i} w_{px}$$
+
+Subject the following maximum and minimum:
+
+$$F_{pxmin} = 0.2S_{DS}I_e w_{px}$$
+
+$$F_{pxmax} = 0.4S_{DS}I_e w_{px}$$
+
+Note that the summations are from the floor under consideration to the roof.
+
+Also note on distinction between $$w_{px}$$ and $$w_x$$ from ELF distribution. These two terms do not necessary have to be equal, but are often assumed to be equal for simplicity (also because it is conservative). Technically **mass of walls parallel to direction of analysis does not need to be counted** since they do not contribute to diaphragm demand. An analogy would be applying point load at a support point.
+
+
+## 7.2 Diaphragm Provisions
+
+12.10.3 - Precast diaphragms in structures assigned to SDC = C,D,E,F must use the alternative diaphragm design procedure in 12.10.3.1
+
+12.3.1 - Diaphragms may be of three types:
+* flexible diaphragm - SFRS attracted load is in proportion to **its tributary width**. No need to consider torsion
+* rigid diaphragm - SFRS attracted load is in proportion to **its rigidity**
+* semi-rigid diaphragm - somewhere in between
+
+12.3.1.1 - Flexible diaphragm condition can be assumed for un-topped steel deck and wood structural panels if specific conditions of this provisions are met (in brief: if the SFRS is stiff, structure is small and light)
+
+12.3.1.1 - Flexible diaphragm can also be assumed if the maximum diaphragm displacement is more than twice the average diaphragm displacement
+
+$$\Delta_{max} > 2 \times \Delta_{avg}$$
+
+
+## 7.3 Diaphragm Analysis - Collector and Chords
+
+Regardless of what type of diaphragm you have, and how you scale the design forces. The big picture is that we are trying to check the adequacy of our SFRS horizontal element under the following conditions:
+1. Diaphragm shear (V/d)
+2. Diaphragm moment (M/d)
+3. Collector axial demand (drag force)
+
+Limit state 1 and 2 is typically done through finite-element analysis + section cuts for more complex models. For simpler buildings, it is common to use the equivalent beam method. 
+
+<img src="/assets/img/blog/seismic26.png" style="width:90%;"/>
+*Figure 11: Equivalent Beam Model*
+
+In essence, the equivalent beam method involve plotting the shear and moment diagram of a beam. This step can actually be quite nuanced but we will table that discussion for another article. For now, let's assume a simply-supported beam.
+
+1. determine the correct diaphragm design force (Fpx)
+2. divide by span to obtain a uniform load (w)
+3. plot shear and moment diagram (M, V)
+4. diaphragm shear capacity is usually provided in lbs/ft. Divide shear by diaphragm depth (V/d)
+5. diaphragm chord force can be determined by dividing moment by diaphragm depth (M/jd). "j" is a lever arm factor to reduce the lever arm if you expect the resultant axial force to be elsewhere and not at the edge.
+
+Limit state 3 is more of a local check, the entire analysis only depends on the amount of load transferred into the frame line under consideration. No diaphragm beam analysis is required.
+
+<img src="/assets/img/blog/seismic27.png" style="width:90%;"/>
+*Figure 12: Determining Drag Force*
+
+## 7.4 Flexible Diaphragm Analysis
+
+
+## 7.5 Wall Rigidity
+
+
+## 7.6 Rigid Diaphragm Analysis + Torsion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 8.0 Wood Diaphragm and Shear Wall
+<hr>
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 10.0 Miscellaneous
+<hr>
+
+
+
+
+
+
+
+

@@ -23,6 +23,6 @@ I liked the novel in that the characters were nuanced and realistic. Everyone ac
 
 The style is completely different from novels today. It reads like a movie script without much build-up before the climax. You could mostly predict what was about to happen, and the emotions and incentives of each character were described plainly and directly. The proses were matter of fact without much color or adornment.
 
-Whatever the case may be, it is a nice quaint story from another era that some will adore, while others will find bland and will only ever read it in the context of an English class.
+Whatever the case may be, it is a nice quaint story from another era that some will adore, while others will find somewhat bland.
 
 
