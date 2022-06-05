@@ -2,7 +2,7 @@
 layout: blog-post
 categories: engineering
 title: "Primer: ASCE 7-16 Seismic Chapters."
-description: "Collection of personal notes for California state PE Exam"
+description: "Collection of personal notes for California state Seismic PE Exam"
 image: assets/img/blog/seismic.png
 date: 2022-05-06
 tags: analysis primer
@@ -11,7 +11,6 @@ tags: analysis primer
 *"Primer" is a personal reference notebook and a side project where I can organize and digest some of the things I've learned on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
 
 *Please note that these notes are for my own use. It is not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
-
 
 
 - [1.0 Basic Earthquake Concepts](#10-basic-earthquake-concepts)
@@ -36,20 +35,35 @@ tags: analysis primer
   * [4.1 Seismic Force Resisting System (SFRS)](#41-seismic-force-resisting-system--sfrs-)
   * [4.2 Combination of Systems](#42-combination-of-systems)
   * [4.3 Building Irregularities](#43-building-irregularities)
-  * [4.4 Modeling](#44-modeling)
+  * [4.4 Procedure Selection and Modeling](#44-procedure-selection-and-modeling)
   * [4.5 Equivalent Lateral Force Procedure (ELF)](#45-equivalent-lateral-force-procedure--elf-)
-  * [4.6 Story Drifts, Separations, P-delta](#46-story-drifts--separations--p-delta)
-  * [4.7 Simplified Procedure](#47-simplified-procedure)
-- [5.0 Seismic Effect and Load Combinations](#50-seismic-effect-and-load-combinations)
-- [6.0 Seismic Provisions for Nonstructural Components](#60-seismic-provisions-for-nonstructural-components)
-- [7.0 Seismic Provisions for Nonbuilding Structures](#70-seismic-provisions-for-nonbuilding-structures)
-- [8.0 Diaphragm and Walls](#80-diaphragm-and-walls)
-- [9.0 Wood Diaphragm and Shear Wall](#90-wood-diaphragm-and-shear-wall)
-- [10.0 Miscellaneous](#100-miscellaneous)
-
-
-
-
+  * [4.6 Period Determination](#46-period-determination)
+  * [4.7 Story Drifts, and Separations](#47-story-drifts--and-separations)
+  * [4.8 P-Delta, Stability, Orthogonal Effects, and Other Considerations](#48-p-delta--stability--orthogonal-effects--and-other-considerations)
+  * [4.9 Seismic Load Effect and Combinations](#49-seismic-load-effect-and-combinations)
+  * [4.10 Simplified Procedure](#410-simplified-procedure)
+- [5.0 Seismic Provisions for Nonstructural Components](#50-seismic-provisions-for-nonstructural-components)
+  * [5.1 General Requirements](#51-general-requirements)
+  * [5.2 Seismic Demand](#52-seismic-demand)
+  * [5.3 Miscellaneous Requirements](#53-miscellaneous-requirements)
+  * [5.4 Out-of-Plane Wall Anchorage](#54-out-of-plane-wall-anchorage)
+- [6.0 Seismic Provisions for Nonbuilding Structures](#60-seismic-provisions-for-nonbuilding-structures)
+- [7.0 Diaphragm and Walls](#70-diaphragm-and-walls)
+  * [7.1 Diaphragm Design Force](#71-diaphragm-design-force)
+  * [7.2 Diaphragm Provisions](#72-diaphragm-provisions)
+  * [7.3 Diaphragm Analysis - Collector and Chords](#73-diaphragm-analysis---collector-and-chords)
+  * [7.4 Flexible Diaphragm Analysis](#74-flexible-diaphragm-analysis)
+  * [7.5 Wall Rigidity](#75-wall-rigidity)
+  * [7.6 Rigid Diaphragm Analysis + Torsion](#76-rigid-diaphragm-analysis---torsion)
+- [8.0 Wood Diaphragms and Shear Walls](#80-wood-diaphragms-and-shear-walls)
+  * [8.1 General Provisions](#81-general-provisions)
+  * [8.2 Wood Diaphragms](#82-wood-diaphragms)
+  * [8.3 Wood Shear Walls](#83-wood-shear-walls)
+- [9.0 Miscellaneous. Inspections. Professional Engineers Act. Etc.](#90-miscellaneous-inspections-professional-engineers-act-etc)
+- [Appendix: Helpful Tables and Other Stuff](#appendix--helpful-tables-and-other-stuff)
+  * [Table For Wall Stiffness](#table-for-wall-stiffness)
+  * [Table Template for Determining ELF Story Force](#table-template-for-determining-elf-story-force)
+  * [Table Template for Determining Center of Rigidity](#table-template-for-determining-center-of-rigidity)
 
 <div style="page-break-after: always;"></div>
 <hr>
@@ -123,6 +137,20 @@ $$k_{fix-fix} = \frac{12EI}{L^3}$$
 
 $$k_{fix-pin} = \frac{3EI}{L^3}$$
 
+For several frame members along a resistance line, the floor displacement can be assumed equal along its length. Thus the configuration becomes spring in series:
+
+$$F_i = F_{total} \frac{k_i}{\sum k_i}$$
+
+Since we know the force taken by the column, the column shear is constant, and the moment can be calculated as:
+
+$$
+M = \left\{
+    \begin{array}\\
+        Vh/2 & \mbox{if } \ \mbox{double curvature} \\
+        Vh & \mbox{if } \ \mbox{single curvature}
+    \end{array}
+\right.
+$$
 
 Dynamic Properties:
 
@@ -178,6 +206,7 @@ $$S_d = \frac{S_a}{\omega^2}$$
 
 * Resonance occurs when the structure's natural period is similar to the predominant earthquake period or the soil period. Structures have tendency to yield and as damage accumulates, its period also lengthens
 * Base shear can be calculated using an earthquake spectra (exactly for SDOF, approximate for MDOF)
+* If Sa is given as a %g, simply multiply by the weight (W)
 
 $$V = S_a \frac{W}{g}$$
 
@@ -359,6 +388,7 @@ These site classifications will be used to determine ground motion amplification
     <img src="/assets/img/blog/seismic4.png" style="width:100%;"/>
     *Figure 4: Long Period Site Coefficient Fv*
 
+    $$F_{interpolate} = F_{low} \pm \frac{F_{high} - F_{low}}{S_{high} - S_{low}} \times (S_{int} - S_{low})$$
 
 2. Determine the site-adjusted MCE<sub>R</sub> spectral acceleration parameters (ASCE 7-16 11.4.4)
 
@@ -383,8 +413,12 @@ These site classifications will be used to determine ground motion amplification
     $$S_{DS} = (2/3) S_{MS}$$
 
     $$S_{D1} = (2/3) S_{M1}$$
-
-5. Construct the design spectrum
+5. To summarize all the variables so far:
+    * velocity domain
+        $$S_1 \rightarrow F_v  \rightarrow  S_{M1}  \rightarrow  S_{D1}$$
+    * acceleration domain (plateau)
+        $$S_s \rightarrow F_a  \rightarrow  S_{MS}  \rightarrow  S_{DS}$$
+6. Construct the design spectrum
 
     <img src="/assets/img/blog/seismic5.png" style="width:80%;"/>
     *Figure 5: Design Response Spectrum*
@@ -1183,11 +1217,15 @@ $$\Delta_{max} > 2 \times \Delta_{avg}$$
 ## 7.3 Diaphragm Analysis - Collector and Chords
 
 Regardless of what type of diaphragm you have, and how you scale the design forces. The big picture is that we are trying to check the adequacy of our SFRS horizontal element under the following conditions:
-1. Diaphragm shear (V/d)
-2. Diaphragm moment (M/d)
+1. Diaphragm shear (unit shear demand = V/d)
+2. Diaphragm moment (chord force = M/jd)
 3. Collector axial demand (drag force)
 
-Limit state 1 and 2 is typically done through finite-element analysis + section cuts for more complex models. For simpler buildings, it is common to use the equivalent beam method. 
+Limit state 1 and 2 is typically done through finite-element analysis for more complex models. For simpler buildings, it is common to use the equivalent beam method. 
+
+Limit state 3 (determining drag force) is more of a local check and can be performed separately from the other checks above.
+
+<u>Equivalent Beam Method - Diaphragm Shear and Moment Analysis</u>
 
 <img src="/assets/img/blog/seismic26.png" style="width:90%;"/>
 *Figure 11: Equivalent Beam Model*
@@ -1200,20 +1238,392 @@ In essence, the equivalent beam method involve plotting the shear and moment dia
 4. diaphragm shear capacity is usually provided in lbs/ft. Divide shear by diaphragm depth (V/d)
 5. diaphragm chord force can be determined by dividing moment by diaphragm depth (M/jd). "j" is a lever arm factor to reduce the lever arm if you expect the resultant axial force to be elsewhere and not at the edge.
 
-Limit state 3 is more of a local check, the entire analysis only depends on the amount of load transferred into the frame line under consideration. No diaphragm beam analysis is required.
+Diaphragm shear is resisted through:
+* Steel and concrete buildings: Concrete slab (or slab on deck) (Vc can be determined per ACI 318)
+* Wood buildings: plywood sheathing or other panels with nails (capacity usually tabulated in code and design aid)
+
+Diaphragm chord force is resisted through:
+* Steel & wood building: perimeter (spandrel) beams (check for seismic axial + gravity moment interaction per AISC 360)
+* Concrete building: Rebar + an assumed concrete section (check capacity per ACI 318. Additional guidance is available through NEHRP Tech Briefs)
+
+
+<u>Determining Drag Force</u>
+
+As mentioned previously, collector drag force diagram can be determined independently from the analyses above. Before diving into the analysis, here is the answer to some frequently asked questions:
+* "why do we need collectors anyways?"
+    * Consider the illustration below. Without adequate collector connection, it is conceivable that the inertial mass at the lower half of the slab will pull apart (see red cracks)
+    * Occasionally, partial-depth collector are necessary due to constraints, but that is a complex topic that we wil table for another day. For partial depth collectors, **the diaphragm depth is effectively reduced, increasing your shear and chord force demand.**
+
+<img src="/assets/img/blog/seismic29.png" style="width:30%;"/>
+*Figure 12: Inadequate Collectors or Partial Depth Collectors*
+
+* "Why not just pull collector axial demand from the model"
+    * This is a very complex topic and is not well-researched. Without diving too deep, just know that it is not as easy as extracting forces from an analysis model. Firstly, it is simply a non-starter for rigid-diaphragms. Even if it were possible in the case of semi-rigid and flexible diaphragms, there are numerous modeling considerations to incorporate (such as softening surrounding beams, reducing axial stiffness modifier for slab shell elements along frame line, etc). Ultimately, the amount of possible load path is simply unlimited (as the diaphragm is literally connected to everything). As such, our task is not the design for the *correct* load path, rather it is to design for one feasible load-path out of many; as long as the assumptions are rational. Naively reading axial demand from a model will likely lead to an under-prediction of axial demand.
+* "Why is collector/diaphragm analysis so complicated?"
+    * Because the typical intro to diaphragm design uses simple examples with square buildings and perfect slab layout. Unfortunately, those buildings rarely exist. And the equivalent beam procedure extends terribly to more complicated situations.
+    * Because most diaphragms are rarely damaged post-earthquake. It has never really been emphasized by building codes and design references. Because of the lack of attention, your best resource becomes design guides and conference papers, which lends itself to more assumptions and engineering judgement.
+
+
+Think of collectors as **extending your frame or wall to incorporate the entire frame line from one edge of the slab to the other**. If your frame or wall extends the entire length of the building, then collectors are not required. The procedure for plotting drag force diagram is as follows:
+1. First, create section cuts above and below the diaphragm level under consideration
+    <img src="/assets/img/blog/seismic28.png" style="width:30%;"/>
+    *Figure 13: Section Cut Above and Below*
+2. The difference in story shear above and below is **the amount of additional force that enters the frame line from the diaphragm level under consideration**
+3. Think of the collector diagram as a column with uniformly-distributed axial load. Referring to the figure below, there are two uniform axial load being applied ($$w_1 = V / L_{wall}$$ and $$w_2 = V / L_{total}$$). "w1" occurs over the length of the wall, whereas "w2" occurs over the entire frame line. Note that "w1" and "w2" acts in opposite directions.
 
 <img src="/assets/img/blog/seismic27.png" style="width:90%;"/>
-*Figure 12: Determining Drag Force*
+*Figure 14: Determining Drag Force*
+
+
+Collector drag force is resisted through:
+* Concrete buildings: Rebar and assumed concrete section (check capacity per ACI 318. Additional guidance is available through NEHRP Tech Briefs)
+* Steel & wood buildings: Steel or wood beams along the frame line (check for seismic axial + gravity moment interaction per AISC 360)
+
+
+12.10.2.1 - This is a common "gotcha" clause in ASCE 7-16 that is also incredibly confusing. Essentially, collectors and their connections should be designed to "omega-level" force, which may not always be as simple as multiplying demand by omega. The omega-level force is defined as the minimum of:
+1. ELF story force multiplied by omega ($$F_x \times \Omega_o$$)
+2. Diaphragm story force multiplied by omega ($$F_{px} \times \Omega_o$$)
+3. Floor diaphragm force **NOT** multiplied by omega, as it is not a function of R ($$F_{pxmin}$$)
+
+<img src="/assets/img/blog/seismic30.png" style="width:70%;"/>
+*Figure 15: Collector Design Force Scaling Example*
+
 
 ## 7.4 Flexible Diaphragm Analysis
+
+Forces entering a lateral line for a flexible diaphragm is determined simply by its tributary width. Torsion is not considered.
 
 
 ## 7.5 Wall Rigidity
 
+Before diving into rigid diaphragm analysis, we need to first understand wall rigidity. The stiffness of any wall pier can be calculated as follows. Note the inclusion of shear deformation which is critical for walls:
+
+$$k_{fix-fix} = \frac{12EI}{L^3} + \frac{A_v G}{L}$$
+
+$$k_{fix-pin} = \frac{3EI}{L^3} + \frac{A_v G}{L}$$
+
+* $$A_v$$ is the effective shear area (equal to 5/6 of gross area for rectangular sections)
+* $$G = E / 2(1+v)$$ is the shear modulus and is a function of a material's Young's modulus and Poisson ratio (v)
+* **Do not include height of parapet in stiffness calculation**
+
+In any situation where displacement compatibility is enforced (such as rigid diaphragm, or multiple wall pier along same wall line), for the same amount of displacement, the amount of force resisted by each wall pier can be determined as:
+
+$$F_i = F_{total} \times \frac{K_i}{\sum K_i}$$
+
+Refer to the Appendix for a helpful table for quick determination of wall stiffness based on h/L ratio.
+
 
 ## 7.6 Rigid Diaphragm Analysis + Torsion
 
+Within a rigid diaphragm, the center of mass and the center or rigidity often do no coincide. In these situations, an additional "twist" or in-plane torsional arises that may amplify forces going into particular lateral lines.
 
+The ultimate goal of this chapter is to determine these amplified forces. But first we must understanding how center of mass (COM) and center of rigidity (COR) is calculated.
+
+<u>Center of Mass</u>
+
+Center of mass is self-explanatory and it is a function of the distribution of weight on a particular level. Most of the times, the floor area center is very close to the COM.
+
+It can be calculated by discretizing the mass into numerous segments. $$x_i,y_i$$ is the distance between centroid of a segment to a reference datum. The story force can be assumed to be concentrated at the center of mass. 
+
+$$X_{CM} = \frac{\sum W_i*x_i}{\sum W_i}$$
+
+$$Y_{CM} = \frac{\sum W_i*y_i}{\sum W_i}$$
+
+Refer to the Appendix for a helpful template table for calculating COM.
+
+<u>Center of Rigidity</u>
+
+Center of rigidity can be thought of as the center of resistance and will tend to be closer to the stiffer line of resistance. It can also be thought of as the center of rotation when the slab "twists". The resulting force from this twist can be calculated using mechanics first principles (see polar moment of inertia). 
+
+Center of rigidity is calculated in a similar way to center of mass. 
+* X coordinate is calculated with NS walls
+* Y coordinate is calculated with EW walls
+
+$$X_{CR} = \frac{\sum K_i*x_i}{\sum K_i}$$
+
+$$Y_{CR} = \frac{\sum K_i*y_i}{\sum K_i}$$
+
+Refer to the Appendix for a helpful template table for calculating COR.
+
+<u>12.8.4.1 - Inherent Torsion</u>
+
+Inherent torsion is the torsion that arises from the eccentricity between CoM and CoR. Structures are usually toned to minimize inherent torsion.
+
+$$e_x = X_{CM} - X_{CR}$$
+
+$$e_y = Y_{CM} - Y_{CR}$$
+
+
+<u>12.8.4.2 - Accidental Torsion</u>
+
+Accidental torsion is a code-specified minimum torsion that must be considered due to potential mass irregularities from occupancy and floor usage. For example, one part of the building may be used for storage, while another used for open floor space. The current code minimum is +-5%.
+
+
+
+Conceptually, accidental torsion **shifts the center of mass**, but this is just a semantic exercise since the resulting effect is the same.
+
+Accidental torsion only applies to the following scenario. In all other cases, it can be ignored:
+* SDC = B with extreme torsional irregularity
+* SDC = C,D,E,F with any torsional irregularity at all
+
+Furthermore, for SDC = C,D,E,F with any torsional irregularity, the effect must be amplified:
+
+$$A_x = 1.0 \leq \left[ \frac{\delta_{max}}{1.2\delta_{avg}} \right] ^2 \leq 3.0$$
+
+$$e_x = \pm A_x \times 0.05 L_x$$
+
+$$e_y = \pm A_x \times 0.05 L_y$$
+
+* both max and average displacement is calculated based on the corner nodes of the building
+
+<u>Final Design Force At Each Frame</u>
+
+With all things considered, the resulting torsional moment can be calculated:
+
+$$M_{Tx} = V_x \times (e_y \pm 0.05 A_x L_y)$$
+
+$$M_{Ty} = V_y \times (e_x \pm 0.05 A_x L_x)$$
+
+Only apply accidental torsional and amplification where required. It should also be noted that since earthquake forces, as well as accidental torsion offset can be in both the positive and negative direction, always design for the worst case scenario in each frame.
+
+Finally, the forces in each frame is calculated as follows:
+
+$$F_{i} = \mbox{direct shear} + \mbox{torsional shear}$$
+
+$$F_{i} = F_{story} \frac{K_i}{\sum K_i} + M_T \frac{K_i e_i}{J_r}$$
+
+* $$e_i$$ is the perpendicular distance of a wall to the COR
+* $$J_r$$ is the polar moment of inertia and is calculated for **all** walls both parallel and perpendicular to direction of analysis
+
+$$J_r = \sum K_i e_i^2$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 8.0 Wood Diaphragms and Shear Walls
+<hr>
+
+I find it quite peculiar that this is included in the California State seismic PE exam. In this chapter, we will discuss the design of wood diaphragms and wood shear walls. Most of the provisions will be from IBC and the American Wood Council SDPWS-2015 (special design provisions for wind and seismic).
+
+## 8.1 General Provisions
+
+Wood design is primarily done in ASD. **Always remember to multiply earthquake force by 0.7**
+
+$$D + 0.7E$$
+
+4.2.3 and 4.3.3 - The unit shear capacities (lbs/ft) provided in the diaphargm/shear wall design tables are nominal values and should be **divided by 2** to obtain the design capacity.
+
+* Diaphragm unit shear capacity is provided in SDPWS Table 4.2A to 4.2D
+* Shear wall unit shear capacity is provided in SDPWS Table 4.3A to 4.3D
+* SDPWS 4.1.5.1 - subdiaphragms shall have a max length-width ratio of 2.5:1
+* SDPWS 4.1.5.1.1 - out of plane wall anchorage cannot be provided by nail withdrawal or toe-nails. The ledger must not be used for cross-grain bending or cross-grain tension
+
+## 8.2 Wood Diaphragms
+
+Wood diaphragms are typically constructed from panels of sheathing nailed together with the joists or rafters. At the free panel edges perpendicular to the joists, they can be left unconnected (unblocked), or a blocking can be provided underneath to join them together. Blocked diaphragms have higher capacity but is more expensive to build.
+
+<img src="/assets/img/blog/seismic31.png" style="width:60%;"/>
+*Figure 16: Blocked vs. Unblocked Wood Diaphragm*
+
+The design procedure for wood diaphragm is as follows:
+1. Calculate diaphragm design force and diaphragm shear
+2. Decide on type of panel and blocked or unblocked diaphragm
+3. From design table, select:
+    * panel thickness
+    * nail size
+    * nail spacing
+4. Confirm capacity > demand. Remember to divide capacity by 2, multiply demand by 0.7 for ASD
+5. Check other provisions related to blocked, unblocked diaphragms (aspect ratio, nailing pattern, etc)
+
+4.2.4 - Wood diaphragms are limited to certain aspect ratio depending on the type.
+
+<img src="/assets/img/blog/seismic32.png" style="width:45%;"/>
+*Figure 17: Limiting Diaphragm L:W Ratio*
+
+<u>How To Read Diaphragm Capacity Table</u>
+
+* Table 4.2A = Blocked diaphragm
+* Table 4.2B = Blocked diaphragm (High demand, multiple row fastener)
+* Table 4.2C = Unblocked diaphragm
+* Table 4.2D = Diagonal lumber diaphragm
+
+Given the following parameters, enter a specific row:
+* sheathing grade
+* nail size with corresponding min fastening penetration
+* sheathing panel thickness
+* width of joist (nailed face of adjoining panel edge)
+
+For design, pick a unit shear capacity (lbs/ft) that works, then look at the column which will inform you the required nail spacings for each loading case.
+
+You can also obtain specific gravity values "Ga" which can be used for deflection calculations.
+* If the specie of the framing members are not Douglas-Fir-Larch or Southern Pine (most common), then the capacity has to be modified by $$0.5+G$$
+
+<img src="/assets/img/blog/seismic34.png" style="width:100%;"/>
+*Figure 18: Diaphragm Design Table Example*
+
+The figure below shows the various type of loading cases.
+1. Pick a capacity from the design table that works
+2. The load cases help inform the nailing spacing required at various edge conditions:
+    * continuous panel joint parallel to framing will have spacing A
+    * continuous panel join perpendicular to framing will have spacing B
+    * diaphragm boundaries will have spacing C
+    * if panels are laid out like case 5&6, then will have spacing D
+
+<img src="/assets/img/blog/seismic33.png" style="width:100%;"/>
+*Figure 19: Diaphragm Loading Cases*
+
+
+<u>Other Provisions - Blocked Diaphragm - 4.2.7.1.1</u>
+
+* panels should be 4 ft by 8 ft minimum except at boundaries or around openings. Minimum panel dimension is 24" unless its all the edges are supported and fastened
+* nails 3/8" min. clearance from edge of panel. Panel edge nail max spacing = 6". Within the panel itself, max nail spacing parallel to joist should be 6" for joists spaced 48" c/c, or 12" if joist is spaced closer. (change 48" limit to 32" for highly loaded blocked diaphragms)
+* For highly-loaded blocked diaphragms, depth of framing member and blocking should be at least 3" nominal.
+
+
+## 8.3 Wood Shear Walls
+
+For shear wall design, remember that the seismic force has to be amplified by rho factor if appropriate:
+
+$$0.7 \rho E_h $$
+
+<u>Determining Shear Wall Unit Shear Capacity</u>
+
+* Table 4.3A = blocked shear wall
+* Table 4.3B = blocked shear wall w/ gypsum board over it
+* Table 4.3C = gypsum wall board shear walls
+* Table 4.3D = diagonal lumber shear walls
+
+<img src="/assets/img/blog/seismic36.png" style="width:100%;"/>
+*Figure 20: Diaphragm Design Table Example*
+
+* If the specie of the framing members are not Douglas-Fir-Larch or Southern Pine (most common), then the capacity has to be modified by $$0.5+G$$
+
+* 4.3.4.2 - WSP shear wall capacity determined above must be modified based on the wall's aspect ratio. The aspect ratio factor (ARF) is equal to 1.0 if h/b is less than 2:1 (squat)
+
+$$\mbox{shear capacity} = v_s \times ARF $$
+
+$$ARF = 1.25 - 0.125(h/b) \leq 1.0$$
+
+
+<u>Adjustment Factors and Other Shear Wall Provisions</u>
+
+4.3.3.3 - If a wall is sheathed on both sides with the same material and nailing pattern. Can double the shear capacity.
+
+4.3.3.2 - Unblocked shear wall cannot exceed 16 ft.
+
+4.3.3.2 - The design tables provided by SDPWS is only for blocked shear walls. Unblocked shear wall capacity can be calculated using the equation below. 
+
+$$v_{ub} = v_b \times c_{ub}$$
+
+* $$v_b$$ is the shear capacity (lbs/ft) of a blocked shear wall with 6" nail spacing from Table 4.3A
+* $$c_{ub}$$ is an adjustment factor from Table 4.3.3.2. Reproduced below.
+
+<img src="/assets/img/blog/seismic37.png" style="width:50%;"/>
+*Figure 21: Unblocked Shear Wall Adjustment Factor*
+
+
+4.3.4.1 - Shear walls have limiting aspect ratios:
+
+<img src="/assets/img/blog/seismic35.png" style="width:45%;"/>
+*Figure 22: Aspect Ratio Limit for Shear Walls*
+
+
+4.3.3.4.1 - For shear walls piers along a same line, the force in each pier can be calculated based on stiffness. Alternatively, they can also be taken in proportion to their shear capacity if the capacities were determined such that any pier with h/b>2 was multiplied by 2b/h. No aspect ratio reduction needed for this.
+
+There is also an overabundance of provisions for perforated wood shear walls that we will not go into here.
+
+
+<u>Shear Wall Overturning</u>
+
+<img src="/assets/img/blog/seismic39.png" style="width:80%;"/>
+*Figure 23: Shear Wall Overturning*
+
+Sill bolts resist shear, hold-down anchors resist uplift.
+
+The overturning moment is calculated as:
+
+$$M_{OT} = F_p \times \frac{h}{2}$$
+
+The resisting moment is calculated as:
+
+$$M_R = W \times \frac{b}{2}$$
+
+The net moment and resulting uplift is calculated as:
+
+$$M_{net} = M_{OT} - M_R$$
+
+$$T = M_{net} / b$$
+
+Note that the weight (W) and the seismic force (Fp) are subject to various ASD load combinations. The most-critical is the uplift load combination with vertical seismic effect:
+
+$$(0.6 - 0.14S_{DS})D + 0.7 \rho E$$
+
+In wood design, sub-diaphragm is used to refer to a portion of floor area that brings out-of-plane wall force into the main diaphragm. The rationale for this is confusing. Since I am not a wood-design expert, I will not discuss that matter any further.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 9.0 Miscellaneous. Inspections. Professional Engineers Act. Etc.
+<hr>
+
+ASCE 7-16 12.13.4 - Foundation overturning stability can be reduced by 25% if using ELF, or 10% if using modal analysis. (Not applicable to inverted pendulum or cantilever structures). The rationale for this is because ELF assumes first mode behavior, but every floor accelerating in the same direction usually does not happen. So overturning moment is over-estimated at the foundation level.
+
+IBC 1807.2.3 - Factor of safety (FS) for sliding and overturning stability of retaining walls should be no less than 1.5. For load combination including seismic forces, FS limit can be reduced to 1.1
+
+<u>Inspections</u>
+
+* Inspection by building official is required for these:
+    * footing, foundation
+    * slab and underfloor
+    * lowest floor elevation in flood hazard area
+    * framing
+    * dry wall
+    * fire-resistant penetrations
+    * energy efficiency
+    * other special inspections as needed
+    * final inspection
+* Inspections may be periodic or continuous
+    * periodic - intermittent presence
+    * continuous - continuous presence when and where the work is being performed
+* Structural observation by a registered design professional is sometimes required by IBC 1704.6 to confirm general conformance to construction documents. The structural observer need to inform the building official the frequency and extent of observation beforehand.
+* Written statements have to be submitted to the building official identifying any deficiencies that have not been resolved.
+
+
+<u>Professional Engineers Act</u>
+
+* Practice Act - only a person licensed by the board may practice engineering
+* Title Act - Only a person licensed by the board can claim to be an "engineer"
+* The structural engineer of record (SEOR) has the "responsible charge of work", meaning they exercise independent control and judgement over the project. A **subordinate** is any person who assists a registered PE without assuming responsible charge.
+* Only those with SE license can claim to be a "structural engineer". Only an SE can design
+    * public schools (DSA)
+    * hospitals (HCAI)
+    * buildings > 160 ft in LA county
+* Non licensed individuals can prepare plans and drawings for the following specific scenario:
+    * single family building less than two stories
+    * agriculture, ranch, low-occupancy buildings
+    * timber framing garages less than two stories
 
 
 
@@ -1231,21 +1641,65 @@ Limit state 3 is more of a local check, the entire analysis only depends on the 
 
 <div style="page-break-after: always;"></div>
 <hr>
-# 8.0 Wood Diaphragm and Shear Wall
+# Appendix: Helpful Tables and Other Stuff
 <hr>
 
+## Table For Wall Stiffness
+
+The flexibilities (inverse of stiffness) from flexural displacement and shear deformation is as follows:
+
+$$\mbox{fixed-fixed: } f_f + f_v = \frac{12H^3}{12tEL^3}  +   \frac{6H}{5tLG}$$
+
+$$\mbox{fixed-free: } f_f + f_v = \frac{12H^3}{3tEL^3}  +   \frac{6H}{5tLG}$$
 
 
+The expression above can be further simplified in terms of their H/L ratio:
 
-<div style="page-break-after: always;"></div>
-<hr>
-# 10.0 Miscellaneous
-<hr>
+$$\mbox{fixed-fixed: } f_f + f_v = \left[  1t(H/L)^3 + 3t(H/L)    \right] \times E^{-1}$$
 
-
+$$\mbox{fixed-free: } f_f + f_v = \left[  4t(H/L)^3 + 3t(H/L)    \right] \times E^{-1}$$
 
 
+Finally, the stiffness is simply the inverse of the above:
+
+$$k = \frac{1}{f_f + f_v}$$
 
 
+* H = wall height, L = wall length, t = wall thickness
+* Assuming effective shear area is equal to 5/6 of gross area
+* Per ACI 318 and TMS 402, the shear modulus may be approximated as G = 0.4E
+* **Assuming same E and t for all walls**
+* **Remember to not include height of parapet in stiffness calculations**
+
+Using the above derivation and assumptions, we create a handy table to quickly look up wall stiffness:
+
+<img src="/assets/img/blog/seismic-fix-fix.png" style="width:100%;"/>
+*Figure 23: Shear Wall Stiffness - FIXED-FIXED*
+
+<img src="/assets/img/blog/seismic-fix-free.png" style="width:100%;"/>
+*Figure 24: Shear Wall Stiffness - FIXED-FREE*
 
 
+## Table Template for ELF Force Vertical Distribution and Diaphragm Forces
+
+Below is a helpful table template for determining vertical story force distribution for ELF and also diaphragm design forces.
+
+Other helpful tips:
+* For diaphragm design ($$w_{px}$$): No need to include weight of in-plane wall because they resist themselves
+* For ELF story force distribution($$w_{x}$$): include weight of all walls tributary to that level (usually taken as half wall height above and below)
+
+<img src="/assets/img/blog/seismicELF.png" style="width:100%;"/>
+
+
+## Table Template for Determining Center of Rigidity
+
+Below is a helpful table template for determining center of mass, center of rigidity, and polar moment of inertia.
+
+Other Helpful Tips:
+* Center of rigidity is not applicable to flexible diaphragms
+* When calculating center of mass of a floor, remember you can use negative area as well. Also make sure to include weight of wall tributary to the floor
+* COR calculation:
+    * NS wall => Ky => xi
+    * EW wall => Kx => yi
+
+<img src="/assets/img/blog/seismicCORCOM.png" style="width:100%;"/>
