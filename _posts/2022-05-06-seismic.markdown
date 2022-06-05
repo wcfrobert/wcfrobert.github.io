@@ -334,7 +334,7 @@ This chapter is mostly a summary of ASCE 7 section 11 which is a guideline for c
 
 ## 3.2 Risk Categories
 
-* Every building is assigned one of four risk categories. Refer to IBC 1604.5 for full list. Refer to ASCE 7-16 Table 1.5.2 for importance factors.
+* Every building is assigned one of four risk categories. Refer to IBC 1604.5 for full list. Refer to ASCE 7-16 Table 1.5.2 for importance factors. Where a building contains two or more occupancy, the more critical governs.
 
 | **Risk Categories** | **Examples**                                                     | **Importance Factor** |
 | --------------- | ------------------------------------------------------------ | ----------------- |
@@ -574,6 +574,8 @@ The table also lists permitted height of the building where NP = Not Permitted, 
 * ASCE 7-16 12.2.5.4 For EBF, SCBF, BRB, steel special plate shear wall, special concrete shear wall
 * ASCE 7-16 12.2.5.6 for steel OMF
 * ASCE 7-16 12.2.5.7 for steel IMF
+
+Remember to not include parapet height into the overall building height.
 
 ## 4.2 Combination of Systems
 
@@ -1030,7 +1032,7 @@ where:
 * $$W_p$$ is the component weight
 * $$I_p$$ is the component importance factor
 * $$z$$ is the height in elevation of component's point of attachment
-* $$h$$ is the height of the building
+* $$h$$ is the height of the building (not including any parapet!)
 
 The z/h ratio essentially dictate an amplification of 1.0 at ground, and 3.0 at the roof.
 
@@ -1533,7 +1535,7 @@ $$v_{ub} = v_b \times c_{ub}$$
 *Figure 21: Unblocked Shear Wall Adjustment Factor*
 
 
-4.3.4.1 - Shear walls have limiting aspect ratios:
+4.3.4.1 - Shear walls have limiting aspect ratios. Also note that there are specific requirements to each wall type. Some are prohibited in higher SDC categories.
 
 <img src="/assets/img/blog/seismic35.png" style="width:45%;"/>
 *Figure 22: Aspect Ratio Limit for Shear Walls*
@@ -1671,7 +1673,7 @@ $$k = \frac{1}{f_f + f_v}$$
 * **Assuming same E and t for all walls**
 * **Remember to not include height of parapet in stiffness calculations**
 
-Using the above derivation and assumptions, we create a handy table to quickly look up wall stiffness:
+Using the above derivation and assumptions, we can create a handy table to quickly look up wall stiffnesses:
 
 <img src="/assets/img/blog/seismic-fix-fix.png" style="width:100%;"/>
 *Figure 23: Shear Wall Stiffness - FIXED-FIXED*

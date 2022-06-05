@@ -5,7 +5,7 @@ title: "Goodbye YouTube; Hello World"
 description: "My struggles with social media addiction. What worked for me and what did not"
 image: assets/img/blog/youtube.png
 date: 2022-05-18
-tags: thoughts
+tags: blog
 ---
 
 > "Moody entry today... I don't like my current self. To be honest, I feel quite miserable"
