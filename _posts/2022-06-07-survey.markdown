@@ -1,0 +1,1042 @@
+---
+layout: blog-post
+categories: engineering
+title: "Primer: Surveying Principles"
+description: "Collection of personal notes for California state Seismic PE Exam"
+image: assets/img/blog/survey.png
+date: 2022-06-07
+tags: primer
+---
+
+*"Primer" is a personal reference notebook and a side project where I can organize and digest some of the things I've learned on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
+
+*Please note that these notes are for my own use. It is not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
+
+
+- [1.0 California Surveying Law](#10-california-surveying-law)
+  * [1.1 Types of Surveys](#11-types-of-surveys)
+  * [1.2 Survey Party](#12-survey-party)
+  * [1.3 California Law](#13-california-law)
+- [2.0 Horizontal Measurements - Distance](#20-horizontal-measurements---distance)
+  * [2.1 Basic Trigonometry](#21-basic-trigonometry)
+  * [2.2 Taping and Chaining](#22-taping-and-chaining)
+  * [2.3 Stadia Measurement](#23-stadia-measurement)
+  * [2.4 Electronic Distance Measuring (EDM) and Total Station](#24-electronic-distance-measuring--edm--and-total-station)
+- [3.0 Vertical Measurements - Elevations](#30-vertical-measurements---elevations)
+  * [3.1 Conceptual Stuff](#31-conceptual-stuff)
+  * [3.2 Indirect Leveling With Stadia](#32-indirect-leveling-with-stadia)
+  * [3.3 Leveling Rod](#33-leveling-rod)
+  * [3.4 Direct Leveling Note Example](#34-direct-leveling-note-example)
+  * [3.5 Profile or Cross-Section Leveling](#35-profile-or-cross-section-leveling)
+  * [3.6 Reciprocal Leveling](#36-reciprocal-leveling)
+- [4.0 Angle Measurements](#40-angle-measurements)
+  * [4.1 Conceptual Stuff](#41-conceptual-stuff)
+  * [4.2 Bearing](#42-bearing)
+  * [4.3 Azimuth](#43-azimuth)
+  * [4.4 Traverses](#44-traverses)
+- [5.0 Error Analysis and Distribution](#50-error-analysis-and-distribution)
+- [6.0 Traverses](#60-traverses)
+- [7.0 Topography](#70-topography)
+- [8.0 Route Surveying](#80-route-surveying)
+- [9.0 Construction Staking](#90-construction-staking)
+- [10.0 Photogrammetry](#100-photogrammetry)
+- [11.0 California Coordinate System](#110-california-coordinate-system)
+- [12.0 Astronomical Observations](#120-astronomical-observations)
+- [13.0 United States Public Lands System](#130-united-states-public-lands-system)
+
+
+This is my study note which summarizes the content of Paul A. Cuomo's "Surveying Principles for Civil Engineers" textbook. I highly recommened getting a physical copy, as it would be prudent for you to have it during the exam. [Amazon Link](https://www.amazon.com/Surveying-Principles-Civil-Engineers-2nd/dp/1888577940)
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 1.0 California Surveying Law
+<hr>
+
+## 1.1 Types of Surveys
+
+* Boundary - property lines
+* Geodetic - planetary wide perspective. Shape of the earth.
+* Hydrographic - underwater land characteristic
+* Topographic - land elevation and objects
+* Route  - highways, pipes
+* Construction Staking - field control during construction
+
+## 1.2 Survey Party
+
+* party chief - team leader
+* instrument person - often note keeper as well
+* rod person - holds rod plumb
+* chain persons - pair stretching tape between them
+* stake setter - drives stakes into ground per instrument or rod person
+
+## 1.3 California Law
+* Civil engineers cannot establish property lines
+* Professional Land Surveyors Act
+    * Defines licensure requirements and roles of a surveyor
+* Professional Engineers Act
+    * Defines licensure requirements for civil engineer and their allowed role
+* Subdivision Map Act
+    * Defines procedure for boundary surveys (property lines) and how they are recorded by local municipality
+    * Parcel map = large parcel of land divided into (4) or less divisions
+    * Subdivision Map = large parcel of land divided into (5) or more divisions
+    * Developers submit their plans. Sometimes tentative maps are provided (no license is require for tentative maps) beforehand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 2.0 Horizontal Measurements - Distance
+<hr>
+
+## 2.1 Basic Trigonometry
+
+* **Vertical angle** = angle with respect to horizontal line ($$\alpha$$). Think of it as a projection of our vector onto the horizontal line.
+
+$$H = S \cos \alpha$$
+
+* **Zenith angle** - angle with respect to vertical line ($$z$$). Note you can use angle greater than 90 degrees directly because sin(z) = sin(90+z)
+
+$$H = S \sin z$$
+
+<img src="/assets/img/blog/survey1.png" style="width:50%;"/>
+*Figure 1: Horizontal Measurement Trigonometry*
+
+
+## 2.2 Taping and Chaining
+
+* Taping and chaining involves two people measuring horizontal distance with **Gunter's chain** (66 ft) or a steel tape. Try to measure horizontal distance directly without using any trigonometry (use a **plumb bob** for leveling)
+* Here are some useful unit conversions:
+
+<img src="/assets/img/blog/survey2.png" style="width:50%;"/>
+*Figure 2: Common Unit Conversion*
+
+* There are three types of tapes: 1.) add tape, 2.) cut tape, and graduated tape. Their main difference is how the last feet is measured and calibrated (see figure below for an illustration. The rear chain-person holds the roll of tape. The forward chain-person holds near the zero mark.
+
+<img src="/assets/img/blog/survey3.png" style="width:60%;"/>
+*Figure 3: Different Type of Tape*
+
+
+* Temperature correction can be applied with the following equation. Let c = the correction amount. To = 68<sup>o</sup>>F unless otherwise noted.
+    * If T > To, the tape is hot and expanded which reads smaller, c is positive, real distance is actually larger
+    * If T < To, the tape is cold and contracted which reads bigger, c is negative, real distance is actually smaller
+
+$$c = (6.45 \times 10^{-6}) (T - T_o) L_{measured}$$
+
+$$T_{true} = T_{measured} + c$$
+
+* *Tip: When tape is measured at an incline. Make sure to correct for S, before calculating H*
+
+
+## 2.3 Stadia Measurement
+* Measuring distance with a lens w/ cross-hair and a rod. Distance can be indirectly deduced by reading the gap between cross-hair. Usually K = 100 ft and C is 0 ft unless otherwise noted.
+
+$$distance = KI + C$$
+
+* I is the crosshair reading as illustrated below:
+
+<img src="/assets/img/blog/survey4.png" style="width:70%;"/>
+*Figure 4: Stadia Cross Hair*
+
+* **Very rare for reading to be level**, more often you the scope is slanted and need to adjust measurements. Referring to the figure below:
+
+<img src="/assets/img/blog/survey5.png" style="width:90%;"/>
+*Figure 5: Inclined Stadia Measurement*
+
+1. Reading line AB = I, which is longer than actual because slanted scope
+2. Convert to the effective rod intercept by first determining the vertical angle. **Note how the vertical angle corresponds in the figure above** ($$\alpha$$)
+
+    $$I_1 = I \cos(\alpha)$$
+
+3. Now the actual slanted distance (S) can be determined as we've shown before:
+
+    $$S = K I_1 + c = KI \cos(\theta) + c$$
+
+4. Finally let's convert to horizontal distance:
+
+    $$H = S \cos(\alpha) = (KI \cos(\alpha) + c) \cos(\alpha)$$
+
+    $$V = S \sin(\alpha) = (KI \cos(\alpha) + c) \sin(\alpha)$$
+
+
+## 2.4 Electronic Distance Measuring (EDM) and Total Station
+
+* EDM is essentially the high-tech version of stadia that is superior all around. Distance is measured by measuring wavelength of light as it is reflected. Occasionally, some error adjustment is required:
+    * Constant prizm offset. Reduce distanced measured by 30 mm to 40 mm (because of internal reflector distance)
+    * Varying atmospheric pressure adjustment (measured in ppm)
+
+$$c = L_{measured} \times \frac{ppm}{1000000}$$
+
+* Total station is the even more advanced version that allows for measurement of all distances and angles. No need to take notes when you have a total station.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 3.0 Vertical Measurements - Elevations
+<hr>
+
+## 3.1 Conceptual Stuff
+
+* All elevation is measured with respect to a **datum**. In the US, that datum is based on the **Mean Sea Level 1929 Adjustment (MSL29)**
+* Here are some commonly used terminologies:
+    * leveling circuit - our instrument which has a telescope for rod readings. Often rotation is restricted to only vertical axis (i.e. always horizontal)
+    * (RR) rod reading
+    * (HI) instrument height - usually refers to elevation at sightline. But may also refer to height of equipment itself
+    * (BS) backsight - RR at the previous point of measurement. **associated with plus (+)**
+    * (FS) foresight - RR at the next point of measurement. **associated with minus (-)**
+    * (BM) benchmark - a location where we know the exact elevation (serves as control and error correction)
+    * (TBM) temporary benchmark - not official, usually used by individuals for temporary purposes
+    * (TP) turning point - point whose elevation is determined prior to moving the level
+* Our instrument does not has to be placed in the middle of FS and BS (rotating 180 degree) each time. There is some freedom but our equipment should always be set up with equal distance to BS and FS to minimize curvature and refraction errors. If this is not possible (say that places our instrument in the middle of a river), then use **reciprocal leveling**
+
+<img src="/assets/img/blog/survey6.png" style="width:75%;"/>
+*Figure 6: Leveling Instrument*
+
+Referring to the figure above, the procedure for leveling is as follows:
+
+1. We know elevation at point X is 100 ft
+2. From RR of BS, we read 4.5 ft 
+3. => 100 + 4.5 = 104.5 ft is the elevation of HI
+
+    $$HI = elev_{BS} + BS$$
+
+4. Now rotate to the FS, we read RR of FS as 1.5 ft. Subtract this value to get elevation of FS.
+5. => 104.5 - 1.5 = 103 ft is the elevation at Y
+
+    $$elev_{FS} = HI - FS$$
+
+6. Move instrument, FS becomes the new BS, repeat until done
+
+* **Precise Leveling** - high order of accuracy. Used to furnish low-order work. Covers large area. More precise equipment is used.
+
+## 3.2 Indirect Leveling With Stadia
+
+* Use stadia as we have seen in the last chapter, but calculate "V" this time. Then add/subtract by given elevation
+* Often we need to adjust by add/subtracting rod and instrument height:
+
+<img src="/assets/img/blog/survey6.5.png" style="width:80%;"/>
+
+
+## 3.3 Leveling Rod
+
+* Rods can extend up to 13 ft, with 0 at the base. There are two types:
+    * **self-reading rod** - Philadelphia rod (most popular)
+    * **self-reducing rod** - Lenker rod. No notes need to be taken. Set zero at HI. Value increases from top to bottom
+
+<img src="/assets/img/blog/survey7.png" style="width:100%;"/>
+*Figure 7: Type of Leveling Rod*
+
+## 3.4 Direct Leveling Note Example
+Here is a sample note taken from the field. Note the sequence of calculation and how BS is associated with (+), and FS is associated with (-). Also note the summation check at the end to ensure no adjustment is needed.
+
+<img src="/assets/img/blog/survey8.png" style="width:90%;"/>
+*Figure 8: Leveling Note + Error Correction*
+
+$$\sum BS - \sum FS = elev_{start} - elev_{end}$$
+
+If the summation above does not calculate out, we need to smear the error in the "adjusted elevation column" as shown above.
+
+
+## 3.5 Profile or Cross-Section Leveling
+
+Involves obtaining elevation along a perpendicular line (used to determine a cross-section). The surveying note will now have a new column for **side shots (SS)**
+
+$$elev_{SS} = HI - SS$$
+
+<img src="/assets/img/blog/survey9.png" style="width:100%;"/>
+*Figure 9: Profile Leveling*
+
+
+## 3.6 Reciprocal Leveling
+Occurs when instrument cannot be placed equi-distance between FS and BS (such as in the middle of a river). We are essentially averaging out the error.
+
+Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the results.
+
+<img src="/assets/img/blog/survey10.png" style="width:100%;"/>
+*Figure 10: Reciprocal Leveling*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 4.0 Angle Measurements
+<hr>
+
+
+## 4.1 Conceptual Stuff
+
+* Three types of angle measurements. Internal and exterior angle are shown below. Deflection angle is how much the equipment has rotated.
+
+<img src="/assets/img/blog/survey11.png" style="width:90%;"/>
+*Figure 11: Types of Angle Measurements*
+
+
+## 4.2 Bearing
+
+* **Bearing** = angle with respect to 4 quadrants. The reference **meridian** is usually North. The format of a bearing measurement is usually in the form of (North or South)(rotate toward)(West or East)(e.g. N35<sup>o</sup>>E)
+* Interestingly, these quadrants are different from standard mathematics
+* The bearing that is parallel but points in the opposite direction is called a **reverse bearing**
+
+
+<img src="/assets/img/blog/survey12.png" style="width:70%;"/>
+*Figure 12: Bearing Angles*
+
+* The reference meridian can be of three types:
+    * True - parallel to line drawn from north pole to south pole. Same everywhere on Earth at any point in time
+    * Magnetic - taken by compass. Not equal to true meridian! Magnetic pole is constantly changing and depends on where you are on Earth
+    * Grid - An imaginary grid is superimposed on to a map. Angle references this grid
+* Difference between True meridian and Magnetic meridian = **magnetic declination**. 
+    * Line where magnetic meridian = true meridian is called **agonic line**
+    * The "topographic" line that shows the same magnetic declination is called **isogonic line**
+
+<img src="/assets/img/blog/survey13.png" style="width:50%;"/>
+*Figure 13: Isogonic Contours*
+
+
+## 4.3 Azimuth
+
+* Azimuth is a measurement that starts North and rotates **CLOCKWISE** ranging from 0 to 360 degrees.
+
+<img src="/assets/img/blog/survey14.png" style="width:50%;"/>
+*Figure 14: Azimuth*
+
+* Same as above, Azimuth can either be 1.) true, 2.) magnetic, or 3.) grid.
+* A common mistake is thinking 90 degrees = 180 degrees...
+
+
+## 4.4 Traverses
+
+* Traversing is the task of relating points through angles and distances. There is **Open Traverse** and **Closed Traverse**
+
+
+<img src="/assets/img/blog/survey15.png" style="width:70%;"/>
+*Figure 15: Open and Closed Traverse*
+
+
+* For closed traverse, the internal angles must add up to the following where n = number of legs (e.g. triangle = 3)
+
+$$\sum \theta_{interior} = (n-2)(180)$$
+
+We will discuss traverses in detail in Chapter 6.
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 5.0 Error Analysis and Distribution
+<hr>
+
+It is impossible to measure things exactly without error. Sources of error can be systematic or random. Here is a list of potential sources:
+
+* Procedure shortcomings
+* Care exercised by surveyor
+* Equipment calibration frequency
+* Weather
+
+**Level of Accuracy** is the measure of uncertainty regarding the survey overall. For any survey, you can exercise an extreme amount of care. In order to establish uniformity and prevent oversurveying (and reduce cost), Caltrans Survey Manual provides detailed specifications for classification of accuracy
+
+<img src="/assets/img/blog/survey16.png" style="width:90%;"/>
+*Figure 16: Caltrans Accuracy Standards*
+
+Higher order survey is more accurate, but also take longer and is more costly.
+
+* Accuracy => how close your observed value is to the true value
+* Precision => how close together your repeated measurements are to each other (could be precise but inaccurate)
+
+
+
+## 5.1 Data and Error
+
+The figure below shows some example angle measurements.
+
+<img src="/assets/img/blog/survey17.png" style="width:60%;"/>
+*Figure 17: Error in Measurements*
+
+* **Mean** of the measurements can be calculated as shown:
+
+    $$\mu = \frac{\sum X_i}{N}$$
+
+    * Where $$X_i$$ is the sum of all measurements, N is the number of measurements
+    * For multiple angle measurements, simply average the seconds if degree and minute is unchanged.
+    * Otherwise, add degree, minute, second separately, then use calculator function to automatically aggregate them. In the example above => 1600 degrees, 240 minutes, 579 seconds, then convert => (1604,9,39)
+
+* **Residual** is the difference between each measurement and the mean (note that residual can be negative). Also sometimes referred to as deviation.
+
+    $$r = X_i - \mu $$
+
+* **Standard Deviation** is a measure of dispersion of data (how flat the bell curve is). One standard deviation of the mean value contains 68.27% of the sample. Variance is defined as $$\sigma^2$$
+
+    $$\sigma = \pm \sqrt{\frac{\sum r^2}{N-1}}$$
+
+
+<img src="/assets/img/blog/survey18.png" style="width:50%;"/>
+*Figure 18: Standard Deviation*
+
+* **Standard Error of the Mean** is a measure of uncertainty regarding the mean and is calculated as a function of sample size and standard deviation. If our sample is the entire population, then the standard error of the mean is zero. Smaller sample size = more uncertainty, and vice versa.
+
+    $$\sigma_m = \pm \frac{\sigma}{\sqrt{N}}$$
+
+    * In the example above, we had 16 measurements and the standard error of the mean is $$\pm 1$$", which means our average value is about 1" plus or minus from the true value. If we made 1,000,000 measurements, we would get even closer to the true value
+    * This is what we usually referred to when we say we are uncertain to $$\pm x$$"
+
+
+## 5.2 Groups of Measurements
+
+Say you have a traverse with 4 courses. Each course you took 20 measurements. In this case:
+
+* Number of groups = 4
+* N of each group = 20
+
+The total standard deviation of the entire group is calculated as:
+
+$$\sigma_{sum} = \pm \sqrt{\sigma_1^2 + \sigma_2^2 + \sigma_3^2 + ... + \sigma_n^2}$$
+
+
+<u>Example 1:</u> A party chief and his chainman can read the tape end to $$\pm 0.01$$ ft with a 100 ft tape. What is the uncertainty in a 1000 ft distance measurement? Note that each tape reading occurs "twice" (one at each end)
+
+* Note that if $$n = 1$$, then $$\sigma_m = \sigma = \pm 0.01$$ ft
+* But since the tape reading rely on two readings, the standard deviation needs to be modified slightly: $$\sigma_m = \pm 0.01$$ ft and $$n = 2$$, thus $$\sigma = \sigma_m \sqrt{n} = \pm 0.014$$ ft
+* For a series of 10 grouped measurements: $$\sigma_{sum} = \sqrt{0.014^2 \times 10} = \pm 0.04$$ ft
+
+<u>Example 2:</u> Three distance segments measured had uncertainty of +-0.05 ft. Another four distance segments measured had uncertainty of +- 0.1 ft. What is the total uncertainty in the seven segments?
+
+$$\sigma_{sum} = \sqrt{ 0.05^2 \times 3 + 0.1^2 \times 4  } = \pm 0.218 ft$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 6.0 Traverses
+<hr>
+
+## 6.1 Conceptual Stuff
+
+Traverse is simply measuring distance and angles. Here are some definitions that you should know:
+
+* **bearings** - horizontal angle measured
+* **headings** - horizontal distance measured
+* **Course or Leg** - course or leg of a traverse is described by a distance and an angle. The angle may be provided in bearing or azimuth
+
+<img src="/assets/img/blog/survey19.png" style="width:45%;"/>
+*Figure 19: Course or Leg*
+
+* **Departure** - change in X-direction
+* **Latitude** - change in Y-direction
+
+<img src="/assets/img/blog/survey20.png" style="width:45%;"/>
+*Figure 20: Departure and Latitude*
+
+
+Here is a tip for quicker angle calculation. Think of cosine as projection. Since bearing is always provided with respect to vertical axis (N-S), the following always holds true:
+
+$$latitude = \Delta Y = L \cos(\alpha)$$
+
+$$departure = \Delta X = L \sin(\alpha)$$
+
+Also make sure you assign the correct sign(+,-). If using azimuth, the sign is automatically taken care of.
+
+Given departure and latitude, the overall course length can be calculated using Pythagorean Theorem (easiest), or any trig ratios (sin/cos/tan). This is called **inversing** the course.
+
+$$L = \sqrt{\Delta X^2 + \Delta Y^2}$$
+
+
+## 6.2 Closed Traverse
+
+Closed traverse involves several courses that ultimately return to the starting point. The algebraic sum of departure and latitude should be zero. But this will never be the case no matter how careful the surveys performed. Error correction will need to be performed.
+
+<img src="/assets/img/blog/survey21.png" style="width:90%;"/>
+*Figure 21: Closed Traverse Notes Example*
+
+The procedure for balancing a closed traverse is lengthy and involves 1.) first balancing bearing angle with interior angle 2.) then balancing departure and latitude, 3.) then balancing bearing angle again along with length based on adjusted dep. and lat. The procedure is as follows:
+
+1. First balance the interior angles $$(n-2)\times 180^o$$
+2. Revise bearing of each course based on adjusted interior angle (*adjusted bearing*)
+3. Compute departure and latitude based on adjusted bearing (*uncorrected dep. & lat. based on adjusted bearing in the previous step*)
+4. Compute error in departure (dx) and latitude (dy)
+5. Adjust departure and latitude using compass rule (*adjusted dept. & lat.*)
+6. Finally recalculate length and bearing angle with the adjusted departure and latitude (*length and bearing recalculated*)
+
+
+There are three methods for error adjustment of closed traverses:
+
+1. **transit rule** - adjustment in proportion to latitude. Use when angular measurement is considered more reliable
+
+    $$C_x = \frac{lat_i}{\sum |lat_i|} \times dx$$
+
+    $$C_y = \frac{lat_i}{\sum |lat_i|} \times dy$$
+
+2. **compass rule** - adjustment in proportion to leg distance. Use when angular and linear measurements have equal reliability. Regarded as superior to transit rule.
+
+    $$C_x = \frac{l}{L} \times dx$$
+
+    $$C_y = \frac{l}{L} \times ly$$
+
+    where:
+    * "l" here is the length of a single course. NOT cumulative as was the case for open-traverse correction
+    * "L" is the total length of traverse (perimeter)
+    * "dx" and "dy" are the errors in dep. and lat.
+
+3. **method of least square** - can be used in all cases and utilizes curve fitting. Mostly done through computer software. Too tedious by hand
+
+
+
+To illustrate this process, we will do an example. Balance the following closed traverse with compass rule:
+
+<img src="/assets/img/blog/survey22.png" style="width:50%;"/>
+*Figure 22: Example Problem for Closed Traverse*
+
+1. Balancing interior angle
+
+    <img src="/assets/img/blog/survey22-1.png" style="width:65%;"/>
+
+2. Adjust interior angle
+
+    <img src="/assets/img/blog/survey22-2.png" style="width:65%;"/>
+
+3. Compute new bearing based on adjusted interior angle
+
+    <img src="/assets/img/blog/survey22-3.png" style="width:100%;"/>
+
+4. Compute latitude and longitude based on bearing in step 3
+
+    <img src="/assets/img/blog/survey22-4.png" style="width:90%;"/>
+
+5. Calculate total and relative closure error
+
+    <img src="/assets/img/blog/survey22-5.png" style="width:75%;"/>
+
+6. Use Compass Rule to get adjusted lat. & dep.
+
+    <img src="/assets/img/blog/survey22-6.png" style="width:90%;"/>
+
+7. Recalculate final length and bearing angle
+
+    <img src="/assets/img/blog/survey22-7.png" style="width:90%;"/>
+
+
+## 6.3 Open Traverse
+
+Open traverse does not start and end at the same location. It can be balanced only if the start and end points are known.
+
+<img src="/assets/img/blog/survey23.png" style="width:45%;"/>
+*Figure 23: Open Traverse*
+
+The adjustment procedure is as noted:
+
+1. Calculate the difference between calculated and known coordinates (dx, dy)
+2. Compute total and relative error of closure
+
+    $$d_{total} = \sqrt{dx^2 + dy^2}$$
+
+    $$d_{relative} = \frac{d_{total}}{L}$$
+
+3. Correction to departure is calculated as:
+
+    $$C_x = \frac{l}{L} dx$$
+
+4. Correction to latitude is calculated as:
+
+    $$C_y = \frac{l}{L} dy$$
+
+    where:
+
+    "l" is the **cumulative** distance from the beginning point
+    
+    "L" is the total traverse distance
+
+5. Correct the northings (Y-axis) based on the above equations
+6. Correct the eastings (X-axis) based on the above equations
+7. Compute the adjusted rectangular coordinates (pay attention to signs)
+7. Adjust the length and bearing of each course accordingly based on the adjusted grid
+
+$$\alpha = tan^{-1} (\frac{x_2 - x_1}{y_2 - y_1})$$
+
+$$L = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
+
+
+
+## 6.4 Rectangular Coordinates
+
+Often, a coordinate (x,y) is assigned to the starting point. From the departure and latitude measurements, the coordinate of every other point can be determined. The process is simple but pay attention to signs! And:
+
+$$departure = \Delta X$$
+
+$$latitude = \Delta Y$$
+
+
+
+## 6.5 Enclosed Area - DMD Method
+
+Closed traverses must be balanced before calculating its area. The most common method is called **Double Meridian Distance** (DMD) method. Area is calculated by summing the product of latitude and DMD for each course.
+
+$$A = \frac{\sum lat_i \times DMD_i}{2}$$
+
+* Reference meridian (a vertical line) is drawn at the most westerly point
+* Meridian Distance (MD) is the distance between this vertical line, to the mid point of any course. Refer to the figure below
+* Make sure to calculate DMD for each course separately to avoid having error propagate through your calculation
+* Divide by 43560 to convert from ft2 to acres
+
+<img src="/assets/img/blog/survey24.png" style="width:95%;"/>
+*Figure 24: DMD Method for Calculating Enclosed Area*
+
+
+
+
+
+## 6.6 Enclosed Area - Criss Cross Method
+
+Another more numerically convenient way of calculating enclosed area is the Criss Cross Method. But we need to get the grid (x,y) coordinates first before we can use this method. An example of this method is shown below.
+
+<img src="/assets/img/blog/survey25.png" style="width:95%;"/>
+*Figure 25: Criss Cross Method for Calculating Enclosed Area*
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 7.0 Topography
+<hr>
+
+## 7.1 Conceptual Stuff
+
+* **Topography** - process of mapping elevations and physical features of a site in plan view. Also sometimes include annotations of natural or man-made features
+* **Horizontal Control** - known point of line such as property line, centerline of highway, streets, etc.
+* **Vertical Control** - known elevation/datum. Usually use the National Vertical Geodetic Datum (NVGD 1929) or the North American Vertical Datum of 1988 (NAVD 88)
+* Three methods:
+    1. Cross-section method - great for roads
+    2. Grid method - great for contour
+    3. Radial method - great for single point of interest
+
+There is also photogrammetry which involve aerial photos. We will discuss this further in future chapters.
+
+
+## 7.2 Cross-Section Method
+
+* Mostly used for roads. Cross sections for elevations are taken at right angles (offset lines). Refer to the figure below. 
+
+<img src="/assets/img/blog/survey26.png" style="width:100%;"/>
+*Figure 26: Cross Section Method*
+
+* Baseline (horizontal control) is usually the proposed centerline of a road or highway. Features and other point of interest are fully described in terms of:
+    * vertical (its elevation)
+    * horizontal (station along baseline + offset distance to feature)
+
+
+## 7.3 Grid Method
+
+* Method involves superimposing a grid onto an area of interest (divided into series of square regions). Refer to the figure below.
+
+<img src="/assets/img/blog/survey27.png" style="width:80%;"/>
+*Figure 27: Grid Method*
+
+* Determine elevation at every intersection point. Then enter the data into a software to generate contour plot
+
+
+## 7.4 Radial Topographic Survey
+
+* Method commonly used to map a special point of interest. Start at a known point/elevation. Use stadia or total station an traverse to point of interest.
+
+
+## 7.5 Reading Contour Maps
+
+* Contour maps show lines of equal elevation
+* The direction of a contour at any point is at right angles to the direction of steepest slope
+* Contour lines cannot cross each other
+* Slope (or gradient) can be determined by dividing elevation change by horizontal distance:
+
+$$slope = \frac{\Delta elev}{\Delta x}$$
+
+* Profile is kind of like a section cut on the contour:
+
+<img src="/assets/img/blog/survey28.png" style="width:50%;"/>
+*Figure 28: Contour Profile*
+
+The figure below shows some of the common features of contour plot that you should recognize.
+
+<img src="/assets/img/blog/survey29.png" style="width:100%;"/>
+*Figure 29: Common Contour Features*
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 8.0 Route Surveying
+<hr>
+
+## 8.1 Conceptual Stuff
+
+Route surveying usually involve two types of curves:
+* **Horizontal curves** - curves in direction (e.g. ramps of highway or bridge)
+    * mathematically circular
+    * straight portions are called **tangents**
+* **Vertical curves** - changes in elevation and slope
+    * mathematically equal-tangent-parabolic
+    * curve can be sag or crest
+
+<img src="/assets/img/blog/survey29.1.png" style="width:50%;"/>
+
+
+## 8.2 Horizontal Curves
+
+Equation and elements of a circular horizontal curve is shown below:
+
+<img src="/assets/img/blog/survey30.png" style="width:50%;"/>
+*Figure 30: Temp*
+
+Notations:
+* C = long chord length from start to finish (straight line)
+* D = degree of curvature
+* E = external distance
+* I (or $$\Delta$$) = interior angle, intersection angle
+* I/2 = full deflection angle for the long chord
+* L = length of curve
+* M = middle ordinate
+* PC (or TC or BC) = START. point of curvature, tangent-to-curve, beginning-of-curve
+* PI (or V) = point of intersection, vertex, intersection of tangents
+* POC = any point on the curve
+* PT (or CT or EC) = END. point of tangency, curve-to-tangent, end of curve
+* R = radius of curve
+* T = tangent distance. Semi-tangent. (see diagram)
+
+
+<u>Degree of Curvature</u>
+
+Degree of curvature (D) is a measure of rate of change of rotation. Usually it is stated mathematically as 1 over radius of curvature:
+
+$$\kappa = \frac{1}{\rho}$$
+
+However, we like to express curvature as "degree per station" rather than per feet. Note how there is a direct relationship between D and R (knowing one automatically reveals the other)
+
+$$D = \kappa = \frac{100 ft}{R} [radian]$$
+
+$$D = \frac{5729.6^o}{R} [degrees]$$
+
+For railroad projects with very large radius, the chord basis may be preferred:
+
+$$sin(\frac{D}{2}) = \frac{50 ft}{R}$$
+
+
+<u>Deflection Angle</u>
+
+In the process of laying out a road, construction stakes must be installed at BC and EC and along the road at full stations (sometimes half if turn is sharp). 
+
+**Deflection angle** is defined as the angle between the tangent and a chord (see figure below for clarification)
+
+<img src="/assets/img/blog/survey31.png" style="width:50%;"/>
+*Figure 31: Temp*
+
+* $$\alpha$$ in the figure above is I, but could actually be any point on the curve
+* $$\beta$$ is another useful geometric property to keep in mind
+
+In essence, what we want is for any two points on a curve, how much should we turn? And what is the arc length between them?
+
+<img src="/assets/img/blog/survey32.png" style="width:50%;"/>
+*Figure 32: Temp*
+
+The deflection angle ($$\delta$$) between point A and B is simply the arc length divided by the radius divide by 2:
+
+$$\alpha = \frac{(AB)_{arc}}{R} [radians]$$
+
+$$\alpha = \frac{(AB)_{arc}}{R} \times \frac{180}{\pi} [degrees]$$
+
+$$\delta = \alpha /2$$
+
+The chord length between point A and B:
+
+$$(AB)_{chord} = 2 R sin(\delta)$$
+
+The deflection angle per full station can be calculated as:
+
+$$\delta = \frac{1}{2} \times \frac{100 ft}{R} [radians]$$
+
+$$\delta = \frac{1}{2} \times \frac{100 ft}{R} \times \frac{180}{\pi} [degrees]$$
+
+Another useful parameter is deflection angle per foot. To get the deflection angle at any station, simply multiply this value by the distance from BC to the point under consideration:
+
+$$\delta /ft = \frac{I/2}{L}$$
+
+
+From this exercise, we can sight the entire curve at BC by specifying how much to turn, and the corresponding chord distance.
+
+
+<u>Tangent Offset</u>
+
+Tangent offset can be calculated via the following
+
+<img src="/assets/img/blog/survey33.png" style="width:50%;"/>
+*Figure 33: Temp*
+
+
+
+
+## 8.3 Vertical Curves
+
+Vertical curves are used to transition between grades. They can be symmetric or asymmetric.
+
+<img src="/assets/img/blog/survey34.png" style="width:50%;"/>
+*Figure 34: Temp*
+
+Notations:
+* BVC, PVC = beginning of curve
+* EVC, PVT = end of curve
+* g1 = starting grade (%)
+* g2 = ending grade (%)
+* L = HORIZONTAL length of curve
+* M = middle ordinate (usually very small)
+* V, PI, PVI = vertex point
+
+Since the grade typically very small. The chord distance (BVC to V and V to EVC) is essentially equal to the length of the curve.
+
+Elevation of every point on the curve can be defined using a parabolic equation. A parabolic curve is completely defined by two grades and a horizontal length.
+
+$$r = \frac{g_2 - g_1}{L}$$
+
+$$y_{elev} = (r/2)x^2 +g_1 x + y_{BVC}$$
+
+$$x_{crit} = \frac{-g1}{r}$$
+
+$$M = \frac{|g_1-g_2| L}{8}$$
+
+Units for length in stations (**sta**):
+* $$g_1, g_2$$ is in whole percents (e.g. 2, -1.5)
+* $$L, x$$ is in stations (e.g. 5.0, 6.5, 10.0)
+* $$y_{BVC}$$ elevation is in feet
+
+Units for length in feet (**ft**):
+* $$g_1, g_2$$ is in decimals (e.g. 0.02, -0.015)
+* $$L, x$$ is in ft (e.g. 500, 650, 1000)
+* $$y_{BVC}$$ elevation is in feet
+
+If elevation at PVI is given, can simply use the straight grade lines to back-calculate elevation at BVC. Similar for EVC.
+
+$$y_{BVC} = y_{PVI} + g_1 L_1$$
+
+If the curve is not symmetric, you may need to solve the length of curve on either side of PVI first:
+
+
+
+A spreadsheet table could be set up to organize calculation:
+
+
+
+
+## 8.4 Other Types of Curves
+
+* **Compound Horizontal Curve** - two horizontal curve of different radius that lie on the same tangent. Analyze as two separate curves. All previous equations apply
+
+<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+
+* **Reverse Horizontal Curve** - same as above but the second curve flips curvature
+
+<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+
+* **Spiral Horizontal Curve** - Used to produce gradual transition from tangent to circular
+
+<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+
+  * TS = tangent to spiral
+  * LS = length of spiral
+  * SC = spiral to circle
+  * $$\theta_s$$ = interior angle of spiral
+  * D = curvature of circle
+  * Length of spiral recommended to be a function of approach speed of vehicles. V is in mph, R is in feet
+
+$$LS = \frac{1.6 (V)^3}{R}$$
+
+  * LS can also be calculated as:
+
+$$LS = \frac{100 \theta_s}{D/2}$$
+
+  * Deflection angle for setting out the spiral can be calculated as:
+
+$$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
+
+* **Asymmetrical Vertical Curve** - tangents are not equal. Analyze as two separate curves joined at the point of compound vertical curve (PCVC). Refer to page 67 of Cuomo text for more information and equations.
+
+<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+
+
+
+
+## 8.5 Estimating Earth Work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 9.0 Construction Staking
+<hr>
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 10.0 Photogrammetry
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 11.0 California Coordinate System
+<hr>
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 12.0 Astronomical Observations
+<hr>
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 13.0 United States Public Lands System
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Angle measurements
+* Degree, Minute, Seconds Formula. Use built-in calculator function instead of calculating manually
+
+$$decimal = degree + minute/60 + second/3600$$
+
+* To convert the other way, for example 58.666 degrees:
+    * 58 degrees
+    * 0.666*60 = 39.96, round down to 39 minute
+    * (0.666 - 39/60 ) * 3600 = 57.6, round to 57 seconds
+    * 58 degrees, 39 minutes, 57 seconds
+
+
+
+
+
