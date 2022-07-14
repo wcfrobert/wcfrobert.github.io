@@ -35,14 +35,37 @@ tags: primer
   * [4.3 Azimuth](#43-azimuth)
   * [4.4 Traverses](#44-traverses)
 - [5.0 Error Analysis and Distribution](#50-error-analysis-and-distribution)
+  * [5.1 Data and Error](#51-data-and-error)
+  * [5.2 Groups of Measurements](#52-groups-of-measurements)
 - [6.0 Traverses](#60-traverses)
+  * [6.1 Conceptual Stuff](#61-conceptual-stuff)
+  * [6.2 Closed Traverse](#62-closed-traverse)
+  * [6.3 Open Traverse](#63-open-traverse)
+  * [6.4 Rectangular Coordinates](#64-rectangular-coordinates)
+  * [6.5 Enclosed Area - DMD Method](#65-enclosed-area---dmd-method)
+  * [6.6 Enclosed Area - Criss Cross Method](#66-enclosed-area---criss-cross-method)
 - [7.0 Topography](#70-topography)
+  * [7.1 Conceptual Stuff](#71-conceptual-stuff)
+  * [7.2 Cross-Section Method](#72-cross-section-method)
+  * [7.3 Grid Method](#73-grid-method)
+  * [7.4 Radial Topographic Survey](#74-radial-topographic-survey)
+  * [7.5 Reading Contour Maps](#75-reading-contour-maps)
 - [8.0 Route Surveying](#80-route-surveying)
+  * [8.1 Conceptual Stuff](#81-conceptual-stuff)
+  * [8.2 Horizontal Curves](#82-horizontal-curves)
+  * [8.3 Vertical Curves](#83-vertical-curves)
+  * [8.4 Other Types of Curves](#84-other-types-of-curves)
+  * [8.5 Estimating Earth Work](#85-estimating-earth-work)
 - [9.0 Construction Staking](#90-construction-staking)
+  * [9.1 Stake and Laths](#91-stake-and-laths)
+  * [9.2 Types of Stakes](#92-types-of-stakes)
 - [10.0 Photogrammetry](#100-photogrammetry)
-- [11.0 California Coordinate System](#110-california-coordinate-system)
-- [12.0 Astronomical Observations](#120-astronomical-observations)
-- [13.0 United States Public Lands System](#130-united-states-public-lands-system)
+  * [10.1 Aerial Photogrammetry](#101-aerial-photogrammetry)
+  * [10.2 Photo Scale](#102-photo-scale)
+  * [10.3 Overlapping and Contours](#103-overlapping-and-contours)
+  * [10.4 Flight Planning](#104-flight-planning)
+  * [10.5 Height and Accuracy](#105-height-and-accuracy)
+- [Appendix: Miscellaneous Stuff](#appendix--miscellaneous-stuff)
 
 
 This is my study note which summarizes the content of Paul A. Cuomo's "Surveying Principles for Civil Engineers" textbook. I highly recommened getting a physical copy, as it would be prudent for you to have it during the exam. [Amazon Link](https://www.amazon.com/Surveying-Principles-Civil-Engineers-2nd/dp/1888577940)
@@ -85,7 +108,15 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
     * Subdivision Map = large parcel of land divided into (5) or more divisions
     * Developers submit their plans. Sometimes tentative maps are provided (no license is require for tentative maps) beforehand
 
-
+* Civil engineer registered after 1982 can perform:
+    * contour surveys
+    * survey of fixed work
+    * tunnel survey
+* But they may not perform:
+    * geodetic surveying (taking into account Earth's curvature)
+    * cadastral surveying
+    * survey for land division
+    * determine position of anything that establishes a property line
 
 
 
@@ -139,7 +170,23 @@ $$c = (6.45 \times 10^{-6}) (T - T_o) L_{measured}$$
 
 $$T_{true} = T_{measured} + c$$
 
-* *Tip: When tape is measured at an incline. Make sure to correct for S, before calculating H*
+* Tape Sag Adjustment (always negative - actual length is shorter)
+    * w = weight of tape (lbs/ft)
+    * P = pull force (lbs)
+
+$$C_s = \frac{w^2L^3}{24P^2}$$
+
+* Tape Pull Adjustment
+    * Po = standardized pull tension (usually around 15 lbs)
+    * A = cross section area of tape
+    * E = elastic modulus of steel (30 000 000 psi)
+
+
+$$C_p = \frac{(P-P_o)L}{EA}$$
+
+
+* *When tape is measured at an incline. Make sure to correct for S, before calculating H*
+* *Pay attention to units for the pull adjustment! Denominator can stay in inches because in^2 and psi cancels out*
 
 
 ## 2.3 Stadia Measurement
@@ -213,7 +260,8 @@ $$c = L_{measured} \times \frac{ppm}{1000000}$$
     * (BM) benchmark - a location where we know the exact elevation (serves as control and error correction)
     * (TBM) temporary benchmark - not official, usually used by individuals for temporary purposes
     * (TP) turning point - point whose elevation is determined prior to moving the level
-* Our instrument does not has to be placed in the middle of FS and BS (rotating 180 degree) each time. There is some freedom but our equipment should always be set up with equal distance to BS and FS to minimize curvature and refraction errors. If this is not possible (say that places our instrument in the middle of a river), then use **reciprocal leveling**
+* Our instrument does not have to be placed in line of FS and BS (rotating 180 degree) each time. But our equipment should always be set up with equal distance to BS and FS to minimize curvature, collimation, and refraction errors. Having equal distance means the error could balance out.
+* If the above is not possible (say that places our instrument in the middle of a river), then use **reciprocal leveling**
 
 <img src="/assets/img/blog/survey6.png" style="width:75%;"/>
 *Figure 6: Leveling Instrument*
@@ -355,6 +403,10 @@ Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the 
 $$\sum \theta_{interior} = (n-2)(180)$$
 
 We will discuss traverses in detail in Chapter 6.
+
+
+
+
 
 
 
@@ -641,9 +693,6 @@ $$A = \frac{\sum lat_i \times DMD_i}{2}$$
 *Figure 24: DMD Method for Calculating Enclosed Area*
 
 
-
-
-
 ## 6.6 Enclosed Area - Criss Cross Method
 
 Another more numerically convenient way of calculating enclosed area is the Criss Cross Method. But we need to get the grid (x,y) coordinates first before we can use this method. An example of this method is shown below.
@@ -733,6 +782,12 @@ The figure below shows some of the common features of contour plot that you shou
 
 
 
+
+
+
+
+
+
 <div style="page-break-after: always;"></div>
 <hr>
 # 8.0 Route Surveying
@@ -755,8 +810,8 @@ Route surveying usually involve two types of curves:
 
 Equation and elements of a circular horizontal curve is shown below:
 
-<img src="/assets/img/blog/survey30.png" style="width:50%;"/>
-*Figure 30: Temp*
+<img src="/assets/img/blog/survey30.png" style="width:100%;"/>
+*Figure 30: Horizontal Curve*
 
 Notations:
 * C = long chord length from start to finish (straight line)
@@ -798,7 +853,7 @@ In the process of laying out a road, construction stakes must be installed at BC
 **Deflection angle** is defined as the angle between the tangent and a chord (see figure below for clarification)
 
 <img src="/assets/img/blog/survey31.png" style="width:50%;"/>
-*Figure 31: Temp*
+*Figure 31: Deflection Angle*
 
 * $$\alpha$$ in the figure above is I, but could actually be any point on the curve
 * $$\beta$$ is another useful geometric property to keep in mind
@@ -806,7 +861,7 @@ In the process of laying out a road, construction stakes must be installed at BC
 In essence, what we want is for any two points on a curve, how much should we turn? And what is the arc length between them?
 
 <img src="/assets/img/blog/survey32.png" style="width:50%;"/>
-*Figure 32: Temp*
+*Figure 32: Deflection Angle Between Any Two Points*
 
 The deflection angle ($$\delta$$) between point A and B is simply the arc length divided by the radius divide by 2:
 
@@ -838,18 +893,16 @@ From this exercise, we can sight the entire curve at BC by specifying how much t
 
 Tangent offset can be calculated via the following
 
-<img src="/assets/img/blog/survey33.png" style="width:50%;"/>
-*Figure 33: Temp*
-
-
+<img src="/assets/img/blog/survey33.png" style="width:75%;"/>
+*Figure 33: Tangent Offsets*
 
 
 ## 8.3 Vertical Curves
 
 Vertical curves are used to transition between grades. They can be symmetric or asymmetric.
 
-<img src="/assets/img/blog/survey34.png" style="width:50%;"/>
-*Figure 34: Temp*
+<img src="/assets/img/blog/survey34.png" style="width:100%;"/>
+*Figure 34: Vertical Curves*
 
 Notations:
 * BVC, PVC = beginning of curve
@@ -882,16 +935,27 @@ Units for length in feet (**ft**):
 * $$L, x$$ is in ft (e.g. 500, 650, 1000)
 * $$y_{BVC}$$ elevation is in feet
 
-If elevation at PVI is given, can simply use the straight grade lines to back-calculate elevation at BVC. Similar for EVC.
+If elevation at PVI is given, can simply use the straight grade lines to back-calculate elevation at BVC or EVC. Length to BVC or EVC is usually taken to be equidistant. Remember station is in horizontal distance.
 
 $$y_{BVC} = y_{PVI} + g_1 L_1$$
 
 If the curve is not symmetric, you may need to solve the length of curve on either side of PVI first:
 
-
+<img src="/assets/img/blog/survey35.png" style="width:50%;"/>
+*Figure 35: Solving for BVC and EVC Location Given Different Slopes*
 
 A spreadsheet table could be set up to organize calculation:
 
+<img src="/assets/img/blog/survey36.png" style="width:50%;"/>
+*Figure 36: Vertical Curve Elevation Calculation Table*
+
+Sample calculation for sta unit:
+
+$$456.08 = (0.625/2)(3.5)^2 - (1.5)(3.5) + 457.5$$
+
+Sample calculation for feet unit:
+
+$$456.08 = (0.0000625/2)(350)^2 - (0.015)(350) + 457.5$$
 
 
 
@@ -899,15 +963,15 @@ A spreadsheet table could be set up to organize calculation:
 
 * **Compound Horizontal Curve** - two horizontal curve of different radius that lie on the same tangent. Analyze as two separate curves. All previous equations apply
 
-<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+<img src="/assets/img/blog/survey36.1.png" style="width:50%;"/>
 
 * **Reverse Horizontal Curve** - same as above but the second curve flips curvature
 
-<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+<img src="/assets/img/blog/survey36.2.png" style="width:50%;"/>
 
 * **Spiral Horizontal Curve** - Used to produce gradual transition from tangent to circular
 
-<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
+<img src="/assets/img/blog/survey36.3.png" style="width:50%;"/>
 
   * TS = tangent to spiral
   * LS = length of spiral
@@ -928,14 +992,37 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 
 * **Asymmetrical Vertical Curve** - tangents are not equal. Analyze as two separate curves joined at the point of compound vertical curve (PCVC). Refer to page 67 of Cuomo text for more information and equations.
 
-<img src="/assets/img/blog/survey111.png" style="width:50%;"/>
-
+<img src="/assets/img/blog/survey36.4.png" style="width:50%;"/>
 
 
 
 ## 8.5 Estimating Earth Work
 
+There are two common methods for estimating amount of soil to be cut or filled between stations. Remember to divide by 27 to convert to cubic yards.
 
+$$\frac{1 \; yd^3}{27 \; ft^3}$$
+
+<u>Average End Method</u>
+
+<img src="/assets/img/blog/survey37.png" style="width:40%;"/>
+*Figure 37: Earthwork Calculation Cross Section Area*
+
+Conservative and quick method. Usually over-estimates the soil. Essentially average the two end areas multiply by length.
+
+$$V = \frac{A_1 + A_2}{2} \times L \; [ft^3]$$
+
+In some cases, one of the end area could be 0 which results in a pyramid rather than a prism. Use this formula instead if that is the case:
+
+$$V = \frac{A_{base}}{3} \times L \; [ft^3]$$
+
+<u>Prismoidal Method</u>
+
+<img src="/assets/img/blog/survey38.png" style="width:100%;"/>
+*Figure 38: Prismoidal Method*
+
+If the ground is very irregular, or the two end areas differ drastically, the prismoidal method could be better. Essentially we interpolate a cross-section between the two ends, and a weighted average is taken. Usually produces smaller volume than average-end method.
+
+$$V = \frac{A_1 + 4A_m + A_2}{6} \times L \; [ft^3]$$
 
 
 
@@ -958,6 +1045,80 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 # 9.0 Construction Staking
 <hr>
 
+## 9.1 Stake and Laths
+
+Stakes are placed by surveyor to guide contractors in laying out the construction project. 
+
+* A topographic survey must be performed prior to staking to establish horizontal and vertical datum
+* In some cases, construction staking is critically important:
+    * Determining earthwork quantities. Need to ensure correct vertical measurement. Very expensive mistake...
+    * Determining elevation for drainage devices. Mistake in staking for concrete gutter (which only has 0.25% slope) could lead to inadequate drainage
+
+Stakes are usually small 1" by 2" spikes that is drilled into the ground.
+
+Laths are the actual poles containing information. They are about 2" by 36" in dimension.
+
+<img src="/assets/img/blog/survey39.png" style="width:40%;"/>
+*Figure 39: Stake and Lath*
+
+Fundamentally, the goal of construction staking is simple. Present information on a stick in the most concise and terse way possible. You should be familiar with some short-hands but in general just know there are often deviations from common practice and this isn't exactly a science.
+
+Some possible information shown on a stake (not exhaustive at all)
+* Station or line - horizontal location of the stake (e.g. 25+00, property line)
+* Offset - some stakes must be offset from the actual location because it would otherwise impede construction (e.g. 3.00 to curb face, 10 to cl pipe)
+* Cut (C) or fill (F) - indicates whether to excavate or fill or keep as is (grade) (e.g. C 1.75 to top of curb, F 1.96 to top of wall)
+* Elevation - Elevation at top of stake is marked on the lath (e.g. elev = 123.76)
+
+
+## 9.2 Types of Stakes
+
+<u>Slope Stakes</u>
+
+* Slope stakes - used to indicate earthwork involved in creating a nice slope. Here are some example interpretations:
+
+<img src="/assets/img/blog/survey40.png" style="width:100%;"/>
+*Figure 40: Reading Slope Stakes*
+
+Some definitions:
+* **Toe** - bottom of slope
+* **Top** - top of slope
+* **Catch Point** - where slope intersect with existing ground
+* **Hinge Point** - Upper or lower limit of the slope, usually shoulder of a road (see next figure for illustration)
+* **Slope Ratio** - HORIZONTAL:VERTICAL
+* **RPSS** - reference point slope stake. The offset stake
+
+<img src="/assets/img/blog/survey41.png" style="width:100%;"/>
+*Figure 41: Some Slope Definitions*
+
+
+
+<u>Other Types of Stakes</u>
+
+* Contour stakes - Used to demarcate contour lines
+* Rough grade stakes - Used to control dirt grade. Not very important and is only good to nearest 0.10 ft 
+* Blue tops - Stakes set at a predetermined elevation. Also called "finished grade stakes"
+* Building layout stakes - Offset stakes used to demarcate building footprint
+* Sewer or storm drain stakes - Offset stake to demarcate sewer or storm drain lines. Usually offset by about 10 ft. Otherwise could be damaged or moved during construction
+* Wall stakes - Offset stake used to demarcate retaining wall
+* Curb stakes - Offset stake for curbs. Usually smaller offset (3 ft) and placed fairly close to each other (25 ft maybe closer for tighter bends). They are a drainage device so care must be taken
+* Catch basin (manhole) stakes - Offset stakes. Again must take extreme care because it is a drainage device and portions of it is cast monolithically with the curb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -971,13 +1132,143 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 # 10.0 Photogrammetry
 <hr>
 
+## 10.1 Aerial Photogrammetry
+
+Aerial photogrammetry involves taking measurements of site using photos taken on an airplane. Result is a topographic map with contours, elevations, and features.
+
+* Since multiple photographs must be taken, they need to be stitched together (known as a stereo photo)with a **stereoplotter**
+* Therefore, photos must overlap a specific amount. Overlapping photographs are called **models**
+
+In order have proper map scale. A series of control network should be established on the ground. 
+* Minimum of (3) vertical control, and (2) horizontal control. Suggest using (5) each for redundancy
+* Control point is known as a **monument** and should be large and clear. Usually a large cross painted on the ground. Length of cross hair should be at least 1/1000. So for a 1:7200 scale => 7.2 ft
+
+<img src="/assets/img/blog/survey42.png" style="width:50%;"/>
+*Figure 42: Control Point Cross Hair*
+
+* Alternatively, can avoid control point by using existing landmarks such as curbs, sidewalks, prominent rocks, etc. This is called **post-marking**.
+
+
+## 10.2 Photo Scale
+
+Scales are expressed in two forms. Note that the two are equivalent. Convert feet to inches to go between the two.
+* 1 in = 250 ft
+* 1:3000
+
+Scale of the photo (S) is dependent on two factors:
+* Camera focal length (F)
+* Flight altitude (H)
+
+<img src="/assets/img/blog/survey43.png" style="width:50%;"/>
+*Figure 43: Photo Scale in Aerial Photogrammetry*
+
+For most project, camera focal length is fixed (typically 6 in focal length with 93 degrees field of view). Thus the variable is flight height (H).
+
+$$H = \frac{f}{S}$$
+
+Pay attention to the units!
+
+
+
+## 10.3 Overlapping and Contours
+
+To stitch two photos together, an object must show up in at least two photos (i.e. overlap). How much overlap should be provided? The common practice is to use the **neat model** which provides:
+
+$$\mbox{forward overlap} = 60 \% $$
+
+$$\mbox{side overlap} = 30 \% $$
+
+<img src="/assets/img/blog/survey44.png" style="width:100%;"/>
+*Figure 44: Model Coverage*
+
+For a 9"x9" photograph, the coverage provided by neat model is:
+
+$$(9 in)(0.4) = 3.6 \mbox{in forward} = 4320 ft$$
+
+$$(9 in)(0.7) = 6.3 \mbox{in side} = 7560 ft$$
+
+$$coverage = 749.8 \; acre$$
+
+A **intervalometer** is used to automatically trigger the camera at pre-determined intervals.
+
+
+At the start of most projects, the designers must provide a desired map scale (S) and **contour interval (CI)**. Tighter CI usually means more detail is desired. The ratio between flying altitude and CI is known as **C-factor**
+
+$$\mbox{C-factor} = \frac{H}{CI}$$
+
+Or CI and C-factors are given and you need to find the flying height. Then knowing the focal length, we can calculate the photo scale.
+
+$$H = CI \times \mbox{C-factor}$$
+
+$$S = \frac{f}{H}$$
+
+There is another factor called the **D-factor** which is just the ratio of photo scale to map scale. Most plotters have a D factor between 5 to 8.
+
+$$\mbox{map scale} = \frac{S}{\mbox{D-factor}}$$
+
+
+
+## 10.4 Flight Planning
+
+<img src="/assets/img/blog/survey45.png" style="width:50%;"/>
+*Figure 45: Flight Planning*
+
+In the project area shown above, set up required flight information given the client wants 4 ft contours. The plotter will have a C-factor of 1500. Camera will have focal length of 6 in:
+
+1. Determine flying height (H)
+
+    $$H = CI \times \mbox{C-factor} = (4)(1500) = 6000 ft$$
+
+2. Determine photo scale (S)
+
+    $$S = \frac{f}{H} = \frac{6 in}{6000 ft} \rightarrow \mbox{1 in = 1000 ft} \rightarrow \mbox{1:12000}$$
+
+3. Determine side and forward coverage using neat model:
+
+    $$\mbox{forward coverage} = (9 in)(40 \%) = 3.6 \mbox{ in per photo}$$
+
+    $$\mbox{forward coverage} = (3.6 in)(1000 ft/in) = 3600 ft$$
+
+    $$\mbox{side coverage} = (9 in)(70 \%) = 6.3 \mbox{ in per photo}$$
+
+    $$\mbox{side coverage} = (6.3 in)(1000 ft/in) = 6300 ft$$
+
+4. Determine number of flight lines => 2 lines
+
+    $$N_{line} = \frac{width}{coverage} = 10560/6300 = 1.7 = 2.0$$
+
+5. Determine number of models along each line => 6 models
+
+    $$N_{model} = \frac{length}{coverage} = 21120/3600 = 5.9 = 6.0$$
+
+    In total, there will be 12 models required
+
+6. Determine total number of photos required which is 1 more per line for stereoscopic coverage:
+
+    $$N_{photos} = ({N_{model}}+1)(N_{line}) = (7)(2) = 14 \mbox{photos required}$$
 
 
 
 
+## 10.5 Height and Accuracy
+
+Photogrammetrist will plan a **control scheme**, which is the ideal location to place monuments. 
+
+<img src="/assets/img/blog/survey46.png" style="width:50%;"/>
+*Figure 46: Placement of Control Points*
 
 
+The flying height we calculated before (H) is the **height above mean terrain (AMT)**. Another useful height to calculate is the **height above sea level (ASL)**:
 
+$$ASL = AMT + \mbox{elevation of mean terrain from sea level}$$
+
+The following standards of accuracy must be met when using aerial photogrammetry: (note: compare scale by just using the decimal representation)
+* Horizontal (Remember to multiply by map scale):
+    * S>1/2000, 1/50 of an inch error in not more than 10% of points tested
+    * S<1/2000, 1/30 of an inch error in not more than 10% of points tested
+* Vertical:
+    * Contour - half contour interval error in not more than 10% of points tested
+    * Spot elevation - 90% of all spot elevation shall be accurate to within 1/4 of contour interval
 
 
 
@@ -992,40 +1283,11 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 
 <div style="page-break-after: always;"></div>
 <hr>
-# 11.0 California Coordinate System
+# Appendix: Miscellaneous Stuff
 <hr>
 
+## Angle Conversion
 
-
-<div style="page-break-after: always;"></div>
-<hr>
-# 12.0 Astronomical Observations
-<hr>
-
-
-
-<div style="page-break-after: always;"></div>
-<hr>
-# 13.0 United States Public Lands System
-<hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Angle measurements
 * Degree, Minute, Seconds Formula. Use built-in calculator function instead of calculating manually
 
 $$decimal = degree + minute/60 + second/3600$$
@@ -1037,6 +1299,43 @@ $$decimal = degree + minute/60 + second/3600$$
     * 58 degrees, 39 minutes, 57 seconds
 
 
+## Unit Conversion
+* 1 acre = 43560 ft^2
+* 1 cubic yard = 27 ft^3
 
 
+## Geometric Area Calculations:
 
+Area of triangle calculation, height does not need to reside within triangle:
+
+<img src="/assets/img/blog/survey102.png" style="width:40%;"/>
+
+Area of triangle given 3 sides:
+
+<img src="/assets/img/blog/survey104.png" style="width:100%;"/>
+
+Sine and Cosine Law:
+
+<img src="/assets/img/blog/survey101.png" style="width:70%;"/>
+
+Area of Trapezoid:
+
+<img src="/assets/img/blog/survey103.png" style="width:50%;"/>
+
+
+## Things From Practice Problems:
+* For short distances, tape is preferred over total station.
+* For aerial photos with redundant controls, use method of least square to get scale
+* Position of control point in aerial photos depend on CI and position of photo. They are usually placed at side overlaps
+* **robotic total station** - tracks prism automatically and can be operated by one person
+* **RTK GPS** - real time kinematic GPS. Can be operated by one person via rover receiver 
+* **invar strip** - used to achieve highest precision in leveling
+* Need 4 satellite above to get GPS coordinate
+* Angular resolution looking through a scope can be calculated as:
+
+$$tan(\alpha) = \frac{\Delta RR}{H}$$
+
+* **Transits** are old instruments used to measure horizontal distance and vertical angle, but read from a vernier scale (caliper)
+* **CORS point** - permanently recording GPS station
+* Extending a straight line with theodolite is best done with a **double transit**
+* **two-peg test** - is used to determine mislevelment of line of sight of the leveling device
