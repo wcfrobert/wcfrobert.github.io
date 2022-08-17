@@ -2,7 +2,7 @@
 layout: blog-post
 categories: engineering
 title: "Primer: ASCE 7-16 Seismic Chapters."
-description: "Collection of personal notes for California state Seismic PE Exam"
+description: "Collection of personal notes for the California state Seismic PE Exam"
 image: assets/img/blog/seismic.png
 date: 2022-05-06
 tags: analysis primer
@@ -693,7 +693,7 @@ Here are the steps for ELF:
     $$V = C_s W$$
 
 8. Story force is distributed vertically as follows:
-    
+   
     $$F_x = C_{vx}V$$
 
 9. The distribution factor can be determined using this equation

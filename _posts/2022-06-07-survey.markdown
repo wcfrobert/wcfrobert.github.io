@@ -2,7 +2,7 @@
 layout: blog-post
 categories: engineering
 title: "Primer: Surveying Principles"
-description: "Collection of personal notes for California state Seismic PE Exam"
+description: "Collection of personal notes for the California state Survey PE Exam"
 image: assets/img/blog/survey.png
 date: 2022-06-07
 tags: primer
