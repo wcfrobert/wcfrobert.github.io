@@ -5,7 +5,7 @@ title: "Little Miss Sunshine"
 description: "A memorable tragicomedy. Best film I've seen all year. "
 image: assets/img/blog/littlemisssunshine.png
 date: 2022-09-10
-tags: books
+tags: thoughts
 ---
 
 ## Movie Nights

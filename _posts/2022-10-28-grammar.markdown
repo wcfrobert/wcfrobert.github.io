@@ -1,0 +1,876 @@
+---
+layout: blog-post
+categories: engineering
+title: "Personal Grammar and Writing Handbook"
+description: "I want to get better at writing"
+image: assets/img/blog/grammar.png
+date: 2022-10-28
+tags: primer
+---
+
+These are my personal notes on effective writing and The English grammar. Over the years, the do's and don'ts of sentence structuring, grammar, and verb conjugation have become fuzzy to me. 
+
+How do I know if a sentence is well-written? Or even grammatically correct? I "go-by-feel", of course! Is this semi-colon appropriate here? Who cares, it looks about right; I've developed my own writing style over the years as well as a fair share of bad habits. This document is my attempt to be more deliberate in my writing and improve as a writer.
+
+This was an incredibly laborious undertaking. As most of you might have imagined, going through English and writing textbooks is a "capital C" Chore. Nevertheless, I hope you will find this useful. If anything, chapter 5 and 6 are worth a read!
+
+
+
+- [1.0 Parts of Speech](#10-parts-of-speech)
+  * [3.1 Basic Parts of Speech](#31-basic-parts-of-speech)
+  * [3.2 Nouns](#32-nouns)
+  * [3.3 Articles](#33-articles)
+  * [3.4 Pronouns](#34-pronouns)
+  * [3.5 Verbs](#35-verbs)
+  * [3.6 Adjectives](#36-adjectives)
+  * [3.7 Adverbs](#37-adverbs)
+  * [3.8 Preposition](#38-preposition)
+  * [3.9 Conjunction](#39-conjunction)
+- [2.0 Verb Conjugation](#20-verb-conjugation)
+  * [2.1 Verb Conjugation Based on Person](#21-verb-conjugation-based-on-person)
+  * [2.2 Verb Conjugation Based on Tense](#22-verb-conjugation-based-on-tense)
+  * [2.3 Verb Conjugation Based on Voice](#23-verb-conjugation-based-on-voice)
+  * [2.3 Verb Conjugation Based on Mood](#23-verb-conjugation-based-on-mood)
+  * [2.4 Other Notes](#24-other-notes)
+- [3.0 Parts of Sentences](#30-parts-of-sentences)
+  * [3.1 Subject and Object](#31-subject-and-object)
+  * [3.2 Phrases and Clauses](#32-phrases-and-clauses)
+  * [3.3 Sentence Structure](#33-sentence-structure)
+  * [3.4 Point of View](#34-point-of-view)
+  * [3.5 Active/Passive Voice](#35-active-passive-voice)
+  * [3.6 Subjunctive Mood](#36-subjunctive-mood)
+- [4.0 Punctuation](#40-punctuation)
+  * [4.1 Comma](#41-comma)
+  * [4.2 Semicolon](#42-semicolon)
+  * [4.3 Colon](#43-colon)
+  * [4.4 Apostrophe](#44-apostrophe)
+  * [4.5 Quotation](#45-quotation)
+  * [4.6 Tips and Other Notes](#46-tips-and-other-notes)
+- [5.0 Style And Writing Tips](#50-style-and-writing-tips)
+  * [5.1 Clear and Efficient Writing](#51-clear-and-efficient-writing)
+  * [5.2 Readability](#52-readability)
+  * [5.3 Getting rid of choppy sentences](#53-getting-rid-of-choppy-sentences)
+  * [5.4 Getting rid of inflated phrases](#54-getting-rid-of-inflated-phrases)
+  * [5.5 Other tips to simplify your writing](#55-other-tips-to-simplify-your-writing)
+  * [5.6 Parallelism](#56-parallelism)
+- [6.0 Common Sentence Errors](#60-common-sentence-errors)
+  * [6.1 Sentence Fragments](#61-sentence-fragments)
+  * [6.2 Comma Splice](#62-comma-splice)
+  * [6.3 Subject Verb Agreement](#63-subject-verb-agreement)
+  * [6.4 Pronoun Problems](#64-pronoun-problems)
+- [Appendix: My Own Notes](#appendix--my-own-notes)
+  * [Simple Past vs. Present Perfect (went vs. have gone)](#simple-past-vs-present-perfect--went-vs-have-gone-)
+  * [Whom vs. Who](#whom-vs-who)
+  * [Using Limiting Modifiers like (only, even, not, around)](#using-limiting-modifiers-like--only--even--not--around-)
+  * [Dangling Modifiers](#dangling-modifiers)
+  * [You and I vs. you and me](#you-and-i-vs-you-and-me)
+  * [Would, will vs. would have, will have](#would--will-vs-would-have--will-have)
+  * [Direct vs. Indirect Question](#direct-vs-indirect-question)
+  * [Other Mistakes](#other-mistakes)
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 1.0 Parts of Speech
+<hr>
+
+## 3.1 Basic Parts of Speech
+
+* **Noun** - people, place, things, concepts
+* **Verb** - expresses an action
+* **Adjective** - describes a noun
+* **Adverb** - modifies a verb and sometimes other parts of a sentence
+    * *far too, quickly, gratefully, very*
+* **Preposition** - describes position of noun and pronoun
+    * *from, of, to, like*
+* **Conjunctions** - joins words or phrases
+    * *Therefore, and, hereafter, as a result, if*
+* **Interjections** - words that express emotion
+    * *Darn! Damn! Ops!*
+* **Articles** -  words that accompany and quantify nouns
+    * *The, a, an*
+* **Pronouns** - used in place of nouns
+    * *I, he, who, she, her, you*
+
+
+## 3.2 Nouns
+
+<img src="/assets/img/blog/grammar1.png" style="width:100%;"/>
+*Figure 1: Types of Nouns*
+
+
+
+## 3.3 Articles
+
+* **Indefinite** article => "A, an"
+* **Definite** article => "The"
+
+
+
+## 3.4 Pronouns
+
+<img src="/assets/img/blog/grammar2.png" style="width:100%;"/>
+*Figure 2: Types of Pronouns*
+
+
+* **Demonstrative** – those, that, these
+* **Interrogative** – who, whatever, whenever
+* **Relative** – who, which, what
+* **Reflexive** – myself, yourself, himself, herself
+* **Intensive** – Same as above but used for emphasis:
+    * I, myself hate this test
+* **Reciprocal** – each other, one another
+* **Indefinite** – someone, anyone, anything, everybody
+
+
+
+## 3.5 Verbs
+
+Action vs. Linking:
+
+* **Action** - most common (e.g. I hit tennis balls)
+* **Linking** - describes a state of being (e.g. The house smells nice)
+
+Transitive vs. Intransitive:
+
+* **Transitive** - points to an object (e.g. Peter hates math)
+* **Intransitive** - does not require an object (e.g. Peter sings)
+
+Regular vs. Irregular:
+
+* **Regular** - has regular conjugation (e.g. love, loves, loved)
+* **Irregular** - has irregular conjugation (e.g. am, are, is)
+
+Main vs. Auxiliary:
+
+* **Main** - self explanatory
+* **Auxiliary** - used as helping verb (e.g. He had scorned the poet. "Had" is the auxiliary verb, "scorned" is the main verb.)
+* **Modal**  - special type of auxiliary verb used with present tense of another verb to express "modality" or states. Modalities include possibility, ability, prohibition, necessity, and etc. (e.g. can, could, may, might, should, shall, will, would, must, have)
+    * Obligation - "you SHOULD clean your room"
+    * Possibility - "I MIGHT have a question for you later"
+    * ability - "You CAN speak now"
+    * prohibition - "You MAY leave now"
+
+
+
+## 3.6 Adjectives
+
+<img src="/assets/img/blog/grammar3.png" style="width:100%;"/>
+*Figure 3: Types of Adjectives*
+
+
+
+
+## 3.7 Adverbs
+
+Adverbs not only modify verbs, they may also modify other aspect of a sentence.
+
+<img src="/assets/img/blog/grammar4.png" style="width:100%;"/>
+*Figure 4: Types of Adverbs*
+
+* Comparative adverb - (e.g. more, faster, brighter)
+* Superlative adverb - (e.g. most, fastest, brightest)
+
+
+## 3.8 Preposition
+
+Describes position of nouns or pronouns. (e.g. and, about, above, after, by, of, off, out, over, regarding, upon, towards, as, at)
+
+
+## 3.9 Conjunction
+
+Words that allow for smoother sentence transition.
+
+<img src="/assets/img/blog/grammar5.png" style="width:100%;"/>
+*Figure 5: Types of Conjunction*
+
+**Conjunctive adverbs** are used to connect two separate clauses. They can be used in three ways:
+
+* Connecting two independent clauses to form a compound sentence (use semi-colon and comma)
+    * "I have a headache**; therefore,** I need a break."
+    * "I wanted another sandwich**; however,** the restaurant had none left."
+* Beginning of a sentence
+    * "Many students did not study for the test**. Now,** they are facing the consequences."
+    * "**In conclusion,** the tooth fairy does not exist."
+* Used to add pause and interrupt a phrase (avoid... Prefer concision)
+    * "He was determined**, nevertheless,** to go there"
+
+Other examples of conjunctive adverb
+
+* Accordingly, consequently, furthermore, however, instead, likewise, nevertheless, otherwise, subsequently, moreover
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 2.0 Verb Conjugation
+<hr>
+
+Verbs are conjugated based on their tense, person, number, mood, and voice. It can be quite a complicated subject! For most people with native English fluency, verb conjugation comes from experience. It is difficult if not impossible to mechanically memorize all the exceptions.
+
+## 2.1 Verb Conjugation Based on Person
+
+* Verb conjugation based on person (first-person, second-person, or third-person) or number (singular vs. plural)
+
+<img src="/assets/img/blog/grammar7.png" style="width:80%;"/>
+*Figure 6: Verb Conjugation Based on Person*
+
+
+## 2.2 Verb Conjugation Based on Tense
+
+* Verb conjugation can also depend on tense (i.e. *when* something is happening - future, present, past)
+
+<img src="/assets/img/blog/grammar6.png" style="width:100%;"/>
+*Figure 7: Verb Conjugation Based on Tense*
+
+* The examples shown in the figures above are verbs with **Regular** conjugation. The topic of irregular verbs is best learned with experience (too many exceptions...)
+* Furthermore, the condition of use tabulated above is just one of many! See below for more detail on each.
+
+
+TO EXPRESS A CURRENT EVENT:
+
+**Present Simple - General Truth**
+<img src="/assets/img/blog/grammar9.png" style="width:90%;"/>
+
+**Present Progressive - Ongoing event right this moment**
+<img src="/assets/img/blog/grammar10.png" style="width:90%;"/>
+
+TO EXPRESS A PAST EVENT:
+
+**Past Simple - Completed action in time before now**
+
+<img src="/assets/img/blog/grammar11.png" style="width:90%;"/>
+
+**Present Perfect - Started in the past, still true now**
+<img src="/assets/img/blog/grammar12.png" style="width:90%;"/>
+
+**Past Perfect - Past action related to another past action**
+<img src="/assets/img/blog/grammar13.png" style="width:90%;"/>
+
+**Past Perfect Progressive - Reporting speech/tone**
+<img src="/assets/img/blog/grammar14.png" style="width:90%;"/>
+
+
+**Future Perfect Progressive - Project your POV into the future, looking back**
+<img src="/assets/img/blog/grammar15.png" style="width:90%;"/>
+
+**Past Progressive - An action when another past event happened**
+<img src="/assets/img/blog/grammar16.png" style="width:90%;"/>
+
+**Present Perfect Progressive - Started in the past and is ongoing**
+<img src="/assets/img/blog/grammar17.png" style="width:90%;"/>
+
+
+TO EXPRESS A FUTURE EVENT:
+
+**Future Simple - Used for future event with certainty**
+<img src="/assets/img/blog/grammar18.png" style="width:90%;"/>
+
+
+**Future Perfect - Completed event from future POV**
+
+<img src="/assets/img/blog/grammar19.png" style="width:90%;"/>
+
+**Future Progressive - Continuous action in progress but from future POV**
+<img src="/assets/img/blog/grammar20.png" style="width:90%;"/>
+
+
+MORE EXAMPLES:
+<img src="/assets/img/blog/grammar21.png" style="width:90%;"/>
+
+
+
+## 2.3 Verb Conjugation Based on Voice
+
+* Verb conjugation based on voice:
+    * **Active Voice**: customers found the staff helpful
+    * **Passive Voice**: the wait staff was found to be helpful
+
+
+
+## 2.3 Verb Conjugation Based on Mood
+
+* **Indicative Mood** – common events that are real
+    * "He who laughs last laughs best"
+* **Imperative Mood** – Instructional, subject is left out, but it is understood to be you
+    * "Do not go beyond the dotted line"
+* **Subjunctive Mood** – express hypothetical situation or things contrary to fact, wishes, requirements, and speculations
+    * "If I were you, I would learn to laugh at myself"
+    * "It is necessary that you be in attendance"
+
+
+
+
+## 2.4 Other Notes
+
+* What is the difference between present perfect vs. present perfect progressive?
+    * Often can be used interchangeably without change in meaning
+        * "They have lived in London since 2004"
+        * "They have been living in London since 2004"
+    * present perfect progressive can emphasize length of time
+        * "They have been waiting for hours!"
+        * "They have waited for hours (not much emphasis)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 3.0 Parts of Sentences
+<hr>
+
+## 3.1 Subject and Object
+
+1. Subject - the active side that does the GIVES
+2. Verb
+3. Object (not always) - the passive side that RECEIVES
+    * Direct object is the receiver of the action
+    * Indirect object is related to the receiver of the action. 
+
+For example: "can you catch me a fish?":
+
+* subject = you
+* verb = catch
+* direct object = fish
+* indirect object = me
+
+
+## 3.2 Phrases and Clauses
+
+* Main clause - also known as an independent clause. Considered a full sentence
+* Subordinate clause – supporting the main clause, cannot exist by itself
+* Phrase – group of words that lack subject or verb, and does not form a sentence. They can be inserted within a sentence to flesh out meaning. For example:
+    * Participial phrases
+        * "(Exhausted), I lay on the grass"
+        * "(Crying in the dark), I lamented the upcoming exam"
+    * Appositive phrases
+        * "Engineers, (otherwise known as designers), are going out of style."
+
+## 3.3 Sentence Structure
+
+
+* Simple Sentence – have only a main clause. 
+    * "She sings"
+* Compound Sentence – have two independent clauses that can stand on their own, but are connected instead to avoid choppy sentences
+    * "Potatoes are healthy. Potato chips are not healthy.""
+    * "Potatoes are healthy, but potatoes chips are not"
+* Complex Sentence – Made up of a main clause + a subordinating clause
+    * "If you eat too much, you will not be able to walk"
+    * "if you eat too much" is the subordinate; "you will not be able to walk" is the main clause
+
+## 3.4 Point of View
+
+* First person – "I am grateful of the result. We will be expecting the next report tomorrow"
+* Second person – "You should open the box and insert the appropriate equipment in your bag"
+* Third person – "The team captain cheered on. The team members were captivated by his energy"
+
+
+## 3.5 Active/Passive Voice
+* Active voice - sentence is structured such that it follows a logical progression (Subject acts on object) and thus is more understandable and preferred
+    * "Bob mailed the letter."
+* Passive voice - reverse of active voice. Where the object is “being acted upon”. Passive voice tends to be wordier
+    * "The letter was mailed by Bob."
+
+When should you use passive voice then?
+* When the subject is not important or not known (sometimes omitted completely)
+    * "The drawings were made in 1900." (We don't know by who)
+    * "Walls will be installed" (we don't care by who)
+    * "Solution B was prepared for the burner." (Obviously by me. Avoiding use of first-person in scientific papers)
+
+
+## 3.6 Subjunctive Mood
+Subjunctive mood is used to express demand, recommendation, requests, and conditions that are either contrary to fact or desired.
+* "If **I were** you, I would try to leave"
+* "It is crucial that **I be** at the interview on time"
+
+Often used with the following structure: (Recommend that… Insist that… request that… require that… suggest that…)
+* "I recommend that **he answer** the question"
+* "The conference requires that all **members be** there"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 4.0 Punctuation
+<hr>
+
+## 4.1 Comma
+
+* Between two independent clauses **with a coordinating conjunction**:
+    * I like cats, but I also like dogs
+* **After an introductory subordinate phrase** that comes before main subject and verb:
+    * Whenever I feel sad, I go get myself an ice cream
+* **Listing items**:
+    * Serial Comma: beef, chicken, beans and lamb
+    * Oxford Comma: beef, chicken, beans, and lamb.
+* **Transitional element**
+    * Frankly, I don’t care
+    * To be honest, that is confusing
+* **Short quotations** - punctuation always goes before second quotation mark
+    * “Answer the door,” Darlene yelled, “and tell him to go away!”
+* **Date format**
+    * Wednesday, November 25, 1983
+    * December 6, 2018
+
+DO NOT USE COMMA FOR:
+
+* DO NOT use comma with **coordinating adverbs**. Use semi-colon instead
+    * INCORRECT: (…), therefore, (…)
+    * CORRECT: (…); therefore, (…)
+    * INCORRECT: (…), however, (…)
+    * CORRECT: (…); however, (…)
+* DO NOT insert a comma just because you would have **paused for breath** colloquially
+    * "I am sure we will meet again, I know where you live" (Comma splice, replace with semi-colon)
+    * "It was a gruesome, terrible, scene" (remove second comma)
+    * "I am better at math now, (after months of practice)" (no comma before parenthesis)
+
+
+
+## 4.2 Semicolon
+The infamous semi-colon. 
+
+> “Use a semi colon when the sentences are too strongly connected for a period, but the use of comma is also inadequate”
+
+* Connecting two or more main clauses
+    * "I love broccoli; everyone else can’t stand it"
+* Use with conjunctive adverb
+    * "I would love to join; however, I don’t know if it is a good option"
+
+
+## 4.3 Colon
+
+Used to introduce a list, a quotation, or an appositive phrase.
+
+
+## 4.4 Apostrophe
+
+* Possessive
+    * Normal - Molly’s
+    * Singular noun ending in s - Walrus’s
+    * Plural noun ending in s - Workers’
+    * Compound subject - Bob and Joe’s
+* Contractions
+    * e.g. Don’t, Doesn’t, class of ‘88
+* Plural of numbers, letters, etc.
+    * X’s and O’s are embedded into the scarf
+* COMMON MISTAKE: Its vs. It’s
+    * “Its” is a possessive pronoun
+    * “It’s” can be broken down into “It is”
+    * Tip is to break sentence down into “It is” and see which makes more sense
+
+
+## 4.5 Quotation
+
+* Direction quotation:
+    “I don’t give a damn!” Mark said loudly.
+* Use indent and new paragraph for long multi-lined quotation:
+> “I have a dream, that (…)”
+* Emphasis for a single word
+    * "I once displayed my ignored by using the word “irregardless”"
+
+
+## 4.6 Tips and Other Notes
+
+* Exclamation mark is self-explanatory. Do not over use exclamation mark
+    * "Hi! I am Robert! I am very excited to meet you! How are you!?"
+* Dashes are used to indicate interruption in thought and flow of sentence, add additional information, or to introduce a list
+    * "Sugar is everywhere – in our drinks, food, and even perfumes"
+    * "Although they live closely together – living only a few minutes apart – they may as well be on different side of the globe"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 5.0 Style And Writing Tips
+<hr>
+
+## 5.1 Clear and Efficient Writing
+
+1. Be specific when using relative pronouns (he, she, it, which, that, this). Avoid ambiguity
+    * "Bob and Joe both went to boarding school, he studied Law there." (who is "she"?)
+2. Do not use double negatives, rephrase your sentence
+    * "I don't disagree" (I agree)
+3. Stay consistent:
+    * Verb tenses - "We were two minutes away from home when the sky ~~turns~~ turned dark"
+    * POV - Keep change in POV to a minimum. Otherwise gets confusing
+    * Passive & active voice - Always use active voice. See section 3.5
+3. Avoid badly placed modifier phrases
+    * "I shot an elephant in my pajama" (elephant wearing pajama!?)
+    * "The store clerk brought the ice cream to the young boy covered in chocolate sauce" (The boy is covered in chocolate!?)
+4. Avoid long separation between subject and verb.
+    * ~~"The dog, after chasing down Bob, wagged its tail in triumph"~~
+    * Instead try: "After chasing down bob, the dog wagged its tail in triumph"
+    * ~~"Try to, if you can, see the effect of the drink"~~
+    * Instead try: "try to see the effect of the drink if you can"
+5. Avoid paragraphs that are too long (not too short and choppy either)
+6. Use more conjunctions and linking phrases for better flow
+    * However, Consequently, Moreover
+7. Avoid instances where you have to use "his/her", "she/he", "her/him". Rewrite sentence instead
+    * ~~"The engineer must exercise his/her best judgement"~~
+    * Instead try: "Engineers must exercise their best judgement"
+8. Avoid constructing sentences with:
+    * ...is when...
+    * ...is where...
+    * The reason... is because...
+9. Present valuable information in the main clause! Do not relegate it to a subordinating clause.
+10. Stop using filler words
+* BAD: Notwithstanding the fact that the manager is late, the meeting will still take place
+* GOOD: Although the manager is late, the meet will still take place.
+11. The fastest way to improve your writing is to remove redundant words:
+* The bridge that people cross to get to Burlington is sort of rectangular in shape, and it is made of strong materials such as reinforced steel, and concrete, etc
+12. Avoid using idiomatic, local sayings, figure of speech, and clichés in your writing
+
+
+
+## 5.2 Readability
+
+There are several things you can do to improve a document’s readability
+•   Write an outline first, organize outline logically
+•   Keep writing as short and concise of possible. Get rid of filler words that may often appear in colloquial speech
+•   Use active voice when possible. If passive voice is required, do everything you can to avoid wordiness
+•   Reduce noise within the writing
+o   Basic grammar, punctuation, spelling mistakes
+o   Wordiness which results in lack of emphasis
+o   Poor choice of word
+o   Not considering technical capacity of reader
+•   Provide accurate info. When giving opinion, also substantiate it with fact
+
+
+
+## 5.3 Getting rid of choppy sentences
+
+Avoid choppy sentence construction with the use of coordinating words, phrases, and clauses (conjunctions: and, yet, but, however, moreover, therefore, as a result, to the extent, etc)
+Here are some examples:
+Choppy: The basketball team huddled on the sidelines. The players were drenched in sweat. They looked dejected.
+Revised: The basketball team – dejected and drenched in sweat – huddled on the sidelines
+
+Choppy: John was my adult literacy student. John was fighting a valiant battle against multiple sclerosis
+Revised: John, an adult literacy student of mine, was fighting a valiant battle against multiple sclerosis.
+
+Choppy: Tyler called lightning a “flying flame.” Lightning travels at between 100 000 and 300 000 kilometers per second. Lightning reaches temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day.
+Revised: Lightning, which Tyler calls a “flying flame”, can travel at between 100 000 and 300 000 kilometers per second and reach temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day.
+
+Choppy: The marathon swimmer was coasted with grease, and she listed as she made her way to the shore. She seemed a symbol of determination.
+Revised: The marathon swimmer listed as she made her way to the shore. Coated in grease, she seemed a symbol of determination.
+
+
+
+## 5.4 Getting rid of inflated phrases
+
+Watch out for inflated phrases when writing. It may be okay to use these phrases colloquially, but doing so in writing is a waste of space and have little meaning; And no it does not make your writing sound more sophisticated.
+•   Along the lines of = like
+•   By virtue of the fact that = because
+•   At this point in time = currently
+•   As matter of fact = in fact
+•   For the simple reason that = because
+•   In spite of the fact that = although
+•   In the event that = if
+•   With regards to  = about
+
+## 5.5 Other tips to simplify your writing
+
+•   Make verbs stronger
+o   The accumulation of garbage carried on for days
+   Garbage accumulated for days
+o   We should have a discussion about that topic
+   We should discuss that topic
+•   Avoid beginning sentences with here, there, and it
+o   It is important that we know about his whereabouts
+o   More importantly, we need to know his whereabouts
+
+
+
+## 5.6 Parallelism
+When listing a series of item in a list, use identical structure:
+    Bad: Being outdoors, feeling the wind, and to smell the ocean is nice.
+    Good: Being outdoors, feeling the wind, and smelling the ocean is nice.
+Advanced: Parallel construction with correlative conjunctions
+Bad: When the staff met the sales target, the manager not only ordered new chairs, but also new desks, potted plants, and a microwave for the lunchroom
+Good: When the staff met the sales target, the manager ordered not only new chairs, but also new desks, potted plants, and a microwave for the lunchroom
+Good 2: When the staff met the sales target, the manager not only ordered new chairs, but also provided new desks, potted plants, and a microwave for the lunchroom
+
+Needed Words
+In some instances, some words cannot be deleted in the process of making a sentence more brief or concise. Here are some examples.
+•   Parallel structure
+o   I have and will continue to support him
+o   I have supported and will continue to support him
+•   Comparisons
+o   BAD: I gave him more soup than you
+o   Correct 1: I gave him more soup than I gave to you
+o   Correct 2: I gave him more soup than you gave him
+
+Sentence Variety
+An important part of revision is varying the sentences such that they have change in rhythm and have clarity and coherence. Here are some tricks:
+•   Change up rhythm and avoid getting into a similar verb-object pattern. Also try to avoid beginning too many sentences with it, there, I, the.
+•   The subject does not always have to come first. It is possible to add some adverbial modifiers or participial phrases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# 6.0 Common Sentence Errors
+<hr>
+
+## 6.1 Sentence Fragments
+Fragments lack main verb or subject. It leaves reader with a fragment of thought. The most common type of fragment is one that begins with subordinating clause. The ones missing verb and subject are very easy to catch.
+    Although we had a good time.
+Correcting subordinate clause mistakes usually just require eliminating all punctuation, or adding a comma instead.
+    John’s novels are widely celebrated. Because he is good at writing
+    John’s novels are widely celebrated because he is good at writing
+John’s novels are widely celebrated. He is good at writing
+Phrase fragments occur when we want to add additional thought to a main clause without proper punctuation. They can be fixed by incorporating them into the main clause, or making them into an independent clause.
+    The library has many resources. For everyone to use.
+    The library has many resources, which is there for everyone to use.
+    The library has many resources. They are available for everyone to use.
+
+
+## 6.2 Comma Splice
+A very common error where the writer joins two independent clauses with a comma instead of a period. If a sentence can stand on their own, you should probably use period.
+There are four ways to fix a comma splice:
+    I gave up watching TV, I started surfing the web.
+•   Use comma and a coordinating conjunction (and, but, for, nor, or, so, yet)
+o   I gave up watching TV, but I started surfing the web.
+•   Use a semi colon or other acceptable punctuations
+o   I gave up watching TV; instead, I started surfing the web.
+•   Make the first sentence a subordinate clause
+o   Even though I gave up watching TV, I started surfing the web
+•   Simply separate into two sentences
+o    I gave up watching TV. I started surfing the web.
+The opposite of a comma splice is called a run-on sentence, where two independent clauses are joined together with no punctuation. These mistakes are easy to identify and fix.
+
+
+## 6.3 Subject Verb Agreement
+This is one of those topics that will have become so second nature that we often do not think about it consciously. Here are some tips to keep in mind:
+1.  Ensure the subject and verb agrees in terms of person, and number
+o   Person – basic verb conjugation 
+   I work, you work, she/he works, they work, you work, they work
+   Usually just add -s in third-person singular (she/he/it), and omit it for the others
+o   Number – plural and singular subjects
+o   TRICK: Identify subject, then simply convert it to the corresponding person to see if the conjugation is correct
+   The girls practice throwing, while the coach eats desert
+   The girls (they practice) throwing, while the coach (he eats) desert
+   His objective is to win. The coaches’ objectives are more complex
+   His objective (it is) to win. The coaches’ objectives (they are) more complex
+2.  Know what the subject is. Sometimes the subject and the verb are separated.
+o   The first ten minutes of the date are frightening
+   Subject is first ten minutes, NOT dates
+3.  When subjects are joined by AND, use plural verb, unless it still refers to a single idea 
+o   Bob and Grace were inseparable
+4.  When subjects are joined by OR, NOR, make verb agree with latter part
+o   Neither the members nor the coach knows about the result
+5.  Indefinite pronouns (ending in -body, or -one) or collective nouns are or might infer plurality, but they are still treated as singular
+o   Everybody knows one another
+o   Everyone pays their own bill
+o   The organization agrees that it needs a new member
+6.  (Neither, none) when used by themselves, are treated as singular
+7.  Don’t be distracted by (who, which, that). Make sure verb agree with the antecedent
+8.  Don’t be tricked by words or titles that look plural but are actually singular
+o   The piece of statistics was encouraging
+o   Dog Days is a movie
+9.  Nuance with (the only one of the) vs. (one of the)
+o   Stale bread is one of the options that cause diarrhea 
+   bread is not the subject, options is the subject
+o   The only one of the ride worth riding is the Leviathan
+
+
+
+## 6.4 Pronoun Problems
+Pay attention to pronoun antecedent agreement
+    The microbiologist adjusted his lenses
+    The members opened their books.
+Indefinite pronouns might become tricky as well as they sometimes sound plural, but is actually singular.
+When the airplane hit turbulence, everyone feared for their safety (everyone is singular, their is plural)
+To ensure the indefinite pronoun is in agreement:
+•   use his or her (may get repetitive is used too often)
+o   When the airplane hit turbulence, everyone feared for his or her safety
+•   make the pronoun’s antecedent plural
+o   When the airplane hit turbulence, the passenger feared for their safety
+•   Or reorder the sentence entirely to get rid of indefinite pronouns
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+# Appendix: My Own Notes
+<hr>
+
+
+
+## Simple Past vs. Present Perfect (went vs. have gone)
+Simple Past – talks about past event that happened at a certain time. Usually comes with (yesterday, ago, last night, etc)
+    I went to Florida (emphasizes past effect)
+Present Perfect – shows that a past event happened at an unknown time. Usually comes with adverbs like (never, already, for, since, etc)
+    I have gone to Florida (emphasizes present effect)
+
+## Whom vs. Who
+Who = Subject = giving end (who interviewed Scott)
+Whom = Object = receiving end (whom did the HR interview)
+We don’t know whom the president likes. (whom is object that president likes)
+The car dealer only sells to customers who wants to attend (who is subject that wants to attend)
+
+He is a candidate who, I believe, will do an excellent job (candidate is subject, so use who)
+The woman whom we saw yesterday is running for mayor. (we saw woman that is running for mayor. Woman is the object)
+
+## Using Limiting Modifiers like (only, even, not, around)
+Incorrect: Bob only weighed 150 lbs
+Correct: Bob weighted only 150 lbs
+Reason: limiting modifier should be directly before the thing it modifies
+
+## Dangling Modifiers
+Incorrect: To win first place, a strong will is needed
+Correct: To win first place, the contestants need strong will
+Reason: do not omit subject even when it is strongly implied. Add for clarity
+
+
+
+## You and I vs. you and me
+Incorrect: Between you and I, the deal is bad
+Correct: Between you and me…
+Reason: Preposition must be followed by nouns or pronouns in the object form
+
+Incorrect: Last year he made more money than me
+Correct: Last year he made more money than I (made)
+Reason: When adding the verb made, it is apparent that I must be in the subject form
+
+
+## Would, will vs. would have, will have
+Will, have, and would are auxiliary verbs used to form different tenses
+•   Will – used to describe something in the future in the future simple form
+o   I will leave
+•   Will have – used to describe something that is completed but from a future point of view
+o   I will have done the assignment by the end of the week
+
+•   Would have – used to write about past event or indicate something in the future but from a past point of view (past tense of will)
+o   I thought she would have visited me by now.
+•   Would have – conditional mood with emphasis in the past (willingness in the past that didn’t happen)
+o   I would have bought tickets last week, if it weren’t so expensive
+•   In general, would have expresses a hypothesis on the past
+
+•   Would – is also used as a modal verb to indicate conditional mood
+o   I would buy it, if tickets weren’t so expensive
+•   Would – or subjunctive mood to soften what is being said
+o   Would you pass me that book?
+•   Would – or simply mean “used to”
+o   He would go up and down the hill for hours
+
+
+## Direct vs. Indirect Question
+Direct: Where is the coffee mug?
+Indirect: I was wondering if you know where the coffee mug is.
+Note how indirect questions do not have question marks
+
+
+## Other Mistakes
+Incorrect: You look more pregnant than last week
+Correct: Your pregnancy is more obvious than last week
+Reason: Do not use comparatives for absolute concepts
+
+Incorrect: Lets discuss about that
+Correct: Lets discuss that
+Reason: Do not use about after “to discuss”. It is akin to “talk about about”
+
+Practice is a noun, practise is a verb.
+
