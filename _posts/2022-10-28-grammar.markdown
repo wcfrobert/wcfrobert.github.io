@@ -12,7 +12,7 @@ These are my personal notes on effective writing and The English grammar. Over t
 
 How do I know if a sentence is well-written? Or even grammatically correct? I "go-by-feel", of course! Is this semi-colon appropriate here? Who cares, it looks about right; I've developed my own writing style over the years as well as a fair share of bad habits. This document is my attempt to be more deliberate in my writing and improve as a writer.
 
-This was an incredibly laborious undertaking. As most of you might have imagined, going through English and writing textbooks is a "capital C" Chore. Nevertheless, I hope you will find this useful. If anything, chapter 5 and 6 are worth a read!
+This was an incredibly laborious undertaking. As most of you may have imagined, going through English and writing textbooks is a "capital C" Chore. Nevertheless, I hope you will find this useful. If anything, chapter 5 and 6 are worth a read!
 
 
 
@@ -562,11 +562,12 @@ Used to introduce a list, a quotation, or an appositive phrase.
 
 ## 5.1 Clear and Efficient Writing
 
-Tips ranked by their importance (in my opinion):
+Some tips for better writing:
 
 1. The fastest way to improve your writing is to remove redundant words:
-    * The bridge ~~that people cross to get~~ to Burlington is ~~sort of~~ rectangular ~~in shape~~, and it is made of strong materials ~~such as reinforced steel, and concrete, etc~~
-2. Stop using filler words and inflated phrases (OK in speech to get time to think. Avoid in writing)
+    * "The bridge ~~that people cross to get~~ to Burlington is ~~sort of~~ rectangular ~~in shape~~, and it is made of strong materials ~~such as reinforced steel, and concrete, etc~~"
+    * "The bridge to Burlington is rectangular and is made of strong materials."
+2. Stop using filler words and inflated phrases (OK in colloquial speech. Avoid in writing)
     * "~~Notwithstanding the fact that~~ the manager is late, the meeting will still take place"
     * "~~With that being said~~, let's move on to the next topic"
     * Along the lines of = like
@@ -577,21 +578,27 @@ Tips ranked by their importance (in my opinion):
     * In spite of the fact that = although
     * In the event that = if
     * With regards to  = about
-3. Always use active voice. See section 3.5
-4. Avoid beginning sentences with "here, there, and it"
+3. Always use active voice. Logic flows in one direction (See section 3.5)
+    * ~~"The entrance exam was failed by over one-third of the applicants"~~
+    * "One third of the applicants failed the entrance exam"
+4. Avoid beginning sentences with "it, here, there"
     * ~~"It is important that we know about his whereabouts"~~
     * "More importantly, we need to know his whereabouts"
 5. Avoid long or unnecessary separation between subject and verb. Prefer concision over style.
-    * "Try ~~, if you think you can and if you believe in magic,~~ to see the effect of the drink"~~
+    * "Try ~~, if you think you can,~~ to see the effect of the drink"~~
     * "try to see the effect of the drink if you can"
 6. Avoid using idiomatic, local sayings, figure of speech, and clichés in your writing
-    * "He seems to have hit the nail on the head"
+    * "He ~~seems to have hit the nail on the head~~"
+    * "He is exactly right"
 7. Use more conjunctions and linking phrases for better flow
     * However, Consequently, Moreover, etc...
 8. Be specific when using relative pronouns (he, she, it, which, that, this). Avoid ambiguity
-    * "Bob and Joe both went to boarding school, he studied Law there."
+    * "Bob and Joe both went to boarding school, ~~he studied Law there.~~"
+    * "Bob and Joe both went to boarding school. Bob studied Law whereas Joe studied Chemistry."
 9. Keep verb tenses consistent
-    * "We were two minutes away from home when the sky ~~turns~~ turned dark"
+    * "We **were** two minutes away from home when the sky ~~turns~~ dark"
+    * "We **were** two minutes away from home when the sky **turned** dark"
+    * "We **are** two minutes away from home. We need to be back before the sky **turns** dark"
 10. Avoid badly placed modifier phrases
     * "I shot an elephant in my pajama"
     * "The store clerk brought the ice cream to the young boy covered in chocolate sauce"
@@ -606,7 +613,8 @@ Tips ranked by their importance (in my opinion):
     * ~~"The engineer must exercise his/her best judgement"~~
     * "Engineers must exercise their best judgement"
 14. Do not use double negatives, rephrase your sentence
-    * "I don't disagree with his comment"
+    * "~~I don't disagree with his comment~~"
+    * "I agree"
 
 
 
@@ -615,7 +623,7 @@ Tips ranked by their importance (in my opinion):
 ## 5.2 Readability
 
 There are several things you can do to improve readability
-* Write and organize an outline first. Set up the skeleton, then fill in the meat
+* Write and organize an outline first. In other words, "set up the skeleton, then fill in the meat"
 * Keep writing short and concise. Get rid of filler words and colloquial speech
 * Use active voice
 * Reduce noise and distraction in your writing
@@ -630,14 +638,17 @@ There are several things you can do to improve readability
 
 Avoid choppy sentences with use of coordinating words, phrases, and conjunctions ( and, yet, but, however, moreover, therefore, as a result, to the extent, and etc.). Here are some examples:
 
-* BAD: "The basketball team huddled on the sidelines. The players were drenched in sweat. They looked dejected"
-* GOOD: "The basketball team – dejected and drenched in sweat – huddled on the sidelines"
-* BAD: "John was my adult literacy student. John was fighting a valiant battle against multiple sclerosis"
-* GOOD: "John, an adult literacy student of mine, was fighting a valiant battle against multiple sclerosis"
-* BAD: "Tyler called lightning a “flying flame.” Lightning travels at between 100 000 and 300 000 kilometers per second. Lightning reaches temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
-* GOOD: "Lightning, which Tyler calls a “flying flame”, can travel at between 100 000 and 300 000 kilometers per second and reach temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
-* BAD: "The marathon swimmer was coasted with grease, and she listed as she made her way to the shore. She seemed a symbol of determination"
-* GOOD: "The marathon swimmer listed as she made her way to the shore. Coated in grease, she seemed a symbol of determination"
+* "The basketball team huddled on the sidelines. The players were drenched in sweat. They looked dejected"
+* REVISED: "The basketball team – dejected and drenched in sweat – huddled on the sidelines"
+* --
+* "John was my adult literacy student. John was fighting a valiant battle against multiple sclerosis"
+* REVISED: "John, an adult literacy student of mine, was fighting a valiant battle against multiple sclerosis"
+* --
+* "Tyler called lightning a “flying flame.” Lightning travels at between 100 000 and 300 000 kilometers per second. Lightning reaches temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
+* REVISED: "Lightning, which Tyler calls a “flying flame”, can travel at between 100 000 and 300 000 kilometers per second and reach temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
+* --
+* "The marathon swimmer was coasted with grease, and she listed as she made her way to the shore. She seemed a symbol of determination"
+* REVISED: "The marathon swimmer listed as she made her way to the shore. Coated in grease, she seemed a symbol of determination"
 
 
 
@@ -646,23 +657,20 @@ Avoid choppy sentences with use of coordinating words, phrases, and conjunctions
 
 Identical flow and structure when listing a series of items.
 
-* BAD: "Being outdoors, feeling the wind, and to smell the ocean is nice."
-* GOOD: "Being outdoors, feeling the wind, and smelling the ocean is nice."
+* "Being outdoors, feeling the wind, and to smell the ocean is nice."
+* REVISED: "Being outdoors, feeling the wind, and smelling the ocean is nice."
 
 
 
 ## 5.5 Needed Words
 
-Some words cannot be deleted in the process of making a sentence more brief or concise.
+Although concision is great, some words cannot be deleted!
 
 * Parallel structure
-    * BAD: "I have and will continue to support him"
-    * GOOD: "I have supported and will continue to support him"
-    * BAD: "I drank some coffee and now am much more awake"
-    * GOOD: "I drank some coffee and now I am much more awake"
-* Comparisons
-    * BAD: "I gave him more soup than you"
-    * GOOD: "I gave him more soup than I gave to you"
+    * "I have and will continue to support him"
+    * REVISED: "I have supported and will continue to support him"
+    * "I gave him more soup than you"
+    * REVISED: "I gave him more soup than I gave to you"
 
 
 
@@ -695,83 +703,118 @@ Some words cannot be deleted in the process of making a sentence more brief or c
 
 ## 6.1 Sentence Fragments
 
-Fragments lack main verb or subject. It leaves reader with a fragment of thought. The most common type of fragment is one that begins with subordinating clause. The ones missing verb and subject are very easy to catch.
-    Although we had a good time.
-Correcting subordinate clause mistakes usually just require eliminating all punctuation, or adding a comma instead.
-    John’s novels are widely celebrated. Because he is good at writing
-    John’s novels are widely celebrated because he is good at writing
-John’s novels are widely celebrated. He is good at writing
-Phrase fragments occur when we want to add additional thought to a main clause without proper punctuation. They can be fixed by incorporating them into the main clause, or making them into an independent clause.
-    The library has many resources. For everyone to use.
-    The library has many resources, which is there for everyone to use.
-    The library has many resources. They are available for everyone to use.
+Fragments lack main verb or subject. It leaves reader with a fragment of thought. The most common type of fragment is one that begins with subordinating clause. 
+
+* The ones missing verb and subject are easy to catch
+    * ~~"Although we had a good time."~~
+* Fixing sentence fragments is usually just a matter of eliminating punctuation, or dividing into two thoughts.
+    * ~~"John’s novels are widely celebrated. Because he is good at writing"~~
+    * "John’s novels are widely celebrated because he is good at writing"
+    * "John’s novels are widely celebrated. He is a good writer"
+* Another example:
+    * ~~"The library has many resources. For everyone to use."~~
+    * "The library has many resources for everyone to use."
+    * "The library has many resources. They are available for everyone to use."
 
 
 ## 6.2 Comma Splice
 
-A very common error where the writer joins two independent clauses with a comma instead of a period. If a sentence can stand on their own, you should probably use period.
+When the writer joins two independent clauses with a comma instead of a period. If a sentence can stand on its own, you should probably use period.
+
 There are four ways to fix a comma splice:
-    I gave up watching TV, I started surfing the web.
-•   Use comma and a coordinating conjunction (and, but, for, nor, or, so, yet)
-o   I gave up watching TV, but I started surfing the web.
-•   Use a semi colon or other acceptable punctuations
-o   I gave up watching TV; instead, I started surfing the web.
-•   Make the first sentence a subordinate clause
-o   Even though I gave up watching TV, I started surfing the web
-•   Simply separate into two sentences
-o    I gave up watching TV. I started surfing the web.
-The opposite of a comma splice is called a run-on sentence, where two independent clauses are joined together with no punctuation. These mistakes are easy to identify and fix.
+
+> ~~"I gave up watching TV, I started surfing the web."~~
+
+* Use comma and a coordinating conjunction (and, but, for, nor, or, so, yet)
+    * "I gave up watching TV, but I started surfing the web."
+* Use a semi colon or other acceptable punctuation
+    * "I gave up watching TV; instead, I started surfing the web."
+* Make the first sentence a subordinate clause
+    * "Even though I gave up watching TV, I started surfing the web"
+* Simply separate into two sentences
+    * "I gave up watching TV. I started surfing the web."
+
+The opposite of a comma splice is called a **run-on sentence**, where two independent clauses are joined together with no punctuation. These mistakes are much easier to detect and fix.
+
+> ~~"I love movies I would watch one every day If i have the time."~~
 
 
-## 6.3 Subject Verb Agreement
+## 6.3 Subject-Verb Agreement
 
-This is one of those topics that will have become so second nature that we often do not think about it consciously. Here are some tips to keep in mind:
-1.  Ensure the subject and verb agrees in terms of person, and number
-o   Person – basic verb conjugation 
-   I work, you work, she/he works, they work, you work, they work
-   Usually just add -s in third-person singular (she/he/it), and omit it for the others
-o   Number – plural and singular subjects
-o   TRICK: Identify subject, then simply convert it to the corresponding person to see if the conjugation is correct
-   The girls practice throwing, while the coach eats desert
-   The girls (they practice) throwing, while the coach (he eats) desert
-   His objective is to win. The coaches’ objectives are more complex
-   His objective (it is) to win. The coaches’ objectives (they are) more complex
-2.  Know what the subject is. Sometimes the subject and the verb are separated.
-o   The first ten minutes of the date are frightening
-   Subject is first ten minutes, NOT dates
-3.  When subjects are joined by AND, use plural verb, unless it still refers to a single idea 
-o   Bob and Grace were inseparable
-4.  When subjects are joined by OR, NOR, make verb agree with latter part
-o   Neither the members nor the coach knows about the result
-5.  Indefinite pronouns (ending in -body, or -one) or collective nouns are or might infer plurality, but they are still treated as singular
-o   Everybody knows one another
-o   Everyone pays their own bill
-o   The organization agrees that it needs a new member
-6.  (Neither, none) when used by themselves, are treated as singular
-7.  Don’t be distracted by (who, which, that). Make sure verb agree with the antecedent
-8.  Don’t be tricked by words or titles that look plural but are actually singular
-o   The piece of statistics was encouraging
-o   Dog Days is a movie
-9.  Nuance with (the only one of the) vs. (one of the)
-o   Stale bread is one of the options that cause diarrhea 
-   bread is not the subject, options is the subject
-o   The only one of the ride worth riding is the Leviathan
+Similar to verb conjugation, subject-verb agreement is best learned sub-consciously through reading and speaking the language everyday until it becomes second nature. Incorrect subject-verb agreement should just "sound wrong" to you.
+
+
+Here are the rules to follow:
+
+1. Verbs should agree with subjects. Two forms: singular and plural
+    * I work, you work, she/he works, they work, you work
+2. Use plural form when subjects are joined by AND, unless it still refers to a single idea
+    * "Bob and Grace were inseparable"
+    * "Love and Hate" is a good movie
+3. Indefinite pronouns and collective nouns are considered singular even if they imply plurality
+    * "Everybody knows one another"
+    * "Everyone pays their own bill"
+    * "The organization agrees that it needs a new member"
+    * "each," "each one," "either," "neither," "everyone," "everybody," "anyone," "anybody," "nobody," "somebody," "someone," and "no one" 
+4. Countable nouns take a plural verb
+    * "Locally produced goods have their advantages"
+5. Noncount nouns take singular verb
+    * "Education is the key to success"
+    * "The information is relevant to our study"
+6. When subjects are joined by OR, NOR, make verb agree with second part
+    * "Neither the members nor the **coach** (he) knows about the result"
+7. Don’t be tricked by words or titles that look plural but are actually singular
+    * "The piece of statistics was encouraging"
+    * "Dog Days is an excellent movie"
+8. Clearly identify what the subject is if they are separated by other phrases
+    * "The **first ten minutes** of the date are frightening"
+        * Subject is first ten minutes, NOT date
+    * Don’t be distracted by (who, which, that). Make sure verb agree with the antecedent
+
+
+
+
+
+Here is a helpful trick: <u>Identify the subject, then simply convert it to the corresponding person to see if the conjugation is correct </u>
+
+* "The girls practice throwing, while the coach eats desert"
+    * "The girls (they practice) throwing, while the coach (he eats) desert"
+* "His objective is to win. The coaches’ objectives are more complex"
+    * "His objective (it is) to win. The coaches’ objectives (they are) more complex"
+
 
 
 
 ## 6.4 Pronoun Problems
 
 Pay attention to pronoun antecedent agreement
-    The microbiologist adjusted his lenses
-    The members opened their books.
+* The **microbiologist** adjusted **his** lenses
+* The **members** opened **their** books
+
+
 Indefinite pronouns might become tricky as well as they sometimes sound plural, but is actually singular.
-When the airplane hit turbulence, everyone feared for their safety (everyone is singular, their is plural)
-To ensure the indefinite pronoun is in agreement:
-•   use his or her (may get repetitive is used too often)
-o   When the airplane hit turbulence, everyone feared for his or her safety
-•   make the pronoun’s antecedent plural
-o   When the airplane hit turbulence, the passenger feared for their safety
-•   Or reorder the sentence entirely to get rid of indefinite pronouns
+
+* "When the airplane hit turbulence, everyone feared for ~~their~~ safety"
+
+Two possible fixes:
+
+1. use his or her (not optimal)
+    * "When the airplane hit turbulence, everyone feared for **his or her** safety"
+2. get rid of indefinite pronoun
+    * "When the airplane hit turbulence, **the passengers** feared for **their** safety"
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -796,79 +839,95 @@ o   When the airplane hit turbulence, the passenger feared for their safety
 <hr>
 
 
-
 ## Simple Past vs. Present Perfect (went vs. have gone)
-Simple Past – talks about past event that happened at a certain time. Usually comes with (yesterday, ago, last night, etc)
-    I went to Florida (emphasizes past effect)
-Present Perfect – shows that a past event happened at an unknown time. Usually comes with adverbs like (never, already, for, since, etc)
-    I have gone to Florida (emphasizes present effect)
+Simple Past – completed action in a time before now
+* I went to Florida (last week)
+
+Present Perfect – precise time of action is in the past, but not exactly known
+* I have gone to Florida (I can't remember when but that's not important)
+
+
 
 ## Whom vs. Who
 Who = Subject = giving end (who interviewed Scott)
+
 Whom = Object = receiving end (whom did the HR interview)
-We don’t know whom the president likes. (whom is object that president likes)
-The car dealer only sells to customers who wants to attend (who is subject that wants to attend)
 
-He is a candidate who, I believe, will do an excellent job (candidate is subject, so use who)
-The woman whom we saw yesterday is running for mayor. (we saw woman that is running for mayor. Woman is the object)
+Examples:
+* We don’t know whom the president likes. (whom is object that president likes)
+* The car dealer only sells to customers who wants to attend (who is subject that wants to attend)
+* He is a candidate who, I believe, will do an excellent job (candidate is subject, so use who)
+* The woman whom we saw yesterday is running for mayor. (we saw woman that is running for mayor. Woman is the object)
 
-## Using Limiting Modifiers like (only, even, not, around)
-Incorrect: Bob only weighed 150 lbs
-Correct: Bob weighted only 150 lbs
-Reason: limiting modifier should be directly before the thing it modifies
+
+
+## Limiting Modifiers (only, even, not, around)
+limiting modifier should be directly before the thing it modifies.
+
+* Incorrect: Bob only weighed 150 lbs
+* Correct: Bob weighted only 150 lbs
+
+
 
 ## Dangling Modifiers
-Incorrect: To win first place, a strong will is needed
-Correct: To win first place, the contestants need strong will
-Reason: do not omit subject even when it is strongly implied. Add for clarity
+Do not omit subject even when it is strongly implied. Add for clarity
+
+* Incorrect: To win first place, a strong will is needed
+* Correct: To win first place, the contestants need a strong will
 
 
 
 ## You and I vs. you and me
-Incorrect: Between you and I, the deal is bad
-Correct: Between you and me…
-Reason: Preposition must be followed by nouns or pronouns in the object form
+Preposition must be followed by nouns or pronouns in the object form
 
-Incorrect: Last year he made more money than me
-Correct: Last year he made more money than I (made)
-Reason: When adding the verb made, it is apparent that I must be in the subject form
+* Incorrect: Between you and I, the deal is bad
+* Correct: Between you and me, the deal is bad
+
+When adding the verb made, it is apparent that I must be in the subject form
+
+* Incorrect: Last year he made more money than me
+* Correct: Last year he made more money than I
 
 
-## Would, will vs. would have, will have
-Will, have, and would are auxiliary verbs used to form different tenses
-•   Will – used to describe something in the future in the future simple form
-o   I will leave
-•   Will have – used to describe something that is completed but from a future point of view
-o   I will have done the assignment by the end of the week
 
-•   Would have – used to write about past event or indicate something in the future but from a past point of view (past tense of will)
-o   I thought she would have visited me by now.
-•   Would have – conditional mood with emphasis in the past (willingness in the past that didn’t happen)
-o   I would have bought tickets last week, if it weren’t so expensive
-•   In general, would have expresses a hypothesis on the past
 
-•   Would – is also used as a modal verb to indicate conditional mood
-o   I would buy it, if tickets weren’t so expensive
-•   Would – or subjunctive mood to soften what is being said
-o   Would you pass me that book?
-•   Would – or simply mean “used to”
-o   He would go up and down the hill for hours
+## Use of "Would"
+
+* Would - expresses a hypothesis in the past
+    * I thought she would have visited me by now.
+    * I would have bought tickets last week, if it weren’t so expensive
+* Would – is also used as a modal verb to indicate conditional mood
+    * I would buy it, if tickets weren’t so expensive
+* Would – or subjunctive mood to soften what is being said
+    * Would you pass me that book?
+* Would – or simply mean “used to”
+    * He would go up and down the hill for hours
+
+
 
 
 ## Direct vs. Indirect Question
-Direct: Where is the coffee mug?
-Indirect: I was wondering if you know where the coffee mug is.
-Note how indirect questions do not have question marks
+
+Note how indirect questions do not have question marks. A more polite way to ask questions.
+
+* Direct: Where is the coffee mug?
+* Indirect: I was wondering if you know where the coffee mug is.
 
 
-## Other Mistakes
-Incorrect: You look more pregnant than last week
-Correct: Your pregnancy is more obvious than last week
-Reason: Do not use comparatives for absolute concepts
 
-Incorrect: Lets discuss about that
-Correct: Lets discuss that
-Reason: Do not use about after “to discuss”. It is akin to “talk about about”
 
-Practice is a noun, practise is a verb.
+## Title Capitalization
+
+Consistent across AP, APA, MLA, etc:
+1. First and last word always capitalized regardless of type
+2. Nouns, verb, adverb, adjective always capitalized
+3. Articles always lowercase (the, a, an)
+4. Preposition (to, about, above, after, by, of, over, as, upon) - capitalize if four letters or more
+5. Conjunction (so, and, but, yet, after, if, while) - capitalize if four letters or more
+6. DO NOT CAPITALIZE second word after hyphen (Mid-year, Anti-hero)
+
+Just remember not to capitalize:
+* articles (an, a, the) unless its the first or last word
+* coordinating conjunctions (and, but, for)
+* short preposition and conjunctions less than 4 letters (at, by, to)
 
