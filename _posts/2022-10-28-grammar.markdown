@@ -562,123 +562,117 @@ Used to introduce a list, a quotation, or an appositive phrase.
 
 ## 5.1 Clear and Efficient Writing
 
-1. Be specific when using relative pronouns (he, she, it, which, that, this). Avoid ambiguity
-    * "Bob and Joe both went to boarding school, he studied Law there." (who is "she"?)
-2. Do not use double negatives, rephrase your sentence
-    * "I don't disagree" (I agree)
-3. Stay consistent:
-    * Verb tenses - "We were two minutes away from home when the sky ~~turns~~ turned dark"
-    * POV - Keep change in POV to a minimum. Otherwise gets confusing
-    * Passive & active voice - Always use active voice. See section 3.5
-3. Avoid badly placed modifier phrases
-    * "I shot an elephant in my pajama" (elephant wearing pajama!?)
-    * "The store clerk brought the ice cream to the young boy covered in chocolate sauce" (The boy is covered in chocolate!?)
-4. Avoid long separation between subject and verb.
-    * ~~"The dog, after chasing down Bob, wagged its tail in triumph"~~
-    * Instead try: "After chasing down bob, the dog wagged its tail in triumph"
-    * ~~"Try to, if you can, see the effect of the drink"~~
-    * Instead try: "try to see the effect of the drink if you can"
-5. Avoid paragraphs that are too long (not too short and choppy either)
-6. Use more conjunctions and linking phrases for better flow
-    * However, Consequently, Moreover
-7. Avoid instances where you have to use "his/her", "she/he", "her/him". Rewrite sentence instead
-    * ~~"The engineer must exercise his/her best judgement"~~
-    * Instead try: "Engineers must exercise their best judgement"
-8. Avoid constructing sentences with:
+Tips ranked by their importance (in my opinion):
+
+1. The fastest way to improve your writing is to remove redundant words:
+    * The bridge ~~that people cross to get~~ to Burlington is ~~sort of~~ rectangular ~~in shape~~, and it is made of strong materials ~~such as reinforced steel, and concrete, etc~~
+2. Stop using filler words and inflated phrases (OK in speech to get time to think. Avoid in writing)
+    * "~~Notwithstanding the fact that~~ the manager is late, the meeting will still take place"
+    * "~~With that being said~~, let's move on to the next topic"
+    * Along the lines of = like
+    * By virtue of the fact that = because
+    * At this point in time = currently
+    * As matter of fact = in fact
+    * For the simple reason that = because
+    * In spite of the fact that = although
+    * In the event that = if
+    * With regards to  = about
+3. Always use active voice. See section 3.5
+4. Avoid beginning sentences with "here, there, and it"
+    * ~~"It is important that we know about his whereabouts"~~
+    * "More importantly, we need to know his whereabouts"
+5. Avoid long or unnecessary separation between subject and verb. Prefer concision over style.
+    * "Try ~~, if you think you can and if you believe in magic,~~ to see the effect of the drink"~~
+    * "try to see the effect of the drink if you can"
+6. Avoid using idiomatic, local sayings, figure of speech, and clichés in your writing
+    * "He seems to have hit the nail on the head"
+7. Use more conjunctions and linking phrases for better flow
+    * However, Consequently, Moreover, etc...
+8. Be specific when using relative pronouns (he, she, it, which, that, this). Avoid ambiguity
+    * "Bob and Joe both went to boarding school, he studied Law there."
+9. Keep verb tenses consistent
+    * "We were two minutes away from home when the sky ~~turns~~ turned dark"
+10. Avoid badly placed modifier phrases
+    * "I shot an elephant in my pajama"
+    * "The store clerk brought the ice cream to the young boy covered in chocolate sauce"
+11. Make verbs stronger
+    * ~~"The accumulation of garbage carried on for days"~~
+    * "Garbage accumulated for days"
+12. Do not overuse sentences with format: (vary rhythm and sentence structure)
     * ...is when...
     * ...is where...
     * The reason... is because...
-9. Present valuable information in the main clause! Do not relegate it to a subordinating clause.
-10. Stop using filler words
-* BAD: Notwithstanding the fact that the manager is late, the meeting will still take place
-* GOOD: Although the manager is late, the meet will still take place.
-11. The fastest way to improve your writing is to remove redundant words:
-* The bridge that people cross to get to Burlington is sort of rectangular in shape, and it is made of strong materials such as reinforced steel, and concrete, etc
-12. Avoid using idiomatic, local sayings, figure of speech, and clichés in your writing
+13. Avoid instances where you have to use "his/her", "she/he", "her/him". Rewrite sentence instead
+    * ~~"The engineer must exercise his/her best judgement"~~
+    * "Engineers must exercise their best judgement"
+14. Do not use double negatives, rephrase your sentence
+    * "I don't disagree with his comment"
+
+
 
 
 
 ## 5.2 Readability
 
-There are several things you can do to improve a document’s readability
-•   Write an outline first, organize outline logically
-•   Keep writing as short and concise of possible. Get rid of filler words that may often appear in colloquial speech
-•   Use active voice when possible. If passive voice is required, do everything you can to avoid wordiness
-•   Reduce noise within the writing
-o   Basic grammar, punctuation, spelling mistakes
-o   Wordiness which results in lack of emphasis
-o   Poor choice of word
-o   Not considering technical capacity of reader
-•   Provide accurate info. When giving opinion, also substantiate it with fact
+There are several things you can do to improve readability
+* Write and organize an outline first. Set up the skeleton, then fill in the meat
+* Keep writing short and concise. Get rid of filler words and colloquial speech
+* Use active voice
+* Reduce noise and distraction in your writing
+    * Basic grammar, punctuation, spelling mistakes
+    * Wordiness which results in lack of emphasis
+    * Poor choice of word
+    * Not considering technical capacity of reader
 
 
 
-## 5.3 Getting rid of choppy sentences
+## 5.3 Choppy Sentences
 
-Avoid choppy sentence construction with the use of coordinating words, phrases, and clauses (conjunctions: and, yet, but, however, moreover, therefore, as a result, to the extent, etc)
-Here are some examples:
-Choppy: The basketball team huddled on the sidelines. The players were drenched in sweat. They looked dejected.
-Revised: The basketball team – dejected and drenched in sweat – huddled on the sidelines
+Avoid choppy sentences with use of coordinating words, phrases, and conjunctions ( and, yet, but, however, moreover, therefore, as a result, to the extent, and etc.). Here are some examples:
 
-Choppy: John was my adult literacy student. John was fighting a valiant battle against multiple sclerosis
-Revised: John, an adult literacy student of mine, was fighting a valiant battle against multiple sclerosis.
-
-Choppy: Tyler called lightning a “flying flame.” Lightning travels at between 100 000 and 300 000 kilometers per second. Lightning reaches temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day.
-Revised: Lightning, which Tyler calls a “flying flame”, can travel at between 100 000 and 300 000 kilometers per second and reach temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day.
-
-Choppy: The marathon swimmer was coasted with grease, and she listed as she made her way to the shore. She seemed a symbol of determination.
-Revised: The marathon swimmer listed as she made her way to the shore. Coated in grease, she seemed a symbol of determination.
+* BAD: "The basketball team huddled on the sidelines. The players were drenched in sweat. They looked dejected"
+* GOOD: "The basketball team – dejected and drenched in sweat – huddled on the sidelines"
+* BAD: "John was my adult literacy student. John was fighting a valiant battle against multiple sclerosis"
+* GOOD: "John, an adult literacy student of mine, was fighting a valiant battle against multiple sclerosis"
+* BAD: "Tyler called lightning a “flying flame.” Lightning travels at between 100 000 and 300 000 kilometers per second. Lightning reaches temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
+* GOOD: "Lightning, which Tyler calls a “flying flame”, can travel at between 100 000 and 300 000 kilometers per second and reach temperature of 24 000 to 28 000 degrees Celsius. It kills 20 people each day"
+* BAD: "The marathon swimmer was coasted with grease, and she listed as she made her way to the shore. She seemed a symbol of determination"
+* GOOD: "The marathon swimmer listed as she made her way to the shore. Coated in grease, she seemed a symbol of determination"
 
 
 
-## 5.4 Getting rid of inflated phrases
 
-Watch out for inflated phrases when writing. It may be okay to use these phrases colloquially, but doing so in writing is a waste of space and have little meaning; And no it does not make your writing sound more sophisticated.
-•   Along the lines of = like
-•   By virtue of the fact that = because
-•   At this point in time = currently
-•   As matter of fact = in fact
-•   For the simple reason that = because
-•   In spite of the fact that = although
-•   In the event that = if
-•   With regards to  = about
+## 5.4 Parallelism
 
-## 5.5 Other tips to simplify your writing
+Identical flow and structure when listing a series of items.
 
-•   Make verbs stronger
-o   The accumulation of garbage carried on for days
-   Garbage accumulated for days
-o   We should have a discussion about that topic
-   We should discuss that topic
-•   Avoid beginning sentences with here, there, and it
-o   It is important that we know about his whereabouts
-o   More importantly, we need to know his whereabouts
+* BAD: "Being outdoors, feeling the wind, and to smell the ocean is nice."
+* GOOD: "Being outdoors, feeling the wind, and smelling the ocean is nice."
 
 
 
-## 5.6 Parallelism
-When listing a series of item in a list, use identical structure:
-    Bad: Being outdoors, feeling the wind, and to smell the ocean is nice.
-    Good: Being outdoors, feeling the wind, and smelling the ocean is nice.
-Advanced: Parallel construction with correlative conjunctions
-Bad: When the staff met the sales target, the manager not only ordered new chairs, but also new desks, potted plants, and a microwave for the lunchroom
-Good: When the staff met the sales target, the manager ordered not only new chairs, but also new desks, potted plants, and a microwave for the lunchroom
-Good 2: When the staff met the sales target, the manager not only ordered new chairs, but also provided new desks, potted plants, and a microwave for the lunchroom
+## 5.5 Needed Words
 
-Needed Words
-In some instances, some words cannot be deleted in the process of making a sentence more brief or concise. Here are some examples.
-•   Parallel structure
-o   I have and will continue to support him
-o   I have supported and will continue to support him
-•   Comparisons
-o   BAD: I gave him more soup than you
-o   Correct 1: I gave him more soup than I gave to you
-o   Correct 2: I gave him more soup than you gave him
+Some words cannot be deleted in the process of making a sentence more brief or concise.
 
-Sentence Variety
-An important part of revision is varying the sentences such that they have change in rhythm and have clarity and coherence. Here are some tricks:
-•   Change up rhythm and avoid getting into a similar verb-object pattern. Also try to avoid beginning too many sentences with it, there, I, the.
-•   The subject does not always have to come first. It is possible to add some adverbial modifiers or participial phrases
+* Parallel structure
+    * BAD: "I have and will continue to support him"
+    * GOOD: "I have supported and will continue to support him"
+    * BAD: "I drank some coffee and now am much more awake"
+    * GOOD: "I drank some coffee and now I am much more awake"
+* Comparisons
+    * BAD: "I gave him more soup than you"
+    * GOOD: "I gave him more soup than I gave to you"
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -700,6 +694,7 @@ An important part of revision is varying the sentences such that they have chang
 <hr>
 
 ## 6.1 Sentence Fragments
+
 Fragments lack main verb or subject. It leaves reader with a fragment of thought. The most common type of fragment is one that begins with subordinating clause. The ones missing verb and subject are very easy to catch.
     Although we had a good time.
 Correcting subordinate clause mistakes usually just require eliminating all punctuation, or adding a comma instead.
@@ -713,6 +708,7 @@ Phrase fragments occur when we want to add additional thought to a main clause w
 
 
 ## 6.2 Comma Splice
+
 A very common error where the writer joins two independent clauses with a comma instead of a period. If a sentence can stand on their own, you should probably use period.
 There are four ways to fix a comma splice:
     I gave up watching TV, I started surfing the web.
@@ -728,6 +724,7 @@ The opposite of a comma splice is called a run-on sentence, where two independen
 
 
 ## 6.3 Subject Verb Agreement
+
 This is one of those topics that will have become so second nature that we often do not think about it consciously. Here are some tips to keep in mind:
 1.  Ensure the subject and verb agrees in terms of person, and number
 o   Person – basic verb conjugation 
@@ -763,6 +760,7 @@ o   The only one of the ride worth riding is the Leviathan
 
 
 ## 6.4 Pronoun Problems
+
 Pay attention to pronoun antecedent agreement
     The microbiologist adjusted his lenses
     The members opened their books.
