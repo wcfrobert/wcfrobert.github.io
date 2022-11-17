@@ -81,42 +81,48 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
 
 ## 1.1 Types of Surveys
 
-* Boundary - property lines
-* Geodetic - planetary wide perspective. Shape of the earth.
-* Hydrographic - underwater land characteristic
-* Topographic - land elevation and objects
-* Route  - highways, pipes
-* Construction Staking - field control during construction
+* **Cartographic** - rough hand sketches
+* **Boundary** - property lines
+* **Geodetic** - planetary wide perspective. Shape of the earth.
+* **Hydrographic** - underwater land characteristic (existing body of water)
+* **Topographic** - land elevation and objects. Conducted fairly early on prior to construction documents
+* **Route**  - highways, pipes (parallel and perpendicular measurements)
+* **Construction** - field control during construction with stakes
+* **As-built** - conducted after construction for record-keeping (final survey)
+* **Control** - establish location of benchmarks
 
 ## 1.2 Survey Party
 
-* party chief - team leader
-* instrument person - often note keeper as well
-* rod person - holds rod plumb
-* chain persons - pair stretching tape between them
-* stake setter - drives stakes into ground per instrument or rod person
+* Party chief - team leader
+* Instrument person - often note keeper as well
+* Rod person - holds rod plumb
+* Chain persons - pair stretching tape between them
+* Stake setter - drives stakes into ground per instrument or rod person
+
 
 ## 1.3 California Law
-* Civil engineers cannot establish property lines
 * Professional Land Surveyors Act
     * Defines licensure requirements and roles of a surveyor
 * Professional Engineers Act
     * Defines licensure requirements for civil engineer and their allowed role
 * Subdivision Map Act
     * Defines procedure for boundary surveys (property lines) and how they are recorded by local municipality
-    * Parcel map = large parcel of land divided into (4) or less divisions
-    * Subdivision Map = large parcel of land divided into (5) or more divisions
-    * Developers submit their plans. Sometimes tentative maps are provided (no license is require for tentative maps) beforehand
+    * **Parcel map** = large parcel of land divided into (4) or less divisions
+    * **Subdivision Map** = large parcel of land divided into (5) or more divisions. AKA final map.
+    * **Tentative Map** - before developers submit their plans. Preliminary maps
 
-* Civil engineer registered after 1982 can perform:
-    * contour surveys
+* Licensed *surveyor* and Civil Engineer licensed BEFORE 1982 can do everything
+* Civil engineer registered after 1982 CAN perform:
+    * contour surveys (aerial survey, topographic)
     * survey of fixed work
     * tunnel survey
-* But they may not perform:
+    * tentative maps
+* Civil engineer registered after 1982 CANNOT perform:
     * geodetic surveying (taking into account Earth's curvature)
-    * cadastral surveying
+    * cadastral surveying (records of property lines)
     * survey for land division
     * determine position of anything that establishes a property line
+    * Basically any sort of benchmark setting
 
 
 
@@ -150,19 +156,24 @@ $$H = S \sin z$$
 
 ## 2.2 Taping and Chaining
 
-* Taping and chaining involves two people measuring horizontal distance with **Gunter's chain** (66 ft) or a steel tape. Try to measure horizontal distance directly without using any trigonometry (use a **plumb bob** for leveling)
+* Taping and chaining involves two people measuring horizontal distance with **Gunter's chain (66 ft)** or a steel tape. Try to measure horizontal distance directly without using any trigonometry (use a **plumb bob** for leveling)
 * Here are some useful unit conversions:
 
 <img src="/assets/img/blog/survey2.png" style="width:50%;"/>
 *Figure 2: Common Unit Conversion*
 
+* **1 m = 3.28 ft**
+* **1 mile = 5280 ft**
+* **1 hectare = 2.472 acre**
+* **1 acre = 43560 ft^2**
+* **1 cubic yard = 27 ft^3**
 * There are three types of tapes: 1.) add tape, 2.) cut tape, and graduated tape. Their main difference is how the last feet is measured and calibrated (see figure below for an illustration. The rear chain-person holds the roll of tape. The forward chain-person holds near the zero mark.
 
 <img src="/assets/img/blog/survey3.png" style="width:60%;"/>
 *Figure 3: Different Type of Tape*
 
 
-* Temperature correction can be applied with the following equation. Let c = the correction amount. To = 68<sup>o</sup>>F unless otherwise noted.
+* **Temperature correction** can be applied with the following equation. Let c = the correction amount. **To = standard temperature** = 68<sup>o</sup>>F unless otherwise noted.
     * If T > To, the tape is hot and expanded which reads smaller, c is positive, real distance is actually larger
     * If T < To, the tape is cold and contracted which reads bigger, c is negative, real distance is actually smaller
 
@@ -170,13 +181,16 @@ $$c = (6.45 \times 10^{-6}) (T - T_o) L_{measured}$$
 
 $$T_{true} = T_{measured} + c$$
 
-* Tape Sag Adjustment (always negative - actual length is shorter)
-    * w = weight of tape (lbs/ft)
-    * P = pull force (lbs)
+$$T_{measure} = T_{true} - c$$
+
+* **Tape Sag Adjustment** (always negative - actual length is shorter)
+    * w = weight of tape (lbs/ft or kg/m)
+    * P = pull force (lbs or kg)
+    * Don't forget to divide by length (lbs/ft units!)
 
 $$C_s = \frac{w^2L^3}{24P^2}$$
 
-* Tape Pull Adjustment
+* **Tape Pull Adjustment**
     * Po = standardized pull tension (usually around 15 lbs)
     * A = cross section area of tape
     * E = elastic modulus of steel (30 000 000 psi)
@@ -187,10 +201,11 @@ $$C_p = \frac{(P-P_o)L}{EA}$$
 
 * *When tape is measured at an incline. Make sure to correct for S, before calculating H*
 * *Pay attention to units for the pull adjustment! Denominator can stay in inches because in^2 and psi cancels out*
+* *For distance measurements exceeding tape length, need to add the adjustment from all measurements. For example, 450 ft, we will have (4) adjustment with 100 ft and (1) adjustment with 50 ft*
 
 
 ## 2.3 Stadia Measurement
-* Measuring distance with a lens w/ cross-hair and a rod. Distance can be indirectly deduced by reading the gap between cross-hair. Usually K = 100 ft and C is 0 ft unless otherwise noted.
+* Measuring distance with a lens w/ cross-hair and a rod. Distance can be indirectly deduced by reading the gap between cross-hair. **Usually K = 100 ft and C is 0 ft unless otherwise noted**.
 
 $$distance = KI + C$$
 
@@ -213,7 +228,7 @@ $$distance = KI + C$$
 
     $$S = K I_1 + c = KI \cos(\theta) + c$$
 
-4. Finally let's convert to horizontal distance:
+4. Finally let's convert to horizontal and vertical distance. Note vertical distance is to center of rod reading.
 
     $$H = S \cos(\alpha) = (KI \cos(\alpha) + c) \cos(\alpha)$$
 
@@ -250,7 +265,7 @@ $$c = L_{measured} \times \frac{ppm}{1000000}$$
 
 ## 3.1 Conceptual Stuff
 
-* All elevation is measured with respect to a **datum**. In the US, that datum is based on the **Mean Sea Level 1929 Adjustment (MSL29)**
+* All elevation is measured with respect to a **datum**. In the US, that datum is based on the Mean Sea Level 1929 Adjustment **(MSL29)** and was updated to **NGVD 88**
 * Here are some commonly used terminologies:
     * leveling circuit - our instrument which has a telescope for rod readings. Often rotation is restricted to only vertical axis (i.e. always horizontal)
     * (RR) rod reading
@@ -260,7 +275,7 @@ $$c = L_{measured} \times \frac{ppm}{1000000}$$
     * (BM) benchmark - a location where we know the exact elevation (serves as control and error correction)
     * (TBM) temporary benchmark - not official, usually used by individuals for temporary purposes
     * (TP) turning point - point whose elevation is determined prior to moving the level
-* Our instrument does not have to be placed in line of FS and BS (rotating 180 degree) each time. But our equipment should always be set up with equal distance to BS and FS to minimize curvature, collimation, and refraction errors. Having equal distance means the error could balance out.
+* Our instrument does not have to be placed in line of FS and BS (rotating 180 degree) each time. But our equipment should always be set up with equal distance to BS and FS to minimize curvature, collimation, and refraction errors. **Having equal distance means the error could balance out.**
 * If the above is not possible (say that places our instrument in the middle of a river), then use **reciprocal leveling**
 
 <img src="/assets/img/blog/survey6.png" style="width:75%;"/>
@@ -296,6 +311,8 @@ Referring to the figure above, the procedure for leveling is as follows:
 * Rods can extend up to 13 ft, with 0 at the base. There are two types:
     * **self-reading rod** - Philadelphia rod (most popular)
     * **self-reducing rod** - Lenker rod. No notes need to be taken. Set zero at HI. Value increases from top to bottom
+
+Rod can also be made of Invar strip which is the most precise.
 
 <img src="/assets/img/blog/survey7.png" style="width:100%;"/>
 *Figure 7: Type of Leveling Rod*

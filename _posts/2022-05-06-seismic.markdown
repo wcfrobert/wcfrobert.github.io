@@ -131,7 +131,7 @@ Longer fault rupture -> longer duration -> larger magnitude -> higher intensity
 
 ## 1.5 Basics of Structural Dynamics
 
-Stiffness of frame members:
+Stiffness of frame members. Remember to convert span to **inches** for consistent unit
 
 $$k_{fix-fix} = \frac{12EI}{L^3}$$
 
@@ -313,7 +313,7 @@ This chapter is mostly a summary of ASCE 7 section 11 which is a guideline for c
 ## 3.1 General Requirements of IBC
 
 * The purpose of the IBC is to establish a set of minimum requirements. Afterwards, each jurisdiction adopt the IBC and add their own specific set of requirements. IBC derives heavily from codes and standards such as ASCE 7 and often makes reference to them. Should any differences occur, the IBC provisions should govern.
-* IBC 1603.1.5 - The following seismic design data should be made available on the construction document. This chapter will provide guidance on how to obtain the first 6, and chapter 4 will be on the rest.
+* IBC 1603.1.5 - The **following seismic design data should be made available** on the construction document. This chapter will provide guidance on how to obtain the first 6, and chapter 4 will be on the rest.
   1. Risk category
   2. Importance factor
   3. Mapped spectral response acceleration parameters
@@ -326,7 +326,7 @@ This chapter is mostly a summary of ASCE 7 section 11 which is a guideline for c
   10. Response modification coefficient (R)
   11. Analysis procedure used
 * IBC 1604.10 - Seismic detailing requirements must be met even if wind demand is higher. This is because seismic demand is inherently unpredictable and structures are design to response inelastically
-* IBC 1613.1 - The following structures are exempt from the requirements of IBC and ASCE 7:
+* IBC 1613.1 - The following structures are **exempt** from the requirements of IBC and ASCE 7:
   * One to Two family dwellings (detached residental housing) with low seismicity (SDC = A, B, or C or Ss < 0.4)
   * Simple wood-frame buildings with very prescriptive design per IBC 2308 or CRC
   * Not very important storage structures only for incidental human occupancy
@@ -353,7 +353,7 @@ This chapter is mostly a summary of ASCE 7 section 11 which is a guideline for c
 
 ## 3.3 Ground Motion Parameters
 
-The first step in constructing the design spectrum is to obtain the "Mapped MCE<sub>R</sub> Acceleration Parameters" ($$S_S ~ \mbox{and} ~ S_1$$). The values can be read from IBC Figure 1613.3.1(1) to Figure 1613.3.1(1), or figures in ASCE 7-16 chapter 22. More commonly, the are obtained through online tools such as this one: [https://seismicmaps.org/](https://seismicmaps.org/)
+The first step in constructing the design spectrum is to obtain the **"Mapped MCE<sub>R</sub> Acceleration Parameters" ($$S_S ~ \mbox{and} ~ S_1$$).** The values can be read from IBC Figure 1613.3.1(1) to Figure 1613.3.1(1), or figures in ASCE 7-16 chapter 22. More commonly, the are obtained through online tools such as this one: [https://seismicmaps.org/](https://seismicmaps.org/)
 
 
 
@@ -688,7 +688,7 @@ Here are the steps for ELF:
 
 6. For short-period, very regular building less than 5 stories, there may be a potential to reduce Cs. See ASCE 7-16 12.8.1.3
 
-7. Base shear is equal to:
+7. Base shear is equal to the following. Don't forget to check Cs,min
 
     $$V = C_s W$$
 
@@ -995,7 +995,7 @@ $$F_x = \frac{w_x}{W}V$$
 
 The following is a summary of ASCE 7-16 Chapter 13 which contains provisions related to seismic anchorage design of non-structural components such as mechanical/electrical equipment, pipes, architectural features, cladding, etc.
 
-13.1.3 - Component importance factor ($$I_p$$) shall be taken as 1.0 unless the following applies, in which case take 1.5
+13.1.3 - Component importance factor ($$I_p$$) shall be taken as 1.0 unless the following applies, in which case take 1.5 (known as **designated seismic systems**)
 
 * Component is required to function post-earthquake, such as sprinklers, egress stairs, etc.
 * Component contains highly toxic or explosive substance
@@ -1282,7 +1282,7 @@ Collector drag force is resisted through:
 * Steel & wood buildings: Steel or wood beams along the frame line (check for seismic axial + gravity moment interaction per AISC 360)
 
 
-12.10.2.1 - This is a common "gotcha" clause in ASCE 7-16 that is also incredibly confusing. Essentially, collectors and their connections should be designed to "omega-level" force, which may not always be as simple as multiplying demand by omega. The omega-level force is defined as the minimum of:
+12.10.2.1 - This is a common "gotcha" clause in ASCE 7-16 that is also incredibly confusing. Essentially, collectors and their connections should be designed to "omega-level" force, which may not always be as simple as multiplying demand by omega. The omega-level force is defined as the maximum of:
 1. ELF story force multiplied by omega ($$F_x \times \Omega_o$$)
 2. Diaphragm story force multiplied by omega ($$F_{px} \times \Omega_o$$)
 3. Floor diaphragm force **NOT** multiplied by omega, as it is not a function of R ($$F_{pxmin}$$)
