@@ -275,7 +275,7 @@ $$c = L_{measured} \times \frac{ppm}{1000000}$$
     * (BM) benchmark - a location where we know the exact elevation (serves as control and error correction)
     * (TBM) temporary benchmark - not official, usually used by individuals for temporary purposes
     * (TP) turning point - point whose elevation is determined prior to moving the level
-* Our instrument does not have to be placed in line of FS and BS (rotating 180 degree) each time. But our equipment should always be set up with equal distance to BS and FS to minimize curvature, collimation, and refraction errors. **Having equal distance means the error could balance out.**
+* Our instrument does not have to be placed in line of FS and BS (rotating 180 degree) each time. But our equipment should always be set up with equal distance to BS and FS to minimize curvature, collimation, and refraction errors. **Having equal distance means the error could balance out.**Curvature error arises because the surface of Earth is curved, but our line of sight is straight.
 * If the above is not possible (say that places our instrument in the middle of a river), then use **reciprocal leveling**
 
 <img src="/assets/img/blog/survey6.png" style="width:75%;"/>
@@ -325,7 +325,9 @@ Here is a sample note taken from the field. Note the sequence of calculation and
 
 $$\sum BS - \sum FS = elev_{start} - elev_{end}$$
 
-If the summation above does not calculate out, we need to smear the error in the "adjusted elevation column" as shown above.
+$$Error = Field - Actual$$
+
+Negative (-) error means too short. If the summation above does not calculate out, we need to smear the error in the "adjusted elevation column" as shown above.
 
 
 ## 3.5 Profile or Cross-Section Leveling
@@ -336,6 +338,8 @@ $$elev_{SS} = HI - SS$$
 
 <img src="/assets/img/blog/survey9.png" style="width:100%;"/>
 *Figure 9: Profile Leveling*
+
+Note we can skip the intermediate SS when calculating TP1. Cannot skip if there is a BS recording
 
 
 ## 3.6 Reciprocal Leveling
@@ -377,7 +381,10 @@ Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the 
 
 * **Bearing** = angle with respect to 4 quadrants. The reference **meridian** is usually North. The format of a bearing measurement is usually in the form of (North or South)(rotate toward)(West or East)(e.g. N35<sup>o</sup>>E)
 * Interestingly, these quadrants are different from standard mathematics
-* The bearing that is parallel but points in the opposite direction is called a **reverse bearing**
+* **Reverse bearing** = The bearing that is parallel but points in the opposite direction is called a 
+* Read questions carefully:
+
+$$Bearing_{BA} \neq Bearing_{AB}$$
 
 
 <img src="/assets/img/blog/survey12.png" style="width:70%;"/>
@@ -387,9 +394,13 @@ Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the 
     * True - parallel to line drawn from north pole to south pole. Same everywhere on Earth at any point in time
     * Magnetic - taken by compass. Not equal to true meridian! Magnetic pole is constantly changing and depends on where you are on Earth
     * Grid - An imaginary grid is superimposed on to a map. Angle references this grid
-* Difference between True meridian and Magnetic meridian = **magnetic declination**. 
-    * Line where magnetic meridian = true meridian is called **agonic line**
-    * The "topographic" line that shows the same magnetic declination is called **isogonic line**
+* **Magnetic declination** is the difference between True meridian and Magnetic meridian
+    * **Agonic line** = Line where magnetic meridian = true meridian
+    * **Isogonic line** = The "topographic" line that shows the same magnetic declination is called 
+
+declination = angle from TRUE to MAG
+
+$$TRUE = MAG + DECLINATION$$
 
 <img src="/assets/img/blog/survey13.png" style="width:50%;"/>
 *Figure 13: Isogonic Contours*
@@ -421,6 +432,7 @@ $$\sum \theta_{interior} = (n-2)(180)$$
 
 We will discuss traverses in detail in Chapter 6.
 
+$$\sum \theta_{exterior} = 360N_{angle} - \sum \theta_{interior}$$
 
 
 
@@ -507,6 +519,10 @@ The total standard deviation of the entire group is calculated as:
 
 $$\sigma_{sum} = \pm \sqrt{\sigma_1^2 + \sigma_2^2 + \sigma_3^2 + ... + \sigma_n^2}$$
 
+For example, 
+
+$$(10 \pm 0.05) + (15 \pm 0.01) = (25 \pm \sqrt{0.01^2 + 0.05^2})$$
+
 
 <u>Example 1:</u> A party chief and his chainman can read the tape end to $$\pm 0.01$$ ft with a 100 ft tape. What is the uncertainty in a 1000 ft distance measurement? Note that each tape reading occurs "twice" (one at each end)
 
@@ -519,6 +535,9 @@ $$\sigma_{sum} = \pm \sqrt{\sigma_1^2 + \sigma_2^2 + \sigma_3^2 + ... + \sigma_n
 $$\sigma_{sum} = \sqrt{ 0.05^2 \times 3 + 0.1^2 \times 4  } = \pm 0.218 ft$$
 
 
+<u>Example 3:</u> Error of computing an area. Let L and W be the length of width of a rectangle
+
+$$error = \pm \sqrt{L^2 e_L^2 + W^2 e_W^2}$$
 
 
 
@@ -635,7 +654,7 @@ To illustrate this process, we will do an example. Balance the following closed 
 
     <img src="/assets/img/blog/survey22-5.png" style="width:75%;"/>
 
-6. Use Compass Rule to get adjusted lat. & dep.
+6. Use Compass Rule to get adjusted lat. & dep. (Measured - True). Negative means too short.
 
     <img src="/assets/img/blog/survey22-6.png" style="width:90%;"/>
 
@@ -677,7 +696,7 @@ The adjustment procedure is as noted:
 5. Correct the northings (Y-axis) based on the above equations
 6. Correct the eastings (X-axis) based on the above equations
 7. Compute the adjusted rectangular coordinates (pay attention to signs)
-7. Adjust the length and bearing of each course accordingly based on the adjusted grid
+8. Adjust the length and bearing of each course accordingly based on the adjusted grid
 
 $$\alpha = tan^{-1} (\frac{x_2 - x_1}{y_2 - y_1})$$
 
@@ -717,7 +736,11 @@ Another more numerically convenient way of calculating enclosed area is the Cris
 <img src="/assets/img/blog/survey25.png" style="width:95%;"/>
 *Figure 25: Criss Cross Method for Calculating Enclosed Area*
 
-
+A couple of COMMON ERRORS when applying criss-cross method
+* Repeat the first point!
+* Notice that "y" is on the first column
+* Remember to divide by 2
+* Translate all points to the top right quadrant before computing
 
 
 
@@ -738,10 +761,11 @@ Another more numerically convenient way of calculating enclosed area is the Cris
 * **Topography** - process of mapping elevations and physical features of a site in plan view. Also sometimes include annotations of natural or man-made features
 * **Horizontal Control** - known point of line such as property line, centerline of highway, streets, etc.
 * **Vertical Control** - known elevation/datum. Usually use the National Vertical Geodetic Datum (NVGD 1929) or the North American Vertical Datum of 1988 (NAVD 88)
-* Three methods:
+* Four methods:
     1. Cross-section method - great for roads
     2. Grid method - great for contour
     3. Radial method - great for single point of interest
+    4. Radiation method - fastest
 
 There is also photogrammetry which involve aerial photos. We will discuss this further in future chapters.
 
