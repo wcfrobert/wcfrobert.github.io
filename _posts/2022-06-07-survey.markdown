@@ -312,8 +312,6 @@ Referring to the figure above, the procedure for leveling is as follows:
     * **self-reading rod** - Philadelphia rod (most popular)
     * **self-reducing rod** - Lenker rod. No notes need to be taken. Set zero at HI. Value increases from top to bottom
 
-Rod can also be made of Invar strip which is the most precise.
-
 <img src="/assets/img/blog/survey7.png" style="width:100%;"/>
 *Figure 7: Type of Leveling Rod*
 
@@ -854,6 +852,27 @@ Equation and elements of a circular horizontal curve is shown below:
 <img src="/assets/img/blog/survey30.png" style="width:100%;"/>
 *Figure 30: Horizontal Curve*
 
+Some other equations:
+
+* Area enclosed within "E" region shaped like a boomerang:
+
+$$A = R^2 (\tan(I/2) - I(\frac{\pi}{360}))$$
+
+* Area of polygon inscribed by R and T:
+
+$$A = \frac{R}{2} \times T \times 2T$$
+
+* Area of curve sector:
+
+$$A = \frac{I}{360} \pi R^2$$
+
+* Finding station of EC from PI
+
+$$sta_{EC} = sta_{PI} - T + L$$
+
+Note we CANNOT do sta_PI + T because length of curve is not equal to 2T!
+
+
 Notations:
 * C = long chord length from start to finish (straight line)
 * D = degree of curvature
@@ -896,10 +915,15 @@ In the process of laying out a road, construction stakes must be installed at BC
 <img src="/assets/img/blog/survey31.png" style="width:50%;"/>
 *Figure 31: Deflection Angle*
 
+* highlighted area can be calculated as area of sector minus the triangle
+
+$$A = (\frac{I}{360} \pi R^2 ) - (R^2 sin(I) /2)$$
+
 * $$\alpha$$ in the figure above is I, but could actually be any point on the curve
 * $$\beta$$ is another useful geometric property to keep in mind
 
 In essence, what we want is for any two points on a curve, how much should we turn? And what is the arc length between them?
+
 
 <img src="/assets/img/blog/survey32.png" style="width:50%;"/>
 *Figure 32: Deflection Angle Between Any Two Points*
@@ -940,7 +964,7 @@ Tangent offset can be calculated via the following
 
 ## 8.3 Vertical Curves
 
-Vertical curves are used to transition between grades. They can be symmetric or asymmetric.
+Vertical curves are used to transition between grades. They can be symmetric or asymmetric. However, point V is always equidistant to PVC and PVT
 
 <img src="/assets/img/blog/survey34.png" style="width:100%;"/>
 *Figure 34: Vertical Curves*
@@ -958,7 +982,11 @@ Since the grade typically very small. The chord distance (BVC to V and V to EVC)
 
 Elevation of every point on the curve can be defined using a parabolic equation. A parabolic curve is completely defined by two grades and a horizontal length.
 
+NOTE: r can be negative as is the case in crest curves.
+
 $$r = \frac{g_2 - g_1}{L}$$
+
+$$y_{BVC} = y_{PVI} + g_1 (L/2)$$
 
 $$y_{elev} = (r/2)x^2 +g_1 x + y_{BVC}$$
 
@@ -1041,7 +1069,9 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 
 There are two common methods for estimating amount of soil to be cut or filled between stations. Remember to divide by 27 to convert to cubic yards.
 
-$$\frac{1 \; yd^3}{27 \; ft^3}$$
+$$VOLUME => \frac{1 \; yd^3}{27 \; ft^3}$$
+
+$$AREA => \frac{1 yd^2}{9 ft^2}$$
 
 <u>Average End Method</u>
 
@@ -1067,7 +1097,13 @@ $$V = \frac{A_1 + 4A_m + A_2}{6} \times L \; [ft^3]$$
 
 
 
+<u>Effect of Shrinkage</u>
 
+$$\frac{Compact Volume}{Loose Volume} \approx 0.9$$
+
+When question mentions shrinkage (e.g. 10% shrinkage), multiple volume by 1/0.9
+
+<u>Mass Diagram</u>
 
 
 
@@ -1095,9 +1131,9 @@ Stakes are placed by surveyor to guide contractors in laying out the constructio
     * Determining earthwork quantities. Need to ensure correct vertical measurement. Very expensive mistake...
     * Determining elevation for drainage devices. Mistake in staking for concrete gutter (which only has 0.25% slope) could lead to inadequate drainage
 
-Stakes are usually small 1" by 2" spikes that is drilled into the ground.
+Stakes (Ginneys) are usually small 1" by 2" spikes that is drilled into the ground.
 
-Laths are the actual poles containing information. They are about 2" by 36" in dimension.
+Laths (Ground stakes) are the actual poles containing information. They are about 2" by 36" in dimension.
 
 <img src="/assets/img/blog/survey39.png" style="width:40%;"/>
 *Figure 39: Stake and Lath*
@@ -1121,6 +1157,9 @@ Some possible information shown on a stake (not exhaustive at all)
 *Figure 40: Reading Slope Stakes*
 
 Some definitions:
+* 2:1 => 2 Horizontal : 1 Vertical
+* 1/2 => 1 Vertical / 2 Horizontal
+* 40% => 40 Vertical / 100 Horizontal
 * **Toe** - bottom of slope
 * **Top** - top of slope
 * **Catch Point** - where slope intersect with existing ground
@@ -1177,17 +1216,21 @@ Some definitions:
 
 Aerial photogrammetry involves taking measurements of site using photos taken on an airplane. Result is a topographic map with contours, elevations, and features.
 
+* Quick but not as precise
+* Does not work in wooded area
 * Since multiple photographs must be taken, they need to be stitched together (known as a stereo photo)with a **stereoplotter**
 * Therefore, photos must overlap a specific amount. Overlapping photographs are called **models**
 
 In order have proper map scale. A series of control network should be established on the ground. 
-* Minimum of (3) vertical control, and (2) horizontal control. Suggest using (5) each for redundancy
+* AERIAL PHOTOGRAMMETRY: Minimum of **(3) vertical control** not in a straight line, and **(2) horizontal control** in overlap. Suggest using (5) each for redundancy
+* GPS control survey: 3H minimum spread out (4 for kinetic GPS), 2V minimum on opposite ends. 
 * Control point is known as a **monument** and should be large and clear. Usually a large cross painted on the ground. Length of cross hair should be at least 1/1000. So for a 1:7200 scale => 7.2 ft
 
 <img src="/assets/img/blog/survey42.png" style="width:50%;"/>
 *Figure 42: Control Point Cross Hair*
 
 * Alternatively, can avoid control point by using existing landmarks such as curbs, sidewalks, prominent rocks, etc. This is called **post-marking**.
+* Contours can be generated using elevation models and interpolation
 
 
 ## 10.2 Photo Scale
@@ -1196,6 +1239,10 @@ Scales are expressed in two forms. Note that the two are equivalent. Convert fee
 * 1 in = 250 ft
 * 1:3000
 
+REMEMBER to multiply by 12. For example:
+
+$$\frac{6 in}{7900 ft} = 1 in : 1317 ft = 1 in : 15800 in = 1:15800$$
+
 Scale of the photo (S) is dependent on two factors:
 * Camera focal length (F)
 * Flight altitude (H)
@@ -1203,7 +1250,9 @@ Scale of the photo (S) is dependent on two factors:
 <img src="/assets/img/blog/survey43.png" style="width:50%;"/>
 *Figure 43: Photo Scale in Aerial Photogrammetry*
 
-For most project, camera focal length is fixed (typically 6 in focal length with 93 degrees field of view). Thus the variable is flight height (H).
+For most project, camera focal length is fixed (**typically 6 in focal length** with 93 degrees field of view). Thus the variable is flight height (H).
+
+$$H = H_{datum} - \mbox{ground elev above sea level}$$
 
 $$H = \frac{f}{S}$$
 
@@ -1218,6 +1267,10 @@ To stitch two photos together, an object must show up in at least two photos (i.
 $$\mbox{forward overlap} = 60 \% $$
 
 $$\mbox{side overlap} = 30 \% $$
+
+$$\mbox{overlap} = \frac{\mbox{lap width}}{9 in}$$
+
+**By default, photos are 9 in by 9 in**
 
 <img src="/assets/img/blog/survey44.png" style="width:100%;"/>
 *Figure 44: Model Coverage*
@@ -1264,7 +1317,7 @@ In the project area shown above, set up required flight information given the cl
 
     $$S = \frac{f}{H} = \frac{6 in}{6000 ft} \rightarrow \mbox{1 in = 1000 ft} \rightarrow \mbox{1:12000}$$
 
-3. Determine side and forward coverage using neat model:
+3. Determine side and forward coverage using neat model. Note that 60% overlap = 40% new information! REMEMBER (100% - overlap)
 
     $$\mbox{forward coverage} = (9 in)(40 \%) = 3.6 \mbox{ in per photo}$$
 
@@ -1274,7 +1327,7 @@ In the project area shown above, set up required flight information given the cl
 
     $$\mbox{side coverage} = (6.3 in)(1000 ft/in) = 6300 ft$$
 
-4. Determine number of flight lines => 2 lines
+4. Determine number of flight lines => 2 lines (use smaller dimension for flight lines)
 
     $$N_{line} = \frac{width}{coverage} = 10560/6300 = 1.7 = 2.0$$
 
@@ -1299,19 +1352,28 @@ Photogrammetrist will plan a **control scheme**, which is the ideal location to 
 *Figure 46: Placement of Control Points*
 
 
+
 The flying height we calculated before (H) is the **height above mean terrain (AMT)**. Another useful height to calculate is the **height above sea level (ASL)**:
 
 $$ASL = AMT + \mbox{elevation of mean terrain from sea level}$$
 
 The following standards of accuracy must be met when using aerial photogrammetry: (note: compare scale by just using the decimal representation)
-* Horizontal (Remember to multiply by map scale):
-    * S>1/2000, 1/50 of an inch error in not more than 10% of points tested
-    * S<1/2000, 1/30 of an inch error in not more than 10% of points tested
 * Vertical:
     * Contour - half contour interval error in not more than 10% of points tested
     * Spot elevation - 90% of all spot elevation shall be accurate to within 1/4 of contour interval
+* Horizontal:
+    * Scale larger than 1/2000 (e.g. 1/100), 1/30 of an inch error in not more than 10% of points tested
+    * Scale smaller than 1/2000 (e.g. 1/10000), 1/50 of an inch error in not more than 10% of points tested
+    * Note (1:100) > (1:12000). Calculate fraction. Don't just look at denominator
 
 
+
+Larger Scale = More Zoom!
+
+* Small Scale (e.g. 1:12000)
+    * Map of USA
+* Large Scale (e.g. 1:100)
+    * Map of San Francisco
 
 
 
@@ -1347,36 +1409,56 @@ $$decimal = degree + minute/60 + second/3600$$
 
 ## Geometric Area Calculations:
 
-Area of triangle calculation, height does not need to reside within triangle:
+* Area of triangle calculation, height does not need to reside within triangle:
 
 <img src="/assets/img/blog/survey102.png" style="width:40%;"/>
 
-Area of triangle given 3 sides:
+* Area of triangle given 3 sides (Heron Formula):
 
 <img src="/assets/img/blog/survey104.png" style="width:100%;"/>
 
-Sine and Cosine Law:
+* Sine and Cosine Law:
 
 <img src="/assets/img/blog/survey101.png" style="width:70%;"/>
 
-Area of Trapezoid:
+* Area of Trapezoid:
 
 <img src="/assets/img/blog/survey103.png" style="width:50%;"/>
 
 
 ## Things From Practice Problems:
-* For short distances, tape is preferred over total station.
-* For aerial photos with redundant controls, use method of least square to get scale
-* Position of control point in aerial photos depend on CI and position of photo. They are usually placed at side overlaps
+
+
 * **robotic total station** - tracks prism automatically and can be operated by one person
-* **RTK GPS** - real time kinematic GPS. Can be operated by one person via rover receiver 
-* **invar strip** - used to achieve highest precision in leveling
+* **RTK GPS** - real time kinematic GPS. Can be operated by one person via rover receiver. Static GPS is more accurate but too slow
+* **invar strip** - material used to achieve highest precision in leveling for tapes and rods
+* **Transits** are old instruments used to measure horizontal distance and vertical angle, but read from a vernier scale (caliper)
+* **CORS point** - permanently recording GPS station
+* Extending a straight line with theodolite is best done with a **double transit**
+* **two-peg test** - is used to determine mislevelment of line of sight of the leveling device
+* **US survey foot** was introduced in the North American Datum of 1983 (NAD83) because the typical foot was not accurate enough in the NAD 1927. 3937/1200 is more accurate than 10 ft = 3.048 m. In the past, the baseline was based on Gunter Chains.
 * Need 4 satellite above to get GPS coordinate
 * Angular resolution looking through a scope can be calculated as:
 
 $$tan(\alpha) = \frac{\Delta RR}{H}$$
 
-* **Transits** are old instruments used to measure horizontal distance and vertical angle, but read from a vernier scale (caliper)
-* **CORS point** - permanently recording GPS station
-* Extending a straight line with theodolite is best done with a **double transit**
-* **two-peg test** - is used to determine mislevelment of line of sight of the leveling device
+
+
+
+
+* For short distances, tape is preferred over total station.
+* For aerial photos with redundant controls, use method of least square to get scale
+* Position of control point in aerial photos depend on CI and position of photo. They are usually placed at side overlaps
+* Trigonometric leveling does not have high precision compared to BS/FS because of refraction in the atmosphere
+
+* California NAD 83 coordinate system is in 6 zones because it is too big for 1 zone
+* Legal definition of property = depends on intent of the parties to a conveyance
+* NVGD 29 was adjusted to fit 26 mean sea level stations (Old)
+* NAD adjustments were purely horizontal
+* NAVD 88 adjustment held one point fixed – Father Point Rimouski. Fixed to a tidal benchmark in Quebec
+* Digital orthophoto = photo image in which every pixel is in its correct map position
+* Metes and Bounds Description = legal description involving complete perimeter where each course is described in sequence in a uniform direction of travel
+* Aerial Triangulation = process of determining the ground coordinates of artificial points marked on the emulsion of an aerial photo
+* Planimetric Map = plan view of any drawing. Does not contain any elevation information
+* GPS Errors. Weather cannot impact GPS precision but atmospheric conditions does. Refraction and electromagnetic interference does! Dilution of precision occurs if satellites are too close to each other.
+* GIS data type: raster = img, vector = coordinates, metadata = data about the data
