@@ -173,7 +173,7 @@ $$P_n = 0.8(0.85f'_c (A_g - A_{st})+f_yA_{st}) \tag {13}$$
 For spiral tied elements, we can use $$0.85P_o$$ instead. Note the 0.85f'c is separate from 0.8Po percentage.
 
 <hr>
-## 2.2 Flexure Capacity
+## 2.2 Flexural Capacity
 Referring to Figure 1 above, moment capacity can be calculated as the internal force (T or C, doesn't matter because they are equal), multiply by the distance between them; known as the internal lever arm and sometimes denoted as "jd".
 
 <img src="/assets/img/blog/aciprimer3.png" style="width:30%;"/>
@@ -220,6 +220,18 @@ Couple of notes on the state of practice for concrete design:
 * T-beams are always sized such that the neutral axis stays above the web for simplicity. This is usually very easy to achieve. Alternatively, effective flanges are ignored all together because added compression area will only ever increase capacity.
 * For multiple layers of tension bars, "jd" is calculated with respect to centroid of those bars. However, $$\phi$$ factor is still based on the outermost bar.
 
+<u>Flexure + Axial Interaction</u>
+
+Combined P+M action requires the use of interaction diagrams as shown below. We will discuss the creation of interaction diagrams in another article. P+M points within the onion-shaped surface is OK. Outside the surface is no good. See this [SkyCiv article for more information.](https://skyciv.com/docs/tutorials/reinforced-concrete-tutorials/what-is-a-column-interaction-curve/)
+
+<img src="/assets/img/blog/ACI2.png" style="width:60%;"/>
+
+Two key observations:
+
+* Moment capacity increases in compression (up until a very high axial demand). Typically, beams with a small amount of axial load is actually good (it's like pre-stressing)
+* Rather than producing an entire interaction diagram for T+M, notice the linear relationship between (dashed line in the figure above)! Therefore, Moment + Tension interaction can be approximated very accurately:
+
+$$M_{nt} = M_n (1 - \frac{T_u}{T_n})$$
 
 
 

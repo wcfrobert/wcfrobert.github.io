@@ -1096,17 +1096,38 @@ If the ground is very irregular, or the two end areas differ drastically, the pr
 $$V = \frac{A_1 + 4A_m + A_2}{6} \times L \; [ft^3]$$
 
 
+<u>General Formula for Highway Sections</u>
+
+<img src="/assets/img/blog/survey112.png" style="width:100%;"/>
+
+$$A = c (\frac{d_L + d_R}{2}) + b (\frac{h_L + h_R}{4})$$
+
+
+The formula above is a simplified express from the following sequence:
+
+<img src="/assets/img/blog/survey111.png" style="width:100%;"/>
+
+
 
 <u>Effect of Shrinkage</u>
 
-$$\frac{Compact Volume}{Loose Volume} \approx 0.9$$
+Sometimes effect of shrinkage and swell are considered in earthwork calculations.
 
-When question mentions shrinkage (e.g. 10% shrinkage), multiple volume by 1/0.9
+* (1) Bank volume = natural state
+* (2) Loose volume = volume when its in the trucks, disturbed and loose
+* (3) Compacted volume = volume after compaction
+* Swell = (2) / (1)
+* Shrinkage = (3) / (1)
 
 <u>Mass Diagram</u>
 
+Mass diagrams are often produced to best plan hauling schedules.
 
+The grade is represented as y(x), then the mass ordinate is the integration of y(x) that shows the cumulative volume. Let the width of a profile slice be b(x):
 
+$$V = \int_{0}^{x} b(x) y(x) dx$$
+
+<img src="/assets/img/blog/survey105.png" style="width:70%;"/>
 
 
 
@@ -1407,58 +1428,132 @@ $$decimal = degree + minute/60 + second/3600$$
 * 1 cubic yard = 27 ft^3
 
 
-## Geometric Area Calculations:
+## Geometry Formulas:
 
 * Area of triangle calculation, height does not need to reside within triangle:
 
-<img src="/assets/img/blog/survey102.png" style="width:40%;"/>
+<img src="/assets/img/blog/survey102.png" style="width:30%;"/>
 
 * Area of triangle given 3 sides (Heron Formula):
 
-<img src="/assets/img/blog/survey104.png" style="width:100%;"/>
+<img src="/assets/img/blog/survey104.png" style="width:90%;"/>
 
 * Sine and Cosine Law:
 
-<img src="/assets/img/blog/survey101.png" style="width:70%;"/>
+<img src="/assets/img/blog/survey101.png" style="width:60%;"/>
 
 * Area of Trapezoid:
 
 <img src="/assets/img/blog/survey103.png" style="width:50%;"/>
 
+* Sector of a circle ($$\theta$$ is the central angle, $$A_o$$ is the area of full circle, R is radius, D is diameter)
+
+<img src="/assets/img/blog/survey107.png" style="width:25%;"/>
+
+$$A = \frac{\theta_{deg}}{360} A_o = \frac{\theta_{rad}}{2 \pi} A_o$$
+
+$$A = \frac{Arc}{\pi D} A_o$$
+
+* Arc Length
+
+$$Arc = \frac{\theta_{deg}}{360} (\pi D) = R \theta_{rad}$$
+
+* Volume of right-circular cone
+
+$$V = \pi r^2 \frac{h}{3}$$
+
+<img src="/assets/img/blog/survey106.png" style="width:25%;"/>
+
+
+
+## Earth Curvature and Refraction Correction
+
+Note the negative sign for refraction correction. Also D is in feet.
+
+$$C_{curv} = 0.0239 \frac{D}{1000}^2$$
+
+$$C_{refr} = -0.0033 \frac{D}{1000}^2$$
+
+$$C_{total} = C_{curv} + C_{refr}$$
+
+
+## Sea Level Adjustment Factor
+
+$$SLAF = \frac{r}{r + elev}$$
+
+$$L_{converted} = SLAF \times L_{measured}$$
+
+* r = 20,906,000 ft (radius of Earth)
+* elev = elevation above sea level in ft
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Things From Practice Problems:
 
+GPS, GIS and other technologies
 
-* **robotic total station** - tracks prism automatically and can be operated by one person
-* **RTK GPS** - real time kinematic GPS. Can be operated by one person via rover receiver. Static GPS is more accurate but too slow
-* **invar strip** - material used to achieve highest precision in leveling for tapes and rods
-* **Transits** are old instruments used to measure horizontal distance and vertical angle, but read from a vernier scale (caliper)
+* **Robotic total station** - tracks prism automatically and can be operated by one person
+* **Real Time Kinematic GPS** - Can be operated by one person via rover receiver. Commonly used for construction surveying. Static GPS is more accurate but too slow (about 5 min per point). Static has 0.02 ft accuracy whereas RTK has 0.1 ft accuracy.
 * **CORS point** - permanently recording GPS station
-* Extending a straight line with theodolite is best done with a **double transit**
-* **two-peg test** - is used to determine mislevelment of line of sight of the leveling device
+* GPS Errors. Weather cannot impact GPS precision but atmospheric conditions does. Refraction and electromagnetic interference does! Dilution of precision occurs if satellites are too close to each other.
+* GIS data type: raster = img, vector = coordinates, metadata = data about the data
+* Digital orthophoto = photo image in which every pixel is in its correct map position
+* Aerial Triangulation = process of determining the ground coordinates of artificial points marked on the emulsion of an aerial photo
+* Planimetric Map = plan view of any drawing. Does not contain any elevation information
+
+
+Standards
+
+* **Lambert Conformal Conic** - projection of California state plane system
 * **US survey foot** was introduced in the North American Datum of 1983 (NAD83) because the typical foot was not accurate enough in the NAD 1927. 3937/1200 is more accurate than 10 ft = 3.048 m. In the past, the baseline was based on Gunter Chains.
-* Need 4 satellite above to get GPS coordinate
+* **Metes and Bounds Description** = legal description involving complete perimeter of a piece of land (bearing and length)
+* Legal definition of property = depends on intent of the parties to a conveyance
+* **NVGD 29** vertical datum (old) was adjusted to fit 26 mean sea level stations. Used prior to 1991
+* **NAVD 88** vertical datum (new) held one point fixed – Father Point Rimouski. Fixed to a tidal benchmark in Quebec. Supersedes NVGD 29
+* NAD adjustments were purely horizontal and does not affect stationing which is relative
+
+
+
+Underground Utilities
+
+* Potholing is the most accurate way of finding underground utilities. Conduct field investigation first. Potholing usually occurs later on
+* Underground Service Alert (Dig Alert) - a non-profit that will help identify location of underground utilities with spray paint. Not depth information though
+* A pipe has three different elevations:
+    * Invert elevation = bottom inner
+    * obvert elevation = top inner
+    * crown elevation = top outer
+
+
+Miscellaneous
+
+* Map scale of 0.99 means 100 ft indicated is actually 100/0.99 = 101 ft
+* Vertical control accuracy listed from most accurate to least:
+    * Global regional geodynamics
+    * Basic framework
+    * Secondary network
+    * General area
+    * Local control
+* For short distances, tape is preferred over total station.
+* Trigonometric leveling does not have high precision compared to BS/FS because of refraction in the atmosphere
+* **Invar strip** - material used to achieve highest precision in leveling for tapes and rods
+* **Transits** are old instruments used to measure horizontal distance and vertical angle, but read from a vernier scale (caliper)
+* **Double transit** - (double centering) best method for extending a straight line with theodolite (inverting a transit)
+* **Two-peg test** - is used to determine mislevelment of line of sight of the leveling device
+* **3-Wire Leveling** - very precise. Basically differential leveling w/ 3 readings for BS and FS
 * Angular resolution looking through a scope can be calculated as:
 
 $$tan(\alpha) = \frac{\Delta RR}{H}$$
 
 
-
-
-
-* For short distances, tape is preferred over total station.
-* For aerial photos with redundant controls, use method of least square to get scale
-* Position of control point in aerial photos depend on CI and position of photo. They are usually placed at side overlaps
-* Trigonometric leveling does not have high precision compared to BS/FS because of refraction in the atmosphere
-
-* California NAD 83 coordinate system is in 6 zones because it is too big for 1 zone
-* Legal definition of property = depends on intent of the parties to a conveyance
-* NVGD 29 was adjusted to fit 26 mean sea level stations (Old)
-* NAD adjustments were purely horizontal
-* NAVD 88 adjustment held one point fixed – Father Point Rimouski. Fixed to a tidal benchmark in Quebec
-* Digital orthophoto = photo image in which every pixel is in its correct map position
-* Metes and Bounds Description = legal description involving complete perimeter where each course is described in sequence in a uniform direction of travel
-* Aerial Triangulation = process of determining the ground coordinates of artificial points marked on the emulsion of an aerial photo
-* Planimetric Map = plan view of any drawing. Does not contain any elevation information
-* GPS Errors. Weather cannot impact GPS precision but atmospheric conditions does. Refraction and electromagnetic interference does! Dilution of precision occurs if satellites are too close to each other.
-* GIS data type: raster = img, vector = coordinates, metadata = data about the data
