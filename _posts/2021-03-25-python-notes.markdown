@@ -11,8 +11,9 @@ tags: programming
 In this notebook, I've gathered a whole bunch of code snippets that helps me along in my side projects.
 
 - [1.0 Getting Started](#10-getting-started)
-  * [Fundamentals](#fundamentals)
+  * [Programming Tips](#programming-tips)
   * [Installing Python](#installing-python)
+  * [Working with Python](#working-with-python)
 - [2.0 Basic Syntax](#20-basic-syntax)
   * [Code Structure](#code-structure)
   * [Basics](#basics)
@@ -21,47 +22,60 @@ In this notebook, I've gathered a whole bunch of code snippets that helps me alo
   * [Raising Exceptions](#raising-exceptions)
   * [Importing Modules](#importing-modules)
 - [3.0 Containers](#30-containers)
-  * [Lists []](#lists-)
-  * [Strings ""](#strings-)
-  * [Dictionaries {}](#dictionaries-)
-  * [Tuples ()](#tuples-)
-  * [Sets {}](#sets-)
-- [4.0 File I/O](#40-file-io)
-- [5.0 Classes](#50-classes)
-- [6.0 numpy and scipy](#60-numpy-and-scipy)
+  * [Lists []](#lists---)
+  * [Strings ""](#strings---)
+  * [Dictionaries {}](#dictionaries---)
+  * [Tuples ()](#tuples---)
+  * [Sets {}](#sets---)
+- [4.0 File I/O](#40-file-i-o)
+- [5.0 Object-Oriented Programming](#50-object-oriented-programming)
+- [6.0 Numpy and Scipy](#60-numpy-and-scipy)
   * [Importing](#importing)
   * [Basic Commands](#basic-commands)
   * [Indexing and Slicing](#indexing-and-slicing)
   * [Other Common Operations](#other-common-operations)
-- [7.0 sympy](#70-sympy)
+- [7.0 Sympy](#70-sympy)
   * [Basics](#basics-1)
   * [Substitution and Simplifying](#substitution-and-simplifying)
   * [Plotting](#plotting)
-- [8.0 Plotly](#80-plotly)
-  * [Fundamentals](#fundamentals-1)
+- [8.0 Matplotlib](#80-matplotlib)
+- [9.0 Pandas](#90-pandas)
+- [10.0 Plotly](#100-plotly)
+  * [Fundamentals](#fundamentals)
   * [Example](#example)
   * [Frames - Animations](#frames---animations)
-  * [How-To's](#how-tos)
-- [9.0 Images, Graphics, and Animation](#90-images-graphics-and-animation)
+  * [How-To's](#how-to-s)
+- [11.0 Images, Graphics, Animation](#110-images--graphics--animation)
   * [Some Image Manipulation Algorithms](#some-image-manipulation-algorithms)
   * [Graphics and Animation](#graphics-and-animation)
-- [APPENDIX A: Conceptual Stuff](#appendix-a-conceptual-stuff)
+- [APPENDIX A: Conceptual Stuff](#appendix-a--conceptual-stuff)
   * [Virtual Environment, Interpreter, PATH](#virtual-environment--interpreter--path)
   * [Pass by reference vs. pass by value](#pass-by-reference-vs-pass-by-value)
   * [Garbage Collection. Heaps and Stacks.](#garbage-collection-heaps-and-stacks)
-- [APPENDIX B: Styling Guide](#appendix-b-styling-guide)
+- [APPENDIX B: Styling Recommendation](#appendix-b--styling-recommendation)
+  * [Recommended Boiler Plate (Starter File)](#recommended-boiler-plate--starter-file-)
   * [Basics](#basics-2)
   * [Common](#common)
   * [Docstring standard](#docstring-standard)
-- [Personal Notes](#personal-notes)
+- [RANDOM NOTES](#random-notes)
 
 
 
-<br>
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 1.0 Getting Started
-### Programming Tips
+# 1.0 Getting Started
+
+<hr>
+
+## Programming Tips
 * The most important skill in programming is breaking down (decompose) a large problem into smaller pieces. One common approach is to tackle the problem "top-down". Outline the solution in abstract form and divide tasks into functions. You can call the function *that you are going to write* thus putting structure to your thought process
 
 ```python
@@ -73,17 +87,34 @@ def main():
 * Always put concise comment. You will likely spend more time reading code than writing them
 
 
-### Installing Python
-To get started, we need to install python. There are different ways of doing this but by far the most expedient way to install python along with hundreds of its useful packages is to install [Anaconda](https://www.anaconda.com/). Otherwise you would have to install and manage package along with its dependencies yourself.
+## Installing Python
+To get started, we need to install python. There are different ways of doing this but by far the most expedient way to install python along with hundreds of its useful packages is to install [Anaconda](https://www.anaconda.com/). Think of it as a "battery-included" version of python with most of the popular packages. 
 
-There are three ways to work with Python:
+For more advanced users, you can install python by itself here: [python installation](https://www.python.org/downloads/). Python comes with a set of [standard packages](https://docs.python.org/3/library/) which include useful things like math, json, subprocess, os, time, tkinter, etc. Refer to appendix A for more information on managing packages yourself and creating virtual environments.
 
-* Option 1: Write code in a text editor like [Sublime Text](https://www.sublimetext.com/), then run script from Terminal (cmd, PowerShell, Bash, etc) as shown in the code snippet below
+## Working with Python
+
+* Option 1: Write, debug, and run code from a Integrated Developer Environment (IDE). (Pycharm, Spyder, VSCode, etc)
+    * Spyder along with its Ipython console is most similar to Matlab's *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
+
+<img src="/assets/img/blog/python1.png" style="width:60%;"/>
+
+* Option 2: Work in notebooks like [Jupyter Notebook](https://jupyter.org/), or Google Colab. This is most popular with Data Scientist because you can annotate and provide visualizations as you code (as if you are writing in a notebook)
+
+<img src="/assets/img/blog/python2.png" style="width:60%;"/>
+
+* Option 3: Write code in a text editor like [Sublime Text](https://www.sublimetext.com/), then run script from Terminal (cmd, PowerShell, Bash, etc) as shown in the code snippet below
 
 ```python
-# If you ever need to run code from the terminal. Type in command line:
+# FROM THE TERMINAL -------
 python myscript.py arg1 arg2
+# If it does not work, try:
+py myscript.py arg1 arg2
+# If it still does not work, specify the full path:
+"C:\Users\wcfro\AppData\Local\Programs\Python\Python311\python" arg1 arg2
 
+
+# WITHIN script.py ----------
 # To receive arguments from the terminal, within python:
 import sys
 
@@ -100,40 +131,65 @@ if len(sys.argv) < 3:
     sys.exit()
 ```
 
-* Option 2: Write, debug, and run code from a Integrated Developer Environment (IDE). (Pycharm, Spyder, VSCode, etc)
-    * Spyder along with its Ipython console is most similar to Matlab's *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
-* Option 3: Work in notebooks like [Jupyter Notebook](https://jupyter.org/), or Google Colab. This is most popular with Data Scientist because you can annotate and provide visualizations as you code (as if you are writing in a notebook)
+Note the difference between terminal and python console!
+* Terminal - command line interface to interact with your computer
+* Python console - what you get when you run python.exe
 
 
 
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 2.0 Basic Syntax
-### Code Structure
+# 2.0 Basic Syntax
+
+<hr>
+
+
+## Code Structure
 The basic code structure follows something like shown. Since any python code can be imported directly like modules, we use the structure below to prevent our code from running if imported.
 
-For instance, say our script is called myscript.py. If we run it in the terminal, its "\_\_name\_\_" is "\_\_main\_\_" . If the script is imported, then the "\_\_name\_\_" is "\_\_myscript\_\_".
+For instance, say our script is called myscript.py. If we run it in the terminal, its "\_\_name\_\_" is "\_\_main\_\_" . If the script is imported, then the "\_\_name\_\_" is "myscript".
 
 ```python
 # Have imports in alphabetical order if there are a lot
-import numpy
+import numpy as np
+import time
 
 def main():
     print("your code in here")
     
-def myfunction():
+def my_helper_function():
     print("functions can be anywhere. No need to define at top")
 
-if __name__ = "__main__":
-    main():
+
+# Boiler plate. No need to modify
+if __name__ == "__main__":
+    time_start = time.time()
+    main()
+    time_end = time.time()
+    print("Script completed. Total elapsed time: {:.2f} seconds".format(time_end - time_start))
+else:
+    print("{} Package imported!".format(__name__))
 ```
 
 
-### Basics
+## Basics
 ```python
 # Comment with # or triple quote """
 # End lines that are too long with back slash \
@@ -141,23 +197,32 @@ if 1900 < year < 2100 and 1 <= month <= 12 \
    and 1 <= day <= 31 and 0 <= hour < 24 \
    and 0 <= minute < 60 and 0 <= second < 60:
         return 1
-    
+
+
 # Multiple variables can be assigned in one line via tuple unpacking
 varA,VarB,VarC = 1,2,3
 user_input = input("User can enter a value. Returned as string type")
 
+
 # Printing (:.2f signals two decimal place float)
 # Other types {:.2e} two decimal engineering
-# {} for string and integer
-print('this is {:.2f}, Called {} string formatting'.format(varA,varB))
+print('this is {:.2f} called {} string formatting'.format(varA,varB))
+print("can assign names like this {name2}, {name1}".format(name1 = varA, name2 = varB))
+print("or number them differently {1}, {0}".format(varA,varB))
+print(f"the newest and preferred method in python is to use fstring : {var1}, {var2:.2f}")
+# (:.1f) = two decimal place float (3.1)
+# (:.2e) = two decimal engineering (3.14e+0)
+
 print("print without moving to next line",end="")
+print("print empty lines or tabs \n \t")
 
 # Math operations. Integer automatically converted to float if there is another float
 a+b, a-b, a*b, a/b
-a**2		# exponent is NOT done using ^ but two *
+a**2		# exponent is NOT done using ^ but **
 a//b		# floor division 5//2=2
-a%b		# modulo (remainder) 5%2=1
+a%b	        # modulo (remainder) 5%2=1
 abs(a)		# absolute value
+
 
 # Other math operation located in math module. For example:
 import math
@@ -167,7 +232,10 @@ math.isclose(a,b)	# never compare two floats using ==. Use this instead
 ```
 
 
-### Functions
+
+
+
+## Functions
 ```python
 # Defining functions
 def someFunction(arg1,arg2,arg3=defaultval,*kwargs):
@@ -175,24 +243,38 @@ def someFunction(arg1,arg2,arg3=defaultval,*kwargs):
     	return x,y,z
     else:
         return a,b,c
-# Notice we can set default values, and play around with return statement within ifs
+# Notice in the above function:
+# - we can set default values
+# - we can play around with return statement within ifs
+# - we can return multiple values using tuple unpacking
 
-# Sometimes we don't know how many arguments will be passed. Or functions have a lot
-# arguments but we only care about a few. In these cases we pass in a dictionary. In
-# these situations, order do not matter.
-def test_args_kwargs(othervar = 3, arg1, arg2, arg3, , test = 4):
-    print("arg1:", arg1)
-    print("arg2:", arg2)
-    print("arg3:", arg3)
->>> kwargs = {"arg3": 3, "arg2": "two", "arg1": 5}
->>> test_args_kwargs(**kwargs)
-arg1: 5
-arg2: two
-arg3: 3
+
+# Sometimes we don't know how many arguments will be passed. We can define
+# a function that accepts a variable number of arguments
+my_sum(1,2,3,4,5,6,7,8,9,0,11,22,33,44)
+def my_sum(*args):
+    # *args can be many arguments. We might not known how many beforehand
+    result = 0
+    for x in args:
+        result += x
+    return result
+
+
+# Sometimes a function might have a lot of arguments but we only care about a few. 
+# In these cases we can pass in keyword (named) arguments
+concatenate(abc="Test", keyarg="Argument", somevar="Keyword", defw="Mapped")
+def concatenate(**kwargs):
+    print(kwargs["abc"])
+    print(kwargs["keyarg"])
+
+
+# Note that ordering matters. Need to specify unnamed args, *args, then **kwargs
+def my_function(a, b, *args, **kwargs):
+    pass
 ```
 
 
-### Flow Control
+## Flow Control
 ```python
 # If statements. The "pass" syntax is just a blank filler statement
 if condition:
@@ -206,9 +288,8 @@ else:
 while condition:
     pass
 
-# For loops and the behavior of range(n). if n = 10, then we will run
-# 10 loops from 0 to 9. Not includsive of 10. This designed with in mind 
-# the fact that indices in python starts at 0
+
+# if n = 10, range(1) will run 10 loops from 0 to 9 by design
 for i in range(10): #Loops from 0,1,2,...,9
     pass 
 
@@ -219,15 +300,13 @@ for i in reversed(range(3)): # Loop from 2,1,0
 ```
 
 
-### Raising Exceptions
+## Raising Exceptions
 ```python
 # Raising Exceptions and Errors
 if somecondition:
     raise RuntimeError('Mismatch dimension for pressure coefficient')
 
-# If you want a more descriptive, custom message to accompany an error.
-# If no error occurs, The statement within "Try" runs as if there is no
-# try-exception flow control
+# try-exception flow control. Code within "try" will always run
 try:
     step3=float(step2)
 except ValueError:
@@ -235,7 +314,8 @@ except ValueError:
 ```
 
 
-### Importing Modules
+
+## Importing Modules
 ```python
 # python code can be considered a module. When you import a module
 # you are allowed to use all its defined functions
@@ -245,13 +325,13 @@ import numpy as np
 np.array(mylist)
 
 # Function import - import only the function you need. Don't need prefix
-from math import sqrt
+from math import sqrt # OK BUT NOT RECOMMENED
 sqrt(25)
 
 # Universal import - Akin to a giant copy-paste running the code in module on line 1.
 # All variables in mymodule namespace gets copied over. Say the module you are
 # importing also imports moduleX. You will now have access to moduleX as well
-from mymodule import *
+from mymodule import * # NOT RECOMMENDED
 ```
 
 
@@ -260,10 +340,28 @@ from mymodule import *
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 3.0 Containers
+# 3.0 Containers
+
+<hr>
+
+
 Working with containers is probably the most important skill to have. There are four main types of containers:
 
 1. List - Ordered and mutable (can be modified). Lists are used when you want to easily append or index
@@ -273,7 +371,7 @@ Working with containers is probably the most important skill to have. There are 
 
 Strings can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
-### Lists []
+## Lists []
 ```python
 # Fundamentals
 myList = []
@@ -336,7 +434,7 @@ list(myset), list(string), list(tuples), list(mydict.values())
 
 
 
-### Strings ""
+## Strings ""
 String operations are sometimes called "parsing" strings. It is one of the most common tasks in programming. Mastering string parsing will also translate to a mastery of operating with lists.
 
 ```python
@@ -386,7 +484,7 @@ The figure below illustrates a good way of thinking about list/spring slicing in
 
 
 
-### Dictionaries {}
+## Dictionaries {}
 ```python
 # Dictionaries are key-value Pairs. Key must be unique, value doesn't have to be
 # Basics
@@ -402,6 +500,8 @@ for key in myDict.keys():
     pass
 for value in myDict.Values():
     pass
+for k,v in mydict.items():
+    pass
 
 # Other useful methods
 mydict.items()				# return tuples of key-value pair
@@ -415,7 +515,7 @@ del mydict[key]				# remove entire key-value pair
 ```
 
 
-### Tuples ()
+## Tuples ()
 ```python
 # Tuple are just lists that cannot be modified nor appended
 myTuple = (1,2,3)
@@ -431,7 +531,7 @@ var1,var2 = func()
 ```
 
 
-### Sets {}
+## Sets {}
 ```python
 # Sets are kind of like list, but they only contain unique entries
 myset = set(myList)
@@ -452,21 +552,44 @@ discard(set1,set2) 		# Discard element from set1 if it exists in set 2
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 4.0 File I/O
-Reading and writing files in your operating system. One thing to always remember is that all data read will be in string format. 
+# 4.0 File I/O
+
+<hr>
+
+## Reading and Writing
+
+One thing to always remember is that all data read will be in string format. 
 
 ```python
-# Open and read file in python. Make sure to close it after
-f1 = open('xy.txt','r')
-someoperation()
-f1.close()
-
-# Check if file is closed
-f1.closed()
-
 # Reading data in columns from File
 with open('file.txt', 'r') as f1:
     firstline = next(f) # skip first line
@@ -491,24 +614,131 @@ with open(outputfilename,'w') as f2:
 
 
 
+## Managing Working Directories
 
-<br>
+```python
+import os
+
+# get current working directory
+os.getcwd()
+
+# get path where the *.py file is stored
+home_dir = os.path.dirname(__file__)
+
+# list out all files
+file_list = os.listdir(path)
+
+# get all files of a specific format
+png_list=[]
+for f in file_list:
+    if f.endswith(".png"):
+        png_list.append(f)
+
+# change directory
+os.chdir("/scripts")
+
+# make a new directory
+os.mkdir("new_folder")
+
+# check if directory exists
+os.isdir()
+
+# joining path
+file_path = os.path.join(os.getcwd, "scripts", "file.csv")
+```
+
+## Paths
+
+Windows based operating system uses backslash (\) whereas unix based system use forward slash (/).
+
+```python
+# need to escape back slash in python. Can do it in two ways
+
+# double backslash
+path = "E:\\data\\telluride\\newdata.gdb\\slopes"
+
+# raw string
+path = r"E:\data\telluride\newdata.gdb\slopes"
+
+# using os.path to handle anything path related
+path = os.path.join(os.getcwd(), "anotherfolder")
+
+```
+
+You may specify relative or absolute file paths
+
+```python
+# Absolute path
+pd.read_csv(r"C:\Users\wcfro\data.csv")
+
+# Relative path. Use os.path.join. Never write out path yourself
+dirname = os.path.dirname(__file__)
+os.path.join(dirname, "subfolder/files/something.png")
+
+# go back one folder (can use repeatedly)
+parent_dir = os.path.dirname(child_dir)
+
+# Not specifying any path
+pd.read_csv("data.csv") #assuming file is in current working directory
+```
+
+
+## Running a python script with Excel VBA
+
+Spreadsheet modifications can be performed with pandas, openpyxl, xlwing. These all come pre-installed with the Anaconda distribution. Currently, it seems like only xlwing has the ability to modify spreadsheets "in real time" when you have it open.
+
+* excel VBA --> bat file --> python script
+
+```python
+# create a .bat file with the following
+call C:\Users\%USERNAME%\anaconda3\Scripts\activate
+python "%~dp0\myscript.py"
+cmd \k
+
+# first line activates anaconda venv which allows us to use packages
+# second line calls the python script "myscript.py" in the same directory as the bat file
+# third line makes sure the command line remains open after running
+
+# within excel, create a macro that opens the .bat file
+Sub runPythonScript()
+status = Shell(ActivateWorkbook.Path & "\myscript\myscript.bat", vbNormalFocus)
+End Sub
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 5.0 Classes
-Object-Oriented Programming (OOP) is a programming construct that has its benefits and drawbacks. The most important benefit is that it provides us a good way of organizing data with similar attributes and methods. Three commonly listed benefit are:
+# 5.0 Object-Oriented Programming
+
+<hr>
+
+Object-Oriented Programming (OOP) is a programming construct. A way of organizing functions and data structures that might make a problem 100x simpler or 100x more convoluted to debug.
 
 * Reusability. Very scalable as you are able to reuse much of the code through inheritance
 * Greater level of abstraction. Data begins to take real-world meaning
 * Encapsulation. Data and methods are better organized and hidden away
 
-In recent years there has been some pushbacks especially amongst data scientist and programmers. Many times, the same goal can be accomplished with non-OOP methodologies; often in simpler ways. Here is a quote that describes it aptly.
-
 > Because the problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle. - Joe Armstrong
 
-Make sure to develop good OOP architecture otherwise the benefit is not as great.
 
-Some key terms that you will see very often:
+Some key definition:
 
 * Class = The blueprint to constructing an object. (e.g. CarClass)
 * Object = Programming construct with its own functions and data. Objects are an instance of a class. Creating an object is sometimes referred to as instantiating (e.g. car1)
@@ -544,25 +774,48 @@ class class1(myclass):
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 6.0 numpy and scipy
-For scientist and engineers, you will spend most of your time working with numpy and scipy. Numpy was created specifically to emulate the matrix and array functionalities of Matlab. Scipy is an extension of numpy and includes things like optimization, signal processing, FFT, ODE solvers, etc.
+# 6.0 Numpy and Scipy
 
-If you are already familiar with Matlab. This quick start guide is all you need: https://numpy.org/doc/stable/user/numpy-for-matlab-users.html. If a command exists in Matlab, it will likely also exist in numpy; often with the same syntax. The most tricky thing to get used to is 0-based indexing and slicing!
+<hr>
 
-### Importing
+If you are already familiar with Matlab. This quick start guide is all you need: https://numpy.org/doc/stable/user/numpy-for-matlab-users.html. If a command exists in Matlab, it will likely also exist in numpy; often with the same syntax. The tricky thing to get used to is 0-based indexing and slicing!
+
+## Importing
 ```python
 import numpy as np
 import scipy as sp
-# Scipy sub-packages have to be imported separately. There are also sub-sub-packages!
 import scipy.sparse
 import scipy.sparse.linalg
 ```
 
 
-### Basic Commands
+## Basic Commands
 ```python
 """
 All matrices and vectors are considered np.arrays.
@@ -615,12 +868,7 @@ np.zero((m,n))		# matrix filled with 0
 
 
 
-### Indexing and Slicing
-There are three very important distinctions to be made between Matlab and Python, concisely summarized below:
-
-* Python uses 0-based indexing. Must subtract by 1 when indexing individual elements
-* Slicing is inclusive of the range start value, but not inclusive of the range end value. Therefore; when slicing multiple elements, subtract start value by 1 but NOT the end value
-* When retrieving individual elements, assignment is passed by value. For slices, the assignment is passed by reference! Don't forget to add .copy()
+## Indexing and Slicing
 
 Python uses 0-based indexing which may take some getting used to if you are proficient in Matlab already. In the case of indexing a single element, you just need to remember to <u>subtract by one for each index</u>.
 
@@ -673,7 +921,7 @@ Additionally, we can create sub-matrices by passing to it list of index.  This p
 
 
 
-### Other Common Operations
+## Other Common Operations
 ```python
 # Finding max/min value within row or column
 a.max()		        # returns scalar. Max in entire matrix
@@ -700,14 +948,36 @@ np.block([
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 7.0 sympy
-Here are the most basic commands. Please note that all assignments are passed by value. In other words. A.changesomething() does not alter the memory location where A is stored. Instead, an entire copy is created that you assign to another variable.
+# 7.0 Sympy
+
+<hr>
+
+All assignments are passed by value. In other words. A.changesomething() does not alter the memory location where A is stored. Instead, an entire copy is created that you assign to another variable.
 
 
-### Basics
+## Basics
 ```python
 # Initiating symbols
 A,B,c,d,e = sy.symbols('A B c d e')
@@ -733,7 +1003,7 @@ sy.solveset(f,x)
 ```
 
 
-### Substitution and Simplifying
+## Substitution and Simplifying
 ```python
 # Simplifying
 sy.simplify(f)
@@ -747,7 +1017,7 @@ f2.evalf()                          # another way of doing the same thing
 Note that all variables stay a "symbol" even if you have already substituted everything. For instance, f = a + b. Both a and b are equal to 10. Then f = 20. At this moment the number 20 is actually still a symbol until you use sy.N() or .evalf().
 
 
-### Plotting
+## Plotting
 ```python
 import sympy as sy
 from sympy.plotting import plot3d
@@ -757,377 +1027,582 @@ plot3d(sy.cos(x*3)*sy.cos(y*5)-y, (x, -1, 1), (y, -1, 1))
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 8.0 Plotly
-The number of attributes to a Plotly figure can be overwhelming. 
+# 8.0 Matplotlib
 
-Under the hood, your python code is actually converted to a JSON file which is then interpreted by a JavaScript library. You can actually convert your figure to a JSON format or a python dictionary format:
+<hr>
+
+Matplotlib is an open-sourced python package used for creating plots. It was designed with Matlab users in mind to cater to a easy transition. See here for the official quickstart guide: https://matplotlib.org/stable/tutorials/introductory/pyplot.html
+
+Most of plotting does not involve some tricky programming puzzle. It usually comes down to finding the correct syntax, the relevant parameters, the right examples; which usually means a lot of googling and reading through documentations. 
+
+
+## Object-Oriented Approach vs. Pyplot Functional Interface
+
+There are two methods of plotting with matplotlib:
+
+1. Object-oriented (preferred method)
+    * each plot is an object that can be accessed with standard dot notations
+    * objects can be viewed in variable explorer
+    * can easily manage multiple plots
+    * (e.g. axs.plot() where axs is our plot object)
+2. Pyplot functional interface (old method set up to imitate MATLAB)
+    * like a terminal where we input commands to change the current plot
+    * if you have multiple plots, need to switch back and forth
+    * (e.g. plt.plot() where plt is a command)
+
+All contents hereafter will use the object-oriented approach.
+
+Refer to this article for more information: [https://matplotlib.org/matplotblog/posts/pyplot-vs-object-oriented-interface/](https://matplotlib.org/matplotblog/posts/pyplot-vs-object-oriented-interface/). 
+
+<img src="/assets/img/blog/python3.png" style="width:75%;"/>
+
+
+## Initializing a Figure
+
+```python
+import matplotlib.pyplot as plt
+
+# Basic single plot
+fig, axs = plt.subplots() # figure can have multiple axes
+
+# Multiple subplots - 3 vertically stacked 
+fig, axs = plt.subplots(3)
+
+# Multiple subplots - 3 horizontally stacked with adjustable width
+fig, axs = plt.subplots(1,3, gridspec_kw={"width_ratios":[2,2,3]})
+# as of matplotlib 3.6+, width_ratios and height_ratios can be passed directly to subplots
+
+# some useful arguments when initializing figure
+fig, axs = plt.subplots(figsize=(11,8.5), dpi=100, ="white", edgecolor="white")
+
+
+
+# Older method. More control with adding axes
+fig = plt.figure()
+fig.set_size_inches(9,6)
+axs_1 = plt.axes([0.08,0.35,0.42,0.58]) #left-x, bottom-y, width, height
+axs_2 = plt.axes([0.54,0.35,0.42,0.58]) 
+axs_3 = plt.axes([0.08,0.1,0.88,0.2])
+```
+
+## Plotting
+
+```python
+# in the example above, axs is a tuple containing three axs objects. To plot in them:
+axs[0].plot(x,y)
+axs[1].plot(x,y)
+
+# alternatively, you assign axes to individual variables
+fig, (first_axs, another, axs3) = plt.subplots(3)
+first_axs.plot(x,y)
+
+# 2-D grid of subplots
+fig,axs = plt.subplots(2,2) # index axs as you would with a 2D array
+
+
+
+# plotting directly from pandas dataframe
+axs.plot("HEADER1", "header2", data=my_df)
+
+# basic plotting
+axs.plot(x, y, label="label for legend",marker=".",c="forestgreen", markersize=9)
+axs.plot(-x, -y, "-g", label="another line") # -g stands for green solid line
+axs.plot([0],[0]) # even if you are plotting one point, needs to be a list
+
+
+# some other useful arguments
+axs.plot(x, y, label = "dataset1",
+         color = "cornflowerblue",
+         linestyle = "--",
+         linewidth = 2,
+         marker = "o",
+         markeredgecolor = "black",
+         markeredgewidth = 1,
+         markerfacecolor = "red",
+         markersize = 4,
+         visible = True,
+         zorder = 2)
+
+"""
+Common line styles:
+    "." = point
+    "o" = circle
+    "v" = triangle
+    "s" = square
+    "*" = star
+    "P" = plus
+    "X" = cross
+
+Common marker styles:
+    "-" = solid
+    "--" = dashed
+    "-." = dashdot
+    ":" = dotted
+    "none" = don't draw lines
+"""
+
+# Named colors: https://matplotlib.org/stable/gallery/color/named_colors.html
+# Other ways to specify color: https://matplotlib.org/stable/tutorials/colors/colors.html
+# line styles: https://matplotlib.org/stable/api/_as_gen/matplotlib.lines.Line2D.html#matplotlib.lines.Line2D.set_linestyle
+# marker styles: https://matplotlib.org/stable/api/markers_api.html#module-matplotlib.markers
+```
+
+<img src="/assets/img/blog/python4.png" style="width:90%;"/>
+
+
+
+
+
+
+
+
+
+There are many other types of plots all covered here: [https://matplotlib.org/stable/plot_types/index.html](https://matplotlib.org/stable/plot_types/index.html)
+
+
+
+## Styling Basic
+
+```python
+# show grid
+axs.xaxis.grid(color="gray")
+axs.yaxis.grid()
+
+# add axis labels
+axs.set_ylabel("time (s)", fontsize=14)
+axs.set_xlabel("y value (km)", fontsize=14)
+
+# add plot sub titles
+fig.suptitle("Title. Can insert latex too: $\alpha_{a} > \frac{a}{b}$",fontweight="bold")
+
+# Add legend 
+axs.legend(loc="upper left")
+axs.legend(loc="best")
+    
+# set axis limit
+axs.set_xlim([db_list[0],db_list[-1]])
+axs.set_ylim(0,max(ld_4ksi)*1.1)
+
+# make plot aspect ratio equal
+axs.set_aspect('equal', 'box')
+
+# put axis below any patches and data
+axs.set_axisbelow(True)
+        
+# put a solid black line on x and y axis
+axs_drift.axhline(y=0, color='black', linestyle='-', lw=0.8)
+axs_drift.axvline(x=0, color='black', linestyle='-', lw=0.8)
+
+# make x-tick label something else
+value_list = [1,2,3,4,5,6,7,8,9]
+label_list = ["#3","#4","#5","#6","#7","#8","#9","#10","#11"]
+axs.set_xticks(value_list)
+axs.set_xticklabels(label_list)
+
+# saving figure
+fig.savefig("my_plot.png") # can also save as pdf!
+
+# showing figure
+plt.close(figure2)
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 9.0 Pandas
+
+<hr>
+
+## Some Common Operations
+
+```python
+# remove specific rows by index
+df.drop([0,3,5,6,7])
+
+# remove specific columns by index
+df.drop(df.columns[[0,2,4]], axis = 1)
+
+# remove specific columns by name
+df.drop(columns=["header1","header2"])
+
+# remove first row and convert it to the header
+headers = df.iloc[0]
+df = df[1:]
+df.columns = headers
+
+# Adding a new column to dataframe
+df["new_column"] = 5 # you will get a column of all 5s
+
+# read excel or csv without making first row into header
+pd.read_csv(filepath, header=None)
+
+# drop all nan values in dataframe
+df.dropna()
+
+# replace nan value with something else in the dataframe
+df.fillna("new value")
+
+# reset index after manipulating dataframe
+df.reset_index()
+```
+
+
+## Indexing Dataframes
+
+```python
+# Label-based indexing with .loc
+df.loc[4, "headerA"] #index 4, headerA. Note index don't have to be integers
+
+# integer-based indexing with .iloc
+df.iloc[2,4] #third row, fifth column
+
+# Dataframes can be sliced like 2D arrays with .iloc
+df.iloc[1:,2:8] #everything after first row, from column 2 to 7
+
+# Slicing entire column
+df.headerA
+df["headerA"]
+df.loc[:,"headerA"]
+df.iloc[:,0]
+
+# Slicing entire row
+df.iloc[2,:]
+df.loc["row1",:]
+
+# mesh indexing
+df.iloc[[0,2,4],1:3]
+```
+
+
+## Querying Dataframes
+
+```python
+# Method 1: boolean filter
+df = df[df["headerA"]>2]
+df = df[  (df.A=="normal")&(df.B=2)  ] # inner expression returns a long list of True/False
+
+# Method 2: query function
+df = df.query(f'headerA == "something" & headerB == "{varB}"')
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 10.0 Plotly
+
+<hr>
+
+
+## Introduction
+
+Under the hood, all plotly figures are json files (dictionaries). You can actually convert them back and forth like so:
 
 ```python
 fig.to_json()
 fig.to_dict()
 ```
 
-This one-page reference here is a must-have: [https://plotly.com/python/reference/](https://plotly.com/python/reference/)
-
-
-### Fundamentals
-At the most basic level, a **figure** can be represented by the following hierarchy of attributes; each of which has their own sub attributes.
-
-* **figure** - a dictionary of three attributes:
-  * **data** - raw data organized into a list of dictionaries
-    * Each dictionary represents one subplot which is referred to as a **trace**. A trace can be one of more than 40 different plots (e.g. bar, scatter, scatter3d, pie, etc.
-  * **layout** - customize the look and feel of your figure. Organized as a dictionary containing various attributes
-    * Some example layouts you can play around with: title, legend, axis, fonts, hover, hover labels, annotations, etc.
-  * **frames** - used for animations. Organized as a list of dictionaries of data along with some other attributes.
-
-As you can see, the data structure gets convoluted fast and you start having a dictionary of a dictionary of a list of dictionaries. Knowing this, there are two ways to generate plotly graph; using **classes** or using **dictionaries**.
-
-* Creating figure by creating a python dictionary
+If you peak under the hood:
 
 ```python
+Figure({
+    'data': [{'hovertemplate': 'x=%{x}<br>y=%{y}<extra></extra>',
+              'legendgroup': '',
+              'line': {'color': '#636efa', 'dash': 'solid'},
+              'marker': {'symbol': 'circle'},
+              'mode': 'lines',
+              'name': '',
+              'orientation': 'v',
+              'showlegend': False,
+              'type': 'scatter',
+              'x': array(['a', 'b', 'c'], dtype=object),
+              'xaxis': 'x',
+              'y': array([1, 3, 2]),
+              'yaxis': 'y'}],
+    'layout': {'legend': {'tracegroupgap': 0},
+               'template': '...',
+               'title': {'text': 'sample figure'},
+               'xaxis': {'anchor': 'y', 'domain': [0.0, 1.0], 'title': {'text': 'x'}},
+               'yaxis': {'anchor': 'x', 'domain': [0.0, 1.0], 'title': {'text': 'y'}}}
+})
+```
+
+<img src="/assets/img/blog/python5.png" style="width:90%;"/>
+
+
+At the most basic level, a figure can be represented by the following hierarchy of attributes; each of which has their own sub attributes.
+
+* **Figure** - a dictionary of three attributes:
+    * **Data** - raw data organized into a list of dictionaries. Each dictionary represents a subplot which is referred to as a trace. A trace can be one of more than 40 different plots (e.g. bar, scatter, scatter3d, pie, etc.)
+    * **Layout** - customize the look and feel of your figure. Organized as a dictionary containing various parameters you can tune. (e.g. title, legend, axis, fonts, hover, hover labels, annotations, etc.)
+    * **Frames** - used for animations. Organized as a list of dictionaries of data 
+
+As you can see, the data structure gets convoluted and you start having a dictionary of a dictionary of a list of dictionaries. 
+
+Rather than trying to index your way through a deeply-nested json, the recommended workflow is to create a graph object first, then using .add_trace() and .update_layout() to polish your figure step by step. 
+
+The plotly one-page reference [https://plotly.com/python/reference/](https://plotly.com/python/reference/) is a must-have!
+
+
+
+## Styling with Magic Underscore
+
+To change layouts, plotly has a nice feature known as "magic underscore". In essence, the underscore automatically keys you in to the attribute you want. It is easier to explain through an example:
+
+```python
+# Option 1: update layout with OOP dot notation
+fig.layout.title.font.family = "Open Sans"
+
+# Option 2: update layout with update method and magic underscore
+fig.update_layout(title_font_family="Open Sans")
+```
+
+You can update many attributes at once, but the bracket matching can get confusing. More often than not, you are much better off tweaking one attribute at a time. For example:
+
+```python
+# this:
+fig.update_layout(title=dict(text="Base Reaction", x=0.5, font=dict(size=24)))
+
+# is equivalent to this:
+fig.update_layout(title="Base Reactions")
+fig.update_layout(title_x=0.5)
+fig.update_layout(title_font_size=24)
+```
+
+There are actually two ways to use Plotly:
+
+* Quick and expedient way with plotly-express
+* Object-oriented approach with graph-objects
+
+My recommendation is to just start with graph-objects from the beginning.
+
+
+## Plotting Basics
+
+```python
+# import
+import plotly.graph_objects as go
+
+# if you are having issue display plot in pycharm or spyder
 import plotly.io as pio
-fig = dict(
-    {
-    "data": [{"type": "bar", "x": [1, 2, 3],"y": [1, 3, 2]}],
-    "layout": {"title": {"text": "A Figure Specified By Python Dictionary"}}
-    }
-)
-pio.show(fig)
+pio.renderers.default = "browser"
 
-# Note on dictionary creation
-mydict1 = dict(mykey = 123) #OK
-mydict2 = {'mykey':123} #OK
-mydict3 = {mykey=123} #NOT OK
-mydict4 = {mykey:123} #NOT OK
-```
-
-* Creating a figure by using the graph-object class (RECOMMENDED)
-
-```python
-import plotly.graph_objects as go
-fig = go.Figure(
-    data = [go.Bar(x=[1, 2, 3], y=[1, 3, 2])],
-    layout = go.Layout(title={'text': "this is a title"})
-)
-fig.show()
-```
-
-The recommended workflow by plotly is to create a graph object first with default values (using plotly express), then using .add_trace() and .update_layout() to polish your figure.
-
-
-
-### Example
-```python
-# Import module
-import plotly.graph_objects as go
-
-# Initialize an empty figure
+# initialize figure
 fig = go.Figure()
 
-# Adding data to figure
-custom_hover ='<b>%{text}</b><extra></extra>'
-text = "X: {}, <br>Y: {}, <br>Z: {}".format(11,22,33)
-plot_data = go.Scatter3d(
-    x=[1,2,3], y=[1,2,3], z=[1,2,3],
-    mode='markers', opacity=0, marker = dict(size = 25),
-    hovertemplate = custom_hover,
-    text = [text]
-)
-fig.add_trace(plot_data)
+# add data
+plot_data1 = go.Scatter(x=x, y=y, mode='markers', name="dataset1")
+plot_data2 = go.Scatter(x=x, y=y, mode='markers', name="dataset2")
 
-# Customizing layout
-my_scene = dict(
-    xaxis = dict(showticklabels=False, gridcolor='#e3e4e6', backgroundcolor='white', showspikes=False, visible=False),
-    yaxis =dict(showticklabels=False, gridcolor='#e3e4e6', backgroundcolor='white', showspikes=False, visible=False),
-    zaxis =dict(showticklabels=False, gridcolor='#e3e4e6', backgroundcolor='white', showspikes=False,visible=False)
-)
+# add data to your figure
+fig.add_trace(plot_data1)
+fig.add_trace(plot_data2)
 
-my_title = {'text': "Figure Title", 'y':1, 'x':0, 'xanchor':'left', 'yanchor':'top'}
-my_footnote = [
-    dict(xref='paper', yref='paper', x=0.9, y=-0.1, xanchor='right', yanchor='top',
-        showarrow=False, 
-        text='Copyright (c) 2020 RW',
-        font=dict(family='Arial',size=12,color='rgb(150,150,150)'))
-]
-
-my_camera = dict(
-    up=dict(x=0,y=1,z=0),center=dict(x=0,y=0,z=0),eye=dict(x=1.25,y=1.25,z=1.25)
-)
-
-fig.update_layout(
-    scene=my_scene, showlegend=False, hoverlabel=dict(bgcolor="white"),
-    annotations=my_footnote, scene_camera=my_camera, scene_dragmode='orbit',
-    margin=dict(l=50,r=50,b=100,t=10,pad=4), height=650
-)
-```
-
-
-### Frames - Animations
-An inconvenient aspect of animation in Plotly is that, unlike layout and data, you cannot append frames because it is stored as a tuple. As such, all frames must be inserted as soon as the figure is created.
-
-Animation example with [play] button:
-
-```python
-import plotly.graph_objects as go
-import numpy as np
-
-# Generate curve data
-t = np.linspace(-1, 1, 100)
-x = t + t ** 2
-y = t - t ** 2
-xm = np.min(x) - 1.5
-xM = np.max(x) + 1.5
-ym = np.min(y) - 1.5
-yM = np.max(y) + 1.5
-N = 50
-s = np.linspace(-1, 1, N)
-xx = s + s ** 2
-yy = s - s ** 2
-vx = 1 + 2 * s
-vy = 1 - 2 * s  # v=(vx, vy) is the velocity
-speed = np.sqrt(vx ** 2 + vy ** 2)
-ux = vx / speed  # (ux, uy) unit tangent vector, (-uy, ux) unit normal vector
-uy = vy / speed
-
-xend = xx + ux  # end coordinates for the unit tangent vector at (xx, yy)
-yend = yy + uy
-
-xnoe = xx - uy  # end coordinates for the unit normal vector at (xx,yy)
-ynoe = yy + ux
-
-# Create figure
-fig = go.Figure()
-
-# Add data
-mydata=[
-    go.Scatter(x=x, y=y,name="frame",mode="lines",line=dict(width=2, color="red")),
-    go.Scatter(x=x, y=y,name="curve",mode="lines",line=dict(width=2, color="blue"))
-]
-
-# Update layout
-mylayout = go.Layout(
-    width=600, height=600, 
-    xaxis=dict(range=[xm, xM], autorange=False, zeroline=False),
-    yaxis=dict(range=[ym, yM], autorange=False, zeroline=False),
-    title="Moving Frenet Frame Along a Planar Curve",
-    hovermode="closest",
-    updatemenus=[
-        dict(
-            buttons = [
-                dict(
-                    args = [
-                        None, 
-                        {
-                            "frame": {"duration": 0, "redraw": False},
-                            "fromcurrent": False, 
-                            "transition": {"duration": 0}
-                        }
-                    ],
-                    label = "Play",
-                    method = "animate"
-                )
-            ],
-            type='buttons',
-            showactive=False
-        )
-    ]
-)
-
-# Add frames
-myframes=[
-    go.Frame(
-        data = [go.Scatter(x=[xx[k], xend[k], None, xx[k], xnoe[k]], y=[yy[k], yend[k], None, yy[k], ynoe[k]],
-                mode="lines",
-                line=dict(color="red", width=2))]
-    ) for k in range(N)
-]
-
-fig = go.Figure(
-    data = mydata,
-    layout = mylayout,
-    frames = myframes
-)
-
+# show or save figure
 fig.show()
+fig.write_image("fig1.png")
+fig.write_html("DCR_PLOT.html")
 ```
 
 
-
-Animation example with play, pause, and slider:
+## Basic Styling
 
 ```python
-# Create figure
-fig = go.Figure()
+# change size of figure
+fig.update_layout(width=900,height=900)
 
-# Add data
-mydata=[
-    go.Scatter(x=x, y=y,name="frame",mode="lines",line=dict(width=2, color="red")),
-    go.Scatter(x=x, y=y,name="curve",mode="lines",line=dict(width=2, color="blue"))
-]
+# add plot title
+fig.update_layout(title="Base Reactions")
+fig.update_layout(title_x=0.5)
+fig.update_layout(title_font_size=24)
 
-# Slider dictionary
-slider_dict = {
-    "active": 0,
-    "yanchor": "top",
-    "xanchor": "left",
-    "currentvalue": {
-        "font": {"size": 20},
-        "prefix": "Step:",
-        "visible": True,
-        "xanchor": "right"
-    },
-    "transition": {"duration": 0, "easing": "cubic-in-out"},
-    "pad": {"b": 10, "t": 50},
-    "len": 0.9,
-    "x": 0.1,
-    "y": 0,
-    "steps": []
-}
+# make background white with lines around the edges
+fig.update_layout(plot_bgcolor="white")
+fig.update_xaxes(mirror=True,showline=True,linewidth=1,linecolor="black")
+fig.update_yaxes(mirror=True,showline=True,linewidth=1,linecolor="black")
+fig.update_layout(legend_x=0)
 
-for i in range(N):
-    slider_step = {
-        "args": [
-            [i],
-            {
-                "frame": {"duration": 0, "redraw": False},
-                 "mode": "immediate",
-                 "transition": {"duration": 0}
-            }
-        ],
-        "method": "animate",
-        "label": i
-    }
-    slider_dict["steps"].append(slider_step)
-
-# Update layout
-mylayout = go.Layout(
-    width=600, height=600, 
-    xaxis=dict(range=[xm, xM], autorange=False, zeroline=False),
-    yaxis=dict(range=[ym, yM], autorange=False, zeroline=False),
-    title="Moving Frenet Frame Along a Planar Curve",
-    hovermode="closest",
-    updatemenus=[
-        dict(
-            buttons = [
-                dict(
-                    args = [
-                        None, 
-                        {
-                            "frame": {"duration": 0, "redraw": False},
-                            "fromcurrent": True, 
-                            "transition": {"duration": 0}
-                        }
-                    ],
-                    label = "Play",
-                    method = "animate"
-                ),
-                dict(
-                    args = [
-                        [None], 
-                        {
-                            "frame": {"duration": 0, "redraw": False},
-                            "mode": "immediate", 
-                            "transition": {"duration": 0}
-                        }
-                    ],
-                    label = "Pause",
-                    method = "animate"
-                )
-            ],
-            type='buttons',
-            showactive=False
-        )
-    ],
-    sliders = [slider_dict]
-)
-
-
-# Add frames
-myframes=[
-    go.Frame(
-        data = [go.Scatter(x=[xx[k], xend[k], None, xx[k], xnoe[k]], y=[yy[k], yend[k], None, yy[k], ynoe[k]],
-                mode="lines",
-                line=dict(color="red", width=2))],
-        name = k
-    ) for k in range(N)
-]
-
-fig = go.Figure(
-    data = mydata,
-    layout = mylayout,
-    frames = myframes
-)
-
-fig.show()
+# show legends
+fig.update_layout(showlegend = True)
 ```
 
 
-
-### How-To's
+## Advanced Styling
 ```python
+# Format mouse hover info
+hovertext = ["abc", "def", "something"]
+go.plot(x=x, y=y, text=hovertext, hovertemplate= '<b>%{text}</b><extra></extra>')
+
+
+# underlay a background image or logo
+from PIL import Image
+background = Image.open("background.png")
+fig.add_layout_image(
+    source=background,
+    x=0.10,
+    y=0.02,
+    xanchor="left",
+    yanchor="bottom",
+    sizex=1,
+    sizey=0.965,
+    opacity=0.15)
+
+
+# make the aspect ratio equal, plus set figure size to 900x900
+fig.update_yaxes(scaleanchor = "x",scaleratio = 1)
+fig.update_layout(autosize=False,width=900,height=900)
+
+
+# Adding annotation to data point
+X = go.Scatter3d(
+    x=[0,1],y=[0,0],z=[0,0],
+    mode='lines+text', hoverinfo = 'skip',
+    line=dict(color='blue', width=4),
+    text=["","something"],
+    textposition="middle right",
+    textfont=dict(family="Arial", size=6, color="blue")
+)
+
+
+
 # Adding buttons that change camera angle:
 button1 = dict(
-	method = "relayout",
+    method = "relayout",
     args = [{"scene.camera.up": {'x':0,'y':1,'z':0},
-		"scene.camera.eye": {'x':1.25,'y':1.25,'z':1.25},
-		"scene.camera.center":{'x':0,'y':0,'z':0}}], 
+        "scene.camera.eye": {'x':1.25,'y':1.25,'z':1.25},
+        "scene.camera.center":{'x':0,'y':0,'z':0}}], 
     label = "Axonometric"
 )
-
 button2 = dict(
-	method = "relayout",
-	args = [{"scene.camera.up":{'x':0, 'y':1,'z':0},
-		"scene.camera.eye":{'x':0,'y':2,'z':0},
-		"scene.camera.center":{'x':0,'y':0,'z':0}}], 
-	label="Top View XZ"
+    method = "relayout",
+    args = [{"scene.camera.up":{'x':0, 'y':1,'z':0},
+        "scene.camera.eye":{'x':0,'y':2,'z':0},
+        "scene.camera.center":{'x':0,'y':0,'z':0}}], 
+    label="Top View XZ"
 )
-
 fig.update_layout(
     updatemenus = [
         dict(buttons=[button1, button2], direction="right", pad={"r": 10, "t": 10}, 
             showactive=True, x=0.1, xanchor="left", y=0.1, yanchor="top")
     ]
 )
-
-# Adding annotation to data point
-X = go.Scatter3d(
-    x=[0,1],y=[0,0],z=[0,0],
-	mode='lines+text', hoverinfo = 'skip',
-    line=dict(color='blue', width=4),
-	text=["","something"],
-	textposition="middle right",
-	textfont=dict(family="Arial", size=6, color="blue")
-)
 ```
 
 
-Quick reference:
-
-* Hiding hover info
-  * data.hoverinfo = 'skip'
-* Making vertical axis Y instead of Z
-  * layout.scene.camera.up:{"x":0, "y":1, "z":0}
-* Hiding trace legend
-  * layout.showlegend = False
-* Change marker style
-  * data.marker:{size, color, symbol}
 
 
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## 9.0 Images, Graphics, and Animation
+# 11.0 Images, Graphics, Animation
+
+<hr>
+
 Pillow is a python package is used for image manipulation. tkinter stands for "tk/tcl interface". it is used to create graphic user interfaces but can also be used for animation and graphics.
 
 An important concept to understand is that images are just matrices where each i,j position has three values (R,G,B) ranging from 0 to 255 specifying the intensity of red, green, and blue at that specific pixel. Modifying these three integers allow us to manipulate images. (For example, some photo filters are just these RGB value manipulations).
 
-### Some Image Manipulation Algorithms
+## Some Image Manipulation Algorithms
 
 **Darker Image:** 
 
@@ -1175,7 +1650,7 @@ First of all we must have multiple images to allow for post-process removal. At 
 4. Choose the pixel in the set of N that has the smallest color distance
 
 
-### Graphics and Animation
+## Graphics and Animation
 ```python
 import time
 import tkinter
@@ -1222,38 +1697,103 @@ results = canvas.find_overlapping(x1,y1,x2,y2)
 
 
 
-<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
 <hr>
 
-## APPENDIX A: Conceptual Stuff
+# APPENDIX A: Conceptual Stuff
 
-This section is dedicated to random conceptual stuff that I had to wrap my head around.
+<hr>
 
-### Virtual Environment, Interpreter, PATH
+This section is dedicated to random conceptual stuff.
 
-When installing python with Anaconda, it comes with its own virtual environment with its separate instance of python installation. This lets you have multiple versions of python on your machine at the same time.
+## Virtual Environment, Interpreter, PATH
+
+When installing python with Anaconda, it comes with its own virtual environment with its separate instance of python installation along with a massive collection of python packages. It's a standard "distribution" of python for data scientist who doesn't want to worry about the little details like managing environments and packages. To run the Anaconda version of python:
+
+1. Use anaconda command prompt, spyder, or jupyter notebook
+2. Use a regular system terminal, then type in the following:
+
+```python
+# activate anaconda environment (basically turns terminal into anaconda command prompt)
+# and lets python access all of anaconda's library
+C:\Users\USERNAME\anaconda3\Scripts\activate
+
+# now you will see (base) before each line. Run your script
+python myscript.py
+```
 
 PATH environment variable allows the computer to execute an .exe in the command line without knowing the entire directory. For example, you can type calc.exe in terminal and a calculation will open. However, you cannot type firefox.exe unless you are currently in C:\Program Files\Mozilla Firefox. 
 
-Adding the python installation directory to PATH allows the terminal to run python just by typing "python myscrip.py". Otherwise you will get an error. Navigate to settings or control panel and search "Environment Variables" to configurate PATH
+Adding the python installation directory to PATH allows the terminal to run python just by typing "python myscrip.py". This should already be done for your during installation (try both "py" and "python"). Navigate to settings or control panel and search "Environment Variables" to configure PATH.
 
-![](/assets/img/blog/path.PNG)
+```python
+# if you don't have PATH configured
+C:\Users\wcfro\anaconda3\python.exe myscript.py
+C:\Users\wcfro\AppData\Local\Programs\Python\Python311\python.exe myscript.py
 
-### Pass by reference vs. pass by value
+# if you do:
+python myscript.py
+```
+
+For many software out there, the exact version of every package you are using is important. There is a huge, complex web of dependency that most of us don't want to worry about.
+
+For example:
+* when you created a script, you used python 3.7, pkgA v2.0, pkgB v3.0
+* your user has python 3.11, pkgA v1.5, pkgB v3.5. For some reason, your code does not work on his computer...
+
+So he re-installs python and makes sure everything matches your config. All good! After week or so, he realizes that this re-installation breaks some of his other codes that relies on his installation of pkgB v3.5... Does he have to keep re-installing stuff just to switch between different codes?
+
+Virtual environments allow your users to re-create exactly your configuration in a isolated test-bed! This is done through:
+* pip - python's built-in package manager. Use to install packages like numpy
+* requirement.txt - put a file in your package that specifies version of everything you imported
+* venv - or other virtual environment managers. You can install library in your "base environment", or you can create specific environments for specific projects!
+
+
+
+
+
+
+## Pass by reference vs. pass by value
 
 Passing by reference is akin to sending the URL to an object like a variable. This is usually done for *big* elements like a list or a plot. The caller and callee use the same variable.
 
-Passing by parameter makes a whole separate copy (e.g. integers, strings, booleans, floats). I found this excellent. The caller and callee use two independent variables. I found an excellent visualization that sums it up nicely:
+Passing by parameter makes a whole separate copy (e.g. integers, strings, booleans, floats). The caller and callee both get an independent copy. I found an excellent visualization that sums it up nicely:
 
-![](/assets/img/blog/passbyreference.gif)
+<img src="/assets/img/blog/passbyreference.gif" style="width:60%;"/>
 
-### Garbage Collection. Heaps and Stacks.
+
+
+
+
+
+
+
+## Garbage Collection. Heaps and Stacks.
 
 Stack is used for static memory allocation. It is optimized quite closely by the CPU and you do not need to do any memory management. Stack variables are local in nature and are deleted after a function executes. Size is limited and variables cannot be resized.
 
 Heaps are used for dynamic memory allocation that you have to manage carefully. It is a larger floating region of memory. You have to allocate it to use it, and deallocate it when you are done. Memory leak may occur if not properly deallocated. Heap variables are global in nature.
 
-In python, you never have to worry about memory as it is automatically managed for you. The downside is some loss in speed (this is why programmers sometimes implement code initially in python and then convert to C++ when performance is a concern)
+In python, you never have to worry about memory as it is automatically managed for you. The downside is some loss in speed
 
 ```python
 # Garbage collector in python
@@ -1266,13 +1806,47 @@ a='new string'
 
 
 
-<br>
+<div style="page-break-after: always;"></div>
 <hr>
 
-## APPENDIX B: Styling Guide
+# APPENDIX B: Styling Recommendation
+
+<hr>
+
 For styling and standard formatting of your code. Refer to PEP 8: [Python Style Guide](https://www.python.org/dev/peps/pep-0008/). You don't need to follow the guideline exactly. But abiding by some of the rules here greatly improves readability. Some of the more common guidelines:
 
-### Basics
+
+## Recommended Boiler Plate (Starter File)
+
+```python
+# Imports
+import numpy as np
+import time
+
+# Constants
+PI = 3.1415926
+FILE_PATH = r"C:\Users\username\Desktop"
+
+def main():
+    """Start your code here"""
+    pass
+    
+
+def my_helper_function():
+    pass
+
+
+# Boiler plate. No need to modify
+if __name__ == "__main__":
+    time_start = time.time()
+    main()
+    time_end = time.time()
+    print("Script completed. Total elapsed time: {:.2f} seconds".format(time_end - time_start))
+else:
+    print("{} Package imported!".format(__name__))
+```
+
+## Basics
 
 ```python
 # Always use 4-space indentation. Never mix & match. Most editors have options 
@@ -1291,7 +1865,7 @@ For styling and standard formatting of your code. Refer to PEP 8: [Python Style 
 myvar = 1 # Inline comment can be distracting
 ```
 
-### Common
+## Common
 ```python
 # Don't compare boolean values to True or False
 if boolean:
@@ -1327,7 +1901,7 @@ b = c
 somelist = [a, b, c, d]
 ```
 
-### Docstring standard
+## Docstring standard
 
 ```python
 def myfunction(arg1,arg2):
@@ -1360,17 +1934,22 @@ def function_with_doctest(a,b):
 
 
 
-<br>
 
-## Personal Notes
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# RANDOM NOTES
+
+<hr>
+
 I put random notes here. Pretty much anything I found helpful can appear here. Slowly they will migrate to the other sections
 
 ```python
-# Never check condition where float == exact value
-b==17
-# Instead use is close command
-math.isclose(b,17)
-
 # Open a website and read its content to a string (bypassing 403 forbidden)
 # Simpler method is to use urllib.request.urlretrieve('example.com', 'test.txt')
 import urllib.request
