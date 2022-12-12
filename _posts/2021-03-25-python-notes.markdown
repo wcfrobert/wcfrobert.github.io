@@ -729,23 +729,56 @@ End Sub
 
 <hr>
 
-Object-Oriented Programming (OOP) is a programming construct. A way of organizing functions and data structures that might make a problem 100x simpler or 100x more convoluted to debug.
-
-* Reusability. Very scalable as you are able to reuse much of the code through inheritance
-* Greater level of abstraction. Data begins to take real-world meaning
-* Encapsulation. Data and methods are better organized and hidden away
-
-> Because the problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle. - Joe Armstrong
+Up until now, all of our programs have been **Procedural**. The code runs from top to bottom and jumps into functions as needed. However, this style of coding is ill-suited for larger and more complex programs. It is not scalable. At some point, the program becomes too big to manage. Hence why we need **Object-Oriented** programming (OOP).
 
 
-Some key definition:
+**What is Object-Oriented Programming?**
 
-* Class = The blueprint to constructing an object. (e.g. CarClass)
-* Object = Programming construct with its own functions and data. Objects are an instance of a class. Creating an object is sometimes referred to as instantiating (e.g. car1)
-* Method = Functions belonging to an object (e.g. car1.checkoil())
-* Properties = Variables belonging to an object (e.g. car1.oil_level)
+* Object-Oriented programming is just another way of organizing data and logic. We create objects that contains data and behavior, and the program is the interaction of these objects. Here are some key definitions:
+    * **Class** - Template or blueprint for an object (e.g. BeamElement)
+    * **Object** - Instance of a class. (e.g. beam42)
+    * **Method** - Functions related to an object (e.g. beam42.calculate_Mp())
+    * **Attributes** - Variables related to an object (e.g. beam42.length)
+    * **Dot Notation** - The way in which we interact with objects
 
-Note that the crucial piece of syntax is the dot notation access, which allows you to access methods and properties of an object. When an object is instantiated, the commands within the *constructor* runs first.
+**Why OOP?**
+
+OOP paradigm allows for better organization of data and logic, and promotes thinking at a "higher level of abstraction". To give a very simple example:
+
+```python
+# rather than writing something like: 
+y[2] = y[2] + 0.03
+x[2] = x[2] + 0.04
+color[2] = "green"
+
+# we can start using higher abstraction and logic (easier to read and interpret)
+ball3.move(0.04,0.03)
+ball3.set_color("green")
+```
+Of course you would still have to define the method: "move()" and "set_color()", but one is much easier to understand. You can start thinking bigger and more abstractly: "move the ball 0.04 units right, 0.03 units up", rather than worrying about indexing an array and modifying the element that stores x-coordinates, etc.
+
+Abstraction is a process of hiding unnecessary complexity and implementing more and more complex logic on top. 
+
+* High Abstraction = less detail, more general
+* Low Abstraction = more detail, the nitty gritty stuff
+
+**What are the pros and cons of OOP?**
+
+<u>Advantages</u>
+
+* Abstraction - Allows one to think at a higher level and build increasingly sophisticated programs. Often more intuitive.
+* Encapsulation - The internal complexity of a class is hidden away from the user (e.g. I can make coffee without knowing how a coffee machine works). 
+* Collaboration - It is much easier to partition work when collaborating with other programmers on a big project. Code is modularized.
+
+<u>Disavantages</u>
+
+* Initial learning curve
+* More boiler plate code
+* if not well-design, code is more obfuscated and difficult to understand
+
+**Example**
+
+When an object is instantiated, the commands within the *constructor* runs first.
 
 ```python
 # Typical class definition. Note places where "self" is required

@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 categories: engineering
-title: "Personal Grammar and Writing Handbook"
+title: "Primer: Grammar and Writing Handbook"
 description: "I want to get better at writing"
 image: assets/img/blog/grammar.png
 date: 2022-10-28

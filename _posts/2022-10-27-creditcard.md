@@ -5,7 +5,7 @@ title: "Credit Card Rewards"
 description: "Fascinating dive into the world of credit card reward maximization"
 image: assets/img/blog/creditcard.png
 date: 2022-10-27
-tags: thoughts
+tags: blog
 ---
 
 I recently went on a road trip across the West Coast. I've never traveled with my own hard-earned money before. My gosh! it was expensive... I won't give you specific numbers, but let's just say it has exhausted my savings and I am one missed paycheck from financial ruin. 
