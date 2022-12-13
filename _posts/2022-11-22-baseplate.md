@@ -120,14 +120,31 @@ The recommended hole dimensions are shown in the table below. Notice how AISC de
 
 Minimum edge dimension is specified in AISC 360-16 Table J3.4 and J3.5. However, these minimum edge distance usually does not govern. Instead, we need to take into account the worst case of a misaligned anchor rod + washer dimension. See illustration and table below.
 
-<img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
+Figure 4 below provides recommended extension lengths based on the worst case of 1.) minimum edge distance and 2.) providing enough clearance for 5/16" weld around washer.
+
+Let:
+
+* $$a$$ = washer dimension
+* $$c_{edge}$$ = minimum edge distance per AISC 360
+* $$b, \mbox{clear}, \alpha$$ = see figure 3
+
+$$b = (d_{hole} - d_{rod})/2$$
+
+$$\mbox{clear} = a/2 + b + 3/8 $$
+
+$$\alpha = max(\mbox{clear}, c_{edge}) \times 2$$
+
+<img src="/assets/img/blog/baseplate4.png" style="width:75%;"/>
 *Figure 3: Misaligned Rod + Washer Dimension*
 
 <img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
 *Figure 4: Minimum Edge Distances and Recommended Base Plate Size*
 
 
-Here are my recommendations for preliminary base plate dimensions.
+
+
+
+In summary, here are my recommendations for preliminary base plate dimensions.
 
 <u>Recommended Width - B</u>
 
@@ -426,7 +443,7 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 1.0,
             Y_final = secant_method(Y0,Y1,equilibrium_equations)
         except:
             raise RuntimeError("Did not converge")
-            
+
         # final load distribution
         sum_M, t_i, T_i, comp = equilibrium_equations(Y_final)
         sum_F = sum(T_i) + Pu + comp
