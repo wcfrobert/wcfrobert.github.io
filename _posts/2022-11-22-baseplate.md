@@ -14,36 +14,34 @@ tags: analysis primer
 
 
 
+
+
 - [1.0 Introduction and Procedure](#10-introduction-and-procedure)
   * [1.1 Procedure](#11-procedure)
   * [1.2 Preliminary Sizing](#12-preliminary-sizing)
 - [2.0 Base Plate Load Distribution - Demand](#20-base-plate-load-distribution---demand)
-  * [2.1 Analysis Model. Pinned or Fixed?](#21-analysis-model-pinned-or-fixed-)
-  * [3.0 Base Plate Design Classification](#30-base-plate-design-classification)
-    + [3.1 Load Distribution (Compression + Moment)](#31-load-distribution--compression---moment-)
-    + [3.2 Load Distribution (Tension + Moment)](#32-load-distribution--tension---moment-)
-  * [4.0 Failure Mode 1: Concrete Bearing](#40-failure-mode-1--concrete-bearing)
-  * [5.0 Failure Mode 2: Base Plate Flexure](#50-failure-mode-2--base-plate-flexure)
-  * [6.0 Failure Mode 3: Anchor Rod Tension Yielding](#60-failure-mode-3--anchor-rod-tension-yielding)
-  * [7.0 Failure Mode 4: Anchor Rod Pullout](#70-failure-mode-4--anchor-rod-pullout)
-  * [8.0 Failure Mode 8: Concrete Tension Breakout](#80-failure-mode-8--concrete-tension-breakout)
-  * [9.0 Failure Mode 9: Concrete Side Face Blowout](#90-failure-mode-9--concrete-side-face-blowout)
-  * [10.0 Treatment of Shear Demand](#100-treatment-of-shear-demand)
-  * [11.0 Option 1: Base Plate Design With Shear Lugs](#110-option-1--base-plate-design-with-shear-lugs)
-    + [11.1 Failure Mode 5a: Shear Lug Bearing](#111-failure-mode-5a--shear-lug-bearing)
-    + [11.2 Failure Mode 6a: Shear Lug Bending](#112-failure-mode-6a--shear-lug-bending)
-    + [11.3 Failure Mode 7a: Shear Lug Breakout](#113-failure-mode-7a--shear-lug-breakout)
-  * [12.0 Option 2: Base Plate Design Without Shear Lugs](#120-option-2--base-plate-design-without-shear-lugs)
-    + [12.1 Failure Mode 5b: Anchor Rod Shear and Pryout](#121-failure-mode-5b--anchor-rod-shear-and-pryout)
-    + [12.2 Failure Mode 6b: AISC Combined Tension and Shear Interaction](#122-failure-mode-6b--aisc-combined-tension-and-shear-interaction)
-    + [12.3 Failure Mode 7b: ACI Combined Tension and Shear Interaction](#123-failure-mode-7b--aci-combined-tension-and-shear-interaction)
-  * [Appendix: Base Rotational Stiffness Modeling](#appendix--base-rotational-stiffness-modeling)
-
-
-
-
-
-
+  * [2.1 Analysis Model And Load Combinations](#21-analysis-model-and-load-combinations)
+  * [2.2 Fixed Base or Pin Base Model?](#22-fixed-base-or-pin-base-model-)
+  * [2.3 Base Plate Design Classification](#23-base-plate-design-classification)
+  * [2.4 Small Moment Base Plate ($$e \leq e_{crit}$$)](#24-small-moment-base-plate----e--leq-e--crit----)
+  * [2.5 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution](#25-large-moment-base-plate----e---e--crit-------simplified-closed-form-solution)
+  * [2.6 Large Moment Base Plate ($$e > e_{crit}$$) - General Solution](#26-large-moment-base-plate----e---e--crit-------general-solution)
+- [3.0 Failure Mode 1: Concrete Bearing](#30-failure-mode-1--concrete-bearing)
+- [4.0 Failure Mode 2: Base Plate Flexure](#40-failure-mode-2--base-plate-flexure)
+- [5.0 Failure Mode 3: Anchor Rod Tension](#50-failure-mode-3--anchor-rod-tension)
+- [6.0 Failure Mode 4: Anchor Rod Pullout](#60-failure-mode-4--anchor-rod-pullout)
+- [7.0 Failure Mode 5: Concrete Tension Breakout](#70-failure-mode-5--concrete-tension-breakout)
+- [8.0 Failure Mode 6: Concrete Side Face Blowout](#80-failure-mode-6--concrete-side-face-blowout)
+- [9.0 Treatment of Shear Demand](#90-treatment-of-shear-demand)
+- [10.0 Option 1: Base Plate Design With Shear Lugs](#100-option-1--base-plate-design-with-shear-lugs)
+  * [10.1 Failure Mode 5a: Shear Lug Bearing](#101-failure-mode-5a--shear-lug-bearing)
+  * [10.2 Failure Mode 6a: Shear Lug Bending](#102-failure-mode-6a--shear-lug-bending)
+  * [10.3 Failure Mode 7a: Shear Lug Breakout](#103-failure-mode-7a--shear-lug-breakout)
+- [11.0 Option 2: Base Plate Design Without Shear Lugs](#110-option-2--base-plate-design-without-shear-lugs)
+  * [11.1 Failure Mode 5b: Anchor Rod Shear and Pryout](#111-failure-mode-5b--anchor-rod-shear-and-pryout)
+    + [11.2 Failure Mode 6b: AISC Combined Tension and Shear Interaction](#112-failure-mode-6b--aisc-combined-tension-and-shear-interaction)
+    + [11.3 Failure Mode 7b: ACI Combined Tension and Shear Interaction](#113-failure-mode-7b--aci-combined-tension-and-shear-interaction)
+- [Appendix A: Base Rotational Spring Stiffness](#appendix-a--base-rotational-spring-stiffness)
 
 
 
@@ -62,86 +60,83 @@ tags: analysis primer
 
 <hr>
 
-The design of base plate is relatively straight forward compared to other seismic components. Although technically simple, base plates are usually the interface between two different materials (namely steel and concrete). As a result, a comprehensive design considering all potential failure mode is lengthy and tedious. 
+Base plates are usually the interface between two different materials (namely steel and concrete). As a result, although technically straight-forward, a comprehensive design considering all potential failure mode can be quite long and tedious. 
 
-As of the time of this writing (November 2022), there really isn't a unified software that does a complete design (that I know of). The closest thing would be RISA connections or RAMS, but they only check the steel failure modes; after which you need to export your design to HILTI PROFIS for concrete anchorage checks.
+This goal of this article is to present the theoretical background behind base plate design, from load distribution to the various limit state. By the end, you'll hopefully have enough know-how to build your own base plate calculation tool, or gain enough technical knowledge such that you can have more confidence using existing tools.
 
-This goal of this article is to present the theoretical background for base plate design, from load distribution to limit state checks. By the end, you'll hopefully have enough know-how to build your own base plate calculation tool, or gain enough technical background such that you can have more confidence using existing tools.
-
-Three must-read references:
-* AISC Design Guide 1 - most important read
-* AISC 360-16 - for steel limit states
-* ACI 318-19 - for concrete anchorage limit states (chapter 17)
+This article contains commentary from my own experience, as well as fundamentals that you'll also find in these three references:
+* AISC Design Guide 1
+* AISC 360-16
+* ACI 318-19 (chapter 17)
 
 
 ## 1.1 Procedure
 
-Base plate design procedure is as follows:
-
 1. Determine axial, shear, and moment demand (Pu, Vu, Mu)
-2. Classify base plate type based on moment magnitude (AISC 360 Design Guide 1)
-3. Determine load distribution (AISC 360 Design Guide 1)
-4. Check concrete bearing (ACI 318)
-5. Check base plate bending (AISC 360)
-6. Check anchor rod tensile rupture (AISC 360, ACI 318)
-7. Check anchor rod pullout (ACI 318)
-8. Choose how shear demand is resisted (AISC 360 Design Guide 1)
-9. For base plate with shear lugs, tension and shear design can be decoupled:
+2. Classify base plate type (small moment or large moment)
+3. Determine load distribution
+4. Check the following limit states:
+    * Check concrete bearing (ACI 318)
+    * Check base plate bending (AISC 360)
+    * Check anchor rod tensile rupture (AISC 360, ACI 318)
+    * Check anchor rod pullout (ACI 318)
+5. Choose how shear demand is resisted
+6. For base plate with shear lugs, tension and shear design can be decoupled:
     * Check shear lug bearing (ACI 318)
     * Check shear lug bending (ACI 318)
     * Check shear lug edge breakout (ACI 318)
-10. For base plate without shear lug, need to check tension + shear interaction
+7. For base plate without shear lug, need to check tension + shear interaction
     * Check anchor rod shear rupture (AISC 360, ACI 318, ETAG 001)
     * Check anchor rod shear pryout (ACI 318)
     * Check AISC combined tension + shear interaction (AISC 360)
     * Check ACI combined tension + shear interaction (ACI 318)
-11. Check concrete tension breakout (ACI 318)
-12. Check concrete side face blowout (ACI 318)
+8. Some other limit states:
+    * Check concrete tension breakout (ACI 318)
+    * Check concrete side face blowout (ACI 318)
 
 
 
-## 1.2 Preliminary Sizing
+## 1.2 Preliminary Sizes and Edge Distance Requirements
 
-Our base plate footprint: width (B) and length (N) are obviously dependent on the demand. But base plate sizes usually don't deviate much. Most of the time, you'll see there is more than enough bearing area. In which case selecting a base plate size is more of a detailing exercise. Here are some things to consider:
+Base plate footprint (width-B, depth-N) should be sized satisfy:
 
-* Anchor rods are usually cast first into the foundation element, the base plate is then lowered onto the rods. This process is notorious annoying to contractors. Rods are often slightly off, or bent/damaged during pour. As a result, recommended base plate anchor rod holes are EXTRA oversized! These are huge holes meant to give contractors an easier time plumbing and fitting the damn thing.
-* Typically, you would want at least (4) anchor rods to fit adequately outboard of the column footprint (i.e. no rods between webs). Our base plate footprint (B and N) must respect all edge and minimum spacing requirements taking into account these massive holes.
-* Base plate footprint should be as large as possible to reduce bearing stress (to the extent that the base plate is thick enough to prevent bending failure). In other words, try to keep your plate-bending DCR to as close to 1.0 as possible in both bending directions (i.e. maximize base plate extension "m" and "n").
+* AISC 360-16 Table J3.4 minimum edge distances requirements
+* Providing enough clearance for anchor rod washers and holes
 
 
-The recommended hole dimensions are shown in the table below. Notice how AISC design guide 1 recommends vastly larger holes (even larger than OVS).
+Minimum edge dimension is specified in AISC 360-16 Table J3.4 and J3.5. However, those minimum edge distance usually does not govern. Instead, we need to take into account the worst case of a misaligned anchor rod + washer dimension. See illustration below.
+
+<img src="/assets/img/blog/baseplate4.png" style="width:85%;"/>
+*Figure 1: Misaligned Rod + Washer Dimension*
+
+
+The recommended hole dimensions are shown in the table below. Notice that base plate holes are **even larger** than OVS holes!
 
 <img src="/assets/img/blog/baseplate1.png" style="width:75%;"/>
-*Figure 1: Recommended Anchor Rod Hole Dimension from DG1*
-
+*Figure 2: Recommended Anchor Rod Hole Dimension from DG1*
 
 <img src="/assets/img/blog/baseplate2.png" style="width:75%;"/>
-*Figure 2: Recommended Anchor Rod Hole Dimension Comparison*
+*Figure 3: Recommended Anchor Rod Hole Dimension Comparison*
 
-Minimum edge dimension is specified in AISC 360-16 Table J3.4 and J3.5. However, these minimum edge distance usually does not govern. Instead, we need to take into account the worst case of a misaligned anchor rod + washer dimension. See illustration and table below.
+Base plate holes are huge! This is because constructing them is a pain. Anchor rods are typically cast first into the foundation element, then base plates are then lowered onto the rods. Rods are often slightly off, or bent/damaged during pour. Hence the extra huge holes. 
 
-Figure 4 below provides recommended extension lengths based on the worst case of 1.) minimum edge distance and 2.) providing enough clearance for 5/16" weld around washer.
 
-Let:
+The table below provides recommended extension lengths based on the worst case of 1.) minimum edge distance and 2.) providing enough clearance for 5/16" weld around washer.
+
+<img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
+*Figure 4: Minimum Edge Distances and Recommended Base Plate Size*
+
+In the table above, let:
 
 * $$a$$ = washer dimension
 * $$c_{edge}$$ = minimum edge distance per AISC 360
-* $$b, \mbox{clear}, \alpha$$ = see figure 3
+* $$b, \mbox{clear}, \alpha$$ = see figure 1
 
 $$b = (d_{hole} - d_{rod})/2$$
 
 $$\mbox{clear} = a/2 + b + 3/8 $$
 
 $$\alpha = max(\mbox{clear}, c_{edge}) \times 2$$
-
-<img src="/assets/img/blog/baseplate4.png" style="width:75%;"/>
-*Figure 3: Misaligned Rod + Washer Dimension*
-
-<img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
-*Figure 4: Minimum Edge Distances and Recommended Base Plate Size*
-
-
-
 
 
 In summary, here are my recommendations for preliminary base plate dimensions.
@@ -164,7 +159,9 @@ $$N_{req} = d + 2 \alpha$$
 
 <u>Recommended Thickness - t</u>
 
-For columns with minimal moment demand, calculate bearing stress $$\sigma = P/A$$ and determine base plate extension which I will assume you've taken as alpha ($$l=\alpha$$). The approximate required thickness can be calculated using a simple cantilever beam model with uniform load. Note the extension (l) is amplified a bit. The reason will become clear in the next section.
+Required thickness can be approximated using a simple cantilever beam model with uniform load + some fudge factors for conservatism.
+
+For columns with minimal moment demand:
 
 $$\sigma = P_u/A$$
 
@@ -173,7 +170,7 @@ $$\phi F_y \frac{t^2}{4} \geq \sigma \frac{(1.1 l)^2}{2}$$
 $$t_{req} \geq \sqrt{\frac{2.4 \sigma (l)^2}{\phi F_y}}$$
 
 
-For columns with significant moment demand (i.e. classified as large moment base plate), the bearing stress will actually reach a ceiling value = bearing capacity of the concrete. In these situations, replace $$\sigma$$ with the expression below which is just the bearing capacity equation from ACI 318 assuming good confinement.
+For columns with significant moment demand, replace $$\sigma$$ with the expression below (bearing capacity equation from ACI 318)
 
 $$\sigma = 0.65(2)(0.85)f'_{c}$$
 
@@ -187,26 +184,30 @@ There are three anchor rod grades commonly used.
 * ASTM 1554 GR 55 (Fu = 75 ksi)
 * ASTM 1554 GR 105 (Fu = 125 ksi)
 
-There are plenty of options for anchor rod diameter but I recommend using the sizes shown in Figure 4. Pick diameter in 1/4" increments. Typically I have three buckets. I wouldn't go below 3/4" unless its for a really small base plate.
+There are plenty of options for anchor rod diameter but try to stick to diameters listed in Figure 2. Pick diameter in 1/4" increments. Typically I have three buckets:
 
 * Light: 0.75 in
 * Medium: 1.25 in
 * Heavy: 2.0 in
 
-Depth of anchor rod embed can be determined when we get to it. It's self-contained and does not affect rest of our calculation.
+Do not specify different grade anchors with the same diameter. It gets confusing on-site.
 
 Picking the appropriate anchor rod is somewhat more iterative, but a good starting point would be to do the following:
 
 1. For gravity columns and columns with very small moment and no net uplift, it is probably okay to go with a smaller anchor rods (say 1" GR 36). These base plates are categorized as "small moment" and the anchor rods don't experience much, if any, tension demand. They might need to resist some shear if no shear lug is provided. But since the moment is small, shear is likely small too.
 
-2. For columns classified as "large moment" or having net uplift, we can use the following expression. Knowing the grade of anchor (see Fu above), the number of anchor rods on our base plate($$n_{rod}$$), and the base plate depth (N)
+2. For columns classified as "large moment" or having net uplift, we can use the following expression to get somewhere in the ball park. Select anchor grade (see Fu above), number of anchor rods ($$n_{rod}$$), and base plate depth (N). Ignore interior anchors contribution.
 
 $$\phi (0.75F_u) A_s \geq \frac{T_u}{n_{rod}} + \frac{M_u}{jN (n_{rod}/2)}$$
 
 $$D \geq \sqrt{ \left( \frac{T_u}{n_{rod}} + \frac{2.22M_u}{N n_{rod}} \right) / (0.442F_u)}$$
 
 
-<u>General Recommendation</u>
+
+
+
+
+## 1.3 Other Things to Consider Before You Begin
 
 Rather than specifying an unique designs for every single base plate in the building, the better approach is to come up with reasonable number of base plate design "groups" from the outset. This will save you a lot of trouble later on when you put your design on the drawings.
 
@@ -231,6 +232,9 @@ No one wants to build a building where every base plate is different. We need to
 
 
 
+
+
+
 <div style="page-break-after: always;"></div>
 <hr>
 
@@ -239,28 +243,26 @@ No one wants to build a building where every base plate is different. We need to
 <hr>
 
 
-Base plate resist axial, shear, and moment demand. The first question we must answer is how the loads are distributed. What does the free-body diagram look like? What is the bearing stress? How much tension and shear are the anchors taking? 
-
-
 ## 2.1 Analysis Model And Load Combinations
 
-The base reactions can be extracted from any analysis software. We are interested in the axial demand, shear demand, and moment demand from the most critical load combination. For moment frame systems, these demands can be extracted either from the internal forces of column members on the ground floor or the base nodal reactions (they should be in equilibrium).
+Base reactions can be extracted from any analysis software. We are interested in the axial demand, shear demand, and moment demand from the most critical load combination.
 
 $${P_u, V_u, M_u} $$
 
-Column base connections are technically designed to remain elastic. So we need to use the relevant overstrength load combinations:
+Column base connections are technically designed to remain elastic. So we need to use the appropriate overstrength load combinations:
 
 $$1.2D + 0.5L \pm 1.0E_{mh}$$
 
-The equation above is just for reference purposes. Ideally, your design combination should be an envelope of many other load combinations:
+The equation above is just for reference purposes. Ideally, your design combination is an envelope of many other load combinations that takes into account:
 
-* Live load may need to have a 1.0 factor depending on occupancy. Also need to consider live load reduction factor which is significant for ground floor columns. Ideally your design software should automatically deal with these accounting tasks
-* Your design load combination should be an envelope of that takes into account:
-    * 100%-30% seismic force directional combinations if applicable (e.g. 100X+30Y, 30X+100Y, -30X+100Y, ...)
-    * Accidental mass eccentricities
-    * Other assumed loading configurations
+* 100%-30% seismic force directional combinations if applicable (e.g. 100X+30Y, 30X+100Y, -30X+100Y, ...)
+* Accidental mass eccentricities
+* Other assumed loading configurations
 
-Furthermore, we need to consider two "load scenarios". A high compression case, and a uplift (or low compression) case. The need to evaluate uplift is self-explanatory. Even if your column never experiences uplift, evaluating low-compression case is important too because base plate classification is a function of axial demand (the base plate may change from small eccentricity where anchor rods don't experience tension to large eccentricity case where they do)
+
+## 2.2 Loading Scenario
+
+Furthermore, we need to consider two "load scenarios". A high compression case, and a uplift (or low compression) case. 
 
 * High compression case:
 
@@ -270,30 +272,29 @@ $$P_{u,max} + V_u + M_u $$
 
 $$P_{u,min} + V_u + M_u $$
 
+The need to evaluate uplift is self-explanatory. Even if your column never experiences uplift, it is important to look at low-compression case because base plate classification is a function of axial demand. In other words, the base plate may change from small eccentricity where anchor rods don't experience tension to large eccentricity case where they do.
 
-Since demands are enveloped, it is difficult to say low or high axial demand necessarily corresponds to high or low shear/moment demand. The easiest and most conservative approach is to just always extract the absolute maximum value for shear and moment.
+Since demands are enveloped, it is difficult to say low or high axial demand necessarily corresponds to high or low shear or moment. The easiest and most conservative approach is to just always extract the absolute maximum value for shear and moment.
 
 
 
-## 2.2 Fixed Base or Pin Base Model?
+## 2.3 Fixed Base or Pin Base Model?
 
-It's easier to design for pinned condition (no moment to consider!) but make sure your jurisdiction allows such assumption. 
+It's easier to design for pinned condition, but make sure your jurisdiction allows for such assumption. 
 
-* HCAI and DSA projects will probably not allow you to use pinned model without rigorous justification
+* HCAI and DSA projects will probably require rigorous justification if you want to use pinned model
 * As your moment frame system gets bigger, it is tough to justify full pinned condition...
-* Behavior of pinned and fixed based moment frames are quite different (assuming no backstay affect is present). So it's probably a good idea to get base fixity sorted out early
+* Behavior of pinned and fixed based moment frames are quite different. So it's probably a good idea to get base fixity sorted out early
+* While it is more "correct" to design for at least some moment, many practitioners have complained about the massive base plate that results from doing so
 
-
-I think it is more "correct" to design for some moment. Many practitioners have complained about the massive base plate that results from doing so... At any rate, if you are designing for moment, follow AISC 341-16 Section D.2.6c which specifies the required flexural demand as the minimum of:
+If you are designing for moment, follow AISC 341-16 Section D.2.6c which specifies the required flexural demand as the minimum of:
 
 1. Expected moment capacity of the column $$1.1R_y M_p$$
 2. Moment demand from analysis model using overstrength load combination (base must be fixed or spring to get any value)
 
-
-If there are shear lugs, an additional moment is created from the shear lug eccentricity. See the shear lug section for more information.
+If there are shear lugs, an additional moment is generated by the eccentric bearing. See the shear lug section for more information.
 
 $$M_u = M + M_{lug}$$
-
 
 The reality is probably somewhere in between (i.e. partial fixity). Refer to the appendix for some discussion on how to calculate a rotational spring stiffness.
 
@@ -301,10 +302,10 @@ The reality is probably somewhere in between (i.e. partial fixity). Refer to the
 
 
 
-## 2.3 Base Plate Design Classification
+## 2.4 Base Plate Design Classification
 
 Base plates can be classified into two categories:
-* Low moment - resultant is within kern (column is stable without any tie down force from anchors)
+* Small moment - resultant is within kern (column is stable without any tie down force from anchors)
 
 <img src="/assets/img/blog/baseplate6.png" style="width:40%;"/>
 *Figure 6: Small Moment Base Plate*
@@ -314,24 +315,36 @@ Base plates can be classified into two categories:
 <img src="/assets/img/blog/baseplate7.png" style="width:45%;"/>
 *Figure 7: Large Moment Base Plate*
 
-Although we use the term **kern** above, it should be noted that base plate "kern" is not calculated in the same way as footings or anything else that assumes an elastic (triangular) stress distribution (i.e. $$e < L/6$$). AISC Design Guide 1 suggests a less conservative approach which assumes a plastic stress distribution. 
-
-Referring to figure 6, the reaction force resultant (up arrow) follows the bearing force (down arrow) exactly for moment equilibrium, and the magnitude increases for force equilibrium. However, as moment continue to increase:
-
-1. Eccentricity increases (e = M/P) which shifts our downward pointing arrow shifts more and more to the edge
-2. Bearing area decreases, bearing stress increases
-3. Bearing stress is limited to the capacity of the concrete. Eventually the reaction force resultant can no longer follow (i.e satisfy equilibrium) without exceeding bearing capacity of concrete
-4. At this point, the anchor rods are engaged for equilibrium
-
 The dividing line between the two categories is known as the **critical eccentricity**. 
 
-The procedure to classify base plate is as follows:
+Although we use the term **kern** above, it should be noted that AISC Design Guide 1 suggests a less conservative approach:
+
+* Elastic assumption ($$e < N/6$$). Think adding rectangles and triangles (P/A - M/S). $$e_{crit}$$ denotes the limit at which one end is just on the verge of uplifting. Often used for footing analysis
+* Plastic assumption ($$e < N/2 - \frac{P_u}{2q_{max}} $$). Even if part of the base plate is uplifting, fixture is still overall stable without relying on anchor rods.
+
+<img src="/assets/img/blog/baseplate8.png" style="width:65%;"/>
+*Figure 8: Kern Comparison*
+
+For example, in the chart above, we are looking at a 24" x 48" base plate with moment demand of 500 kip.ft. 
+
+* Using "elastic" kern, "small moment" if P > 750 kips
+* Using "plastic" kern, "small moment" if P > 250 kips
+
+The logic behind plastic stress distribution is as follows:
+
+1. Moment increases, thus eccentricity increases (e = M/P) which shifts our downward pointing arrow shifts more and more to the edge
+2. Bearing contact area decreases, bearing stress increases (i.e. down arrow and up arrow coincide for equilibrium)
+3. Bearing stress is limited to the capacity of the concrete. Eventually the reaction force resultant can no longer follow (i.e satisfy equilibrium) without exceeding bearing capacity of concrete
+4. At this point, anchor rods are engaged for equilibrium (transition from figure 6 to 7)
+
+
+<u>Procedure</u>
 
 1. Calculate eccentricity (remember to convert moment from kip.ft to kip.in!)
 
     $$e = \frac{M_u}{P_u}$$
 
-2. Calculate concrete bearing capacity. Resistance factor for bearing is 0.65, $$\alpha$$ is a confinement factor. Refer to ACI 318 or AISC 360 for more information. A1 is the contact area, A2 is the project area down at 45 degree angle.
+2. Calculate concrete bearing capacity. See section 3 for more info.
 
     $$1 \leq \alpha = \sqrt{A_2 / A_1} \leq 2$$
 
@@ -345,105 +358,361 @@ The procedure to classify base plate is as follows:
 
     $$e_{crit} = N/2 - \frac{P_u}{2q_{max}}$$
 
+5. Refer to section 2.5 for small moment case; refer to section 2.6/2.7 for large moment case.
 
-## 2.4 Small Moment Base Plate ($$e \leq e_{crit}$$)
 
-Design of small moment base plate is much easier! No anchor rod tension to worry about! The small moment reduces your base plate contact area, thus increasing your bearing stress:
+## 2.5 Small Moment Base Plate ($$e \leq e_{crit}$$)
+
+Design of small moment base plate is easy! No anchor rod tension to worry about which means we get to skip all tension-related failure modes.
+
+<img src="/assets/img/blog/baseplate6.png" style="width:40%;"/>
+
+One caveat is that small moment reduces base plate contact area, thus increasing bearing stress.
+
+$$\epsilon = N/2 - Y/2$$
+
+$$\epsilon$$ is equal to e for small moment case, rearrange and solve for Y:
 
 $$Y = N - 2e$$
 
 $$A_{bearing} = B \times Y$$
 
-Again, base plate moment is self-resolving. No tension demand on anchor rods.
+Again, moment demand is self-resolving. No tension demand on anchor rods.
 
 $$T = 0$$
 
-We can now move on to check all the limit states. Can skip all tension-related failure modes!
 
 
-## 2.5 Large Moment Base Plate ($$e > e_{crit}$$)
+## 2.6 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution
 
+AISC Design Guide 1 provides a closed-form solution that assumes one row of anchor at each end. This is a convenient because we have two unknowns (Y and T), and they both can be readily solved using the quadratic equation. However, there are two very **important limitations**!
 
-$$e = \frac{M_u}{P_u}$$
+* Cannot handle tension + moment case. Anchor on the right mathematically does not exist and cannot take tension
+* Cannot account for interior anchors
 
-$$f = d/2 + (N-d)/4$$
+<img src="/assets/img/blog/baseplate7.png" style="width:45%;"/>
 
-$$Y = (f+N/2) - \sqrt{   (f + N/2)^2 - \left( \frac{2P(e+f)}{q_{max}}   \right)  }$$
+Vertical force equilibrium. **Let downward direction be positive**. Therefore, T and Pu is always positive; bearing resultant always negative.
+
+$$\sum F_{y} = 0$$
+
+$$0 = T + P_u - q_{max}Y \tag {eq.A}$$
+
+Take moment equilibrium about point B (location of tension anchor). **Let counter-clockwise be positive**. Therefore, bearing resultant contribution will always be positive. Pu contribution always negative.
+
+$$\sum M = 0$$
+
+$$0 = q_{max}Y (f + N/2 - Y/2) - P_u (f+e) \tag {eq.B}$$
+
+Combine eq.A and eq.B, and solve via quadratic equation:
+
+$$Y = (f+N/2) \pm \sqrt{   (f + N/2)^2 - \left( \frac{2P_u(f+e)}{q_{max}}   \right)  }$$
+
+For cases where Pu = 0, the equation above cannot be solved because e is infinite (denominator is zero). Instead, substitute $$P_u e = M_u$$ in the equation above.
+
+Finally, sub Y value into eq.A to get anchor tension.
 
 $$T = q_{max}Y - P_u$$
 
+Be careful of sign convention! Design Guide 1 assumes your axial demand will always be compression (point downward) and took care of the signs for you.
+
+* $$P_u$$ is always positive
+* $$e$$ is always positive
+* $$q_{max}Y$$ should always be positive. Bearing actually acts in the negative direction but the equation has already been adjusted for you. 
+
+
+Here is the python implementation of the equations above:
 
 ```python
-
-def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 1.0,
-                             alpha = 0.85, alpha1 = 2.0, phi = 0.65):
+def DG1_closed_form(width, depth, fpc, Mu, Pu, f, 
+                    alpha = 0.85, alpha1 = 2.0, phi = 0.65):
     """
-    Determine anchor rod uplift based on rigid base plate assumption.
-    up = +ve, clockwise = -ve
-    Args:
+    Closed-form solution outlined in AISC Design Guide 1. 
+    Assumes one row of anchor rod on each end. 
+    Interior anchor rods ignored.
+
+    Arguments:
         width = width of base plate (in)
         depth = depth of base plate (in)
         fpc = concrete strength (ksi)
         Mu = moment demand (kip.in). Always positive
         Pu = axial demand (kip). Positive is compression
-        xi = depth of anchors from the edge [x1,x2,...]
-        Ni = number of anchor along one row [N1,N2,...]
-        beta (optional) = 1.0 (rectangular stress block parameter)
+        f = distance from center of base plate to exterior anchor
         alpha (optional) = 0.85 (rectangular stress block parameter)
         alpha1 (optional) = 2.0 (concrete bearing confinement factor)
         phi (optional) = 0.65 (concrete resistance factor)
-        
+    Return:
+        T = tension force in exterior anchor row
+        Y = neutral axis depth
+    """
+    # concrete capacity
+    fpmax = phi * alpha * alpha1 * fpc
+    qmax = fpmax * width
+    
+    # check eccentricity
+    if Pu < 0:
+        raise RuntimeError("Cannot handle negative Pu case (tension)")
+    elif Pu == 0:
+        e = None
+        isSmall = False
+    else:
+        e = Mu/Pu
+        ecrit = depth/2 - Pu/2/qmax
+        isSmall = (e < ecrit)
+    
+    # small eccentricity
+    if isSmall:
+        Y = depth - 2*e
+        T = 0
+        return T, Y
+    
+    # large eccentricity
+    else:
+        if e == None:
+            Y = (f + depth/2) - (  (f + depth/2)**2 - (2*Mu)/qmax   )**(1/2)
+        else:
+            Y = (f + depth/2) - (  (f + depth/2)**2 - 2*Pu*(f+e)/qmax   )**(1/2)
+        T = qmax*Y - Pu
+        return T, Y
+
+```
+
+For example, given this 24" x 36" base plate:
+
+<img src="/assets/img/blog/baseplate9.png" style="width:45%;"/>
+*Figure 9: Base Plate Example*
+
+<img src="/assets/img/blog/baseplate10.png" style="width:35%;"/>
+
+If we were to use the general methodology (see next section) that takes into account contribution from the middle row:
+
+<img src="/assets/img/blog/baseplate11.png" style="width:45%;"/>
+
+Ignoring the middle row of anchors is likely overly conservative. Furthermore, the fact that the closed-form solution above only works for compression + moment is severely limiting.
+
+
+
+## 2.7 Large Moment Base Plate ($$e > e_{crit}$$) - General Solution
+
+We can generalize the closed-form solution above using the **rigid plate assumption**. Also known as "plane section remain plane" if you are dealing with section analysis. Either way, we are essentially assuming a linear strain profile.
+
+Rather than conducting a full moment curvature analysis on a fiber section, the rigid plate methodology effectively turns this into a univariate root-finding problem.
+
+* Assume rectangular bearing stress block with peak bearing stress ($$q_{max}$$). Consistent with large moment base plate classification
+* Assume rigid plate where anchor forces can be related linearly (i.e similar triangle)
+
+<u>Derivation</u>
+
+<img src="/assets/img/blog/baseplate12.png" style="width:65%;"/>
+*Figure 10: Free Body Diagram of Base Plate*
+
+
+Vertical force equilibrium:
+
+$$\sum F_y = 0$$
+
+$$0 = \sum T_i + C + P_u$$
+
+Because of a linear strain profile, individual anchors can be related to each other using similar triangles:
+
+$$\frac{t_i}{e_i} = \frac{t_n}{e_n}$$
+
+$$t_i = \frac{e_i}{e_n} t_n $$
+
+
+Summation of anchor forces can be rewritten as:
+
+$$\sum T_i = \sum t_i N_i = \sum \left( \frac{e_i}{e_n}t_n \right) N_i = (\sum e_i N_i)\frac{t_n}{e_n}$$
+
+Suppose we know the depth of neutral axis ($$Y$$), then we can solve for $$t_n$$ which is the force in anchor furthest from pivot point. Rearranging our equation for vertical equilibrium:
+
+$$t_n = \frac{(-C-P_u)(e_n)}{\sum e_i N_i}$$
+
+Once we know $$t_n$$, other anchors can be calculated using our linear strain assumption:
+
+$$t_i = \frac{e_i}{e_n} t_n$$
+
+The big question is how do we find the depth of neutral axis? The answer is to use any root-finding algorithm. Or Solver in Excel. 
+
+<u>For an assumed neutral axis depth (Y):</u>
+
+Compression bearing resultant. Equals to zero if Y is negative.
+
+$$q_{max} = \phi * \alpha * \alpha_1 * f'_c $$
+
+$$C = max(Y q_{max}, 0)$$
+
+Anchor distance from neutral axis. Anchors within neutral axis depth are inactive and cannot take tension or compression.
+
+$$e_i = max(x_i - Y, 0)$$
+
+Anchor forces can be calculated as shown above.
+
+$$t_n = \frac{(-C-P_u)(e_n)}{\sum e_i N_i}$$
+
+$$t_i = \frac{e_i}{e_n} t_n$$
+
+Total anchor row along a single row:
+
+$$T_i = t_i N_i$$
+
+Moment contribution of each anchor row:
+
+$$M_i = T_i x_i$$
+
+Force equilibrium is enforced through our use of similar triangles and how we calculated $$t_n$$
+
+$$\sum F = 0 = \sum N_i t_i  + C + P_u$$
+
+Moment equilibrium is only true if we have the correct neutral axis depth.
+
+$$\sum M = 0 = \sum M_i + P_u(N/2) + C (Y/2) - M_u$$
+
+Keep trying different Y values until $$\sum M = 0$$
+
+
+<u>Algorithm</u>
+
+```python
+"""
+Algorithm:
+    1. Check if base plate is considered small eccentricity
+    2. If small eccentricity, return 0 for tension forces
+    3. Otherwise large eccentricity. Search for neutral axis
+        3a. let Y be initial guess of neutral axis
+        3b. Compression resultant
+                qmax = phi * fpc * alpha * alpha1
+                C = B (beta*Y) * qmax
+        3c. Calculate distance from N.A to anchor
+                ei = xi - Y
+        3d. using similar triangle, we can calculate anchor force. subscript "n" denotes anchor furthest from pivot point
+                omega_i = N_i * e_i
+                t_n = (- P_u - C) / sum(omega_i)
+                t_i = omega_i * t_n / N_i
+        3e. Calculate total force in anchor row and its moment contribution
+                T_i = N_i * t_i
+                M_i = T_i * x_i
+        3f. force equilibrium is enforced through our use of similar triangle
+                sum_F = 0 = sum(T_i) + Pu + C
+        3g. moment equilibrium:
+                sum_M = sum(M_i) + Pu(depth/2) + C(Y/2) - Mu
+        3h. repeat until sum_m is close to 0
+    4. determined correct neutral axis (Y), return solution
+"""
+```
+
+User notes:
+
+* Y can be negative. Indicates uplift without bearing ($$\sum T_i = P_u$$)
+* For uplift + large moment, a prying effect can occur where $$\sum T_i = P_u + C$$. Note how additional tension demand is generated through bearing.
+
+Implementation Notes:
+
+* A large part of our search space is flat (slope = 0). Moment summation is constant when neutral axis depth is negative under C+M load case. Secant method converges fast but sometimes diverges because we land on this flat region
+* Bi-section method converge well but we need a large starting range because Y can be a huge negative number! For the extreme case of uplift with M = 0, strain profile is flat in which case Y has to be -infinity. But there is no reason to do this if you just have concentric uplift.
+* Keeping track of signs is a pain in the neck especially when moments get involved, I'm not used to negative distances and tend to auto-convert and lose consistency
+    * C is always negative pointing up (or 0 if Y is negative)
+    * xi and ei should always be positive. Anchors within bearing region becomes inactive (set to 0)
+    * ti is always positive pointing down
+    * Mi is always positive because ti and xi are always positive
+    * Summation of moment and force should all be additions. Let the signs do the work.
+
+
+
+<u>Python Implementation</u>
+
+```python
+def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
+                             alpha = 0.85, alpha1 = 2.0, phi = 0.65):
+    """
+    Determine anchor rod uplift based on rigid base plate assumption.
+    down = +ve, counter-clockwise = +ve
+    Arguments:
+        width = width of base plate (in)
+        depth = depth of base plate (in)
+        fpc = concrete strength (ksi)
+        Mu = moment demand (kip.in). Always positive
+        Pu = axial demand (kip). Compression +ve, Tension -ve
+        xi = depth of anchors from the edge [x1,x2,...]. Closest anchor first.
+        Ni = number of anchor along one row [N1,N2,...]
+        beta (optional) = 0.80 (rectangular stress block parameter)
+        alpha (optional) = 0.85 (rectangular stress block parameter)
+        alpha1 (optional) = 2.0 (concrete bearing confinement factor)
+        phi (optional) = 0.65 (concrete resistance factor)
     Return:
         T_i = list of total anchor force at each row []
         t_i = list of anchor force at each row [] = Ti / Ni
         Y_final = depth of neutral axis (in)
-        sum_F = force equilibrium. Should always return 0
-        sum_M = moment equilibrium. Should always return 0
-    """    
-    # check eccentricity:
-    fpmax = phi * alpha * alpha1 * fpc
-    qmax = fpmax * width
-    ecrit = depth/2 + Pu/2/qmax
-    e = abs(Mu/Pu) if Pu!=0 else ecrit+1
-    
-    # if small eccentricity
-    if Pu<0 and e <= ecrit:
-        zeros = [0 for x in x_i]
-        return zeros, zeros, None, 0, 0
-    
-    # if large eccentricity
+        sum_F = force equilibrium. Should always return close to 0
+        sum_M = moment equilibrium. Should always return close to 0
+    """
+    # check eccentricity
+    if Pu <= 0:
+        e = None
+        isSmall = False
     else:
-        # initial guess for neutral axis usually close to pivot point
-        Y0 = 0.0
-        Y1 = 1.0
-        
-        # function set up to check equilibrium
-        def equilibrium_equations(Y):
-            # width, depth, and other constants accesible within inner function scope
-            comp = max(0, width*Y*phi*beta*alpha*alpha1*fpc)
-            e_i = [x - Y for x in x_i]
-            omega_i = [a*b / e_i[-1] for a,b in zip(N_i,e_i)]
-            t_n = (-Pu-comp) / sum(omega_i)
-            t_i = [a * t_n / b for a,b in zip(omega_i, N_i)]
-            T_i = [a * b for a,b in zip(t_i, N_i)]
-            M_i = [a * b for a,b in zip(T_i, x_i)]
-            sum_M = -sum(M_i) - Pu*(depth/2) - comp*(Y/2) - Mu
-            return sum_M, t_i, T_i, comp
-        
-        # use secant method to find root
-        def secant_method(x0,x1,func,TOL=0.1):
+        fpmax = phi * alpha * alpha1 * fpc
+        qmax = fpmax * width
+        e = Mu/Pu
+        ecrit = depth/2 - Pu/2/qmax
+        isSmall = (e < ecrit)
+    
+    # small eccentricity
+    if isSmall:
+        zeros = [0 for x in x_i]
+        Y_final = depth - 2*e
+        return zeros, zeros, Y_final, 0, 0
+    
+    # large eccentricity
+    else:
+        # secant method good for T+M case
+        def secant_method(func,x0=0,x1=0.1,TOL=0.1):
             while abs(func(x1)[0])>=TOL:
                 xnew = x1 - func(x1)[0] * (x1 - x0) / (func(x1)[0] - func(x0)[0])
+                #print(f"Trial NA: {xnew}")
                 x0 = x1
                 x1 = xnew
             return xnew
         
+        # bi-section method good for C+M case
+        def bisection_method(func, TOL=1, a=-1e3, b=depth):
+            foundSolution = False
+            while not foundSolution:
+                c=(a+b)/2
+                #print(f"trial NA: {c}")
+                fa=func(a)[0]
+                fc=func(c)[0]
+                if (fc<0)*(fa<0) or (fc>0)*(fa>0):
+                    a = c
+                else:
+                    b = c
+                if abs(fc) < TOL:
+                    foundSolution = True
+            return c
+        
+        # set up equation for root-finding
+        def equilibrium_equations(Y):
+            # Y could be negative. In which case no bearing.
+            comp = min(0, -width*Y*phi*beta*alpha*alpha1*fpc)
+            e_i = [max(0,x - Y) for x in x_i]
+            omega_i = [a*b for a,b in zip(N_i,e_i)]
+            t_n = (-Pu-comp) * (e_i[-1])/ sum(omega_i)
+            t_i = [max(0, a/e_i[-1]*t_n) for a in e_i]
+            T_i = [a * b for a,b in zip(t_i, N_i)]
+            M_i = [a * b for a,b in zip(T_i, x_i)]
+            sum_M = sum(M_i) + Pu*(depth/2) + comp*(Y/2) - Mu
+            return sum_M, t_i, T_i, comp
+        
         # start root-finding
         try:
-            Y_final = secant_method(Y0,Y1,equilibrium_equations)
+            Y_final = secant_method(equilibrium_equations)
         except:
-            raise RuntimeError("Did not converge")
-
+            try:
+                #print("secant method failed. Trying bisection method")
+                Y_final = bisection_method(equilibrium_equations)
+            except:
+                raise RuntimeError("Did not converge")
+            
         # final load distribution
         sum_M, t_i, T_i, comp = equilibrium_equations(Y_final)
         sum_F = sum(T_i) + Pu + comp
@@ -455,20 +724,14 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 1.0,
 
 
 
-$$e_i = x_i - Y$$
-
-$$\alpha = N_i e_i / e_1$$
-
-$$C = Yq_{max}$$
-
-$$t_1 = (P_u + C) / (\sum \alpha)$$
-
-$$t_i = \alpha t_1 / N_i$$
 
 
-$$\sum F = 0 = \sum N_i t_i  - C - P_u$$
 
-$$\sum M = 0 = \sum T_i x_i - P_u(N/2 +e) - C (Y/2)$$
+
+
+
+
+
 
 
 
@@ -499,8 +762,6 @@ $$\sum M = 0 = \sum T_i x_i - P_u(N/2 +e) - C (Y/2)$$
 <hr>
 
 
-## 4.0 Failure Mode 1: Concrete Bearing
-
 $$f_{pmax} = \phi \alpha 0.85 f'_c $$
 
 $$A_1 = BN$$
@@ -519,7 +780,27 @@ $$f_p = P / A_{bearing}$$
 
 
 
-## 5.0 Failure Mode 2: Base Plate Flexure
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 4.0 Failure Mode 2: Base Plate Flexure
+
+<hr>
+
+
+
+* Base plate footprint should be as large as possible to reduce bearing stress (to the extent that the base plate is thick enough to prevent bending failure). In other words, try to keep your plate-bending DCR to as close to 1.0 as possible in both bending directions (i.e. maximize base plate extension "m" and "n").
+
+
 
 $$f = d/2 + (N-d)/4$$
 
@@ -577,7 +858,31 @@ $$t_{equiv} = \sqrt{\frac{max(Z,1.6S)}{b}}$$
 
 
 
-## 6.0 Failure Mode 3: Anchor Rod Tension Yielding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 5.0 Failure Mode 3: Anchor Rod Tension
+
+<hr>
+
+
 
 $$A_b = \pi d_b^2 / 4$$
 
@@ -591,13 +896,40 @@ $$\phi T_n = min(\phi r_n, \phi N_{sa})$$
 
 
 
-## 7.0 Failure Mode 4: Anchor Rod Pullout
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 6.0 Failure Mode 4: Anchor Rod Pullout
+
+<hr>
+
+
 
 $$\phi N_p = 0.75 \times \Psi_{c,p} \phi 8 A_{brg} f'_c$$
 
 
 
-## 8.0 Failure Mode 8: Concrete Tension Breakout
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 7.0 Failure Mode 5: Concrete Tension Breakout
+
+<hr>
+
 
 $$A_{Nco} = 9h_{ef}^2$$
 
@@ -621,7 +953,21 @@ $$\phi N_n = \phi A_s f_y$$
 
 
 
-## 9.0 Failure Mode 9: Concrete Side Face Blowout
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 8.0 Failure Mode 6: Concrete Side Face Blowout
+
+<hr>
+
+
+
 
 $$N_{sb} = 160 \lambda_a c_{a1} \sqrt{A_{brg}} \sqrt{f_c'} $$
 
@@ -632,16 +978,44 @@ $$N_{sbg} = \alpha N_{sb}$$
 
 
 
-## 10.0 Treatment of Shear Demand
 
 
 
 
 
-## 11.0 Option 1: Base Plate Design With Shear Lugs
 
 
-### 11.1 Failure Mode 5a: Shear Lug Bearing
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 9.0 Treatment of Shear Demand
+
+<hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 10.0 Option 1: Base Plate Design With Shear Lugs
+
+<hr>
+
+
+
+## 10.1 Failure Mode 5a: Shear Lug Bearing
 
 $$A_{ef,sl} = b_{sl} h_{sl}$$
 
@@ -661,7 +1035,7 @@ $$V_{brg,sl} = 1.7f_c' A_{ef,sl} \Psi_{brg,sl}$$
 
 
 
-### 11.2 Failure Mode 6a: Shear Lug Bending
+## 10.2 Failure Mode 6a: Shear Lug Bending
 
 $$M_u = V_u (3.5" + h/2)$$
 
@@ -677,7 +1051,7 @@ $$\phi M_n = \phi f_y Z$$
 
 
 
-### 11.3 Failure Mode 7a: Shear Lug Breakout
+## 10.3 Failure Mode 7a: Shear Lug Breakout
 
 $$A_{Vco} = 4.5 c_{a1}^2$$
 
@@ -692,10 +1066,24 @@ $$\phi V_n = \phi A_s f_y$$
 
 
 
-## 12.0 Option 2: Base Plate Design Without Shear Lugs
 
 
-### 12.1 Failure Mode 5b: Anchor Rod Shear and Pryout
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# 11.0 Option 2: Base Plate Design Without Shear Lugs
+
+<hr>
+
+
+
+## 11.1 Failure Mode 5b: Anchor Rod Shear and Pryout
 
 $$L_b = 3.5" + 0.5d_{bolt} + t_p$$
 
@@ -710,18 +1098,43 @@ $$\alpha_m = 2$$
 $$V_{cpg}$$
 
 
-### 12.2 Failure Mode 6b: AISC Combined Tension and Shear Interaction
+## 11.2 Failure Mode 6b: AISC Combined Tension and Shear Interaction
 
 $$(DCR_t)^2 + (DCR_v)^2 \leq 1.0$$
 
 
-### 12.3 Failure Mode 7b: ACI Combined Tension and Shear Interaction
+## 11.3 Failure Mode 7b: ACI Combined Tension and Shear Interaction
 
 $$(DCR_t)^{5/3} + (DCR_v)^{5/3} \leq 1.0$$
 
 
 
-## Appendix: Base Rotational Stiffness Modeling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="page-break-after: always;"></div>
+<hr>
+
+# Appendix A: Base Rotational Spring Stiffness
+
+<hr>
 
 $$k_{rot} = \frac{M_y}{\theta_y}$$
 
