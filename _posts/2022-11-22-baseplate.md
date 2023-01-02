@@ -319,8 +319,12 @@ The dividing line between the two categories is known as the **critical eccentri
 
 Although we use the term **kern** above, it should be noted that AISC Design Guide 1 suggests a less conservative approach:
 
-* Elastic assumption ($$e < N/6$$). Think adding rectangles and triangles (P/A - M/S). $$e_{crit}$$ denotes the limit at which one end is just on the verge of uplifting. Often used for footing analysis
-* Plastic assumption ($$e < N/2 - \frac{P_u}{2q_{max}} $$). Even if part of the base plate is uplifting, fixture is still overall stable without relying on anchor rods.
+* Elastic assumption ($$e < N/6$$)
+    * Think adding rectangles and triangles (P/A - M/S)
+    * $$e_{crit}$$ denotes the limit at which one end is just on the verge of uplifting. Often used for footing analysis
+* Plastic assumption ($$e < N/2 - Y/2 $$)
+    * Think in terms of Net moment = overturning moment - restoring moment. If restoring moment is larger, anchor rods are numerically not needed. In other words, even if part of the base plate is uplifting, fixture is still overall stable without relying on anchor rods.
+    * $$e_{crit}$$ denotes the limit at which overturning moment is larger than restoring moment. 
 
 <img src="/assets/img/blog/baseplate8.png" style="width:65%;"/>
 *Figure 8: Kern Comparison*
@@ -385,20 +389,20 @@ $$T = 0$$
 
 ## 2.6 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution
 
-AISC Design Guide 1 provides a closed-form solution that assumes one row of anchor at each end. This is a convenient because we have two unknowns (Y and T), and they both can be readily solved using the quadratic equation. However, there are two very **important limitations**!
+AISC Design Guide 1 provides a closed-form solution that assumes one row of anchor at each end. This is a convenient approach because we have two unknowns (Y and T), and they both can be readily solved using the quadratic equation. However, there are two very **important limitations**!
 
-* Cannot handle tension + moment case. Anchor on the right mathematically does not exist and cannot take tension
+* Cannot handle tension + moment case. Anchor on the right side mathematically does not exist and cannot take tension
 * Cannot account for interior anchors
 
 <img src="/assets/img/blog/baseplate7.png" style="width:45%;"/>
 
-Vertical force equilibrium. **Let downward direction be positive**. Therefore, T and Pu is always positive; bearing resultant always negative.
+Vertical force equilibrium. T and Pu is always positive; bearing resultant always negative.
 
 $$\sum F_{y} = 0$$
 
 $$0 = T + P_u - q_{max}Y \tag {eq.A}$$
 
-Take moment equilibrium about point B (location of tension anchor). **Let counter-clockwise be positive**. Therefore, bearing resultant contribution will always be positive. Pu contribution always negative.
+Take moment equilibrium about point B (location of tension anchor). Bearing resultant contribution will always be positive. Pu contribution always negative.
 
 $$\sum M = 0$$
 
@@ -408,9 +412,9 @@ Combine eq.A and eq.B, and solve via quadratic equation:
 
 $$Y = (f+N/2) \pm \sqrt{   (f + N/2)^2 - \left( \frac{2P_u(f+e)}{q_{max}}   \right)  }$$
 
-For cases where Pu = 0, the equation above cannot be solved because e is infinite (denominator is zero). Instead, substitute $$P_u e = M_u$$ in the equation above.
+For cases where Pu = 0, the equation above must be modified because e is infinite (denominator is zero). Substitute $$P_u e = M_u$$.
 
-Finally, sub Y value into eq.A to get anchor tension.
+Finally, substitute Y value into eq.A to get anchor tension.
 
 $$T = q_{max}Y - P_u$$
 
@@ -488,7 +492,7 @@ If we were to use the general methodology (see next section) that takes into acc
 
 <img src="/assets/img/blog/baseplate11.png" style="width:45%;"/>
 
-Ignoring the middle row of anchors is likely overly conservative. Furthermore, the fact that the closed-form solution above only works for compression + moment is severely limiting.
+Ignoring the middle row of anchors is likely overly conservative. Furthermore, the fact that the closed-form solution above only works for compression + moment is a severe flaw.
 
 
 
@@ -511,9 +515,9 @@ Vertical force equilibrium:
 
 $$\sum F_y = 0$$
 
-$$0 = \sum T_i + C + P_u$$
+$$0 = \sum T_i + C + P_u \tag{eq.A}$$
 
-Because of a linear strain profile, individual anchors can be related to each other using similar triangles:
+Individual anchors can be related to each other using similar triangles:
 
 $$\frac{t_i}{e_i} = \frac{t_n}{e_n}$$
 
@@ -522,9 +526,11 @@ $$t_i = \frac{e_i}{e_n} t_n $$
 
 Summation of anchor forces can be rewritten as:
 
-$$\sum T_i = \sum t_i N_i = \sum \left( \frac{e_i}{e_n}t_n \right) N_i = (\sum e_i N_i)\frac{t_n}{e_n}$$
+$$\sum T_i = \sum t_i N_i = \sum \left( \frac{e_i}{e_n}t_n \right) N_i$$
 
-Suppose we know the depth of neutral axis ($$Y$$), then we can solve for $$t_n$$ which is the force in anchor furthest from pivot point. Rearranging our equation for vertical equilibrium:
+$$\sum T_i = (\sum e_i N_i)\frac{t_n}{e_n} \tag{eq.B}$$
+
+Suppose we know the depth of neutral axis ($$Y$$), then we can solve for $$t_n$$ which is the force in anchor furthest from pivot point. Combining eq.A and eq.B and solve for $$t_n$$
 
 $$t_n = \frac{(-C-P_u)(e_n)}{\sum e_i N_i}$$
 
@@ -532,44 +538,43 @@ Once we know $$t_n$$, other anchors can be calculated using our linear strain as
 
 $$t_i = \frac{e_i}{e_n} t_n$$
 
-The big question is how do we find the depth of neutral axis? The answer is to use any root-finding algorithm. Or Solver in Excel. 
+The big question is how do we find the depth of neutral axis? The answer is to iteratively search for it using any root-finding algorithm. Or Solver in Excel. 
 
 <u>For an assumed neutral axis depth (Y):</u>
 
-Compression bearing resultant. Equals to zero if Y is negative.
+Compression bearing resultant: (equals to zero if Y is negative)
 
-$$q_{max} = \phi * \alpha * \alpha_1 * f'_c $$
+$$q_{max} = \phi  \alpha  0.85 f'_c $$
 
-$$C = max(Y q_{max}, 0)$$
+$$C = max(q_{max}Y, 0)$$
 
-Anchor distance from neutral axis. Anchors within neutral axis depth are inactive and cannot take tension or compression.
+Anchor distance from neutral axis: (anchors within neutral axis depth are inactive and cannot take tension or compression, set to 0)
 
 $$e_i = max(x_i - Y, 0)$$
 
-Anchor forces can be calculated as shown above.
+Anchor forces:
 
 $$t_n = \frac{(-C-P_u)(e_n)}{\sum e_i N_i}$$
 
 $$t_i = \frac{e_i}{e_n} t_n$$
 
-Total anchor row along a single row:
+Total anchor row along each row:
 
 $$T_i = t_i N_i$$
 
-Moment contribution of each anchor row:
+Moment contribution of each row:
 
 $$M_i = T_i x_i$$
 
-Force equilibrium is enforced through our use of similar triangles and how we calculated $$t_n$$
+Force equilibrium is satisfied through our use of similar triangles to calculate $$t_n$$
 
 $$\sum F = 0 = \sum N_i t_i  + C + P_u$$
 
 Moment equilibrium is only true if we have the correct neutral axis depth.
 
-$$\sum M = 0 = \sum M_i + P_u(N/2) + C (Y/2) - M_u$$
+$$\sum M = 0 = \sum M_i + P_u(N/2) + C (Y/2) + M_u$$
 
 Keep trying different Y values until $$\sum M = 0$$
-
 
 <u>Algorithm</u>
 
@@ -601,21 +606,6 @@ Algorithm:
 """
 ```
 
-User notes:
-
-* Y can be negative. Indicates uplift without bearing ($$\sum T_i = P_u$$)
-* For uplift + large moment, a prying effect can occur where $$\sum T_i = P_u + C$$. Note how additional tension demand is generated through bearing.
-
-Implementation Notes:
-
-* A large part of our search space is flat (slope = 0). Moment summation is constant when neutral axis depth is negative under C+M load case. Secant method converges fast but sometimes diverges because we land on this flat region
-* Bi-section method converge well but we need a large starting range because Y can be a huge negative number! For the extreme case of uplift with M = 0, strain profile is flat in which case Y has to be -infinity. But there is no reason to do this if you just have concentric uplift.
-* Keeping track of signs is a pain in the neck especially when moments get involved, I'm not used to negative distances and tend to auto-convert and lose consistency
-    * C is always negative pointing up (or 0 if Y is negative)
-    * xi and ei should always be positive. Anchors within bearing region becomes inactive (set to 0)
-    * ti is always positive pointing down
-    * Mi is always positive because ti and xi are always positive
-    * Summation of moment and force should all be additions. Let the signs do the work.
 
 
 
@@ -720,7 +710,24 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
         return T_i, t_i, Y_final, sum_F, sum_M
 ```
 
+User notes:
 
+* Y can be negative. Indicates uplift without bearing ($$\sum T_i = P_u$$)
+* For uplift + large moment, a prying effect can occur where $$\sum T_i = P_u + C$$. Note how additional tension demand is generated through bearing.
+
+Implementation Notes:
+
+* A big portion of our search space is flat (slope = 0). Namely when neutral axis depth is negative under C+M load case. Secant method converges fast but sometimes diverges because we land in this flat region
+* Bi-section method converge well but we need a large starting range because Y can be a huge negative number! For the extreme case of uplift with M = 0, strain profile is flat in which case Y has to be -infinity. But there is no reason to do this at all if you just have concentric uplift.
+* Keeping track of signs is a pain in the neck especially when moments get involved. I have a habit of auto-converting and losing consistency.
+    * Origin is at the right edge pivot point (see figure 10)
+    * left is +x, down is +y, by right-hand rule, counter-clockwise moment is positive (z axis is out of page)
+* Therefore:
+    * C is always negative pointing up (or 0 if Y is negative)
+    * xi and ei should always be positive. Anchors within bearing region becomes inactive (set to 0)
+    * ti is always positive pointing down
+    * Mi is always positive because ti and xi are always positive
+    * Summation of moment and force should all be additions. Let the signs do the work.
 
 
 
