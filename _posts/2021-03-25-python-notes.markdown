@@ -1209,9 +1209,6 @@ Common marker styles:
 
 
 
-
-
-
 There are many other types of plots all covered here: [https://matplotlib.org/stable/plot_types/index.html](https://matplotlib.org/stable/plot_types/index.html)
 
 
@@ -1262,7 +1259,30 @@ plt.close(figure2)
 plt.show()
 ```
 
+## Annotation
 
+```python
+# free form annotation anywhere on figure
+axs.annotate("Disclaimer: this figure is cool", (600,380), xycoords='figure points', fontsize=14)
+
+# annotate on data
+axs.annotate("t = {:.1f} kips".format(t[i]), xy=(-xi[i], t[i]), xycoords='data', xytext=(10, 10), textcoords='offset points')
+```
+
+## Producing Animation Frames
+
+```python
+for i in range(len(N_frames)):
+    # create figure
+    fig, axs = plt.subplots()
+
+    # save frames. Numbering is important for imagemagick
+    fig.savefig("gif_folder\frame{:04d}.png".format(i))
+
+    # then in command line with ImageMagick:
+    # magick -delay 20 -loop 0 *.png mygif.gif
+
+```
 
 
 

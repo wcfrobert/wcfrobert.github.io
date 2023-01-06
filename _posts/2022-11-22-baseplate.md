@@ -121,12 +121,7 @@ The recommended hole dimensions are shown in the table below. Notice that base p
 Base plate holes are huge! This is because constructing them is a pain. Anchor rods are typically cast first into the foundation element, then base plates are then lowered onto the rods. Rods are often slightly off, or bent/damaged during pour. Hence the extra huge holes. 
 
 
-The table below provides recommended extension lengths based on the worst case of 1.) minimum edge distance and 2.) providing enough clearance for 5/16" weld around washer.
-
-<img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
-*Figure 4: Minimum Edge Distances and Recommended Base Plate Size*
-
-In the table above, let:
+The table below provides recommended extension lengths based on the worst case of 1.) minimum edge distance and 2.) providing enough clearance for 5/16" weld around washer. Let:
 
 * $$a$$ = washer dimension
 * $$c_{edge}$$ = minimum edge distance per AISC 360
@@ -137,6 +132,9 @@ $$b = (d_{hole} - d_{rod})/2$$
 $$\mbox{clear} = a/2 + b + 3/8 $$
 
 $$\alpha = max(\mbox{clear}, c_{edge}) \times 2$$
+
+<img src="/assets/img/blog/baseplate3.png" style="width:75%;"/>
+*Figure 4: Minimum Edge Distances and Recommended Base Plate Size*
 
 
 In summary, here are my recommendations for preliminary base plate dimensions.
@@ -216,6 +214,9 @@ No one wants to build a building where every base plate is different. We need to
 
 <img src="/assets/img/blog/baseplate5.png" style="width:75%;"/>
 *Figure 5: Create A Base Plate Schedule From The Outset*
+
+
+
 
 
 
@@ -323,7 +324,7 @@ Although we use the term **kern** above, it should be noted that AISC Design Gui
     * Think adding rectangles and triangles (P/A - M/S)
     * $$e_{crit}$$ denotes the limit at which one end is just on the verge of uplifting. Often used for footing analysis
 * Plastic assumption ($$e < N/2 - Y/2 $$)
-    * Think in terms of Net moment = overturning moment - restoring moment. If restoring moment is larger, anchor rods are numerically not needed. In other words, even if part of the base plate is uplifting, fixture is still overall stable without relying on anchor rods.
+    * Think in terms of Net moment = overturning moment - restoring moment. If restoring moment is larger, anchor rods are numerically not needed. In other words, even if part of the base plate is not in contact anymore, fixture is still overall stable without relying on anchor rods.
     * $$e_{crit}$$ denotes the limit at which overturning moment is larger than restoring moment. 
 
 <img src="/assets/img/blog/baseplate8.png" style="width:65%;"/>
@@ -332,7 +333,7 @@ Although we use the term **kern** above, it should be noted that AISC Design Gui
 For example, in the chart above, we are looking at a 24" x 48" base plate with moment demand of 500 kip.ft. 
 
 * Using "elastic" kern, "small moment" if P > 750 kips
-* Using "plastic" kern, "small moment" if P > 250 kips
+* Using "plastic" kern, "small moment" if P > 250 kips (3x lower!)
 
 The logic behind plastic stress distribution is as follows:
 
@@ -576,39 +577,6 @@ $$\sum M = 0 = \sum M_i + P_u(N/2) + C (Y/2) + M_u$$
 
 Keep trying different Y values until $$\sum M = 0$$
 
-<u>Algorithm</u>
-
-```python
-"""
-Algorithm:
-    1. Check if base plate is considered small eccentricity
-    2. If small eccentricity, return 0 for tension forces
-    3. Otherwise large eccentricity. Search for neutral axis
-        3a. let Y be initial guess of neutral axis
-        3b. Compression resultant
-                qmax = phi * fpc * alpha * alpha1
-                C = B (beta*Y) * qmax
-        3c. Calculate distance from N.A to anchor
-                ei = xi - Y
-        3d. using similar triangle, we can calculate anchor force. subscript "n" denotes anchor furthest from pivot point
-                omega_i = N_i * e_i
-                t_n = (- P_u - C) / sum(omega_i)
-                t_i = omega_i * t_n / N_i
-        3e. Calculate total force in anchor row and its moment contribution
-                T_i = N_i * t_i
-                M_i = T_i * x_i
-        3f. force equilibrium is enforced through our use of similar triangle
-                sum_F = 0 = sum(T_i) + Pu + C
-        3g. moment equilibrium:
-                sum_M = sum(M_i) + Pu(depth/2) + C(Y/2) - Mu
-        3h. repeat until sum_m is close to 0
-    4. determined correct neutral axis (Y), return solution
-"""
-```
-
-
-
-
 <u>Python Implementation</u>
 
 ```python
@@ -622,8 +590,8 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
         depth = depth of base plate (in)
         fpc = concrete strength (ksi)
         Mu = moment demand (kip.in). Always positive
-        Pu = axial demand (kip). Compression +ve, Tension -ve
-        xi = depth of anchors from the edge [x1,x2,...]. Closest anchor first.
+        Pu = axial demand (kip). Positive is compression
+        xi = depth of anchors from the edge [x1,x2,...]
         Ni = number of anchor along one row [N1,N2,...]
         beta (optional) = 0.80 (rectangular stress block parameter)
         alpha (optional) = 0.85 (rectangular stress block parameter)
@@ -633,8 +601,8 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
         T_i = list of total anchor force at each row []
         t_i = list of anchor force at each row [] = Ti / Ni
         Y_final = depth of neutral axis (in)
-        sum_F = force equilibrium. Should always return close to 0
-        sum_M = moment equilibrium. Should always return close to 0
+        sum_F = force equilibrium. Should always return 0
+        sum_M = moment equilibrium. Should always return 0
     """
     # check eccentricity
     if Pu <= 0:
@@ -655,30 +623,14 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
     
     # large eccentricity
     else:
-        # secant method good for T+M case
-        def secant_method(func,x0=0,x1=0.1,TOL=0.1):
-            while abs(func(x1)[0])>=TOL:
-                xnew = x1 - func(x1)[0] * (x1 - x0) / (func(x1)[0] - func(x0)[0])
-                #print(f"Trial NA: {xnew}")
+        # secant method good for root finding
+        def secant_method(func,x0=depth/2,x1=depth/2-1,TOL=0.1):
+            while abs(func(x0)[0])>=TOL:
+                x2 = x1 - func(x1)[0] * (x1 - x0) / (func(x1)[0] - func(x0)[0])
                 x0 = x1
-                x1 = xnew
-            return xnew
-        
-        # bi-section method good for C+M case
-        def bisection_method(func, TOL=1, a=-1e3, b=depth):
-            foundSolution = False
-            while not foundSolution:
-                c=(a+b)/2
-                #print(f"trial NA: {c}")
-                fa=func(a)[0]
-                fc=func(c)[0]
-                if (fc<0)*(fa<0) or (fc>0)*(fa>0):
-                    a = c
-                else:
-                    b = c
-                if abs(fc) < TOL:
-                    foundSolution = True
-            return c
+                x1 = x2
+                print(f"Trial NA: {x0} \t {x1}")
+            return x2
         
         # set up equation for root-finding
         def equilibrium_equations(Y):
@@ -686,7 +638,10 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
             comp = min(0, -width*Y*phi*beta*alpha*alpha1*fpc)
             e_i = [max(0,x - Y) for x in x_i]
             omega_i = [a*b for a,b in zip(N_i,e_i)]
-            t_n = (-Pu-comp) * (e_i[-1])/ sum(omega_i)
+            if sum(omega_i) == 0:
+                t_n=0
+            else:
+                t_n = (-Pu-comp) * (e_i[-1])/ sum(omega_i)
             t_i = [max(0, a/e_i[-1]*t_n) for a in e_i]
             T_i = [a * b for a,b in zip(t_i, N_i)]
             M_i = [a * b for a,b in zip(T_i, x_i)]
@@ -697,28 +652,20 @@ def rigid_plate_distribution(width, depth, fpc, Mu, Pu, x_i, N_i, beta = 0.80,
         try:
             Y_final = secant_method(equilibrium_equations)
         except:
-            try:
-                #print("secant method failed. Trying bisection method")
-                Y_final = bisection_method(equilibrium_equations)
-            except:
-                raise RuntimeError("Did not converge")
+            raise RuntimeError("Did not converge")
             
         # final load distribution
         sum_M, t_i, T_i, comp = equilibrium_equations(Y_final)
         sum_F = sum(T_i) + Pu + comp
         
         return T_i, t_i, Y_final, sum_F, sum_M
+
 ```
 
 User notes:
 
 * Y can be negative. Indicates uplift without bearing ($$\sum T_i = P_u$$)
-* For uplift + large moment, a prying effect can occur where $$\sum T_i = P_u + C$$. Note how additional tension demand is generated through bearing.
-
-Implementation Notes:
-
-* A big portion of our search space is flat (slope = 0). Namely when neutral axis depth is negative under C+M load case. Secant method converges fast but sometimes diverges because we land in this flat region
-* Bi-section method converge well but we need a large starting range because Y can be a huge negative number! For the extreme case of uplift with M = 0, strain profile is flat in which case Y has to be -infinity. But there is no reason to do this at all if you just have concentric uplift.
+* Stress profile for individual anchors (t) is linear which makes sense due to strain compatibility. Stress profile of entire row of anchor (T) does not have to be linear! Rows with more anchors (N) will have higher total force
 * Keeping track of signs is a pain in the neck especially when moments get involved. I have a habit of auto-converting and losing consistency.
     * Origin is at the right edge pivot point (see figure 10)
     * left is +x, down is +y, by right-hand rule, counter-clockwise moment is positive (z axis is out of page)
@@ -729,12 +676,15 @@ Implementation Notes:
     * Mi is always positive because ti and xi are always positive
     * Summation of moment and force should all be additions. Let the signs do the work.
 
+<img src="/assets/img/blog/baseplate9.png" style="width:45%;"/>
 
 
+<img src="/assets/img/blog/baseplate13.gif" style="width:65%;"/>
+*Figure 11: Example Base Plate with 200 Kips Tension*
 
 
-
-
+<img src="/assets/img/blog/baseplate14.gif" style="width:65%;"/>
+*Figure 12: Example Base Plate with 200 Kips Compression*
 
 
 
@@ -768,18 +718,42 @@ Implementation Notes:
 
 <hr>
 
+The bearing capacity equation provided in AISC 360 J8 and ACI 318 22.8 are equivalent. If you've followed the recommended base plate size in section 2, this limit state likely won't govern. 
 
-$$f_{pmax} = \phi \alpha 0.85 f'_c $$
+For base plate classified as large moment, skip this check. Bearing DCR will always be 100% because contact with concrete is minimal and purely for equilibrium of a base plate on the verge of overturning. The contact area is equal to the neutral axis depth and bearing stress is equal to bearing capacity of concrete per our assumptions.
 
-$$A_1 = BN$$
+On the other hand, for small-moment base plate:
 
-$$A_2 = (B+2 c_{amin}) \times (N + 2c_{amin})$$
+1. Determine confinement factor. $$\alpha$$ is the confinement factor. Alpha is equal to 2 if concrete confined on all sides. $$c_{amin}$$ is the smallest distance to edge of pedestal or footing
 
-$$1 \leq \alpha = \sqrt{A_2 / A_1} \leq 2$$
+    <img src="/assets/img/blog/aciprimer14.png" style="width:65%;"/>
 
-$$A_{bearing} = BY$$
+    $$A_1 = BY$$
 
-$$f_p = P / A_{bearing}$$
+    $$A_2 = (B+2 c_{amin}) \times (Y + 2c_{amin})$$
+
+    $$1 \leq \alpha = \sqrt{A_2 / A_1} \leq 2$$
+
+2. Calculate allowable bearing stress of concrete (resistance factor phi = 0.65):
+
+    $$f_{pmax} = \phi \alpha 0.85 f'_c $$
+
+3. Calculate bearing contact area. Recall contact length is reduced by presence of moment:
+
+    $$A_{bearing} = BY$$
+
+4. Bearing demand:
+
+    $$f_p = P_u / A_{bearing}$$
+
+5. Bearing DCR:
+
+    $$DCR = f_p/f_{pmax}$$
+
+
+
+
+
 
 
 
@@ -799,43 +773,68 @@ $$f_p = P / A_{bearing}$$
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 4.0 Failure Mode 2: Base Plate Flexure
+# 4.0 Failure Mode 2: Base Plate Bending
 
 <hr>
 
+Next, check to see if base plate is thick enough to withstand the design bearing stress. The procedure for doing so is well-documented in AISC design guide but not codified. In essence, we are checking four yield mechanisms:
 
+* Plate bending in major direction (cantilever extension along the depth direction)
+    * lever arm (m)
+* Plate bending in minor direction (cantilever extension along the width direction)
+    * lever arm (n)
+* Plate bending between web (based on yield line theory)
+    * lever arm ($$\lambda$$n')
+* Plate bending from anchor tension (if applicable)
+    * lever arm (xt)
 
-* Base plate footprint should be as large as possible to reduce bearing stress (to the extent that the base plate is thick enough to prevent bending failure). In other words, try to keep your plate-bending DCR to as close to 1.0 as possible in both bending directions (i.e. maximize base plate extension "m" and "n").
+The theory behind base plate bending is described in the 1990 Thornton paper titled: "Design of Small Base Plates for Wide Flange Columns". It's only 3 pages long and very concisely written.
 
+<img src="/assets/img/blog/baseplate15.png" style="width:35%;"/>
 
+* Note how dimension n is inset more. Bending along two flange tip is more flexible than bending against an entire flange width
+* The third bending mode ($$\lambda$$n') does not apply for HSS columns
+* The 0.8 and 0.95 coefficient shown above is empirical. You may wish to adjust it as you see fit (if you've added stiffeners for instance). HSS columns would have 0.95bf instead of 0.8bf
+* Some design software also checks a diagonal bending yield line at the corner of base plate. Although I don't know if this is explicitly addressed in the codes.
 
-$$f = d/2 + (N-d)/4$$
+1. Calculate bending lever arm in major and minor direction:
 
-$$m = \frac{N-0.95d}{2}$$
+    $$m = \frac{N-0.95d}{2}$$
 
-$$n = \frac{B-0.8b_f}{2}$$
+    $$n = \frac{B-0.8b_f}{2}$$
 
-$$n = \frac{B-0.95(b_f+2t_s)}{2}$$
+2. Calculate "lever arm" for bending between flange
 
-$$X = \left(   \frac{4db_f}{(d+b_f)^2} \right) (P_u/ \phi P_p) \leq 1$$
+    $$X = \left(   \frac{4db_f}{(d+b_f)^2} \right) (P_u/ \phi P_p) \leq 1$$
 
-$$\lambda = \frac{2\sqrt{X}}{1 + \sqrt{1-X} } \leq 1$$
+    $$\lambda = \frac{2\sqrt{X}}{1 + \sqrt{1-X} } \leq 1$$
 
-$$\lambda n' = \frac{\lambda \sqrt{db_f}}{4}$$
+    $$\lambda n' = \frac{\lambda \sqrt{db_f}}{4}$$
 
-$$M_m = f_p (m^2/2)$$
+3. Calculate moment demand due to bearing stress (fp) which we've determined from the previous section (**unit is kip.in/in**)
 
-$$M_n = f_p (n^2/2)$$
+    $$M_m = f_p (m^2/2)$$
 
-$$M_{n'} = f_p (n'^2/2)$$
+    $$M_n = f_p (n^2/2)$$
 
-$$M_t = T x_t / B$$
+    $$M_{n'} = f_p (n'^2/2)$$
 
-$$x_t = f - d/2 + t_f/2$$
+4. If you have large-moment base plate, an additional tension plate bending mode should be evaluated. 
+    * AISC design guide 1 recommends calculating the lever arm (xt) from center of anchor rod to mid flange thickness. 
+    * Refer to figure 7 for dimension "f". The equation below assumes tension anchor at EQ distance from flange edge to base plate edge. You may need to determine xt for your specific case (say if you want to calculate tension bending in minor direction as well)
+    * Note that we've divided the moment demand by base plate (B) width for consistent unit (kip.in/in) with the other modes of bending
 
+    $$f = d/2 + (N-d)/4$$
 
+    $$x_t = f - d/2 + t_f/2$$
 
-Convert moment demand to an equivalent thickness demand:
+    $$M_t = T x_t / B$$
+
+5. Rather than comparing moment capacity/demand, I like to convert the moment demand to a "thickness demand" or a **required thickness**, which is easier to interpret. 
+
+    $$t_{m,req} = $$
+
+6. Base plate with GR 36 or GR 50 are readily available. You can get them as thick as 4". Add stiffeners if you need more thickness. Adding stiffeners will significantly increase labor and complexity, but sometimes you have to do what you have to do.
 
 $$Y_{ENA} = \frac{  bt_p^2 /2 + 2ht_s(t_p + h/2)  }{ bt_p + 2ht_s   }$$
 
@@ -861,6 +860,9 @@ $$Z_x =\frac{ t_w(h-t_f)^2}{4} + \frac{bht_f}{2} - \frac{b^2t_f^2}{4t_w}$$
 $$Z_x = \frac{t_wh^2}{2}+\frac{bt_f^2}{4} - \frac{ht_ft_w}{2} - \frac{(h-t_f)^2 t_w^2}{4b}$$
 
 $$t_{equiv} = \sqrt{\frac{max(Z,1.6S)}{b}}$$
+
+
+Base plate footprint should be as large as possible to reduce bearing stress (to the extent that the base plate is thick enough to prevent bending failure). In other words, try to keep your plate-bending DCR in all three directions to as close to 1.0 as possible for the most efficient base plate design.
 
 
 
@@ -889,17 +891,30 @@ $$t_{equiv} = \sqrt{\frac{max(Z,1.6S)}{b}}$$
 
 <hr>
 
+For large-moment base plate only. Capacity can be calculated two ways:
+
+* ACI 318
+    * uses a reduced area for threaded region
+* AISC 360
+    * uses a reduced strength instead to account for threaded region area reduction
+
+1. Determine maximum tension demand for an individual anchor
 
 
+2. Check per AISC
+
+$$\phi r_n = \phi F_{nt} A_b$$
+
+$$\phi T_n = min(\phi r_n, \phi N_{sa})$$
+
+3. Check per ACI 
 $$A_b = \pi d_b^2 / 4$$
 
 $$A_{se,N} = 0.8A_b$$
 
 $$\phi N_{sa} = \phi A_{se,N} f_{uta}$$
 
-$$\phi r_n = \phi F_{nt} A_b$$
 
-$$\phi T_n = min(\phi r_n, \phi N_{sa})$$
 
 
 
