@@ -8,9 +8,9 @@ date: 2022-06-07
 tags: primer
 ---
 
-*"Primer" is a personal reference notebook and a side project where I can organize and digest some of the things I've learned on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
+*"Primers" are meant to be clear and concise engineering reference articles that summarize the many things I'm learning on the job. It's a fun side-project where I can digest and organize information-dense and complex code documents and design guides. The goal is to be more pedagogical and introductory, rather than rigorous. Hopefully these primers will prove useful when I take the SE exam!*
 
-*Please note that these notes are for my own use. It is not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
+*Please note that these notes are for my own use. They are not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 California Surveying Law](#10-california-surveying-law)
@@ -1555,5 +1555,4 @@ Miscellaneous
 * Angular resolution looking through a scope can be calculated as:
 
 $$tan(\alpha) = \frac{\Delta RR}{H}$$
-
 
