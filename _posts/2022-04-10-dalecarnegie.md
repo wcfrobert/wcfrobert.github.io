@@ -78,7 +78,7 @@ The chapter proceeds to talk about the importance of seeing things from the othe
 <hr>
 
 ## Part 2 - Ways to Make People Like You
-<img src="/assets/img/blog/carnegie1.png" style="width:50%;"/>
+<img src="/assets/img/blog/carnegie2.png" style="width:50%;"/>
 
 **The first principle is to become genuinely interested in other people.** The chapter starts with a fun and enlightening anecdote. If we want to be liked by other people, why not learn from the best winner of friends the world has ever known? A dog is loved because he is always happy. There are no ulterior motives behind his happiness. He’s not trying to sell you real estate or trying to marry you. A dog is the only animal in the world that doesn’t have to work a single day in his life. A dog makes his living by giving you nothing but love.
 
@@ -145,7 +145,7 @@ The unvarnished truth is that everyone you meet feel superior to you in some way
 <hr>
 
 ## Part 3 - How to Win People to Your Way of Thinking
-<img src="/assets/img/blog/carnegie1.png" style="width:50%;"/>
+<img src="/assets/img/blog/carnegie3.png" style="width:50%;"/>
 
 **The first principle is to avoid arguments all together (for it is impossible to win)** The author begins the chapter with an anecdote of him at a dinner party. The host brought up a quote that he thought came from the Bible; He was wrong, and Carnegie knows it. So to acquire a sense of importance and display his superiority, Carnegie appointed himself an unsolicited and unwelcomed committee of one to correct the host. 
 
@@ -253,7 +253,7 @@ When we interact with others, tap into the nobler – and often secondary – mo
 
 
 ## Part 4 - How to Be a Leader
-<img src="/assets/img/blog/carnegie1.png" style="width:50%;"/>
+<img src="/assets/img/blog/carnegie4.png" style="width:50%;"/>
 
 **The first principle is to begin with praise and honest appreciation.** The psychology of this technique is simple: It is easier to listen to unpleasant things after hearing our good points first. Therefore, begin with praises like a dentist who prep his patients with Novocain. A drilling happens either way, but one is obviously better.
 
