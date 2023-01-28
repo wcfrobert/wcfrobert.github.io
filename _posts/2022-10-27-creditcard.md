@@ -64,9 +64,7 @@ There are levels to this obsession. Some just have a work-horse cash back credit
 <img src="/assets/img/blog/creditcard3.png" style="width:100%;"/> 
 *Figure: Credit Card Churning Example From Reddit*
 
-I'm not sure if credit card churning is worth it. Like many things in life, you reach a point of diminishing return. Of course, it's all good information, but credit card maximization won't really move the needle in terms of your overall financial goals.
-
-That being said, I think being aware of where you can be more thrifty when traveling is valuable.
+I'm not sure if credit card churning is worth it. Like many things in life, you reach a point of diminishing return. Of course, it's all good information, but credit card maximization won't really move the needle in terms of your overall financial goals. That being said, I think being aware of where you can be more thrifty when traveling is valuable.
 
 Ultimately, I'm not really improving my financial positions with my credit card set up, but damn it feels good to book a $800 per night hotels in New York for 25,000 points!
 

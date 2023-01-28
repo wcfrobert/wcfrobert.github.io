@@ -12,7 +12,7 @@ tags: books
 
 There are 500-page books that convey one idea, then there are 200-page books that convey multiple ideas per chapter. Peter Thiel's "Zero to One" is one of the latter. This book is about as "low-noise, high-signal" as you can get. From start to finish, every chapter is packed with wisdom and personal experiences from one of the greatest venture capitalist of our generation: Peter Thiel; co-founder of  PayPal, Palantir, early investor in Facebook, and co-founder of "Founder's Fund" whose portfolio include companies like Airbnb, Lyft, Spotify, Stripe, SpaceX, and Google.
 
-Peter Thiel is an investor, and founder of multiple successful companies. As expected from someone of his stature, his efficiency and do-er attitude shines through from the first page. He doesn't bother with academic rigor, nor references to scientific studies. You either believe him or you don't. He shares his experience and worldview matter-of-factly and he has no hesitation painting with a broad brush. Yet his points are grounded in theory, and is wildly rational and practical. Concise, coherent, and crisply written, you get the sense that he is onto something!
+Peter Thiel is an investor, and founder of multiple successful companies. As expected from someone of his stature, his efficiency and do-er attitude shines through from the first page. He doesn't bother with academic rigor, nor references to scientific studies. You either believe him or you don't. He shares his experience and worldview matter-of-factly and he has no hesitation painting with a broad brush. Yet his points are grounded in theory, and is terrifyingly rational and practical. Concise, coherent, and crisply written, you get the sense that he is onto something!
 
 "Zero to One" started out as a collection of class notes gathered by a Stanford student who attended Peter Thiel's lectures on startups. Over time, these notes started circulating well beyond the Stanford Campus. Eventually, these notes were compiled, refined, and turned into perhaps one of the most insightful book on startup ever written. Without further ado, here are the key insights of "Zero to One".
 
@@ -138,19 +138,19 @@ Peter Thiel applied this principle when assessing investment opportunities durin
 
 ## If You Build It, Will They Come?
 
-In the "Hitchhiker's Guide to the Galaxy" by Douglas Adams, when an imminent catastrophe required the excavation of humanity's original home, the population separted into three giant ships
+In the "Hitchhiker's Guide to the Galaxy" by Douglas Adams, when an imminent catastrophe required the excavation of humanity's original home, the population separated into three giant ships
 
 * Ship A had thinkers, leaders, and achievers
 * Ship B had salespeople and consultants
 * Ship C had workers and artisans
 
-Passengers on Ship B were escatic to leave first. What they don't realize is that ship A and C actually conspired to get rid them, thinking they were useless. And so ship B landed on Earth.
+Passengers on Ship B were ecstatic to leave first. What they don't realize is that ship A and C actually conspired to get rid them, thinking they were useless. And so ship B landed on Earth.
 
 The amusing story is meant to highlight the fact that sales is everywhere around us! Its importance cannot be understated. Technologists tend to think if you build a great product, the customers will come. That "the product sells itself". Thiel is quick to point out that's simply not the case. Selling effectively is harder than it looks.
 
 > "Nerds are skeptical of advertising, marketing, and sales because they think it seems superficial and irrational. But advertising matters because it works. It works on nerds, and it works on you. You may think you're an exception; that your preferences are authentic, and advertising only works on other people. [...] Anyone who can't acknowledge its likely effect on himself is doubly deceived."
 
-The word "salesmanship" tend to bring out negative reactions in most people. They are seen as slimy, sly, disingenuous, and shady. There is some truth to that. Salesman are actors, their priority is persuation, not sincerity. But the truth is **we only react negatively to awkward, obvious salesmen - the bad ones**.
+The word "salesmanship" tend to bring out negative reactions in most people. They are seen as slimy, sly, disingenuous, and shady. There is some truth to that. Salesman are actors, their priority is persuasion, not sincerity. But the truth is **we only react negatively to awkward, obvious salesmen - the bad ones**.
 
 **Great salesmanship is hidden**. Whatever the career, sales ability distinguishes the great from the good. The ability to sell your idea, persuade and communicate effectively is a short path to distinction. 
 
@@ -186,7 +186,7 @@ Of course, the 80-20 number is just a rough approximation to the more important 
 
 > "But taking a merely professional view of the workplace, in which free agents check in and out on a transactional basis, is worse than cold: it's not even rational. Time is your most valuable asset, it's odd to spent it working with people who don't envision any long-term future together"
 
-> "Computers are complements for humans, not substitutes. The most valuable businesss of coming decades will be built by entrepreneurs who seek to empower peopel rather than try to make them obsolete"
+> "Computers are complements for humans, not substitutes. The most valuable businesses of coming decades will be built by entrepreneurs who seek to empower people rather than try to make them obsolete"
 
 * 95% of Google's revenue comes from advertising
 * Venture capital is important. It accounts for less than 0.2% of the GDP, but the result of those investment disproportionately propel the entire economy. Venture-backed companies create 11% of all private sector jobs.

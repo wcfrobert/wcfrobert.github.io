@@ -52,7 +52,7 @@ To summarize his journal entry:
 * Loss of freedom and flexibility to go where one desires
 * Loss of good friends and clever conversations at the club
 * Forced to visit relatives
-* Perhaps trifle and quarrelling
+* Perhaps trifle and quarreling
 * Expense and anxiety of children
 * Cannot read in the evenings. Less money for books
 * Fat and idleness
@@ -93,6 +93,4 @@ On the other end of the spectrum is a loveless marriage, one borne purely out of
 
 Shakespeare's "Romeo and Juliet" was a warning, not a celebration, of love. Beware! Young and foolish lovers with your fleeting teenage infatuations. Tragedy awaits for those who abandon reason in favor of unbounded passion.
 
-The romantic in me is repulsed by the idea of not marrying for love. Yet the importance of finding the right partner is a solid reminder that it behooves us to keep our wits and strike a balance. Despite our culture's over-correction towards emotion over reason, I'm still a firm believer in romanticism. 
-
-If there's any wisdom in "YOLO", it's exactly that... you only live once. Marrying the wrong person and going through a soul-crushing divorce is tragic. But on the other hand, what could be more tragic than a life of regret, a life of "what-if", a life devoid of love that so richly defines the human experience. 
+The romantic in me is repulsed by the idea of not marrying for love. Yet the importance of finding the right partner is a solid reminder that it behooves us to keep our wits and strike a balance. Despite our culture's over-correction towards emotion over reason, I'm still believe in romanticism. If there's any wisdom in "YOLO", it's exactly that... you only live once. Marrying the wrong person and going through a soul-crushing divorce is tragic. But on the other hand, what could be more tragic than a life of regret, a life of "what-if", a life devoid of love that so richly defines the human experience. 
