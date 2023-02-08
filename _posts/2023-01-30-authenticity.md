@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 categories: blog
-title: "Performance"
+title: "Performance of a Lifetime"
 description: "Being performative vs. being authentic"
 image: assets/img/blog/authenticity.png
 date: 2023-01-30
@@ -24,7 +24,7 @@ Why do I cook for my friends? Am I genuinely trying to serve them great food and
 
 ---
 
-Why do I travel and take pictures? Is it to journal the exciting adventures of my life, so I can look back with nostalgia and delight when I'm older? Or is it to craft an fake image of my life on social media so others won't think I live a boring life? 
+Why do I travel and take pictures? Is it to journal the exciting adventures of my life, so I can look back with nostalgia and delight when I'm older? Or is it to craft an fake image on social media so others won't think I live a boring life? 
 
 ---
 
@@ -38,13 +38,11 @@ Why do I enjoy classical music? Why do I drink wine? Why do I drink coffee? Why 
 
 ## A Court Jester
 
-There is a famous saying often attributed to John Pierpont Morgan that people have two reasons for doing anything; one that sounds good, and a real one. While my "score card" to questions like the ones above are undoubtedly better than it was 5 years ago, I am under no illusion of some self-perceived sanctity. Gosh! I would love nothing more than to say that I am a wholly authentic person, but the truth is, I am not. Even though I try real hard to be. I am a bundle of hypocrisy and contradiction, and I can only pray that everyone else is as well.
+There is a famous saying often attributed to John Pierpont Morgan that people have two reasons for doing anything; one that sounds good, and a real one. While my "score card" to questions like the ones above are undoubtedly better than it was 5 years ago, I am under no illusion of some self-perceived sanctity. Gosh! I would love nothing more than to say that I am a wholly authentic person, but the truth is I am not, even though I try real hard to be. I am a bundle of hypocrisy and contradiction, and I can only hope everyone else is as well.
 
-On some days, I feel so damn vapid and performative. I go through life crafting one image after another. For school. For my career. For my date. For my family. For my friends circle A. For my friend circle B. For my co-workers. I put on one mask after another like a stage actor, or a court jester, carefully curating resumes of inauthenticity. Disingenuous pleasantries at the water cooler. An awkward half-smile at a company happy hour. Forced enthusiasm at a job interview. For what exactly? When the show ends, and the curtain closes, are we met with cheers and applause? Or deafening silence? Yet it seems like we need personas. Carl Jung describes the absence of persona as a state of "disturbed psychic equilibrium". They are "blind to the world, hopeless dreamers". But where and how can I find authenticity? Isn't an authentic persona a contradiction in terms?
+On some days, I feel so damn vapid and performative. I go through life crafting one image after another. For school. For my career. For my date. For my family. For my friends circle A. For my friend circle B. For my co-workers. I put on one mask after another like a stage actor, or a court jester, carefully curating resumes of inauthenticity. Disingenuous pleasantries at the water cooler. An awkward half-smile at a company happy hour. Forced enthusiasm at a job interview. For what exactly? When the show ends, and the curtain closes, are we met with cheers and applause? Or dead silence? Yet it seems like we need personas. Carl Jung describes the absence of persona as a state of "disturbed psychic equilibrium"; where one cannot possibly interact with the world. They are "blind to the world, hopeless dreamers".  
 
 On rare days, I catch a glimpse of something authentic in me. Whether it's during a great tennis rally, or at hotpot with close friends, or while in deep focus of some engaging work. My soul thirst for these rare and fleeting moments.
-
-
 
 
 
