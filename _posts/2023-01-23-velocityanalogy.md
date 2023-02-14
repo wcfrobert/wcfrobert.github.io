@@ -1,8 +1,8 @@
 ---
 layout: blog-post
 categories: blog
-title: "The World Is Full of Smart People"
-description: "Analogy to distance, velocity, and acceleration"
+title: "Intelligence"
+description: "The world is full of smart people"
 image: assets/img/blog/velocityanalogy.png
 date: 2023-01-23
 tags: thoughts
@@ -10,11 +10,11 @@ tags: thoughts
 
 The world is full of smart people.
 
-But what do we mean by "smart" anyways? My thermostat is smart because it has a screen on it. What about people? What makes a person "smart"? 
+But what do we mean by "smart" anyways? My refrigerator is smart because it has a screen on it. What about people? What makes a person "smart"? 
 
 Personally, I've never really thought of myself as "smart". Through observation, I knew I was not cut out for things like theoretical physics, or graduate level abstract mathematics. But I also knew they were *not* impossible should I choose to dedicate a huge amount of time and effort. I just happen to focus my time on other productive pursuits like paint-by-numbers and learning to flip pancakes without using a spatula.
 
-You see, I am a firm believer in anti-determinism and excellence through practice. I believe anyone, regardless of natural talent, can be incredibly skilled at something if they try hard enough for long enough (see Malcom Gladwell's 10,000 hours). Let's say you have a classmate who completes complicated programming p-sets in 30 minutes when it takes others 2 full days. Is he smart? Definitely! Let's say he's been obsessed with programming since he was 6 years old, and that he's attended competitive programming classes since 8th grade. Naturally he would be more skilled than your other classmates. If you had the same passion, same amount of training, then I'd wager that you could crank out programming p-sets like sausages too. If that were the case, are you also smart? I'd say yes! Maybe if we normalized by the amount of prior experience, we can get a better measure of intelligence. But the crucial question to ask at that point is if it's at all useful that we do...
+You see, I am a firm believer in anti-determinism and excellence through practice. I believe anyone, regardless of natural talent, can be incredibly skilled at something if they try hard enough for long enough (see Malcom Gladwell's 10,000 hours). Let's say you have a classmate who completes complicated programming p-sets in 30 minutes when it takes others 2 full days. Is he smart? I think so! Let's say he's been obsessed with programming since he was 6 years old, and that he's attended competitive programming classes since 8th grade. Naturally he would be more skilled than your other classmates. If you had the same passion, same amount of training, then I'd wager that you could crank out programming p-sets like sausages too. Maybe if we normalized by the amount of prior experience, we can get a better measure of intelligence. But the crucial question to ask at that point is whether or not it's useful that we do...
 
 We live in such a multi-faceted world. I prefer to think we are all "smart" in something because we choose to dedicate our time on different things. Everyone has their unique set of proclivities and passions. Of course some skills are financially more desirable than others, perhaps disproportionally so. But I hesitate to think of the wholeness of life as a singular competition. If it is, then it probably most resembles "Little Miss Sunshine"; grotesque, and ultimately meaningless. What a dreadful, colorless world it would be if everyone competed on the same spectrum. 
 
@@ -22,9 +22,9 @@ He might be a programming wiz, but maybe he can't cook an egg without a fire ext
 
 > "A species in which everyone was General Patton would not succeed, any more than would a race in which everyone was Vincent van Gogh. I prefer to think that the planet needs athletes, philosophers, sex symbols, painters, scientists; it needs the warmhearted, the hardhearted, the coldhearted, and the weakhearted. It needs those who can devote their lives to studying how many droplets of water are secreted by the salivary glands of dogs under which circumstances, and it needs those who can capture the passing impression of cherry blossoms in a fourteen-syllable poem or devote twenty-five pages to the dissection of a small boy’s feelings as he lies in bed in the dark waiting for his mother to kiss him goodnight" - Susan Cain
 
-Generalists have great breadth of knowledge; Jack of all trade, master of none. Specialists have great depth of knowledge; a mile deep but 3 inches in diameter. No one knows everything about everything. No one person can make a pencil by themselves (even though you can buy a dozen for 2 dollars at Staples). The infinite complexity of our modern world only works because we rely on each other's skill and expertise. How beautiful and inspiring!
+Generalists have great breadth of knowledge; Jack of all trade, master of none. Specialists have great depth of knowledge; a mile deep but 3 inches in diameter. No one knows everything about everything. No one person can make a pencil by themselves (even though you can buy a dozen for 2 dollars at Staples). The infinite complexity of our modern world only works because we rely on each other's skills and expertise. How beautiful and inspiring!
 
-With all of that in mind, I think yes! The world is indeed full of incredibly smart people. 
+With all of that in mind, I think yes indeed! The world is full of smart people. 
 
 
 
