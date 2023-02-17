@@ -63,7 +63,7 @@ After much deliberation, one thought seemed to be the deciding factor for Darwin
 
 Marry—Mary—Marry Q.E.D.
 
-Let's try to overlook Darwin's gender role bias as credulity of another era, and a sign of our moral progress, and react to it with amusement rather than distaste. Times have changed, and so have we. This article isn't about the content of Darwin's journal entry anyways! Rather it is about the act of him rationalizing at all.
+Let's try to overlook Darwin's gender role bias as credulity of another era, and a sign of our moral progress, and react to it with amusement rather than distaste. This article isn't about the content of Darwin's journal entry anyways! Rather it is about the act of him rationalizing at all.
 
 
 
