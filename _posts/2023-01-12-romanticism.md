@@ -14,7 +14,7 @@ Wrote Charles Darwin in his personal journal on November 11, 1838. No, he was no
 
 Darwin was a workaholic, and he was not always committed to the idea of marriage. Prior to "the day", Darwin spent 5 years traveling around the world on the ship HMS Beagle. He worked incessantly and his health suffered as a result. At one point, he noted that he had "an uncomfortable palpitation of the heart", and was advised by his doctor to stop all work immediately.
 
-A few months prior to his proposal, on April 7, 1838, Darwin mused on the Pros and Cons of marriage. [You can read his journal entries here.](https://www.darwinproject.ac.uk/tags/about-darwin/family-life/darwin-marriage) What spoke to me wasn't so much the timeless, and perhaps false, cultural tension between family and career, but the incredibly rational way he approached the question of marriage, in a way that is strange for the modern era.
+A few months prior to his proposal, on April 7, 1838, Darwin mused on the Pros and Cons of marriage. [You can read his journal entries here.](https://www.darwinproject.ac.uk/tags/about-darwin/family-life/darwin-marriage) What spoke to me wasn't so much the timeless cultural tension between family and career, but the incredibly rational way he approached the question of marriage.
 
 
 
@@ -41,7 +41,7 @@ To summarize his journal entry:
 
 * Children
 * Constant companion and friend in old age
-* Objective to be loved and played with. Better than a dog anyhow (Jesus... Darwin!)
+* Objective to be loved and played with. Better than a dog anyhow (wow... Darwin!)
 * Someone to take care of the house
 * Charm of music, female chit-chat which is good for ones health
 * Intolerable to think of spending one's life alone, working like a neuter bee.
@@ -63,9 +63,7 @@ After much deliberation, one thought seemed to be the deciding factor for Darwin
 
 Marry—Mary—Marry Q.E.D.
 
-Let's try to overlook Darwin's gender role bias as credulity of another era, and a sign of our moral progress, and react to it with amusement rather than distaste. This article isn't about the content of Darwin's journal entry anyways! Rather it is about the act of him rationalizing at all.
-
-
+Let's try to overlook Darwin's gender role bias as credulity of another era, and a sign of our moral progress. This article isn't about the content of Darwin's journal entry anyways! 
 
 
 
