@@ -42,7 +42,7 @@
           <div class="navbar-menu">
             <ul class="navbar-links">
               <li class="navbar-item"><a class="navbar-link" href="index.html">Home</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="cv.pdf">CV</a></li>
+              <li class="navbar-item"><a class="navbar-link" href="cv.html">CV</a></li>
               <li class="navbar-item"><a class="navbar-link" href="engineering.html">Engineering</a></li>
               <li class="navbar-item"><a class="navbar-link" href="musing.html">Blog</a></li>
               <li class="navbar-item"><a class="navbar-link" href="about.html">About</a></li>
@@ -56,9 +56,9 @@
     <!-- JUMBOTRON -->
     <section class="jumbotron">
       <img src="assets/img/profile-pic.jpg" alt="Avatar" class="avatar">
-      <h1>Professional Tinkerer. Writing code and writing prose.</h1>
-      <p>Hi, My name is Robert</p>
-      <p>Welcome to my personal website!</p>
+      <h1>Hi👋 My name is Robert</h1>
+      <p>I spend my time writing code and writing prose. Welcome to my personal website.</p>
+      <p>Lousy writer; Acceptable Programmer; Alright Engineer; Master Tinkerer</p>
 
       <div class="author-more">
         <a href="#my-projects" class="button">Projects</a>
@@ -168,7 +168,7 @@
       <p class="uni-company">Degenkolb Engineers. <span>2021 - present</span></p>
       <div class="details">
         <div class="inner-content">
-          Design & analysis of new hospital buildings in California (HCAI/OSHPD projects). Seismic retrofit of existing buildings. Implementation of new computational tools & technologies to streamline workflow across the company. Several other R&D efforts.
+          Design & analysis of new hospital buildings in California (HCAI/OSHPD projects). Seismic retrofit of existing buildings. Implementation of new computational tools & technologies to streamline workflow across the company + several other R&D efforts.
         </div>
       </div>
 
@@ -263,15 +263,15 @@
 
     <!-- BODY: Projects -->
     <section class='resume-content' style="height:750px;" id="my-projects"> 
-      <h1>Project</h1>
+      <h1>Projects</h1>
       <br>
       <div style="position:relative;"></div>
 
 
       <div class="tabs">
         <div class="tab-header">
-          <div class="active-tab">EZPZ Section Analysis</div>
-          <div>MSApy</div>
+          <div class="active-tab">fapp</div>
+          <div>EZPZ Section Analysis</div>
           <div>Automating spColumn</div>
           <div>Framing Automation in Dynamo</div>
           <div>Roof Optimization in Dynamo </div>
@@ -288,12 +288,12 @@
 
           <div class="active-tab">
             <div class="project-title"></div>
-            <img src="assets/img/EZPZ.gif" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/fapp.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              EZPZ is a light weight implementation of fiber section analysis in Python. Concrete sections may be defined using various uniaxial material models such as elastic-perfectly plastic steel fibers and Hognestad concrete fiber models. Once the section has been defined, a moment curvature analysis can be conducted with beautiful visualizations.
+              fapp, pronounced "F - app", stands for Frame Analysis Program in Python. It is a lightweight and easy-to-use Python implementation of the Finite Element Method (FEM). Perform first-order elastic analyses of any 3-D frame structure and visualize results with a fully interactive web browser interface.
               <br>
               <br>
-              This was a very fun project and I plan to extend it in the future when I have more time. The object-oriented program design is very intuitive to understand. Here's a closer look at it: <a href="robwang.io/engineering/2022/04/12/EZPZ.html">Link to devlog</a>
+              This was an incredibly fun and rewarding project. I've implemented the direct stiffness method several times throughout my education. First in Excel/VBA, then in MATLAB, and now in Python. I think I've really struck gold here with how concise, powerful, and easy-to-use this is! The entire source code is only around 500 lines if you don't count comments and the visualization functionalities. <a href="https://github.com/wcfrobert/fapp">Link to GitHub repo</a>
 
             </p>
           </div>
@@ -302,15 +302,13 @@
 
           <div>
             <div class="project-title"></div>
-            <img src="assets/img/msapy.gif" alt="animated-gif">
+            <img src="assets/img/EZPZ.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              MSApy is an open-source implementation of direct stiffness method in Python. Can be used for analysis of any three-dimensional truss or frame structures. Furthermore, I implemented a nifty visualization engine with Plotly. <a href="https://github.com/wcfrobert/MSApy">source code here.</a>
+              EZPZ is a light weight implementation of fiber section analysis in Python. Concrete sections may be defined using various uniaxial material models such as elastic-perfectly plastic steel fibers and Hognestad concrete fiber models. Once the section has been defined, a moment curvature analysis can be conducted with beautiful visualizations.
               <br>
               <br>
-              It's pretty cool to be able to perform first-order elastic analysis in Python directly. No more relying on clunking ETABS and SAP APIs. 
-              <br>
-              <br>
-              The package is only about 1200 lines of code with object-oriented programming design. Some features: Timenshenko frame elements which accounts for shear deformation. support settlement, temperature load, self-weight modifiers, member-end hinges, etc.
+              This was a very fun project and I plan to extend it in the future when I have more time. The object-oriented program design is very intuitive to understand. Here's a closer look at it: <a href="robwang.io/engineering/2022/04/12/EZPZ.html">Link to devlog</a>
+
             </p>
           </div>
 

@@ -1776,11 +1776,10 @@ results = canvas.find_overlapping(x1,y1,x2,y2)
 
 <hr>
 
-This section is dedicated to random conceptual stuff.
 
 ## Virtual Environment, Interpreter, PATH
 
-When installing python with Anaconda, it comes with its own virtual environment with its separate instance of python installation along with a massive collection of python packages. It's a standard "distribution" of python for data scientist who doesn't want to worry about the little details like managing environments and packages. To run the Anaconda version of python:
+When installing python with Anaconda, it comes with its own massive bundle of popular and commonly-used python packages. Think of it like a "battery-included" distribution of python popular amongst data scientist and engineers who don't want to worry about managing dependencies and virtual environments. To run the Anaconda version of python:
 
 1. Use anaconda command prompt, spyder, or jupyter notebook
 2. Use a regular system terminal, then type in the following:
@@ -1807,19 +1806,50 @@ C:\Users\wcfro\AppData\Local\Programs\Python\Python311\python.exe myscript.py
 python myscript.py
 ```
 
-For many software out there, the exact version of every package you are using is important. There is a huge, complex web of dependency that most of us don't want to worry about.
+For many existing software out there, the exact version of every package you are using is important. Many server applications are probably still running python 2.0. Backward compatibility isn't always kept between the complex web of dependencies. Most of us don't want to worry about that. 
 
-For example:
-* when you created a script, you used python 3.7, pkgA v2.0, pkgB v3.0
-* your user has python 3.11, pkgA v1.5, pkgB v3.5. For some reason, your code does not work on his computer...
+Instead, anytime you start a new project, it helps to create a "sandbox" that is isolated from your root installation of python and its site packages. There are tools out there that allows other users to create an exact replica of your sandbox. 
 
-So he re-installs python and makes sure everything matches your config. All good! After week or so, he realizes that this re-installation breaks some of his other codes that relies on his installation of pkgB v3.5... Does he have to keep re-installing stuff just to switch between different codes?
-
-Virtual environments allow your users to re-create exactly your configuration in a isolated test-bed! This is done through:
 * pip - python's built-in package manager. Use to install packages like numpy
-* requirement.txt - put a file in your package that specifies version of everything you imported
 * venv - or other virtual environment managers. You can install library in your "base environment", or you can create specific environments for specific projects!
 
+Here are the steps to go from an empty folder to a fully set-up python project environment
+
+```python
+# 0.) Check if python is installed
+py --version
+
+# 1.) Create a virtual environment stored in folder called "venv". This will contain python.exe as well as packages
+py -m venv venv
+
+# 2.) Activate environment:
+venv/Scripts/activate
+
+# 3.) Check if pip is available
+pip --version
+
+# 4.) Optional but you may want to upgrade pip
+pip install --upgrade pip
+
+# 5.) install from requirements.txt
+pip install -r requirements.txt
+
+# 6.) Or if there is no requirements.txt and you want to install specific packages
+pip install numpy
+
+# 7.) Now you are ready to go
+py main.py
+
+# 8.) If you need to exit the venv
+deactivate
+
+# 9.) Generate a requirements.txt for sharing with other people
+pip freeze > requirements.txt
+    
+
+# If you are using pycharm, go to the "Tools" drop down menu, click on "sync python requirements" to generate requirements.txt
+# When you open a new project with pycharm, a tooltip should automatically pop up telling you to install stuff from requirements.txt
+```
 
 
 

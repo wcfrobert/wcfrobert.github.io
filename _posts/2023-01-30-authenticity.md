@@ -8,33 +8,17 @@ date: 2023-01-30
 tags: thoughts
 ---
 
-Why do I read? Is it to satisfy my curiosity and relish in the joy of learning? Or am I trying to parrot quotes from books and impress people with how smart and knowledgeable I am? 
+## Some Questions to Think About
 
----
+- Why do I read? Is it to satisfy my curiosity and relish in the joy of learning? Or am I trying to parrot quotes from books and impress people with how smart and knowledgeable I am? 
+- Why do I write blog posts? Is it a genuine attempt at improving my writing? Or am I a narcissist trying to show the world how different I am? How unique and profound I can be with all my thoughts and musings?
+- Why do I exercise? Is it to better my health? Or is it purely for vanity so I can increase my dating prospect? 
+- Why do I cook for my friends? Am I genuinely trying to serve them great food and bring them happiness? Or am I flexing on them with my cooking skills to satisfy my ego? 
+- Why do I travel and take pictures? Is it to journal the exciting adventures of my life, so I can look back with nostalgia and delight when I'm older? Or is it to craft an fake image on social media so others won't think I live a boring life? 
+- Am I really a kind person? Or am I selfishly trying to craft an image of someone who is a kind person?
+- Why do I enjoy classical music? Why do I drink wine? Why do I drink coffee? Why do I do anything? 
 
-Why do I write blog posts? Is it a genuine attempt at improving my writing? Or am I a narcissist trying to show the world how different I am? How unique and profound I can be with all my thoughts and musings?
-
----
-
-Why do I exercise? Is it to better my health? Or is it purely for vanity so I can increase my dating prospect? 
-
----
-
-Why do I cook for my friends? Am I genuinely trying to serve them great food and bring them happiness? Or am I flexing on them with my cooking skills to satisfy my ego? 
-
----
-
-Why do I travel and take pictures? Is it to journal the exciting adventures of my life, so I can look back with nostalgia and delight when I'm older? Or is it to craft an fake image on social media so others won't think I live a boring life? 
-
----
-
-Am I really a kind person? Or am I selfishly trying to craft an image of someone who is a kind person?
-
----
-
-Why do I enjoy classical music? Why do I drink wine? Why do I drink coffee? Why do I do anything? 
-
----
+## Individuation
 
 When you stare into the abyss, it stares right back at you. It's quite agonizing to look into the recesses of your unconsciousness. Is it worth the identity crisis? All the ugliness, repressed feelings, primitive emotions, complexes, insecurities, emotional baggage. It'll shake the very foundation of who you think you are. I believe this is known as "confronting your shadows" in Jungian psychology, and it's apparently one of the first step towards an authentic self; a process Carl Jung calls "individuation". 
 
