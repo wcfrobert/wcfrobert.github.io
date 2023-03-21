@@ -26,9 +26,9 @@ He might be a programming wiz, but maybe he can't cook an egg without a fire ext
 
 > "A species in which everyone was General Patton would not succeed, any more than would a race in which everyone was Vincent van Gogh. I prefer to think that the planet needs athletes, philosophers, sex symbols, painters, scientists; it needs the warmhearted, the hardhearted, the coldhearted, and the weakhearted. It needs those who can devote their lives to studying how many droplets of water are secreted by the salivary glands of dogs under which circumstances, and it needs those who can capture the passing impression of cherry blossoms in a fourteen-syllable poem or devote twenty-five pages to the dissection of a small boy’s feelings as he lies in bed in the dark waiting for his mother to kiss him goodnight" - Susan Cain
 
-Generalists have great breadth of knowledge; Jack of all trade, master of none. Specialists have great depth of knowledge; a mile deep but 3 inches in diameter. No one knows everything about everything. No one person can make something as mundane as a pencil all by themselves (even though you can buy a dozen for 2 dollars at Staples). The infinite complexity of our modern world only works because we rely on each other, for we each have our own unique skills and expertise. How beautiful and inspiring!
+Generalists have great breadth of knowledge; Jack of all trade, master of none. Specialists have great depth of knowledge; a mile deep but 3 inches in diameter. No one knows everything about everything. No one person can make something as mundane as a pencil all by themselves (even though you can buy a dozen for 2 dollars at Staples). The infinite complexity of our modern world only works because we rely on each other, and trust each other with our own unique skills and expertise. How beautiful and inspiring!
 
-With all of that in mind, I think yes indeed! The world is full of smart people. 
+With all of that in mind, yes indeed! The world is full of smart people. 
 
 
 

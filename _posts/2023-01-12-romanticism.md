@@ -33,7 +33,7 @@ Excerpt from Darwin's Journal (formatted slightly to be more readable):
 >
 > Marry—Mary—Marry Q.E.D.,
 
-How rational... One might even say Darwin is being overly robotically when it comes to romance. How weird it is for us modern audiences to see him mechanically listing out pros and cons and letting his emotions take a backseat. Love should be intuitive right? He should just "feel" right with this other person if she is indeed his soulmate. Where is the love? Darwin?
+How rational... One might even say it's overly robotic to approach romance this way? Mechanically listing out pros and cons and letting emotions take a backseat. Shouldn't love be intuitive? Shouldn't it just "feel" right when you find "the one"? Where is the love? Darwin?
 
 
 
@@ -41,13 +41,13 @@ How rational... One might even say Darwin is being overly robotically when it co
 
 The impetus for this post came from Tim Urban's amazing article on finding the right partner: [https://waitbutwhy.com/2014/02/pick-life-partner.html](https://waitbutwhy.com/2014/02/pick-life-partner.html).
 
-For things like love, marriage, and finding your soulmate, our modern sensitivities tend to scoff at marriage for political or business interests. How could anyone marry for any reason other than love? While I mostly agree with that sentiment, we swung pretty heavily towards romanticism over the past few centuries. We go to school for 4+ years to be an engineer, 10+ years to be a doctor. Yet when it comes to what is arguably the most important decision of our lives... Let's just wing it! Rather than relying on reason for such a momentous decision, we rely on vague emotions and intuition.
+For things like love, marriage, and finding your soulmate, our modern sensitivities tend to scoff at marriage for political or business interests. How could anyone marry for any reason other than love? While I mostly agree with that sentiment, we swung pretty heavily towards romanticism over the past few centuries. We go to school for 4+ years to be an engineer, 10+ years to be a doctor. Yet when it comes to what is arguably the most important decision of our lives, we kind of just wing it! Rather than relying on reason for such a momentous decision, we rely on vague emotions and intuition.
 
 > "When you choose a life partner, you’re choosing a lot of things, including your parenting partner and someone who will deeply influence your children, your eating companion for about 20,000 meals, your travel companion for about 100 vacations, your primary leisure time and retirement friend, your career therapist, and someone whose day you’ll hear about 18,000 times" - Tim Urban
 
 > "The respectable way to meet a life partner today is by dumb luck" - Tim Urban
 
-On the other end of the spectrum is the loveless marriage, one borne purely out of business or political reasons. Contrary to what most people might think, marrying for love was considered exceedingly rare for most of human history. The notion that people should get married for romantic reasons was thought of as naïve, perhaps even dangerous. Shakespeare's "Romeo and Juliet" was a warning, not a celebration, of love. Beware! Young and foolish lovers with your fleeting teenage infatuations. Tragedy awaits for those who abandon reason in favor of unbounded passion.
+On the other end of the spectrum is the loveless marriage, one borne purely out of business or political interests. Contrary to what most people might think, marrying for love was considered exceedingly rare for most of human history. The notion that people should get married for romantic reasons was thought of as naïve, perhaps even dangerous. Shakespeare's "Romeo and Juliet" was a warning, not a celebration, of love. Beware! Young and foolish lovers with your fleeting teenage infatuations. Tragedy awaits for those who abandon reason in favor of unbounded passion.
 
 The romantic in me is repulsed by the idea of not marrying for love. Yet the importance of finding the right partner is a solid reminder that it behooves us to keep our wits and strike a balance. Despite our culture's over-correction towards emotion over reason, I'm still a believer in romanticism. If there's any wisdom in "YOLO", it's exactly that... you only live once. Marrying the wrong person and going through a soul-crushing divorce is tragic. But on the other hand, what could be more tragic than a life of regret, a life of "what-if", a life devoid of romantic love that so richly defines the human experience. 
 

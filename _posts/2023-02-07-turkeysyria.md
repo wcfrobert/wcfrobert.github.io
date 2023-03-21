@@ -8,13 +8,13 @@ date: 2023-02-07
 tags: thoughts
 ---
 
-Like the rest of the world, I’ve been reading articles after articles of the 7.8 and 7.5 magnitude earthquakes that struck Turkey and Syria earlier this week. Needless to say, I’m pretty emotionally disturbed right now. Thousands of photos and videos flooded the internet Monday morning, making this whole tragedy that much more poignant and stomach-churning. 
+Like the rest of the world, I’ve been reading article after article of the 7.8 and 7.5 magnitude earthquakes that struck Turkey and Syria earlier this week. Needless to say, I’m pretty emotionally disturbed right now. Thousands of photos and videos flooded the internet Monday morning, making this whole tragedy that much more poignant and stomach-churning. 
 
-* A heartbreaking photo of a father, sitting in the ruins of what was once an apartment building. He is bundled up in a near fetal position with a thousand-yard stare, holding a hand that's reaching out through some tiny crevice. The ashened, lifeless hand belongs to his dead fifteen year old daughter.
+* A heartbreaking photo of a father, sitting in the ruins of what was once an apartment building. He is bundled up in a near fetal position with a thousand-yard stare, holding a hand that's reaching out through some tiny crevice. The ashened, lifeless hand belongs to his now dead fifteen year old daughter.
 
 * A devastating video of a young girl with her sibling; half of their bodies lodged in by concrete and webs of rebar. With hair and face coated in dust, they look longingly at the rescuers, with eyes that's seen too much for such young souls, “Get me out of here mister, I’ll do anything for you,” the older child whispers to rescuers. “I’ll be your servant,” she adds, as a rescuer replies, “No, no.”
 
-* An astonishing article detailing the miraculous survival of a newborn girl, rescued with her umbilical cords still attached to her now dead mother. In what had to be the most extreme end of human suffering, the mother gave birth while trapped underneath a collapsed building. I pray that the mother may rest peacefully knowing her baby is alive and well, that the rescuer found her baby in time.
+* An astonishing article detailing the miraculous survival of a newborn girl, rescued with her umbilical cords still attached to her dead mother. In what had to be the most extreme end of human suffering, the mother gave birth while trapped underneath a collapsed building. I pray that the mother may rest peacefully knowing her baby is alive and well, that the rescuer found her baby in time.
 
 One death is a tragedy. A thousand death becomes a statistic. While these stories are gut-wrenching, they serve as a helpful reminder that the casualty figures we see on headlines are <u>not just</u> numbers; they're the conglomeration of these heartbreaking stories multiplied 20,000+ times.
 
@@ -46,7 +46,7 @@ We know a big one will hit us eventually. **It is not a matter of if, it is a ma
 
 Unlike countries like Japan, which gets hit by a major earthquakes every decade or so, we tend to have some sort of collective amnesia when it comes to earthquakes. Immediately after the Northridge earthquake of 1994, roughly 2/3 of Cupertino homeowners had earthquake insurance. In 2019, that number is around 10%.
 
-In Japan, landlords can charge their tenants higher rent for properties that are seismically-isolated. Here, developers are hesitant to spend extra money going beyond code-minimum because they see no upside. Will an earthquake even happen in the building's 50 year design life? Existing building owners are reluctant to spend millions of dollars retrofitting their building in ways that the tenants won't even notice. Who can blame them. We are not well-equipped at dealing with low-probability high-consequence events like earthquakes on the West Coast.
+In Japan, landlords can charge their tenants higher rent for properties that are seismically-isolated. Here, developers are hesitant to spend extra money going beyond code-minimum because they see no upside. Will an earthquake even happen in the building's 50 year design life? Existing building owners are reluctant to spend millions of dollars retrofitting their building in ways that the tenants won't even notice. Who can blame them. We are not well-equipped at dealing with low-probability high-consequence events like this.
 
 
 
@@ -93,9 +93,9 @@ There's a nice analogy to car crashes I read somewhere online.
 * If you get into a car accident, your car might be totaled, but at least your life will be protected.
 * If an earthquake happens, the building might be damaged beyond repair, but at least the occupants will be safe. 
 
-Earthquake engineering is still evolving as a field. Innovations in the AEC industry tend to be slow due to liability and bureaucratic red tapes. Here are some interesting trends today that will most likely be widely adopted in the future:
+Earthquake engineering is still evolving as a field. Innovations in the AEC industry tend to be slow due to liability and bureaucratic red tapes. Here are some interesting trends today that I hope will become widely adopted in the future:
 
-* Adding replaceable "fuses" to the building to dissipate most of the earthquake energy. It would be inconceivable to design a multi-million dollar circuit without safety fuses to protect it, but that's exactly what we are doing right now with the code-minimum building design.
+* Adding replaceable "fuses" to the building to dissipate most of the earthquake energy. It would be inconceivable to design a multi-million dollar circuit without fuses to protect it, but that's exactly what we are doing right now with the code-minimum building design. I strategically weakening the structure at key locations, fuses:
   * isolate damage to specific areas of the building
   * massively reduce repair complexity
   * massively reduce down time
@@ -104,7 +104,7 @@ Earthquake engineering is still evolving as a field. Innovations in the AEC indu
 * Self-centering mechanisms to counteract the tendency for building to get out-of-plumb after an earthquake.
 * Base-isolation which has always been the gold standard for building earthquake protection
 
-None of these options are particularly cost-prohibitive. Yes, they may increase the project cost a few percentage points, but that is nothing compared to the possible losses incurred after an earthquake. This is more of a policy and societal value issue. Developers and the public needs to know these options exist and that there are tangible benefits for using these technologies.
+None of these options are particularly cost-prohibitive. Yes, they may increase the project cost a few percentage points, but that is nothing compared to the possible losses incurred after an earthquake. This is more of a policy and public awareness issue. Developers and the public needs to know these options exist and that there are tangible benefits for employing these technologies.
 
 
 
@@ -123,7 +123,7 @@ The most vulnerable buildings are:
 The safest place you can be during an earthquake is inside a hospital, elementary school, police station, fire station, or buildings for essential services. These structures are designed to higher regulatory standards and are required to remain operational even after an earthquake. 
 
 * Single family homes are also most likely okay. Dry walls might crack, bookshelves might fall, but these structures are just too light for the seismic acceleration to do any significant structural damage
-* Super-tall skyscrapers are also quite safe from earthquakes. The frequency content of most earthquakes is too high to match the skyscrapers' low frequency of vibration. The design of many super-tall buildings are actually governed by wind and occupancy comfort considerations over earthquakes. You might still get very sea-sick on the top floor. In some ways, you're probably safer inside as it protects you from falling debris and cladding. [Check out this video which shows how building's period of vibration can drastically affect its behavior](https://www.iris.edu/hq/inclass/video/building_resonance__boss_model_construction__use). I can't comment on the soil quality issue in SF though. The level of uncertainty in geotechnical engineering is even more staggered. I'm not a geotechnical engineer so I can't make an informed opinion beyond that.
+* Super-tall skyscrapers are also quite safe from earthquakes. The frequency content of most earthquakes is too high to match the skyscrapers' low frequency of vibration. The design of many super-tall buildings are actually governed by wind and occupancy comfort considerations over earthquakes. You might still get very sea-sick on the top floor. In some ways, you're probably safer inside as it protects you from falling debris and cladding. [Check out this video which shows how building's period of vibration can drastically affect its behavior](https://www.iris.edu/hq/inclass/video/building_resonance__boss_model_construction__use). One area of uncertainty is soil quality; especially in SF. I'm not a geotechnical engineer so I can't make an informed opinion beyond that.
 
 
 
