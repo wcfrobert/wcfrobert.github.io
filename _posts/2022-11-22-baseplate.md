@@ -30,28 +30,25 @@ My god this turned out to be a colossal undertaking... The mother of all scope c
   * [4.2 Small Moment Base Plate ($$e \leq e_{crit}$$)](#42-small-moment-base-plate----e--leq-e--crit----)
   * [4.3 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution](#43-large-moment-base-plate----e---e--crit-------simplified-closed-form-solution)
   * [4.4 Large Moment Base Plate ($$e > e_{crit}$$) - General Solution](#44-large-moment-base-plate----e---e--crit-------general-solution)
-- [5.0 Failure Mode 1: Concrete Bearing](#50-failure-mode-1--concrete-bearing)
-- [6.0 Failure Mode 2: Base Plate Bending](#60-failure-mode-2--base-plate-bending)
-- [7.0 Failure Mode 3: Anchor Rod Tension](#70-failure-mode-3--anchor-rod-tension)
-- [8.0 Failure Mode 4: Anchor Rod Pullout](#80-failure-mode-4--anchor-rod-pullout)
-- [9.0 Failure Mode 5: Concrete Tension Breakout](#90-failure-mode-5--concrete-tension-breakout)
+- [5.0 Failure Mode 1 - Concrete Bearing](#50-failure-mode-1---concrete-bearing)
+- [6.0 Failure Mode 2 - Base Plate Bending](#60-failure-mode-2---base-plate-bending)
+- [7.0 Failure Mode 3 - Anchor Rod Tension](#70-failure-mode-3---anchor-rod-tension)
+- [8.0 Failure Mode 4 - Anchor Rod Pullout](#80-failure-mode-4---anchor-rod-pullout)
+- [9.0 Failure Mode 5 - Concrete Tension Breakout](#90-failure-mode-5---concrete-tension-breakout)
   * [9.1 Concrete Breakout Capacity](#91-concrete-breakout-capacity)
   * [9.2 How to Add More Capacity](#92-how-to-add-more-capacity)
-- [10.0 Failure Mode 6: Concrete Side Face Blowout](#100-failure-mode-6--concrete-side-face-blowout)
+- [10.0 Failure Mode 6 - Concrete Side Face Blowout](#100-failure-mode-6---concrete-side-face-blowout)
 - [11.0 Treatment of Shear Demand](#110-treatment-of-shear-demand)
-- [12.0 Option 1: Base Plate Design With Shear Lugs](#120-option-1--base-plate-design-with-shear-lugs)
+- [12.0 Option 1 - Base Plate Design With Shear Lugs](#120-option-1---base-plate-design-with-shear-lugs)
   * [12.1 Introduction to Shear Lugs](#121-introduction-to-shear-lugs)
-  * [12.2 Failure Mode 7a: Shear Lug Bearing Capacity](#122-failure-mode-7a--shear-lug-bearing-capacity)
-  * [12.3 Failure Mode 7b: Shear Lug Breakout Capacity](#123-failure-mode-7b--shear-lug-breakout-capacity)
-  * [12.3 Failure Mode 7c: Shear Lug Bending](#123-failure-mode-7c--shear-lug-bending)
-- [13.0 Option 2: Base Plate Design Without Shear Lugs](#130-option-2--base-plate-design-without-shear-lugs)
-  * [13.1 Failure Mode 8a: Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)](#131-failure-mode-8a--shear-with-lever-arm--etag-001-annex-c-5232-)
-  * [13.2 Failure Mode 8b: Shear Pryout](#132-failure-mode-8b--shear-pryout)
-  * [13.3 Failure Mode 8c: Combined Tension and Shear Interaction](#133-failure-mode-8c--combined-tension-and-shear-interaction)
-- [Appendix A: Base Rotational Spring Stiffness](#appendix-a--base-rotational-spring-stiffness)
-
-
-
+  * [12.2 Failure Mode 7a - Shear Lug Bearing Capacity](#122-failure-mode-7a---shear-lug-bearing-capacity)
+  * [12.3 Failure Mode 7b - Shear Lug Breakout Capacity](#123-failure-mode-7b---shear-lug-breakout-capacity)
+  * [12.3 Failure Mode 7c - Shear Lug Bending](#123-failure-mode-7c---shear-lug-bending)
+- [13.0 Option 2 - Base Plate Design Without Shear Lugs](#130-option-2---base-plate-design-without-shear-lugs)
+  * [13.1 Failure Mode 8a - Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)](#131-failure-mode-8a---shear-with-lever-arm--etag-001-annex-c-5232-)
+  * [13.2 Failure Mode 8b - Shear Pryout](#132-failure-mode-8b---shear-pryout)
+  * [13.3 Failure Mode 8c - Combined Tension and Shear Interaction](#133-failure-mode-8c---combined-tension-and-shear-interaction)
+- [Appendix A - Base Rotational Spring Stiffness](#appendix-a---base-rotational-spring-stiffness)
 
 
 
@@ -779,7 +776,7 @@ With all that derivation behind us, let's clear up notations that you'll see rep
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 5.0 Failure Mode 1: Concrete Bearing
+# 5.0 Failure Mode 1 - Concrete Bearing
 
 <hr>
 
@@ -841,7 +838,7 @@ Some notes:
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 6.0 Failure Mode 2: Base Plate Bending
+# 6.0 Failure Mode 2 - Base Plate Bending
 
 <hr>
 
@@ -943,7 +940,7 @@ Some other design notes:
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 7.0 Failure Mode 3: Anchor Rod Tension
+# 7.0 Failure Mode 3 - Anchor Rod Tension
 
 <hr>
 
@@ -1019,7 +1016,7 @@ n<sub>t</sub> is the number of thread per inch. Thread geometry for unified coar
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 8.0 Failure Mode 4: Anchor Rod Pullout
+# 8.0 Failure Mode 4 - Anchor Rod Pullout
 
 <hr>
 
@@ -1076,7 +1073,7 @@ There are two ways to get bearing area:
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 9.0 Failure Mode 5: Concrete Tension Breakout
+# 9.0 Failure Mode 5 - Concrete Tension Breakout
 
 <hr>
 
@@ -1311,7 +1308,7 @@ Punching shear assumes a 45 degree failure plane; breakout assumes 35 degree. Ul
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 10.0 Failure Mode 6: Concrete Side Face Blowout
+# 10.0 Failure Mode 6 - Concrete Side Face Blowout
 
 <hr>
 
@@ -1458,7 +1455,7 @@ Two codified methods for shear lug design are currently available. AISC design g
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 12.0 Option 1: Base Plate Design With Shear Lugs
+# 12.0 Option 1 - Base Plate Design With Shear Lugs
 
 <hr>
 
@@ -1496,7 +1493,7 @@ $$M_{lug} = V_u \times (h_{grout} + h_{sl}/2)$$
 
 
 
-## 12.2 Failure Mode 7a: Shear Lug Bearing Capacity
+## 12.2 Failure Mode 7a - Shear Lug Bearing Capacity
 
 17.11.2.1 - Bearing capacity of shear lug can be calculated as:
 
@@ -1527,7 +1524,7 @@ $$DCR = \frac{V_u}{\phi V_{brg,sl}}$$
 
 
 
-## 12.3 Failure Mode 7b: Shear Lug Breakout Capacity
+## 12.3 Failure Mode 7b - Shear Lug Breakout Capacity
 
 As was the case with tension breakout, shear breakout is long and complicated. A good alternative is to always provide enough shear anchor reinforcements.
 
@@ -1645,7 +1642,7 @@ $$DCR = \frac{V_u}{\phi V_n}$$
 
 
 
-## 12.3 Failure Mode 7c: Shear Lug Bending
+## 12.3 Failure Mode 7c - Shear Lug Bending
 
 <img src="/assets/img/blog/baseplate25.png" style="width:40%;"/>
 *Figure 27: Shear Lug Bending*
@@ -1694,12 +1691,12 @@ Again, you may add stiffeners if you wish. The section properties can be calcula
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 13.0 Option 2: Base Plate Design Without Shear Lugs
+# 13.0 Option 2 - Base Plate Design Without Shear Lugs
 
 <hr>
 
 
-## 13.1 Failure Mode 8a: Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)
+## 13.1 Failure Mode 8a - Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)
 
 ACI 318 chapter 17 is silent on shear with lever arm (commonly seen in cladding attachments). For more discussion on this subject, refer to the textbook "Anchorage in Concrete Construction" by Eligehausen, Malle, and Silva (2006). The research findings therein are codified in the European Organization for Technical Approval (ETAG 001 Annex C). This is the methodology used by HILTI PROFIS.
 
@@ -1749,7 +1746,7 @@ $$DCR = \frac{V_u / N}{\phi V_S^M}$$
 
 
 
-## 13.2 Failure Mode 8b: Shear Pryout
+## 13.2 Failure Mode 8b - Shear Pryout
 
 <img src="/assets/img/blog/baseplate26.png" style="width:25%;"/>
 
@@ -1770,7 +1767,7 @@ $$DCR = \frac{V_u}{\phi V_{cpg}}$$
 
 
 
-## 13.3 Failure Mode 8c: Combined Tension and Shear Interaction
+## 13.3 Failure Mode 8c - Combined Tension and Shear Interaction
 
 Shear and tension cannot be decoupled without bearing mechanisms as discussed in Section 11. We need to check the combined tension and shear interaction equations both in AISC and ACI.
 
@@ -1801,7 +1798,7 @@ $$(DCR_{t,max})^{5/3} + (DCR_{v,max})^{5/3} \leq 1.0$$
 <div style="page-break-after: always;"></div>
 <hr>
 
-# Appendix A: Base Rotational Spring Stiffness
+# Appendix A - Base Rotational Spring Stiffness
 
 <hr>
 

@@ -10,10 +10,14 @@ tags: programming
 
 In this notebook, I've gathered a whole bunch of code snippets that helps me along in my side projects.
 
+
 - [1.0 Getting Started](#10-getting-started)
   * [Programming Tips](#programming-tips)
   * [Installing Python](#installing-python)
   * [Working with Python](#working-with-python)
+  * [Installing Open-Source Packages](#installing-open-source-packages)
+  * [Creating a New GitHub Repo](#creating-a-new-github-repo)
+  * [Packaging a Project and Uploading to PyPi](#packaging-a-project-and-uploading-to-pypi)
 - [2.0 Basic Syntax](#20-basic-syntax)
   * [Code Structure](#code-structure)
   * [Basics](#basics)
@@ -22,12 +26,16 @@ In this notebook, I've gathered a whole bunch of code snippets that helps me alo
   * [Raising Exceptions](#raising-exceptions)
   * [Importing Modules](#importing-modules)
 - [3.0 Containers](#30-containers)
-  * [Lists []](#lists---)
-  * [Strings ""](#strings---)
-  * [Dictionaries {}](#dictionaries---)
-  * [Tuples ()](#tuples---)
-  * [Sets {}](#sets---)
-- [4.0 File I/O](#40-file-i-o)
+  * [Lists](#lists)
+  * [Strings](#strings)
+  * [Dictionaries](#dictionaries)
+  * [Tuples](#tuples)
+  * [Sets](#sets)
+- [4.0 File IO](#40-file-io)
+  * [Reading and Writing](#reading-and-writing)
+  * [Managing Working Directories](#managing-working-directories)
+  * [Paths](#paths)
+  * [Running a python script with Excel VBA](#running-a-python-script-with-excel-vba)
 - [5.0 Object-Oriented Programming](#50-object-oriented-programming)
 - [6.0 Numpy and Scipy](#60-numpy-and-scipy)
   * [Importing](#importing)
@@ -39,30 +47,35 @@ In this notebook, I've gathered a whole bunch of code snippets that helps me alo
   * [Substitution and Simplifying](#substitution-and-simplifying)
   * [Plotting](#plotting)
 - [8.0 Matplotlib](#80-matplotlib)
+  * [Object-Oriented Approach vs. Pyplot Functional Interface](#object-oriented-approach-vs-pyplot-functional-interface)
+  * [Initializing a Figure](#initializing-a-figure)
+  * [Plotting](#plotting-1)
+  * [Styling Basic](#styling-basic)
+  * [Annotation](#annotation)
+  * [Producing Animation Frames](#producing-animation-frames)
 - [9.0 Pandas](#90-pandas)
+  * [Some Common Operations](#some-common-operations)
+  * [Indexing Dataframes](#indexing-dataframes)
+  * [Querying Dataframes](#querying-dataframes)
 - [10.0 Plotly](#100-plotly)
-  * [Fundamentals](#fundamentals)
-  * [Example](#example)
-  * [Frames - Animations](#frames---animations)
-  * [How-To's](#how-to-s)
-- [11.0 Images, Graphics, Animation](#110-images--graphics--animation)
+  * [Introduction](#introduction)
+  * [Styling with Magic Underscore](#styling-with-magic-underscore)
+  * [Plotting Basics](#plotting-basics)
+  * [Basic Styling](#basic-styling)
+  * [Advanced Styling](#advanced-styling)
+- [11.0 Images - Graphics - Animation](#110-images---graphics---animation)
   * [Some Image Manipulation Algorithms](#some-image-manipulation-algorithms)
   * [Graphics and Animation](#graphics-and-animation)
-- [APPENDIX A: Conceptual Stuff](#appendix-a--conceptual-stuff)
-  * [Virtual Environment, Interpreter, PATH](#virtual-environment--interpreter--path)
-  * [Pass by reference vs. pass by value](#pass-by-reference-vs-pass-by-value)
-  * [Garbage Collection. Heaps and Stacks.](#garbage-collection-heaps-and-stacks)
-- [APPENDIX B: Styling Recommendation](#appendix-b--styling-recommendation)
-  * [Recommended Boiler Plate (Starter File)](#recommended-boiler-plate--starter-file-)
+- [APPENDIX A - Conceptual Stuff](#appendix-a---conceptual-stuff)
+  * [Virtual Environment - Interpreter - PATH](#virtual-environment---interpreter---path)
+  * [Pass by reference vs pass by value](#pass-by-reference-vs-pass-by-value)
+  * [Garbage Collection -  Heaps and Stacks.](#garbage-collection----heaps-and-stacks)
+- [APPENDIX B - Styling Recommendation](#appendix-b---styling-recommendation)
+  * [Recommended Boiler Plate Starter File](#recommended-boiler-plate-starter-file)
   * [Basics](#basics-2)
   * [Common](#common)
   * [Docstring standard](#docstring-standard)
 - [RANDOM NOTES](#random-notes)
-
-
-
-
-
 
 
 
@@ -138,14 +151,134 @@ Note the difference between terminal and python console!
 
 
 
+## Installing Open-Source Packages
+
+Here are the steps to go from an empty folder to a fully set-up python project environment
+
+```python
+# 1.) Download the package you're interested in on github
+git clone https://github.com/wcfrobert/SOMEPACKAGE.git
+
+# 2.) navigate to that folder
+cd SOMEPACKAGE
+
+# 3.) Create a virtual environment stored in folder called "venv". This will contain python.exe as well as packages
+py -m venv venv
+
+# 4.) Activate environment:
+venv/Scripts/activate
+
+# 5.) Optional but you may want to upgrade pip
+pip install --upgrade pip
+
+# 6.) install from requirements.txt that most open-source developers will include
+pip install -r requirements.txt
+
+# 7.) if you want to install specific packages
+pip install numpy
+
+# 8.) list out all the packages. See if you are missing something
+pip list
+
+# 8.) Once you have everything. Test run some scripts
+py main.py
+
+# If you are using pycharm, go to the "Tools" drop down menu, click on "sync python requirements" to generate requirements.txt
+# When you open a new project with pycharm, a tooltip should automatically pop up telling you to install stuff from requirements.txt
+
+
+
+# Here are some other special commands
+# If you need to exit the venv
+deactivate
+
+# Generate a requirements.txt for sharing with other people
+pip freeze > requirements.txt
+
+# check python or pip version
+py --version
+pip --version
+```
+
+The process is extremely similar if you are using Anaconda.
+
+```python
+git clone https://github.com/wcfrobert/SOMEPACKAGE.git
+cd SOMEPACKAGE
+conda create --name my_env
+conda activate my_env
+conda list
+# try to install everything you can with conda before using pip
+conda install numpy
+pip install -r requirements.txt
+conda deactivate
+```
+
+## Creating a New GitHub Repo
+
+```python
+# 1.) Create project locally and enable git
+    git init
+    git add .
+    git commit -m "first commit"
+
+# 2.) Create empty repo on github ideally with the same name. Copy the .git link that's generated
+    https://github.com/wcfrobert/YOURPACKAGE.git
+
+# 3.) In your terminal, connect to remote repo
+    git remote add origin https://github.com/wcfrobert/YOURPACKAGE.git
+
+# 4.) Then push to Github
+    git push -u origin master
+
+# subsequent updates
+git add .
+git commit -m "a message"
+git push origin master
+```
 
 
 
 
+## Packaging a Project and Uploading to PyPi
 
 
+```python
+# create a pyproject.toml and enter your project information inside the file
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 
+[project]
+name = "package name"
+version = "1.0.0"
+authors = [
+  { name="wcfrobert", email="youremail@hotmail.com" },
+]
+description = "short description"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/wcfrobert/yourpackage"
+"Bug Tracker" = "https://github.com/wcfrobert/yourpackage/issues"
+
+
+# package up files with build. Will create a folder called dist/
+    pip install --upgrade build
+    py -m build
+
+# install twine which is an upload tool to upload to PyPi. Make sure you have an account
+    pip install --upgrade twine
+    twine upload dist/*
+```
 
 
 
@@ -364,14 +497,14 @@ from mymodule import * # NOT RECOMMENDED
 
 Working with containers is probably the most important skill to have. There are four main types of containers:
 
-1. List - Ordered and mutable (can be modified). Lists are used when you want to easily append or index
-2. Tuples - Ordered list can is immutable (cannot be modified). Cannot assign any value to a tuple index
-3. Sets - Lists with only unique elements. Use when we care about existence but not duplicity. It is also useful for finding intersection/union of two sets
-4. Dictionaries - Conventionally referred to as a map. It is a key-value pair. Order is not guaranteed and you should NEVER try to sort or index a dictionary. If you are, there is probably a better way to approach the problem.
+1. List [] - Ordered and mutable (can be modified). Lists are used when you want to easily append or index
+2. Tuples () - Ordered list can is immutable (cannot be modified). Cannot assign any value to a tuple index
+3. Sets {} - Lists with only unique elements. Use when we care about existence but not duplicity. It is also useful for finding intersection/union of two sets
+4. Dictionaries {} - Conventionally referred to as a map. It is a key-value pair. Order is not guaranteed and you should NEVER try to sort or index a dictionary. If you are, there is probably a better way to approach the problem.
+5. Strings "" can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
-Strings can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
-## Lists []
+## Lists
 ```python
 # Fundamentals
 myList = []
@@ -434,7 +567,7 @@ list(myset), list(string), list(tuples), list(mydict.values())
 
 
 
-## Strings ""
+## Strings
 String operations are sometimes called "parsing" strings. It is one of the most common tasks in programming. Mastering string parsing will also translate to a mastery of operating with lists.
 
 ```python
@@ -484,7 +617,7 @@ The figure below illustrates a good way of thinking about list/spring slicing in
 
 
 
-## Dictionaries {}
+## Dictionaries
 ```python
 # Dictionaries are key-value Pairs. Key must be unique, value doesn't have to be
 # Basics
@@ -515,7 +648,7 @@ del mydict[key]				# remove entire key-value pair
 ```
 
 
-## Tuples ()
+## Tuples
 ```python
 # Tuple are just lists that cannot be modified nor appended
 myTuple = (1,2,3)
@@ -531,7 +664,7 @@ var1,var2 = func()
 ```
 
 
-## Sets {}
+## Sets
 ```python
 # Sets are kind of like list, but they only contain unique entries
 myset = set(myList)
@@ -581,7 +714,7 @@ discard(set1,set2) 		# Discard element from set1 if it exists in set 2
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 4.0 File I/O
+# 4.0 File IO
 
 <hr>
 
@@ -1647,7 +1780,7 @@ fig.update_layout(
 <div style="page-break-after: always;"></div>
 <hr>
 
-# 11.0 Images, Graphics, Animation
+# 11.0 Images - Graphics - Animation
 
 <hr>
 
@@ -1772,12 +1905,12 @@ results = canvas.find_overlapping(x1,y1,x2,y2)
 <div style="page-break-after: always;"></div>
 <hr>
 
-# APPENDIX A: Conceptual Stuff
+# APPENDIX A - Conceptual Stuff
 
 <hr>
 
 
-## Virtual Environment, Interpreter, PATH
+## Virtual Environment - Interpreter - PATH
 
 When installing python with Anaconda, it comes with its own massive bundle of popular and commonly-used python packages. Think of it like a "battery-included" distribution of python popular amongst data scientist and engineers who don't want to worry about managing dependencies and virtual environments. To run the Anaconda version of python:
 
@@ -1813,49 +1946,10 @@ Instead, anytime you start a new project, it helps to create a "sandbox" that is
 * pip - python's built-in package manager. Use to install packages like numpy
 * venv - or other virtual environment managers. You can install library in your "base environment", or you can create specific environments for specific projects!
 
-Here are the steps to go from an empty folder to a fully set-up python project environment
-
-```python
-# 0.) Check if python is installed
-py --version
-
-# 1.) Create a virtual environment stored in folder called "venv". This will contain python.exe as well as packages
-py -m venv venv
-
-# 2.) Activate environment:
-venv/Scripts/activate
-
-# 3.) Check if pip is available
-pip --version
-
-# 4.) Optional but you may want to upgrade pip
-pip install --upgrade pip
-
-# 5.) install from requirements.txt
-pip install -r requirements.txt
-
-# 6.) Or if there is no requirements.txt and you want to install specific packages
-pip install numpy
-
-# 7.) Now you are ready to go
-py main.py
-
-# 8.) If you need to exit the venv
-deactivate
-
-# 9.) Generate a requirements.txt for sharing with other people
-pip freeze > requirements.txt
-    
-
-# If you are using pycharm, go to the "Tools" drop down menu, click on "sync python requirements" to generate requirements.txt
-# When you open a new project with pycharm, a tooltip should automatically pop up telling you to install stuff from requirements.txt
-```
 
 
 
-
-
-## Pass by reference vs. pass by value
+## Pass by reference vs pass by value
 
 Passing by reference is akin to sending the URL to an object like a variable. This is usually done for *big* elements like a list or a plot. The caller and callee use the same variable.
 
@@ -1870,7 +1964,7 @@ Passing by parameter makes a whole separate copy (e.g. integers, strings, boolea
 
 
 
-## Garbage Collection. Heaps and Stacks.
+## Garbage Collection -  Heaps and Stacks.
 
 Stack is used for static memory allocation. It is optimized quite closely by the CPU and you do not need to do any memory management. Stack variables are local in nature and are deleted after a function executes. Size is limited and variables cannot be resized.
 
@@ -1892,14 +1986,14 @@ a='new string'
 <div style="page-break-after: always;"></div>
 <hr>
 
-# APPENDIX B: Styling Recommendation
+# APPENDIX B - Styling Recommendation
 
 <hr>
 
 For styling and standard formatting of your code. Refer to PEP 8: [Python Style Guide](https://www.python.org/dev/peps/pep-0008/). You don't need to follow the guideline exactly. But abiding by some of the rules here greatly improves readability. Some of the more common guidelines:
 
 
-## Recommended Boiler Plate (Starter File)
+## Recommended Boiler Plate Starter File
 
 ```python
 # Imports

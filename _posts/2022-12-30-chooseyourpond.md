@@ -31,7 +31,7 @@ Funny story, I've been training for a marathon recently. It's grueling. I hate r
 
 What an incredible achievement. I am happy for him. But in the moment, even if it's just for a brief second, I would be lying if I said it didn't sting a little bit. Why is a feeling of inadequacy my first reaction to the article? What evolutionary benefit could there possibly be for me to ruminate over the achievements of a 11 year-old with whom I'll never meet? It is quite a mystery how my psychology works, albeit amusing to think about.
 
-There are two types of comparison: upward and downward. Social psychologists have found that upward comparisons produce jealousy, hostility, negative mood, frustration, lowered self-esteem, decreased happiness, and symptoms of stress. On the other hand, downward comparisons boost self-esteem, increase positive mood, and reduce anxiety. It all seems a bit shallow and narrow-minded. Yet it applies to everyone. Happy people are just better at distracting themselves and moving on, whereas miserable people tend to ruminate then write a blog post about it. (F. X. Gibbons and M. Gerrard, "Effects of Upward and Downward Social Comparison on Mood States", *Journal of Social and Clinical Psychology, 1993, 8, 14-31*; K.L. Tucker, and F. Kasri, "Responses to Hedonically-Conflicting Social Comparisons: Comparing Happy and Unhappy People", *European Journal of Social Psychology, 2001, 31, 1-25*)
+There are two types of comparison: upward and downward. Social psychologists have found that upward comparisons produce jealousy, hostility, negative mood, frustration, lowered self-esteem, decreased happiness, and symptoms of stress. On the other hand, downward comparisons boost self-esteem, increase positive mood, and reduce anxiety. It all seems a bit shallow and narrow-minded. Yet it applies to everyone (ref 1, 2).  Happy people are just better at distracting themselves and moving on, whereas miserable people tend to ruminate then write a blog post about it.
 
 Am I miserable that Lebron James is better at basketball than me? I don't think so. Why do we care in some instances, but not others? All of this lead me to an interesting concept first introduced by the Economist Robert H. Frank.
 
@@ -45,10 +45,12 @@ If an article of a precocious wonderkid is like a bullet to my self-esteem, then
 
 When I first started writing blog posts, I wasn't really sure why I'm doing it, or who I am doing it for. I think I have a better idea now. Unlike a personal journal, it is a medium that's public enough for me to try, yet not public enough for me to be discouraged. This website is my cocoon, a comfortable pond of one, where I can relax, think, practice writing, and enjoy the world. Happy new year everybody!
 
-
-
 <img src="/assets/img/blog/chooseyourpond1.png" style="width:65%;"/>
 *The New Yorker Comic Collection by Barbara Smaller (2001) from cartoonbank.com*
 
+---
 
+1. (F. X. Gibbons and M. Gerrard, "Effects of Upward and Downward Social Comparison on Mood States", *Journal of Social and Clinical Psychology, 1993, 8, 14-31*)
+
+2. (K.L. Tucker, and F. Kasri, "Responses to Hedonically-Conflicting Social Comparisons: Comparing Happy and Unhappy People", *European Journal of Social Psychology, 2001, 31, 1-25*)
 
