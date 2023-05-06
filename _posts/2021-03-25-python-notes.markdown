@@ -1249,6 +1249,7 @@ Refer to this article for more information: [https://matplotlib.org/matplotblog/
 
 ```python
 import matplotlib.pyplot as plt
+plt.ioff() #if you want to stop IDE from showing plot
 
 # Basic single plot
 fig, axs = plt.subplots() # figure can have multiple axes
