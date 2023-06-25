@@ -2,11 +2,15 @@
 layout: blog-post
 categories: engineering
 title: "EZPZ Section Analysis Development Log"
-description: "Fiber section analysis made easy. Better than OpenSees albeit less powerful"
+description: "Fiber section analysis made easy. Note EZPZ has been superseded by fkit"
 image: assets/img/blog/EZPZ.png
 date: 2022-04-12
 tags: concrete analysis
 ---
+
+**2023-06-25 Update:** EZPZ has been superseded! Earlier this year, I decided to rewrite and refined this project. Enough changes were made that I thought I'd just rename the project all together. Presenting fkit (fiber kit). It's at least 10x better than EZPZ [Click here for GitHub Repo](https://github.com/wcfrobert/fkit)
+
+
 
 - [1.0 Inspiration](#10-inspiration)
 - [2.0 Fiber Analysis Algorithm For Moment Curvature Analysis](#20-fiber-analysis-algorithm-for-moment-curvature-analysis)
