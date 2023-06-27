@@ -11,7 +11,7 @@ tags: books
 
 ## Sense and Sensitivity
 
-I have no idea what propelled me to read this work by Jane Austen. If I recall correctly, it must have been a chat with a close friend about films from Ang Lee. I am not particularly interested in Romance novels, but for some reason I keep getting roped into reading them by my friends (Time Traveler’s Wife, and the Twilight Saga comes to mind). I decided it was worth a read since it is only about a hundred pages.
+I have no idea what compelled me to read this work by Jane Austen. If I recall correctly, it must have been a chat with a close friend about films from Ang Lee. I am not particularly interested in Romance novels, but I decided it was worth a read since it is only about a hundred pages.
 
 The tale follows the journey of the Dashwood Family. After the sudden passing of Henry Dashwood, the head of household, Mrs. Dashwood and her three daughters were thrown into a series of unfortunate situations that lead to their relocation to a bucolic rural town; close to nature. The story mostly followed the budding romance for two of the sisters, Elinor and Marianne. There was a third sister, Margaret, that I entirely forgot about until I started reading reviews of this book in preparation of writing this post. She had maybe two dialogues in the entire book.
 
@@ -19,10 +19,9 @@ Elinor embodied sense, the ability to stay cool and prudent amidst turmoil. Mari
 
 In the end, both Marianne and Elinor found their match and lived happily ever after. Both experienced their fair share of trials and tribulations in romance, as in being cheated on, family drama, love triangles, etc. Elinor, the sensible one, acted with prudence and aloofness while often doing things against her first impulses because “it is for the best”. On the other hand, Marianne was an emotional wreck for most of the second half of the novel.
 
-I liked the novel in that the characters were nuanced and realistic. Everyone acted with believable intentions motivated by their own interest. However, that was the extent of my liking. I don’t dislike it, but it’s definitely not my favorite. Maybe I read it too quickly and did not fully comprehend all the intricacies and social commentaries it is making. 
+I liked the novel in that the characters were nuanced and realistic. Everyone acted with believable intentions motivated by their own interest. Maybe I read it too quickly because I did not fully digest all the intricacies and social commentaries it is making. The style is quite different from novels today. It reads like a movie script without much build-up before the climax. The emotions and incentives of each character were described plainly and directly. The proses were matter of fact without much color or adornment.
 
-The style is completely different from novels today. It reads like a movie script without much build-up before the climax. You could mostly predict what was about to happen, and the emotions and incentives of each character were described plainly and directly. The proses were matter of fact without much color or adornment.
+Overall, a nice quaint story from another era. 
 
-Whatever the case may be, it is a nice quaint story from another era that some will adore, while others will find somewhat bland.
 
 

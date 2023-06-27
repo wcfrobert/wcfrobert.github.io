@@ -8,9 +8,9 @@ date: 2022-01-20
 tags: books
 ---
 
-When I started my employment at Degenkolb back in March of last year, I was given a small 200-page book as part of my welcome package (along with some other goodies). The book is a interview transcript with Henry J. Degenkolb and it is the first volume, along with 29 other volumes, that were written as part of the EERI Oral History Project. The project's goal is to publish interviews with prominent figures in the earthquake engineering community in order to preserve some of the rich history and fascinating stories over the passing decades.
+This book is an interview transcript with Henry J. Degenkolb and it is the first volume, along with 29 other volumes, that were written as part of the EERI Oral History Project. The project's goal is to publish interviews with prominent figures in the earthquake engineering community in order to preserve some of the rich history and fascinating stories over the passing decades.
 
-Ever since then, the book has been gathering dust on my shelf. Recently, I decided to read it out of pure curiosity. In case you didn't know, all of these volumes are available online for free: [https://www.eeri.org/oral-history-series](https://www.eeri.org/oral-history-series). It certainly felt a little anachronistic to read written interview transcripts in the current age, but I enjoyed it. Perhaps the newer volumes can also be published in audio format (i.e. podcast). I think that would be awesome!
+All of these volumes are available online for free: [https://www.eeri.org/oral-history-series](https://www.eeri.org/oral-history-series). It certainly felt a little anachronistic to read written interview transcripts in the current age, but I enjoyed it. Perhaps the newer volumes can also be published in audio format (i.e. podcast). I think that would be awesome!
 
 Here are some of the things I learned reading the book:
 
@@ -96,5 +96,4 @@ Here are some of the things I learned reading the book:
 * One big area of building design that he thinks is being overlooked is the base attachment (i.e. how the structure is attached to the foundation/ground). The assumption of fixity at the base completely changes the outcome. Soil-structure interaction is still not adequately considered, at least on the practice side of things
 
 * He gave an example from the UCSF Moffit hospital. From the result of an elastic analysis with fixed base assumption, there was enormous amount of uplift in several places (up to 2000 kips). The design ended up calling for many anchor rods and piles drilled deep into the soil. He believed that base rocking may be an effective energy dissipation method, and that rigidly attaching the base to the ground may do more harm than good
-
 

@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 categories: blog
-title: "Dulce et Decorum Est..."
+title: "Dulce et Decorum Est"
 description: "One of my favorite war time poem of all time by Wilfred Owen"
 date: 2021-08-08
 image: assets/img/blog/dulce.jpg
@@ -73,13 +73,13 @@ I decided to give it another listen after rediscovering one of my favorite poems
 > Pro patria mori.
 
 
-Phenomenal writing and such vivid and macabre imagery of a gas attack. Aside from the beautiful and hard-hitting prose, I am fascinated by the juxtaposition of industrialized warfare in the 20th centry vs. old romantic ideals of patriotism and dying for one's country. Hence the title of the poem: "Dulce et decorum est pro patria mori" which is Latin for: "it is sweet and fitting to die for one's country."
+Aside from the beautiful and hard-hitting prose, I am fascinated by the juxtaposition of industrialized warfare in the 20th centry vs. old romantic ideals of patriotism and dying for one's country. Hence the title of the poem: "Dulce et decorum est pro patria mori" which is Latin for: "it is sweet and fitting to die for one's country."
 
 A few interesting facts I've learned from Dan Carlin's Podcast:
 
 1. The code word used by the Germans for unleashing the Chlorine gas at the first battle of Ypres was "God Punish England" ("Gott Strafe England" in German) which was a popular slogan at the time
 
-2. The use of poison gas was actually outlawed in the 1899 Hague Gas Declaration. The exact wording in the declaration was "to abstain from the use of projectiles the sole object of which is the diffusion of asphyxiating or deleterious gasses". However, the Germans were able to exploit several legal loopholes. Which is just ridiculous if you think about it. For example:
+2. The use of poison gas was actually outlawed in the 1899 Hague Gas Declaration. The exact wording in the declaration was "to abstain from the use of projectiles the sole object of which is the diffusion of asphyxiating or deleterious gasses". However, the Germans were able to exploit several legal loopholes. For example:
 
     1. The Germans would plant canisters of gas in the ground, and open the lid to release the gas. Hence it would not be considered a "projectile"
     2. Later on, when projectiles were used, some argued that the gas shells did not have the "sole" purpose of releasing toxic gasses, as they would release shrapnel as well...

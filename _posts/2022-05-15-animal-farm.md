@@ -8,7 +8,7 @@ date: 2022-05-15
 tags: books
 ---
 
-After quitting all forms of social media recently, I've finally found the time to read more books. One that has always been on my reading list is George Orwell's classic novella "Animal Farms". It is an allegorical tale about the terror of authoritarianism; one that is much read and dissected by high-schoolers throughout the world.
+George Orwell's classic novella "Animal Farms" is an allegorical tale about the terror of authoritarianism; one that is much read and dissected by high-schoolers throughout the world.
 
 The book itself is short, only about 150 pages. I spent a delightful afternoon at a local Starbucks reading the whole thing. It started off quite amusing with its eclectic cast of animal characters, satirical and humorous proses, and themes that is obviously allegorical to the Bolshevik Revolution and the subsequent rise of Stalin. But as the story progressed, the plots became darker. I felt attached to the characters (particularly Boxer the horse), and I was deeply saddened by their eventual demise.
 
@@ -25,7 +25,7 @@ Every plot point, character, and detail in the story is allegorical to some real
 * The mass killing and confession in chapter 7 represents the various purges
 * The anthem "Beasts of England" parallels "The Internationale"
 
-I am a huge fan of literary works like Animal Farm; simple allegorical tales that present lucidly so many intriguing social questions and commentaries, yet still readable by a grade-schooler. One need not have read Das Capital, nor understand Hegel's dialectic to have an intuitive understanding of the injustices being brought upon the animals in Animal Farm. The book is both poignant and thought-provoking while also being immensely tractable. 
+I am a huge fan of literary works like Animal Farm; simple allegorical tales that present lucidly so many intriguing social questions and commentaries, yet still readable by a grade-schooler. One need not have read Das Capital, nor understand Hegel's dialectic to have an intuitive understanding of the various themes in Animal Farm. The book is both poignant and thought-provoking while also being immensely tractable. 
 
 Given the fact that "Animal Farm" has been analyzed thousands of times by literary experts around the world, I doubt I have anything remotely interesting to add. Instead, I will summarize the major plot points and also note down some of the memorable sections.
 

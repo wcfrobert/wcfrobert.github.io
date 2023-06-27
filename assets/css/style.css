@@ -578,8 +578,8 @@ PART 5: BODY STYLES - About Page
 	min-height: 95vh;
 }
 .aboutpage .aboutpic {
-	margin-top: 80px;
-	width: 340px;
+	margin-top: 20px;
+	width: 300px;
 	border-radius: 5%;
 }
 

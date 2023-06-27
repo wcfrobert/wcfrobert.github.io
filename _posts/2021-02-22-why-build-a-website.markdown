@@ -39,12 +39,10 @@ Unlike a typical data science portfolio websites, I am reluctant to make it enti
 
 ## The Smallest Dog...
 
-I showed the website to my parents, and to my surprise (but in hindsight not that surprising), they were a little put off by the excessive self-promotion of a personal website. I think it is very foreign for their generation and I completely understand that. In fact, I was a little put off initially as well. There is a famous saying in the South:
+I showed the website to my parents, and to my surprise (but in hindsight not that surprising), they were a little put off by the excessive self-promotion of a personal website. I think it is very foreign for their generation and I completely understand. There is a famous saying in the South:
 
 > The smallest dog barks the loudest
 
-The quote is meant to poke fun at Napoleon Complex; people who are insecure with their ability tends to boast the most. A confident man doesn't feel the need to prove he is confident. A rich man does not need to prove he is rich, and so on... The implication being if one is competent enough, his/her skill will speak for itself. I suppose I am neither rich nor competent.
-
-While I agree to some extent, in any competitive industry, the risk of being overlooked despite working hard is a real possibility. Maybe I'll have less to prove once I am older. For now, I think a little self-promotion is necessary. 
+ A confident man doesn't feel the need to prove he is confident. A rich man does not need to prove he is rich. The theory is if one is competent enough, his/her skill will speak for itself. Maybe I'll have less to prove once I am older. For now, I think a little self-promotion is necessary. 
 
 Just look at competitive fields like web design and data science. The vastness of the digital economy really took me by surprise while I was learning about web design. Unlike a typical engineering job where you are looking for a position within a certain geographic proximity, jobs in the digital economy does not have boundaries. I've seen Vietnamese graphic designers, Ukrainian web developers, Finnish photographers, Indian drafters, etc. It's super interesting, but also somewhat unsettling. Outsourcing of office jobs used to be stymied by, distance and maybe language barrier. But now with such a globalized world, one where COVID has demonstrated not only the viability, not also desirability, of working entirely remotely, what separates working 10 miles away from the office to 1000 miles away?

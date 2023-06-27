@@ -8,15 +8,13 @@ date: 2022-04-09
 tags: books
 ---
 
-I was on my typical after-dinner stroll one day when I decided to peek around my local bookstore to see what is on sale and new books to add to my ever growing to-read-list. That was when I came across this eye-catching, offensively-orange, decidedly ugly book cover. “The Subtle Art of Not Giving a Fuck” by Mark Manson. What a travesty I thought to myself, not only is the cover incredibly off-putting, the title of the book is quite vulgar as well. Nevertheless, it is near the entrance of the store! Given how off-putting it is, it had to be a good book.
-
-After reading it, I can conclusively say this book was worth every penny.
+While browsing around at my local bookstore, I came across this eye-catching, offensively-orange, decidedly ugly book cover. “The Subtle Art of Not Giving a Fuck” by Mark Manson. Not only is the cover incredibly off-putting, the title of the book is quite vulgar as well. Nevertheless, if it is near the entrance of the store, it must be good. After reading it, I can conclusively say this book was worth every penny.
 
 I think this is one of the most poignant and succinct self-help books I have ever read. The issues raised is highly relevant for our generation and points were masterfully presented with abundance of colorful language, delightful superlatives and creative metaphors. I mean just look at this prose below. You cannot say that is not brilliantly entertaining.
 
 > “Our culture today is obsessively focused on unrealistically positive expectations: Be happier. Be healthier. Be the best, better than the rest. Be smarter, faster, richer, sexier, more productive, more envied, and more admired. Be perfect and amazing and crap out twelve-karat-gold nuggets before breakfast each morning while kissing your selfie-ready spouse and two-and-a-half kid goodbye. Then fly your helicopter to your wonderfully fulfilling job, where you spend your days doing incredibly meaningful work that’s likely to save the planet one day”
 
-This was quite a light read as well. That could be a good thing or a bad thing depending on how you look at it. You do not get the usual references to scientific journals or psychology experiments to substantiate claims, and the tone can be overly dogmatic at times. But in exchange, you get an easy read book that is funny and surprisingly insightful. I think the rigor of proving a claim can slow a book down and reduce its punchiness, a problem this book did not have. 
+This was quite a light read as well. You do not get the usual references to scientific journals or psychology experiments to substantiate claims, and the tone can be overly dogmatic at times. But in exchange, you get an easy read book that is funny and surprisingly insightful.
 
 
 

@@ -14,9 +14,9 @@ tags: books
 
 What a pleasure it was to read this book again. I was first introduced to this classic through audible. As the magnum opus of all self-help books, I felt it necessary for me to read it thoroughly and make notes. I found the message and principles to be helpful in both my personal life and my professional career, and thus I decided to purchase a physical copy as well.
 
-Supposedly Warren Buffet has one certificate on his office wall, and its from the course he took from Dale Carnegie on the topics discussed in this book. I think it is hard to overestimate how influential this book is and its impact on people.
+Supposedly, Warren Buffet only has one certificate on his office wall. It's from the course he took from Dale Carnegie. It is hard to overstate just how influential and great this book is. 
 
-Perhaps the most important message in the book is to view things from the others perspective, and make the other person feel important. Here is a brief summary of the important messages within each part, and quotes that I thought were thought-provoking.
+Here is a brief summary of the important messages within each part, and quotes that I thought were thought-provoking.
 
 - [Part 1 - Techniques in Handling People](#part-1---techniques-in-handling-people)
 - [Part 2 - Ways to Make People Like You](#part-2---ways-to-make-people-like-you)

@@ -8,13 +8,11 @@ image: assets/img/blog/hellofresh1.jpg
 tags: blog
 ---
 
-## Meal Kit Delivery?
+## Meal Kit Delivery
 ![recipes](/assets/img/blog/hellofresh0.jpg)
 *Figure 1: All The Recipes I've Tried Over the Past Four Months*
 
-Back in January, I started using this subscription meal kit service called "HelloFresh". In essence, each week they deliver to you a box of groceries and recipe cards; thus saving you from a grocery trip and finding the right ingredients. With the promotion, Each serving is about 8 dollars, I think the non-promotion price is around 11 dollars per meal. Some people might find that expensive, but It's actually a lot cheaper than my usual spending habits where I spend at least 30 dollars a day on take out. I find that at least for me, "HelloFresh" forces me to switch up my diet and try different type of cuisine. I am trying to eat healthy this year.
-
-Since everything is pre-packaged, I find that I am also wasting a lot less food than I normally would. No more unnecessary stress of worrying about food going bad in the fridge.
+Back in January, I started using this subscription meal kit service called "HelloFresh". In essence, each week they deliver to you a box of groceries and recipe cards; thus saving you from a grocery trip and finding the right ingredients. With the promotion, Each serving is about 8 dollars, I think the non-promotion price is around 11 dollars per meal.
 
 ## Pro and Cons
 List of Pros:
@@ -30,15 +28,15 @@ List of Cons:
 
 All in all, HelloFresh definitely is not for everyone. However, I do find it well-suited for my current life style and habits so I will keep using it until I get tired of all the receipes.
 
-## Photos!
+## Photos
 
-I found it kind of amusing to make a meal and then take some nice photos of it. I don't like to post stuff on social media so I'll post here instead. Thus came to fruition my HelloFresh album. There is over 100 photos on this page so please be patient as it may take some time to load...
+I found it kind of amusing to make a meal and then take some nice photos of it. I don't like to post stuff on social media so I'll post here instead. There is over 100 photos on this page so please be patient as it may take some time to load...
 
 I will be using a 5-star rating system based on taste.
 
 | **Stars** | **Taste** |
 | - | - |
-| 1/5 | Why is this a thing? |
+| 1/5 | I'd rather not |
 | 2/5 | Edible |
 | 3/5 | On par |
 | 4/5 | Looking forward to eating it |

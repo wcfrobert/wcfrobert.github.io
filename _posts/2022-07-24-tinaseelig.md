@@ -8,11 +8,11 @@ date: 2022-07-24
 tags: books
 ---
 
-Dr. Tina Seelig is the faculty director at the Stanford Technology Ventures Program and a faculty member of the famous Stanford d.school. She received her PhD in neuroscience at Stanford and has been nationally recognized for her contribution to engineering education. At Stanford, She teaches courses on creativity, innovation, and entrepreneurship. I've attended many of the seminars and month-long courses hosted by STVP and d.school during my time at Stanford. This was a insightful and engaging read that encapsulates many of the insights from those courses, plus much more.
+Dr. Tina Seelig is the faculty director at the Stanford Technology Ventures Program and a faculty member of the famous Stanford d.school. She received her PhD in neuroscience at Stanford and has been nationally recognized for her contribution to engineering education. At Stanford, She teaches courses on creativity, innovation, and entrepreneurship. I've attended many of the seminars and month-long courses hosted by STVP and d.school. This was a insightful and engaging read that encapsulates many of the insights from those courses, plus much more.
 
-The title of the book is: "What I wish I knew When I Was 20: A Crash Course On Making Your Place In The World". I am turning 27 this year, more than half way through my twenties (writing that hurt a lot more than I expected...). In some ways, that ship has sailed and is half way through the Atlantic already. Nevertheless, I found it delightful and somewhat nostalgic to revisit the some of the wisdoms imparted to me during during my Stanford days, most of which I've long since forgotten much to my dismay. I am two and a half years into my professional career, and reading this book was a productive re-evaluation of my goals, values, and life in general.
+The title of the book is: "What I wish I knew When I Was 20: A Crash Course On Making Your Place In The World". I am turning 27 this year, more than half way through my twenties (writing that hurt a lot more than I expected...). Nevertheless, I found it delightful and nostalgic to revisit the some of the wisdoms imparted to me during during grad school, most of which I've long since forgotten much to my dismay. I am two and a half years into my professional career, and reading this book was a productive re-evaluation of my goals, values, and life in general.
 
-This was an excellent edition to my ever-growing bookshelf. Better yet, it was a signed copy that my friend so graciously gifted to me a couple of years ago on my 24th birthday while we were studying at Stanford. Thank you Ruby!
+This was an excellent edition to my ever-growing bookshelf. Better yet, it was a signed copy that my friend so graciously gifted to me a couple of years ago!
 
 <img src="/assets/img/blog/tinaseelig1.png" style="width:30%;"/> 
 *Figure: Signed Copy From Tina Seelig*
