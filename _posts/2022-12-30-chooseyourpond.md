@@ -15,11 +15,11 @@ tags: blog
 
 
 
-Isn't it astonishing how quickly 2022 came and went? I read somewhere that our perception of time accelerates as we age. It is hard to believe that the pandemic started 3 years ago. Time seemed to drag on and on when I was young. Those miserable high school years felt like an eternity. Then, in a blink of an eye, I'm 27. 
+Isn't it astonishing how quickly 2022 came and went? I read somewhere that our perception of time accelerates as we age. It is hard to believe that the pandemic started 3 years ago. Time seemed to drag on and on when I was young. Those high school years felt like an eternity. Then, in a blink of an eye, I'm 27. 
 
 Many of my friends are getting married, some are raising their first kid. A few friends in Academia are "raising" their metaphorical kid in the form of a PhD thesis on advanced topics like material science or AI; pushing the boundary of human knowledge. All the while I am here in my digital cocoon, following beginner C# tutorials on Udemy, and writing sub-par high-school level book reports.
 
-If you can't tell already by the moody self-loathing, It is that time of year again! New Year Eve. The perfect time for some deep introspection; for an unexamined life is not worth living, right? Of course, the question of "How am I doing?" always carries with it an important baggage. That is: "How am I doing? (compared to others?)"
+If you can't tell already by the moody self-reflection, It is that time of year again! New Year Eve. The perfect time for some deep introspection; for an unexamined life is not worth living, right? Of course, the question of "How am I doing?" always carries with it an important baggage. That is: "How am I doing? (compared to others?)"
 
 
 
