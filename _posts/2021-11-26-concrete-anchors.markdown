@@ -7,10 +7,10 @@ image: assets/img/blog/concreteanchors.png
 date: 2021-11-26
 tags: concrete primer
 ---
-*"Primers" are meant to be clear and concise engineering reference articles that summarize the many things I'm learning on the job. It's a fun side-project where I can digest and organize information-dense and complex code documents and design guides. The goal is to be more pedagogical and introductory, rather than rigorous. Hopefully these primers will prove useful when I take the SE exam!*
 
-*Please note that these notes are for my own use. They are not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primer" is my personal reference notebook. It's a collection of notes where I attempt to organize the many things I'm learning on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
 
+*Please note that these notes are for my own use. Reader discretion is advised (in fact discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 - [1.0 Fundamentals](#10-fundamentals)
 - [2.0 ACI 318-19 Design Criteria](#20-aci-318-19-design-criteria)
