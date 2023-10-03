@@ -9,9 +9,9 @@ tags: concrete primer
 ---
 
 
-*"Primer" is my personal reference notebook. It's a collection of notes where I attempt to organize the many things I'm learning on the job. The goal is to be concise, and hopefully useful when I take the SE exam. Code documents and design guides are meant to be information dense. These articles help me organize information and condense my thoughts.*
+*"Primer" is my personal reference notebook. Building codes and design guides are often dense and voluminous. These auto-didactic notes help me collect, organize, condense technical topics I'm learning as an engineer. I like to think of 'primer' as an extension to my brain whose storage capacity is sadly all too limited.*
 
-*Please note that these notes are for my own use. Reader discretion is advised (in fact discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
+*Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 The Basics](#10-the-basics)

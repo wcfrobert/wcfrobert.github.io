@@ -8,12 +8,9 @@ date: 2022-11-22
 tags: analysis primer
 ---
 
-*"Primers" are meant to be clear and concise engineering reference articles that summarize the many things I'm learning on the job. It's a fun side-project where I can digest and organize information-dense and complex code documents and design guides. The goal is to be more pedagogical and introductory, rather than rigorous. Hopefully these primers will prove useful when I take the SE exam!*
+*"Primer" is my personal reference notebook. Building codes and design guides are often dense and voluminous. These auto-didactic notes help me collect, organize, condense technical topics I'm learning as an engineer. I like to think of 'primer' as an extension to my brain whose storage capacity is sadly all too limited.*
 
-*Please note that these notes are for my own use. They are not peer-reviewed and was most likely written late Thursday night after a long day of work. Reader discretion is advised (in fact reading discouraged). No warranty is expressed or implied by me on the validity of the information presented herein.*
-
-
-My god this turned out to be a colossal undertaking... The mother of all scope creeps.
+*Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 Introduction and Procedure](#10-introduction-and-procedure)
