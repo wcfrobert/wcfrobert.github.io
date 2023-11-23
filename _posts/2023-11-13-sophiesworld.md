@@ -42,9 +42,7 @@ In the span of around 500 pages, we get an incredible introduction to:
 
 As for the mystery novel aspect (spoilers ahead), it's both simple and brilliant. It turn's out Sophie is an imaginary girl who resides inside a novel a father is writing for her daughter birthday. Half way through the book, the perspective switches to the daughter, Hilde. There's some blurring between reality and fiction as the perspectives switch back and forth between Hilde and Sophie. Eventually, Sophie realizes she is a character in a philosophy book and tries to escape. Ironically, the readers understand that Hilde and Sophie have more in common than they realize.
 
-All things considered, If you are looking for a nuanced, in-depth discussion of Socrates, Hume, or Descartes, look elsewhere. Sophie's World is a 30,000 ft zoomed-out aerial view of Philosophy, not a microscope peering into any thinker in particular. Yet should the reader be interested in learning more, they are well-equip to do so having already had an excellent introduction. 
-
-Indeed, the primary goal of Sophie's World has always been to elicit interest in young readers, and to present philosophy not as convoluted and pointless pontifications, but as practical, even essential, part of our daily lives. And to that end, Sophie's World could not have been more successful.
+All things considered, If you are looking for a nuanced, in-depth discussion of Socrates, Hume or Descartes, look elsewhere. Sophie's World is a 30,000 ft zoomed-out aerial view of Philosophy, not a microscope peering into any thinker in particular. Indeed, the goal of Sophie's World is twofold: 1.) to elicit interest in young readers, and 2.) to present philosophy not as convoluted and pointless pontifications, but as practical, even essential, part of our daily lives. And to those ends, Sophie's World could not have been more successful.
 
 
 
