@@ -575,7 +575,7 @@ PART 5: BODY STYLES - About Page
 	animation-duration: 0.75s;
 	opacity: 1;
 	font-family: 'Lora', serif;
-	min-height: 95vh;
+
 }
 .aboutpage .aboutpic {
 	margin-top: 20px;
@@ -597,6 +597,17 @@ PART 5: BODY STYLES - About Page
 
 }
 
+.aboutpage-content {
+	width: 55vw;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+.aboutpage-content h1 {
+	margin-top: 24px;
+	font-size: 20px;
+	font-weight: bold;
+	color:rgb(67, 91, 226);
+}
 
 @keyframes fadein2 {
 	0% {

@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-categories: engineering
+categories: blog
 title: "Primer: Grammar and Writing Handbook"
 description: "I want to get better at writing"
 image: assets/img/blog/grammar.png

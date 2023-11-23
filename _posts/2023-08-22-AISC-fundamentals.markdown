@@ -295,9 +295,155 @@ A few caveats about superposition.
 
 ## 2.3 Instant Center of Rotation Method
 
-```python
-TODO
-```
+
+<u>Theoretical Background</u>
+
+A more accurate way of determining bolt forces is through the Instant Center of Rotation **(ICR)** method. The figure below illustrates the underlying theory. In short, when a bolt group is subjected to combined in-plane forces and torsion, the **bolt force vectors revolve around an imaginary center**. The location of ICR is unknown and will have to be determined iteratively.  
+
+<img src="/assets/img/blog/aisc2.31.png" style="width:80%;"/>
+*Figure 2.31: Illustration of Instant Center of Rotation*
+
+AISC and related references often use P to denote the in-plane force, for the sake of consistency, let $$P=V$$ in this chapter.
+
+ICR method is conceptually simple. The key is correctly identifying the ICR location, which is no small task. Afterwards, bolt forces can be derived from simple statics and force-deformation relationships. The bolt furthest from ICR is assumed to have a deformation of 0.34", other bolts in between are assumed to have linearly varying deformation based on its distance from ICR (varying from 0" to 0.34"). From deformation, we can determine the corresponding force using the **force-deformation relationship** below.
+
+$$\Delta = 0.34 (d_i / d_{max})$$
+
+<img src="/assets/img/blog/aisc2.32.png" style="width:80%;"/>
+*Figure 2.32: Force Deformation Relationship of Bolt Based on Experimental Testing*
+
+Individual bolt forces ($$R_i$$) are a function bolt deformation ($$\Delta_i$$) and bolt capacity ($$R_{ult}$$). In effect, the ICR method assumes the connection fails when the highest loaded bolt reaches $$R_{ult}$$; which corresponds with a deformation of 0.34".
+
+$$R_i =(1-e^{-10\Delta_i})^{0.55} \times R_{ult}$$
+
+Assuming the location of ICR has been correctly identified, equilibrium should hold.
+
+$$\sum F_x = 0 = P_x -\sum R_{ix}$$
+
+$$\sum F_y = 0 = P_y -\sum R_{iy}$$
+
+$$\sum M_{ICR} = 0 = M_z -\sum m_i$$
+
+Compared to the elastic method, the ICR method differs in three key ways:
+
+* ICR method is more accurate and less conservative because it allows for **plastic deformation of bolts**. Technically, the elastic method also has a center about which bolt force vectors revolve. But because everything is linear, we can skip the force-deformation relationship and calculate forces from geometric properties like moment of inertia and polar moment of inertia. This is illustrated in a simple example below. The difference between plastic section modulus (Zx) and elastic section modulus (Sx) is a good analogy here.
+
+<img src="/assets/img/blog/aisc2.34.png" style="width:100%;"/>
+*Figure 2.33: ICR Design Table in AISC Steel Construction Manual*
+
+* Unlike the elastic method, **ICR method is not practical to do by hand** as the location of ICR must be determined iteratively. There are design tables available in the steel construction manual. Generally the ICR method is more of a black-box.
+
+<img src="/assets/img/blog/aisc2.33.png" style="width:60%;"/>
+*Figure 2.34: Elastic Method vs. ICR Method*
+
+* Rather than looking at demand and capacity on the individual bolt level like the elastic method, ICR method provides an overall connection capacity. First, the **applied load (Px, Py, Mz) is converted into an equivalent unit load at a particular eccentricity and orientation**, then a coefficient (C) is determined which then can be multiplied by $$R_{bolt}$$ to get the connection capacity.
+
+
+
+<u>ICR Method Procedure</u>
+
+1. Convert applied loading into an equivalent eccentricity and load orientation
+
+    $$P = \sqrt{P_x^2 + P_y^2}$$
+
+    $$e = \frac{M_z}{P}$$
+
+    $$\theta = arctan(\frac{P_y}{P_x})$$
+
+
+2. Obtain location of ICR. At the correct location, equilibrium will hold (Refer to discussion on Brandt's method below). 
+
+
+3. ICR coefficient(C) can be calculated via moment equilibrium
+
+    $$ M_{applied} = M_{resisting}$$
+
+    $$P_{ult} r_o = R_{ult}\sum \frac{R_i}{R_{ult}}d_i$$
+
+    $$P_{ult} = C \times R_{ult}$$
+
+    $$C = \sum (\frac{R_i}{R_{ult}}d_i)/r_o$$
+
+
+4. Capacity of the connection is equal to C times $$R_{ult}$$. Note how the connection capacity is only dependent on load angle and eccentricity. We didn't need to specify the bolt diameter and capacity until the very end.
+
+    $$P_{ult} = C \times R_{ult}$$
+
+    $$DCR = P / P_{ult}$$
+
+
+
+<u>Finding Location of ICR Using Brandt's Method</u>
+
+When the load orientation is completely horizontal or vertical, the ICR location reside on a line connecting CoG and ICR (this covers most cases). However, when the load orientation isn't 0 or 90 degrees, the search space for ICR is two dimensional and implementation becomes much more challenging.
+
+Rather than searching the 2-D plane using brute force or using generic optimization algorithms. There exists an iterative method that converges on ICR within 3 or 4 iterations. **Brandt's method** is fast and efficient, and it is what AISC uses to construct their design tables.  [You can read the paper here.](https://www.aisc.org/Rapid-Determination-of-Ultimate-Strength-of-Eccentrically-Loaded-Bolt-Groups) It's incredibly short and concise, or as the author puts it in the concluding remark: 
+
+> "In any problem to be solved by iteration, one can hope for 1.) A good place to start and 2.) An efficient algorithm for improving each successive trial. The procedure presented appears to offer both of these characteristics"
+
+The three key insights presented by Brandt's method is summarized below:
+
+**(1) Elastic method also has a center of rotation and it can be found deterministically**
+
+Let $$(x_o, y_o)$$ be the coordinate of bolt group centroid, the coordinate for the elastic center of rotation (ECR) is $$(x_o +a_x,  y_o+a_y)$$:
+
+$$a_x = -\frac{P_y}{n} \frac{J}{M_o}$$
+
+$$a_y = -\frac{P_x}{n} \frac{J}{M_o}$$
+
+Where:
+
+* $$P_x$$ = x component of applied load
+* $$P_y$$= y component of applied load
+* $$n$$ = number of bolts in bolt group
+* $$J$$ = polar moment of inertia (Iz)
+* $$M_o$$ = applied torsion
+
+
+
+**(2) Elastic center of rotation (ECR) can be used as the initial guess of (ICR). Solution can be improved iteratively as follows:**
+
+Let the initial guess be the ECR:
+
+$$x_1 = x_o +a_x$$
+
+$$y_1 =  y_o+a_y$$
+
+At this assumed ICR location, calculate force equilibrium:
+
+$$\sum F_x  = P_x - \sum R_{ix}$$
+
+$$\sum F_y = P_y - \sum R_{iy}$$
+
+The force summations will not be zero unless we are at the ICR, use the residual to determine successive guesses:
+
+$$x_{i+1} = x_i - \frac{(\sum F_y)J}{nM_o}$$
+
+$$y_{i+1} = y_i + \frac{(\sum F_x)J}{nM_o}$$
+
+Repeat until the desired tolerance is achieved:
+
+$$F = \sqrt{(\sum F_x)^2 + (\sum F_y)^2} < tol$$
+
+
+
+**(3) It is more convenient to use normalized quantities to locate ICR.**
+
+By normalizing, we can construct design tables where the ICR coefficient (C) is independent of bolt capacity. 
+
+<img src="/assets/img/blog/aisc2.35.png" style="width:100%;"/>
+*Figure 2.35: Normalized Quantities*
+
+
+
+
+
+<u>Comparison to Elastic Method</u>
+
+For the bolt configuration shown below.
+
+<img src="/assets/img/blog/aisc2.36.png" style="width:40%;"/>
+*Figure 2.36: Example Bolt Group*
 
 
 
