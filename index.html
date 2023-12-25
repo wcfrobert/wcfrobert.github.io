@@ -249,9 +249,9 @@
       <div class="tabs">
         <div class="tab-header">
           <div class="active-tab">fkit</div>
-          <div>ezanchor</div>
           <div>fapp</div>
-          <div>spColumn Automation</div>
+          <div>ezbolt</div>
+          <div>ezanchor</div>
           <div>Framing Automation in Dynamo</div>
           <div>Roof Optimization in Dynamo </div>
           <div>Parametric Design - Bus Shelter</div>
@@ -271,7 +271,7 @@
             <br>
             <img src="assets/img/fkit-demo.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              fkit (fiber-kit) is a fiber section analysis program built with python. Perform moment-curvature and P+M interaction analysis in less than 5 lines of code. Originally meant for reinforced concrete sections, it was later extended to encompass material of all types. Fibers can be defined by the user with a plethora of built-in material models (e.g. Hognestad, Manders, RambergOsgood, Menegotto-Pinto, ElasticPlastic, and more). 
+              fkit (fiber-kit) is a free-to-use, elegant, and simple section analysis program built in python. Perform moment-curvature and P+M interaction analysis with less than 5 lines of code. Fibers can be defined by the user with a plethora of material models (e.g. Hognestad, Manders, RambergOsgood, Menegotto-Pinto, ElasticPlastic, and more). 
               <br>
               <br>
               This was one of my best project yet. Intuitive object-oriented design and beautiful visualizations. <a href="https://github.com/wcfrobert/fkit">Link to GitHub repo</a>
@@ -279,21 +279,6 @@
             </p>
           </div>
 
-
-
-          <div>
-            <div class="project-title"></div>
-            <img src="assets/img/ezanchor-logo.png" alt="logo" style="max-width:40%;">
-            <br>
-            <img src="assets/img/ezanchor-demo.gif" alt="animated-gif" style="max-width:100%;">
-            <p>
-              EZAnchor is a Python applet that performs nonstructural components seismic force (Fp) calculations per ASCE 7-16 Chapter 13, it then applies Fp in all possible directions (all 360 degrees) to determine the maximum shear and tension in the anchors holding the equipment in place.
-              <br>
-              <br>
-              The impetus for this package came from a lengthy technical discussion at work. Although the technical background behind equipment anchorage might be simple, there's is actually tons of nuance and this program is far from easy to implement. Read more here in <a href="https://github.com/wcfrobert/ezanchor">the GitHub repo</a>
-
-            </p>
-          </div>
 
 
 
@@ -312,27 +297,45 @@
           </div>
 
 
-          
 
-          
+
           <div>
             <div class="project-title"></div>
-            <img src="assets/img/spcolumn.gif" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/ezbolt-logo.png" alt="logo" style="max-width:40%;">
+            <img src="assets/img/ezbolt-demo.gif" alt="animated-gif" style="max-width:80%;">
             <p>
-              spColumn is a concrete design software commonly used for strain compatibility of concrete columns and walls. One of the best features of the program is that it allows user to create model files in “.cti” format; which are plain text files that can be opened and viewed by any text editor. Furthermore, .cti files can be executed in batches from the command line, allowing for great flexibility in automation. <a href="https://structurepoint.org/spColumn-Online-Manual/spColumn/Appendix/spColumn_Text_Input_CTI_file_format.htm">More info from StructurePoint here.</a>
+              EZbolt is a Python script that calculates bolt forces in bolted connections subject to shear and in-plane torsion. It does so using both the Elastic Method and the Instant Center of Rotation (ICR) method as outlined in the AISC steel construction manual. The iterative algorithm to locate the ICR is based on this seminal paper by Donald Brandt: <a href="https://www.aisc.org/Rapid-Determination-of-Ultimate-Strength-of-Eccentrically-Loaded-Bolt-Groups">Rapid Determination of Ultimate Strength of Eccentrically Loaded Bolt Groups.</a>
               <br>
               <br>
-              I wrote a python script that extract column/wall info from an input spreadsheet to batch generate and analyze spColumn section as well as export results in .png format. With this tool, you can perform hundreds section analysis in mere seconds. Supports rectangular columns, I-shape, C-shape, L-shape, and T-shape walls.
+              Read more here in <a href="https://github.com/wcfrobert/ezbolt">the GitHub repo</a>
 
             </p>
           </div>
+
+
+
+          <div>
+            <div class="project-title"></div>
+            <img src="assets/img/ezanchor-logo.png" alt="logo" style="max-width:40%;">
+            <br>
+            <img src="assets/img/ezanchor-demo.gif" alt="animated-gif" style="max-width:100%;">
+            <p>
+              EZAnchor is a Python applet that performs nonstructural component seismic force (Fp) calculations per ASCE 7-16 Chapter 13, it then applies Fp in all possible orientations (360 degrees) to determine the maximum shear and tension demand in the anchors holding an equipment down in place.
+              <br>
+              <br>
+              The impetus for this package came from a lengthy technical discussion at work. Although the math behind equipment anchorage is simple, there's is actually tons of nuance and this program is far from easy to implement. Read more here in <a href="https://github.com/wcfrobert/ezanchor">the GitHub repo</a>
+
+            </p>
+          </div>
+
+
 
 
           <div>
             <div class="project-title"></div>
             <img src="assets/img/framing.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              Many structures have repeating elements that can be automatically generated based on a pre-specified set of rules. I wrote a Dynamo script that allows parametric generation of structural framing in Revit. Rather than creating a simple portal frame, I thought it’d be a lot more exciting to loop it around on itself and create a circular structure; similar to the Apple Headquarter building in Cupertino. You can parametrically change different aspects of the building (e.g. bay spacing, building diameter, roof slope, and much more)
+              Many structures have repeating elements that can be automatically generated based on a pre-defined set of rules. This is a Dynamo script that allows parametric generation of structural framing in Revit. Rather than creating a boring portal frame, I thought it’d be a lot more exciting to loop it around on itself and create a circular structure; similar to the Apple Headquarter building in Cupertino. You can parametrically change different aspects of the building (e.g. bay spacing, building diameter, roof slope, and much more)
             </p>
           </div>
           
@@ -351,7 +354,7 @@
             <div class="project-title"></div>
             <img src="assets/img/parametric.gif" alt="animated-gif" style="max-width:100%;">
             <p>
-              This is more of an artistic endeavor than an engineering one. Above is a fully parametric bus shelter with its geometry mathematically defined and easily customizable. The final product is a gravity defying structure with bold and elegant curves. The spiral column is defined by three circles of varying diameter and the roof is defined by a surface lofted onto three sinusoids.
+              This is more of an artistic endeavor than an engineering one. Above is a fully parametric bus shelter with its geometry mathematically defined and easily customizable. The final product is a gravity-defying structure with bold and elegant curves. The spiral column is defined by three circles of varying diameter and the roof is defined by a surface lofted onto three sinusoids.
             </p>
           </div>
 
@@ -360,8 +363,7 @@
             <div class="project-title"></div>
             <img src="assets/img/person-website.gif" alt="animated-gif">
             <p>
-              Design, calligraphy, and front-end web development has always piqued my interest. I learned a bit of web development this past year and decided to build a portfolio website from scratch using vanilla HTML, CSS, JS; no reliance on services like Wordpress, Squarespace, or Wix. The website is responsive and features a minimalist design and subtle yet noticeable animations. All aspects of design, including the font selection, the color scheme, and layout were done by me. The website is hosted on Github. You can find the
-              <a href="https://github.com/wcfrobert/wcfrobert.github.io">source code here.</a> 
+              I learned a bit of web development this past year and decided to build a portfolio website from scratch using vanilla HTML, CSS, JS; no reliance on services like Wordpress, Squarespace, or Wix. This website features a minimalist design and subtle yet noticeable animations. Although it was a lot more work (e.g. selecting fonts, color scheme, layouts, templates), I felt the end result was well worth it! <a href="https://github.com/wcfrobert/wcfrobert.github.io">This website is hosted on GitHub.</a> 
             </p>
           </div>
 
@@ -369,7 +371,7 @@
             <div class="project-title"></div>
             <img src="assets/img/bridge.gif" alt="animated-gif">
             <p>
-              Above is a massive 8000+ sticks popsicle bridge shattering into pieces under 5500 lbs of force! That is not a typo. The bridge took about a month to make and is entirely made of popsicles and Elmer’s glue. The tied-arch configuration allows load to travel efficiently to the supports and the bottom chord resists the outward thrust. This bridge won Bronze medal at the National 2017 Troitsky Popsicle Bridge Building Contest in Canada.
+              Above is a massive 8000+ sticks popsicle bridge shattering into pieces under 5500 lbs of concentrated force! That is not a typo. The bridge took about a month to make and is entirely made of popsicles and Elmer’s glue. The tied-arch configuration allows for an efficient load path to the supports, and the bottom chord resists the any outward thrust. This bridge won the Bronze medal at the National 2017 Troitsky Popsicle Bridge Building Contest in Canada.
             </p>
           </div>
 
