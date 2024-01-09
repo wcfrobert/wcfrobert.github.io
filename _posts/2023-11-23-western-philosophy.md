@@ -209,6 +209,8 @@ Following Alexander's death, his empire was divided among his generals into seve
 
 ## Christianity - 1 BC
 
+> "You have heard that it was said, 'Eye for eye, and tooth for tooth. ' But I tell you, do not resist an evil person. If anyone slaps you on the right cheek, turn to them the other cheek also" - Matthew 5:38-39
+
 A summary of the development of the Western World is incomplete without a few paragraphs on Christianity, for it will be the focus of study for the entirety of the middle ages.
 
 * There were two cultures important to the development of Western Civilization: Indo-Europeans and Semites.
@@ -254,6 +256,34 @@ During this time, the Arabs became predominant in science such as chemistry, ast
 
 
 
+Europe experienced many calamities in the 14th century from floods, severe droughts, famine, to the Black Death plague (killing 1/3 of everyone in Europe). Thousands of Jews fell victim to anti-semitic pogroms accusing them of poisoning the wells, thus causing the plague. Witch hunts intensified, there was a spread of syphilis. 
+
+Sinners simply had to buy indulgences in order to be acquitted from their sins. The sale of indulgences were abused.
+
+
+
+
+
+Many thought we were straying away from God.
+
+Separation from Church of Rome. Signifying end of middle ages
+
+Started when Ninety-five Theses by Martin Luther was nailed to the door of the castle church in Wittenberg 1517. The document details what Luther those was the Roman Catholic Church's abuse and corruption (including sale of indulgences - certificates that reduce temporal punishment in purgatory for sins)
+
+
+
+Christianity split into Protestantism and Catholicism and other later denominations
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -261,8 +291,6 @@ During this time, the Arabs became predominant in science such as chemistry, ast
 
 
 ## Renaissance - 1600 AD
-
-
 
 
 
@@ -322,48 +350,6 @@ During this time, the Arabs became predominant in science such as chemistry, ast
 
 
 ## Jean-Paul Sartre - 1900 AD
-
-
-
-
-
-# Other Interesting Notes
-
-Interestingly, Plato had quite a progressive view of women and thought they could govern through reason just as effectively as men. He believed that a state that does not educate its women is like a person who only trains his right arm.
-
-Some of Aristotle thoughts didn't age well. For example he believed that women were "incomplete" man. He thought women as passive and receptive whilst men as active and productive. Furthermore, he had a very hierarchical view of of society and thought that slavery was okay, even necessary. 
-
-> "For that some should rule and others be ruled is a thing not only necessary, but expedient; from the hour of their birth, some are marked out for subjection, others for rule." - Aristotle
-
-
-
-
-
-## Carl Jung
-
-
-
-## Mary Wollstonecraft
-
-
-
-## Hannah Arendt
-
-
-
-## Ernest Becker
-
-
-
-## Carl Schmitt
-
-## Walter Lippman
-
-## Jean Baudrillard
-
-## Schopenhauer
-
-
 
 
 
