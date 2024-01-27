@@ -785,6 +785,7 @@ PART 8: BLOG POSTS
 	font-size: 46px;
 	margin-bottom: 5px;
 	color: black;
+	font-family:'lora', sans-serif;
 }
 .blog-post p{
 	font-size: 21px;
@@ -808,6 +809,7 @@ PART 8: BLOG POSTS
 	border-left: rgb(67, 91, 226) 2px solid;
 	padding-left: 15px;
 	color: rgb(67, 91, 226);
+	font-family:'lora', sans-serif;
 }
 table {
 	border: 1px solid #ddd;

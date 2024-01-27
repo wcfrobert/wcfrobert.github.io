@@ -386,7 +386,7 @@ $$ R_{max} = R_{capacity}$$
 $$ P_{capacity} = R_{capacity} \times C$$
 
 
-          
+​          
 Notes:
 
 1. Despite a nonlinear bolt force-deformation, the relationship between max bolt force ($$R_{max}$$) and applied force ($$P$$) is linear. In other words, if applied force doubles, so does maximum bolt force, and vice versa. Embedded in this is the **assumption that eccentricity (e = Mz / P) will remain constant**      
@@ -498,7 +498,7 @@ $$\mbox{residual} = \sqrt{(f_{xx})^2 + (f_{yy})^2} < tol$$
 5. Compute ICR coefficient "C" at assumed location.
 
     $$C = \frac{ \sum((1 - e^{-10 \Delta_i})^{0.55} d_i)}{r_o}$$
-            
+    
 6. Next, we need to determine the maximum bolt force ($$R_{max}$$) at the user-specified load magnitude. This can be done through the moment equilibrium equation; hence why we only need to check force equilibrium at the end. Moment equilibrium is established as a matter of course by enforcing a specific value of $$R_{max}$$
 
     $$M_p = V_x r_{oy} - V_y  r_{ox}$$
@@ -1418,7 +1418,7 @@ In this section, **we will only cover the basics of welded connections**: weldin
 Welding involves the fusion of two base metal usually through mixing of filler metals. Two conditions are required for welding to occur.
 
 * **Atomic closeness** - metallic atoms are brought to close contact usually achieved through heat and pressure
-* **Atomic closeness** - surface must be non-oxidized, yet metal surfaces will only oxide-free for short period of time when in contact with air. **Shielding** is often provided through slag (as a mechanical lid) or inert gases.
+* **Atomic cleanness** - surface must be non-oxidized, yet metal surfaces will only oxide-free for short period of time when in contact with air. **Shielding** is often provided through slag (as a mechanical lid) or inert gases.
 
 
 <u>Types of Welding Process</u>
@@ -1629,7 +1629,6 @@ $$D_{min} = \frac{F_u t}{3.09}$$
 * For two-sided fillet:
 
 $$D_{min} = \frac{F_u t}{6.19}$$
-
 
 
 

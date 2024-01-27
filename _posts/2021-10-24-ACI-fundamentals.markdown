@@ -54,7 +54,7 @@ Reinforced concrete is an inherently non-linear material. Nevertheless, we still
 * columns: $$0.7EI_g$$
 * beams: $$0.35EI_g$$
 * walls (cracked): $$0.35EI_g$$
-* walls (uncracked): $$0.35EI_g$$
+* walls (uncracked): $$0.70EI_g$$
 * two-way slab:$$0.25EI_g$$
 
 For service load analysis (deflection, vibration, etc), 6.6.3.2.2 suggests amplifying the above factor by 1.4
