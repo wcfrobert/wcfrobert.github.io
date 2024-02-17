@@ -269,9 +269,9 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow, and contained subjects from both religious and classical Greek/Roman themes. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
 
-The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence, thus capable of engaging in civic duties. It should be noted that while Humanism is more secular in some respects, most humanist are nevertheless Christians. It wouldn't be until the Enlightenment that secularism gain more prominence.
+The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence, thus capable of engaging in civic duties. It should be noted that while Humanism is more secular in some respects, most humanist are nevertheless Christians. It wouldn't be until the Enlightenment that secularism gained more prominence.
 
-The number of fundamental, world-changing scientific achievements during the Renaissance is incredible. Here are some of the major ones: In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the age of discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe, and many more.
+The number of fundamental, world-changing scientific achievements during the Renaissance is too numerous to list. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
 
 
 
@@ -293,15 +293,17 @@ knowledge and literature
 
 
 
-
-
-
-
 # Rene Descartes - 1600 AD
 
+Father of modern philosophy. Laid the foundation for continental rationalism.
 
+First principles. Doubt everything. I think therefore I am. Cogito ergo sum.
+
+Mathematician, x,y,z as the unknown variable. a,b,c as known variables. Cartesian coordinate with x and y axis
 
 # Baruch Spinoza - 1600 AD
+
+
 
 
 
