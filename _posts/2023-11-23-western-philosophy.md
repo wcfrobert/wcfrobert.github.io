@@ -8,9 +8,7 @@ date: 2023-11-23
 tags: thoughts
 ---
 
-After reading Sophie's World, I thought it'd be an amusing exercise to read and summarize key insights from each philosophers presented in the book. There are academics who have spent their entire lives studying one or two philosophers. Therefore it is objectively a foolish task to try to summarize all of Western philosophy. However, my goal is not comprehensive understanding of everything. Rather, my goal is simply to know enough to be conversant (or dangerous). Let's get started.
-
-
+After reading Sophie's World, I thought it'd be an amusing exercise to learn more about the philosophers presented therein, and summarize their work into three key bullet points. It should be stressed from the outset that reading the Encyclopedia does not give me a comprehensive understanding of anything. There are academics who have spent their entire lives studying one or two philosophers. My goal in this article is not to be an expert. Rather, my goal is simply to know enough to be conversant (or dangerous). Let's get started.
 
 - [Myths - Pre 600 BC](#myths---pre-600-bc)
 - [Natural Philosophers - 600 BC](#natural-philosophers---600-bc)
@@ -19,26 +17,24 @@ After reading Sophie's World, I thought it'd be an amusing exercise to read and 
 - [Plato - 400 BC](#plato---400-bc)
 - [Aristotle - 300 BC](#aristotle---300-bc)
 - [Hellenistic Age - 300 BC to 30 BC](#hellenistic-age---300-bc-to-30-bc)
-- [Christianity - 1 BC](#christianity---1-bc)
-- [The Middle Ages - 500 AD to 1500 AD](#the-middle-ages---500-ad-to-1500-ad)
-- [Protestant Reformation - 1500 AD](#protestant-reformation---1500-ad)
-- [Renaissance - 1500 AD](#renaissance---1500-ad)
-- [Enlightenment - 1700 AD](#enlightenment---1700-ad)
-- [Rene Descartes - 1600 AD](#rene-descartes---1600-ad)
-- [Baruch Spinoza - 1600 AD](#baruch-spinoza---1600-ad)
-- [John Locke - 1700 AD](#john-locke---1700-ad)
-- [David Hume - 1700 AD](#david-hume---1700-ad)
-- [Immanuel Kant - 1700 AD](#immanuel-kant---1700-ad)
-- [Jean-Jacques Rousseau - 1700 AD](#jean-jacques-rousseau---1700-ad)
-- [Georg Wilhelm Friedrich Hegel - 1800 AD](#georg-wilhelm-friedrich-hegel---1800-ad)
-- [Soren Kierkegaard - 1800 AD](#soren-kierkegaard---1800-ad)
-- [Karl Marx - 1800 AD](#karl-marx---1800-ad)
-- [Charles Darwin - 1800 AD](#charles-darwin---1800-ad)
-- [Sigmund Freud - 1900 AD](#sigmund-freud---1900-ad)
-- [Friedrich Nietzsche - 1900 AD](#friedrich-nietzsche---1900-ad)
-- [Jean-Paul Sartre - 1900 AD](#jean-paul-sartre---1900-ad)
-
-
+- [Christianity - 1 AD](#christianity---1-ad)
+- [The Middle Ages - 500 to 1500](#the-middle-ages---500-to-1500)
+- [Protestant Reformation - 1500](#protestant-reformation---1500)
+- [Renaissance - 1500](#renaissance---1500)
+- [Enlightenment - 1700](#enlightenment---1700)
+- [Rene Descartes - 1600](#rene-descartes---1600)
+- [Baruch Spinoza - 1600](#baruch-spinoza---1600)
+- [John Locke - 1700](#john-locke---1700)
+- [David Hume - 1700](#david-hume---1700)
+- [Immanuel Kant - 1700](#immanuel-kant---1700)
+- [Jean-Jacques Rousseau - 1700](#jean-jacques-rousseau---1700)
+- [Georg Wilhelm Friedrich Hegel - 1800](#georg-wilhelm-friedrich-hegel---1800)
+- [Soren Kierkegaard - 1800](#soren-kierkegaard---1800)
+- [Karl Marx - 1800](#karl-marx---1800)
+- [Charles Darwin - 1800](#charles-darwin---1800)
+- [Sigmund Freud - 1900](#sigmund-freud---1900)
+- [Friedrich Nietzsche - 1900](#friedrich-nietzsche---1900)
+- [Jean-Paul Sartre - 1900](#jean-paul-sartre---1900)
 
 
 
@@ -196,7 +192,7 @@ Let's look at an example to solidify our understanding of the three major Hellen
 
 
 
-# Christianity - 1 BC
+# Christianity - 1 AD
 
 > "The last shall be first, and the first shall be last"
 
@@ -224,15 +220,9 @@ There were two cultures important to the development of Western Civilization: In
 * Over time, a **East-West Schism** occurred due to theological and cultural differences. The church was split into Eastern Orthodoxy (centered in Constantinople or modern-day Istanbul) and Western Catholic Church (Centered in Rome) in 1054.
 * During the 14th century, dissatisfaction with the Roman Catholic church lead to another schism known as the **Protestant Reformation**, splitting the church further into Catholicism, and Protestantism.
 
-* The **modern calendar** dating system is based on the approximate birth of Jesus Christ. Note that he was born around 6 BC. Dating of ancient historical events are often imprecise. Furthermore, the dating system itself was established centuries after Jesus' death.
-  * AD = Anno Domini, Latin for In the year of our lord (e.g. 2023 AD is short for the "In the 2023th year of our lord")
-  * BC = Before Christ
-  * CE = Common Era (secular version of AD)
-  * BCE = Before Common Era (secular version of BC)
 
 
-
-# The Middle Ages - 500 AD to 1500 AD
+# The Middle Ages - 500 to 1500
 
 > "To one who has faith, no explanation is necessary. To one without faith, no explanation is possible." - St. Thomas Aquinas
 
@@ -242,7 +232,7 @@ During this time, the Arabs became predominant in chemistry, astronomy, medicine
 
 
 
-# Protestant Reformation - 1500 AD
+# Protestant Reformation - 1500
 
 Leading up to the 15th century, Europe experienced many calamities such as floods, severe droughts, famine, and the Black Death which killed 1/3 of the European population. There were peasant revolts, witch hunts, and general unrest. Many thought people have strayed from God, many others were dissatisfied with the abuse and corruption of the Roman Church authorities.
 
@@ -252,7 +242,7 @@ In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse 
 
 
 
-# Renaissance - 1500 AD
+# Renaissance - 1500
 
 > "Man looked for new foundations" - Hans Kohn
 
@@ -264,34 +254,42 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 <u>Key Features of the Renaissance</u>
 
-* The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow, and contained subjects from both religious and classical Greek/Roman themes. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
+* The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
 * The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence. While Humanism is more secular in some aspects, most humanist are still Christians. It wouldn't be until the Enlightenment that secularism gained more prominence.
 * The number of world-changing scientific and artistic achievements during the Renaissance is too numerous to list. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1503, Leonardo Da Vinci painted the Mona Lisa. Around the same time, Michelangelo sculpted David. In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
 
 
 
-# Enlightenment - 1700 AD
+# Enlightenment - 1700
 
-> "Enlightenment is man's emergence from its self-incurred immaturity" - Immanuel Kant
+> "Dare to be wise!" - Immanuel Kant
 
-Age of Enlightenment.
+The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the Enlightenment is characterized by **Rationalism**: the belief that humans can determine truth, understand the universe, and improve society through reason and empirical observations rather than superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of scientific and intellectual discourse. 
 
-Reason, Science, Individual Rights, Skepticism towards aristocratic authorities
+Many of the ideas we hold dear today emerged during the Enlightenment. For example:
 
-individualism
+* **Rational Inquiry** - Emphasis on reason and critical thinking. We should question authority, challenge existing beliefs, think for ourselves rather than relying on a pre-defined set of rules or dogmas. 
+* **Secularism and Religious Toleration** - The Church shall be separated from the State. While the state is responsible for maintaining order and enforcing law, matter of religious belief should be between Man and his God without any government coercion. An official state religion should not exists. Political decisions should be made based on reason, evidence, and towards the common good rather than to the benefit of any particular religious organization.
+* **Primacy of the Individual** - All men are born equal with the right to life, liberty, and pursuit of happiness.
+* **Freedom of Thought** - "I disagree with what you say, but I will defend to the death your right to say it."
 
-secularism
+The exact dating of the Enlightenment is fuzzy as there is considerable overlap with the Scientific Revolution that came before, and the Industrial Revolution that came afterwards. Some date the beginning of the Enlightenment to the publication of Rene Descartes' *Discourse on the Method* published in 1637, where he proclaimed: "Cogito, Ergo Sum", or "I think, therefore I am". This famous quote shifted the epistemological discussion from external authority to internal certainty. Most scholars place the end of the Enlightenment around 1800, choosing the Reign of Terror during the French Revolution or the subsequent Napoleonic Wars as a convenient point in time. It should also be noted that there is considerable regional variations during the Enlightenment. Not all societies experienced these transitions the same way, if at all. 
 
-tolerance
+In response to a sneering question: "What is Enlightenment?", Emmanuel Kant published an essay in Berlin Monthly in 1784 that perfectly encapsulates this period of profound change:
 
-knowledge and literature
+> "Enlightenment is man's emergence from his self-incurred immaturity. [...] This immaturity is self-imposed when its cause lies not in lack of understanding, but in lack of resolve and courage to use it without guidance from another. *Sapere Aude!* - 'Dare to be wise!' - that is the motto of enlightenment." - Immanuel Kant
 
 
 
 
 
+# Rene Descartes - 1600
 
+Rene Descartes was a French philosopher, mathematician, scientist. Considered by many as the father of modern philosophy, he laid the foundation for continental rationalism and 
 
+* **Mathematical Achievements** - Laws of refraction, x,y,z as the unknown variable. a,b,c as known. Cartesian coordinates.
+* **I think therefore I am** - 
+* **Mind-body Dualism**
 
 
 
@@ -315,63 +313,60 @@ knowledge and literature
 
 
 
+# Baruch Spinoza - 1600
 
-# Rene Descartes - 1600 AD
 
-Father of modern philosophy. Laid the foundation for continental rationalism.
 
-First principles. Doubt everything. I think therefore I am. Cogito ergo sum.
 
-Mathematician, x,y,z as the unknown variable. a,b,c as known variables. Cartesian coordinate with x and y axis
 
-# Baruch Spinoza - 1600 AD
 
 
+# John Locke - 1700
 
 
 
-# John Locke - 1700 AD
 
 
+# David Hume - 1700
 
-# David Hume - 1700 AD
 
 
 
-# Immanuel Kant - 1700 AD
 
+# Immanuel Kant - 1700
 
 
-# Jean-Jacques Rousseau - 1700 AD
 
+# Jean-Jacques Rousseau - 1700
 
 
-# Georg Wilhelm Friedrich Hegel - 1800 AD
 
+# Georg Wilhelm Friedrich Hegel - 1800
 
 
-# Soren Kierkegaard - 1800 AD
 
+# Soren Kierkegaard - 1800
 
 
-# Karl Marx - 1800 AD
 
+# Karl Marx - 1800
 
 
-# Charles Darwin - 1800 AD
 
+# Charles Darwin - 1800
 
 
-# Sigmund Freud - 1900 AD
 
+# Sigmund Freud - 1900
 
 
 
-# Friedrich Nietzsche - 1900 AD
 
+# Friedrich Nietzsche - 1900
 
 
-# Jean-Paul Sartre - 1900 AD
+
+# Jean-Paul Sartre - 1900
 
 
 
