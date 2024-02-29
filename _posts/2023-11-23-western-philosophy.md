@@ -40,7 +40,7 @@ After reading Sophie's World, I thought it'd be an amusing exercise to learn mor
 
 # Myths - Pre 600 BC
 
-In the beginning of human civilization, we made sense of the world through **myths**: stories about the gods for why the world is the way it is. For instance, people observed that crops would grow after rain. Without science, myths were created to explain this natural phenomenon. In Norse mythology, Thor was worshipped as the god of fertility because Thunder (Thordon in Norwegian) and the accompanying rain often brought bountiful harvest. History is replete interesting myths from the Pharaohs of Egypt, to the Azure dragons of China, to the thunder god who ruled Mount Olympus. **Stories** seems fundamental to how we understand the world, even to the present day.
+In the beginning of human civilization, we made sense of the world through myths: stories about the gods for why the world is the way it is. For instance, people observed that crops would grow after rain. Without science, myths were created to explain this natural phenomenon. In Norse mythology, Thor was worshipped as the god of fertility because Thunder (Thordon in Norwegian) and the accompanying rain often brought bountiful harvest. History is replete interesting myths from the Pharaohs of Egypt, to the Azure dragons of China, to the thunder god who ruled Mount Olympus. **Stories** seems fundamental to how we understand the world, even to the present day.
 
 
 
@@ -73,7 +73,7 @@ From 600 BC onwards, some of the first Philosophers in the world (from Greece) s
 
 - **Everything Flows** - everything is in a state of flux. Like a stream, when we step into it the second time, neither us nor the stream are the same as it was the first time. In contrast to Parmenides, Heraclitus proposed that change is fundamental to reality. 
 
-> "No man ever steps in the same river twice, for it is not the same river and he is not the same man"
+> "No man ever steps in the same river twice, for it is not the same river and he is not the same man" - Heraclitus
 
 - **The Unity of Opposites**: the world is characterized by opposites. Like two sides of a coin: good and evil, light and darkness, winter and spring, war and peace. Without out this intricate balance, the world would cease to exist.
 
@@ -115,7 +115,7 @@ Sophists were incredibly skilled in the art of persuasion (**rhetoric**) and wer
 
 # Socrates - 500 BC
 
-> "The unexamined life is not worth living"
+> "The unexamined life is not worth living" - Socrates
 
 Most of what we know about Socrates came from the writing of his pupil, Plato. He was famously ugly, with a pot-belly, bulging eyes and a snub nose. Despite never writing down a single line, he is still considered the most influential philosopher to have ever lived; literally demarcating philosophy into pre-Socratic, and post-Socratic Eras. 
 
@@ -138,7 +138,7 @@ Plato was Socrates' pupil. We know a lot about Plato because almost all of his w
 
 # Aristotle - 300 BC
 
-> "Virtue is the golden mean between two vices: the one of excess and the other of deficiency"
+> "Virtue is the golden mean between two vices: the one of excess and the other of deficiency" - Aristotle
 
 Aristotle was a pupil of Plato. He was known as "The First Teacher" amongst medieval Muslim scholars, as "The Philosopher" by St. Thomas Aquinas, and as "The Master of Those who know" by Dante. Interestingly, he also personally tutored Alexander the Great. 
 
@@ -182,7 +182,7 @@ The Hellenistic age began with the death of Alexander the Great in 323 BC and en
 
 <u>Stoicism</u>
 
-* Stoicism, established by Zeno of Citium around 300 BC, preached **virtue as the highest good**. To live a good life, one should cultivate inner resilience, be free from passions, and not be disturbed by external events beyond one's control. Unlike Epicureans who believed in avoiding pain, stoics believed in enduring pain.
+* Stoicism, established by Zeno of Citium around 300 BC, preached **virtue as the ultimate good**. To live a good life, one should cultivate inner resilience, be free from passions, and not be disturbed by external events beyond one's control. Unlike Epicureans who believed in avoiding pain, stoics believed in enduring pain.
 
 Let's look at an example to solidify our understanding of the three major Hellenistic philosophies. Suppose a person lost their job suddenly due to an economic downturn.
 
@@ -194,7 +194,7 @@ Let's look at an example to solidify our understanding of the three major Hellen
 
 # Christianity - 1 AD
 
-> "The last shall be first, and the first shall be last"
+> "The last shall be first, and the first shall be last" - Matthew 20:16 KJV
 
 A summary of the development of the Western World is incomplete without a few paragraphs on Christianity, for it will be the sole focus of study for the entirety of the Middle Ages.
 
@@ -242,7 +242,7 @@ In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse 
 
 
 
-# Renaissance - 1500
+# The Renaissance - 1500
 
 > "Man looked for new foundations" - Hans Kohn
 
@@ -260,54 +260,36 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 
 
-# Enlightenment - 1700
+# The Age of Enlightenment - 1700
 
 > "Dare to be wise!" - Immanuel Kant
 
-The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the Enlightenment is characterized by **Rationalism**: the belief that humans can determine truth, understand the universe, and improve society through reason and empirical observations rather than superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of scientific and intellectual discourse. 
+The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of intellectual discourse. 
 
 Many of the ideas we hold dear today emerged during the Enlightenment. For example:
 
-* **Rational Inquiry** - Emphasis on reason and critical thinking. We should question authority, challenge existing beliefs, think for ourselves rather than relying on a pre-defined set of rules or dogmas. 
-* **Secularism and Religious Toleration** - The Church shall be separated from the State. While the state is responsible for maintaining order and enforcing law, matter of religious belief should be between Man and his God without any government coercion. An official state religion should not exists. Political decisions should be made based on reason, evidence, and towards the common good rather than to the benefit of any particular religious organization.
-* **Primacy of the Individual** - All men are born equal with the right to life, liberty, and pursuit of happiness.
+* **Rational Inquries** - Emphasis on reason and critical thinking as source of knowledge. One should question authority, challenge existing beliefs, think for oneself rather than relying on a pre-defined set of rules or dogmas. 
+* **Secularism** - The Church shall be separated from the State. While the secular state is responsible for maintaining order and enforcing law, matter of religious belief should be between Man and his God. An official state religion should not exist because political decisions should be made based on reason, evidence, and in favor of the common good.
+* **Individualism** - All men are born equal with the right to life, liberty, and pursuit of happiness.
 * **Freedom of Thought** - "I disagree with what you say, but I will defend to the death your right to say it."
 
-The exact dating of the Enlightenment is fuzzy as there is considerable overlap with the Scientific Revolution that came before, and the Industrial Revolution that came afterwards. Some date the beginning of the Enlightenment to the publication of Rene Descartes' *Discourse on the Method* published in 1637, where he proclaimed: "Cogito, Ergo Sum", or "I think, therefore I am". This famous quote shifted the epistemological discussion from external authority to internal certainty. Most scholars place the end of the Enlightenment around 1800, choosing the Reign of Terror during the French Revolution or the subsequent Napoleonic Wars as a convenient point in time. It should also be noted that there is considerable regional variations during the Enlightenment. Not all societies experienced these transitions the same way, if at all. 
-
-In response to a sneering question: "What is Enlightenment?", Emmanuel Kant published an essay in Berlin Monthly in 1784 that perfectly encapsulates this period of profound change:
-
-> "Enlightenment is man's emergence from his self-incurred immaturity. [...] This immaturity is self-imposed when its cause lies not in lack of understanding, but in lack of resolve and courage to use it without guidance from another. *Sapere Aude!* - 'Dare to be wise!' - that is the motto of enlightenment." - Immanuel Kant
-
-
+The exact dating of the Enlightenment is fuzzy. Some date the beginning of the Enlightenment to the publication of Rene Descartes' *Discourse on the Method* published in 1637, where he proclaimed: "Cogito, Ergo Sum", or "I think, therefore I am". This famous quote shifted the epistemological discussion from external authority to internal certainty. Most scholars place the end of the Enlightenment around 1800, choosing the Reign of Terror during the French Revolution or the subsequent Napoleonic Wars as a convenient point in time. It should also be noted that there is considerable regional variations during the Enlightenment. Not all societies experienced these transitions the same way, if at all. 
 
 
 
 # Rene Descartes - 1600
 
-Rene Descartes was a French philosopher, mathematician, scientist. Considered by many as the father of modern philosophy, he laid the foundation for continental rationalism and 
+> "I doubt therefore I think. I think therefore I am" - Rene Descartes 
 
-* **Mathematical Achievements** - Laws of refraction, x,y,z as the unknown variable. a,b,c as known. Cartesian coordinates.
-* **I think therefore I am** - 
-* **Mind-body Dualism**
+Rene Descartes was a French philosopher, mathematician, scientist who was considered by many as the father of modern philosophy. His work during the 17th century - including his famous phrase: "I think, therefore I am" - brought to the fore **epistemology** (the study of how we arrive at knowledge) and gave "Age of Reason" its name and place in history. 
 
+To go on a slight tangent on the topic of epistemology: during this time period, there were two schools of thought for how we arrive at truths about the world. Descartes - together with Spinoza and Leibniz - laid the ground work for what became known as **Continental Rationalism**: that knowledge can be arrived at in the mind through pure reason, and that there are certain "a priori knowledge" innate in the mind independent from any lived experiences. The "continental" prefix refers to the fact that Descartes, Spinoza, and Leibniz all lived in mainland Europe. On the other hand, the **British Empiricists** (Hobbes, Locke, Berkeley, Hume) believed that knowledge must come from direct observation. Humans are a "tabula rasa" or blank slates. It is only through experience that we can arrive at knowledge about the world. We will look at some of the above-mentioned philosophers later. For now, here are three key insights from Descartes:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **Method of Doubt: "I think, therefore I am"** - Borrowing from his experience as a mathematician, Descartes wanted a way to study philosophy similar to how he studies math; systematically and with logical certainty. He wanted to arrive at a fundamental set of principles - similar to mathematical axioms - that can serve as firm foundation for genuine knowledge. To do so, he employed the method of doubt, also known as Cartesian doubt. It is not enough to know something beyond reasonable doubt, but *all possible doubt*.
+  * He realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. 
+  * Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, cogito ergo sum", "I doubt therefore I think, I think therefore I exist". In a world where everything could just be an illusion, Descartes became certain of one thing: that he exists. 
+* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in practically every college philosophy course in the world, his contribution to Mathematics is equally pervasive. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
+* **Mind-body Dualism** - Lastly, Descartes popularized the mind and body dualism. In short, Descartes believed that mind (non-physical) and body (physical) are distinct and separable. In other words, Descartes believed our consciousness can not just be brain synapses; it's instead something beyond the world of physical matters.
 
 
 
@@ -315,9 +297,13 @@ Rene Descartes was a French philosopher, mathematician, scientist. Considered by
 
 # Baruch Spinoza - 1600
 
+Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely considered to be the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Bible, made him an enemy of religious authorities (both Jews and Christians). The publication of his work *Tractatus Theologico-Politicus* is often considered the most significant event in European intellectual history, laying the groundworks for liberalism, secularism, and democracy. He was so influential to early modern philosophers that Hegel once remarked: 
 
+> "The fact is that Spinoza is made a testing-point in modern philosophy, so that it may really be said: 'You are either a Spinozist or not a philosopher at all.'" - Georg Wilhelm Friedrich Hegel
 
-
+* **Tractus Theologico-Politicus (TTP)** - When TTP was originally published. It had the stated aim to "liberate the individual from bondage to superstition and ecclesiastical authority".
+* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he uses synonymously. In other words, God does not manifest himself as a divine figure, but rather within all of nature itself.
+* **Free Will** - Spinoza embraced a deterministic view of the world. In other words, everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe that can theoretically be computed. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probabilistic. Nevertheless, Spinoza introduces a nuanced view of Human free will. True freedom comes from aligning oneself with the order of the universe
 
 
 
