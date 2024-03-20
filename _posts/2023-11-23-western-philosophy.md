@@ -8,7 +8,7 @@ date: 2023-11-23
 tags: thoughts
 ---
 
-After reading Sophie's World, I thought it'd be an amusing exercise to learn more about the philosophers presented therein, and summarize their work into three key bullet points. It should be stressed from the outset that reading the Encyclopedia does not give me a comprehensive understanding of anything. There are academics who have spent their entire lives studying one or two philosophers. My goal in this article is not to be an expert. Rather, my goal is simply to know enough to be conversant (or dangerous). Let's get started.
+After reading Sophie's World, I thought it'd be amusing to learn more about the philosophers presented in the book, and summarize their wisdoms into a few key bullet points. It should be stressed that reading a bunch of Encyclopedia articles does not give me a comprehensive understanding of anything. That is okay. My goal is simply to know enough to be conversant (or dangerous). Let's get started.
 
 - [Myths - Pre 600 BC](#myths---pre-600-bc)
 - [Natural Philosophers - 600 BC](#natural-philosophers---600-bc)
@@ -260,7 +260,7 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 
 
-# The Age of Enlightenment - 1700
+# The Age of Enlightenment - 1600
 
 > "Dare to be wise!" - Immanuel Kant
 
@@ -281,39 +281,80 @@ The exact dating of the Enlightenment is fuzzy. Some date the beginning of the E
 
 > "I doubt therefore I think. I think therefore I am" - Rene Descartes 
 
-Rene Descartes was a French philosopher, mathematician, scientist who was considered by many as the father of modern philosophy. His work during the 17th century - including his famous phrase: "I think, therefore I am" - brought to the fore **epistemology** (the study of how we arrive at knowledge) and gave "Age of Reason" its name and place in history. 
-
-To go on a slight tangent on the topic of epistemology: during this time period, there were two schools of thought for how we arrive at truths about the world. Descartes - together with Spinoza and Leibniz - laid the ground work for what became known as **Continental Rationalism**: that knowledge can be arrived at in the mind through pure reason, and that there are certain "a priori knowledge" innate in the mind independent from any lived experiences. The "continental" prefix refers to the fact that Descartes, Spinoza, and Leibniz all lived in mainland Europe. On the other hand, the **British Empiricists** (Hobbes, Locke, Berkeley, Hume) believed that knowledge must come from direct observation. Humans are a "tabula rasa" or blank slates. It is only through experience that we can arrive at knowledge about the world. We will look at some of the above-mentioned philosophers later. For now, here are three key insights from Descartes:
+Rene Descartes was a French philosopher, mathematician, scientist who was considered by many as the father of modern philosophy. His work during the 17th century - including his famous phrase: "I think, therefore I am" - brought to the fore epistemology (the study of how we arrive at knowledge) and gave "Age of Reason" its name and place in history. Here are three key insights from Descartes:
 
 * **Method of Doubt: "I think, therefore I am"** - Borrowing from his experience as a mathematician, Descartes wanted a way to study philosophy similar to how he studies math; systematically and with logical certainty. He wanted to arrive at a fundamental set of principles - similar to mathematical axioms - that can serve as firm foundation for genuine knowledge. To do so, he employed the method of doubt, also known as Cartesian doubt. It is not enough to know something beyond reasonable doubt, but *all possible doubt*.
-  * He realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. 
-  * Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, cogito ergo sum", "I doubt therefore I think, I think therefore I exist". In a world where everything could just be an illusion, Descartes became certain of one thing: that he exists. 
-* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in practically every college philosophy course in the world, his contribution to Mathematics is equally pervasive. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
-* **Mind-body Dualism** - Lastly, Descartes popularized the mind and body dualism. In short, Descartes believed that mind (non-physical) and body (physical) are distinct and separable. In other words, Descartes believed our consciousness can not just be brain synapses; it's instead something beyond the world of physical matters.
-
-
+  * He realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could all be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. 
+  * Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, cogito ergo sum". In a world where everything could just be an illusion, Descartes became certain of one thing: he exists. 
+* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in every college philosophy course in the world, his contribution to Mathematics is equally substantial. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
+* **Mind-body Dualism** - Lastly, Descartes popularized mind and body dualism; the idea that mind (non-physical) and body (physical) are distinct and separable. In other words, Descartes believed our consciousness are not just brain synapses; it's instead something beyond the world of physical matters.
 
 
 
 # Baruch Spinoza - 1600
 
-Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely considered to be the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Bible, made him an enemy of religious authorities (both Jews and Christians). The publication of his work *Tractatus Theologico-Politicus* is often considered the most significant event in European intellectual history, laying the groundworks for liberalism, secularism, and democracy. He was so influential to early modern philosophers that Hegel once remarked: 
+> "I do not know how to teach philosophy without becoming a disturber of the peace" - Baruch Spinoza
 
-> "The fact is that Spinoza is made a testing-point in modern philosophy, so that it may really be said: 'You are either a Spinozist or not a philosopher at all.'" - Georg Wilhelm Friedrich Hegel
+Baruch Spinoza was a 17th century Jewish Dutch philosopher widely considered to be one of the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. The publication of his work *Tractatus Theologico-Politicus*, considered by many to be one of the most significant event in European intellectual history laid the groundworks for many of our modern beliefs such as liberalism, secularism, and democracy. 
 
-* **Tractus Theologico-Politicus (TTP)** - When TTP was originally published. It had the stated aim to "liberate the individual from bondage to superstition and ecclesiastical authority".
-* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he uses synonymously. In other words, God does not manifest himself as a divine figure, but rather within all of nature itself.
-* **Free Will** - Spinoza embraced a deterministic view of the world. In other words, everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe that can theoretically be computed. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probabilistic. Nevertheless, Spinoza introduces a nuanced view of Human free will. True freedom comes from aligning oneself with the order of the universe
-
-
-
-# John Locke - 1700
+* **Tractus Theologico-Politicus (TTP)** - Spinoza's 1670 publication - often abbreviated to "TTP" - aimed to "liberate the individual from bondage to superstition and ecclesiastical authority". In it, he criticized the divine infallibility of the Old Testament and argued for a more historical approach in looking at the bible. He also argued for religious freedom and separation of Church and State. Political decisions should be based on reason rather than any particular religious dogma.
+* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he uses synonymously. To Spinoza, God does not manifest himself as a divine figure, but rather within all of nature.
+* **Free Will** - Spinoza embraced a deterministic view of the world. Everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe that can theoretically be calculated. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probability. To Spinoza, freedom is not the ability to choose different courses of action, instead it is the capacity to align oneself with nature and realize our inherent potentials.
+  * For example, an apple tree in a yard with plentiful sunlight will yield more fruit than a yard in constant shade. To Spinoza, if your yard lacks sunlight, it is far better to try and cultivate fruit that grow in the shade (such as pear or figs), rather than sticking with fruits that require full sun to thrive.
 
 
+
+
+# John Locke - 1600
+
+> "Life, liberty, and property" - John Locke
+
+John Locke was an English Philosopher considered by many as the "father of liberalism" and one of the most prominent Enlightenment thinkers. His work on epistemology, political philosophy, and social contract theory influenced many subsequent thinker like Voltaire, Rousseau, and the American revolutionaries. 
+
+Throughout the enlightenment period, there were two schools of thought for how we obtain knowledge. John Locke was part of the group known as the **British Empiricists** (Hobbes, Bacon, Berkeley, and Hume) who believed that that knowledge must come from direct observation. Humans are a "tabula rasa" or blank slates. On the other hand, we have the **Continental Rationalists** which included figures like Descartes, Spinoza, and Leibniz. The Rationalists believed that knowledge can be obtained through pure reason, and that there are certain "a priori knowledge" innate in the mind independent from any lived experiences. The "continental" prefix refers to the fact that Descartes, Spinoza, and Leibniz all lived in mainland Europe.
+
+Here are three key insights from John Locke:
+
+* **"Tabula Rasa" - Blank Slate** - Locke argues that the Humans are born blank slates. All knowledge must come from perception or experience from the real world. This is contrasted with the rationalist idea that knowledge can be gained through pure rational/logical deduction. It should be noted that the empiricists also viewed logic and reason as important; however, they believed that reason must ultimately be grounded by empirical observation.
+
+* **Social Contract Theory** - Social contract is an idea in political philosophy that explores the legitimacy of a state over the individual. The central question of social contract theory is this: why would rational individuals consent to give up their freedom to an authority? Many prominent philosophers (such as Hobbes and Rousseau) have explored this topic. John Locke's social contract theory can be explained as follows:
+  * In the state of nature, every man has certain natural unalienable rights; namely the rights to preserve his **life, liberty, and property**. However, without a government, people would have to fend for themselves against those seeking to enslave or injure them. 
+  * As rational beings, we come together and voluntarily enter into a social contract and establish a political authority. While we relinquish certain freedoms such as the right to violence, we expect in return that the authority will protect our natural rights.
+  * If a government fails to uphold its end of the social contract by violating the natural rights of the citizens, then the people have the obligation to rebel and overthrow the government.
+  * Locke's social contract theory is less pessimistic and more democratic than that of Thomas Hobbes, who believed that life in nature is "solitary, poor, nasty, brutish, and short." Hobbes believed the sovereign is a product of our attempt to escape the dreadful state of nature, rather than rational beings in cooperation. Furthermore, the Hobbesian leviathan has no obligation to uphold individual natural rights. Revolutions are out of the question.
+* **Limited Government** - Locke advocated for limited government (an idea clearly reflected in the US political structure). Locke warned against the concentration of power in a single individual or institution, and proposed a system of checks and balances. If the government fails to uphold its end of the contract (namely protecting natural rights), then the citizens have the right to rebel.
 
 
 
 # David Hume - 1700
+
+> "Reason is the slave of the passions" - David Hume
+
+David Hume was a Scottish philosopher best known for
+
+* **Empiricism**
+  * "Correlation does not imply causation". Hume takes it one step further; causation is impossible to determine for sure. Correlation is the best we can do. We can never prove A causes B, instead, A and B are constant conjunctions we observe enough times to convince ourselves that A causes B.
+  * Does rooster crowing cause the sun to rise? As of 2024, the answer is no.
+  * Is force equal to mass times acceleration? Yes most of the times, but sometimes no.
+* **Emotions Over Reason**
+  * we often make decisions based on emotions first, then use reason to justify afterwards.
+* **Is-Ought Problem**
+  * statement of fact (positive statement) - things the way the are.
+  * statement of value (normative statement) - things they way they should be.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -323,7 +364,11 @@ Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely conside
 
 
 
+
+
 # Jean-Jacques Rousseau - 1700
+
+
 
 
 
@@ -331,7 +376,11 @@ Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely conside
 
 
 
+
+
 # Soren Kierkegaard - 1800
+
+
 
 
 
@@ -339,7 +388,11 @@ Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely conside
 
 
 
+
+
 # Charles Darwin - 1800
+
+
 
 
 
@@ -348,11 +401,17 @@ Baruch Spinoza was a 17th century Jewish Dutch philosopher who is widely conside
 
 
 
+
+
 # Friedrich Nietzsche - 1900
 
 
 
+
+
 # Jean-Paul Sartre - 1900
+
+Be yourself. But who are you?
 
 
 
