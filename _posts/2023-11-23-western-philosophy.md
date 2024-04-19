@@ -188,7 +188,7 @@ Let's look at an example to solidify our understanding of the three major Hellen
 
 * A Cynic might choose to "escape the 9-5 rat race" and never work a corporate job again. They'd reject the conventional path of having a stable career, settling down, and starting a family. Instead, they would choose to live in accordance with their understanding of a natural/authentic life unconstrained by what society dictates is best. Perhaps they might become an entrepreneur, or become a digital nomad that works and lives in a van.
 * An Epicurean would spend the down time with friends and families, use their severance package to enjoy some travel and good food, then ultimately find a smaller, simpler job that contributes to a more tranquil life with simpler pleasures.
-* A Stoic would embrace the setback and not dwell on external circumstances. Rather than complaining about their ill-fortunate, they'd view it as a good character-building exercise. They go on the job hunt the next day, posting resumes in the morning then going on morning runs to cultivate their fitness during the down time. In short, they would focus on developing resilience, inner strength, and maintaining a sense of virtue or "stiff upper lip" in the face of adversity.
+* A Stoic would embrace the setback and not dwell on external circumstances. Rather than complaining about their ill-fortunate, they'd view it as a good character-building exercise. They go on the job hunt the next day, posting resumes in the morning then going on runs in the afternoon to cultivate their fitness. In short, they would focus on developing resilience, inner strength, and maintaining a sense of virtue in the face of adversity.
 
 
 
@@ -196,13 +196,12 @@ Let's look at an example to solidify our understanding of the three major Hellen
 
 > "The last shall be first, and the first shall be last" - Matthew 20:16 KJV
 
-A summary of the development of the Western World is incomplete without a few paragraphs on Christianity, for it will be the sole focus of study for the entirety of the Middle Ages.
+A summary of the development of the Western World is incomplete without a few paragraphs on Christianity, for it will be the sole focus of study for the entirety of the Middle Ages. There were two cultures important to the development of Western Civilization: Indo-Europeans and Semites.
 
-There were two cultures important to the development of Western Civilization: Indo-Europeans and Semites.
 * **Indo-Europeans** lived around the Black Sea and the Caspian Sea about 4000 years ago. They believed in many gods (**polytheism**). Greek philosophy, Norse mythology, and both oriental religions (Hinduism and Buddhism) all originated in the Indo-European sphere. They all have a leaning towards a philosophic, speculative view of the world. They also have a **cyclic view of history**; that there is no beginning and no end and that there exists an eternal interplay of life and death.
 * **Semites** originated in the Arabian Peninsula. All three Abrahamic religions (Judaism, Christianity, Islam) share a semitic background. The Semites believed in one God (**monotheism**) and a **linear view of history**; where one day history will end (judgement day). Judaism was the first of the Abrahamic religions; the Old Testament was written around 700 BC. Christianity is a direct descendent of Judaism with Hellenistic influences; its New Testament was written around 100 AD. The Quran of Islam was written around 600 AD.
 
-<u>Important events in Christianity:</u>
+<u>Chronology of events in Christianity:</u>
 
 * God created the world.
 * Soon after, mankind began to rebel. **Adam and Eve** were driven out of the Garden of Eden and death came to the world.
@@ -234,17 +233,19 @@ During this time, the Arabs became predominant in chemistry, astronomy, medicine
 
 # Protestant Reformation - 1500
 
+> Sola scriptura - "by scripture alone".
+
 Leading up to the 15th century, Europe experienced many calamities such as floods, severe droughts, famine, and the Black Death which killed 1/3 of the European population. There were peasant revolts, witch hunts, and general unrest. Many thought people have strayed from God, many others were dissatisfied with the abuse and corruption of the Roman Church authorities.
 
 One of the most well known abuse by the church was the **sale of indulgences**; certificates that promised remission or reduction of time in purgatory on the way to heaven. Although Indulgences can also be obtained through other means such as acts of piety, making pilgrims, and performing certain good work, the monetary aspect of indulgence made it ripe for financial exploitation. Many dutiful Christians gave their life-savings to the church so that the punishment for their sins - or those of their relatives - can be reduced or forgiven. Sale of indulgences became a lucrative source of revenue for the Church, who used it to fund the construction of St. Peter's Basilica. 
 
-In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse and corruption, composed and nailed the **Ninety-Five Theses** to the castle door in Wittenberg. Furthermore, he translated the Bible from Latin - an esoteric language only accessible by preachers and academics - to vernacular German. God's words were henceforth to be interpreted by the people, rather a selected few. This was incredibly revolutionary and disruptive. Many were tried and tortured for heresy during this period. Eventually, Christianity was split into two: **Catholicism** with the Roman Pope serving as at the top, and **Protestantism** which emphasized faith and the Bible alone as the source of divine revelations. 
+In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse and corruption, composed the **Ninety-Five Theses** and nailed it to the castle door in Wittenberg. Furthermore, he translated the Bible which is typically in Latin - an esoteric language only accessible by preachers and academics - to vernacular German. Furthermore, he translated the bible directly from Greek sources. God's words were henceforth to be interpreted by the people, rather a selected few. This was incredibly revolutionary and disruptive. Many were tried and tortured for heresy during this period. Eventually, Christianity was split into two: **Catholicism** with the Roman Pope serving as at the top, and **Protestantism** which emphasized faith and the Bible alone as the source of divine revelations. 
 
 
 
 # The Renaissance - 1500
 
-> "Man looked for new foundations" - Hans Kohn
+> "Art is never finished, only abandoned" - Leonardo Da Vinci
 
 The Renaissance (French for "rebirth") was a period of significant cultural, artistic, and intellectual progress. Although there is considerable overlap with the late Middle Ages, most scholars place the start of the Renaissance around the 14th century in Italy. It would later spread to the rest of Europe, reaching its peak between 1490s and 1520s. The Renaissance marked the transition between the Middle Ages and Modernity. 
 
@@ -256,7 +257,7 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 * The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
 * The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence. While Humanism is more secular in some aspects, most humanist are still Christians. It wouldn't be until the Enlightenment that secularism gained more prominence.
-* The number of world-changing scientific and artistic achievements during the Renaissance is too numerous to list. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1503, Leonardo Da Vinci painted the Mona Lisa. Around the same time, Michelangelo sculpted David. In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
+* The renaissance also marked the beginning of a time when human development started to accelerate. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1503, Leonardo Da Vinci painted the Mona Lisa. Around the same time, Michelangelo sculpted David. In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
 
 
 
@@ -264,7 +265,7 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 > "Dare to be wise!" - Immanuel Kant
 
-The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of intellectual discourse. 
+The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of intellectual progress. 
 
 Many of the ideas we hold dear today emerged during the Enlightenment. For example:
 
@@ -281,12 +282,12 @@ The exact dating of the Enlightenment is fuzzy. Some date the beginning of the E
 
 > "I doubt therefore I think. I think therefore I am" - Rene Descartes 
 
-Rene Descartes was a French philosopher, mathematician, scientist who was considered by many as the father of modern philosophy. His work during the 17th century - including his famous phrase: "I think, therefore I am" - brought to the fore epistemology (the study of how we arrive at knowledge) and gave "Age of Reason" its name and place in history. Here are three key insights from Descartes:
+Rene Descartes was a French philosopher, mathematician, and scientist who was considered by many as the father of modern philosophy. His writings during the 17th century - including his famous phrase: "I think, therefore I am" - brought epistemology to the fore and gave "Age of Reason" its name and place in history. Here are three key insights from Descartes:
 
 * **Method of Doubt: "I think, therefore I am"** - Borrowing from his experience as a mathematician, Descartes wanted a way to study philosophy similar to how he studies math; systematically and with logical certainty. He wanted to arrive at a fundamental set of principles - similar to mathematical axioms - that can serve as firm foundation for genuine knowledge. To do so, he employed the method of doubt, also known as Cartesian doubt. It is not enough to know something beyond reasonable doubt, but *all possible doubt*.
   * He realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could all be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. 
   * Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, cogito ergo sum". In a world where everything could just be an illusion, Descartes became certain of one thing: he exists. 
-* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in every college philosophy course in the world, his contribution to Mathematics is equally substantial. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
+* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in every college philosophy course in the world, his contribution to Mathematics is equally pervasive. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
 * **Mind-body Dualism** - Lastly, Descartes popularized mind and body dualism; the idea that mind (non-physical) and body (physical) are distinct and separable. In other words, Descartes believed our consciousness are not just brain synapses; it's instead something beyond the world of physical matters.
 
 
@@ -295,12 +296,12 @@ Rene Descartes was a French philosopher, mathematician, scientist who was consid
 
 > "I do not know how to teach philosophy without becoming a disturber of the peace" - Baruch Spinoza
 
-Baruch Spinoza was a 17th century Jewish Dutch philosopher widely considered to be one of the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. The publication of his work *Tractatus Theologico-Politicus*, considered by many to be one of the most significant event in European intellectual history laid the groundworks for many of our modern beliefs such as liberalism, secularism, and democracy. 
+Baruch Spinoza was a 17th century Jewish Dutch philosopher widely considered to be one of the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. The publication of his work *Tractatus Theologico-Politicus*, considered by many to be one of the most significant event in European intellectual history.
 
 * **Tractus Theologico-Politicus (TTP)** - Spinoza's 1670 publication - often abbreviated to "TTP" - aimed to "liberate the individual from bondage to superstition and ecclesiastical authority". In it, he criticized the divine infallibility of the Old Testament and argued for a more historical approach in looking at the bible. He also argued for religious freedom and separation of Church and State. Political decisions should be based on reason rather than any particular religious dogma.
-* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he uses synonymously. To Spinoza, God does not manifest himself as a divine figure, but rather within all of nature.
-* **Free Will** - Spinoza embraced a deterministic view of the world. Everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe that can theoretically be calculated. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probability. To Spinoza, freedom is not the ability to choose different courses of action, instead it is the capacity to align oneself with nature and realize our inherent potentials.
-  * For example, an apple tree in a yard with plentiful sunlight will yield more fruit than a yard in constant shade. To Spinoza, if your yard lacks sunlight, it is far better to try and cultivate fruit that grow in the shade (such as pear or figs), rather than sticking with fruits that require full sun to thrive.
+* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he believes to be synonymously. To Spinoza, God does not manifest himself as a divine figure, but rather within all of nature.
+* **Free Will** - Spinoza embraced a deterministic view of the world. Everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probability. To Spinoza, freedom is not the ability to choose different courses of action, instead it is the capacity to align oneself with nature and realize our inherent potentials.
+  * For example, an apple tree in a yard with plentiful sunlight will yield more fruit than a yard in the shade. To Spinoza, if your yard lacks sunlight, it is far better to try and cultivate fruit that grow in the shade (such as pear or figs), rather than sticking with fruits that require full sun to thrive.
 
 
 
@@ -316,11 +317,9 @@ Throughout the enlightenment period, there were two schools of thought for how w
 Here are three key insights from John Locke:
 
 * **"Tabula Rasa" - Blank Slate** - Locke argues that the Humans are born blank slates. All knowledge must come from perception or experience from the real world. This is contrasted with the rationalist idea that knowledge can be gained through pure rational/logical deduction. It should be noted that the empiricists also viewed logic and reason as important; however, they believed that reason must ultimately be grounded by empirical observation.
-
 * **Social Contract Theory** - Social contract is an idea in political philosophy that explores the legitimacy of a state over the individual. The central question of social contract theory is this: why would rational individuals consent to give up their freedom to an authority? Many prominent philosophers (such as Hobbes and Rousseau) have explored this topic. John Locke's social contract theory can be explained as follows:
-  * In the state of nature, every man has certain natural unalienable rights; namely the rights to preserve his **life, liberty, and property**. However, without a government, people would have to fend for themselves against those seeking to enslave or injure them. 
-  * As rational beings, we come together and voluntarily enter into a social contract and establish a political authority. While we relinquish certain freedoms such as the right to violence, we expect in return that the authority will protect our natural rights.
-  * If a government fails to uphold its end of the social contract by violating the natural rights of the citizens, then the people have the obligation to rebel and overthrow the government.
+  * In the state of nature, every man has certain **natural rights**; namely the rights to preserve his **life, liberty, and property**. However, without a government, people would have to fend for themselves against those seeking to enslave or injure them. 
+  * As rational beings, we come together and voluntarily enter into a social contract and establish a political authority. While we relinquish certain freedoms such as the right to violence, we expect in return that the authority will protect our natural rights. If a government fails to uphold its end of the social contract by violating the natural rights of the citizens, then the people have the **obligation to rebel** and overthrow the government.
   * Locke's social contract theory is less pessimistic and more democratic than that of Thomas Hobbes, who believed that life in nature is "solitary, poor, nasty, brutish, and short." Hobbes believed the sovereign is a product of our attempt to escape the dreadful state of nature, rather than rational beings in cooperation. Furthermore, the Hobbesian leviathan has no obligation to uphold individual natural rights. Revolutions are out of the question.
 * **Limited Government** - Locke advocated for limited government (an idea clearly reflected in the US political structure). Locke warned against the concentration of power in a single individual or institution, and proposed a system of checks and balances. If the government fails to uphold its end of the contract (namely protecting natural rights), then the citizens have the right to rebel.
 
@@ -330,31 +329,19 @@ Here are three key insights from John Locke:
 
 > "Reason is the slave of the passions" - David Hume
 
-David Hume was a Scottish philosopher best known for
+> "All knowledge reduces to probability, and all probability reduces to nothing" - David Hume
 
-* **Empiricism**
-  * "Correlation does not imply causation". Hume takes it one step further; causation is impossible to determine for sure. Correlation is the best we can do. We can never prove A causes B, instead, A and B are constant conjunctions we observe enough times to convince ourselves that A causes B.
-  * Does rooster crowing cause the sun to rise? As of 2024, the answer is no.
-  * Is force equal to mass times acceleration? Yes most of the times, but sometimes no.
-* **Emotions Over Reason**
-  * we often make decisions based on emotions first, then use reason to justify afterwards.
-* **Is-Ought Problem**
-  * statement of fact (positive statement) - things the way the are.
-  * statement of value (normative statement) - things they way they should be.
+David Hume was a Scottish philosopher who's best known for his system of empiricism and skepticism. He was one of the prominent British empiricists who distrusted reason as the sole means of arriving at knowledge. Not only does he believe that emotions trumps reason, he also challenged the entire premise of inductive reasoning. Outside of philosophy, Hume was a prominent essayist and wrote a massive six-volume "The History of England". Let's look at some of his most influential ideas.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+* **Causality is Impossible** - According to Hume, we process the world through our senses. Yet the knowledge we can extract from our observations is very limited. What we observe is nothing more than a <u>constant conjunction</u> of events; A -> B -> C.  <u>Causality is impossible; correlation is the best we can do</u>. For example, after observing enough triangles, we establish as fact that the sum of its interior angles is always 180 degrees. But is this really always true? No! Not in hyperbolic geometry, nor spherical geometry. Before you call this useless math pedantry, consider the fact that the Earth is spherical, and there are many real-world applications of spherical geometry. (here's a mindbender. You can start from the North Pole, walk south, turn 90 degrees and walk West, then turn another 90 degrees and walk North to return to where you started. The interior angle of your trip is larger than 180 degrees). A similar example can be made for Newtonian mechanics near the speed of light. Ultimately, we can't know if A -->B is an universal truth. The best we can do is build <u>model</u> to make sense of the world. There could be more refined models we haven't discovered yet.
+  * In a sense, Hume's answer to the question: "if a tree falls in the forest, and no one is around, does it make a sound?" is we simply cannot know.
+* **Passion Over Reason** - Hume disagrees that reason governs human behavior. We often make decisions based on emotions first, then use reason to justify afterwards. Hume argued that reason is utterly ineffectual at producing or preventing actions and thereby cannot have any effect on morality. For example, if someone desires to be healthy, reason can help them figure out the best diet/exercise, or help them come up with arguments for why it is good to be healthy, but Hume thinks reason alone cannot generate that initial desire.
+* **Is-Ought Problem** - Hume is the first to clearly expound on the "is-ought problem". In essence, Hume is saying we can't make any ethical judgements through physical observation (e.g. might makes right, nature makes right, it's the way the world works).
+  * Positive Statement ("is") - <u>The way things are</u>. Facts about the world based on reason and empirical observation.
+  * Normative Statement ("ought") - <u>The way things should be</u>. A statement of value based on ethics and aesthetics 
+  * Here are some examples of dubious ethical arguments:
+    * "In nature, animals kill each other for survival, so it's natural and therefore morally acceptable for humans to do the same."
+    * "Slavery has been practiced throughout history in many societies, so it must be morally acceptable."
 
 
 
@@ -362,11 +349,17 @@ David Hume was a Scottish philosopher best known for
 
 # Immanuel Kant - 1700
 
-
+* Categorical Imperative - 
+* The World As They Are vs. The World As They Appear To Us
+* A Kingdom of Ends
 
 
 
 # Jean-Jacques Rousseau - 1700
+
+* The Natural Goodness of Humans
+* Social Contract
+* Education Reforms
 
 
 
@@ -374,42 +367,61 @@ David Hume was a Scottish philosopher best known for
 
 # Georg Wilhelm Friedrich Hegel - 1800
 
+* Hegel's Dialectical Progress
+* Phenomenology of Spirit
+* Historical Idealism
+
 
 
 
 
 # Soren Kierkegaard - 1800
 
-
+* Father of Existentialism
+* The Leap of Faith
+* Angst
 
 
 
 # Karl Marx - 1800
 
-
+* Class Conflicts and Revolutions
+* Critique of Capitalism and the Inevitable Rise Communism
+* Surplus Value
 
 
 
 # Charles Darwin - 1800
 
-
+* Evolution by Natural Selection
+* The Tree of Life
+* Genetic Variations
 
 
 
 # Sigmund Freud - 1900
 
-
+* The Unconscious Mind
+* Psycho-Analysis
+* id, Ego, and Super Ego
+* Weirder Freudian Thoughts
 
 
 
 
 # Friedrich Nietzsche - 1900
 
-
+* God is Dead
+* Will to Power
+* Overman
 
 
 
 # Jean-Paul Sartre - 1900
+
+* Existence Precedes Essence
+* Condemned To Be Free
+* Bad Faith and Authenticity
 
 Be yourself. But who are you?
 
