@@ -263,6 +263,8 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 # The Age of Enlightenment - 1600
 
+> "Enlightenment is man's emergence from his self-incurred immaturity. [...] It is so easy to be immature. If I have a book to serve as my understanding, a pastor to serve as my conscience, a physician to determine my diet for me, and so on, I need not exert myself at all. I need not think, if only I can pay: others will readily undertake the irksome work for me." - Immanuel Kant
+
 > "Dare to be wise!" - Immanuel Kant
 
 The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of intellectual progress. 
@@ -329,10 +331,10 @@ Here are three key insights from John Locke:
 
 > "All knowledge reduces to probability, and all probability reduces to nothing" - David Hume
 
-David Hume was a Scottish philosopher best known for his system of empiricism and skepticism. Similar to the other British empiricists, he distrusted reason as the sole means of arriving at knowledge. He believed that emotions often trump reason, and that the entire premise of inductive reasoning is flawed. Outside of philosophy, Hume was a prominent essayist and wrote a massive six-volume "The History of England". Let's look at some of his most influential ideas.
+David Hume was a Scottish philosopher best known for his system of empiricism and skepticism. Like the other British empiricists, he distrusted reason as the sole means of arriving at knowledge. He believed that emotions often trump reason, and that the entire premise of inductive reasoning is flawed. Outside of philosophy, Hume was a prominent essayist and wrote a massive six-volume "The History of England". Let's look at some of his most influential ideas.
 
-* **Causality is Indeterminable** - According to Hume, we process the world through our senses. Yet the knowledge we can extract from our observations is extremely limited; for what we observe is nothing more than a <u>constant conjunction</u> of events; A -> B -> C.  In other words, Hume believed that causality is impossible to determine; correlation is the best we can do. For example, after observing enough triangles, we establish as fact that the sum of its interior angles is always 180 degrees. But this is not true in hyperbolic geometry, nor spherical geometry. A similar example can be made for Newtonian mechanics near the speed of light. Ultimately, we can't know if A -->B is an universal truth. The best we can do is build <u>model</u> to make sense of the world. There might be more refined models we haven't uncovered yet.
-* **Passion Over Reason** - Hume did not believe reason governed human behavior. Instead, we often decide based on emotions first, then use reason to justify afterwards. Hume argued that reason is utterly ineffectual at producing or preventing actions and thereby cannot have any effect on morality. For example, if someone desires to be healthy, reason can help them find the best diet/exercise, or help them come up with arguments for why it is good to be healthy, but Hume thinks reason alone cannot generate that initial desire.
+* **Causality is Indeterminable** - According to Hume, we process the world through our senses. Yet the knowledge we can extract from our observations is extremely limited; for what we observe is nothing more than a <u>constant conjunction</u> of events; A -> B -> C.  In other words, the underlying causality of the physical world is inaccessible to us and thus impossible to determine; correlation is the best we can do. For example, after observing enough triangles, we establish as fact that the sum of its interior angles is always 180 degrees. But this is not true in hyperbolic geometry, nor spherical geometry. A similar example can be made for Newtonian mechanics near the speed of light. Ultimately, we can't know if A -->B is an universal truth. The best we can do is build <u>model</u> to make sense of the world. There might be more refined models we haven't uncovered yet.
+* **Passion Over Reason** - Hume did not believe reason governed human behavior. Instead, people often decide based on emotions first, then use reason to justify afterwards. Hume argued that reason is utterly ineffectual at producing or preventing actions and thereby cannot have any effect on morality. For example, if someone desires to be healthy, reason can help them find the best diet/exercise, or help them come up with arguments for why it is good to be healthy, but Hume thinks reason alone cannot generate that initial desire.
 * **Is-Ought Problem** - Hume was the first to clearly expound on the "is-ought problem". In essence, Hume believed we can't make any ethical judgements based on physical observations. In other words, one cannot make a value judgement based on the way things are. (e.g. "Animals evolved to be self-interested, compete, and kill each other for survival. Therefore, it is natural and morally acceptable for humans to do the same.", "slavery has been practiced throughout history in many different cultures, therefore it is acceptable.")
   * Positive Statement ("is") - <u>The way things are</u>. Facts about the world based on reason and empirical observation.
   * Normative Statement ("ought") - <u>The way things should be</u>. A statement of value based on our ethics and aesthetics.
@@ -341,13 +343,29 @@ David Hume was a Scottish philosopher best known for his system of empiricism an
 
 # Immanuel Kant - 1700
 
-* Categorical Imperative - 
-* The World As They Are vs. The World As They Appear To Us
-* A Kingdom of Ends
+> "Act only according to that maxim whereby you can at the same time will that it should become a universal law." - Immanuel Kant
+
+Immanuel Kant was a German philosopher considered by many to be one of the greatest philosophers of all time. As a foremost enlightenment thinker, his work in epistemology, metaphysics, ethics, and aesthetics were incredibly influential, earning him titles like "father of modern ethics", "father of modern aesthetics", and "father of modern philosophy". Kant was incredibly disciplined and lived a strictly ordered life. He taught philosophy at University of Konigsberg, never traveling outside of his home city for the entirety of his life. It was said that his neighbors would set their clock based on his daily walks. Kant's philosophy is incredibly complex and hard to condense.
+
+* **Categorical Imperative** - Religion offered people two main benefits: meaning, and a moral system to inform them what constitutes "good" behavior (e.g the ten commandments). With a world that is increasingly secular, Kant wanted to create a system of morality based entirely on rationality. The central concept in Kant's moral philosophy is the Categorical Imperative. "Categorical" meaning applicable in all cases (unconditional), "imperative" meaning a directive, a moral commandment. There are three parts to the categorical imperative:
+  * <u>"Act only according to that maxim whereby you can at the same time will that it should become a universal law".</u> In simpler terms, treat others how you wish to be treated. Additionally, consider a world where everyone does what you are about to do, is that a world you want to live in? For example, if you want to throw trash on the ground, consider if you want to live in a world where everyone litters.
+  * <u>"Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end".</u> This rule emphasizes the dignity and worth of the individual. The people around you are also rational agents capable of making moral decisions. Never treat others merely as a tool for achieving your own ends.
+  * <u>"Act according to maxims of a universally legislating member of a merely possible kingdom of ends"</u> - Morality is not imposed externally. It is self-legislated by the moral duty of rational agents. Consider the perspectives of those around you and act in a way that contributes to the formation of a kingdom of ends.
+* **Transcendental Idealism** - Kant created his own epistemological system known as Transcendental Idealism. "Transcendental" meaning to be above (transcend) our senses and understanding of the mind, "idealism" meaning related to ideas and the mind. Taken together, Kant is asserting that knowledge is ultimately shaped by our minds. To put it another way, our minds are active participants, rather than passive receptors in the formation of knowledge and experience. There are two worlds, 1.) realm of appearance (<u>phenomena</u>)  2.) realm of <u>things-in-themselves</u> (noumena). We can never know the latter for they are ultimately unintelligible to us without perception. Consider a table. Physics tells us atoms are mostly empty space? Do we "see" protons and electrons? Is it really solid and made out of wood? 
+  * Let's make all of this more concrete. Consider the question: "if a tree falls in the forest, and no one is around to hear it, does it make a sound?":
+    * Rationalism - Yes of course! It stands to reason and laws of physics that a falling tree produces sound waves regardless of whether or not there is an observer.
+    * Empiricism - (answering from a non-practical, purely philosophical perspective) While it stands to reason there would be a sound, our hypothesis must be grounded by observations. We don't know for sure until we've observed enough falling trees. At the very least, we can't assume falling tree=>sound until we have enough data; there are always conditionals and qualifiers.
+    * Transcendental Idealism - The question is ill-defined because sound is part of the realm of phenomena. Sound is not an inherent property of a falling tree, but rather constructed by our mind through sensory input. Therefore, in the absence of an observer, there would be no perception of sound as we understand it. However, the tree falling still occurs in the noumenal realm, independent of our perception. The vibrations caused by the falling tree would still exist.
+
+
 
 
 
 # Jean-Jacques Rousseau - 1700
+
+> "Man is born free, and everywhere he is in chains." - Jean-Jacques Rousseau
+
+
 
 * The Natural Goodness of Humans
 * Social Contract
