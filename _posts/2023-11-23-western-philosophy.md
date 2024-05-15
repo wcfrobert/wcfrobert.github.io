@@ -8,7 +8,13 @@ date: 2023-11-23
 tags: thoughts
 ---
 
-After reading Sophie's World, I thought it'd be amusing to learn more about the philosophers presented in the book, and summarize their wisdoms into a few key bullet points. It should be stressed that reading a bunch of Encyclopedia articles does not give me a comprehensive understanding of anything. That is okay. My goal is simply to know enough to be conversant (or dangerous). Let's get started.
+After reading Sophie's World, I thought it'd be an interesting exercise to learn more about the remarkable philosophers presented therein and summarize their wisdoms into a few bullet points. What started off as a curiosity-driven side project morphed into a monumental undertaking that's taking way too much of my spare time. I ran out of steam by the third month after spending days trying to grasp the nuances of Kant's transcendental idealism and how it differed from other forms of epistemology. The next three months turned into a slog. 
+
+I recognized very early on just how much there is to know, and how much I will never know. This six-month project could have easily taken me six-years. By the time I finished the last paragraph on Sartre, I felt a tremendous sense of relief. The overall experience has instilled in me a deep sense of intellectual humility. *"I know that I know nothing"*. What better way to encapsulate my thoughts than a Socrates quote. 
+
+One might wonder: some scholars spend their entire career on one or two philosophers. What hope is there for me to understand anything about anyone in six months? That is a fair observation. I doubt I am producing anything new or valuable here. But why should we view everything through the lens of productivity and production. I did this to learn, not to produce. The past few months have been incredibly rewarding intellectually. The hundreds of encyclopedia articles I read were of tremendous pedagogical value. While I hope this article can be useful for others, I <u>know</u> it was useful for me. 
+
+
 
 - [Myths - Pre 600 BC](#myths---pre-600-bc)
 - [Natural Philosophers - 600 BC](#natural-philosophers---600-bc)
@@ -40,7 +46,9 @@ After reading Sophie's World, I thought it'd be amusing to learn more about the 
 
 # Myths - Pre 600 BC
 
-In the beginning of human civilization, we made sense of the world through myths: stories about the gods for why the world is the way it is. For instance, people observed that crops would grow after rain. Without science, myths were created to explain this natural phenomenon. In Norse mythology, Thor was worshipped as the god of fertility because Thunder (Thordon in Norwegian) and the accompanying rain often brought bountiful harvest. History is replete interesting myths from the Pharaohs of Egypt, to the Azure dragons of China, to the thunder god who ruled Mount Olympus. **Stories** seems fundamental to how we understand the world, even to the present day.
+In the beginning of human civilization, we made sense of the world through myths: stories about the gods for why the world is the way it is. For instance, people observed that crops would grow after rain. Without science, myths were created to explain this natural phenomenon. In Norse mythology, Thor was worshipped as the god of fertility because Thunder (Thordon in Norwegian) and the accompanying rain often brought bountiful harvest. 
+
+History is replete interesting myths from the Pharaohs of Egypt, to the Azure dragons of China, to the thunder god who ruled Mount Olympus. **Stories** seems fundamental to how we understand the world even up to the present day.
 
 
 
@@ -48,50 +56,29 @@ In the beginning of human civilization, we made sense of the world through myths
 
 From 600 BC onwards, some of the first Philosophers in the world (from Greece) sought to explain the world through **natural** processes, rather than **supernatural** ones. They were also known as pre-Socratic philosophers.
 
-<u>Thales of Miletus</u> 
+<u>Early Natural Philosophers - What Are Things Made of?</u> 
 
-- **Reason Over Myths**: Thales is one of the first to use reason rather than myths to explain the world. He calculated the height of the Pyramid by measuring its shadow. He accurately predicted solar eclipses. He also thought all things were made of water.
+- **Thales of Miletus** - All things are made of water. Thales was one of the first person to emphasize reason over myths. We must understand the world through natural rather than supernatural explanations. He calculated the height of the Pyramid by measuring its shadow. He accurately predicted solar eclipses.
 
-<u>Anaximander of Miletus</u> 
+- **Anaximander** - All things are are made of a material beyond human comprehension called "boundless"
 
-- All things are made of a material beyond human comprehension called "boundless"
+- **Anaximenes** - All things are are made of air.
+- **Empedocles** - Nature cannot be reduced to a single element, instead it must be four: earth, fire, air, and water. These four elements are combined through "love" and separated through "strife", both of which are natural forces.
+- **Anaxagoras** - All things are made of infinite number of minute particles invisible to the eye. Anaxagoras was known for his astute astronomical observations. He correctly predicted that the stars are not "heavenly bodies"; they are made of the same material as Earth. He also correctly deduced that the moon does not have its own light, but rather shines because of reflection of sunlight from Earth's surface. 
+- **Parmenides** - Something cannot be created from nothing; everything that exist has always existed. Parmenides was also known for his empiricism. He believed change itself is an illusion. Human reason, rather than perception must be the primary source of knowledge of the world because our senses can deceive us.
 
-<u>Anaximenes of Miletus</u>  
+- **Democritus** - All things are made of tiny invisible building blocks he called **"atoms"** - meaning "un-cuttable". Nature cannot be infinitely divided. The smallest piece possible is the atom. Modern science is very much in line with Democritus's theory. He also held the materialist that human body and souls were no different. Everything is made of atoms. Souls were made of "soul atoms".
 
-- All things are made of air.
-
-<u>Empedocles</u> 
-
-- Nature cannot be made of a single element, instead it must be four: earth, fire, air, and water. These four elements are combined through "love" and separated through "strife", both of which are natural forces.
-
-<u>Parmenides of Elea</u> 
-
-- **Something cannot be created from nothing**. Everything that exist has always existed. 
-- Change itself is an illusion. Human reason, rather than perception must be the primary source of knowledge of the world because things we perceive with our senses can be deceiving. 
-
-<u>Heraclitus</u> 
-
-- **Everything Flows** - everything is in a state of flux. Like a stream, when we step into it the second time, neither us nor the stream are the same as it was the first time. In contrast to Parmenides, Heraclitus proposed that change is fundamental to reality. 
+- **Heraclitus** - Everything is in a state of flux, flowing like a stream. In contrast to Parmenides, Heraclitus proposed that change is fundamental to reality. Heraclitus also introduced the idea of the Unity of Opposites. the world is characterized by opposites. Like two sides of a coin: good and evil, light and darkness, winter and spring, war and peace.
 
 > "No man ever steps in the same river twice, for it is not the same river and he is not the same man" - Heraclitus
 
-- **The Unity of Opposites**: the world is characterized by opposites. Like two sides of a coin: good and evil, light and darkness, winter and spring, war and peace. Without out this intricate balance, the world would cease to exist.
 
-<u>Anaxagoras</u> 
-
-- All things are made of infinite number of minute particles invisible to the eye. His astute astronomical observations were ahead of his time. He correctly predicted that all stars were made of same substance as Earth, that there might be human life on other planets, and that the moon does not have its own light, but rather shines because of reflection of sunlight from Earth's surface. 
-
-<u>Democritus</u> 
-
-- All things are made of tiny invisible building blocks he called **"atoms"** - meaning "un-cuttable". Nature cannot be infinitely divided. The smallest piece possible is the atom. Modern science is very much in line with Democritus's theory. 
-- He held the **materialist** that human body and souls were no different. Everything is made of atoms. Souls were made of "soul atoms".
 
 <u>Fathers of History and Medicine</u>
 
-Contemporary to the natural philosophers were the first doctors and historians (also from Greece).
-
 * **Herodotus** - known as the father of history. He wrote detailed accounts of the Greco-Persian War often with artistic flourish. He is sometimes criticized for including fanciful stories which earned him the name: the father of lies, or the ancient screenwriter.
-* **Thucydides** - Contrary to Herodotus, Thucydides was known as the father of "scientific history". He applied strict standards of impartiality and evidence gathering. He wrote about the Peloponnesian War. The term "Thucydides trap" refers to the inclination towards war between an uprising power and a declining existing power
+* **Thucydides** - Contrary to Herodotus, Thucydides was known as the father of "scientific history". He applied strict standards of impartiality and evidence gathering. He wrote about the Peloponnesian War. The term "**Thucydides trap**" refers to the inclination towards war between an uprising power and a declining existing power
 * **Hippocrates** - known as the father of medicine.
   * The word "Influenza" means a malign influence from the stars. Before Hippocrates, sickness was thought to be due to supernatural causes
   * He believed that the best safeguard against sickness is balance. Moderation and a healthy lifestyle is essential. When sickness occurs, it is due to physical or mental imbalance.
@@ -105,11 +92,13 @@ Contemporary to the natural philosophers were the first doctors and historians (
 
 Athens was the center of culture and history in the Greek world. Around this time, there was a class of people known as the "sophists". Sophist were teachers or **intellectuals for hire**. They make a living by teaching and giving lectures to citizens. Topics were wide ranging from philosophy, music, athletics and mathematics. Most of their writings were lost to history and we often only have second-hand accounts.
 
-* <u>Protagoras</u> was credited by Plato as inventing the role of professional sophist. He is known for the quote: "Man is the measure of all things", which sowed the seed to Renaissance Humanism. He also believed that there is no objective truth, only relative truth (**relativism**). Person A may think the weather is cold, while person B may think it is hot. There cannot be an absolute evaluation because it depends our subjective perceptions.
-* <u>Lycophron</u> was a **Skeptic** who believed that man do not posses the means to know the truth of the world, nor the existence of god. He was critical of mythologies but also of fruitless philosophical speculations.
-* <u>Xeniades</u> believed that certain human traits are **socially induced** rather than natural. He opposed the notion of aristocratic birth. He also believed that laws were simply a matter of agreement, a social convention that changes over time, not some universal law.
+<u>Notable Sophists</u>
 
-Sophists were incredibly skilled in the art of persuasion (**rhetoric**) and were often paid well. Coupled with their often avantgarde, subversive views of the world, they eventually became viewed negatively (maybe undeservingly so). Their negative reputation was further amplified by the writing of Plato and Aristophanes. Over time, **Sophistry** became associated with fallacious arguments and deception. Aristophanes viewed sophists as hairsplitting wordsmiths, whereas Plato believed sophists were avaricious instructor who taught deception rather than lovers of wisdom.
+* **Protagoras** was credited by Plato as inventing the role of professional sophist. He is known for the quote: "Man is the measure of all things", which sowed the seed to Renaissance Humanism. He also believed that there is no objective truth, only relative truth (**relativism**). Person A may think the weather is cold, while person B may think it is hot. There cannot be an absolute evaluation because truth depends our subjective perceptions.
+* **Lycophron** was a **Skeptic** who believed that man do not posses the means to know the truth of the world, nor the existence of god. He was critical of mythologies but also of fruitless philosophical speculations.
+* **Xeniades** believed that certain human traits are **socially induced** rather than natural. He opposed the notion of aristocratic birth. He also believed that laws were simply a matter of agreement, a social convention that changes over time, not some universal law.
+
+Sophists were incredibly skilled in the art of persuasion (**rhetoric**) and were often paid well. Coupled with their often subversive views of the world, they eventually became viewed negatively (perhaps undeservingly). Their negative reputation was further amplified by the writing of Plato and Aristophanes. Over time, **Sophistry** became associated with fallacious arguments and deception. Aristophanes viewed sophists as hairsplitting wordsmiths, while Plato believed sophists were avaricious instructor who taught deception rather than lovers of wisdom.
 
 
 
@@ -119,20 +108,19 @@ Sophists were incredibly skilled in the art of persuasion (**rhetoric**) and wer
 
 Most of what we know about Socrates came from the writing of his pupil, Plato. He was famously ugly, with a pot-belly, bulging eyes and a snub nose. Despite never writing down a single line, he is still considered the most influential philosopher to have ever lived; literally demarcating philosophy into pre-Socratic, and post-Socratic Eras. 
 
-* **Socratic Method:** Socrates believed knowledge came from within, and sought to help people "give birth" to the correct insight. He did this through a series of questions that lead participants to test their deepest assumptions and arrive at truer form of knowledge.
-* **Intellectual Freedom**: His persistent questioning often shook the foundation a person's belief system. People found him exasperating. He was accused of "corrupting the youth" and "introducing new gods" and condemned to die by drinking hemlock (poison). Socrates could have easily pleaded leniency and be exiled from Athens, instead he chose not to. Socrates believed in the importance of intellectual freedom and the pursuit of knowledge even if they challenged social norms. At his trial, he supposedly uttered the famous phrase: "The unexamined life is not worth living".
+Socrates believed knowledge came from within, and sought to help people "give birth" to the correct insight. He did this through a series of probing questions that lead participants to test their deepest assumptions. This became known as **Socratic Method**. His persistent questioning often shook the foundation a person's belief system. People found him exasperating. He was accused of "corrupting the youth" and "introducing new gods" and condemned to die by drinking hemlock (poison). Socrates could have easily pleaded leniency and be exiled from Athens, instead he chose not to. Socrates believed in the importance of **intellectual freedom** and the pursuit of knowledge even if they challenged social norms. At his trial, he supposedly uttered the famous phrase: "The unexamined life is not worth living".
 
 
 
 # Plato - 400 BC
 
-Plato was Socrates' pupil. We know a lot about Plato because almost all of his writings have been preserved. He founded his own school near Athens named after the Greek hero Academus. Plato wrote about ethics, politics, metaphysics, and many other topics too numerous to list. 
+Plato was Socrates' pupil. We know a lot about Plato because almost all of his writings have been preserved. He founded his own school known as the Academy near Athens; named after the Greek hero Academus. Plato wrote about ethics, politics, metaphysics, and many other topics too numerous to list. 
 
-* **Platonic Forms**: There are two worlds. The world of senses, and the world of ideas. Through our senses, we can only perceive fleeting and imperfect reflections of a higher reality. There exists a true reality Plato calls the eternal world of ideas (forms). 
-  * Forms are abstract, perfect representations of all natural phenomena and objects. For example, every horse in the world is an imperfect representation of the ideal, perfect "idea horse"; like a gingerbread-man to its mold.
+Plato is most well-known for his **theory of forms**. Forms are abstract, perfect representations of all natural phenomena and objects. For example, every horse in the world is an imperfect representation of the ideal, perfect "idea horse". Everything in the world can be thought of as a gingerbread-man cookie. There might be many cookies but only one mold (its perfect form). Plato believed there are two worlds. We live in the world of senses which is fleeting and often deceiving. There exists a higher level of reality known as the world of forms.
 
-* **Allegory of the Cave**: To explain his Theory of Forms, Plato devises an analogy. Human beings are born prisoners tied to the bottom of a cave. We perceive reality through the dim reflections and shadows from lights entering from the cave's entrance. We see a tree shadow and mistake it for an actual tree. Philosophy is ultimately a journey from ignorance to enlightenment. Since our senses are fallible, we must pursue knowledge and wisdom through reason. 
-* **Immortality of The Soul**: The soul is immortal and once existed in the world of forms. After the soul wakes up in a physical body, it has forgotten all the perfect forms. As such, we have a natural yearning (eros) to return to the world of forms; to exit the cave. Therefore, knowledge can be thought of as a process of *recollection*.
+To better explain his theory of forms, Plato came up with an analogy known as the **allegory of the cave**. Human beings are born prisoners tied to the bottom of a cave. We perceive reality through the dim reflections and shadows from lights entering from the cave's entrance. We see a tree shadow and mistake it for an actual tree. Philosophy is ultimately a journey from ignorance to enlightenment; from the world of senses to the world of forms. 
+
+Plato believed that our **soul is immortal** and once resided within the world of forms. After the soul wakes up in a physical body, it has forgotten all the perfect forms. As such, we have a natural yearning (eros) to return to the world of forms; to exit the cave so to speak. Therefore, knowledge can be thought of as a process of recollection.
 
 
 
@@ -140,23 +128,17 @@ Plato was Socrates' pupil. We know a lot about Plato because almost all of his w
 
 > "Virtue is the golden mean between two vices: the one of excess and the other of deficiency" - Aristotle
 
-Aristotle was a pupil of Plato. He was known as "The First Teacher" amongst medieval Muslim scholars, as "The Philosopher" by St. Thomas Aquinas, and as "The Master of Those who know" by Dante. Interestingly, he also personally tutored Alexander the Great. 
+Aristotle was a pupil of Plato. He was known as "The First Teacher" amongst medieval Muslim scholars, as "The Philosopher" by St. Thomas Aquinas, and as "The Master of Those who know" by Dante. Interestingly, he also personally tutored Alexander the Great. Throughout his life, Aristotle wrote voluminously on just about everything. In fact, he contributed to almost every field of human knowledge at the time. It wasn't until the Enlightenment that his theories started to be systematically replaced. He profoundly shaped scholarship during the middle ages, and consequently Christian theology. Here are some of the insights from Aristotle that resonated with me the most.
 
-To summarize Aristotle in three bullet points is a fool's errand. Throughout his life, Aristotle wrote voluminously on just about everything. In fact, he contributed to almost every field of human knowledge at the time. It wasn't until the Enlightenment that his theories started to be systematically replaced. He profoundly shaped scholarship during the middle ages, and consequently Christian theology. 
+Aristotle both rejected and expanded on Plato's theory of forms. He believed there is only one world. Both form (which Aristotle calls **essence**) and physical matter (**substance**) exists in this world. The "idea" horse we alluded to earlier is simply a concept our mind forms after seeing certain number of horses. Nothing exists in consciousness that has not first been experienced by the senses. To give another example, the substance of a chicken is its physical body. The essence (or form) of a chicken is its "chicken-ness"; that it lays eggs, cackles, and flutter its wings.
 
-Here are three insights from Aristotle that resonated with me the most:
+**The "essence" of living things is its soul**. Aristotle lays out three types of souls. Humans are special because we have all three.
 
-* **Substance and Essence**: Aristotle disagreed with Plato on his Theory of Form. Both form (which he calls "essence"), and "matter" exists in this world. There is no other world beyond this one. The "idea" horse we alluded to earlier is simply a concept our mind forms after seeing certain number of horses. Nothing exists in consciousness that has not first been experienced by the senses. 
-  * The substance of a chicken is its physical body. The essence (or form) of a chicken is its "chicken-ness"; that it lays eggs, cackles, and flutter its wings.
-* **The Golden Mean**: Aristotle advocated the "Golden Mean" in many area of his writing from virtue ethics to politics. He noticed a pattern where the extremes are often undesirable, and that the ideal is to be found in the middle.
-  * Cowardice - Courage - Rashness
-  * Self-indulgence - Temperance - Insensibility
-  * Shyness - Modesty - Shamelessness
-  * Low self-esteem - Truthfulness - Boastfulness
-* **Types of Soul**: To use the terminology above, the soul is the "essence" of living things. There are three types of soul according to Aristotle. Humans are special because we have all three.
-  * Vegetative Soul - can grow and nourish itself (grass)
-  * Sensitive Soul - can move and perceive things (animals)
-  * Rational Soul - can think and reason (humans)
+* Vegetative Soul - can grow and nourish itself (grass)
+* Sensitive Soul - can move and perceive things (animals)
+* Rational Soul - can think and reason (humans)
+
+Outside of metaphysics, Aristotle advocated for the **Golden Mean** in many area of his writing from virtue ethics to politics. He recognized a pattern where the extremes are often undesirable, and that the ideal is to be found in the middle. For example, a lack of courage is cowardice, yet too much courage can lead to recklessness. A lack of generosity is miserly and stingy, too much generosity may be imprudent and extravagant, the optimal lies in the middle of two extremes.
 
 
 
@@ -164,29 +146,22 @@ Here are three insights from Aristotle that resonated with me the most:
 
 > "We suffer more in imagination than in reality" - Seneca
 
-The Hellenistic age began with the death of Alexander the Great in 323 BC and ended with the death of Cleopatra in 30 BC. Some scholars mark the end of the Hellenistic age as 330 AD when Constantinople became the capital of the Roman Empire. Following Alexander's death, his empire was divided among his generals into many Hellenistic kingdoms. Greek language, art, culture, architecture, and philosophy flourished throughout the known world and laid the foundation for the Roman Empire. The Hellenistic philosophers can be categorized into three groups: Cynics, Epicureans, and Stoics. Broadly speaking, they have the common interest in the inner life, virtue, and happiness.
+By 320 BC, Alexander the Great had conquered most of the known world. With the fall of the Persian Empire, Hellenism flourished, and Greek language, art, culture, architecture, and philosophy became prominent throughout the Mediterranean. The Hellenistic age began with the death of Alexander the Great in 323 BC, and ended with the death of Cleopatra in 30 BC when the Roman Republic morphed into the Roman Empire. Some scholars place the end of the Hellenistic age much later in 330 AD; right up to the beginning of the Middle Ages.
 
-<u>Cynicism</u>
+The Hellenistic philosophers can be categorized into three groups: Cynics, Epicureans, and Stoics. Broadly speaking, all three groups sought to answer the question of "how should one live?". They explored topics such as the inner life, virtue, and happiness.
 
-* Cynicism - best characterized by Diogenes who famously lived in a jar in Athens - is a school of thought that preached a simple, ascetic life as the ultimate good. **Free from societal norms**, the cynics lived in accordance with nature, and rejected all material possessions and desires such as wealth, power, glory, status, etc.
-* Over the centuries, Cynicism became associated with its negative aspect, most notably the shameless nonconformity. Contemporary definition of cynicism refers to an attitude of distrust, or lack of faith in the sincerity and goodness of others.
+* **Cynicism** is best characterized by Diogenes who infamously lived in a jar in Athens. It is a school of thought that preached a simple, ascetic life as the ultimate good. **Free from social norms**, the cynics lived in accordance with nature, and rejected all material possessions and desires such as wealth, power, glory, status. Over the centuries, the philosophical definition of cynicism diverged from its contemporary definition. The modern definition focuses solely on its negative characteristics such as shameless non-conformity, the attitude of distrust, or lack of faith in the sincerity and goodness of others.
   * Cynicism - distrust by prudence
   * Pessimism - distrust of potential success
   * Nihilism - distrust of meaning in life
 
-<u>Epicureanism</u>
+* **Epicureanism** was established by Epicurus in 307 BC. It is a school of thought that proclaimed **pleasure as the ultimate good**. However, the Epicureans also believed in pleasure within constraint. Short term pleasure must be balanced with greater, more lasting long-term ones. Followers of Epicureanism generally withdrew from politics to limit their ambition and attain a greater peace of mind. Although the seeking of pleasure is at the heart of Epicureanism, it should not be confused with hedonism (common in modern usage). Epicureans practiced moderation, and generally avoided excesses and overindulgences, yet they are connoisseurs of arts and simple pleasures, and are open to occasional luxury.
 
-* Epicureanism, established by Epicurus in 307 BC, made **pleasure as the ultimate good**. However, the Epicureans also believed in pleasure within constraint. Short term pleasure must be balanced with greater, more lasting long-term ones. Followers of Epicureanism generally withdrew from politics to limit their ambition and attain a greater peace of mind.
-* Although the seeking of pleasure is at the heart of Epicureanism, it should not be confused with hedonism (a common mistake in modern usage). Epicureans practiced moderation, and generally avoided excesses and overindulgences, yet they are connoisseurs of arts and simple pleasures, and are open to occasional luxury.
+* **Stoicism** was established by Zeno of Citium around 300 BC, it preached **virtue as the ultimate good**. To live a good life, one should cultivate inner resilience, be free from passions, and not be disturbed by external events beyond one's control. Unlike Epicureans who believed in avoiding pain, stoics believed in enduring pain.
 
+Suppose a cynic, an epicurean, and a stoic all lost their jobs due to an economic downturn:
 
-<u>Stoicism</u>
-
-* Stoicism, established by Zeno of Citium around 300 BC, preached **virtue as the ultimate good**. To live a good life, one should cultivate inner resilience, be free from passions, and not be disturbed by external events beyond one's control. Unlike Epicureans who believed in avoiding pain, stoics believed in enduring pain.
-
-Let's look at an example to solidify our understanding of the three major Hellenistic philosophies. Suppose a person lost their job suddenly due to an economic downturn.
-
-* A Cynic might choose to "escape the 9-5 rat race" and never work a corporate job again. They'd reject the conventional path of having a stable career, settling down, and starting a family. Instead, they would choose to live in accordance with their understanding of a natural/authentic life unconstrained by what society dictates is best. Perhaps they might become an entrepreneur, or become a digital nomad that works and lives in a van.
+* A Cynic might choose to "escape the 9-5 rat race" and never work a corporate job again. They'd reject the conventional path of having a stable career, settling down, and starting a family. Instead, they would choose to live in accordance with their understanding of a natural/authentic life unconstrained by what society dictates is best. Perhaps they might become an entrepreneur, or become a digital nomad.
 * An Epicurean would spend the down time with friends and families, use their severance package to enjoy some travel and good food, then ultimately find a smaller, simpler job that contributes to a more tranquil life with simpler pleasures.
 * A Stoic would embrace the setback and not dwell on external circumstances. Rather than complaining about their ill-fortunate, they'd view it as a good character-building exercise. They go on the job hunt the next day, posting resumes in the morning then going on runs in the afternoon to cultivate their fitness. In short, they would focus on developing resilience, inner strength, and maintaining a sense of virtue in the face of adversity.
 
@@ -201,7 +176,7 @@ A summary of the development of the Western World is incomplete without a few pa
 * **Indo-Europeans** lived around the Black Sea and the Caspian Sea about 4000 years ago. They believed in many gods (**polytheism**). Greek philosophy, Norse mythology, and both oriental religions (Hinduism and Buddhism) all originated in the Indo-European sphere. They all have a leaning towards a philosophic, speculative view of the world. They also have a **cyclic view of history**; that there is no beginning and no end and that there exists an eternal interplay of life and death.
 * **Semites** originated in the Arabian Peninsula. All three Abrahamic religions (Judaism, Christianity, Islam) share a semitic background. The Semites believed in one God (**monotheism**) and a **linear view of history**; where one day history will end (judgement day). Judaism was the first of the Abrahamic religions; the Old Testament was written around 700 BC. Christianity is a direct descendent of Judaism with Hellenistic influences; its New Testament was written around 100 AD. The Quran of Islam was written around 600 AD.
 
-<u>Chronology of events in Christianity:</u>
+<u>Chronology of major events in Christianity:</u>
 
 * God created the world.
 * Soon after, mankind began to rebel. **Adam and Eve** were driven out of the Garden of Eden and death came to the world.
@@ -215,7 +190,7 @@ A summary of the development of the Western World is incomplete without a few pa
 * Around 6 BC, **Jesus of Nazareth** was born (Christmas). He was a Galilean jew who started his own ministry and quickly gained followers. He claimed to be the "Messiah" but was ultimately arrested and tried by the Jewish authorities in Jerusalem and turned to the Roman Government.
 * Around 33 AD, Jesus was crucified (Good Friday). Three day after, he was resurrected from the dead (Easter Monday)
 * Soon after Jesus' death, **Paul the Apostle** traveled throughout the Greco-Roman world on many missionary journeys. He spread the teaching of Jesus and was instrumental in the writing of the New Testament.
-* Christians faced persecution throughout the Roman Empire until emperor Theodosius made Christianity the **official religion of the Roman Empire** and thus most of the western world.
+* Christians faced persecution throughout the Roman Empire until emperor Theodosius made Christianity the **official religion of the Roman Empire**.
 * Over time, a **East-West Schism** occurred due to theological and cultural differences. The church was split into Eastern Orthodoxy (centered in Constantinople or modern-day Istanbul) and Western Catholic Church (Centered in Rome) in 1054.
 * During the 14th century, dissatisfaction with the Roman Catholic church lead to another schism known as the **Protestant Reformation**, splitting the church further into Catholicism, and Protestantism.
 
@@ -235,11 +210,11 @@ During this time, the Arabs became predominant in chemistry, astronomy, medicine
 
 > Sola scriptura - "by scripture alone".
 
-Leading up to the 15th century, Europe experienced many calamities such as floods, severe droughts, famine, and the Black Death which killed 1/3 of the European population. There were peasant revolts, witch hunts, and general unrest. Many thought people have strayed from God, many others were dissatisfied with the abuse and corruption of the Roman Church authorities.
+Leading up to the 15th century, Europe experienced many calamities such as floods, severe droughts, famine, and the Black Death which killed 1/3 of the European population. There were peasant revolts, witch hunts, and general unrest. Many thought we have strayed from God, many others were dissatisfied with the abuse and corruption of the Roman Church authorities.
 
 One of the most well known abuse by the church was the **sale of indulgences**; certificates that promised remission or reduction of time in purgatory on the way to heaven. Although Indulgences can also be obtained through other means such as acts of piety, making pilgrims, and performing certain good work, the monetary aspect of indulgence made it ripe for financial exploitation. Many dutiful Christians gave their life-savings to the church so that the punishment for their sins - or those of their relatives - can be reduced or forgiven. Sale of indulgences became a lucrative source of revenue for the Church, who used it to fund the construction of St. Peter's Basilica. 
 
-In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse and corruption, composed the **Ninety-Five Theses** and nailed it to the castle door in Wittenberg. Furthermore, he translated the Bible which is typically in Latin - an esoteric language only accessible by preachers and academics - to vernacular German. Furthermore, he translated the bible directly from Greek sources. God's words were henceforth to be interpreted by the people, rather a selected few. This was incredibly revolutionary and disruptive. Many were tried and tortured for heresy during this period. Eventually, Christianity was split into two: **Catholicism** with the Roman Pope serving as at the top, and **Protestantism** which emphasized faith and the Bible alone as the source of divine revelations. 
+In 1517, **Martin Luther**, dissatisfied with the Roman Catholic Church's abuse and corruption, composed the **Ninety-Five Theses** and nailed it to the castle door in Wittenberg. Furthermore, he translated the Bible which is typically in Latin - an esoteric language only accessible by preachers and academics - to vernacular German. What's more, he translated the bible directly from the original Greek sources. God's words were henceforth to be interpreted by the people, rather a selected few. This was incredibly revolutionary and disruptive. Many were tried and tortured for heresy during this period. Eventually, Christianity was split into two: **Catholicism** with the Roman Pope serving as at the top, and **Protestantism** which emphasized faith and the Bible alone as the source of divine revelations. 
 
 
 
@@ -255,9 +230,11 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 <u>Key Features of the Renaissance</u>
 
-* The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
-* The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence. While Humanism is more secular in some aspects, most humanist are still Christians. It wouldn't be until the Enlightenment that secularism gained more prominence.
-* The renaissance also marked the beginning of a time when human development started to accelerate. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1503, Leonardo Da Vinci painted the Mona Lisa. Around the same time, Michelangelo sculpted David. In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
+The Renaissance is perhaps best known for its art. Renaissance art employed realistic linear perspective and portrayal of light and shadow. The artistic and scientific contribution of polymathic figures such as Leonardo Da Vinci and Michelangelo inspired the term **"Renaissance man"**. 
+
+The revival of interest in Classical literature and ideals also led to an intellectual movement known as **Humanism**; a human-centered worldview that celebrated individual achievements, potential, and virtue. Renaissance humanists sought to create a citizenry that can speak and write with eloquence. While Humanism is more secular in some aspects, most humanist are still Christians. It wouldn't be until the Enlightenment that secularism gained more prominence.
+
+Lastly, the renaissance marked the beginning of a time when human development started to accelerate. In 1440, the printing press was invented. In 1492, Christopher Columbus discovered the new world, sparking the Age of Discovery. In 1494, Luca Pacioli formalized modern accounting (double-entry bookkeeping). In 1503, Leonardo Da Vinci painted the Mona Lisa. Around the same time, Michelangelo sculpted David. In 1543, Nicolaus Copernicus formulated his heliocentric view of the universe.
 
 
 
@@ -267,16 +244,14 @@ A confluence of factors lead to the birth of the Renaissance. Firstly, the **Bla
 
 > "Dare to be wise!" - Immanuel Kant
 
-The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. It was a golden age of intellectual progress. 
+The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. Many of the ideas we hold dear today emerged during the Enlightenment. For example:
 
-Many of the ideas we hold dear today emerged during the Enlightenment. For example:
+* **Rational Inquiries** - Emphasis on reason and critical thinking as source of knowledge. One should question and challenge existing beliefs, and think for oneself rather than relying on a pre-defined set of rules or dogmas. 
+* **Separation of Church and State** - Matter of religious belief should be between man and his God. A state responsible for maintaining order and enforcing law should be secular. An official state religion cannot exist because a government must act in accordance to the common good, not any one religious group in particular.
+* **Individualism** - Men's natural right to right to life, liberty, and property.
+* **Freedom of Thought** - This is perhaps best exemplified by a quote from Evelyn Beatrice Hall that is often misattributed to Voltaire: "I disagree with what you say, but I will defend to the death your right to say it."
 
-* **Rational Inquries** - Emphasis on reason and critical thinking as source of knowledge. One should question authority, challenge existing beliefs, think for oneself rather than relying on a pre-defined set of rules or dogmas. 
-* **Secularism** - The Church shall be separated from the State. While the secular state is responsible for maintaining order and enforcing law, matter of religious belief should be between Man and his God. An official state religion should not exist because political decisions should be made based on reason, evidence, and in favor of the common good.
-* **Individualism** - All men are born equal with the right to life, liberty, and pursuit of happiness.
-* **Freedom of Thought** - "I disagree with what you say, but I will defend to the death your right to say it."
-
-The exact dating of the Enlightenment is fuzzy. Some date the beginning of the Enlightenment to the publication of Rene Descartes' *Discourse on the Method* published in 1637, where he proclaimed: "Cogito, Ergo Sum", or "I think, therefore I am". This famous quote shifted the epistemological discussion from external authority to internal certainty. Most scholars place the end of the Enlightenment around 1800, choosing the Reign of Terror during the French Revolution or the subsequent Napoleonic Wars as a convenient point in time. It should also be noted that there is considerable regional variations during the Enlightenment. Not all societies experienced these transitions the same way, if at all. 
+The exact dating of the Enlightenment is fuzzy. Some date the beginning of the Enlightenment to the publication of Rene Descartes' *Discourse on the Method* published in 1637, where he proclaimed: "Cogito, Ergo Sum", or "I think, therefore I am". This famous quote shifted the epistemological discussion from external authority to internal certainty. Most scholars place the end of the Enlightenment around 1800, choosing the Reign of Terror during the French Revolution or the subsequent Napoleonic Wars as a convenient dividing line. It should also be noted that there is considerable regional variations during the Enlightenment. Not all societies experienced these transitions the same way, if at all. 
 
 
 
@@ -284,13 +259,13 @@ The exact dating of the Enlightenment is fuzzy. Some date the beginning of the E
 
 > "I doubt therefore I think. I think therefore I am" - Rene Descartes 
 
-Rene Descartes was a French philosopher, mathematician, and scientist who was considered by many as the father of modern philosophy. His writings during the 17th century - including his famous phrase: "I think, therefore I am" - brought epistemology to the fore and gave "Age of Reason" its name and place in history. Here are three key insights from Descartes:
+Rene Descartes was a French philosopher, mathematician, and scientist who was considered by many as the father of modern philosophy. His writings during the 17th century - including his famous phrase: "I think, therefore I am" - brought epistemology to the fore and gave "Age of Reason" its name and place in history. 
 
-* **Method of Doubt: "I think, therefore I am"** - Borrowing from his experience as a mathematician, Descartes wanted a way to study philosophy similar to how he studies math; systematically and with logical certainty. He wanted to arrive at a fundamental set of principles - similar to mathematical axioms - that can serve as firm foundation for genuine knowledge. To do so, he employed the method of doubt, also known as Cartesian doubt. It is not enough to know something beyond reasonable doubt, but *all possible doubt*.
-  * He realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could all be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. 
-  * Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, cogito ergo sum". In a world where everything could just be an illusion, Descartes became certain of one thing: he exists. 
-* **Mathematical Achievements** - Aside from his famous quote "I think, therefore I am", which is taught in every college philosophy course in the world, his contribution to Mathematics is equally pervasive. If you've taken high-school math, you'll appreciate the fact that Descartes popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and early works in mechanics.
-* **Mind-body Dualism** - Lastly, Descartes popularized mind and body dualism; the idea that mind (non-physical) and body (physical) are distinct and separable. In other words, Descartes believed our consciousness are not just brain synapses; it's instead something beyond the world of physical matters.
+Borrowing from his experience as a mathematician, Descartes wanted a way to study philosophy similar to how he studies math; systematically and with logical certainty. He wanted to arrive at a fundamental set of principles - similar to mathematical axioms - that can serve as firm foundation for genuine knowledge. To do so, he employed the **method of doubt**, also known as Cartesian doubt. It is not enough to know something beyond reasonable doubt, but *all possible doubt*. 
+
+To start, he realized sensory perceptions are often misleading. There is no way for humans to arrive at truths through our senses. It could all be an optical illusions, a dreams, a hallucinations, or even an evil demon deceiving you! Descartes quickly came to an impasse. How can we know anything is real? Everything we perceive could just be a simulation. Then the insight hit him! If he is doubting, then he is thinking, and if he is thinking, he exists. In Latin: "dubito ergo cogito, **cogito ergo sum**". In a world where everything could just be an illusion, Descartes became certain of one thing: that he exists. He would go on to build up his philosophical system from there (including a proof on the existence of God). While the insight regarding the certainty of one existence is of little practical value for us, it is nevertheless a landmark moment in that it represented a shift in epistemological discussion from external authority to internal certainty.
+
+In addition to Descartes' remarkable contribution to Philosophy, his **mathematical achievements** were equally notable. Anyone who has taken taken high-school math will appreciate the pervasiveness of Descartes' ideas. He popularized the use of "x,y,z" as unknown variables, the use of superscripts to denote exponents, and the use of x and y axis in graphs (known as Cartesian Coordinate System). Descartes also made significant contributions to analytical geometry, law of refraction/reflection in optics, and many early works in mechanics.
 
 
 
@@ -298,12 +273,13 @@ Rene Descartes was a French philosopher, mathematician, and scientist who was co
 
 > "I do not know how to teach philosophy without becoming a disturber of the peace" - Baruch Spinoza
 
-Baruch Spinoza was a 17th century Jewish Dutch philosopher widely considered to be one of the most radical and influential thinker of the Enlightenment. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. The publication of his work *Tractatus Theologico-Politicus*, considered by many to be one of the most significant event in European intellectual history.
+Baruch Spinoza was a 17th century Jewish Dutch philosopher who had many radical and influential ideas. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. 
 
-* **Tractus Theologico-Politicus (TTP)** - Spinoza's 1670 publication - often abbreviated to "TTP" - aimed to "liberate the individual from bondage to superstition and ecclesiastical authority". In it, he criticized the divine infallibility of the Old Testament and argued for a more historical approach in looking at the bible. He also argued for religious freedom and separation of Church and State. Political decisions should be based on reason rather than any particular religious dogma.
-* **God is Nature** - Spinoza believed the world is composed of one thing: substance. He calls this substance "God" or "nature" which he believes to be synonymously. To Spinoza, God does not manifest himself as a divine figure, but rather within all of nature.
-* **Free Will** - Spinoza embraced a deterministic view of the world. Everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probability. To Spinoza, freedom is not the ability to choose different courses of action, instead it is the capacity to align oneself with nature and realize our inherent potentials.
-  * For example, an apple tree in a yard with plentiful sunlight will yield more fruit than a yard in the shade. To Spinoza, if your yard lacks sunlight, it is far better to try and cultivate fruit that grow in the shade (such as pear or figs), rather than sticking with fruits that require full sun to thrive.
+Spinoza's 1670 publication **Tractatus Theologico-Politicus**, often abbreviated to "TTP", is considered by many to be one of the most significant event in European intellectual history. The book aimed to "liberate the individual from bondage to superstition and ecclesiastical authority". In it, he criticized the divine infallibility of the Old Testament, argued for a more historical approach in looking at the bible, and advocated for religious freedom and separation of Church and State.
+
+Spinoza was also known for his embrace of a deterministic view of the world and rejection of **free will** in the conventional sense. Everything that has happened in the past, and everything that will ever happen in the future, is in accordance with the necessary order of the universe. He rejects the idea of chance. Everything has a clean chain of cause and effect with no room for probability. To Spinoza, free will is not the ability to choose different courses of action, instead it is the capacity to align oneself with nature and realize our inherent potentials. For example, an apple tree in a yard with plentiful sunlight will yield more fruit than a yard in the shade. To Spinoza, if your yard lacks sunlight, it is far better to try and cultivate fruit that grow in the shade (such as pear or figs), rather than sticking with fruits that require full sun to thrive.
+
+On the topic of God, Spinoza believed that the world is composed of one thing: substance. He calls this substance "God" or "nature" which he believes to be synonymously. God does not manifest himself as a divine figure, but rather within all of nature. **God is nature**.
 
 
 
@@ -312,18 +288,13 @@ Baruch Spinoza was a 17th century Jewish Dutch philosopher widely considered to 
 
 > "Life, liberty, and property" - John Locke
 
-John Locke was an English Philosopher considered by many as the "father of liberalism" and one of the most prominent Enlightenment thinkers. His work on epistemology, political philosophy, and social contract theory influenced many subsequent thinker like Voltaire, Rousseau, and the American revolutionaries. 
+John Locke was an English Philosopher considered by many as the "father of liberalism". His work on epistemology, political philosophy, and social contract theory influenced many subsequent thinker like Voltaire, Rousseau, and the American revolutionaries. 
 
-During the enlightenment period, there were two schools of thought for how we obtain knowledge. John Locke was part of the group known as the **British Empiricists** (Hobbes, Bacon, Berkeley, and Hume) who believed that that knowledge must come from direct observations. Humans are a "tabula rasa" or blank slates. On the other hand, we have the **Continental Rationalists** which included figures like Descartes, Spinoza, and Leibniz. The Rationalists believed that knowledge can be obtained through pure reason, and that there are certain "a priori knowledge" innate in the mind independent from any lived experiences. The "continental" prefix refers to the fact that Descartes, Spinoza, and Leibniz all lived in mainland Europe.
+During the enlightenment period, there were two schools of thought for how we obtain knowledge. The first group is known as the **Continental Rationalists** which included figures like Descartes, Spinoza, and Leibniz. The Rationalists believed that knowledge can be gained through pure rational/logical deduction, and that there are certain "a priori" knowledge innate in the mind independent from any lived experiences. The "continental" prefix refers to the fact that Descartes, Spinoza, and Leibniz all lived in mainland Europe. John Locke was part of the second group known as the **British Empiricists** (Locke, Hobbes, Bacon, Berkeley, and Hume) who believed that that knowledge must come from direct observations. Humans are a "tabula rasa" or blank slates. It's worth stressing that the empiricists also viewed logic and reason as important; however, they believed that reason must ultimately be grounded by empirical observation. 
 
-Here are three key insights from John Locke:
+John Locke is perhaps most well-known for his **Social Contract Theory**. Social contract is an idea in political philosophy that explores the legitimacy of a state over the individual. The central question of social contract theory is this: why would rational individuals consent to give up their freedom to an authority? Many prominent philosophers (such as Hobbes and Rousseau) have explored this topic. John Locke's social contract theory starts with the assertion that In the state of nature, every man has certain **natural rights**; namely the rights to preserve his **life, liberty, and property**. However, without a government, people would have to fend for themselves against those seeking to enslave or injure them. As rational beings, we come together and voluntarily enter into a social contract and establish a political authority. While we relinquish certain freedoms such as the right to violence, we expect in return that the authority will protect our natural rights. If a government fails to uphold its end of the social contract by violating the natural rights of the citizens, then the people have the **obligation to rebel** and overthrow the government. Furthermore, Locke also advocated for limited government with checks and balances that prevent concentration of power in any single individual; an idea central to most Western governments in the modern era.
 
-* **"Tabula Rasa" - Blank Slate** - Locke argues that the Humans are born blank slates. All knowledge must come from perception or experience from the real world. This is contrasted with the rationalist idea that knowledge can be gained through pure rational/logical deduction. It should be noted that the empiricists also viewed logic and reason as important; however, they believed that reason must ultimately be grounded by empirical observation.
-* **Social Contract Theory** - Social contract is an idea in political philosophy that explores the legitimacy of a state over the individual. The central question of social contract theory is this: why would rational individuals consent to give up their freedom to an authority? Many prominent philosophers (such as Hobbes and Rousseau) have explored this topic. John Locke's social contract theory can be explained as follows:
-  * In the state of nature, every man has certain **natural rights**; namely the rights to preserve his **life, liberty, and property**. However, without a government, people would have to fend for themselves against those seeking to enslave or injure them. 
-  * As rational beings, we come together and voluntarily enter into a social contract and establish a political authority. While we relinquish certain freedoms such as the right to violence, we expect in return that the authority will protect our natural rights. If a government fails to uphold its end of the social contract by violating the natural rights of the citizens, then the people have the **obligation to rebel** and overthrow the government.
-  * Locke's social contract theory is less pessimistic and more democratic than that of Thomas Hobbes, who believed that life in nature is "solitary, poor, nasty, brutish, and short." Hobbes believed the sovereign is a product of our attempt to escape the dreadful state of nature, rather than rational beings in cooperation. Furthermore, the Hobbesian leviathan has no obligation to uphold individual natural rights. Revolutions are out of the question.
-* **Limited Government** - Locke advocated for limited government (an idea reflected in the US political structure). Locke warned against the concentration of power in a single individual or institution, and proposed a system of checks and balances. If the government fails to uphold its end of the contract (namely protecting natural rights), then the citizens have the right to rebel.
+Locke's social contract theory is less pessimistic and more democratic than that of Thomas Hobbes, who believed that life in nature is "solitary, poor, nasty, brutish, and short." Hobbes believed the sovereign is a product of our attempt to escape the dreadful state of nature, rather than a product of rational beings in cooperation. The Hobbesian leviathan has no obligation to uphold individual natural rights, whereas the Lockian government is obligated to do so to prevent rebellions.
 
 
 
@@ -331,13 +302,18 @@ Here are three key insights from John Locke:
 
 > "All knowledge reduces to probability, and all probability reduces to nothing" - David Hume
 
-David Hume was a Scottish philosopher best known for his system of empiricism and skepticism. Like the other British empiricists, he distrusted reason as the sole means of arriving at knowledge. He believed that emotions often trump reason, and that the entire premise of inductive reasoning is flawed. Outside of philosophy, Hume was a prominent essayist and wrote a massive six-volume "The History of England". Let's look at some of his most influential ideas.
+David Hume was a Scottish philosopher best known for his system of empiricism and skepticism. He also happens to be a prominent essayist and historian, compiling a massive six-volume "The History of England" during his lifetime. Hume's writing had profound impact on both his contemporaries as well as later philosophers. Adam Smith acknowledge Hume's influence on his economics and political philosophy. Immanuel Kant credited Hume with waking him from his "dogmatic slumber". Even Albert Einstein references Hume as an inspiration while developing his theory of relativity.
 
-* **Causality is Indeterminable** - According to Hume, we process the world through our senses. Yet the knowledge we can extract from our observations is extremely limited; for what we observe is nothing more than a <u>constant conjunction</u> of events; A -> B -> C.  In other words, the underlying causality of the physical world is inaccessible to us and thus impossible to determine; correlation is the best we can do. For example, after observing enough triangles, we establish as fact that the sum of its interior angles is always 180 degrees. But this is not true in hyperbolic geometry, nor spherical geometry. A similar example can be made for Newtonian mechanics near the speed of light. Ultimately, we can't know if A -->B is an universal truth. The best we can do is build <u>model</u> to make sense of the world. There might be more refined models we haven't uncovered yet.
-* **Passion Over Reason** - Hume did not believe reason governed human behavior. Instead, people often decide based on emotions first, then use reason to justify afterwards. Hume argued that reason is utterly ineffectual at producing or preventing actions and thereby cannot have any effect on morality. For example, if someone desires to be healthy, reason can help them find the best diet/exercise, or help them come up with arguments for why it is good to be healthy, but Hume thinks reason alone cannot generate that initial desire.
-* **Is-Ought Problem** - Hume was the first to clearly expound on the "is-ought problem". In essence, Hume believed we can't make any ethical judgements based on physical observations. In other words, one cannot make a value judgement based on the way things are. (e.g. "Animals evolved to be self-interested, compete, and kill each other for survival. Therefore, it is natural and morally acceptable for humans to do the same.", "slavery has been practiced throughout history in many different cultures, therefore it is acceptable.")
-  * Positive Statement ("is") - <u>The way things are</u>. Facts about the world based on reason and empirical observation.
-  * Normative Statement ("ought") - <u>The way things should be</u>. A statement of value based on our ethics and aesthetics.
+Like the other British empiricists, Hume distrusted reason as the sole means of arriving at knowledge. In fact, he took it one step further by formulating the **problem of induction**; putting the entire premise of inductive reasoning into question. According to Hume, we process the world through our senses, yet our observations are nothing more than a **constant conjunction** of events. In other words, the underlying causality of the physical world is inaccessible to us. Correlation is the best we can do. Hume does not see any justification for believing the future will resemble the past. For example, after observing enough triangles, we establish as fact that the sum of its interior angles is always 180 degrees. But this is not true in hyperbolic geometry, nor spherical geometry. A similar example can be made for Newtonian mechanics near the speed of light. Ultimately, causality is indeterminable. The best we can do is build model to make sense of an infinitely complex world. There might be more refined models we haven't uncovered yet. Philosopher Bertrand Russel gave another example to illustrate this point.
+
+> "Domestic animals expect food when they see the person who usually feeds them. We know that all these rather crude expectations of uniformity are liable to be misleading. The man who has fed the chicken every day throughout its life at last wrings its neck instead, showing that more refined views as to the uniformity of nature would have been useful to the chicken"
+
+Hume is also deeply skeptical of the role reason plays in human behavior. He believed that **Passion trump over reason**. People typically decide based on emotions first, then use reason to justify their action afterwards. For example, if someone wants to be healthy, reason can help them find the best diet or help them come up with arguments for why it is good to be healthy, but that initial desire is generated by passion. Reason alone is utterly ineffectual at producing or preventing actions.
+
+Lastly, Hume was the first to clearly expound on the **"is-ought problem"**; also known as fact-value distinction. We shouldn't make a normative statement from a positive statement. In other words, value judgements cannot arise from a statement of fact. Just because something is the way it is doesn't mean it is the way it should be. For example, slavery has been practiced throughout history across many different cultures. Justifying slavery because it is widespread would be falling for the "is-ought" fallacy. 
+
+* Positive Statement ("is") - <u>The way things are</u>. Facts about the world based on reason and empirical observation.
+* Normative Statement ("ought") - <u>The way things should be</u>. A statement of value based on our ethics and aesthetics.
 
 
 
@@ -345,19 +321,15 @@ David Hume was a Scottish philosopher best known for his system of empiricism an
 
 > "Act only according to that maxim whereby you can at the same time will that it should become a universal law." - Immanuel Kant
 
-Immanuel Kant was a German philosopher considered by many to be one of the greatest philosophers of all time. As a foremost enlightenment thinker, his work in epistemology, metaphysics, ethics, and aesthetics were incredibly influential, earning him titles like "father of modern ethics", "father of modern aesthetics", and "father of modern philosophy". Kant was incredibly disciplined and lived a strictly ordered life. He taught philosophy at University of Konigsberg, never traveling outside of his home city for the entirety of his life. It was said that his neighbors would set their clock based on his daily walks. Kant's philosophy is incredibly complex and hard to condense.
+Immanuel Kant was a German philosopher considered by many to be one of the greatest philosophers of all time. As a foremost enlightenment thinker, his work in epistemology, metaphysics, ethics, and aesthetics were incredibly influential, earning him titles like "father of modern ethics", "father of modern aesthetics", and "father of modern philosophy". Kant was incredibly disciplined and lived a strictly ordered life. He taught philosophy at University of Konigsberg, and throughout his life, he never traveled outside of his home city. It was said that his neighbors would set their clock based on his daily walks. 
 
-* **Categorical Imperative** - Religion offered people two main benefits: meaning, and a moral system to inform them what constitutes "good" behavior (e.g the ten commandments). With a world that is increasingly secular, Kant wanted to create a system of morality based entirely on rationality. The central concept in Kant's moral philosophy is the Categorical Imperative. "Categorical" meaning applicable in all cases (unconditional), "imperative" meaning a directive, a moral commandment. There are three parts to the categorical imperative:
-  * <u>"Act only according to that maxim whereby you can at the same time will that it should become a universal law".</u> In simpler terms, treat others how you wish to be treated. Additionally, consider a world where everyone does what you are about to do, is that a world you want to live in? For example, if you want to throw trash on the ground, consider if you want to live in a world where everyone litters.
-  * <u>"Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end".</u> This rule emphasizes the dignity and worth of the individual. The people around you are also rational agents capable of making moral decisions. Never treat others merely as a tool for achieving your own ends.
-  * <u>"Act according to maxims of a universally legislating member of a merely possible kingdom of ends"</u> - Morality is not imposed externally. It is self-legislated by the moral duty of rational agents. Consider the perspectives of those around you and act in a way that contributes to the formation of a kingdom of ends.
-* **Transcendental Idealism** - Kant created his own epistemological system known as Transcendental Idealism. "Transcendental" meaning to be above (transcend) our senses and understanding of the mind, "idealism" meaning related to ideas and the mind. Taken together, Kant is asserting that knowledge is ultimately shaped by our minds. To put it another way, our minds are active participants, rather than passive receptors in the formation of knowledge and experience. There are two worlds, 1.) realm of appearance (<u>phenomena</u>)  2.) realm of <u>things-in-themselves</u> (noumena). We can never know the latter for they are ultimately unintelligible to us without perception. Consider a table. Physics tells us atoms are mostly empty space? Do we "see" protons and electrons? Is it really solid and made out of wood? 
-  * Let's make all of this more concrete. Consider the question: "if a tree falls in the forest, and no one is around to hear it, does it make a sound?":
-    * Rationalism - Yes of course! It stands to reason and laws of physics that a falling tree produces sound waves regardless of whether or not there is an observer.
-    * Empiricism - (answering from a non-practical, purely philosophical perspective) While it stands to reason there would be a sound, our hypothesis must be grounded by observations. We don't know for sure until we've observed enough falling trees. At the very least, we can't assume falling tree=>sound until we have enough data; there are always conditionals and qualifiers.
-    * Transcendental Idealism - The question is ill-defined because sound is part of the realm of phenomena. Sound is not an inherent property of a falling tree, but rather constructed by our mind through sensory input. Therefore, in the absence of an observer, there would be no perception of sound as we understand it. However, the tree falling still occurs in the noumenal realm, independent of our perception. The vibrations caused by the falling tree would still exist.
+Kant is perhaps most well known for his moral philosophy. As enlightenment ideas spread throughout Europe, there was a marked decline in faith and religion. This was troubling trend for Kant because religion offered people two important things: meaning, and a moral system to inform them what constitutes "good" behavior. With the rise of secularism, Kant sought to create a system of morality based entirely on rationality. What he came up with - the **Categorical Imperative** - became the central concept in Kant's moral philosophy. "Categorical" meaning applicable in all cases (unconditional), "imperative" meaning a directive, a moral commandment. There are three parts to the categorical imperative:
 
+* <u>"Act only according to that maxim whereby you can at the same time will that it should become a universal law".</u> - Imagine a world where everyone does what you are about to do, is that a world you want to live in? 
+* <u>"Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end".</u> This rule emphasizes the dignity and worth of the individual. The people around you are also rational agents capable of making moral decisions. Never treat others merely as a tool for achieving your own ends.
+* <u>"Act according to maxims of a universally legislating member of a merely possible kingdom of ends"</u> - Morality should not imposed externally, instead it is self-legislated by the our sense of moral duty. Consider the perspectives of the rational agents around you. Use your reason and act in a way that contributes to the creation of a kingdom of ends.
 
+Kant also wrote extensively on epistemology. To reconcile empiricism and rationalism, Kant created his own epistemological system known as **Transcendental Idealism**. "Transcendental" meaning to be above (transcend) our senses and understanding of the mind, "idealism" meaning related to ideas and the mind. Taken together, Kant is saying that knowledge is ultimately shaped by our minds. We should view our mind as an active participant, not just a passive receptors in the formation of knowledge. Things only make sense in the context of our perception. According to Kant, there are two worlds: 1.) world of appearance (phenomena)  2.) **world of things-in-themselves** (noumena). We can never know the latter for they are ultimately unintelligible without perception. Consider a wooden table. Is it really solid and made out of wood? Or is it billions of atoms made up of mostly empty space?
 
 
 
@@ -365,13 +337,15 @@ Immanuel Kant was a German philosopher considered by many to be one of the great
 
 > "Man is born free, and everywhere he is in chains." - Jean-Jacques Rousseau
 
+Jean-Jacques Rousseau was a Genevan philosopher whose idea has had profound and lasting impact on European history and subsequent thinkers. His political philosophy inspired political reforms and revolutions throughout Europe; most notably the French Revolution. His writing was banned in Paris, burned in Geneva, and forbidden by the Church. The association between Rousseau and the Reign of Terror turned him into a pariah. He fled from country to country for many years. Not only was Rousseau repudiated by many European countries, he was also despised by his contemporaries. He wrote hateful letters to Hume despite Hume's best effort to accommodate him in England, he made fun of Voltaire's essay on the Lisbon Earthquake. Voltaire hated him, Samuel Johnson called him a "rascal who ought to be hunted out of society, as he has been", Edmund Burke called him egotistical and vain. The list goes on. Despite his controversial reputation, it is impossible to deny the potency of his ideas. To quote Historian Will Durant: 
 
+> "[Rousseau], after his death, triumphed over Voltaire, revived religion, transformed education, elevated the morals of France, inspired the Romantic movement and the French Revolution, influenced the philosophy of Kant and Schopenhauer, the plays of Schiller, the novels of Goethe, the poems of Wordsworth, Byron and Shelley, the socialism of Marx, the ethics of Tolstoy and, altogether, had more effect upon posterity than any other writer or thinker of that eighteenth century".
 
-* The Natural Goodness of Humans
-* Social Contract
-* Education Reforms
+In his most influential work: *Discourse on The Sciences*, Rousseau responded to the question: "Has the restoration of the sciences and arts contributed to the purification of morals?" with a resounding "NO". Advancements of the enlightenment had not contributed to moral progress, if anything they have stymied it. Unlike Thomas Hobbes, Rousseau believed **Humans are innately good** but was subsequently **corrupted by society**. 
 
+In the beginning, mankind were "noble savages" who roamed the land as hunters and gathers. As contact with other humans were rare, differences between individuals were insignificant. There would have been no envy, no distrust, no hierarchies, no private properties, and no conflict. As societies grew larger and larger, humans went from a nomadic lifestyle to a settled one. We would have grown less dependent on nature and more on each other. Rousseau posits that the **invention of private property** was a key turning point in history. The **resulting inequality** was a product of human choice, rather than a natural outcome. People began valuing more and more the opinion of others. To quote Rousseau: "the savage lives within himself, sociable man, always outside himself, can only live in the opinion of others". Social hierarchies began to form. Inequality inevitably increased between the haves and have-nots. The end result was a political system by the powerful, for the powerful, that serve to perpetuates their rule. Rousseau's idea directly challenged the existing political order and was profoundly destabilizing. It's easy to see why the monarchical societies of Europe took issue with his writing. It's also easy for an modern audience view Rousseau in a Marxist lens, but we must keep in mind that Rousseau's First Discourse was published 100 years before Marx's Das Kapital. It goes without saying Rousseau's idea greatly influenced Karl Marx and therefore most of 20th century history.
 
+Rousseau's thoughts on education shared a common theme with his political philosophy; which is to preserve the innate human goodness (in children) and minimize the corrupting collectivity of society. Some of his ideas sound remarkably modern and progressive. For example, Rousseau rejected the militaristic  tutelage that was common at the time and proposed a more **child-centered learning** which catered to the child's interest rather than any specific rigid rubric. He was against punishment, against rote memorization, and against anything that would stifle creativity. Ideally, a child should have a tutor, live closer to nature in the country side, and learn manual skills like carpentry in addition to intellectual work. All in all, Rousseau believed education should be about developing reason and good moral character rather imparting any specific technique or concepts. 
 
 
 
