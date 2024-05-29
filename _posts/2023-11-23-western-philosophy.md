@@ -8,11 +8,9 @@ date: 2023-11-23
 tags: thoughts
 ---
 
-After reading Sophie's World, I thought it'd be an interesting exercise to learn more about the remarkable philosophers presented therein and summarize their wisdoms into a few bullet points. What started off as a curiosity-driven side project morphed into a monumental undertaking that's taking way too much of my spare time. I ran out of steam by the third month after spending days trying to grasp the nuances of Kant's transcendental idealism and how it differed from other forms of epistemology. The next three months turned into a slog. 
+After reading Sophie's World, I thought it'd be interesting to learn more about the remarkable philosophers presented therein and summarize their ideas into a few bullet points. What started off as a curiosity-driven side project morphed into a monumental undertaking that's taking way too much of my spare time. Scholars spend their entire career on one or two philosophers. What hope is there for me to understand anything about anyone in six months? To understand A, you must first be acquainted with B, which requires familiarity in C and D, both presupposes knowledge of E which itself has four different interpretations. The tree of knowledge branches endlessly like this and everything is connected. Clarity is never found when you dig deep, quite the opposite. Something like "clarity" only emerges when you zoom back out.
 
-I recognized very early on just how much there is to know, and how much I will never know. This six-month project could have easily taken me six-years. By the time I finished the last paragraph on Sartre, I felt a tremendous sense of relief. The overall experience has instilled in me a deep sense of intellectual humility. *"I know that I know nothing"*. What better way to encapsulate my thoughts than a Socrates quote. 
-
-One might wonder: some scholars spend their entire career on one or two philosophers. What hope is there for me to understand anything about anyone in six months? That is a fair observation. I doubt I am producing anything new or valuable here. But why should we view everything through the lens of productivity and production. I did this to learn, not to produce. The past few months have been incredibly rewarding intellectually. The hundreds of encyclopedia articles I read were of tremendous pedagogical value. While I hope this article can be useful for others, I <u>know</u> it was useful for me. 
+I've spent days trying to trying to grasp the nuances of Kant's transcendental idealism. Yet the more I read, the more confused I become. Reading Hegel drained every last ounce of my brain energy from which I still haven't fully recovered. Needless to say, the last couple of months turned into a slog. I understood very early on just how much there is to know, and how much I will never know. This six-month project could have easily taken me six-years. If I learned one thing from this whole project, it would be a lasting sense of intellectual humility. Socrates once remarked: *"I know that I know nothing"*. Amen, Socrates, Amen...
 
 
 
@@ -242,8 +240,6 @@ Lastly, the renaissance marked the beginning of a time when human development st
 
 > "Enlightenment is man's emergence from his self-incurred immaturity. [...] It is so easy to be immature. If I have a book to serve as my understanding, a pastor to serve as my conscience, a physician to determine my diet for me, and so on, I need not exert myself at all. I need not think, if only I can pay: others will readily undertake the irksome work for me." - Immanuel Kant
 
-> "Dare to be wise!" - Immanuel Kant
-
 The Age of Enlightenment, also known as the Age of Reason, was an intellectual and political movement that occurred in Europe during the 17th and 18th century. Broadly speaking, the central doctrine of the Enlightenment is one of **Reason**: the belief that we can use our intellect to understand the world and improve society. This was a dramatic departure from superstitions and religious dogmas of the past. All throughout Europe, philosophers and scientists circulated their ideas at academies, lodges, literary salons, coffeehouses, and in printed media. Many of the ideas we hold dear today emerged during the Enlightenment. For example:
 
 * **Rational Inquiries** - Emphasis on reason and critical thinking as source of knowledge. One should question and challenge existing beliefs, and think for oneself rather than relying on a pre-defined set of rules or dogmas. 
@@ -273,7 +269,7 @@ In addition to Descartes' remarkable contribution to Philosophy, his **mathemati
 
 > "I do not know how to teach philosophy without becoming a disturber of the peace" - Baruch Spinoza
 
-Baruch Spinoza was a 17th century Jewish Dutch philosopher who had many radical and influential ideas. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. 
+Baruch de Spinoza was a 17th century Jewish Dutch philosopher who had many radical and influential ideas. His controversial views, particularly his critique of the divine origin of the Hebrew Bible, made him an enemy of the religious authorities in Amsterdam. He was excommunicated and ostracized from his Jewish community at a young age. 
 
 Spinoza's 1670 publication **Tractatus Theologico-Politicus**, often abbreviated to "TTP", is considered by many to be one of the most significant event in European intellectual history. The book aimed to "liberate the individual from bondage to superstition and ecclesiastical authority". In it, he criticized the divine infallibility of the Old Testament, argued for a more historical approach in looking at the bible, and advocated for religious freedom and separation of Church and State.
 
@@ -319,7 +315,7 @@ Lastly, Hume was the first to clearly expound on the **"is-ought problem"**; als
 
 # Immanuel Kant - 1700
 
-> "Act only according to that maxim whereby you can at the same time will that it should become a universal law." - Immanuel Kant
+> "Dare to be wise!" - Immanuel Kant
 
 Immanuel Kant was a German philosopher considered by many to be one of the greatest philosophers of all time. As a foremost enlightenment thinker, his work in epistemology, metaphysics, ethics, and aesthetics were incredibly influential, earning him titles like "father of modern ethics", "father of modern aesthetics", and "father of modern philosophy". Kant was incredibly disciplined and lived a strictly ordered life. He taught philosophy at University of Konigsberg, and throughout his life, he never traveled outside of his home city. It was said that his neighbors would set their clock based on his daily walks. 
 
@@ -329,7 +325,7 @@ Kant is perhaps most well known for his moral philosophy. As enlightenment ideas
 * <u>"Act in such a way that you treat humanity, whether in your own person or in the person of any other, never merely as a means to an end, but always at the same time as an end".</u> This rule emphasizes the dignity and worth of the individual. The people around you are also rational agents capable of making moral decisions. Never treat others merely as a tool for achieving your own ends.
 * <u>"Act according to maxims of a universally legislating member of a merely possible kingdom of ends"</u> - Morality should not imposed externally, instead it is self-legislated by the our sense of moral duty. Consider the perspectives of the rational agents around you. Use your reason and act in a way that contributes to the creation of a kingdom of ends.
 
-Kant also wrote extensively on epistemology. To reconcile empiricism and rationalism, Kant created his own epistemological system known as **Transcendental Idealism**. "Transcendental" meaning to be above (transcend) our senses and understanding of the mind, "idealism" meaning related to ideas and the mind. Taken together, Kant is saying that knowledge is ultimately shaped by our minds. We should view our mind as an active participant, not just a passive receptors in the formation of knowledge. Things only make sense in the context of our perception. According to Kant, there are two worlds: 1.) world of appearance (phenomena)  2.) **world of things-in-themselves** (noumena). We can never know the latter for they are ultimately unintelligible without perception. Consider a wooden table. Is it really solid and made out of wood? Or is it billions of atoms made up of mostly empty space?
+Kant also wrote extensively on epistemology. To reconcile empiricism and rationalism, Kant created his own epistemological system known as **Transcendental Idealism**. "Transcendental" meaning to be above (transcend) our senses and understanding of the mind, "idealism" meaning related to ideas and the mind. Taken together, Kant is saying that knowledge is ultimately shaped by our minds. We should view our mind as an active participant, not just a passive receptors in the formation of knowledge. Things only make sense in the context of our perception. According to Kant, there are two worlds: 1.) world of appearance (phenomena)  2.) **world of things-in-themselves** (noumena). We can never know the latter for they are ultimately unintelligible without perception. Consider a wooden table. Is it really solid and made out of wood? Or is it billions of atoms made up of mostly empty space? Kant's formulation of transcendental idealism would later become the foundation of German Idealism. Famous German Idealists such as Schelling, Fichte, Hegel, all responded to or built their work on top of Kant's original idea.
 
 
 
@@ -351,19 +347,54 @@ Rousseau's thoughts on education shared a common theme with his political philos
 
 # Georg Wilhelm Friedrich Hegel - 1800
 
-* Hegel's Dialectical Progress
-* Phenomenology of Spirit
-* Historical Idealism
+> "Only one man ever understood me, and he didn't understand me" - G.W.F Hegel
 
+G.W.F Hegel was a German philosopher who played a central role in the development of German Idealism in the decade after Kant. He explored topics like philosophy of art, philosophy of history, religion, nature, and metaphysics in a purportedly comprehensive and systematic way. Hegel was famously difficult to read and interpret. He had a dense, obscure writing style filled with jargon, abstractions, and idiosyncratic definitions. At the University of Berlin, his lectures were known for their terrible delivery, yet they were attended by students from all over Europe. Over time, his ideas have proved foundational to many later philosophers, most notably Marx and Engel.
 
+Hegel is perhaps best known for his **Dialectics**: a three-stage developmental process involving a **thesis, antithesis, and synthesis**. 
+
+* The thesis is the current status quo, an initial proposition. 
+
+* The antithesis is the negation or contradiction which challenges the thesis. 
+
+* The tension between the thesis and the antithesis is eventually resolved and merged into the synthesis, which over time becomes the new thesis, and the process repeats. 
+
+During the time of Plato and Socrates, dialectic referred to dialogues between people holding contradicting views who wished to arrive at the truth through reasoned argumentation. Hegel repurposed the term to represent not a literal dialogue, but more a developmental process of overcoming contradictions that can be applied broadly to any kind of progress. The Hegelian dialectic applied to ideas, human history, political/social change, and even reality itself. 
+
+The funny thing about Hegel's dialectic is that he never actually used "thesis-antithesis-synthesis" together in all of his written works. Instead, it was an idea first introduced by fellow German Idealist philosopher Johann Fichte, took up by Schelling, spread by Heinrich Moritz Chalybäus, and misattributed to Hegel over time. Hegel's formulation of dialectic is more difficult to comprehend, a sentiment echoed by **Karl Marx and Friedrich Engel**, who would later adapt the Hegelian dialectic into a materialist theory of history culminating in communism. 
+
+Another popular concept popularized by Hegel is "**geists**", a German word loosely translated to "Spirit" or "Mind" which has great significance in German Philosophy. Hegel wrote of the subjective geist which relates to individual consciousness, objective geist which relates to the collective spirit like laws, institutions, the state, and absolute geists which is the ultimate stage of spirit often realized by art, philosophy, and religion. Other notable compounds of the word include:
+
+* **Weltgeist** - Spirit of the World. The overarching but invisible force that guides development of history and human civilization.
+
+* **Volksgeist** - Spirit of the Nation. The unique spirit and essence of a culture or nation.
+
+* **Zeitgeist** - Spirit of the Age. The particular mood or spirit of a historical period. There are always prevailing ideas, beliefs, and tastes that tend to characterize an era. In the modern sense, zeitgeist has taken the meaning of a intellectual/aesthetical fads, or the Overton Window in Political discourse.
 
 
 
 # Soren Kierkegaard - 1800
 
-* Father of Existentialism
+> “What I really need is to get clear about what I must do, not what I must know, except insofar as knowledge must precede every act. What matters is to find a purpose, to see what it really is that God wills that I shall do; the crucial thing is to find a truth which is truth for me, to find the idea for which I am willing to live and die.” - Soren Kierkegaard
+
+Soren Aabye Kierkegaard was a Danish theologian, philosopher, and writer considered to be the father of Existentialism.
+
+* Subjective and objective truth
 * The Leap of Faith
 * Angst
+* Anxiety is the dizziness of freedom
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
