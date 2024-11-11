@@ -5,7 +5,7 @@
   <meta charset ="utf-8">
   <title>Robert Wang</title>
   <link rel="shortcut icon" type="image/png" href="/assets/img/logo-blue.png"/>
-  <meta name="viewport" content="initial-scale=0.5" />
+  <meta name="viewport" content="initial-scale=0.55" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +33,7 @@
 
 
 <body>
-  <div class="container">
+  <div class="blog-global-container">
     <!-- HEADER -->
     <header id="navbar">
         <nav class="navbar-container">
@@ -48,14 +48,13 @@
           <div class="navbar-menu">
             <ul class="navbar-links">
               <li class="navbar-item"><a class="navbar-link" href="/index.html">Home</a></li>
-              <li class="navbar-item"><a class="navbar-link" href="/cv.pdf">CV</a></li>
               <li class="navbar-item"><a class="navbar-link" href="/engineering.html">Engineering</a></li>
               <li class="navbar-item"><a class="navbar-link" href="/musing.html">Blog</a></li>
               <li class="navbar-item"><a class="navbar-link" href="/about.html">About</a></li>
             </ul>
           </div>
         </nav>
-        <hr style="margin-block-start: 0px;">
+        <hr class="hr-threequarter">
     </header>
 
 
@@ -63,6 +62,11 @@
     <div class ="blog-wrapper">
       <div class="blog-post">
         <h1>{{page.title}}</h1>
+        <div>
+          {% for tag in page.tags %}
+          <a class="post-tag" href="/tags.html#{{tag}}">{{ tag }}</a>
+          {% endfor %}
+        </div>
         <div class="reading-time" title="Estimated read time">
           <div>
             Published: {{page.date | date_to_string}}
@@ -75,21 +79,14 @@
             {% endif %}
             read
         </div>
+        
 
 
         {{content}}
 
-        <div style="margin-top: 60px;">
-          tags:
-          {% for tag in page.tags %}
-          <a class="post-tag" href="/tags.html#{{tag}}">{{ tag }}</a>
-          {% endfor %}
-        </div>
-        
-
-        <hr style="margin-top: 10px; margin-bottom: 30px;">
+        <hr style="margin-top: 120px; margin-bottom: 20px;">
         <a class="blog-comments" onclick="showdisqus();return false;">
-          <span class="disqus-comment-count" data-disqus-url="{{site.url}}{{page.url}}">comments</span>
+          <span class="disqus-comment-count" data-disqus-url="{{site.url}}{{page.url}}">Comments</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-fill" viewBox="0 0 16 16">
             <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
           </svg>

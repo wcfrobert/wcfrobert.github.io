@@ -3,8 +3,8 @@ permalink: /musing.html
 layout: typical
 ---
 
-    <div class="jumbotron">
-      <h1 class="blog-h1">Musings</h1>
+    <div class="blog-jumbotron">
+      <h1 class="blog-h1">Writing</h1>
       <p class="blog-p">"One day I will find the right words, and they will be simple."</p>
       <div class="author-more">
         <a href="tags.html" class="button">Browse by Tag</a>
@@ -17,25 +17,35 @@ layout: typical
     
     {% for post in site.categories["blog"] %}
       <a class="blog-post-box" href="{{ post.url }}">
+
         {% if post.image %}
         <div class="post-thumbnail" style="background-image: url({{post.image}})"></div>
         {% endif %}
+
+
+        <div class="tag-date-container">
+          {% for tag_i in post.tags %}
+          <p href="" class="post-taglist"> {{tag_i}}</p>
+          {% endfor %}
+          <p class="post-date">{{post.date | date: '%b-%Y'}} </p>
+        </div>
+        
+
         <div class="post-words" style=" {% if post.image==False %} width: 100% {% endif %}">
           <h3 class="post-title">{{ post.title }}</h3>
           <p class="post-description">{{ post.description }}</p>
-          <p class="post-date">{{post.date | date: '%b %d, %Y'}} </p>
-          <p class="post-readtime">
-            {% assign words = post.content | number_of_words %}
-              {% if words < 360 %}
-                1 mins
-              {% else %}
-                {{ words | divided_by:180 }} mins
-              {% endif %}
-              read
-          </p>
-          <p class="post-taglist">| tags: {{post.tags | join: ", " }}</p>
         </div>
+        
+        <p class="post-readtime">
+          {% assign words = post.content | number_of_words %}
+            {% if words < 360 %}
+              1 mins
+            {% else %}
+              {{ words | divided_by:180 }} mins
+            {% endif %}
+            read
+        </p>
+
       </a>
     {% endfor %}
-
   </div>

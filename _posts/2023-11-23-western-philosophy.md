@@ -1,7 +1,7 @@
 ---
 layout: blog-post
 categories: blog
-title: "Western Philosophy"
+title: "Philosophy"
 description: "One-paragraph summaries of important thinkers throughout history"
 image: assets/img/blog/westernphilosophy.png
 date: 2023-11-23

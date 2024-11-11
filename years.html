@@ -5,18 +5,28 @@ layout: typical
 
 
 <div class="container">
-  <h1 style="color: rgb(67, 91, 226)">Posts by Year</h1>
-  {% for post in site.posts %}
-    {% assign currentdate = post.date | date: "%Y" %}
 
-    {% if currentdate != date %}
-      {% unless forloop.first %}</ul>{% endunless %}
-      <h3>{{ currentdate }}</h3>
-      <ul>
-      {% assign date = currentdate %}
-    {% endif %}
+  <div class="tag-button-container">
+    <a href="tags.html" class="tag-button" style="background-color: white; color: black;">Browse by Tag</a>
+    <a href="years.html" class="tag-button">Browse by Year</a>
+  </div>
 
-    <li><a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a></li>
-    {% if forloop.last %}</ul>{% endif %}
-  {% endfor %}
+
+  <div class="tag-container">
+    {% for post in site.posts %}
+      {% assign currentdate = post.date | date: "%Y" %}
+
+      {% if currentdate != date %} <!-- when in new year category, add header + start ul -->
+        {% unless forloop.first %}</ul>{% endunless %}
+        <h3 class="tag-header" >{{ currentdate }}</h3>
+        <ul>
+        {% assign date = currentdate %}
+      {% endif %}
+
+      <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% if forloop.last %}</ul>{% endif %} <!-- end ul at last item-->
+    {% endfor %}
+
+  </div>
+  
 </div>

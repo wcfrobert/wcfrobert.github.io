@@ -5,13 +5,20 @@ layout: typical
 
 
 <div class="container">
-  <h1 style="color: rgb(67, 91, 226)">Posts by Tag</h1>
-  {% for tag in site.tags %}
-  <section id={{tag[0]}} style="font-weight: bold; font-size: 1.17rem;">{{ tag[0] }}</section>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href="{{ post.url }}" style="text-decoration: none;">{{ post.title }}</a></li>
+  <div class="tag-button-container">
+    <a href="tags.html" class="tag-button">Browse by Tag</a>
+    <a href="years.html" class="tag-button" style="background-color: white; color: black;">Browse by Year</a>
+  </div>
+  
+  <div class="tag-container">
+    {% for tag in site.tags %}
+    <section class="tag-header" id={{tag[0]}}>{{ tag[0] }}</section>
+    <ul class="tag-ul">
+      {% for post in tag[1] %}
+      <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
     {% endfor %}
-  </ul>
-  {% endfor %}
+  </div>
+
 </div>

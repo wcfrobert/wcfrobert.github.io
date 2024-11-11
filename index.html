@@ -5,7 +5,7 @@
   <meta charset ="utf-8">
   <title>Robert Wang</title>
   <link rel="shortcut icon" type="image/png" href="assets/img/logo-blue.png"/>
-  <meta name="viewport" content="initial-scale=0.55" />
+  <meta name="viewport" content="initial-scale=0.55" /> <!-- to fit project browser div until i figure out how to make it responsive -->
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -50,7 +50,7 @@
             </ul>
           </div>
         </nav>
-        <hr style="margin-block-start: 0px;">
+        <hr class="hr-threequarter">
     </header>
     
 
@@ -93,13 +93,6 @@
               <path d="M 160.21766,-0.21765073 V 160.21765 L 116.00997,160 l 0.5472,-15.59568 c 0,0 -29.27611,1.36804 -50.343955,-11.76516 C 45.145389,119.50595 48.975907,95.975629 48.975907,95.975629 c 0,0 -1.915259,-18.605369 8.208253,-18.331762 10.123511,0.273608 71.95901,22.709493 71.95901,22.709493 l 0.2736,-32.285793 c 0,0 -60.193855,-11.765159 -68.675715,-17.510932 -8.481862,-5.745779 2.462475,-23.803934 2.462475,-23.803934 0,0 14.501245,-30.3705366 47.06065,-17.237332 32.5594,13.133205 35.29549,13.68042 35.29549,13.68042 V -0.06092323 Z" id="path886" /> </g>
             </svg>
             <a href="https://www.eng-tips.com/userinfo.cfm?member=wcfrobert">Eng-Tips</a>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
-              <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-              <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
-            </svg>
-            <a href="cv.html">CV</a>
           </li>
         </ul>
       </div>
@@ -458,6 +451,30 @@
 
 
 <script src="assets/js/custom.js"></script>
+
+<script>
+  // JS for project browser
+  // helper function
+  function _class(name){
+    return document.getElementsByClassName(name);
+  }
+  // get all of the tab panes (divs) within tab-header
+  let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+
+  // add click event to all panes
+  for(let i=0;i<tabPanes.length;i++){
+      tabPanes[i].addEventListener("click", function(){
+          // on click, remove current active header, make clicked header active
+          _class("tab-header")[0].getElementsByClassName("active-tab")[0].classList.remove("active-tab");
+          tabPanes[i].classList.add("active-tab");
+          // change tab indicator position based on index of pane clicked
+          _class("tab-indicator")[0].style.top = `calc(25px + ${i*50}px)`;
+          // swap active for tab content as well
+          _class("tab-content")[0].getElementsByClassName("active-tab")[0].classList.remove("active-tab");
+          _class("tab-content")[0].getElementsByTagName("div")[i*2].classList.add("active-tab");
+      })
+  }
+</script>
 
 </body>
 </html>
