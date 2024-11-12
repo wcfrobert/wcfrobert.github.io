@@ -15,7 +15,7 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["blog"] %}
+    {% for post in site.categories["blog"] reversed %}
       <a class="blog-post-box" href="{{ post.url }}">
 
         {% if post.image %}
@@ -35,7 +35,7 @@ layout: typical
           <h3 class="post-title">{{ post.title }}</h3>
           <p class="post-description">{{ post.description }}</p>
         </div>
-        
+
         <p class="post-readtime">
           {% assign words = post.content | number_of_words %}
             {% if words < 360 %}

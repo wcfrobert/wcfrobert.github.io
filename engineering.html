@@ -16,7 +16,7 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["engineering"] %}
+    {% for post in site.categories["engineering"] reversed %}
       <a class="blog-post-box" href="{{ post.url }}">
         
         {% if post.image %}
