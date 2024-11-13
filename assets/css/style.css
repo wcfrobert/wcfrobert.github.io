@@ -573,24 +573,21 @@ PART 5: BODY STYLES - About Page
 	color:#434445;
 }
 .aboutpage h1 {
+	margin-top: 40px;
 	font-size: 20px;
 	font-weight: bold;
 	color:#000000;
+	padding-left: 6px;
+	margin-left: -2%;
+	margin-right: -2%;
+	border-radius: 5px;
+	background-color: #d4d2d2;
+	color: #000000;
+	border: 1px solid #706e6e;
 }
 .aboutpage h1:hover {
-	cursor: pointer;
-	color:rgb(67, 91, 226);
-}
-.aboutpage h1::after {
-	content: '';
-	display: block;
-	height: 4px;
-	width: 0%;
+	color:white;
 	background-color:rgb(67, 91, 226);
-	transition: width 0.2s;
-}
-.aboutpage h1:hover::after {
-	width: 36%;
 }
 
 
@@ -712,6 +709,8 @@ PART 7: BLOG AND ENGINEERING PAGE
 .post-words {
 	width: 92%;
 	margin: auto;
+	height: 32%;
+	overflow: hidden;
 }
 .post-title {
 	margin-top: 1px;
@@ -720,44 +719,20 @@ PART 7: BLOG AND ENGINEERING PAGE
 	text-align: left;
 	font-weight: bold;
 }
+.post-description {
+	margin-top: 8px;
+}
 .post-readtime {
 	width: 92%;
 	margin: auto;
 	font-family: 'Open Sans', sans-serif;
 	color:#484d52;
+	height: 10%;
 	font-size: 14px;
 }
-/* 
-.blog-post-box .post-title {
-	margin-left: 1rem;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	font-size: 28px;
-	text-align: left;
-	font-weight: 400;
-}
-.blog-post-box .post-description {
-	margin-left: 1rem;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	margin-right: 1rem;
-	font-family: 'Open Sans', sans-serif;
-	color: rgb(54, 55, 59);
-	font-size: 16px;
-	text-align: left;
-	font-weight: 400;
-}
-.blog-post-box .post-date, .post-taglist, .post-readtime {
-	margin-left: 1rem;
-	font-family: 'Open Sans', sans-serif;
-	color: rgb(65, 66, 71);
-	font-size: 14px;
-	text-align: left;
-	float: left;
-	font-weight: 400;
-	display: inline;
-}
-*/
+
+
+
 
 
 

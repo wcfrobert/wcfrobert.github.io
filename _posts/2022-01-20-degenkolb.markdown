@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "Reading Journal: EERI Oral History Volume 1: Henry J. Degenkolb"
-description: "EERI Oral History Series is a collection of interview transcripts, each from a seminal figure in the earthquake engineering community"
+description: "Interview with a seminal figure in the earthquake engineering community"
 image: assets/img/blog/degenkolb.png
 date: 2022-01-20
 tags: books

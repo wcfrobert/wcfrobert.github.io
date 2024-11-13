@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "Every Meal I've Cooked So Far With HelloFresh"
-description: "HelloFresh is a meal kit delivery service I've been using it for the past 4 months. Here is a gallery of 52 different meals"
+description: "Here is a gallery of 52 different meals I made over the past 4 months"
 date: 2021-03-22
 image: assets/img/blog/hellofresh1.jpg
 tags: blog

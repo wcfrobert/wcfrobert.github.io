@@ -2,7 +2,7 @@
 layout: blog-post
 categories: blog
 title: "The First Post!"
-description: "If you only see one post, contact me and tell me to stop being lazy"
+description: "The start of something"
 date: 2021-02-15
 image: assets/img/blog/nature.jpg
 tags: blog
@@ -12,7 +12,7 @@ tags: blog
 While writing this, I realized just how momentous it is to finally have my own website. At the same time, it had occurred to me that every word I write down will be on the internet! I know my writing is sub par so It is terrifying to have a "finality" to it. I can probably just write in my personal journal without posting it to the internet, but I don't get the same incentive to improve my writing that way. I always cringe when looking back on my older writings, and I know I will cringe at this in a years time. Maybe I should embrace it. Maybe that should be my motto from now on: to write things that will make me cringe in a few months or years.
 
 ## The First Post!
-This is the first post ever. Hopefully it won't be the last. That sounds a bit ominous. I meant to say hopefully I won't be a bum. Please send me an email and tell me to stop being lazy if that is the case. In fact, to make it easier, [click here](mailto:temprobertdev@gmail.com?subject=stop-being-lazy...)
+This is the first post ever. Hopefully it won't be the last. That sounds a bit ominous. I meant to say hopefully I won't be a bum. 
 
 I think this post will serve as a CSS style guide and I continue to tweak and fine-tone this website. Nevertheless, the completion of the Jekyll blogging system marks the point of substantial completion for this website which, now I think about it, is actually quite impressive. I should celebrate a little bit!
 
