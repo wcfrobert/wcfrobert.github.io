@@ -653,8 +653,8 @@ PART 7: BLOG AND ENGINEERING PAGE
 	display: flex;
 	gap: 36px;
 	justify-content: flex-start;
-	flex-direction: row-reverse;
-	flex-wrap: wrap-reverse;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .blog-post-box {
 	border: 1px solid #8a8a8a;

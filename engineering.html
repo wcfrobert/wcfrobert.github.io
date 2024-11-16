@@ -6,7 +6,7 @@ layout: typical
 
     <div class="blog-jumbotron">
       <h1 class="blog-h1">Engineering</h1>
-      <p class="blog-p">"Everything should be made as simple as possible, but not simpler."</p>
+      <p class="blog-p">"All models are wrong, but some are useful." - George Box</p>
       <div class="author-more">
         <a href="tags.html" class="button">Browse by Tag</a>
         <a href="years.html" class="button">Browse by Year</a>
@@ -16,7 +16,7 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["engineering"] reversed %}
+    {% for post in site.categories["engineering"] %}
       <a class="blog-post-box" href="{{ post.url }}">
         
         {% if post.image %}
