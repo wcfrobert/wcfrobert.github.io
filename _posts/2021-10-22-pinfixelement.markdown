@@ -5,7 +5,7 @@ title: "Moment-Release"
 description: "Stiffness matrix of moment-released elements"
 image: assets/img/blog/momentrelease.png
 date: 2021-10-22
-tags: analysis
+tags: engineering
 ---
 
 ## Member Release Derivation
@@ -116,5 +116,5 @@ $$
 0 & 0 & 0 & 0\\
 \frac{-3EI\cdot GA}{GAL^3+3EIL} & 0 & \frac{3EI\cdot GA}{GAL^3 + 3EIL} & \frac{-3EI\cdot GA}{GAL^2+3EI} \\
 \frac{3EI\cdot GA}{GAL^2+3EI} & 0 & \frac{-3EI\cdot GA}{GAL^2+3EI} & \frac{3EI\cdot GAL}{GAL^2 + 3EI}
-\end{bmatrix}\\ 
+\end{bmatrix}\\
 $$

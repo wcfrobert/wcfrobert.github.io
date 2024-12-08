@@ -5,7 +5,7 @@ title: "Right-Hand Rule"
 description: "took me a while to finally understand right-hand rule and how it can be applied"
 image: assets/img/blog/thumbup.png
 date: 2021-03-25
-tags: analysis
+tags: engineering
 ---
 
 If you've ever taken any engineering/physics class in university, then you have undoubtedly been taught the "right-hand rule". It is apparently a useful mnemonic for remembering cross product conventions and orientation of axes. I can't really vouch for its usefulness given the fact that I can never quite remember which finger points where. 

@@ -583,10 +583,6 @@ PART 5: BODY STYLES - About Page
 	border-radius: 5px;
 	color: rgb(96, 96, 96);
 }
-.aboutpage h1:hover {
-	color:white;
-	background-color:rgb(67, 91, 226);
-}
 
 
 
@@ -786,8 +782,6 @@ PART 8: BLOG TAG PAGE
 
 
 
-
-
 /*
 ############################################
 PART 9: BLOG POSTS
@@ -816,12 +810,7 @@ PART 9: BLOG POSTS
 	background-color: white;
 	color:#313234;
 }
-@media (max-width: 800px) {
-    .blog-post {
-        padding: 60px;
-        font-size: 1.05em;
-    }
-}
+
 .blog-post img {
 	display: block;
 	text-align: center;
@@ -853,10 +842,12 @@ PART 9: BLOG POSTS
 	color: black;
 }
 .blog-post blockquote {
-	border-left: rgb(67, 91, 226) 2px solid;
-	padding-left: 15px;
+	border-left: rgb(67, 91, 226) 3px solid;
 	color: rgb(67, 91, 226);
-	font-family:'lora', sans-serif;
+	padding-left: 15px;
+	font-family: "Open Sans", serif;
+	background-color: #f3eded;
+	font-size: 1.18rem;
 }
 table {
 	border: 1px solid #ddd;
@@ -894,7 +885,7 @@ th, td {
 	height: 2em;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 12px;
+	font-size: 14px;
 	display: inline-block;
 	border-radius: 5px;
 	cursor: pointer;

@@ -8,9 +8,7 @@ date: 2023-08-22
 tags: primer
 ---
 
-*"Primer" is my personal reference notebook. Building codes and design guides are often dense and voluminous. These auto-didactic notes help me collect, organize, condense technical topics I'm learning as an engineer. I like to think of 'primer' as an extension to my brain whose storage capacity is sadly all too limited.*
-
-*Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 

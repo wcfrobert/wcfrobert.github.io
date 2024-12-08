@@ -5,12 +5,10 @@ title: "Primer: Base Plate Design"
 description: "Everything related to base plates"
 image: assets/img/blog/baseplate.png
 date: 2022-11-22
-tags: analysis primer
+tags: primer
 ---
 
-*"Primer" is my personal reference notebook. Building codes and design guides are often dense and voluminous. These auto-didactic notes help me collect, organize, condense technical topics I'm learning as an engineer. I like to think of 'primer' as an extension to my brain whose storage capacity is sadly all too limited.*
-
-*Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 Introduction and Procedure](#10-introduction-and-procedure)
@@ -968,7 +966,7 @@ Three anchor rod grades commonly used.
 
 1. Determine maximum tension demand for an individual anchor (t)
 2. Check tension rupture capacity per AISC (phi = 0.75)
-    
+   
     $$A_b = \pi d_b^2 / 4$$
 
     $$F_{nt} = 0.75 F_u$$

@@ -5,7 +5,7 @@ title: "A Better Approximation of Shear Wall P+M Interaction"
 description: "A simple equation for in-plane flexure strength of walls"
 image: assets/img/blog/shearwall.png
 date: 2021-10-22
-tags: concrete
+tags: engineering
 ---
 
 ## Introduction
@@ -158,11 +158,11 @@ def approx_PM(Pu,fy,lw,tw,fpc,lwb,lww,Ag,Aweb,Abe):
         alpha = axial load ratio
         beta = stress block parameter
     """
-
+    
     # step 2
     Asl1 = Aweb * Lw/Lww
     Asl2 = Abe - A_web * Lwb/Lww
-
+    
     # step 3
     alpha = Pu/(fpc*Ag)
     
