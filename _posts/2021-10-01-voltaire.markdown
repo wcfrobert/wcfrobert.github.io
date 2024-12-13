@@ -4,7 +4,7 @@ categories: blog
 title: "Voltaire on The Great Lisbon Earthquake"
 description: "A Critique of Philosophical Optimism"
 date: 2021-10-01
-image: assets/img/blog/earthquake.png
+image: assets/img/blog/default_thumbnail.png
 tags: thoughts
 ---
 

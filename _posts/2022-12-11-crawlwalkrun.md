@@ -3,7 +3,7 @@ layout: blog-post
 categories: blog
 title: "A Few Thoughts on Learning"
 description: "Don't run before you can walk. But fly as soon as you can run"
-image: assets/img/blog/crawlwalkrun.png
+image: assets/img/blog/default_thumbnail.png
 date: 2022-12-11
 tags: thoughts
 ---

@@ -15,7 +15,7 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["blog"] %}
+    {% for post in site.categories["blog"] offset:0 limit:16 %}
       <a class="blog-post-box" href="{{ post.url }}">
 
         {% if post.image %}
@@ -48,4 +48,12 @@ layout: typical
 
       </a>
     {% endfor %}
+  </div>
+
+
+  <div class="pagination">
+    <a href="musing.html" class="pagination-active">1</a> 
+    <a href="musing2.html" class="pagination">2</a>
+    <a href="musing3.html" class="pagination">3</a>
+    <a href="musing4.html" class="pagination">4</a>
   </div>

@@ -3,7 +3,7 @@ layout: blog-post
 categories: blog
 title: "And Caesar Wept..."
 description: "Standing before the statue of Alexander the Great"
-image: assets/img/blog/davinci.png
+image: assets/img/blog/default_thumbnail.png
 date: 2021-11-07
 tags: thoughts
 ---

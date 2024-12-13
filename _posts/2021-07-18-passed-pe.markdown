@@ -4,7 +4,7 @@ categories: blog
 title: "Just Passed my PE"
 description: "A quick update to no one after being absent for a while"
 date: 2021-07-16
-image: assets/img/blog/PE-exam.png
+image: assets/img/blog/default_thumbnail.png
 tags: blog
 ---
 

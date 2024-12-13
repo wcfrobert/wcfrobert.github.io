@@ -642,7 +642,7 @@ PART 7: BLOG AND ENGINEERING PAGE
 .blog-index-page {
 	margin: auto;
 	background-color:#ffffff;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 	padding-top: 20px;
 	display: flex;
 	gap: 36px;
@@ -725,8 +725,34 @@ PART 7: BLOG AND ENGINEERING PAGE
 	font-size: 14px;
 }
 
+.pagination {
+	display: flex;
+  	justify-content: center;
+  	padding: 1rem 0;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
 
+.pagination a {
+	margin: 0 5px;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(40, 39, 39);
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+}
 
+.pagination a:hover {
+	background-color: #e9ecef;
+}
+  
+.pagination a.pagination-active {
+	color: #ffffff;
+	background-color: rgb(67, 91, 226);
+	border-color: rgb(67, 91, 226);
+	pointer-events: none;
+}
 
 
 

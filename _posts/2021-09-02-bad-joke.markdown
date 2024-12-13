@@ -4,7 +4,7 @@ categories: blog
 title: "A Bad Joke"
 description: "A memorable quote from Philip Gibbs' WWI non fiction Now It Can Be Told"
 date: 2021-09-02
-image: assets/img/blog/humor.png
+image: assets/img/blog/default_thumbnail.png
 tags: thoughts
 ---
 

@@ -1,12 +1,11 @@
 ---
-permalink: /engineering.html
+permalink: /musing2.html
 layout: typical
 ---
 
-
     <div class="blog-jumbotron">
-      <h1 class="blog-h1">Engineering</h1>
-      <p class="blog-p">"All models are wrong, but some are useful." - George Box</p>
+      <h1 class="blog-h1">Writing</h1>
+      <p class="blog-p">"One day I will find the right words, and they will be simple." - Jack Kerouac</p>
       <div class="author-more">
         <a href="tags.html" class="button">Browse by Tag</a>
         <a href="years.html" class="button">Browse by Year</a>
@@ -16,12 +15,13 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["engineering"] limit:16 %}
+    {% for post in site.categories["blog"] offset:16 limit:16 %}
       <a class="blog-post-box" href="{{ post.url }}">
-        
+
         {% if post.image %}
         <div class="post-thumbnail" style="background-image: url({{post.image}})"></div>
         {% endif %}
+
 
         <div class="tag-date-container">
           {% for tag_i in post.tags %}
@@ -29,7 +29,7 @@ layout: typical
           {% endfor %}
           <p class="post-date">{{post.date | date: '%b-%Y'}} </p>
         </div>
-
+        
 
         <div class="post-words" style=" {% if post.image==False %} width: 100% {% endif %}">
           <h3 class="post-title">{{ post.title }}</h3>
@@ -48,12 +48,12 @@ layout: typical
 
       </a>
     {% endfor %}
-
   </div>
 
-<!--
+
   <div class="pagination">
-    <a href="engineering.html" class="pagination-active">1</a> 
-    <a href="engineering2.html" class="pagination">2</a>
+    <a href="musing.html" class="pagination">1</a> 
+    <a href="musing2.html" class="pagination-active">2</a>
+    <a href="musing3.html" class="pagination">3</a>
+    <a href="musing4.html" class="pagination">4</a>
   </div>
--->

@@ -4,7 +4,7 @@ categories: blog
 title: "Standing Desk Setup"
 description: "I made my own standing desk for about $400"
 date: 2021-10-01
-image: assets/img/blog/desk1.png
+image: assets/img/blog/default_thumbnail.png
 tags: blog
 ---
 
