@@ -121,11 +121,18 @@ For more advanced users, you can install python by itself here: [python installa
 ```python
 # FROM THE TERMINAL -------
 python myscript.py arg1 arg2
-# If it does not work, try:
-py myscript.py arg1 arg2
-# If it still does not work, specify the full path:
+# The above only works because "python" is added to PATH. Otherwise you need to write the full path:
 "C:\Users\wcfro\AppData\Local\Programs\Python\Python311\python" arg1 arg2
 
+# On windows, there is a dedicated python launcher called "py" which is preferred.
+py myscript.py
+# you can specify which version of python to use with py launcher
+py -3.11 myscript.py
+# if you run py within a virtual environment, it will run that version of python by default
+# Here are some useful commands with py launcher
+py -0p  # see all python installations on your machine and their path
+py -0   # see all python installations and which one is default
+# To change the default version of python used. Go to environment variable setting change (PY_PYTHON)
 
 # WITHIN script.py ----------
 # To receive arguments from the terminal, within python:

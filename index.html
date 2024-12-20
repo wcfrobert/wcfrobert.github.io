@@ -251,6 +251,7 @@
         <div class="tab-header">
           <div class="active-tab">fkit</div>
           <div>fapp</div>
+          <div>ezweld</div>
           <div>ezbolt</div>
           <div>ezanchor</div>
           <div>Framing Automation in Dynamo</div>
@@ -299,13 +300,35 @@
 
 
 
+          <div>
+            <div class="project-title"></div>
+            <img src="https://github.com/wcfrobert/ezweld/blob/master/doc/logo.png?raw=true" alt="logo" style="max-width:70%;">
+            <img src="https://github.com/wcfrobert/ezweld/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:100%;">
+            <p>
+              EZweld is a python program that performs stress calculations in weld groups subjected to in-plane and/or out-of-plane loading. It does so using the elastic method.
+              You can define weld groups of any shapes and sizes (lines, circle, rectangle) and quickly obtain their geometric properties (i.e. Ix, Iy, J, Sx, Sy, etc.) 
+              as well as the resultant shear stress for all fibers within the weld group. Simple, clear, intuitive. I hope people will find this tool useful for their needs.
+              <br>
+              <br>
+              Both the theory and the implementation were quite simple. The main challenge was getting the plotly visualization to work right (cone charts!). I also dove into some very interesting 
+              rabbit holes, some of which include stress transformations, Mohr's circle, Von-Mises yield criterion and other failure theories, change of basis, intrinsic vs. extrinsic rotations, 
+              rotation matrices, etc. Cool project!
+              <br>
+              <br>
+              Read more here in <a href="https://github.com/wcfrobert/ezweld">the GitHub repo</a>
+
+            </p>
+          </div>
+
+
+
 
           <div>
             <div class="project-title"></div>
             <img src="assets/img/ezbolt-logo.png" alt="logo" style="max-width:40%;">
             <img src="https://github.com/wcfrobert/ezbolt/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:80%;">
             <p>
-              EZbolt is a Python script that calculates bolt forces in bolted connections subject to shear and in-plane torsion. It does so using both the Elastic Method and the Instant Center of Rotation (ICR) method as outlined in the AISC steel construction manual. The iterative algorithm to locate the ICR is based on this seminal paper by Donald Brandt: <a href="https://www.aisc.org/Rapid-Determination-of-Ultimate-Strength-of-Eccentrically-Loaded-Bolt-Groups">Rapid Determination of Ultimate Strength of Eccentrically Loaded Bolt Groups.</a>
+              EZbolt is a python program that calculates bolt forces in bolted connections subject to shear and in-plane torsion. It does so using both the Elastic Method and the Instant Center of Rotation (ICR) method as outlined in the AISC steel construction manual. The iterative algorithm to locate the ICR is based on this seminal paper by Donald Brandt: <a href="https://www.aisc.org/Rapid-Determination-of-Ultimate-Strength-of-Eccentrically-Loaded-Bolt-Groups">Rapid Determination of Ultimate Strength of Eccentrically Loaded Bolt Groups.</a>
               <br>
               <br>
               Read more here in <a href="https://github.com/wcfrobert/ezbolt">the GitHub repo</a>
@@ -321,7 +344,7 @@
             <br>
             <img src="https://github.com/wcfrobert/ezanchor/blob/master/docs/pivot.gif?raw=true" alt="animated-gif" style="max-width:100%;">
             <p>
-              EZAnchor is a Python applet that performs nonstructural component seismic force (Fp) calculations per ASCE 7-16 Chapter 13, it then applies Fp in all possible orientations (360 degrees) to determine the maximum shear and tension demand in the anchors holding an equipment down in place.
+              EZAnchor is a python program that performs nonstructural component seismic force (Fp) calculations per ASCE 7-16 Chapter 13, it then applies Fp in all possible orientations (360 degrees) to determine the maximum shear and tension demand in the anchors holding an equipment down in place.
               <br>
               <br>
               The impetus for this package came from a lengthy technical discussion at work. Although the math behind equipment anchorage is simple, there's is actually tons of nuance and this program is far from easy to implement. Read more here in <a href="https://github.com/wcfrobert/ezanchor">the GitHub repo</a>
