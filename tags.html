@@ -15,7 +15,7 @@ layout: typical
     <section class="tag-header" id={{tag[0]}}>{{ tag[0] }}</section>
     <ul class="tag-ul">
       {% for post in tag[1] %}
-      <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a></li>
+      <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a> <span style="font-size: 0.65rem; color:rgb(128, 128, 135)"> - {{ post.date | date: "%Y" }}</span></li>
       {% endfor %}
     </ul>
     {% endfor %}

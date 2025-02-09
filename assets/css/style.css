@@ -868,12 +868,12 @@ PART 9: BLOG POSTS
 	color: black;
 }
 .blog-post blockquote {
-	border-left: rgb(67, 91, 226) 3px solid;
-	color: rgb(67, 91, 226);
+	border-left: rgb(80 84 206) 4px solid;
+	color: rgb(44 52 93);
 	padding-left: 15px;
 	font-family: "Open Sans", serif;
-	background-color: #f3eded;
-	font-size: 1.18rem;
+	background-color: #f9f9f9;
+	font-size: 1.05rem;
 }
 table {
 	border: 1px solid #ddd;
@@ -925,7 +925,11 @@ th, td {
 	font-weight: bold; */
 	margin-bottom: 10px;
 }
-
+.blog-post .post-tag:hover {
+	cursor: pointer;
+	color:white;
+	background-color: rgb(67, 91, 226);
+}
 .blog-comments:hover {
 	cursor: pointer;
 	color:rgb(67, 91, 226);
