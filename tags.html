@@ -5,20 +5,27 @@ layout: typical
 
 
 <div class="container">
-  <div class="tag-button-container">
-    <a href="tags.html" class="tag-button" style="pointer-events: none;">Browse by Tag</a>
-    <a href="years.html" class="tag-button" style="background-color: white; color: black;">Browse by Year</a>
+
+
+  <div style="width:65%; min-width:65%; margin: 0 auto">
+
+    <div class="tag-button-container">
+      <a href="tags.html" class="tag-button" style="pointer-events: none;">Browse by Tag</a>
+      <a href="years.html" class="tag-button" style="background-color: white; color: black;">Browse by Year</a>
+    </div>
+    
+    <div class="tag-container">
+      {% for tag in site.tags %}
+      <section class="tag-header" id={{tag[0]}}>{{ tag[0] }}</section>
+      <ul class="tag-ul">
+        {% for post in tag[1] %}
+        <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a> <span style="font-size: 0.65rem; color:rgb(128, 128, 135)"> - {{ post.date | date: "%Y" }}</span></li>
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+
   </div>
   
-  <div class="tag-container">
-    {% for tag in site.tags %}
-    <section class="tag-header" id={{tag[0]}}>{{ tag[0] }}</section>
-    <ul class="tag-ul">
-      {% for post in tag[1] %}
-      <li class="tag-item"><a href="{{ post.url }}">{{ post.title }}</a> <span style="font-size: 0.65rem; color:rgb(128, 128, 135)"> - {{ post.date | date: "%Y" }}</span></li>
-      {% endfor %}
-    </ul>
-    {% endfor %}
-  </div>
 
 </div>

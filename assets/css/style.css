@@ -566,11 +566,17 @@ PART 5: BODY STYLES - About Page
 */
 .aboutpage {
 	width: 90%;
-	max-width: 800px;
+	max-width: 850px;
 	margin: 0 auto;
 	font-family: 'Open Sans', sans-serif;
 	color:#434445;
 	font-size: 0.95rem;
+}
+
+@media (max-width: 750px) {
+    .aboutpage {
+        width: 100%;
+    }
 }
 .aboutpage h1 {
 	font-family: lora, serif;
@@ -757,7 +763,7 @@ PART 7: BLOG AND ENGINEERING PAGE
 
 /*
 ############################################
-PART 8: BLOG TAG PAGE
+PART 8: YEAR AND TAG PAGE
 ############################################
 */
 .tag-button-container {
@@ -868,7 +874,7 @@ PART 9: BLOG POSTS
 }
 .blog-post blockquote {
 	border-left: rgb(80 84 206) 4px solid;
-	color: rgb(44 52 93);
+	color: rgb(80 84 206);
 	padding-left: 15px;
 	font-family: "Open Sans", serif;
 	background-color: #f9f9f9;
