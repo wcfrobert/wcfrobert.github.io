@@ -568,13 +568,12 @@ PART 5: BODY STYLES - About Page
 	width: 90%;
 	max-width: 800px;
 	margin: 0 auto;
-	margin-top: 36px;
 	font-family: 'Open Sans', sans-serif;
 	color:#434445;
+	font-size: 0.95rem;
 }
 .aboutpage h1 {
 	font-family: lora, serif;
-	margin-top: 40px;
 	font-size: 1.6rem;
 	font-weight: bold;
 	padding-left: 6px;
