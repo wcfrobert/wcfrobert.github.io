@@ -328,8 +328,8 @@ PART 2: JUMBOTRON STYLES
 }
 @media screen and (max-width: 600px) {
   .jumbotron .quick-link li {
-    padding-left: 0.5rem;
-	  padding-right: 0.5rem;
+    padding-left: 0.48rem;
+	  padding-right: 0.48rem;
   }
 }
 
