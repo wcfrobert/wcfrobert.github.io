@@ -264,7 +264,7 @@ PART 2: JUMBOTRON STYLES
 	margin-right: auto;
 	margin-left: auto;
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: rgb(88, 90, 105);
 	margin-bottom: 5px;
 }
@@ -330,6 +330,7 @@ PART 2: JUMBOTRON STYLES
   .jumbotron .quick-link li {
     padding-left: 0.48rem;
 	  padding-right: 0.48rem;
+    font-size: 0.6rem;
   }
 }
 
