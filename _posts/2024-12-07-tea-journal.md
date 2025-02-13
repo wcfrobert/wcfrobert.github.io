@@ -54,14 +54,14 @@ Personal ratings:
 | White Peony (Baimudan)  |              |                                                              |
 |      Maofeng Green      |     ⭐⭐⭐      |        Grassy, nutty umami with hint of sweet potato.        |
 |     Long Jing Green     |              |                                                              |
-| Jin Xuan (Milky) Oolong |    ⭐⭐⭐⭐⭐     | A lighter Oolong. Very smooth, buttery, and silky. No astringency at all. I am not convinced it tastes like milk though. |
+| Jin Xuan (Milky) Oolong |     ⭐⭐⭐⭐     | A lighter Oolong. Very smooth, buttery, and silky. No astringency at all. I am not convinced it tastes like milk though. |
 |    Dong Ding Oolong     |    ⭐⭐⭐⭐⭐     | A richer and toastier Oolong taste. Like roasted almond. It has a woody note that kind of reminds me of fresh paper. |
 |   Honey Orchid Oolong   |              |                                                              |
 |     Alishan Oolong      |              |                                                              |
 |   Tie Guan Yin Oolong   |              |                                                              |
 |   Ya Shi Xiang Oolong   |              |                                                              |
 |   Da Hong Pao Oolong    |              |                                                              |
-|      Dian Hong Red      |     ⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
+|      Dian Hong Red      |    ⭐⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
 | Lapsang Souchong Black  |              |                                                              |
 |        Raw Pu'er        |              |                                                              |
 |   Ancient Tree Pu'er    |              |                                                              |
@@ -92,9 +92,9 @@ The taste is grassy and nutty and reminds me of Long Jing green tea. There is al
 
 <img src="/assets/img/blog/tea5.png" style="width:90%;"/> 
 
-Dong Ding Oolong tea is produced in Taiwan and named after the mountain where it is cultivated, near Lugu Township, Nantou. Because of its popularity and demand, dong ding is now grown all over Taiwan. The original dong ding plants were brought to Taiwan from the Wuyi Mountains in China's Fujian Province 150 years ago. Since then, it has been refined through annual competitions. The Lugu farmer's association, and the dong ding tea cooperative are both bodies that run annual competitions for this variety. Compared to other high-mountain Oolong teas from Taiwan, the Dong Ding mountain is only around 600 to 900 m (compared to Alishan at 1300m and Lishan at 2000m). Dong ding translates to "icy peak" or "frozen summit".
+Dong Ding oolong tea is produced in Taiwan and named after the mountain where it is cultivated, near Lugu Township, Nantou. Because of its popularity and demand, Dong Ding oolong is now grown all over Taiwan. The original Dong Ding plants were brought to Taiwan from the Wuyi Mountains in China's Fujian Province 150 years ago. Since then, it has been refined through annual competitions. The Lugu farmer's association, and the Dong Ding Tea Cooperative are both bodies that run annual competitions for this variety. Compared to other high-mountain oolong teas from Taiwan, the Dong Ding mountain is only around 600 to 900 m (compared to Alishan at 1300m and Lishan at 2000m). Dong Ding translates to "icy peak" or "frozen summit".
 
-I think I'm most familiar with dong ding Oolong which might explain my fondness towards it. The taste is rich and toasty, like roasted almond. It's stronger than lighter varieties like Jin Xuan. It has a woody note that kind of reminds me of fresh paper.
+I think I'm most familiar with Dong Ding oolong which might explain my fondness for it. The taste is rich and toasty, like roasted almond. It's stronger than lighter varieties like Jin Xuan. It has a woody note that kind of reminds me of fresh envelope paper.
 
 
 
@@ -104,9 +104,9 @@ I think I'm most familiar with dong ding Oolong which might explain my fondness 
 
 Unlike the more traditional oolongs like Tie Guan Yin or Da Hong Pao, Jin Xuan is a relatively new cultivar of oolong tea produced in Taiwan. It was cultivated by the Taiwan Research and Extension Station of Taiwan (TRES) in the 1980s through careful selective breeding. 
 
-Jin Xuan was named after the grandmother of its creator, Wu Zhenduo, who many consider to be the father of Taiwanese tea. His goal was to create a tea plant that was resistant to diseases, high-yielding, and flavorful. Nowadays, Jin Xuan the third most popular cultivar in Taiwan is grown all over Taiwan, particularly from regions such as Nantou, Chiayi, and Miaoli. This variety of oolong is known for its naturally creamy, buttery taste, which is why it's also known as "Milky Oolong". 
+Jin Xuan was named after the grandmother of its creator, Wu Zhenduo, who many consider to be the father of Taiwanese tea. His goal was to create a tea plant that was resistant to diseases, high-yielding, and flavorful. Nowadays, Jin Xuan the third most popular cultivar in Taiwan is grown all over Taiwan, particularly in regions such as Nantou, Chiayi, and Miaoli. This variety of oolong is known for its naturally creamy, buttery taste, which is why it's also known as "Milky oolong". 
 
-I think this variety of oolong is quite light compared to the other ones I've tasted. It's smooth, buttery, and silky. No astringency at all. Although it is quite smooth, I am not convinced it tastes like milk though.
+I think this variety of oolong is quite light compared to the other ones I've tasted. It's smooth, buttery, and silky. No astringency at all. Although it is quite smooth, I am not convinced it tastes like milk, and I prefer oolong with a darker note.
 
 
 
@@ -116,9 +116,9 @@ I think this variety of oolong is quite light compared to the other ones I've ta
 
 <img src="/assets/img/blog/tea7.png" style="width:90%;"/> 
 
+Dian Hong red tea is a relatively new cultivar created in the 1930s in the mountainous canyon area west of the Lancang River and east of the Nujiang River in southwestern Yunnan. It enjoys a gourmet, high-end reputation in former Soviet Union, Eastern Europe, and London. The word 滇 (dian) is a short name for Yunnan, whereas the word 紅 (hong) means red. As such, Dian Hong is often referred to as Yunnan red, or Yunnan black tea. As a sidenote, Western audiences usually categorize tea as either green or black. In China, there are actually three tea categories in common parlance: green, red, and black. Black is used exclusively to describe fermented tea such as Pu'er. 
 
-
-The taste is similar to Moonlight white. There is a hint of floral sweetness. But unlike the moonlight white tea, there is a malty note that reminds me of dried fruit like raisin or plum. The red color of the brew is visually appealing.
+Visually speaking, the tea leaves are a mix of dark and striking golden tips. After brewing, the liquid turns into a deep reddish orange that is incredibly appealing. The taste is similar to Moonlight white. There is a hint of floral sweetness. But unlike the moonlight white tea, there is a malty note that reminds me of dried fruit like raisin or plum. Very nice tea!
 
 
 
