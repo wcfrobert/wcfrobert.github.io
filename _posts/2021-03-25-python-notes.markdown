@@ -132,7 +132,7 @@ py -3.11 myscript.py
 # Here are some useful commands with py launcher
 py -0p  # see all python installations on your machine and their path
 py -0   # see all python installations and which one is default
-# To change the default version of python used. Go to environment variable setting change (PY_PYTHON)
+# To change the default version of python used. Go to environment variable setting and change/add (PY_PYTHON=3.xx)
 
 # WITHIN script.py ----------
 # To receive arguments from the terminal, within python:
@@ -262,7 +262,7 @@ build-backend = "hatchling.build"
 name = "package name"
 version = "1.0.0"
 authors = [
-  { name="wcfrobert", email="youremail@hotmail.com" },
+  { name="yourname", email="youremail" },
 ]
 description = "short description"
 readme = "README.md"
@@ -274,8 +274,8 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/wcfrobert/yourpackage"
-"Bug Tracker" = "https://github.com/wcfrobert/yourpackage/issues"
+"Homepage" = "https://github.com/yourname/yourpackage"
+"Bug Tracker" = "https://github.com/yourname/yourpackage/issues"
 
 
 # package up files with build. Will create a folder called dist/
