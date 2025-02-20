@@ -599,6 +599,7 @@ PART 5: BODY STYLES - About Page
 	font-family: 'Open Sans', sans-serif;
 	color:#434445;
 	font-size: 0.9rem;
+	line-height: 1.6;
 }
 
 @media (max-width: 750px) {

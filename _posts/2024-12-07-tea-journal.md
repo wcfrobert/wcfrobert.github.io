@@ -8,7 +8,7 @@ image: assets/img/blog/tea_cover.png
 tags: blog
 ---
 
-As a kid, I have fond memories of my parents taking me to dim sum on weekends. I love dim sum to death! One thing I could not understand, however, was their insistence on ordering Pu'er or chrysanthemum tea to pair with the assortment of culinary masterpieces. It puzzled me. Why would anyone drink this hot leaf water over the objectively superior iced water or Sprite? Back then, if you had asked me what type of tea I enjoyed, you'd be wasting your time. I only knew green, black, and the weird herbal ones that reminded me of perfume. 
+As a kid, I have fond memories of my parents taking me to dim sum on weekends. I love dim sum to death! One thing I could not understand, however, was their insistence on ordering Pu'er or chrysanthemum tea to pair with the assortment of culinary delights. It puzzled me. Why would anyone drink this hot leaf water over the objectively superior iced water or Sprite? Back then, if you had asked me what type of tea I enjoyed, you'd be wasting your time. I only knew green, black, and the weird herbal ones that reminded me of perfume. 
 
 It all started with bubble tea. Of course I had heard of boba before, but I became absolutely obsessed in 2015, and it inflicted notable damage on my weight and diet plans. It became especially bad once I started working and had more disposable income. By 2021, I had tried most if not all of the notable bubble tea shops in the Bay Area. I had enough wherewithal to stop eventually. None of my pants fit me anymore, and it's quite demoralizing to go shopping for new pants. Despite its deleterious effects on my health, bubble tea became a gateway drug for real tea: the ones with better quality, more subtle flavors, and infinitely less sugar. 
 
@@ -118,7 +118,7 @@ I think this variety of oolong is quite light compared to the other ones I've ta
 
 Dian Hong red tea is a relatively new cultivar created in the 1930s in the mountainous canyon area west of the Lancang River and east of the Nujiang River in southwestern Yunnan. It enjoys a gourmet, high-end reputation in former Soviet Union, Eastern Europe, and London. The word 滇 (dian) is a short name for Yunnan, whereas the word 紅 (hong) means red. As such, Dian Hong is often referred to as Yunnan red, or Yunnan black tea. As a sidenote, Western audiences usually categorize tea as either green or black. In China, there are actually three tea categories in common parlance: green, red, and black. Black is used exclusively to describe fermented tea such as Pu'er. 
 
-Visually speaking, the tea leaves are a mix of dark and striking golden tips. After brewing, the liquid turns into a deep reddish orange that is incredibly appealing. The taste is similar to Moonlight white. There is a hint of floral sweetness. But unlike the moonlight white tea, there is a malty note that reminds me of dried fruit like raisin or plum. Very nice tea!
+Visually speaking, the tea leaves are a mix of dark and striking golden tips. After brewing, the liquid turns into a deep reddish orange that is incredibly appealing. It smells sweeter than it tastes. The taste is similar to Moonlight white. There is a hint of floral sweetness. But unlike the moonlight white tea, there is a malty note that reminds me of dried fruit like raisin or plum.
 
 
 
