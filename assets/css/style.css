@@ -604,7 +604,7 @@ PART 5: BODY STYLES - About Page
 
 @media (max-width: 750px) {
     .aboutpage {
-        width: 96%;
+        width: 99%;
     }
 }
 .aboutpage h1 {
