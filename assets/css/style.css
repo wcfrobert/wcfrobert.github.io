@@ -998,6 +998,15 @@ th, td {
 .blog-comments:hover {
 	cursor: pointer;
 }
+
+.mailchimp-container {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
