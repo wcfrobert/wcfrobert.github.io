@@ -992,9 +992,11 @@ th, td {
 	color:white;
 	background-color: rgb(67, 91, 226);
 }
+.blog-comments {
+	color:rgb(67, 91, 226);
+}
 .blog-comments:hover {
 	cursor: pointer;
-	color:rgb(67, 91, 226);
 }
 .video-container {
     position: relative;
