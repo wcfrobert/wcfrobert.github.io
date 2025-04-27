@@ -908,7 +908,7 @@ PART 9: BLOG POSTS
 }
 .blog-post h1 {
 	font-weight: 400;
-	font-size: 2.6rem;
+	font-size: 2.2rem;
 	margin-bottom: 5px;
 	color: black;
 	font-family:'lora', sans-serif;
@@ -921,22 +921,77 @@ PART 9: BLOG POSTS
 }
 .blog-post h2 {
 	margin-bottom: 21px;
-	font-size: 1.35rem;
+	font-size: 1.6rem;
 	font-weight: bold;
 	color: black;
 }
-.blog-post h3,h4 {
+h2::after {
+	content: "";
+	display: block;
+	border-top: 1px solid #000;
+	margin-top: 10px;
+	margin-bottom: 10px;
+  }
+
+.blog-post h3 {
 	font-size: 1.2rem;
+	color: black;
+}
+.blog-post h4 {
+	font-size: 1.0rem;
+	font-weight: normal;
+	text-decoration: underline;
 	color: black;
 }
 .blog-post blockquote {
 	border-left: rgb(80 84 206) 4px solid;
 	color: rgb(80 84 206);
 	padding-left: 15px;
-	font-family: "Open Sans", serif;
+	font-family: "lora", serif;
 	background-color: #f9f9f9;
 	font-size: 1.05rem;
 }
+.blog-post .note-box, .blog-post .tip-box, .blog-post .caution-box {
+	border-left: 5px solid;
+	padding: 10px 15px;
+	margin: 10px 0;
+	border-radius: 6px;
+}
+.blog-post .note-box {
+	background-color: #d7e2f6;
+	border-color: #3273e2;
+}
+.blog-post .tip-box {
+	background-color: #dbecdf;
+	border-color: #379a4e;
+}
+.blog-post .caution-box {
+	background-color: #f8dfe1;
+	border-color: #ef6775;
+}
+.blog-post .note-box::before {
+	white-space: pre-wrap;
+  content: "📝 Note\A";
+  font-weight: bold;
+  color: #0c4ab4;
+  font-size: 0.9rem;
+}
+.blog-post .tip-box::before {
+	white-space: pre-wrap;
+  content: "💡 Tip\A";
+  font-weight: bold;
+  color: #0a7423;
+  font-size: 0.9rem;
+}
+
+.blog-post .caution-box::before {
+	white-space: pre-wrap;
+  content: "⚠️ Caution\A";
+  font-weight: bold;
+  color: #a81927;
+  font-size: 0.9rem;
+}
+
 table {
 	border: 1px solid #ddd;
 	text-align: left;
@@ -973,15 +1028,14 @@ th, td {
 	height: 2em;
 	text-align: center;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 0.8rem;
 	display: inline-block;
-	border-radius: 5px;
+	border-radius: 12px;
 	cursor: pointer;
 	text-decoration: none;
 	padding-bottom: 3px;
-	background-color: #e3dede;
+	background-color: #eae7e7;
 	color: #000000;
-	border: 1px solid #969595;
 	/* background-color: rgb(67, 91, 226);
 	color: #ffffff;
 	font-weight: bold; */
@@ -994,6 +1048,8 @@ th, td {
 }
 .blog-comments {
 	color:rgb(67, 91, 226);
+	margin-top: 24px;
+	display: block;
 }
 .blog-comments:hover {
 	cursor: pointer;
@@ -1031,7 +1087,7 @@ th, td {
 /*code snippet: https://github.com/jwarby/jekyll-pygments-themes*/
 /*https://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html*/
 /* .highlighter-rouge {border-style: inset;} */
-.highlight {font-size: 16px; width: 100%; margin: auto; overflow-x: auto; padding: 8px;}
+.highlight {font-size: 0.9rem; width: 100%; margin: auto; overflow-x: auto; padding: 8px;}
 .highlight pre { background-color: #f0efef; }
 .highlight .hll { background-color: #f0efef; }
 

@@ -29,7 +29,12 @@ In terms of design philosophy, I think I prefer the Baushaus aesthetics of "less
 I think the minimalist appeal really caught on because of Apple. At the same time, our lives are becoming increasingly hectic and overloaded. Everyone owns too much stuff... Think about the social media accounts, the passwords we need to remember, credit cards, student loans, rent payments, and so on. Most importantly, we are overloaded by information. A Google search of "how to cook mashed potatoes" yields 42,300,000 results in 0.93 seconds. I don't know what the rest of the 42,299,990 results are for. This general overload of everything birthed a strong preference for minimalism. Our lives are already cluttered enough, things of relative minor importance should convey simplicity and not add to the clutter. I think minimalism is here to stay.
 
 
-## Everything below this is a style guide.
+(Everything below this is a style guide)
+
+# H1 - Post Title
+## H2 - Main Header Level
+### H3 - Sub Header Level
+#### H4 - Sub Sub Header
 
 All headings within articles should be H2. Below is an image. This is an emoji :satisfied:
 ![](/assets/img/blog/nature.jpg)
@@ -39,14 +44,12 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
+<p class="note-box">This is a note box</p>
 
-***
-## H2 - Main Section Titles
-### H3 - Sub-section Titles
-#### H4 - Occasionally Another Level
+<p class="tip-box">This is a tip box</p>
 
+<p class="caution-box">This is a caution box</p>
 
-## Lists
 ### Ordered List:
 
 1. first
@@ -60,7 +63,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 * item 3
 
 
-## Tables
+### Tables
 
 | a | b | c | d | e  |
 |---|---|---|---|----|
@@ -69,9 +72,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis a
 | 6 | 7 | 8 | 9 | 10 |
 
 
-## Quotes
+### Quotes
 
-### A quote looks like this:
 > Life can only be understood backwards; but it must be lived forwards. — Soren Kierkegaard
 
 ### LaTex Equations
