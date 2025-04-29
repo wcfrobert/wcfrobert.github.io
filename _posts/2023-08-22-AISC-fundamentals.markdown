@@ -5,7 +5,7 @@ title: "Primer: AISC 360-16 Chapter J Connection Design"
 description: "Structural steel connection design fundamentals"
 image: assets/img/blog/AISC.png
 date: 2023-08-22
-tags: primer
+tags: primer engineering
 ---
 
 *"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*

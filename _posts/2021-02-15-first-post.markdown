@@ -7,6 +7,7 @@ date: 2021-02-15
 image: assets/img/blog/nature.jpg
 tags: blog
 ---
+
 ## Preface
 
 While writing this, I realized just how momentous it is to finally have my own website. At the same time, it had occurred to me that every word I write down will be on the internet! I know my writing is sub par so It is terrifying to have a "finality" to it. I can probably just write in my personal journal without posting it to the internet, but I don't get the same incentive to improve my writing that way. I always cringe when looking back on my older writings, and I know I will cringe at this in a years time. Maybe I should embrace it. Maybe that should be my motto from now on: to write things that will make me cringe in a few months or years.
@@ -43,6 +44,8 @@ All headings within articles should be H2. Below is an image. This is an emoji :
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque neque veritatis aperiam numquam at, error itaque maiores doloribus! Deserunt nemo porro dolores accusantium commodi, rem nostrum quisquam inventore consequuntur vero.
+
+<p class="tldr-box">This is a TL:DR summary box</p>
 
 <p class="note-box">This is a note box</p>
 
