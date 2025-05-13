@@ -353,7 +353,7 @@ PART 2: JUMBOTRON STYLES
 
 /*
 ############################################
-PART 3: BODY STYLES - Education and Work
+PART 3: MAIN PAGE GENERAL
 ############################################
 */
 .resume-content {
@@ -364,7 +364,6 @@ PART 3: BODY STYLES - Education and Work
 @media screen and (max-width: 800px) {
 .resume-content {width: 100%;}
 }
-
 .resume-content h1 {
 	display: inline-block;
 	margin-top: 16px;
@@ -389,92 +388,47 @@ PART 3: BODY STYLES - Education and Work
 	width: 100%;
 }
 
-
-
-.resume-content .uni-company {
-	max-height: 25px;
-	margin-left: 22px;
-	margin-top: 3px;
-	margin-bottom: 5px;
+.recentpost-box {
+	text-decoration: none;
+	color: rgb(54, 54, 54);
+	display: block;
+	border: 1px solid #8a8a8a;
+	border-radius: 10px;
+	margin-bottom: 8px;
+	transition: all 0.1s;
 }
-input[type='checkbox'] {
-	display: none;
+.recentpost-box:hover {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	transform: translateY(-2px);
 }
-.resume-content .role-label {
-	cursor: pointer;
-	font-size: 16px;
-	font-weight: bold;
+.recentpost-box .recentpost-title{
+	font-size: 0.9rem;
+	color:#404143;
+	margin-top: 4px;
+	margin-left: 8px;
+	margin-bottom: 2px;
+	max-width: 75%;
+}
+.recentpost-box .recentpost-description{
+	font-size: 0.85rem;
+	margin-top: 4px;
+	margin-left: 12px;
+	margin-bottom: 4px;
+	color: rgb(66 65 65);
+}
+.recentpost-box .recentpost-date {
 	display: inline-block;
-	margin-left: 3px;
-	margin-top: 16px;
-	margin-bottom: 1px;
+	margin-left: auto;
+	font-size: 0.8rem;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-right: 6px;
 }
-.resume-content .details {
-	font-size: 14px;
-	margin-left: 25px;
-	margin-top: 5px;
-	color:rgb(144, 145, 158);
-	max-height: 0px;
-	overflow: hidden;
-	transition: max-height .3s ease-in-out;
-}
-.role:checked + .role-label +.uni-company + .details {
-	max-height: 100vh;
-}
-
-
-.plus-button {
-	position: relative;
-	display: inline-block;
-    width: 14px;
-	height: 14px;
-	top: 2px;
-}
-.plus-button:before{
-	content: "";
-	position: absolute;
-	background-color: grey;
-	transition: transform 0.25s ease-out;
-	top: 0;
-	left: 50%;
-	width: 4px;
-	height: 100%;
-	margin-left: -2px;
-}
-.plus-button:after{
-	content: "";
-	position: absolute;
-	background-color: grey;
-	transition: transform 0.25s ease-out;
-	top: 50%;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	margin-top: -2px;
-}
-.role:checked + .role-label .plus-button:before {
-	cursor: pointer;
-	transform: rotate(90deg);
-}
-.role:checked + .role-label .plus-button:after {
-	cursor: pointer;
-	transform: rotate(180deg);
-}
-
-
-.uni-company span {
-	margin-left: 3px;
-	font-size: 14px;
-	color: slategray;
-}
-
-
-
 
 
 /*
 ############################################
-PART 4: BODY STYLES - Project
+PART 4: MAIN PAGE PROJECT
 ############################################
 */
 .resume-content .spacer {
@@ -617,8 +571,19 @@ PART 5: BODY STYLES - About Page
 	border-radius: 5px;
 	color: rgb(96, 96, 96);
 }
-
-
+.aboutpage .aboutpage-pic {
+	float: left; 
+	width:300px; 
+	margin: 6px 15px 0px 0px;
+}
+@media (max-width: 750px) {
+	.aboutpage .aboutpage-pic {
+		float: none;
+		display: block;
+		margin: 0 auto 15px auto;
+		width: 100%;
+	}
+}
 
 /*
 ############################################

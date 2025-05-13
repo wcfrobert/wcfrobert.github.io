@@ -257,20 +257,37 @@ git push origin master
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
+# https://hatch.pypa.io/latest/plugins/builder/wheel/#default-file-selection
+[tool.hatch.build.targets.wheel]
+packages = ["packagename"] # this is only needed if your package name is different from the name on PyPI. Delete otherwise.
+
+# can often forget to update package version
+[tool.hatch.version]
+path = "fiberkit/__init__.py"
+
 
 [project]
-name = "package name"
-version = "1.0.0"
+name = "packagename"
+# version = "0.1.0"  for manually updating version
+dynamic = ["version"] # dynamically update version based on __version__ variable in __init__.py file
+description = "project description"
 authors = [
-  { name="yourname", email="youremail" },
+  { name="your name", email="your_email@gmail.com" },
 ]
-description = "short description"
 readme = "README.md"
-requires-python = ">=3.7"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy~=2.0",
+    "pandas~=2.0"
+]
+keywords = [
+    "structural engineering",
+    "computation",
 ]
 
 [project.urls]
@@ -284,7 +301,15 @@ classifiers = [
 
 # install twine which is an upload tool to upload to PyPi. Make sure you have an account
     pip install --upgrade twine
+    twine check dist/*
     twine upload dist/*
+
+# to update your package
+    # delete content of /dist folder first
+    py -m build
+    twine check dist/*
+    twine upload dist/*
+    # when prompted, enter PyPI token
 ```
 
 

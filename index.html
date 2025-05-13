@@ -6,11 +6,11 @@ layout: typical
     <section class="jumbotron">
       <img src="assets/img/profile-pic2.png" alt="Avatar" class="avatar">
       <h1>👋Hi, My name is Robert</h1>
-      <p>Welcome to my personal website.</p>
+      <p>Notes from a practicing structural engineer</p>
 
       <div class="author-more">
-        <a href="years.html" class="button">My Blog</a>
-        <a href="about.html" class="button">About Me</a>
+        <a href="engineering.html" class="button">Engineering</a>
+        <a href="musing.html" class="button">Essays</a>
       </div>
 
       <div class="quick-link">
@@ -48,19 +48,19 @@ layout: typical
 
 
 
-    <!-- BODY: Backgrounds -->
+    <!-- BODY: Recent Posts -->
     <section class='resume-content'> 
-      <h1>Background</h1>
-      <div style="margin-top: 1.2rem;"></div>
-
-      <div style="min-width: 350px; color:#5a5353; line-height:1.6rem; font-size:0.9rem;">
-        I am a licensed Professional Engineer (PE) in California, currently working at Degenkolb Engineers, where I'm involved in seismic retrofits, new building design, computational tool development, 
-        data visualization, and various R&D initiatives. I have a Master's Degree in Structural Engineering from Stanford University, and a Bachelor's Degree in Civil Engineering from the University of Ottawa.
-        <div style="margin-top: 1rem;"></div>
-        My interests include structural analysis, programming, and design/typography. In other words, I like designing buildings, creating software, and making things look nice. 
-        I am the creator of several popular structural engineering python packages. Most of which are free, open-source, and pubicly available on <a href="https://github.com/wcfrobert">Github</a>. 
-        Aside from coding, I also write occasional <a href="musing.html">blogs</a> on random things that interest me. The contents of all my work reflect my personal views only.
-        I do these blog posts and programming projects in my spare time, and I never write on behalf of my employer. Welcome to my little corner of the internet. Don't hesitate to reach out if you'd like to connect or collaborate!
+      <h1>Recent Posts</h1>
+      <div class="recentpost">
+        {% for post in site.posts offset:0 limit:8 %}
+          <a class="recentpost-box" href="{{ post.url }}">
+            <div style="display:flex; align-items: center;">
+              <h3 class="recentpost-title">{{ post.title }}</h3>
+              <p class="recentpost-date">{{post.date | date: '%b-%Y'}} </p>
+            </div>
+            <p class="recentpost-description">{{ post.description }}</p>
+          </a>
+        {% endfor %}
       </div>
 
     </section>
