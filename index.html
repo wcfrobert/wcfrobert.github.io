@@ -10,7 +10,7 @@ layout: typical
 
       <div class="author-more">
         <a href="engineering.html" class="button">Engineering</a>
-        <a href="musing.html" class="button">Essays</a>
+        <a href="musing.html" class="button">Writing</a>
       </div>
 
       <div class="quick-link">
@@ -51,21 +51,22 @@ layout: typical
     <!-- BODY: Recent Posts -->
     <section class='resume-content'> 
       <h1>Recent Posts</h1>
-      <div class="recentpost">
+      <div class="post-highlight">
         {% for post in site.posts offset:0 limit:8 %}
-          <a class="recentpost-box" href="{{ post.url }}">
+          <a class="post-box" href="{{ post.url }}">
             <div style="display:flex; align-items: center;">
-              <h3 class="recentpost-title">{{ post.title }}</h3>
-              <p class="recentpost-date">{{post.date | date: '%b-%Y'}} </p>
+              <h3 class="post-title">{{ post.title }}</h3>
+              <p class="post-date">{{post.date | date: '%b-%Y'}} </p>
             </div>
-            <p class="recentpost-description">{{ post.description }}</p>
+            <p class="post-description">{{ post.description }}</p>
           </a>
         {% endfor %}
+
+        <a href="engineering.html" style="text-align: right; display:block; color: #404143; font-size: 0.9rem;">Read More</a>
       </div>
 
     </section>
-    <div style="margin-top: 1.2rem;"></div>
-    <hr class="hr-half">
+
 
 
 
@@ -102,7 +103,7 @@ layout: typical
             <div class="project-title"></div>
             <img src="assets/img/fkit-logo.png" alt="logo" style="max-width:40%;">
             <br>
-            <img src="https://github.com/wcfrobert/fkit/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/fkit-demo.png" alt="demo" style="max-width:100%;">
             <p>
               fkit (fiber-kit) is a powerful and easy-to-use section analysis program built in python. Perform moment-curvature and P+M interaction analysis with less than 5 lines of code. 
               Fibers can be defined by the user with a plethora of material models (e.g. Hognestad, Manders, RambergOsgood, Menegotto-Pinto, ElasticPlastic, and more). 
@@ -118,9 +119,9 @@ layout: typical
 
           <div>
             <div class="project-title"></div>
-            <img src="https://github.com/wcfrobert/wthisj/blob/master/doc/logo.png?raw=true" alt="logo" style="max-width:40%;">
+            <img src="assets/img/wthisj-logo.png" alt="logo" style="max-width:40%;">
             <br>
-            <img src="https://github.com/wcfrobert/wthisj/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/wthisj-demo.png" alt="demo" style="max-width:100%;">
             <p>
               wthisj - what the heck is j? - is a python program that performs punching shear calculations for design of concrete slabs. It does so using the elastic method as well as various concepts described
               in ACI 318 and ACI 421.1R. 
@@ -135,9 +136,9 @@ layout: typical
 
           <div>
             <div class="project-title"></div>
-            <img src="https://raw.githubusercontent.com/wcfrobert/fapp/master/docs/logo.png" alt="logo" style="max-width:40%;">
+            <img src="assets/img/fapp-logo.png" alt="logo" style="max-width:40%;">
             <br>
-            <img src="https://raw.githubusercontent.com/wcfrobert/fapp/master/docs/demo.gif" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/fapp-demo.png" alt="demo" style="max-width:100%;">
             <p>
               fapp - Frame Analysis Program in Python - is a lightweight and easy-to-use Python implementation of the Finite Element Method (FEM). Perform first-order elastic analyses of any 3-D frame structure 
               and visualize results with a fully interactive web browser interface.
@@ -153,7 +154,7 @@ layout: typical
           <div>
             <div class="project-title"></div>
             <img src="assets/img/ezbolt-logo.png" alt="logo" style="max-width:40%;">
-            <img src="https://github.com/wcfrobert/ezbolt/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:60%;">
+            <img src="assets/img/ezbolt-demo.png" alt="demo" style="max-width:60%;">
             <p>
               EZbolt is a python program that calculates forces in bolted connections subject to shear and in-plane torsion. It does so using both the Elastic Method and 
               the Instant Center of Rotation (ICR) method.
@@ -171,8 +172,8 @@ layout: typical
 
           <div>
             <div class="project-title"></div>
-            <img src="https://github.com/wcfrobert/ezweld/blob/master/doc/logo.png?raw=true" alt="logo" style="max-width:70%;">
-            <img src="https://github.com/wcfrobert/ezweld/blob/master/doc/demo.gif?raw=true" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/ezweld-logo.png" alt="logo" style="max-width:70%;">
+            <img src="assets/img/ezweld-demo.png" alt="demo" style="max-width:100%;">
             <p>
               EZweld is a python program that performs stress calculations for weld groups using the elastic method. This is a very practical and easy-to-use tool.
               Define weld groups of any configuration, then calculate its geometric properties and the resultant stresses.
@@ -192,7 +193,7 @@ layout: typical
             <div class="project-title"></div>
             <img src="assets/img/ezanchor-logo.png" alt="logo" style="max-width:40%;">
             <br>
-            <img src="https://github.com/wcfrobert/ezanchor/blob/master/docs/pivot.gif?raw=true" alt="animated-gif" style="max-width:100%;">
+            <img src="assets/img/ezanchor-demo.png" alt="demo" style="max-width:100%;">
             <p>
               EZAnchor is a python program that performs nonstructural component seismic force (Fp) calculations per ASCE 7-16 Chapter 13, it then applies Fp in all possible orientations (360 degrees) to 
               determine the maximum shear and tension demand in the anchors holding an equipment down in place. Although the math behind equipment anchorage is simple, there's is actually tons of nuance and this 
