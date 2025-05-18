@@ -30,7 +30,6 @@
 </head>
 
 
-
 <body>
   <div class="blog-global-container">
     <!-- HEADER -->
@@ -56,87 +55,60 @@
         <hr class="hr-threequarter">
     </header>
 
-
-    <!-- Post title, tag, word count, read time -->
+    <!-- BLOG BODY WRAPPER -->
     <div class ="blog-wrapper">
       <div class="blog-post">
+        <!-- Title -->
         <h1>{{page.title}}</h1>
-        <div>
+
+        <!-- Tags -->
+        <div class="post-tag-container">
           {% for tag in page.tags %}
           <a class="post-tag" href="/tags.html#{{tag}}">{{ tag }}</a>
           {% endfor %}
         </div>
-        <div class="reading-time" title="Estimated read time">
-          <div>
-            Published: {{page.date | date_to_string}}
-          </div>
-          {% assign words = content | number_of_words %}
-            {% if words < 360 %}
-              1 min
-            {% else %}
-              {{ words | divided_by:180 }} mins
-            {% endif %}
-            read
-        </div>
-        
 
-        <!-- Blog content -->
+        <!-- Estimated Read time -->
+        <div class="reading-time" title="Estimated read time">
+          <div>Published: {{page.date | date_to_string}}</div>
+          {% assign words = content | number_of_words %}
+          {% if words < 360 %}
+            1 min
+          {% else %}
+            {{ words | divided_by:180 }} mins
+          {% endif %}
+          read
+        </div>
+
+        <!-- Blog Content-->
         {{content}}
+      
 
         <hr style="margin-top: 4rem; margin-bottom: 2rem;">
 
-
-
-
-
-        <!-- Newsletter Signup Mailchimp -->
-        <div class="mailchimp-container">
-          <h3 style="text-align: center;">Get notified for more posts like this one.</h3>
-          <div style="text-align: center; font-size:0.9rem; padding: 10px">I write about engineering, OpenSees, Python, computational design, and more. Get practical insights delivered straight to your inbox. No spam, no ads, just you and me.</div>
-
-
-          <div id="mc_embed_shell">
-            <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
-            <style type="text/css">
-                  #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: px;}
-                  /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-                    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-            </style>
-            <div id="mc_embed_signup">
-                <form action="https://robwang.us9.list-manage.com/subscribe/post?u=41c7f22a057158e698ab713cc&amp;id=5536b3b520&amp;f_id=00c122e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                        <div id="mc_embed_signup_scroll">
-                            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
-                        <div id="mce-responses" class="clear foot">
-                            <div class="response" id="mce-error-response" style="display: none;"></div>
-                            <div class="response" id="mce-success-response" style="display: none;"></div>
-                        </div>
-                    <div aria-hidden="true" style="position: absolute; left: -5000px;">
-                        /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-                        <input type="text" name="b_41c7f22a057158e698ab713cc_5536b3b520" tabindex="-1" value="">
-                    </div>
-                        <div class="optionalParent">
-                            <div class="clear foot">
-                                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                                <p style="margin: 0px auto;"><a href="http://eepurl.com/jdpJtw" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-          </div>
+        <!-- Buttondown Mailing List -->
+        <div class="buttondown-container">
+          <h3 style="text-align: center; margin: 10px 0px 10px 0px;">Rob's Engineering Newsletter</h3>
+          <div style="text-align: center; font-size:0.8rem; padding: 10px; color:rgb(108, 108, 110)">Insights delivered straight to your inbox. No spam, no ads, just you and me.</div>
           
+          <form
+          action="https://buttondown.com/api/emails/embed-subscribe/wcfrobert"
+          method="post"
+          target="popupwindow"
+          onsubmit="window.open('https://buttondown.com/wcfrobert', 'popupwindow')"
+          class="embeddable-buttondown-form">
+            <input type="email" name="email" id="bd-email" placeholder="Your email here (your@email.com)" class="email-input"/>
+            <input type="submit" value="Subscribe" class="submit-button"/>
+          </form>
 
+          <p style="text-align: center; font-size:0.8rem; color:rgb(108, 108, 110)">
+            Prefer Substack? Follow me at
+            <a href="https://simplemodel.substack.com/" style="color:rgb(30, 30, 30);"> The Simple Model</a> 
+          </p>
 
         </div>
 
-
-
-
-
-
-
+        <hr style="margin-top: 2rem; margin-bottom: 2rem;">
 
         <!-- Disqus comment. Disable ads if site gets bigger ($120/year pricing...) -->
         <a class="blog-comments" onclick="showdisqus();return false;">
@@ -145,7 +117,6 @@
           </svg>
           <span class="disqus-comment-count" data-disqus-url='{{ page.url | absolute_url }}'>Comments</span>
         </a>
-
         <div id="disqus_thread" style="display: none;"></div>
         <script>
           /**
@@ -164,16 +135,10 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+      
       </div>
     </div>
-
-
-
-
   </div>
-
-
 
 
 
@@ -209,9 +174,7 @@
     <div class="copyright-footer">&copy; 2021 - {{ "now" | date: "%Y" }} Robert Wang. All rights reserved.</div>
   </footer>
 
-  <!-- Disqus -->
   <script id="dsq-count-scr" src="//robwang-io.disqus.com/count.js" async></script>
-  <!-- My Own JS -->
   <script src="/assets/js/custom.js"></script>
 </body>
 </html>
