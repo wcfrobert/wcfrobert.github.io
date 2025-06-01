@@ -28,7 +28,7 @@ Tea drinking was first recorded in China in 59 BC, possibly earlier. The tea pla
 
 Within China, tea drinking gained prominence during the Tang dynasty when the 8th century writer Lu Yu published a three volume treatise on tea called "The Classic of Tea" (780 CE). The book is divided into ten chapters and served as a seminal text in Chinese tea culture. It covered everything from ideal growing conditions, tools for harvesting and processing, best practices for preserving aroma and flavor, best utensils, brewing temperature, timing, and ratio, the various growing regions in China, the history and philosophy of tea drinking, and much more. The fastidiousness reminds me of third-wave coffee culture, except this was during the time of Middle Age Viking raids in Europe.
 
-This amazing beverage simmered quietly in China for another 700 years before the Portuguese traders brought it to Europe in the 1500s. It became quite popular amongst the British Aristocracies, and then later to the broader public. The problem is the price of tea is still quite high. To break up China's monopoly on tea production, the British successfully introduced tea cultivation in India in the 1800s; ending its reliance on China. Assam, Darjeeling, and Ceylon teas are all named after regions in and around India. By the 19th century, large quantities of tea from India meant it had become an everyday beverage for all classes of society.
+This amazing beverage simmered quietly in China for another 700 years before the Portuguese traders brought it to Europe in the 1500s. It became quite popular amongst the British Aristocracies, and then later to the broader public. The problem is the price of tea is still quite high. To break up China's monopoly on tea production, the British successfully introduced tea cultivation in and near India in the 1800s; ending its reliance on China. Assam, Darjeeling, and Ceylon teas are all named after regions in and around India. By the 19th century, large quantities of tea from India and Sri Lanka meant it had become an everyday beverage for all classes of society.
 
 The history of tea is very interesting and worth a read. Tea played a central role in two major historical events that shaped the modern world. The Boston Tea Party of 1773 was a pivotal moment in US history. Whereas the Opium War of 1839 was a pivotal moment in Chinese history. The former was caused by Britain's export tax on tea shipped to the US. The latter was caused by the lucrative opium trade which was initially introduces as a way to alleviate Britain's trade deficit with China. The former lead to the creation of a new nation; the latter the decline of an antiquated empire. 
 
@@ -61,8 +61,8 @@ Personal ratings:
 |   Tie Guan Yin Oolong   |              |                                                              |
 |   Ya Shi Xiang Oolong   |              |                                                              |
 |   Da Hong Pao Oolong    |              |                                                              |
-|      Dian Hong Red      |    ⭐⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
-| Lapsang Souchong Black  |              |                                                              |
+|      Dian Hong Red      |     ⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
+| Lapsang Souchong Black  |     ⭐⭐⭐      |                                                              |
 |        Raw Pu'er        |              |                                                              |
 |   Ancient Tree Pu'er    |              |                                                              |
 
@@ -102,9 +102,7 @@ I think I'm most familiar with Dong Ding oolong which might explain my fondness 
 
 <img src="/assets/img/blog/tea6.png" style="width:90%;"/> 
 
-Unlike the more traditional oolongs like Tie Guan Yin or Da Hong Pao, Jin Xuan is a relatively new cultivar of oolong tea produced in Taiwan. It was cultivated by the Taiwan Research and Extension Station of Taiwan (TRES) in the 1980s through careful selective breeding. 
-
-Jin Xuan was named after the grandmother of its creator, Wu Zhenduo, who many consider to be the father of Taiwanese tea. His goal was to create a tea plant that was resistant to diseases, high-yielding, and flavorful. Nowadays, Jin Xuan the third most popular cultivar in Taiwan is grown all over Taiwan, particularly in regions such as Nantou, Chiayi, and Miaoli. This variety of oolong is known for its naturally creamy, buttery taste, which is why it's also known as "Milky oolong". 
+Unlike the more traditional oolongs like Tie Guan Yin or Da Hong Pao, Jin Xuan is a relatively new cultivar of oolong tea produced in Taiwan. It was cultivated by the Taiwan Research and Extension Station of Taiwan (TRES) in the 1980s through careful selective breeding. Jin Xuan was named after the grandmother of its creator, Wu Zhenduo, who many consider to be the father of Taiwanese tea. His goal was to create a tea plant that was resistant to diseases, high-yielding, and flavorful. Nowadays, Jin Xuan the third most popular cultivar in Taiwan is grown all over Taiwan, particularly in regions such as Nantou, Chiayi, and Miaoli. This variety of oolong is known for its naturally creamy, buttery taste, which is why it's also known as "Milky oolong". 
 
 I think this variety of oolong is quite light compared to the other ones I've tasted. It's smooth, buttery, and silky. No astringency at all. Although it is quite smooth, I am not convinced it tastes like milk, and I prefer oolong with a darker note.
 
@@ -124,10 +122,42 @@ Visually speaking, the tea leaves are a mix of dark and striking golden tips. Af
 
 
 
+## Lapsang Souchong Red Tea (正山小種 - zhèngshān xiǎozhǒng)
+
+<img src="/assets/img/blog/tea8.png" style="width:90%;"/> 
+
+Lapsang Souchong is <u>the</u> first black tea and the ancestor of all black teas consumed outside of China (e.g. Lipton). It was first brought to Europe in the 1600s and became incredibly popular within the British Royal family. They loved drinking it in the afternoon along with an assortment of snacks, setting the trend for what we now call afternoon tea. In some ways, lapsang souchong is the OG varietal that kickstarted the global tea trade, and the large scale commercial production of tea in China.
+
+Lapsang Souchong is grown in the Wuyi Mountains of Fujian, in a village called Tong Mu. The village is culturally and historically significant and is situated within the Wuyi Mountain Nature Reserve, with altitude ranging from 1100 meters to 2158 meters. Lapsang Souchong is the Fuzhou dialect of 正山小種 (zhengshang xiaozhong), which literally means "authentic mountain small varietal". During the height of the global tea trade with Europe, teas grown in Wuyi were seen as high-quality (rightfully so) and fetched a high price. "Zhengshang" was added to distinguish the "real stuff" from the counterfeit tea grown outside of Wuyi. "xiaozhong" simply refers to the size of the tea leaves. There are three categories of red tea: small varietal (Lapsang), gongfu red (e.g. Dian Hong), and CTC (cut, tear, curl) powder-like tea such as Lipton.
+
+The story of how this tea was invented - which may be apocryphal - involved soldiers traveling through the region during the Taiping Rebellion. The soldiers were tired, and to get a good night sleep, they used the sacks of tea leaves as mattresses. This significantly delayed tea production. Rather than throwing all the tea leaves away and eating the loss, local farmers put them over pine wood smoke to speed up the drying process. Unfortunately, the locals were more accustomed to drinking lighter loose leaf teas, and so the smoked tea had to be taken to a faraway port market and sold at a low price. To the producer's surprise, the merchants came back next year demanding more. 
+
+The bold smoky flavor of lapsang souchong makes it a love-it-or-hate-it tea. Many believe the smoking processes is used as a means of creating marketable product from older less flavorful tea, and thus avoid it. However, the production of authentic, smoked lapsang souchong is actually highly intricate. Its bold smoky flavor comes from a special smoking process which occurs in a 3-story smokehouse called a [Qing Lou (black house)](https://teasenz.eu/blogs/tea-magazine/qinglou-smoking-lapsang-souchong). The drying, withering, and smoking process all require decades of experience from tea masters.  
+
+In 1848, Scottish botanist [Robert Fortune](https://en.wikipedia.org/wiki/Robert_Fortune) disguised himself as a Chinese merchant (with Qing bald ponytail [que hairstyle](https://en.wikipedia.org/wiki/Queue_(hairstyle))), in order to travel to Tong Mu village. He had to go to such length because foreigners were historically not allowed outside of treaty ports in Canton or Shanghai. In Tong Mu, he began studying black tea production and succeeded in acquiring seeds of nearby tea trees. His effort eventually allowed the British East India Company to break up the Chinese monopoly on tea production with teas produced in India.
+
+I'm quite fond of the taste. It's very similar to Dian Hong with its malty raisin sweetness. The dried tea leaves feel brittle and look almost burnt; however, I don't think it's particularly strong or bitter. What really threw me off was the smoky aroma. It reminds me of bacon and smoked meat. I don't think you taste the smoke, but it's very pronounced and lingers in your nose. I got used to it after a while and I'm sure it will grow on me. Apparently lapsang is also used as a spice in soup, stews, and stocks. It also apparently pairs well with single malt whisky, no wonder Winston Churchill was so fond of it.
+
+
+
+
+
+### WORK IN PROGRESS...
 
 
 
 
 
 
-TO BE CONTINUED...
+
+<hr>
+**Sources of information:**
+
+Before my tea-tasting sessions, I spend an hour or two of research time to learn more about the tea I'm tasting that day. I start by reading the relevant articles on [Wikipedia](https://en.wikipedia.org/) and [Baidu 百科](https://baike.baidu.com/). The Baidu wiki entries tend to be more insightful and the information have greater depth. Then, I read various tea blogs, Reddit discussions, and perhaps watch a few videos. I find it helpful for me to read how others describe a tea's aroma and taste. I don't have a particularly refined palate. Sometimes I recognize a particular note, but I don't have the requisite vocabulary to describe it adequately. 
+
+Through my reading sessions, I've come across some tea blogs that are just incredible! They read better, have more personality, and very often have more depth than the wiki articles. However, it's tough to distinguish the ones trying to sell you tea (with incredibly shallow information), and the ones written by tea connoisseurs/lovers. Here are some that I really enjoyed. Please let me know if there are others I should check out.
+
+* [A Tea Addict's Journal](https://marshaln.com/)
+* [Taiwan Tea Odyssey](https://taiwanteaodyssey.com/)
+* [TeaSeek](https://teaseek.blogspot.com/)
+* [Teasenz](https://teasenz.eu/blogs/tea-magazine?page=1)
