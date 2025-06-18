@@ -52,7 +52,7 @@ Personal ratings:
 | :---------------------: | :----------: | :----------------------------------------------------------: |
 |     Moonlight White     |     ⭐⭐⭐      | Light, elegant floral tea with a hint of sweetness. Strong taste of honey. |
 | White Peony (Baimudan)  |              |                                                              |
-|      Maofeng Green      |     ⭐⭐⭐      |        Grassy, nutty umami with hint of sweet potato.        |
+|      Maofeng Green      |     ⭐⭐⭐⭐     |        Grassy, nutty umami with hint of sweet potato.        |
 |     Long Jing Green     |              |                                                              |
 | Jin Xuan (Milky) Oolong |     ⭐⭐⭐⭐     | A lighter Oolong. Very smooth, buttery, and silky. No astringency at all. I am not convinced it tastes like milk though. |
 |    Dong Ding Oolong     |    ⭐⭐⭐⭐⭐     | A richer and toastier Oolong taste. Like roasted almond. It has a woody note that kind of reminds me of fresh paper. |
@@ -62,7 +62,7 @@ Personal ratings:
 |   Ya Shi Xiang Oolong   |              |                                                              |
 |   Da Hong Pao Oolong    |              |                                                              |
 |      Dian Hong Red      |     ⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
-| Lapsang Souchong Black  |     ⭐⭐⭐      |                                                              |
+| Lapsang Souchong Black  |     ⭐⭐⭐      | Tastes very similar to Dian Hong with a very pronounced smokiness that threw me off (reminded me of bacon or smoked meat). I'm sure I'll get used to it. |
 |        Raw Pu'er        |              |                                                              |
 |   Ancient Tree Pu'er    |              |                                                              |
 
@@ -126,15 +126,15 @@ Visually speaking, the tea leaves are a mix of dark and striking golden tips. Af
 
 <img src="/assets/img/blog/tea8.png" style="width:90%;"/> 
 
-Lapsang Souchong is <u>the</u> first black tea and the ancestor of all black teas consumed outside of China (e.g. Lipton). It was first brought to Europe in the 1600s and became incredibly popular within the British Royal family. They loved drinking it in the afternoon along with an assortment of snacks, setting the trend for what we now call afternoon tea. In some ways, lapsang souchong is the OG varietal that kickstarted the global tea trade, and the large scale commercial production of tea in China.
+Lapsang Souchong is the first black tea and the ancestor of all black teas consumed outside of China (e.g. Lipton). It was first brought to Europe in the 1600s and became incredibly popular within the British Royal family. They loved drinking it in the afternoon along with an assortment of snacks, setting the trend for what we now call afternoon tea. In some ways, lapsang souchong is the OG varietal that kickstarted the global tea trade, and the large scale commercial production of tea in China.
 
-Lapsang Souchong is grown in the Wuyi Mountains of Fujian, in a village called Tong Mu. The village is culturally and historically significant and is situated within the Wuyi Mountain Nature Reserve, with altitude ranging from 1100 meters to 2158 meters. Lapsang Souchong is the Fuzhou dialect of 正山小種 (zhengshang xiaozhong), which literally means "authentic mountain small varietal". During the height of the global tea trade with Europe, teas grown in Wuyi were seen as high-quality (rightfully so) and fetched a high price. "Zhengshang" was added to distinguish the "real stuff" from the counterfeit tea grown outside of Wuyi. "xiaozhong" simply refers to the size of the tea leaves. There are three categories of red tea: small varietal (Lapsang), gongfu red (e.g. Dian Hong), and CTC (cut, tear, curl) powder-like tea such as Lipton.
+Authentic lapsang Souchong is grown in the Wuyi Mountains of Fujian, in a village called Tong Mu. The village is culturally and historically significant and is situated within the Wuyi Mountain Nature Reserve. Lapsang Souchong is the Fuzhou dialect of 正山小種 (zhengshang xiaozhong), which literally translates to "authentic mountain small varietal". During the height of the global tea trade with Europe, teas grown in Wuyi were seen as high-quality (rightfully so) and fetched a high price. "Zhengshang" was added to distinguish the "real stuff" from the counterfeit tea grown outside of Wuyi. "xiaozhong" simply refers to the size of the tea leaves. There are three categories of red tea: small varietal (Lapsang), gongfu red (e.g. Dian Hong), and CTC (cut, tear, curl) powder-like tea such as Lipton.
 
-The story of how this tea was invented - which may be apocryphal - involved soldiers traveling through the region during the Taiping Rebellion. The soldiers were tired, and to get a good night sleep, they used the sacks of tea leaves as mattresses. This significantly delayed tea production. Rather than throwing all the tea leaves away and eating the loss, local farmers put them over pine wood smoke to speed up the drying process. Unfortunately, the locals were more accustomed to drinking lighter loose leaf teas, and so the smoked tea had to be taken to a faraway port market and sold at a low price. To the producer's surprise, the merchants came back next year demanding more. 
+The story of how this tea was invented - which may be apocryphal - involved soldiers traveling through the region during the Taiping Rebellion. The soldiers used the sacks of tea leaves as mattresses to sleep better. Their presence significantly delayed tea production. Rather than throwing all the tea leaves away and eating the loss, local farmers put them over pine wood smoke to speed up the drying process. Unfortunately, the locals were more accustomed to drinking lighter loose leaf teas, and so the smoked tea had to be taken to a faraway port market and sold at a low price. To the producer's surprise, the merchants came back next year demanding more. 
 
 The bold smoky flavor of lapsang souchong makes it a love-it-or-hate-it tea. Many believe the smoking processes is used as a means of creating marketable product from older less flavorful tea, and thus avoid it. However, the production of authentic, smoked lapsang souchong is actually highly intricate. Its bold smoky flavor comes from a special smoking process which occurs in a 3-story smokehouse called a [Qing Lou (black house)](https://teasenz.eu/blogs/tea-magazine/qinglou-smoking-lapsang-souchong). The drying, withering, and smoking process all require decades of experience from tea masters.  
 
-In 1848, Scottish botanist [Robert Fortune](https://en.wikipedia.org/wiki/Robert_Fortune) disguised himself as a Chinese merchant (with Qing bald ponytail [que hairstyle](https://en.wikipedia.org/wiki/Queue_(hairstyle))), in order to travel to Tong Mu village. He had to go to such length because foreigners were historically not allowed outside of treaty ports in Canton or Shanghai. In Tong Mu, he began studying black tea production and succeeded in acquiring seeds of nearby tea trees. His effort eventually allowed the British East India Company to break up the Chinese monopoly on tea production with teas produced in India.
+In 1848, Scottish botanist [Robert Fortune](https://en.wikipedia.org/wiki/Robert_Fortune) disguised himself as a Chinese merchant (with Qing bald ponytail [que hairstyle](https://en.wikipedia.org/wiki/Queue_(hairstyle))) in order to travel to Tong Mu village. He had to go to such length because foreigners were historically not allowed outside of treaty ports in Canton or Shanghai. In Tong Mu, he began studying black tea production and succeeded in acquiring seeds of nearby tea trees. His effort eventually allowed the British East India Company to break up the Chinese monopoly on tea production with teas produced in India.
 
 I'm quite fond of the taste. It's very similar to Dian Hong with its malty raisin sweetness. The dried tea leaves feel brittle and look almost burnt; however, I don't think it's particularly strong or bitter. What really threw me off was the smoky aroma. It reminds me of bacon and smoked meat. I don't think you taste the smoke, but it's very pronounced and lingers in your nose. I got used to it after a while and I'm sure it will grow on me. Apparently lapsang is also used as a spice in soup, stews, and stocks. It also apparently pairs well with single malt whisky, no wonder Winston Churchill was so fond of it.
 
@@ -150,12 +150,28 @@ I'm quite fond of the taste. It's very similar to Dian Hong with its malty raisi
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <hr>
 **Sources of information:**
 
-Before my tea-tasting sessions, I spend an hour or two of research time to learn more about the tea I'm tasting that day. I start by reading the relevant articles on [Wikipedia](https://en.wikipedia.org/) and [Baidu 百科](https://baike.baidu.com/). The Baidu wiki entries tend to be more insightful and the information have greater depth. Then, I read various tea blogs, Reddit discussions, and perhaps watch a few videos. I find it helpful for me to read how others describe a tea's aroma and taste. I don't have a particularly refined palate. Sometimes I recognize a particular note, but I don't have the requisite vocabulary to describe it adequately. 
-
-Through my reading sessions, I've come across some tea blogs that are just incredible! They read better, have more personality, and very often have more depth than the wiki articles. However, it's tough to distinguish the ones trying to sell you tea (with incredibly shallow information), and the ones written by tea connoisseurs/lovers. Here are some that I really enjoyed. Please let me know if there are others I should check out.
+Before my tea-tasting sessions, I usually spend an hour or two reading more about the tea I'm tasting that day. I start by reading the relevant articles on [Wikipedia](https://en.wikipedia.org/) and [Baidu 百科](https://baike.baidu.com/). The Baidu wiki entries tend to be more insightful and the information have greater depth. Then, I read various tea blogs, Reddit discussions, and perhaps watch a few videos. I find it helpful for me to read how others describe a tea's aroma and taste. I don't have a particularly refined palate. Sometimes I recognize a particular note, but I don't have the requisite vocabulary to describe it. Through my reading sessions, I've come across some tea blogs that are just incredible! They read better, have more personality, and very often have more depth than the wiki articles. However, it's tough to distinguish the ones trying to sell you tea (with incredibly shallow information), and the ones written by tea connoisseurs/lovers. Here are some that I really enjoyed. Please let me know if there are others I should check out.
 
 * [A Tea Addict's Journal](https://marshaln.com/)
 * [Taiwan Tea Odyssey](https://taiwanteaodyssey.com/)
