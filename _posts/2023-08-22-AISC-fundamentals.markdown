@@ -5,10 +5,11 @@ title: "Primer: AISC 360-16 Chapter J Connection Design"
 description: "Structural steel connection design fundamentals"
 image: assets/img/blog/AISC.png
 date: 2023-08-22
-tags: primer engineering
+tags: primer steel
+toc: true
 ---
 
-*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to gather, organize, and distill. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 
@@ -54,11 +55,10 @@ tags: primer engineering
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 1.0 Fundamentals
-<hr>
 
-## 1.1 Overview
+# 1.0 Fundamentals
+
+### 1.1 Overview
 
 Connection design is simply the creation of a viable **load path** between two base materials. Through this load path, the designer must ensure all failure modes (**limit states**) are accounted for. Each limit state has a corresponding capacity, and the goal is to ensure **Capacity > Demand** in all cases.
 
@@ -86,7 +86,7 @@ Like a chain link, **the capacity of the overall connection is equal to the lowe
 2. Analysis: Calculate both capacity and demand. Given a connection and applied loads, calculate DCR of every single limit state.
 
 
-## 1.2 Focus on Limit States
+### 1.2 Focus on Limit States
 
 Broadly speaking, steel connections can be categorized into 4 categories:
 * Tension connection
@@ -102,7 +102,7 @@ Most structural steel connections are standardized with well-formulated design p
 Rather than focusing on one specific connection type, it is more productive and useful to understand the limit states; as this knowledge is transferable to all connection types. Most connection limit states are presented in Section J of AISC 360-16. 
 
 
-## 1.3 Demand And Capacity
+### 1.3 Demand And Capacity
 
 The foundation of structural design is to ensure **Capacity > Demand**, or that the demand-capacity-ratio (DCR) is less than 1.0. This article will be in **LRFD**. In the equation below, the subscript "u" is used to denote "ultimate" demand, and the subscript "n" is used to denote "nominal" capacity.
 
@@ -141,11 +141,11 @@ Here are the sections that follows:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 2.0 Demands - Bolted Connections
-<hr>
 
-## 2.1 General Information
+## 2.0 Demands - Bolted Connections
+
+
+### 2.1 General Information
 
 Demands on the members (base material) are the stress resultants we often see in structural engineering. 
 
@@ -168,7 +168,7 @@ AISC adopts a unique sign convention where the x-axis rotates from being the lon
 
 
 
-## 2.2 Elastic Method
+### 2.2 Elastic Method
 
 The transfer of member forces onto a bolt group can be simple. For example, applying 99 kips of concentric shear on 3 bolts, we know intuitively that each bolt takes about 99/3 = 33 kips. (This isn't technically true but it's good enough for now).
 
@@ -291,7 +291,7 @@ A few caveats about superposition.
 
 
 
-## 2.3 Instant Center of Rotation Method
+### 2.3 Instant Center of Rotation Method
 
 <u>Theoretical Background</u>
 
@@ -578,11 +578,11 @@ In summary, the DCRs:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 3.0 Demands - Welded Connections
-<hr>
 
-## 3.1 General Information
+## 3.0 Demands - Welded Connections
+
+
+### 3.1 General Information
 
 Two important notes about weld before we proceed.
 
@@ -597,7 +597,7 @@ $$(kip/in) / t_{throat} = ksi$$
 
 
 
-## 3.2 Elastic Method
+### 3.2 Elastic Method
 
 Calculating weld stress is essentially analogous to calculating cross-section elastic stress. There is an excellent figure from the "Design of Welded Structures" textbook by Omer W. Blodgett that illustrates this concept superbly.
 
@@ -669,11 +669,11 @@ The instant center of rotation method is available for welds as well, though muc
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 4.0 Capacity - Base Material
-<hr>
 
-## 4.1 Material Properties
+## 4.0 Capacity - Base Material
+
+
+### 4.1 Material Properties
 
 The most commonly specified material properties for various structural shapes are shown below. Refer to Table 2-4 to 2-6 of the steel construction manual for more info.
 
@@ -698,7 +698,7 @@ Steel Sections:
   * $$F_u$$ = 62 ksi
 
 
-## 4.2 Shear Yielding and Rupture
+### 4.2 Shear Yielding and Rupture
 
 Shear Yielding ($$\phi = 1.0$$):
 
@@ -721,7 +721,7 @@ Example Calculation:
 <img src="/assets/img/blog/aisc4.3rupture.png" style="width:75%;"/>
 
 
-## 4.3 Tension Yielding and Rupture
+### 4.3 Tension Yielding and Rupture
 
 Tension Yielding ($$\phi = 0.90$$):
 
@@ -760,7 +760,7 @@ Example Calculations:
 <img src="/assets/img/blog/aisc4.2rupture.png" style="width:85%;"/>
 
 
-## 4.4 Block Shear of Welded Connections
+### 4.4 Block Shear of Welded Connections
 
 Block shear is essentially a combination of tension and shear yielding/rupture failure, whereby a "block" of the base material is sheared off. We will first look at block shear of welded section. **Refer to section 5.7 for block shear of bolted connections.**
 
@@ -786,7 +786,7 @@ Example Calculation:
 <img src="/assets/img/blog/aisc4.4.png" style="width:90%;"/>
 
 
-## 4.5 Flexure
+### 4.5 Flexure
 
 Generally speaking, flexure at a local level can be calculated with AISC 360-16 F.11. Moment Capacity of Rectangular Bars ($$\phi = 0.9$$). Note the shape factor of a rectangular section is 1.5, therefore the ceiling value will never govern.
 
@@ -806,7 +806,7 @@ Example Calculation:
 <img src="/assets/img/blog/aisc4.5.png" style="width:80%;"/>
 
 
-## 4.6 Compression
+### 4.6 Compression
 
 Compression in connections can be divided into 3 categories:
 
@@ -857,7 +857,7 @@ Example Calculation:
 
 
 
-## 4.7 Local Concentrated Load - Flange Bending
+### 4.7 Local Concentrated Load - Flange Bending
 
 Section 4.7 to 4.12 are all related to concentrated forces. The first limit state we will look at is flange bending. 
 
@@ -889,7 +889,7 @@ Example Calculation:
 
 
 
-## 4.8 Local Concentrated Load - Web Local Yielding
+### 4.8 Local Concentrated Load - Web Local Yielding
 
 Unlike the previous failure mode, this one applies to both tension and compression and may govern especially for thin webs.
 
@@ -923,7 +923,7 @@ Example Calculation:
 
 
 
-## 4.9 Local Concentrated Load - Web Local Crippling
+### 4.9 Local Concentrated Load - Web Local Crippling
 
 Before 1986, local web yielding an crippling are considered the same. Afterwards, a distinction is made. **Web local crippling is more of a local crumpling and is more common for thin webs**, whereas local web yielding is more common for stockier webs.
 
@@ -954,7 +954,7 @@ Example Calculation:
 
 
 
-## 4.10 Local Concentrated Load - Web Sidesway Buckling
+### 4.10 Local Concentrated Load - Web Sidesway Buckling
 
 Web Sidesway Buckling is a stability-related limit state. In essence, a very localized load can cause compressive stress and sideways buckling of the web, overcoming the stabilizing effect of the tension flange. What is more peculiar is that buckling can occur even with the top flange fully braced. This limit state as **more of a member-level check**, I like to think of it like an extended LTB check for point loads.
 
@@ -999,7 +999,7 @@ Example Calculation:
 
 
 
-## 4.11 Local Concentrated Load - Web Buckling
+### 4.11 Local Concentrated Load - Web Buckling
 
 Unlike section 4.9 or 4.10, this section applies to cases where compressive load is applied to both flanges. **The web essentially acts as a plate column compressed on both sides**.
 
@@ -1033,7 +1033,7 @@ Example Calculation:
 
 
 
-## 4.12 Local Concentrated Load - Concrete Bearing
+### 4.12 Local Concentrated Load - Concrete Bearing
 
 This limit state is **identical to the one specified in ACI 318-19.** I am actually not sure why AISC is providing design recommendations for concrete. Typically, concrete bearing failure occurs at around 0.85f'c. If the support area is must larger than the load area, the surrounding concrete provides a confinement effect which results in up to double the bearing capacity.
 
@@ -1068,11 +1068,11 @@ Example Calculation:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 5.0 Capacity - Bolted Connections
-<hr>
 
-## 5.1 General Information
+## 5.0 Capacity - Bolted Connections
+
+
+### 5.1 General Information
 
 Bolted connections are preferred over welded in almost all cases. They require less inspection, less labor, and are easier to build. 
 
@@ -1165,7 +1165,7 @@ $$R_n = R_{weld} + 0.25R_{slip}$$
 
 
 
-## 5.2 Bolt Tensile and Shear Rupture
+### 5.2 Bolt Tensile and Shear Rupture
 
 Bolt Tensile Rupture ($$\phi = 0.75$$):
 
@@ -1229,7 +1229,7 @@ Example Calculation:
 
 
 
-## 5.3 Combined Shear and Tension Interaction
+### 5.3 Combined Shear and Tension Interaction
 
 When a bolt is subjected to both tension and shear, a simple elliptical interaction equation can be used and is allowed by AISC 360-16 J.37 commentary.
 
@@ -1247,7 +1247,7 @@ Example Calculation:
 
 
 
-## 5.4 Slip Critical Bolts
+### 5.4 Slip Critical Bolts
 
 The bolt capacities presented in 5.2 are **bearing-type**. The equations below are meant for slip-critical connections where shear capacity is equal to slip capacity. 
 
@@ -1290,7 +1290,7 @@ Example Calculation:
 
 
 
-## 5.5 Bolt Bearing and Tear Out
+### 5.5 Bolt Bearing and Tear Out
 
 For relatively thin plate, or bolts close to the edge, there are material-related failure modes that must be checked. Namely bolt bearing and tear out:
 
@@ -1321,7 +1321,7 @@ Example Calculation:
 
 
 
-## 5.6 Shear and Tensile Rupture (Bolted Connections)
+### 5.6 Shear and Tensile Rupture (Bolted Connections)
 
 This section explains how the **presence of holes** influence a material's shear and tensile rupture capacity.  Refer to Section 4.3 for the shear and tensile rupture equations. 
 
@@ -1351,7 +1351,7 @@ Example Calculation:
 
 
 
-## 5.7 Block Shear (Bolted Connections)
+### 5.7 Block Shear (Bolted Connections)
 
 Block shear is essentially a combination of tension and shear yielding/rupture failure, whereby a "block" of the base material is sheared off.  For a bolted-connection, there could be **numerous possible failure paths**, all of them must be evaluated.
 
@@ -1400,11 +1400,11 @@ Example Calculation:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 6.0 Capacity - Welded Connections
-<hr>
 
-## 6.1 General Information
+## 6.0 Capacity - Welded Connections
+
+
+### 6.1 General Information
 
 The design and detailing of welded connections is an extremely nuanced subject that cannot possibly be covered here in any comprehensive way. 
 
@@ -1565,7 +1565,7 @@ There are simply far too many nuances to discuss when it comes to welded connect
 
 
 
-## 6.2 Weld Shear Rupture Capacity
+### 6.2 Weld Shear Rupture Capacity
 
 Regardless of the type of weld, once an effective throat thickness is known, we can calculate weld capacity. It is perhaps useful to reiterate that whether a weld is subjected to tension or shear is irrelevant, **all weld fail in shear along the throat dimension**.
 

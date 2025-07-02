@@ -57,6 +57,14 @@
 
     <!-- BLOG BODY WRAPPER -->
     <div class ="blog-wrapper">
+
+      <!-- Sticky Table of Content -->
+      {%if page.toc %}
+        <nav class="toc-wrapper">
+          <div id="toc"></div>
+        </nav>
+      {% endif %}
+
       <div class="blog-post">
         <!-- Title -->
         <h1>{{page.title}}</h1>
@@ -80,14 +88,17 @@
           read
         </div>
 
-        <!-- Blog Content-->
+        <!-- Blog Content -->
         {{content}}
-      
+
 
         <hr style="margin-top: 4rem; margin-bottom: 2rem;">
 
         <!-- Buttondown Mailing List -->
-        <div class="buttondown-container">
+        {%if page.categories contains "engineering" %}
+          <iframe src="https://simplemodel.substack.com/embed" width="90%" height="320" style="border:1px solid #EEE; background:white; margin:2px auto 2px auto; display:block" frameborder="0" scrolling="no"></iframe>
+        {% endif %}
+        <!-- <div class="buttondown-container">
           <h3 style="text-align: center; margin: 10px 0px 10px 0px;">Rob's Engineering Newsletter</h3>
           <div style="text-align: center; font-size:0.8rem; padding: 10px; color:rgb(108, 108, 110)">Insights delivered straight to your inbox. No spam, no ads, just you and me.</div>
           
@@ -106,9 +117,7 @@
             <a href="https://simplemodel.substack.com/" style="color:rgb(30, 30, 30);"> The Simple Model</a> 
           </p>
 
-        </div>
-
-        <hr style="margin-top: 2rem; margin-bottom: 2rem;">
+        </div> -->
 
         <!-- Disqus comment. Disable ads if site gets bigger ($120/year pricing...) -->
         <a class="blog-comments" onclick="showdisqus();return false;">

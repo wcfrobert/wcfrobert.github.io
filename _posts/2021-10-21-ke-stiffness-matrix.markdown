@@ -5,7 +5,7 @@ title: "Element Stiffness Matrix With Shear Deformation"
 description: "Importance of Shear Deformation"
 image: assets/img/blog/stiffness.png
 date: 2021-10-21
-tags: engineering
+tags: analysis
 ---
 
 ## 1. Deriving Stiffness Matrix by Inverting Flexibility Matrix

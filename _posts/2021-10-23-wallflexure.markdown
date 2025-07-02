@@ -5,7 +5,7 @@ title: "A Better Approximation of Shear Wall P+M Interaction"
 description: "A simple equation for in-plane flexure strength of walls"
 image: assets/img/blog/shearwall.png
 date: 2021-10-22
-tags: engineering
+tags: concrete
 ---
 
 ## Introduction

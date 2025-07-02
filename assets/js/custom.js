@@ -30,8 +30,6 @@ navbarToggle.addEventListener("click", () => {
 });
 
 
-
-
 //JS for project browser. I found it on CodePen back in 2021.
 //I can't seem to find it anymore...
 document.addEventListener("DOMContentLoaded", function() {
@@ -39,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
   let tabHeader = document.getElementsByClassName("tab-header")[0]
   if (!tabHeader) return; // exit script if tab-header class does not exist on page
   let tabPanes = tabHeader.getElementsByTagName("div");
-
   // loop through all tab panes and add click event
   for(let i=0;i<tabPanes.length;i++){
       tabPanes[i].addEventListener("click", function(){
@@ -53,4 +50,28 @@ document.addEventListener("DOMContentLoaded", function() {
           document.getElementsByClassName("tab-content")[0].getElementsByTagName("div")[i*2].classList.add("active-tab");
       })
   }
+});
+
+
+//JS for sticky TOC in blog posts
+document.addEventListener("DOMContentLoaded", function () {
+  const tocContainer = document.getElementById("toc");
+  if (!tocContainer) return;
+  const headings = document.querySelectorAll("h1, h2, h3");
+  const tocItems = [];
+  headings.forEach((heading, index) => {
+    // Add unique IDs if missing
+    if (!heading.id) {
+      heading.id = "heading-" + index;
+    }
+    // Create link
+    const link = `<a href="#${heading.id}">${heading.textContent}</a>`;
+    let indent = " class=''";
+    if (heading.tagName === "H3") {
+      indent = " class='indent1'";
+    }
+    tocItems.push(`<li${indent}>${link}</li>`);
+  });
+  // Build the TOC
+  tocContainer.innerHTML = `<ul>${tocItems.join("")}</ul>`;
 });

@@ -5,10 +5,11 @@ title: "Primer: Base Plate Design"
 description: "Everything related to base plates"
 image: assets/img/blog/baseplate.png
 date: 2022-11-22
-tags: primer engineering
+tags: primer steel
+toc: true
 ---
 
-*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to gather, organize, and distill. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 Introduction and Procedure](#10-introduction-and-procedure)
@@ -49,11 +50,9 @@ tags: primer engineering
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 1.0 Introduction and Procedure
+## 1.0 Introduction and Procedure
 
-<hr>
 
 Base plates are usually the interface between two different materials (namely steel and concrete). As a result, although technically straight-forward, a comprehensive design considering all potential failure mode can be quite lengthy and tedious. 
 
@@ -65,7 +64,7 @@ This article is a combination of fundamentals you'll find in the references belo
 * ACI 318-19 (chapter 17)
 
 
-## 1.1 Procedure
+### 1.1 Procedure
 
 1. Determine axial, shear, and moment demand (Pu, Vu, Mu)
 2. Classify base plate type (small moment or large moment)
@@ -108,13 +107,11 @@ This article is a combination of fundamentals you'll find in the references belo
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 2.0 Preliminary Design and Detailing
+## 2.0 Preliminary Design and Detailing
 
-<hr>
 
-## 2.1 Preliminary Sizes and Edge Distance Requirements
+### 2.1 Preliminary Sizes and Edge Distance Requirements
 
 Base plate footprint (width-B, depth-N) should be sized satisfy:
 
@@ -221,7 +218,7 @@ $$D \geq \sqrt{ \left( \frac{T_u}{n_{rod}} + \frac{2.22M_u}{N n_{rod}} \right) /
 
 
 
-## 2.2 Other Things to Consider Before You Begin
+### 2.2 Other Things to Consider Before You Begin
 
 Rather than specifying an unique designs for every single base plate in the building, the better approach is to come up with reasonable number of base plate design "groups" from the outset. This will save you a lot of trouble later on when you put your design on the drawings.
 
@@ -253,14 +250,12 @@ No one wants to build a building where every base plate is different. We need to
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 3.0 Analysis Model and Assumptions
-
-<hr>
+## 3.0 Analysis Model and Assumptions
 
 
-## 3.1 Analysis Model And Load Combinations
+
+### 3.1 Analysis Model And Load Combinations
 
 Base reactions can be extracted from any analysis software. We are interested in the axial demand, shear demand, and moment demand from the most critical load combination.
 
@@ -294,7 +289,7 @@ Furthermore, there is a minimum design shear that is often missed. This value ma
 $$V_{u,min} = 0.7 M_p / H$$
 
 
-## 3.2 Loading Scenario
+### 3.2 Loading Scenario
 
 Furthermore, we need to consider two "load scenarios". A high compression case, and a uplift (or low compression) case. 
 
@@ -312,7 +307,7 @@ Since demands are enveloped, it is difficult to say low or high axial demand nec
 
 
 
-## 3.3 Fixed Base or Pin Base Model?
+### 3.3 Fixed Base or Pin Base Model?
 
 ALthough it is always easier to design for pinned condition, make sure your jurisdiction allows for such assumption. 
 
@@ -348,14 +343,12 @@ The reality is probably somewhere in between (i.e. partial fixity). Refer to the
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 4.0 Base Plate Classification and Load Distribution
-
-<hr>
+## 4.0 Base Plate Classification and Load Distribution
 
 
-## 4.1 Base Plate Design Classification
+
+### 4.1 Base Plate Design Classification
 
 Base plates can be classified into two categories:
 * Small moment - resultant is within kern (column is stable without any tie down force from anchors)
@@ -419,7 +412,7 @@ The logic behind plastic stress distribution is as follows:
 6. Base plate subjected to axial tension (T+M) are always classified as large moment!
 
 
-## 4.2 Small Moment Base Plate ($$e \leq e_{crit}$$)
+### 4.2 Small Moment Base Plate ($$e \leq e_{crit}$$)
 
 Design of small moment base plate is easy! No anchor rod tension to worry about which means we get to skip all tension-related failure modes.
 
@@ -441,7 +434,7 @@ $$T = 0$$
 
 
 
-## 4.3 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution
+### 4.3 Large Moment Base Plate ($$e > e_{crit}$$) - Simplified Closed Form Solution
 
 AISC Design Guide 1 provides a closed-form solution that assumes one row of anchor at each end. This is a convenient approach because we have two unknowns (Y and T), and they both can be readily solved using the quadratic equation. However, there are two very **important limitations**!
 
@@ -550,7 +543,7 @@ Ignoring the middle row of anchors is likely overly conservative. Furthermore, t
 
 
 
-## 4.4 Large Moment Base Plate ($$e > e_{crit}$$) - General Solution
+### 4.4 Large Moment Base Plate ($$e > e_{crit}$$) - General Solution
 
 We can generalize the closed-form solution above using the **rigid plate assumption**. Also known as "plane section remain plane" if you are dealing with section analysis. Either way, we are essentially assuming a linear strain profile.
 
@@ -777,11 +770,9 @@ With all that derivation behind us, let's clear up notations that you'll see rep
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 5.0 Failure Mode 1 - Concrete Bearing
+## 5.0 Failure Mode 1 - Concrete Bearing
 
-<hr>
 
 <img src="/assets/img/blog/aciprimer14.png" style="width:65%;"/>
 *Figure 13: Concrete Bearing Confinement Factor*
@@ -839,11 +830,9 @@ Some notes:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 6.0 Failure Mode 2 - Base Plate Bending
+## 6.0 Failure Mode 2 - Base Plate Bending
 
-<hr>
 
 <img src="/assets/img/blog/baseplate15.png" style="width:45%;"/>
 *Figure 14: Base Plate Bending*
@@ -941,11 +930,9 @@ Some other design notes:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 7.0 Failure Mode 3 - Anchor Rod Tension
+## 7.0 Failure Mode 3 - Anchor Rod Tension
 
-<hr>
 
 <img src="/assets/img/blog/baseplate17.png" style="width:25%;"/>
 
@@ -1017,11 +1004,9 @@ n<sub>t</sub> is the number of thread per inch. Thread geometry for unified coar
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 8.0 Failure Mode 4 - Anchor Rod Pullout
+## 8.0 Failure Mode 4 - Anchor Rod Pullout
 
-<hr>
 
 <img src="/assets/img/blog/baseplate18.png" style="width:25%;"/>
 
@@ -1074,17 +1059,15 @@ There are two ways to get bearing area:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 9.0 Failure Mode 5 - Concrete Tension Breakout
+## 9.0 Failure Mode 5 - Concrete Tension Breakout
 
-<hr>
 
 This is arguably one of the more complex checks (along with shear breakout), which is why many software offload this check to HILTI PROFIS. We will only look at the most common breakout loading configurations. 
 
 Concrete breakout capacity will at most be around 300 kips. If you have much higher tension demand, it would make sense to skip all this complexity and go straight to anchor reinforcement, refer to the end of this section for some recommendations on that.
 
-## 9.1 Concrete Breakout Capacity
+### 9.1 Concrete Breakout Capacity
 
 <img src="/assets/img/blog/anchorbreakout.png" style="width:45%;"/>
 *Figure 15: Concrete Tension Breakout Failure Cone*
@@ -1216,7 +1199,7 @@ You'll at most squeeze out about 300 kips capacity here. This is often not enoug
 
 
 
-## 9.2 How to Add More Capacity
+### 9.2 How to Add More Capacity
 
 If you have incredibly high tension demand, you have two options. Don't bother relying on concrete alone, it is not going to work.
 
@@ -1309,11 +1292,9 @@ Punching shear assumes a 45 degree failure plane; breakout assumes 35 degree. Ul
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 10.0 Failure Mode 6 - Concrete Side Face Blowout
+## 10.0 Failure Mode 6 - Concrete Side Face Blowout
 
-<hr>
 
 <img src="/assets/img/blog/baseplate21.png" style="width:20%;"/>
 
@@ -1368,11 +1349,9 @@ $$DCR = \frac{\sum T_{edge}}{0.75 \phi N_{sb}}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 11.0 Treatment of Shear Demand
+## 11.0 Treatment of Shear Demand
 
-<hr>
 
 The treatment of shear demand is a very interesting and nuanced topic. There are many detailing complications to consider! In a perfect world, shear check would be a straight forward 0.6FyAs. Unfortunately, the world is not perfect... To quote AISC design guide 1:
 
@@ -1456,13 +1435,11 @@ Two codified methods for shear lug design are currently available. AISC design g
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 12.0 Option 1 - Base Plate Design With Shear Lugs
+## 12.0 Option 1 - Base Plate Design With Shear Lugs
 
-<hr>
 
-## 12.1 Introduction to Shear Lugs
+### 12.1 Introduction to Shear Lugs
 
 <img src="/assets/img/blog/shearlug.png" style="width:55%;"/>
 *Figure 22: Shear Lugs*
@@ -1496,7 +1473,7 @@ $$M_{lug} = V_u \times (h_{grout} + h_{sl}/2)$$
 
 
 
-## 12.2 Failure Mode 7a - Shear Lug Bearing Capacity
+### 12.2 Failure Mode 7a - Shear Lug Bearing Capacity
 
 17.11.2.1 - Bearing capacity of shear lug can be calculated as:
 
@@ -1527,7 +1504,7 @@ $$DCR = \frac{V_u}{\phi V_{brg,sl}}$$
 
 
 
-## 12.3 Failure Mode 7b - Shear Lug Breakout Capacity
+### 12.3 Failure Mode 7b - Shear Lug Breakout Capacity
 
 As was the case with tension breakout, shear breakout is long and complicated. A good alternative is to always provide enough shear anchor reinforcements.
 
@@ -1645,7 +1622,7 @@ $$DCR = \frac{V_u}{\phi V_n}$$
 
 
 
-## 12.3 Failure Mode 7c - Shear Lug Bending
+### 12.3 Failure Mode 7c - Shear Lug Bending
 
 <img src="/assets/img/blog/baseplate25.png" style="width:40%;"/>
 *Figure 27: Shear Lug Bending*
@@ -1692,14 +1669,12 @@ Again, you may add stiffeners if you wish. The section properties can be calcula
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 13.0 Option 2 - Base Plate Design Without Shear Lugs
-
-<hr>
+## 13.0 Option 2 - Base Plate Design Without Shear Lugs
 
 
-## 13.1 Failure Mode 8a - Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)
+
+### 13.1 Failure Mode 8a - Shear with Lever Arm (ETAG 001 Annex C 5.2.3.2)
 
 ACI 318 chapter 17 is silent on shear with lever arm (commonly seen in cladding attachments). For more discussion on this subject, refer to the textbook "Anchorage in Concrete Construction" by Eligehausen, Malle, and Silva (2006). The research findings therein are codified in the European Organization for Technical Approval (ETAG 001 Annex C). This is the methodology used by HILTI PROFIS.
 
@@ -1749,7 +1724,7 @@ $$DCR = \frac{V_u / N}{\phi V_S^M}$$
 
 
 
-## 13.2 Failure Mode 8b - Shear Pryout
+### 13.2 Failure Mode 8b - Shear Pryout
 
 <img src="/assets/img/blog/baseplate26.png" style="width:25%;"/>
 
@@ -1770,7 +1745,7 @@ $$DCR = \frac{V_u}{\phi V_{cpg}}$$
 
 
 
-## 13.3 Failure Mode 8c - Combined Tension and Shear Interaction
+### 13.3 Failure Mode 8c - Combined Tension and Shear Interaction
 
 Shear and tension cannot be decoupled without bearing mechanisms as discussed in Section 11. We need to check the combined tension and shear interaction equations both in AISC and ACI.
 
@@ -1799,11 +1774,9 @@ $$(DCR_{t,max})^{5/3} + (DCR_{v,max})^{5/3} \leq 1.0$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# Appendix A - Base Rotational Spring Stiffness
+## Appendix A - Base Rotational Spring Stiffness
 
-<hr>
 
 There are two documents offering guidance on base connection spring stiffness:
 * ASCE 41-17 Section 9.4.3.2.1 for partial-moment (PR) connections

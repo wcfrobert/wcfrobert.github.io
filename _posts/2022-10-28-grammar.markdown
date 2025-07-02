@@ -6,11 +6,12 @@ description: "I want to get better at writing"
 image: assets/img/blog/grammar.png
 date: 2022-10-28
 tags: primer
+toc: true
 ---
 
-These are my personal notes on English grammar and effective writing. Over the years, the do's and don'ts of sentence structuring, grammar, and verb conjugation have become fuzzy. How do I know if a sentence is well-written? Or even grammatically correct? I "go-by-feel", of course! Is this semi-colon appropriate here? Who cares, it looks about right; I've developed my own writing style over the years as well as a fair share of bad habits. This document is my attempt to be more deliberate in my writing and improve as a writer.
+These are my personal notes on grammar and writing. Over the years, the do's and don'ts of sentence structuring, grammar, and verb conjugation became fuzzy. How do I know if a sentence is well-written? Or even grammatically correct? I "go-by-feel", of course! Is this semi-colon appropriate here? Who cares, it looks about right; I've developed my own style over the years as well as a fair share of bad habits. This document is my attempt to be more deliberate in my writing and hopefully improve as a writer.
 
-This was an incredibly laborious undertaking. As most of you can imagined, going through English and writing textbooks is a Chore. Nevertheless, I hope you will find this useful. If anything, chapter 5 and 6 are worth a read!
+This was an incredibly laborious undertaking. Reading cover-to-cover grammar and writing textbooks is tedious. Nevertheless, I hope you will find this useful. If anything, chapter 5 and 6 are worth a read!
 
 
 
@@ -70,11 +71,11 @@ This was an incredibly laborious undertaking. As most of you can imagined, going
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 1.0 Parts of Speech
-<hr>
 
-## 3.1 Basic Parts of Speech
+## 1.0 Parts of Speech
+
+
+### 1.1 Basic Parts of Speech
 
 * **Noun** - people, place, things, concepts
 * **Verb** - expresses an action
@@ -93,21 +94,21 @@ This was an incredibly laborious undertaking. As most of you can imagined, going
     * *I, he, who, she, her, you*
 
 
-## 3.2 Nouns
+### 1.2 Nouns
 
 <img src="/assets/img/blog/grammar1.png" style="width:100%;"/>
 *Figure 1: Types of Nouns*
 
 
 
-## 3.3 Articles
+### 1.3 Articles
 
 * **Indefinite** article => "A, an"
 * **Definite** article => "The"
 
 
 
-## 3.4 Pronouns
+### 1.4 Pronouns
 
 <img src="/assets/img/blog/grammar2.png" style="width:100%;"/>
 *Figure 2: Types of Pronouns*
@@ -124,7 +125,7 @@ This was an incredibly laborious undertaking. As most of you can imagined, going
 
 
 
-## 3.5 Verbs
+### 1.5 Verbs
 
 Action vs. Linking:
 
@@ -153,7 +154,7 @@ Main vs. Auxiliary:
 
 
 
-## 3.6 Adjectives
+### 1.6 Adjectives
 
 <img src="/assets/img/blog/grammar3.png" style="width:100%;"/>
 *Figure 3: Types of Adjectives*
@@ -161,7 +162,7 @@ Main vs. Auxiliary:
 
 
 
-## 3.7 Adverbs
+## 1.7 Adverbs
 
 Adverbs not only modify verbs, they may also modify other aspect of a sentence.
 
@@ -172,12 +173,12 @@ Adverbs not only modify verbs, they may also modify other aspect of a sentence.
 * Superlative adverb - (e.g. most, fastest, brightest)
 
 
-## 3.8 Preposition
+### 1.8 Preposition
 
 Describes position of nouns or pronouns. (e.g. and, about, above, after, by, of, off, out, over, regarding, upon, towards, as, at)
 
 
-## 3.9 Conjunction
+### 1.9 Conjunction
 
 Words that allow for smoother sentence transition.
 
@@ -218,13 +219,13 @@ Other examples of conjunctive adverb
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 2.0 Verb Conjugation
-<hr>
+
+## 2.0 Verb Conjugation
+
 
 Verbs are conjugated based on their tense, person, number, mood, and voice. It can be quite a complicated subject! For most people with native English fluency, verb conjugation comes from experience. It is difficult if not impossible to mechanically memorize all the exceptions.
 
-## 2.1 Verb Conjugation Based on Person
+### 2.1 Verb Conjugation Based on Person
 
 * Verb conjugation based on person (first-person, second-person, or third-person) or number (singular vs. plural)
 
@@ -232,7 +233,7 @@ Verbs are conjugated based on their tense, person, number, mood, and voice. It c
 *Figure 6: Verb Conjugation Based on Person*
 
 
-## 2.2 Verb Conjugation Based on Tense
+### 2.2 Verb Conjugation Based on Tense
 
 * Verb conjugation can also depend on tense (i.e. *when* something is happening - future, present, past)
 
@@ -296,7 +297,7 @@ MORE EXAMPLES:
 
 
 
-## 2.3 Verb Conjugation Based on Voice
+### 2.3 Verb Conjugation Based on Voice
 
 * Verb conjugation based on voice:
     * **Active Voice**: customers found the staff helpful
@@ -304,7 +305,7 @@ MORE EXAMPLES:
 
 
 
-## 2.3 Verb Conjugation Based on Mood
+### 2.4 Verb Conjugation Based on Mood
 
 * **Indicative Mood** – common events that are real
     * "He who laughs last laughs best"
@@ -317,7 +318,7 @@ MORE EXAMPLES:
 
 
 
-## 2.4 Other Notes
+### 2.5 Other Notes
 
 * What is the difference between present perfect vs. present perfect progressive?
     * Often can be used interchangeably without change in meaning
@@ -347,11 +348,11 @@ MORE EXAMPLES:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 3.0 Parts of Sentences
-<hr>
 
-## 3.1 Subject and Object
+## 3.0 Parts of Sentences
+
+
+### 3.1 Subject and Object
 
 1. Subject - the active side that does the GIVES
 2. Verb
@@ -367,7 +368,7 @@ For example: "can you catch me a fish?":
 * indirect object = me
 
 
-## 3.2 Phrases and Clauses
+### 3.2 Phrases and Clauses
 
 * Main clause - also known as an independent clause. Considered a full sentence
 * Subordinate clause – supporting the main clause, cannot exist by itself
@@ -378,7 +379,7 @@ For example: "can you catch me a fish?":
     * Appositive phrases
         * "Engineers, (otherwise known as designers), are going out of style."
 
-## 3.3 Sentence Structure
+### 3.3 Sentence Structure
 
 
 * Simple Sentence – have only a main clause. 
@@ -390,14 +391,14 @@ For example: "can you catch me a fish?":
     * "If you eat too much, you will not be able to walk"
     * "if you eat too much" is the subordinate; "you will not be able to walk" is the main clause
 
-## 3.4 Point of View
+### 3.4 Point of View
 
 * First person – "I am grateful of the result. We will be expecting the next report tomorrow"
 * Second person – "You should open the box and insert the appropriate equipment in your bag"
 * Third person – "The team captain cheered on. The team members were captivated by his energy"
 
 
-## 3.5 Active/Passive Voice
+### 3.5 Active/Passive Voice
 * Active voice - sentence is structured such that it follows a logical progression (Subject acts on object) and thus is more understandable and preferred
     * "Bob mailed the letter."
 * Passive voice - reverse of active voice. Where the object is “being acted upon”. Passive voice tends to be wordier
@@ -410,7 +411,7 @@ When should you use passive voice then?
     * "Solution B was prepared for the burner." (Obviously by me. Avoiding use of first-person in scientific papers)
 
 
-## 3.6 Subjunctive Mood
+### 3.6 Subjunctive Mood
 Subjunctive mood is used to express demand, recommendation, requests, and conditions that are either contrary to fact or desired.
 * "If **I were** you, I would try to leave"
 * "It is crucial that **I be** at the interview on time"
@@ -441,11 +442,11 @@ Often used with the following structure: (Recommend that… Insist that… reque
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 4.0 Punctuation
-<hr>
 
-## 4.1 Comma
+## 4.0 Punctuation
+
+
+### 4.1 Comma
 
 * Between two independent clauses **with a coordinating conjunction**:
     * I like cats, but I also like dogs
@@ -477,7 +478,7 @@ DO NOT USE COMMA FOR:
 
 
 
-## 4.2 Semicolon
+### 4.2 Semicolon
 The infamous semi-colon. 
 
 > “Use a semi colon when the sentences are too strongly connected for a period, but the use of comma is also inadequate”
@@ -488,12 +489,12 @@ The infamous semi-colon.
     * "I would love to join; however, I don’t know if it is a good option"
 
 
-## 4.3 Colon
+### 4.3 Colon
 
 Used to introduce a list, a quotation, or an appositive phrase.
 
 
-## 4.4 Apostrophe
+### 4.4 Apostrophe
 
 * Possessive
     * Normal - Molly’s
@@ -510,7 +511,7 @@ Used to introduce a list, a quotation, or an appositive phrase.
     * Tip is to break sentence down into “It is” and see which makes more sense
 
 
-## 4.5 Quotation
+### 4.5 Quotation
 
 * Direction quotation:
     “I don’t give a damn!” Mark said loudly.
@@ -520,7 +521,7 @@ Used to introduce a list, a quotation, or an appositive phrase.
     * "I once displayed my ignored by using the word “irregardless”"
 
 
-## 4.6 Tips and Other Notes
+### 4.6 Tips and Other Notes
 
 * Exclamation mark is self-explanatory. Do not over use exclamation mark
     * "Hi! I am Robert! I am very excited to meet you! How are you!?"
@@ -553,11 +554,11 @@ Used to introduce a list, a quotation, or an appositive phrase.
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 5.0 Style And Writing Tips
-<hr>
 
-## 5.1 Clear and Efficient Writing
+## 5.0 Style And Writing Tips
+
+
+### 5.1 Clear and Efficient Writing
 
 Some tips for better writing:
 
@@ -617,7 +618,7 @@ Some tips for better writing:
 
 
 
-## 5.2 Readability
+### 5.2 Readability
 
 There are several things you can do to improve readability
 * Write and organize an outline first. In other words, "set up the skeleton, then fill in the meat"
@@ -631,7 +632,7 @@ There are several things you can do to improve readability
 
 
 
-## 5.3 Choppy Sentences
+### 5.3 Choppy Sentences
 
 Avoid choppy sentences with use of coordinating words, phrases, and conjunctions ( and, yet, but, however, moreover, therefore, as a result, to the extent, and etc.). Here are some examples:
 
@@ -650,7 +651,7 @@ Avoid choppy sentences with use of coordinating words, phrases, and conjunctions
 
 
 
-## 5.4 Parallelism
+### 5.4 Parallelism
 
 Identical flow and structure when listing a series of items.
 
@@ -659,7 +660,7 @@ Identical flow and structure when listing a series of items.
 
 
 
-## 5.5 Needed Words
+### 5.5 Needed Words
 
 Although concision is great, some words cannot be deleted!
 
@@ -694,11 +695,11 @@ Although concision is great, some words cannot be deleted!
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 6.0 Common Sentence Errors
-<hr>
 
-## 6.1 Sentence Fragments
+## 6.0 Common Sentence Errors
+
+
+### 6.1 Sentence Fragments
 
 Fragments lack main verb or subject. It leaves reader with a fragment of thought. The most common type of fragment is one that begins with subordinating clause. 
 
@@ -714,7 +715,7 @@ Fragments lack main verb or subject. It leaves reader with a fragment of thought
     * "The library has many resources. They are available for everyone to use."
 
 
-## 6.2 Comma Splice
+### 6.2 Comma Splice
 
 When the writer joins two independent clauses with a comma instead of a period. If a sentence can stand on its own, you should probably use period.
 
@@ -736,7 +737,7 @@ The opposite of a comma splice is called a **run-on sentence**, where two indepe
 > ~~"I love movies I would watch one every day If i have the time."~~
 
 
-## 6.3 Subject-Verb Agreement
+### 6.3 Subject-Verb Agreement
 
 Similar to verb conjugation, subject-verb agreement is best learned sub-consciously through reading and speaking the language everyday until it becomes second nature. Incorrect subject-verb agreement should just "sound wrong" to you.
 
@@ -782,7 +783,7 @@ Here is a helpful trick: <u>Identify the subject, then simply convert it to the 
 
 
 
-## 6.4 Pronoun Problems
+### 6.4 Pronoun Problems
 
 Pay attention to pronoun antecedent agreement
 * The **microbiologist** adjusted **his** lenses
@@ -831,12 +832,12 @@ Two possible fixes:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# Appendix: My Own Notes
-<hr>
+
+## Appendix: My Own Notes
 
 
-## Simple Past vs. Present Perfect (went vs. have gone)
+
+### Simple Past vs. Present Perfect (went vs. have gone)
 Simple Past – completed action in a time before now
 * I went to Florida (last week)
 
@@ -845,7 +846,7 @@ Present Perfect – precise time of action is in the past, but not exactly known
 
 
 
-## Whom vs. Who
+### Whom vs. Who
 Who = Subject = giving end (who interviewed Scott)
 
 Whom = Object = receiving end (whom did the HR interview)
@@ -858,7 +859,7 @@ Examples:
 
 
 
-## Limiting Modifiers (only, even, not, around)
+### Limiting Modifiers (only, even, not, around)
 limiting modifier should be directly before the thing it modifies.
 
 * Incorrect: Bob only weighed 150 lbs
@@ -866,7 +867,7 @@ limiting modifier should be directly before the thing it modifies.
 
 
 
-## Dangling Modifiers
+### Dangling Modifiers
 Do not omit subject even when it is strongly implied. Add for clarity
 
 * Incorrect: To win first place, a strong will is needed
@@ -874,7 +875,7 @@ Do not omit subject even when it is strongly implied. Add for clarity
 
 
 
-## You and I vs. you and me
+### You and I vs. you and me
 Preposition must be followed by nouns or pronouns in the object form
 
 * Incorrect: Between you and I, the deal is bad
@@ -888,7 +889,7 @@ When adding the verb made, it is apparent that I must be in the subject form
 
 
 
-## Use of "Would"
+### Use of "Would"
 
 * Would - expresses a hypothesis in the past
     * I thought she would have visited me by now.
@@ -903,7 +904,7 @@ When adding the verb made, it is apparent that I must be in the subject form
 
 
 
-## Direct vs. Indirect Question
+### Direct vs. Indirect Question
 
 Note how indirect questions do not have question marks. A more polite way to ask questions.
 
@@ -913,7 +914,7 @@ Note how indirect questions do not have question marks. A more polite way to ask
 
 
 
-## Title Capitalization
+### Title Capitalization
 
 Consistent across AP, APA, MLA, etc:
 1. First and last word always capitalized regardless of type

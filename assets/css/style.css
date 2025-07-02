@@ -847,6 +847,8 @@ YEAR AND TAG PAGE
 BLOG POSTS
 ############################################
 */
+
+/*General*/
 .blog-global-container {
 	width: 90%;
 	margin: 0 auto;
@@ -858,7 +860,6 @@ BLOG POSTS
 	margin-left: -5.5%;
 	margin-right: -5.5%;
 }
-
 .blog-post {
 	max-width: 90ch;
 	padding: 3.6rem;
@@ -870,13 +871,13 @@ BLOG POSTS
 	background-color: white;
 	color:#313234;
 }
-
 @media (max-width: 750px) {
   .blog-post {
     padding: 1rem;
   }
 }
 
+/*Content - headers, pargraphs, imgs, etc*/
 .blog-post img {
 	display: block;
 	text-align: center;
@@ -910,7 +911,6 @@ h2::after {
 	margin-top: 10px;
 	margin-bottom: 10px;
   }
-
 .blog-post h3 {
 	font-size: 1.2rem;
 	color: black;
@@ -929,6 +929,38 @@ h2::after {
 	background-color: #f9f9f9;
 	font-size: 1.05rem;
 }
+table {
+	border: 1px solid #ddd;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+} 
+th, td {
+	font-weight: 400;
+	border: 1px solid #ddd;
+	text-align: center;
+	padding: 15px;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.blog-post .emoji {
+	display:inline;
+	width: auto;
+}
+
+/*Special Emphasis Boxes*/
 .blog-post .note-box, .blog-post .tip-box, .blog-post .caution-box, .blog-post .tldr-box{
 	border-left: 5px solid;
 	padding: 10px 15px;
@@ -972,7 +1004,6 @@ h2::after {
   color: #0a7423;
   font-size: 0.9rem;
 }
-
 .blog-post .caution-box::before {
 	white-space: pre-wrap;
   content: "⚠️ Caution\A";
@@ -981,18 +1012,7 @@ h2::after {
   font-size: 0.9rem;
 }
 
-table {
-	border: 1px solid #ddd;
-	text-align: left;
-	border-collapse: collapse;
-	width: 100%;
-} 
-th, td {
-	font-weight: 400;
-	border: 1px solid #ddd;
-	text-align: center;
-	padding: 15px;
-}
+/*Figure description*/
 .blog-post img + em {
 	color: rgb(88, 90, 105);
 	font-size: 0.8rem;
@@ -1003,12 +1023,12 @@ th, td {
 	font-family:'lora', sans-serif;
 }
 
+/*Blog Title*/
 .blog-post .reading-time {
 	color: rgb(144, 145, 158);
 	font-size: 0.85rem;
 	margin-bottom: 65px;
 }
-
 .blog-post .post-tag {
 	padding-left: 1em;
 	padding-right: 1em;
@@ -1031,6 +1051,8 @@ th, td {
 	color:white;
 	background-color: rgb(67, 91, 226);
 }
+
+/*Blog Comments And Subscribe Box*/
 .blog-comments {
 	color:rgb(67, 91, 226);
 	margin-top: 24px;
@@ -1039,7 +1061,6 @@ th, td {
 .blog-comments:hover {
 	cursor: pointer;
 }
-
 .buttondown-container {
 	border: 1px solid rgb(102, 98, 98);
 	border-radius: 6px;
@@ -1073,27 +1094,69 @@ th, td {
 	height:2.6rem;
 }
 
-
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 35px;
-    height: 0;
-    overflow: hidden;
+/*Sticky TOC*/
+.blog-wrapper .toc-wrapper {
+	font-family: "Open Sans";
+	font-size: 0.70rem;
+	position: fixed;
+	top: 5rem;
+	right: 0;
+	margin-right: 15px;
+  	overflow-y: auto;
+	max-height: 60%;
+	max-width: 600px;
 }
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.toc-wrapper #toc {
+	border-left: 1px solid #efefef;
+	padding-left: 6px;
+	overflow-y:auto;
+}
+.toc-wrapper ul{
+	list-style: none;
+    padding-left: 0;
+}
+.toc-wrapper li{
+	list-style: none;
+    padding-left: 0;
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+.toc-wrapper li.indent1{
+	margin-left: 1em;
+}
+.toc-wrapper a{
+	text-decoration: none;
+    color: white;
+	transition: all 50ms ease-in-out;
+}
+.toc-wrapper a:hover{
+	text-decoration: underline;
+}
+@media (max-width: 1490px) {
+  .blog-wrapper .toc-wrapper {
+    display: None;
+  }
+}
+.toc-wrapper::-webkit-scrollbar {
+  width: 6px;
+}
+.toc-wrapper::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
 }
 
-.blog-post .emoji {
-	display:inline;
-	width: auto;
-}
 
+
+/*MathJAX Formula*/
+.blog-post .MathJax{
+	overflow-x: auto;
+    overflow-y: hidden;
+}
+@media (max-width: 750px) {
+  .blog-post .MathJax{
+	font-size:70% !important;
+	}
+}
 
 /*code snippet: https://github.com/jwarby/jekyll-pygments-themes*/
 /*https://jwarby.github.io/jekyll-pygments-themes/languages/javascript.html*/
@@ -1101,7 +1164,6 @@ th, td {
 .highlight {font-size: 0.9rem; width: 100%; margin: auto; overflow-x: auto; padding: 8px;}
 .highlight pre { background-color: #f0efef; }
 .highlight .hll { background-color: #f0efef; }
-
 .highlight .c { color: #008000 } /* Comment */
 .highlight .err { border: 1px solid #FF0000 } /* Error */
 .highlight .k { color: #0000ff } /* Keyword */

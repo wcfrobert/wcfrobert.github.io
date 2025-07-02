@@ -5,7 +5,7 @@ title: "Local and Global Axes"
 description: "Why convention matters and how local axes are defined in FEM modeling?"
 image: assets/img/blog/localaxis.png
 date: 2021-10-20
-tags: engineering
+tags: analysis
 ---
 
 ## How Are Local Axes Defined in FEA Softwares?

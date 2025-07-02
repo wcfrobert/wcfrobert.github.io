@@ -6,6 +6,7 @@ description: "I've gathered a whole bunch of code snippets and syntax examples t
 image: assets/img/blog/python.png
 date: 2021-03-25
 tags: programming
+toc: true
 ---
 
 In this notebook, I've gathered a whole bunch of code snippets that helps me along in my side projects.
@@ -82,13 +83,11 @@ In this notebook, I've gathered a whole bunch of code snippets that helps me alo
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 1.0 Getting Started
+## 1.0 Getting Started
 
-<hr>
 
-## Programming Tips
+### Programming Tips
 * The most important skill in programming is breaking down (decompose) a large problem into smaller pieces. One common approach is to tackle the problem "top-down". Outline the solution in abstract form and divide tasks into functions. You can call the function *that you are going to write* thus putting structure to your thought process
 
 ```python
@@ -100,12 +99,12 @@ def main():
 * Always put concise comment. You will likely spend more time reading code than writing them
 
 
-## Installing Python
+### Installing Python
 To get started, we need to install python. There are different ways of doing this but by far the most expedient way to install python along with hundreds of its useful packages is to install [Anaconda](https://www.anaconda.com/). Think of it as a "battery-included" version of python with most of the popular packages. 
 
 For more advanced users, you can install python by itself here: [python installation](https://www.python.org/downloads/). Python comes with a set of [standard packages](https://docs.python.org/3/library/) which include useful things like math, json, subprocess, os, time, tkinter, etc. Refer to appendix A for more information on managing packages yourself and creating virtual environments.
 
-## Working with Python
+### Working with Python
 
 * Option 1: Write, debug, and run code from a Integrated Developer Environment (IDE). (Pycharm, Spyder, VSCode, etc)
     * Spyder along with its Ipython console is most similar to Matlab's *REPL* Interface (Read, Evaluate, Print, Loop), as well as a variable window to see all the variables you've defined in the namespace
@@ -158,7 +157,7 @@ Note the difference between terminal and python console!
 
 
 
-## Installing Open-Source Packages
+### Installing Open-Source Packages
 
 Here are the steps to go from an empty folder to a fully set-up python project environment
 
@@ -221,7 +220,7 @@ pip install -r requirements.txt
 conda deactivate
 ```
 
-## Creating a New GitHub Repo
+### Creating a New GitHub Repo
 
 ```python
 # 1.) Create project locally and enable git
@@ -247,7 +246,7 @@ git push origin master
 
 
 
-## Packaging a Project and Uploading to PyPi
+### Packaging a Project and Uploading to PyPi
 
 
 ```python
@@ -319,14 +318,11 @@ keywords = [
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 2.0 Basic Syntax
-
-<hr>
+## 2.0 Basic Syntax
 
 
-## Code Structure
+### Code Structure
 The basic code structure follows something like shown. Since any python code can be imported directly like modules, we use the structure below to prevent our code from running if imported.
 
 For instance, say our script is called myscript.py. If we run it in the terminal, its "\_\_name\_\_" is "\_\_main\_\_" . If the script is imported, then the "\_\_name\_\_" is "myscript".
@@ -354,7 +350,7 @@ else:
 ```
 
 
-## Basics
+### Basics
 ```python
 # Comment with # or triple quote """
 # End lines that are too long with back slash \
@@ -400,7 +396,7 @@ math.isclose(a,b)	# never compare two floats using ==. Use this instead
 
 
 
-## Functions
+### Functions
 ```python
 # Defining functions
 def someFunction(arg1,arg2,arg3=defaultval,*kwargs):
@@ -439,7 +435,7 @@ def my_function(a, b, *args, **kwargs):
 ```
 
 
-## Flow Control
+### Flow Control
 ```python
 # If statements. The "pass" syntax is just a blank filler statement
 if condition:
@@ -465,7 +461,7 @@ for i in reversed(range(3)): # Loop from 2,1,0
 ```
 
 
-## Raising Exceptions
+### Raising Exceptions
 ```python
 # Raising Exceptions and Errors
 if somecondition:
@@ -480,7 +476,7 @@ except ValueError:
 
 
 
-## Importing Modules
+### Importing Modules
 ```python
 # python code can be considered a module. When you import a module
 # you are allowed to use all its defined functions
@@ -520,11 +516,9 @@ from mymodule import * # NOT RECOMMENDED
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 3.0 Containers
+## 3.0 Containers
 
-<hr>
 
 
 Working with containers is probably the most important skill to have. There are four main types of containers:
@@ -536,7 +530,7 @@ Working with containers is probably the most important skill to have. There are 
 5. Strings "" can also be thought of as a container of characters. Indeed, indexing a string is exactly the same as indexing a list.
 
 
-## Lists
+### Lists
 ```python
 # Fundamentals
 myList = []
@@ -599,7 +593,7 @@ list(myset), list(string), list(tuples), list(mydict.values())
 
 
 
-## Strings
+### Strings
 String operations are sometimes called "parsing" strings. It is one of the most common tasks in programming. Mastering string parsing will also translate to a mastery of operating with lists.
 
 ```python
@@ -649,7 +643,7 @@ The figure below illustrates a good way of thinking about list/spring slicing in
 
 
 
-## Dictionaries
+### Dictionaries
 ```python
 # Dictionaries are key-value Pairs. Key must be unique, value doesn't have to be
 # Basics
@@ -680,7 +674,7 @@ del mydict[key]				# remove entire key-value pair
 ```
 
 
-## Tuples
+### Tuples
 ```python
 # Tuple are just lists that cannot be modified nor appended
 myTuple = (1,2,3)
@@ -696,7 +690,7 @@ var1,var2 = func()
 ```
 
 
-## Sets
+### Sets
 ```python
 # Sets are kind of like list, but they only contain unique entries
 myset = set(myList)
@@ -744,13 +738,11 @@ discard(set1,set2) 		# Discard element from set1 if it exists in set 2
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 4.0 File IO
+## 4.0 File IO
 
-<hr>
 
-## Reading and Writing
+### Reading and Writing
 
 One thing to always remember is that all data read will be in string format. 
 
@@ -779,7 +771,7 @@ with open(outputfilename,'w') as f2:
 
 
 
-## Managing Working Directories
+### Managing Working Directories
 
 ```python
 import os
@@ -812,7 +804,7 @@ os.isdir()
 file_path = os.path.join(os.getcwd, "scripts", "file.csv")
 ```
 
-## Paths
+### Paths
 
 Windows based operating system uses backslash (\) whereas unix based system use forward slash (/).
 
@@ -848,7 +840,7 @@ pd.read_csv("data.csv") #assuming file is in current working directory
 ```
 
 
-## Running a python script with Excel VBA
+### Running a python script with Excel VBA
 
 Spreadsheet modifications can be performed with pandas, openpyxl, xlwing. These all come pre-installed with the Anaconda distribution. Currently, it seems like only xlwing has the ability to modify spreadsheets "in real time" when you have it open.
 
@@ -888,11 +880,9 @@ End Sub
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 5.0 Object-Oriented Programming
+## 5.0 Object-Oriented Programming
 
-<hr>
 
 Up until now, all of our programs have been **Procedural**. The code runs from top to bottom and jumps into functions as needed. However, this style of coding is ill-suited for larger and more complex programs. It is not scalable. At some point, the program becomes too big to manage. Hence why we need **Object-Oriented** programming (OOP).
 
@@ -996,15 +986,13 @@ class class1(myclass):
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 6.0 Numpy and Scipy
+## 6.0 Numpy and Scipy
 
-<hr>
 
 If you are already familiar with Matlab. This quick start guide is all you need: https://numpy.org/doc/stable/user/numpy-for-matlab-users.html. If a command exists in Matlab, it will likely also exist in numpy; often with the same syntax. The tricky thing to get used to is 0-based indexing and slicing!
 
-## Importing
+### Importing
 ```python
 import numpy as np
 import scipy as sp
@@ -1013,7 +1001,7 @@ import scipy.sparse.linalg
 ```
 
 
-## Basic Commands
+### Basic Commands
 ```python
 """
 All matrices and vectors are considered np.arrays.
@@ -1066,7 +1054,7 @@ np.zero((m,n))		# matrix filled with 0
 
 
 
-## Indexing and Slicing
+### Indexing and Slicing
 
 Python uses 0-based indexing which may take some getting used to if you are proficient in Matlab already. In the case of indexing a single element, you just need to remember to <u>subtract by one for each index</u>.
 
@@ -1119,7 +1107,7 @@ Additionally, we can create sub-matrices by passing to it list of index.  This p
 
 
 
-## Other Common Operations
+### Other Common Operations
 ```python
 # Finding max/min value within row or column
 a.max()		        # returns scalar. Max in entire matrix
@@ -1166,16 +1154,14 @@ np.block([
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 7.0 Sympy
+## 7.0 Sympy
 
-<hr>
 
 All assignments are passed by value. In other words. A.changesomething() does not alter the memory location where A is stored. Instead, an entire copy is created that you assign to another variable.
 
 
-## Basics
+### Basics
 ```python
 # Initiating symbols
 A,B,c,d,e = sy.symbols('A B c d e')
@@ -1201,7 +1187,7 @@ sy.solveset(f,x)
 ```
 
 
-## Substitution and Simplifying
+### Substitution and Simplifying
 ```python
 # Simplifying
 sy.simplify(f)
@@ -1215,7 +1201,7 @@ f2.evalf()                          # another way of doing the same thing
 Note that all variables stay a "symbol" even if you have already substituted everything. For instance, f = a + b. Both a and b are equal to 10. Then f = 20. At this moment the number 20 is actually still a symbol until you use sy.N() or .evalf().
 
 
-## Plotting
+### Plotting
 ```python
 import sympy as sy
 from sympy.plotting import plot3d
@@ -1245,18 +1231,16 @@ plot3d(sy.cos(x*3)*sy.cos(y*5)-y, (x, -1, 1), (y, -1, 1))
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 8.0 Matplotlib
+## 8.0 Matplotlib
 
-<hr>
 
 Matplotlib is an open-sourced python package used for creating plots. It was designed with Matlab users in mind to cater to a easy transition. See here for the official quickstart guide: https://matplotlib.org/stable/tutorials/introductory/pyplot.html
 
 Most of plotting does not involve some tricky programming puzzle. It usually comes down to finding the correct syntax, the relevant parameters, the right examples; which usually means a lot of googling and reading through documentations. 
 
 
-## Object-Oriented Approach vs. Pyplot Functional Interface
+### Object-Oriented Approach vs. Pyplot Functional Interface
 
 There are two methods of plotting with matplotlib:
 
@@ -1277,7 +1261,7 @@ Refer to this article for more information: [https://matplotlib.org/matplotblog/
 <img src="/assets/img/blog/python3.png" style="width:75%;"/>
 
 
-## Initializing a Figure
+### Initializing a Figure
 
 ```python
 import matplotlib.pyplot as plt
@@ -1306,7 +1290,7 @@ axs_2 = plt.axes([0.54,0.35,0.42,0.58])
 axs_3 = plt.axes([0.08,0.1,0.88,0.2])
 ```
 
-## Plotting
+### Plotting
 
 ```python
 # in the example above, axs is a tuple containing three axs objects. To plot in them:
@@ -1379,7 +1363,7 @@ There are many other types of plots all covered here: [https://matplotlib.org/st
 
 
 
-## Styling Basic
+### Styling Basic
 
 ```python
 # show grid
@@ -1425,7 +1409,7 @@ plt.close(figure2)
 plt.show()
 ```
 
-## Annotation
+### Annotation
 
 ```python
 # free form annotation anywhere on figure
@@ -1435,7 +1419,7 @@ axs.annotate("Disclaimer: this figure is cool", (600,380), xycoords='figure poin
 axs.annotate("t = {:.1f} kips".format(t[i]), xy=(-xi[i], t[i]), xycoords='data', xytext=(10, 10), textcoords='offset points')
 ```
 
-## Producing Animation Frames
+### Producing Animation Frames
 
 ```python
 for i in range(len(N_frames)):
@@ -1476,13 +1460,11 @@ for i in range(len(N_frames)):
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 9.0 Pandas
+## 9.0 Pandas
 
-<hr>
 
-## Some Common Operations
+### Some Common Operations
 
 ```python
 # remove specific rows by index
@@ -1516,7 +1498,7 @@ df.reset_index()
 ```
 
 
-## Indexing Dataframes
+### Indexing Dataframes
 
 ```python
 # Label-based indexing with .loc
@@ -1543,7 +1525,7 @@ df.iloc[[0,2,4],1:3]
 ```
 
 
-## Querying Dataframes
+### Querying Dataframes
 
 ```python
 # Method 1: boolean filter
@@ -1587,14 +1569,12 @@ df = df.query(f'headerA == "something" & headerB == "{varB}"')
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 10.0 Plotly
-
-<hr>
+## 10.0 Plotly
 
 
-## Introduction
+
+### Introduction
 
 Under the hood, all plotly figures are json files (dictionaries). You can actually convert them back and forth like so:
 
@@ -1646,7 +1626,7 @@ The plotly one-page reference [https://plotly.com/python/reference/](https://plo
 
 
 
-## Styling with Magic Underscore
+### Styling with Magic Underscore
 
 To change layouts, plotly has a nice feature known as "magic underscore". In essence, the underscore automatically keys you in to the attribute you want. It is easier to explain through an example:
 
@@ -1678,7 +1658,7 @@ There are actually two ways to use Plotly:
 My recommendation is to just start with graph-objects from the beginning.
 
 
-## Plotting Basics
+### Plotting Basics
 
 ```python
 # import
@@ -1706,7 +1686,7 @@ fig.write_html("DCR_PLOT.html")
 ```
 
 
-## Basic Styling
+### Basic Styling
 
 ```python
 # change size of figure
@@ -1728,7 +1708,7 @@ fig.update_layout(showlegend = True)
 ```
 
 
-## Advanced Styling
+### Advanced Styling
 ```python
 # Format mouse hover info
 hovertext = ["abc", "def", "something"]
@@ -1811,17 +1791,14 @@ fig.update_layout(
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# 11.0 Images - Graphics - Animation
-
-<hr>
+## 11.0 Images - Graphics - Animation
 
 Pillow is a python package is used for image manipulation. tkinter stands for "tk/tcl interface". it is used to create graphic user interfaces but can also be used for animation and graphics.
 
 An important concept to understand is that images are just matrices where each i,j position has three values (R,G,B) ranging from 0 to 255 specifying the intensity of red, green, and blue at that specific pixel. Modifying these three integers allow us to manipulate images. (For example, some photo filters are just these RGB value manipulations).
 
-## Some Image Manipulation Algorithms
+### Some Image Manipulation Algorithms
 
 **Darker Image:** 
 
@@ -1859,7 +1836,6 @@ First of all we must have multiple images to allow for post-process removal. At 
 
     $$\mbox{B}_{average} = average(B_1,B_2,\dots,B_{N})$$
     
-
 3. Compute the color distance of the pixel under consideration in the set of N images. Square root is often omitted for simplicity.
 
     $$
@@ -1869,7 +1845,7 @@ First of all we must have multiple images to allow for post-process removal. At 
 4. Choose the pixel in the set of N that has the smallest color distance
 
 
-## Graphics and Animation
+### Graphics and Animation
 ```python
 import time
 import tkinter
@@ -1936,14 +1912,12 @@ results = canvas.find_overlapping(x1,y1,x2,y2)
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# APPENDIX A - Conceptual Stuff
-
-<hr>
+## APPENDIX A - Conceptual Stuff
 
 
-## Virtual Environment - Interpreter - PATH
+
+### Virtual Environment - Interpreter - PATH
 
 When installing python with Anaconda, it comes with its own massive bundle of popular and commonly-used python packages. Think of it like a "battery-included" distribution of python popular amongst data scientist and engineers who don't want to worry about managing dependencies and virtual environments. To run the Anaconda version of python:
 
@@ -1982,7 +1956,7 @@ Instead, anytime you start a new project, it helps to create a "sandbox" that is
 
 
 
-## Pass by reference vs pass by value
+### Pass by reference vs pass by value
 
 Passing by reference is akin to sending the URL to an object like a variable. This is usually done for *big* elements like a list or a plot. The caller and callee use the same variable.
 
@@ -1997,7 +1971,7 @@ Passing by parameter makes a whole separate copy (e.g. integers, strings, boolea
 
 
 
-## Garbage Collection -  Heaps and Stacks.
+### Garbage Collection -  Heaps and Stacks.
 
 Stack is used for static memory allocation. It is optimized quite closely by the CPU and you do not need to do any memory management. Stack variables are local in nature and are deleted after a function executes. Size is limited and variables cannot be resized.
 
@@ -2017,16 +1991,14 @@ a='new string'
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# APPENDIX B - Styling Recommendation
+## APPENDIX B - Styling Recommendation
 
-<hr>
 
 For styling and standard formatting of your code. Refer to PEP 8: [Python Style Guide](https://www.python.org/dev/peps/pep-0008/). You don't need to follow the guideline exactly. But abiding by some of the rules here greatly improves readability. Some of the more common guidelines:
 
 
-## Recommended Boiler Plate Starter File
+### Recommended Boiler Plate Starter File
 
 ```python
 # Imports
@@ -2056,7 +2028,7 @@ else:
     print("{} Package imported!".format(__name__))
 ```
 
-## Basics
+### Basics
 
 ```python
 # Always use 4-space indentation. Never mix & match. Most editors have options 
@@ -2075,7 +2047,7 @@ else:
 myvar = 1 # Inline comment can be distracting
 ```
 
-## Common
+### Common
 ```python
 # Don't compare boolean values to True or False
 if boolean:
@@ -2111,7 +2083,7 @@ b = c
 somelist = [a, b, c, d]
 ```
 
-## Docstring standard
+### Docstring standard
 
 ```python
 def myfunction(arg1,arg2):
@@ -2151,11 +2123,9 @@ def function_with_doctest(a,b):
 
 
 <div style="page-break-after: always;"></div>
-<hr>
 
-# RANDOM NOTES
+## RANDOM NOTES
 
-<hr>
 
 I put random notes here. Pretty much anything I found helpful can appear here. Slowly they will migrate to the other sections
 

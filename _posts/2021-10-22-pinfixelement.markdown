@@ -5,7 +5,7 @@ title: "Moment-Release"
 description: "Stiffness matrix of moment-released elements"
 image: assets/img/blog/momentrelease.png
 date: 2021-10-22
-tags: engineering
+tags: analysis
 ---
 
 ## Member Release Derivation

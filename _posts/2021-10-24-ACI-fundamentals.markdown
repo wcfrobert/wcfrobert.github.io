@@ -5,10 +5,11 @@ title: "Primer: ACI 318-19 Fundamentals"
 description: "Foundational knowledge for concrete design"
 image: assets/img/blog/ACI.png
 date: 2021-10-24
-tags: primer engineering
+tags: primer concrete
+toc: true
 ---
 
-*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to gather, organize, and distill. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 
 - [1.0 The Basics](#10-the-basics)
@@ -34,11 +35,11 @@ tags: primer engineering
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 1.0 The Basics
-<hr>
 
-## 1.1 Material Properties
+## 1.0 The Basics
+
+
+### 1.1 Material Properties
 
 <img src="/assets/img/blog/rebar.png" style="width:100%;"/>
 *Table 1: Rebar Size Table*
@@ -82,9 +83,8 @@ $$f_r =7.5\lambda \sqrt{f'_c} \tag 3$$
 
 19.2.1.1 - Minimum allowed f'c. Generally advised to stay above 4 ksi. There is no maximum for f'c.
 
-<hr>
 
-## 1.1 Design Assumptions
+### 1.1 Design Assumptions
 21.2.2.1 - Yield strain of reinforcement is calculated as follows. Note it is not always 0.002. Values differ for higher grade bars.
 
 $$\epsilon_{ty} = \frac{f_y}{E_s} \tag 4$$
@@ -121,8 +121,8 @@ $$
 \tag 8
 $$
 
-<hr>
-## 1.2 Resistance Factors
+
+### 1.2 Resistance Factors
 21.2.1 - Strength reduction factor is different depending on element type and structural action. Refer to table 21.2.1 for full list.
 
 * Moment/axial load, see 21.2.2: $$\phi=0.65 \;to\; 0.9$$
@@ -142,9 +142,9 @@ Spiral ties confine the section better and thus we are able to get a higher resi
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 2.0 Section Strength
-<hr>
+
+## 2.0 Section Strength
+
 ACI 318 is exclusively based on LRFD (Load and Resistance Factored Design).
 * Capacity is denoted by a $$\phi$$ factor and subscript "n" (e.g. $$\phi P_n$$)
 * Demand is denoted by subscript "u". (e.g. $$P_u$$)
@@ -161,9 +161,9 @@ In a nutshell, without complicating things with probabilistic analysis. The diff
 * LRFD: factor up loading ($$P_u$$), factor down capacity ($$\phi P_n$$)
 * ASD: loading is determined as is, factor down capacity (e.g. $$\frac{P}{\Omega}$$)
 
-<hr>
 
-## 2.1 Axial Capacity
+
+### 2.1 Axial Capacity
 22.4.2 - Axial capacity of a concrete section is calculated as 80% to 85% of the sum of compressive strength of concrete + reinforcement. The 20%-25% reduction is meant to account for accidental eccentricity.
 
 $$P_n = 0.8P_o \tag {12}$$
@@ -172,8 +172,8 @@ $$P_n = 0.8(0.85f'_c (A_g - A_{st})+f_yA_{st}) \tag {13}$$
 
 For spiral tied elements, we can use $$0.85P_o$$ instead. Note the 0.85f'c is separate from 0.8Po percentage.
 
-<hr>
-## 2.2 Flexural Capacity
+
+### 2.2 Flexural Capacity
 Referring to Figure 1 above, moment capacity can be calculated as the internal force (T or C, doesn't matter because they are equal), multiply by the distance between them; known as the internal lever arm and sometimes denoted as "jd".
 
 <img src="/assets/img/blog/aciprimer3.png" style="width:30%;"/>
@@ -236,8 +236,9 @@ $$M_{nt} = M_n (1 - \frac{T_u}{T_n})$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-## 2.3 One-Way Shear Capacity
+
+### 2.3 One-Way Shear Capacity
+
 There were some drastic change to the shear capacity equation in ACI 318-19 compared to ACI 318-14. The equation now considers a "size effect" as well as the effect longitudinal reinforcement ratio has on shear capacity. No longer can we use the simple $$2\sqrt{f'_c}$$ unless a minimum amount of transverse ties are provided.
 * Doubling the section depth does NOT double the shear capacity. New size factor.
 * More heavily reinforced section will have higher shear capacity
@@ -305,8 +306,8 @@ $$\frac{v_{ux}}{\phi v_{nx}} + \frac{v_{uy}}{\phi v_{ny}} \leq 1.5 \tag {28}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-## 2.4 Punching Shear Capacity
+
+### 2.4 Punching Shear Capacity
 
 ***Punching Shear Demand***
 
@@ -426,8 +427,8 @@ Finally, similar to one-way shear, there are some material property requirements
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-## 2.5 Shear Friction
+
+### 2.5 Shear Friction
 
 The theory of shear friction is very empirical and is based on an assumption of a clamping force provided by steel reinforcement perpendicular to shear crack. As a shear crack forms, aggregate interlock prevents a clean separation. The separating action engages the steel reinforcement. Because the structural action is actually tension, the doweling bars must be fully developed on both ends of the crack surface per 22.9.5.1.
 
@@ -476,8 +477,8 @@ $$V_{vf} = (\mu sin \alpha + cos \alpha) A_{vf} f_y + N_c \tag {48} $$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-## 2.6 Torsion
+
+### 2.6 Torsion
 
 ***Types of Torsion***
 
@@ -569,8 +570,8 @@ if $$A_{s,flexure} + A_l/4 < A_{s,provided}$$, then we are okay. Otherwise incre
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-## 2.7 Bearing
+
+### 2.7 Bearing
 
 Bearing most commonly occurs when a structural steel member "bears" onto the concrete such as at a steel column base plate. It could also occur between two concrete member such as at a pre-cast beam support, or a shear keys. Typically, concrete bearing failure occurs at around 0.85f'c, which is why you will see the 0.85 coefficient everywhere. If the support area is must larger than the load area, the surrounding concrete provides a confinement effect which results in up to double the bearing capacity.
 
@@ -594,11 +595,11 @@ $$\gamma =  min(2,\sqrt{A_2 / A_1}) \tag {62}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 3.0 Reinforcement Detailing
-<hr>
 
-## 3.1 Cover and Spacing
+## 3.0 Reinforcement Detailing
+
+
+### 3.1 Cover and Spacing
 
 25.2.1 - minimum rebar spacing should be the maximum of 1 in, one bar diameter, or (4/3) the diameter of aggregates. This is to ensure concrete can move into spaces between bars. However, practically speaking you should never have bars spaced less than 3 in.
 
@@ -611,8 +612,8 @@ $$\gamma =  min(2,\sqrt{A_2 / A_1}) \tag {62}$$
 
 
 
-<hr>
-## 3.2 Development Length - Method 1
+
+### 3.2 Development Length - Method 1
 
 The first method of calculating development length is a simplified version of method 2 (next section) that preselects some typical $$c_b + K_r / d_b$$ values. They are as follows. Regardless of equations used, development length $$l_d$$ shall not be less than 12 inches per 25.4.2.1.
 
@@ -631,8 +632,8 @@ $$l_d = \frac{3 f_y \Psi_t \Psi_e \Psi_g \Psi_s}{40 \lambda \sqrt{f'_c}} d_b > 1
 
 
 
-<hr>
-## 3.3 Development Length - Method 2
+
+### 3.3 Development Length - Method 2
 
 25.4.2.4 - Alternatively, you can calculate development length more accurately and a lot less conservatively with the equation below:
 
@@ -646,8 +647,8 @@ $$K_{tr} = \frac{40A_{tr}}{sn} \tag {66}$$
 * "n" is the number of bars developed in the plane of splitting, "Atr" is the total area of transverse reinforcement that crosses the splitting plane, "s" is the spacing of those transverse bars. As a design simplification, it is permitted to just take $$K_{tr} = 0$$
 
 
-<hr>
-## 3.4 Development Length - Hooks
+
+### 3.4 Development Length - Hooks
 
 25.4.3.1 - development length of hook bars is calculated as follows, but shall not be less than 6" or $$8d_b$$
 
@@ -659,8 +660,8 @@ $$
 *Figure 10: Hook Development Length (ldh) Factors*
 
 
-<hr>
-## 3.5 Development Length - Headed Bars
+
+### 3.5 Development Length - Headed Bars
 
 25.4.4.2 - development length of headed bars (also known as T-heads) is calculated as follows, but shall not be less than 6" or $$8d_b$$
 
@@ -673,13 +674,13 @@ $$
 
 25.4.4.1 - furthermore, headed bars cannot be used in light-weight concrete due to lack of data.
 
-<hr>
-## 3.6 Tension Lap Splice
+
+### 3.6 Tension Lap Splice
 
 For simplicity, lap splice length is typically taken as $$1.3l_d$$. A reduction may be permitted for specially detailed stagger splice. See 25.5.2.1.
 
-<hr>
-## 3.7 Compression Development Length
+
+### 3.7 Compression Development Length
 
 25.4.9.1 - compression development length ($$l_{dc}$$) is calculated as follows:
 
@@ -692,7 +693,7 @@ $$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
+
 ## Development Length Design Table
 
 Here are some useful design charts assuming some of the most common design properties:

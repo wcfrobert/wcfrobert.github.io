@@ -5,10 +5,11 @@ title: "Primer: Surveying Principles"
 description: "Collection of personal notes for the California state Survey PE Exam"
 image: assets/img/blog/survey.png
 date: 2022-06-07
-tags: primer engineering
+tags: primer
+toc: true
 ---
 
-*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are dense and voluminous, sometimes written in legalese rather than in sentences that can be easily understood. I write these "Primer" so I can gather, organize, and condense technical topics I encounter as an engineer. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to gather, organize, and distill. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
 
 - [1.0 California Surveying Law](#10-california-surveying-law)
   * [1.1 Types of Surveys](#11-types-of-surveys)
@@ -72,11 +73,11 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 1.0 California Surveying Law
-<hr>
 
-## 1.1 Types of Surveys
+## 1.0 California Surveying Law
+
+
+### 1.1 Types of Surveys
 
 * **Cartographic** - rough hand sketches
 * **Boundary** - property lines
@@ -88,7 +89,7 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
 * **As-built** - conducted after construction for record-keeping (final survey)
 * **Control** - establish location of benchmarks
 
-## 1.2 Survey Party
+### 1.2 Survey Party
 
 * Party chief - team leader
 * Instrument person - often note keeper as well
@@ -97,7 +98,7 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
 * Stake setter - drives stakes into ground per instrument or rod person
 
 
-## 1.3 California Law
+### 1.3 California Law
 * Professional Land Surveyors Act
     * Defines licensure requirements and roles of a surveyor
 * Professional Engineers Act
@@ -133,11 +134,11 @@ This is my study note which summarizes the content of Paul A. Cuomo's "Surveying
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 2.0 Horizontal Measurements - Distance
-<hr>
 
-## 2.1 Basic Trigonometry
+## 2.0 Horizontal Measurements - Distance
+
+
+### 2.1 Basic Trigonometry
 
 * **Vertical angle** = angle with respect to horizontal line ($$\alpha$$). Think of it as a projection of our vector onto the horizontal line.
 
@@ -151,7 +152,7 @@ $$H = S \sin z$$
 *Figure 1: Horizontal Measurement Trigonometry*
 
 
-## 2.2 Taping and Chaining
+### 2.2 Taping and Chaining
 
 * Taping and chaining involves two people measuring horizontal distance with **Gunter's chain (66 ft)** or a steel tape. Try to measure horizontal distance directly without using any trigonometry (use a **plumb bob** for leveling)
 * Here are some useful unit conversions:
@@ -201,7 +202,7 @@ $$C_p = \frac{(P-P_o)L}{EA}$$
 * *For distance measurements exceeding tape length, need to add the adjustment from all measurements. For example, 450 ft, we will have (4) adjustment with 100 ft and (1) adjustment with 50 ft*
 
 
-## 2.3 Stadia Measurement
+### 2.3 Stadia Measurement
 * Measuring distance with a lens w/ cross-hair and a rod. Distance can be indirectly deduced by reading the gap between cross-hair. **Usually K = 100 ft and C is 0 ft unless otherwise noted**.
 
 $$distance = KI + C$$
@@ -232,7 +233,7 @@ $$distance = KI + C$$
     $$V = S \sin(\alpha) = (KI \cos(\alpha) + c) \sin(\alpha)$$
 
 
-## 2.4 Electronic Distance Measuring (EDM) and Total Station
+### 2.4 Electronic Distance Measuring (EDM) and Total Station
 
 * EDM is essentially the high-tech version of stadia that is superior all around. Distance is measured by measuring wavelength of light as it is reflected. Occasionally, some error adjustment is required:
     * Constant prizm offset. Reduce distanced measured by 30 mm to 40 mm (because of internal reflector distance)
@@ -256,11 +257,11 @@ $$c = L_{measured} \times \frac{ppm}{1000000}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 3.0 Vertical Measurements - Elevations
-<hr>
 
-## 3.1 Conceptual Stuff
+## 3.0 Vertical Measurements - Elevations
+
+
+### 3.1 Conceptual Stuff
 
 * All elevation is measured with respect to a **datum**. In the US, that datum is based on the Mean Sea Level 1929 Adjustment **(MSL29)** and was updated to **NGVD 88**
 * Here are some commonly used terminologies:
@@ -295,7 +296,7 @@ Referring to the figure above, the procedure for leveling is as follows:
 
 * **Precise Leveling** - high order of accuracy. Used to furnish low-order work. Covers large area. More precise equipment is used.
 
-## 3.2 Indirect Leveling With Stadia
+### 3.2 Indirect Leveling With Stadia
 
 * Use stadia as we have seen in the last chapter, but calculate "V" this time. Then add/subtract by given elevation
 * Often we need to adjust by add/subtracting rod and instrument height:
@@ -303,7 +304,7 @@ Referring to the figure above, the procedure for leveling is as follows:
 <img src="/assets/img/blog/survey6.5.png" style="width:80%;"/>
 
 
-## 3.3 Leveling Rod
+### 3.3 Leveling Rod
 
 * Rods can extend up to 13 ft, with 0 at the base. There are two types:
     * **self-reading rod** - Philadelphia rod (most popular)
@@ -312,7 +313,7 @@ Referring to the figure above, the procedure for leveling is as follows:
 <img src="/assets/img/blog/survey7.png" style="width:100%;"/>
 *Figure 7: Type of Leveling Rod*
 
-## 3.4 Direct Leveling Note Example
+### 3.4 Direct Leveling Note Example
 Here is a sample note taken from the field. Note the sequence of calculation and how BS is associated with (+), and FS is associated with (-). Also note the summation check at the end to ensure no adjustment is needed.
 
 <img src="/assets/img/blog/survey8.png" style="width:90%;"/>
@@ -325,7 +326,7 @@ $$Error = Field - Actual$$
 Negative (-) error means too short. If the summation above does not calculate out, we need to smear the error in the "adjusted elevation column" as shown above.
 
 
-## 3.5 Profile or Cross-Section Leveling
+### 3.5 Profile or Cross-Section Leveling
 
 Involves obtaining elevation along a perpendicular line (used to determine a cross-section). The surveying note will now have a new column for **side shots (SS)**
 
@@ -337,7 +338,7 @@ $$elev_{SS} = HI - SS$$
 Note we can skip the intermediate SS when calculating TP1. Cannot skip if there is a BS recording
 
 
-## 3.6 Reciprocal Leveling
+### 3.6 Reciprocal Leveling
 Occurs when instrument cannot be placed equi-distance between FS and BS (such as in the middle of a river). We are essentially averaging out the error.
 
 Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the results.
@@ -359,12 +360,12 @@ Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the 
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 4.0 Angle Measurements
-<hr>
+
+## 4.0 Angle Measurements
 
 
-## 4.1 Conceptual Stuff
+
+### 4.1 Conceptual Stuff
 
 * Three types of angle measurements. Internal and exterior angle are shown below. Deflection angle is how much the equipment has rotated.
 
@@ -372,7 +373,7 @@ Calculate ELEV with instrument 1, calculate ELEV with instrument 2. Average the 
 *Figure 11: Types of Angle Measurements*
 
 
-## 4.2 Bearing
+### 4.2 Bearing
 
 * **Bearing** = angle with respect to 4 quadrants. The reference **meridian** is usually North. The format of a bearing measurement is usually in the form of (North or South)(rotate toward)(West or East)(e.g. N35<sup>o</sup>>E)
 * Interestingly, these quadrants are different from standard mathematics
@@ -401,7 +402,7 @@ $$TRUE = MAG + DECLINATION$$
 *Figure 13: Isogonic Contours*
 
 
-## 4.3 Azimuth
+### 4.3 Azimuth
 
 * Azimuth is a measurement that starts North and rotates **CLOCKWISE** ranging from 0 to 360 degrees.
 
@@ -412,7 +413,7 @@ $$TRUE = MAG + DECLINATION$$
 * A common mistake is thinking 90 degrees = 180 degrees...
 
 
-## 4.4 Traverses
+### 4.4 Traverses
 
 * Traversing is the task of relating points through angles and distances. There is **Open Traverse** and **Closed Traverse**
 
@@ -445,9 +446,9 @@ $$\sum \theta_{exterior} = 360N_{angle} - \sum \theta_{interior}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 5.0 Error Analysis and Distribution
-<hr>
+
+## 5.0 Error Analysis and Distribution
+
 
 It is impossible to measure things exactly without error. Sources of error can be systematic or random. Here is a list of potential sources:
 
@@ -468,7 +469,7 @@ Higher order survey is more accurate, but also take longer and is more costly.
 
 
 
-## 5.1 Data and Error
+### 5.1 Data and Error
 
 The figure below shows some example angle measurements.
 
@@ -503,7 +504,7 @@ The figure below shows some example angle measurements.
     * This is what we usually referred to when we say we are uncertain to $$\pm x$$"
 
 
-## 5.2 Groups of Measurements
+### 5.2 Groups of Measurements
 
 Say you have a traverse with 4 courses. Each course you took 20 measurements. In this case:
 
@@ -549,11 +550,11 @@ $$error = \pm \sqrt{L^2 e_L^2 + W^2 e_W^2}$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 6.0 Traverses
-<hr>
 
-## 6.1 Conceptual Stuff
+## 6.0 Traverses
+
+
+### 6.1 Conceptual Stuff
 
 Traverse is simply measuring distance and angles. Here are some definitions that you should know:
 
@@ -584,7 +585,7 @@ Given departure and latitude, the overall course length can be calculated using 
 $$L = \sqrt{\Delta X^2 + \Delta Y^2}$$
 
 
-## 6.2 Closed Traverse
+### 6.2 Closed Traverse
 
 Closed traverse involves several courses that ultimately return to the starting point. The algebraic sum of departure and latitude should be zero. But this will never be the case no matter how careful the surveys performed. Error correction will need to be performed.
 
@@ -658,7 +659,7 @@ To illustrate this process, we will do an example. Balance the following closed 
     <img src="/assets/img/blog/survey22-7.png" style="width:90%;"/>
 
 
-## 6.3 Open Traverse
+### 6.3 Open Traverse
 
 Open traverse does not start and end at the same location. It can be balanced only if the start and end points are known.
 
@@ -699,7 +700,7 @@ $$L = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 
 
 
-## 6.4 Rectangular Coordinates
+### 6.4 Rectangular Coordinates
 
 Often, a coordinate (x,y) is assigned to the starting point. From the departure and latitude measurements, the coordinate of every other point can be determined. The process is simple but pay attention to signs! And:
 
@@ -709,7 +710,7 @@ $$latitude = \Delta Y$$
 
 
 
-## 6.5 Enclosed Area - DMD Method
+### 6.5 Enclosed Area - DMD Method
 
 Closed traverses must be balanced before calculating its area. The most common method is called **Double Meridian Distance** (DMD) method. Area is calculated by summing the product of latitude and DMD for each course.
 
@@ -724,7 +725,7 @@ $$A = \frac{\sum lat_i \times DMD_i}{2}$$
 *Figure 24: DMD Method for Calculating Enclosed Area*
 
 
-## 6.6 Enclosed Area - Criss Cross Method
+### 6.6 Enclosed Area - Criss Cross Method
 
 Another more numerically convenient way of calculating enclosed area is the Criss Cross Method. But we need to get the grid (x,y) coordinates first before we can use this method. An example of this method is shown below.
 
@@ -747,11 +748,11 @@ A couple of COMMON ERRORS when applying criss-cross method
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 7.0 Topography
-<hr>
 
-## 7.1 Conceptual Stuff
+## 7.0 Topography
+
+
+### 7.1 Conceptual Stuff
 
 * **Topography** - process of mapping elevations and physical features of a site in plan view. Also sometimes include annotations of natural or man-made features
 * **Horizontal Control** - known point of line such as property line, centerline of highway, streets, etc.
@@ -765,7 +766,7 @@ A couple of COMMON ERRORS when applying criss-cross method
 There is also photogrammetry which involve aerial photos. We will discuss this further in future chapters.
 
 
-## 7.2 Cross-Section Method
+### 7.2 Cross-Section Method
 
 * Mostly used for roads. Cross sections for elevations are taken at right angles (offset lines). Refer to the figure below. 
 
@@ -777,7 +778,7 @@ There is also photogrammetry which involve aerial photos. We will discuss this f
     * horizontal (station along baseline + offset distance to feature)
 
 
-## 7.3 Grid Method
+### 7.3 Grid Method
 
 * Method involves superimposing a grid onto an area of interest (divided into series of square regions). Refer to the figure below.
 
@@ -787,12 +788,12 @@ There is also photogrammetry which involve aerial photos. We will discuss this f
 * Determine elevation at every intersection point. Then enter the data into a software to generate contour plot
 
 
-## 7.4 Radial Topographic Survey
+### 7.4 Radial Topographic Survey
 
 * Method commonly used to map a special point of interest. Start at a known point/elevation. Use stadia or total station an traverse to point of interest.
 
 
-## 7.5 Reading Contour Maps
+### 7.5 Reading Contour Maps
 
 * Contour maps show lines of equal elevation
 * The direction of a contour at any point is at right angles to the direction of steepest slope
@@ -825,11 +826,11 @@ The figure below shows some of the common features of contour plot that you shou
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 8.0 Route Surveying
-<hr>
 
-## 8.1 Conceptual Stuff
+## 8.0 Route Surveying
+
+
+### 8.1 Conceptual Stuff
 
 Route surveying usually involve two types of curves:
 * **Horizontal curves** - curves in direction (e.g. ramps of highway or bridge)
@@ -842,7 +843,7 @@ Route surveying usually involve two types of curves:
 <img src="/assets/img/blog/survey29.1.png" style="width:50%;"/>
 
 
-## 8.2 Horizontal Curves
+### 8.2 Horizontal Curves
 
 Equation and elements of a circular horizontal curve is shown below:
 
@@ -959,7 +960,7 @@ Tangent offset can be calculated via the following
 *Figure 33: Tangent Offsets*
 
 
-## 8.3 Vertical Curves
+### 8.3 Vertical Curves
 
 Vertical curves are used to transition between grades. They can be symmetric or asymmetric. However, point V is always equidistant to PVC and PVT
 
@@ -1025,7 +1026,7 @@ $$456.08 = (0.0000625/2)(350)^2 - (0.015)(350) + 457.5$$
 
 
 
-## 8.4 Other Types of Curves
+### 8.4 Other Types of Curves
 
 * **Compound Horizontal Curve** - two horizontal curve of different radius that lie on the same tangent. Analyze as two separate curves. All previous equations apply
 
@@ -1062,7 +1063,7 @@ $$\alpha = \frac{\theta_s}{3} \times (L/LS)^2$$
 
 
 
-## 8.5 Estimating Earth Work
+### 8.5 Estimating Earth Work
 
 There are two common methods for estimating amount of soil to be cut or filled between stations. Remember to divide by 27 to convert to cubic yards.
 
@@ -1136,11 +1137,11 @@ $$V = \int_{0}^{x} b(x) y(x) dx$$
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 9.0 Construction Staking
-<hr>
 
-## 9.1 Stake and Laths
+## 9.0 Construction Staking
+
+
+### 9.1 Stake and Laths
 
 Stakes are placed by surveyor to guide contractors in laying out the construction project. 
 
@@ -1165,7 +1166,7 @@ Some possible information shown on a stake (not exhaustive at all)
 * Elevation - Elevation at top of stake is marked on the lath (e.g. elev = 123.76)
 
 
-## 9.2 Types of Stakes
+### 9.2 Types of Stakes
 
 <u>Slope Stakes</u>
 
@@ -1226,11 +1227,11 @@ Some definitions:
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# 10.0 Photogrammetry
-<hr>
 
-## 10.1 Aerial Photogrammetry
+## 10.0 Photogrammetry
+
+
+### 10.1 Aerial Photogrammetry
 
 Aerial photogrammetry involves taking measurements of site using photos taken on an airplane. Result is a topographic map with contours, elevations, and features.
 
@@ -1251,7 +1252,7 @@ In order have proper map scale. A series of control network should be establishe
 * Contours can be generated using elevation models and interpolation
 
 
-## 10.2 Photo Scale
+### 10.2 Photo Scale
 
 Scales are expressed in two forms. Note that the two are equivalent. Convert feet to inches to go between the two.
 * 1 in = 250 ft
@@ -1278,7 +1279,7 @@ Pay attention to the units!
 
 
 
-## 10.3 Overlapping and Contours
+### 10.3 Overlapping and Contours
 
 To stitch two photos together, an object must show up in at least two photos (i.e. overlap). How much overlap should be provided? The common practice is to use the **neat model** which provides:
 
@@ -1320,7 +1321,7 @@ $$\mbox{map scale} = \frac{S}{\mbox{D-factor}}$$
 
 
 
-## 10.4 Flight Planning
+### 10.4 Flight Planning
 
 <img src="/assets/img/blog/survey45.png" style="width:50%;"/>
 *Figure 45: Flight Planning*
@@ -1362,7 +1363,7 @@ In the project area shown above, set up required flight information given the cl
 
 
 
-## 10.5 Height and Accuracy
+### 10.5 Height and Accuracy
 
 Photogrammetrist will plan a **control scheme**, which is the ideal location to place monuments. 
 
@@ -1403,11 +1404,11 @@ Larger Scale = More Zoom!
 
 
 <div style="page-break-after: always;"></div>
-<hr>
-# Appendix: Miscellaneous Stuff
-<hr>
 
-## Angle Conversion
+## Appendix: Miscellaneous Stuff
+
+
+### Angle Conversion
 
 * Degree, Minute, Seconds Formula. Use built-in calculator function instead of calculating manually
 
@@ -1420,12 +1421,12 @@ $$decimal = degree + minute/60 + second/3600$$
     * 58 degrees, 39 minutes, 57 seconds
 
 
-## Unit Conversion
+### Unit Conversion
 * 1 acre = 43560 ft^2
 * 1 cubic yard = 27 ft^3
 
 
-## Geometry Formulas:
+### Geometry Formulas:
 
 * Area of triangle calculation, height does not need to reside within triangle:
 
@@ -1463,7 +1464,7 @@ $$V = \pi r^2 \frac{h}{3}$$
 
 
 
-## Earth Curvature and Refraction Correction
+### Earth Curvature and Refraction Correction
 
 Note the negative sign for refraction correction. Also D is in feet.
 
@@ -1474,7 +1475,7 @@ $$C_{refr} = -0.0033 \frac{D}{1000}^2$$
 $$C_{total} = C_{curv} + C_{refr}$$
 
 
-## Sea Level Adjustment Factor
+### Sea Level Adjustment Factor
 
 $$SLAF = \frac{r}{r + elev}$$
 
@@ -1497,7 +1498,7 @@ $$L_{converted} = SLAF \times L_{measured}$$
 
 
 
-## Things From Practice Problems:
+### Things From Practice Problems:
 
 GPS, GIS and other technologies
 
