@@ -61,6 +61,7 @@
       <!-- Sticky Table of Content -->
       {%if page.toc %}
         <nav class="toc-wrapper">
+          <span style="font-size:0.9rem;color:rgb(255, 255, 255);font-weight:bold;">Table of Contents</span>
           <div id="toc"></div>
         </nav>
       {% endif %}
@@ -92,9 +93,9 @@
         {{content}}
 
 
-        <hr style="margin-top: 4rem; margin-bottom: 2rem;">
+        <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
-        <!-- Buttondown Mailing List -->
+        <!-- Substack Mailing List -->
         {%if page.categories contains "engineering" %}
           <iframe src="https://simplemodel.substack.com/embed" width="90%" height="320" style="border:1px solid #EEE; background:white; margin:2px auto 2px auto; display:block" frameborder="0" scrolling="no"></iframe>
         {% endif %}

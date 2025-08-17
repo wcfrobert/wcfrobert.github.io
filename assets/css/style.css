@@ -892,11 +892,17 @@ BLOG POSTS
 	color: black;
 	font-family:'lora', sans-serif;
 }
+.blog-post a{
+	color: rgb(67, 91, 226);
+}
 .blog-post p{
 	line-height: 1.6;
 }
 .blog-post ul,ol{
 	line-height: 1.6;
+}
+.blog-post ul li, ol li{
+	margin-bottom: 0.4rem;
 }
 .blog-post h2 {
 	margin-bottom: 21px;
@@ -985,10 +991,10 @@ th, td {
 }
 .blog-post .tldr-box::before {
     white-space: pre-wrap;
-    content: "TLDR\A";
+    content: "Executive Summary (TL;DR)\A";
     font-weight: bold;
+	font-size: 1.0rem;
     color: #151516;
-    font-size: 0.9rem;
 }
 .blog-post .note-box::before {
 	white-space: pre-wrap;
@@ -1051,7 +1057,20 @@ th, td {
 	color:white;
 	background-color: rgb(67, 91, 226);
 }
-
+.blog-post .footnotes {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.8rem;
+	color: #383535;
+}
+.blog-post sup[role="doc-noteref"] a {
+    color: rgb(67, 91, 226);
+	font-size: 0.8rem;
+	text-decoration: none;
+	font-weight: bold;
+	vertical-align: baseline;
+	line-height: 0;
+	;
+  }
 /*Blog Comments And Subscribe Box*/
 .blog-comments {
 	color:rgb(67, 91, 226);
@@ -1100,14 +1119,13 @@ th, td {
 	font-size: 0.70rem;
 	position: fixed;
 	top: 5rem;
-	right: 0;
-	margin-right: 15px;
+	left: 0;
+	margin-left: 36px;
   	overflow-y: auto;
-	max-height: 60%;
-	max-width: 600px;
+	max-height: 80%;
+	max-width: 700px;
 }
 .toc-wrapper #toc {
-	border-left: 1px solid #efefef;
 	padding-left: 6px;
 	overflow-y:auto;
 }
@@ -1126,7 +1144,7 @@ th, td {
 }
 .toc-wrapper a{
 	text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
 	transition: all 50ms ease-in-out;
 }
 .toc-wrapper a:hover{
