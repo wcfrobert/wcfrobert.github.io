@@ -861,7 +861,7 @@ BLOG POSTS
 	margin-right: -5.5%;
 }
 .blog-post {
-	max-width: 90ch;
+	max-width: 94ch;
 	padding: 3.6rem;
 	padding-top: 2rem;
 	margin: auto;
@@ -884,6 +884,11 @@ BLOG POSTS
 	margin-left: auto;
 	margin-right: auto;
 	width:100%;
+}
+@media (max-width: 750px) {
+  .blog-post img {
+    width: 100% !important;
+  }
 }
 .blog-post h1 {
 	font-weight: 400;
@@ -1172,7 +1177,7 @@ th, td {
 }
 @media (max-width: 750px) {
   .blog-post .MathJax{
-	font-size:70% !important;
+	font-size:85% !important;
 	}
 }
 
