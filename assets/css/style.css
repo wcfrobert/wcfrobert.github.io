@@ -885,11 +885,6 @@ BLOG POSTS
 	margin-right: auto;
 	width:100%;
 }
-@media (max-width: 750px) {
-  .blog-post img {
-    width: 100% !important;
-  }
-}
 .blog-post h1 {
 	font-weight: 400;
 	font-size: 2.2rem;
@@ -1088,7 +1083,7 @@ th, td {
 .buttondown-container {
 	border: 1px solid rgb(102, 98, 98);
 	border-radius: 6px;
-	width: 90%;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1177,7 +1172,7 @@ th, td {
 }
 @media (max-width: 750px) {
   .blog-post .MathJax{
-	font-size:85% !important;
+	font-size:90% !important;
 	}
 }
 
@@ -1219,3 +1214,12 @@ th, td {
 .highlight .sr { color: #a31515 } /* Literal.String.Regex */
 .highlight .s1 { color: #a31515 } /* Literal.String.Single */
 .highlight .ss { color: #a31515 } /* Literal.String.Symbol */
+/* Inline code */
+.language-plaintext.highlighter-rouge {
+  background-color:#eae7e7;
+  color: #0c43cf;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.8em;
+}

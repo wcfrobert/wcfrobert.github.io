@@ -63,7 +63,7 @@ Personal ratings:
 |   Da Hong Pao Oolong    |              |                                                              |
 |      Dian Hong Red      |    ⭐⭐⭐⭐⭐     | Light sweetness like Moonlight white but with more complexity. Malty. Hints of dried fruit like raisin or plum. No astringency at all. |
 | Lapsang Souchong Black  |     ⭐⭐⭐      | Tastes very similar to Dian Hong but with a very pronounced smokiness that threw me off (reminded me of bacon or smoked meat). I'm sure I'll get used to it. |
-|        Raw Pu'er        |     ⭐⭐⭐      | Very notable woody fermentation taste. Pu'er by itself is too strong for me. I prefer to mix it with chrysanthemum which in my view is the perfect dim sum companion. |
+|        Raw Pu'er        |     ⭐⭐⭐      | Very notable woody fermentation taste. Pu'er by itself is too strong for me. I prefer to mix it with chrysanthemum. |
 |   Ancient Tree Pu'er    |              |                                                              |
 |    Dong Ding Oolong     |    ⭐⭐⭐⭐⭐     | A richer and toastier Oolong taste. Like roasted almond. It has a woody note that kind of reminds me of fresh paper. |
 

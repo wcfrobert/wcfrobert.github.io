@@ -164,7 +164,7 @@ Here is a useful figure that shows all the relevant stiffness coefficients withi
 
 Here is a snippet of python code to illustrate what's explained above:
 
-{% highlight python %}
+```python
 # Import
 import sympy as sy
 import numpy as np
@@ -188,7 +188,13 @@ K_noshear = T.transpose() * d_noshear.inv() * T
 
 print("Stiffness matrix without shear deformation")
 K_noshear
-{% endhighlight %}
+```
+
+
+
+
+
+
 
 
 ## 2. Inclusion of Shear Deformation
@@ -219,7 +225,7 @@ $$\theta = \frac{12EI}{GAL^2}$$
 
 Here is the code snippet for calculation described above:
 
-{% highlight python %}
+```python
 # Import
 import sympy as sy
 import numpy as np
@@ -258,8 +264,7 @@ k_shear_alternative
 
 print("subtrat each other to chcek if equal")
 sy.simplify(K_shear - k_shear_alternative)
-
-{% endhighlight %}
+```
 
 
 ## 3. Comparing Stiffnesses
@@ -270,7 +275,7 @@ The inclusion of shear deformation should theoretically soften a structure (i.e.
 
 As expected, shear deformation dominates for short span elements. Here is the python code snippet if you want to try for yourself:
 
-{% highlight python %}
+```python
 # Imports
 import sympy as sy
 import numpy as np
@@ -333,4 +338,4 @@ k25v=sy.N((K_noshear.subs([
     (A,8.55),(I,1380),(J,9.37),(E,29000),(G,11154),(L,60)])),6)
 print("5 ft average diff: {}".format(percentagediff(k25,k25v)))
 
-{% endhighlight %}
+```

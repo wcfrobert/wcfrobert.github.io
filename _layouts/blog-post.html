@@ -95,33 +95,28 @@
 
         <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
-        <!-- Substack Mailing List -->
+        <!-- Mailing List -->
         {%if page.categories contains "engineering" %}
           <iframe src="https://simplemodel.substack.com/embed" width="90%" height="320" style="border:1px solid #EEE; background:white; margin:2px auto 2px auto; display:block" frameborder="0" scrolling="no"></iframe>
+          <!-- <div class="buttondown-container">
+            <img src="../assets/img/substack-favicon.png" style="width: 15%; margin-bottom: 6px; margin-top: 6px;">
+            <div style="text-align: center; margin: 10px 0px 5px 0px; font-weight: bold; font-size: 1.1rem;">Rob's Engineering Newsletter</div>
+            <div style="text-align: center; font-size:0.8rem; padding: 10px; color:rgb(108, 108, 110)">Posts delivered straight to your inbox. No spam, no ads, just you and me.</div>
+            <form
+            action="https://buttondown.com/api/emails/embed-subscribe/wcfrobert"
+            method="post"
+            target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/wcfrobert', 'popupwindow')"
+            class="embeddable-buttondown-form">
+              <input type="email" name="email" id="bd-email" placeholder="Your email here (your@email.com)" class="email-input"/>
+              <input type="submit" value="Subscribe" class="submit-button"/>
+            </form>
+            <div style="margin-bottom: 20px;"></div>
+          </div> -->
         {% endif %}
-        <!-- <div class="buttondown-container">
-          <h3 style="text-align: center; margin: 10px 0px 10px 0px;">Rob's Engineering Newsletter</h3>
-          <div style="text-align: center; font-size:0.8rem; padding: 10px; color:rgb(108, 108, 110)">Insights delivered straight to your inbox. No spam, no ads, just you and me.</div>
-          
-          <form
-          action="https://buttondown.com/api/emails/embed-subscribe/wcfrobert"
-          method="post"
-          target="popupwindow"
-          onsubmit="window.open('https://buttondown.com/wcfrobert', 'popupwindow')"
-          class="embeddable-buttondown-form">
-            <input type="email" name="email" id="bd-email" placeholder="Your email here (your@email.com)" class="email-input"/>
-            <input type="submit" value="Subscribe" class="submit-button"/>
-          </form>
 
-          <p style="text-align: center; font-size:0.8rem; color:rgb(108, 108, 110)">
-            Prefer Substack? Follow me at
-            <a href="https://simplemodel.substack.com/" style="color:rgb(30, 30, 30);"> The Simple Model</a> 
-          </p>
-
-        </div> -->
-
-        <!-- Disqus comment. Disable ads if site gets bigger ($120/year pricing...) -->
-        <a class="blog-comments" onclick="showdisqus();return false;">
+        <!-- Disqus comment. Disabled so site is faster. No loading ads -->
+        <!-- <a class="blog-comments" onclick="showdisqus();return false;">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
             <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
           </svg>
@@ -136,7 +131,6 @@
           this.page.url = '{{ page.url | absolute_url }}';  // Replace PAGE_URL with your page's canonical URL variable
           this.page.identifier = '{{ page.url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
           };
-
             (function() {
             var d = document, s = d.createElement('script');
             s.src = 'https://robwang-io.disqus.com/embed.js';
@@ -144,7 +138,7 @@
             (d.head || d.body).appendChild(s);
             })();
         </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> -->
       
       </div>
     </div>
