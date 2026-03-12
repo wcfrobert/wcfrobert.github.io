@@ -2,7 +2,7 @@
 layout: blog-post
 categories: engineering
 title: "Understanding Punching Shear"
-description: "The limit state that keeps engineers up at night."
+description: "The failure mode that keeps engineers up at night."
 image: assets/img/blog/2025/punchingshear/signconvention.png
 date: 2025-06-20
 tags: concrete
@@ -11,7 +11,7 @@ typora-root-url: ./..
 ---
 
 
-## Part 1 - A Gentle Introduction
+## Part 1 - The Basics
 
 ### 1.1 Introduction
 
@@ -21,9 +21,9 @@ Two-way shear - also known as punching shear - is a force transfer mechanism bet
 
 The traditional approach has mostly fallen out of favor, especially in concrete high-rises. The presence of beams and girders results in deeper floors, more complicated formwork, more carpentry work, more labor, higher cost, and longer construction time. On the other hand, flat plates are much easier to construct (having a flat soffit), and much quicker to build[^3]. Furthermore, shallower floor depths - through the course of 20+ stories - could mean an additional floor within the same building height constraint.
 
-So what is the trade-off? The lack of supporting beams means **less redundancy** and **high shear stress** around the supporting columns. If improperly design, flat plates can fail suddenly without warning, often triggering [progressive collapse](https://en.wikipedia.org/wiki/Progressive_collapse). The figure below is an illustration of punching shear failure. The photo on the left is a garage in the UK (Piper's Row Car Park, Wolverhampton) built in the 1960s. Images like the one below keep engineers up at night. Needless to say, the accurate evaluation of punching shear is critically important.
+So what is the trade-off? The lack of supporting beams means **less redundancy** and **high shear stress** around the supporting columns. If improperly design, flat plates can fail suddenly without warning, often triggering [progressive collapse](https://en.wikipedia.org/wiki/Progressive_collapse). Below is an illustration of punching shear failure. The photo on the left is from the Piper's Row Car Park collapse, which occurred in Wolverhampton, UK in the 1960s. Images like these keep engineers up at night.
 
-<img src="/assets/img/blog/2025/punchingshear/theory2.png" style="width:50%;"/> 
+<img src="/assets/img/blog/2025/punchingshear/theory2.png" style="width:50%;"/>
 
 ### 1.2 Punching Shear
 
@@ -55,15 +55,15 @@ The illustration above is from the [Macgregor Textbook](https://www.amazon.com/R
 
 **Unbalanced Moment ($$M_{sc}$$)**
 
-Unbalanced moment is simply <u>moment transferred into the columns</u>. Most FEM software will report this value directly. There are other methods for getting the unbalanced moment, such as applying coefficients to "statical moments", but these methods are mostly outdated and no longer used in practice (aside from spot-checking one or two columns to verify results from a software)[^8]. 
+Unbalanced moment is simply <u>moment transferred into the columns</u>. Most FEM software will report this value directly. There are other methods for getting the unbalanced moment, such as applying coefficients to "statical moments", but these methods are mostly outdated and no longer used in practice.[^8]. 
 
-The word "unbalanced" hints at the notion that the floor wants to sag more on one side of the column vs. the other. Visually speaking, unbalanced moments show up as a vertical offsets in the slab moment diagram. Don't be confused by the naming. Everything must be balanced in static equilibrium. Indeed, if we plot the moment diagram for the entire floor assembly, we see exactly where the unbalanced moment is going: into the columns[^9]. The vertical offset in slab moment ($$\Delta M$$) represents that transferred moment. Another important point: don't confuse forces <u>transferred</u> to the column ($$\Delta M$$) with forces <u>already in</u> the column ($$M$$). It might be true in the narrow case of a breakout model, but it is not true in general.
+The word "unbalanced" hints at the notion that the floor wants to sag more on one side vs. the other - like an unbalanced seesaw. Unbalanced moments show up visually as a vertical offset in the moment diagram. Don't be confused by this. Everything must be balanced in static equilibrium. Indeed, if we plot the moment diagram for the entire floor assembly, we see exactly where the unbalanced moment is going: into the columns[^9]. Another point worth noting is that forces <u>transferred</u> to the column ($$\Delta M$$) is NOT the same as forces <u>already in</u> the column ($$M$$). 
 
 <img src="/assets/img/blog/2025/punchingshear/theory4.png" style="width:70%;"/> 
 
-At exterior columns, unbalanced moment is always present - in fact they are usually quite significant). Without continuity of slabs, 100% of the moment must be transferred. 
 
-At interior columns, unbalanced moments are typically smaller. In a slab with perfectly regular spans and uniform loading, unbalanced moment is actually zero because slab-column joint will remain perfectly horizontal with zero joint rotation. Unfortunately, such scenario does not exist. Even if you have a completely regular slab spans, ACI 318 requires "checker-boarding" live loads, which means some unbalanced moment will inevitable arise in your interior columns due to uneven loading.
+
+Unbalanced moment exists even if you have a completely regular slab system with equal spans and equal stiffnesses. This is because the building code requires "checker-boarding" live loads, which means some unbalanced moment will inevitable arise due to uneven loading. At exterior columns, unbalanced moment is always quite significant. Without continuity of slabs, 100% of the slab moment must be transferred. 
 
 **Moment Transfer Ratio ($$\gamma$$)**
 
@@ -80,7 +80,7 @@ $$\gamma_f = \frac{1}{1+2/3\sqrt{\frac{b_1}{b_2}}}$$
 
 $$\gamma_v = 1 - \gamma_f$$
 
-In the equation above, $$b_1$$ represents the critical perimeter dimension parallel to the slab span under consideration, whereas $$b_2$$ is the perpendicular critical perimeter dimension. Here's a figure that might help you figure out which is which. 
+In the equation above, $$b_1$$ represents the critical perimeter dimension parallel to the slab span under consideration, whereas $$b_2$$ is the perpendicular critical perimeter dimension. Here's an illustration:
 
 <img src="/assets/img/blog/2025/punchingshear/theory6.png" style="width:100%;"/> 
 
@@ -88,7 +88,7 @@ In the equation above, $$b_1$$ represents the critical perimeter dimension paral
 
 **Distance From Shear Section Centroid ($$c$$)**
 
-The variable $$c$$ represents the orthogonal distance from the neutral axis to a fiber along the shear perimeter. Most of the time, we are interested in the fibers on the two extreme ends of the shear perimeter, like what's shown below.
+The variable $$c$$ represents the distance from neutral axis to any fiber along the shear perimeter. Most of the time, we are interested in the fibers on the two extreme ends of the shear perimeter, like what's shown below.
 
 <img src="/assets/img/blog/2025/punchingshear/theory19.png" style="width:40%;"/> 
 
@@ -96,7 +96,7 @@ We can calculate the location of neutral axis (i.e. the centroid of the shear se
 
 $$x_c = \frac{\sum xA}{\sum A} \mbox{ and } y_c = \frac{\sum yA}{\sum A}$$
 
-Please note the shear section centroid does NOT always coincide with the column centroid - more on this in part 2. Furthermore, unbalanced moment is typically not symmetrical where both positive and negative values are possible; therefore, shear stresses due to $$M_{sc}$$ is not always additive with shear stress due to gravity load. All of this is to say: the fiber furthest away from the neutral axis is NOT necessarily the governing fiber, you should check both ends.
+Please note the neutral axis doesn't necessarily coincide with the column centroid - more on this in part 2. Furthermore, shear stresses due to $$M_{sc}$$ usually acts in one direction only. Be careful and track signs (+ or -). The fiber furthest away from the neutral axis is NOT necessarily the governing fiber, you should check shear stresses at both ends. The governing fiber is usually the one where shear stresses due to gravity and unbalanced moment are additive.
 
 
 
@@ -153,17 +153,17 @@ Now that we've covered all the important variables in the ACI 318 punching shear
 
 
 
-## Part 2 - Not So Gentle Subtleties
+## Part 2 - The Subtleties
 
 > "The devil lurks in the details"
 
 ### 2.1 Biaxial Unbalanced Moment
 
-The astute reader may have noticed something peculiar about the formulations above. Why are we idealizing two-way slabs as two-dimensional frames? Two-way slabs are three-dimensional structures! What if there are unbalanced moment about both orthogonal directions? 
+The astute reader may have noticed something peculiar about the formulations in Part 1. Why are we idealizing two-way slabs as two-dimensional frames? Two-way slabs are three-dimensional structures! What if there are unbalanced moment about both orthogonal directions? 
 
 ACI 318 code is vague about bi-axial moment for historical reasons. Before industry-wide adoption of FEM software, two-way slabs were designed using either the Direct Design Method (DDM), or Equivalent Frame Method (EFM), both of which required partitioning a three-dimensional slab system into series of two-dimensional frames. Slabs were designed one direction at a time in isolation, tediously along every gridline. With modern FEM software, it became trivial to find unbalanced moment about both axes, hence why it may seem strange to modern engineers why anyone would consider only "half" of the applied moment. 
 
-There's [ongoing debate](https://www.eng-tips.com/threads/punching-shear-aci-calculation-method.392228/) on whether unbalanced moment should be considered one axis at a time, or both at the same time. A common line of argument is that calculating stress due to bi-axial moment will result in a maximum stress at a point, whereas all the experimental tests and thus code-based equations are based on the average stress across an entire face. According to the ACI committee 421 report in 1999 (ACI 421.1R-99), an overstress of 15% is assumed to be acceptable as stress is expected to distribute away from the highly stressed corners of the critical perimeter. However, this statement no longer exists in the latest version of the report (ACI 421.1R-20). I don't think there is consensus yet. I'll leave the engineering judgement to the reader. I would personally be as conservative as possible when it comes to punching shear so I can sleep at night.
+There's [ongoing debate](https://www.eng-tips.com/threads/punching-shear-aci-calculation-method.392228/) on whether unbalanced moment should be considered one axis at a time, or both at the same time. A common line of argument is that calculating stress due to bi-axial moment will result in a maximum stress at a point, whereas all the experimental tests and thus code-based equations are based on the average stress across an entire face. According to the ACI committee 421 report in 1999 (ACI 421.1R-99), an overstress of 15% is assumed to be acceptable as stress is expected to distribute away from the highly stressed corners of the critical perimeter. However, this statement no longer exists in the latest version of the report (ACI 421.1R-20). I don't think there is consensus yet. I'll leave the engineering judgement to the reader. I would personally be as conservative as possible when it comes to punching shear.
 
 Here's the equation if we were to consider unbalanced moment about both axes. 
 
@@ -179,20 +179,20 @@ According to ACI 318-19 22.6.4.3, If an opening is closer than $$4h$$ to the cri
 
 In practice, most engineers use some kind of CAD software to avoid doing the geometry puzzle. In addition to the perimeter reduction, there are two additional consequences that are often ignored:
 
-* The addition of openings may shift the shear section centroid (see nuance #4)
-* The addition of opening may rotate the principal axes. For example, the section above on the right must be rotated 28 degrees to its principal orientation - where $$I_{xy}=0$$ - otherwise equilibrium will not hold. (See nuance #5)
+* The addition of openings may shift the shear section centroid (see 2.4)
+* The addition of opening may rotate the principal axes. For example, the section above on the right must be rotated 28 degrees to its principal orientation - where $$I_{xy}=0$$ - otherwise equilibrium will not hold. (See 2.5)
 
 
 
 ### 2.3 Slab Edge Overhang
 
-At edge or corner columns, the slab may cantilever far beyond the face of the column. At what point does it become an interior condition? According to ACI 318-19 22.6.4.1, the perimeter of the critical section shall be minimized. We will interpret this to mean that the overhang cannot provide more perimeter than if the column were on the interior. If we do the math, the limit works out to be $$c_2/2 +d$$. Where $$d$$ is the average slab depth, and $$c_2$$ is the column dimension parallel to the slab edge. If the slab cantilevers longer than this limit, the edge condition becomes an interior condition.
+At edge or corner columns, the slab may cantilever far beyond the face of the column. At what point does it become an interior condition? According to ACI 318-19 22.6.4.1, the perimeter of the critical section shall be minimized. We will interpret this to mean that the overhang condition cannot provide more perimeter than if the column were on the interior. If we do the math, the limit works out to be $$c_2/2 +d$$. Where $$d$$ is the average slab depth, and $$c_2$$ is the column dimension parallel to the slab edge. If the slab cantilevers longer than this limit, the edge condition becomes an interior condition.
 
 $$\mbox{max overhang} = c_2/2 + d$$
 
 <img src="/assets/img/blog/2025/punchingshear/theory12.png" style="width:90%;"/> 
 
-Reality is definitely more complicated. Ideally, engineers should avoid this grey-zone and ensure a clear distinction between edge and interior columns.
+Reality is more complicated. Ideally, engineers should avoid this grey area and ensure a clear distinction between edge and interior columns.
 
 
 
@@ -208,7 +208,7 @@ $$M_{sc,x} = M_{sc,xO} + V_u (e_y)$$
 
 $$M_{sc,y} = M_{sc,yO} + V_u (e_x)$$
 
-Do not apply this moment adjustment blindly - it's not always applicable. The applicability depends on the FEM software you are using. Columns are typically modeled as one-dimensional stick elements without any physical dimensions; therefore, you'll have to see how the software is reporting forces. Is it reporting moment at the face of the column? At the centroid of the column? At some distance d away from the column? Is the moment derived from integration of the slab stresses? Or is it derived from the column reactions?
+However, this moment adjustment is not always applicable. The applicability depends on the FEM software you are using. Columns are typically modeled as one-dimensional stick elements without any physical dimensions; therefore, you'll have to see how and where your software is reporting forces. Is it reporting moment at the face of the column? At the centroid of the column? At some distance d away from the column? Is the moment derived from integration of the slab stresses? Or is it derived from the column reactions?
 
 
 
@@ -218,7 +218,7 @@ In order for the beam flexural formulas - and by extension the ACI punching form
 
 $$\sigma =M_xc_y/I_x +M_y c_x / I_y \Rightarrow \mbox{ this formula is only applicable if } I_{xy}=0$$
 
-For most symmetrical geometries, the principal axes is simply the horizontal (X) and vertical (Y) axes and no rotation is needed. However, there are sections - such as an L shape - that have slanted principal axes. This is often referred to as **unsymmetric bending**. In short, unsymmetric bending can only guarantee equilibrium when the moment is applied with respect to the principal axes. To illustrate what I mean, In the figure below, I applied the exact same moment vector to a corner column. The only difference is the orientation of their x,y axes.
+For most symmetrical geometries, the principal axes is simply the horizontal (X) and vertical (Y) axes and no rotation is needed. However, there are sections - such as an L shape - that have diagonal principal axes. These situations are often referred to as **unsymmetric bending**. In short, where unsymmetric bending occurs, equilibrium is only guaranteed when the moment is applied with respect to the principal axes. To illustrate what I mean, In the figure below, I applied the exact same moment vector to a corner column. The only difference is the orientation of their x,y axes.
 
 <img src="/assets/img/blog/2025/punchingshear/theory14.png" style="width:100%;"/> 
 
@@ -238,7 +238,7 @@ The product of inertia term in the formula above can be determined using paralle
 
 $$I_{xy} = \int_A{xydA}=  \sum (I_{xy,i} + A_i x_i y_i)$$
 
-A 45 degree rotation is still somewhat manageable, but it can quickly devolve into a tedious geometry puzzle at other angles. This rotation is probably best done numerically by computers rather than by hand.
+A 45 degree rotation is still somewhat manageable, but it's easy to see how it can quickly devolve into a tedious geometry puzzle at other angles.
 
 
 
@@ -259,7 +259,7 @@ The outer polygonal shear perimeter makes punching shear calculation very gnarly
 
 
 
-### 2.7 Regarding J
+### 2.7 Polar Moment of Inertia - J
 
 The parameter $$J_c$$ was first introduced in a paper by [Di Stasio and Van Buren (1960)](https://www.scribd.com/document/703275022/Transfer-of-Bending-Moment-Between-Flat-Plate-Floor-and-Column), the proposed analytical model was known as the **eccentric shear stress model**. The original formula had more factors in it but was subsequently simplified in ACI 318-71. The formula for punching shear has remained essentially unchanged since then.
 
@@ -287,13 +287,19 @@ $$I_x = \int y^2dA \approx J_{cx}$$
 
 $$I_y = \int x^2dA \approx J_{cy}$$
 
-Rather than calculating the integral by hand, we can use the handy formulas below. Let a shear section be composed of $$N$$ straight segments, each segment is defined by a start node $$(x_1,y_1)$$ and end node $$(x_2, y_2)$$ where the coordinates are relative to the shear section centroid; let $$L$$ be the length of each segment, and let $$d$$ be the slab depth. The ACE 421.1R equations for J are shown below:
+It turns out $$I_{x}$$ and $$I_{y}$$ approximates $$J_{cx}$$ and $$J_{cy}$$ very well. The former is usually around 95% of the latter, and since $$J_c$$ is on the denominator, using the ACI 421.1R equations will always be more conservative. In effect, we are discarding the weak axis $$I_y$$ term from the web areas (the one where slab depth is cubed), and end up just calculating a <u>planar</u> moment of inertia.
+
+Rather than calculating the integral by hand, we have two options. The first is to use the method of composite shapes and parallel axis theorem. The first term is calculated using the MOI equation for a rectangle: $$bh^3/12$$. For the "web area", b = the slab depth and d = shear perimeter length, and for the "flange area", b = shear perimeter width and d = 0. 
+
+$$I_x = \sum (I_{xi} + A_i d_i^2)$$
+
+$$I_y = \sum (I_{yi} + A_i d_i^2)$$
+
+Alternatively, we can use the handy formulas provided in ACI 421.1R. Let a shear section be composed of $$N$$ straight segments, each segment is defined by a start node $$(x_1,y_1)$$ and end node $$(x_2, y_2)$$ where the coordinates are relative to the shear section centroid; let $$L$$ be the length of each segment, and let $$d$$ be the slab depth. The ACE 421.1R equations for J are shown below:
 
 $$I_x= \sum \frac{L d}{3}(y_1^2 +y_1 y_2 + y_2^2) $$
 
 $$I_y =  \sum \frac{L d}{3}(x_1^2 +x_1 x_2 + x_2^2) $$
-
-It turns out $$I_{x}$$ and $$I_{y}$$ approximates $$J_{cx}$$ and $$J_{cy}$$ very well. The former is usually around 95% of the latter, and since $$J_c$$ is on the denominator, using the ACI 421.1R equations will always be more conservative. In effect, we are discarding the weak axis $$I_y$$ term from the web areas (the one where slab depth is cubed), and end up just calculating a <u>planar</u> moment of inertia.
 
 Let's derive the formulas above ourselves. A single segment of a multi-segment shear perimeter is illustrated below.
 
@@ -363,7 +369,7 @@ $$I_x = \sum \frac{Ld}{3}(y_1^2 +y_1y_2 + y_2^2 ) $$
 
 
 
-## Part 3 - Python Library - wthisj
+## Part 3 - Python Library
 
 ### 3.1 Introduction
 
@@ -373,7 +379,7 @@ $$I_x = \sum \frac{Ld}{3}(y_1^2 +y_1y_2 + y_2^2 ) $$
 
 I was motivated to make this tool when I noticed the interesting similarity between punching shear calculation, bolt force calculation, and welded group calculations, namely: they can all be categorized as utilizing the **elastic method**. The unifying theme between all three projects is that a force or stress field varies linearly, emanating from zero at some neutral axis, outwards to the extreme fiber/anchor/bolt/weld. 
 
-The entire package is essentially one .py file that defines a `PunchingShearSection` class with around 2,000 lines of code. If you follow me with my other projects, you'll see the similarity with fiberkit, ezbolt, ezweld, ezanchor right away. In fact, I sometimes feel like I'm making the exact same project just with a different vocabulary. 
+The entire package is essentially one .py file that defines a `PunchingShearSection` class with around 2,000 lines of code. If you follow me with my other projects, you'll see the similarity with fiberkit, ezbolt, ezweld, ezanchor right away. In fact, I sometimes feel like I'm making the exact same project over and over just with a different vocabulary. 
 
 
 Here's the same output from [wthisj](https://github.com/wcfrobert/wthisj):
@@ -429,7 +435,7 @@ At first, I used Matplotlib's legend alignment strings: `"upper right", "upper l
 
 ### 3.4 Adding Openings
 
-ACI 318 describes how shear perimeter may be made ineffective in the presence of nearby openings. This is easy enough to understand geometrically, but quite hard to describe with words. Here's the exact wording in ACI 318: "the portion of $$b_o$$​ enclosed by straight lines projecting from the centroid of the column, concentrated load or reaction area and tangent to the boundaries of the opening shall be considered ineffective". Yea... Quite confusing until you see the graphics. In practice, I don't know anyone who actually does this geometry puzzle by hand. Did you know you can calculate section properties in AutoCAD or Blue Beam? 
+ACI 318 describes how shear perimeter may be made ineffective in the presence of nearby openings. This is easy enough to understand geometrically, but quite hard to describe with words. Here's the exact wording in ACI 318: "the portion of $$b_o$$​ enclosed by straight lines projecting from the centroid of the column, concentrated load or reaction area and tangent to the boundaries of the opening shall be considered ineffective". Yea... Quite confusing until you see the graphics. In practice, I don't know anyone who actually does this geometry puzzle by hand. Did you know you can calculate section properties in AutoCAD or BlueBeam? 
 
 I was utterly lost on how to implement this until I reframed the problem in polar coordinates, then it became trivial. The location of every fiber gets converted from $$(x,y)$$ to $$(r, \theta)$$. Each opening has four vertices, so I can loop through them to find a "$$\theta$$ deletion range". Every fiber that falls within the $$\theta$$ deletion range gets removed. The benefit of numerical approximation and fiber discretization becomes clear here. The implementation of openings would have been much harder if I went with the line integral approach. [atan2()](https://en.wikipedia.org/wiki/Atan2) again makes an appearance and makes me happy. 
 
@@ -451,19 +457,19 @@ $$v_s = \frac{A_v f_{yt}}{b_o s}$$
 
 Maybe I'll implement this in a future release. There are two reasons why I did not:
 
-(1) I ran out of energy and momentum - and in all honesty I got bored. I thought this project would take me at most two weekends. It ended up taking 3 months, and I'm still writing about it 9 months later. My opinion is that calculating demand is harder and theoretically more interesting. I'll leave calculation of capacity as an exercise for the reader for now. If I do implement it in the future, it would be a separate method entirely uncoupled from the main workflow so as to avoid cluttering the init arguments. 
+(1) I ran out of energy and momentum - and in all honesty I got bored. I thought this project would take me at most two weekends. It ended up taking 3 months, and I'm still writing about it 9 months later. My opinion is that calculating demand is theoretically more interesting. I'll leave calculation of capacity as an exercise for the reader for now. If I do implement it in the future, it would be a separate method entirely uncoupled from the main workflow so as to avoid cluttering the init arguments. 
 
 (2) I am wary of providing both capacity and demand, especially for something as critical as punching shear. My sense is that providing both demand and capacity encourages users to take everything as gospel and trust wthisj as a black box. Please don't. I work on these projects in a cafe in Fremont with terrible coffee and WIFI - often after a long day of work when I have very few brain cells to spare. This is not enterprise software.
 
 ### 3.6 Sign Convention
 
-The figure below shows the sign convention wthisj uses. If It's pretty standard right-hand convention. If this seems natural to you and does not invoke any confusion, then great! Be warned that the following discussion is quite pedantic.
+The figure below shows the sign convention in wthisj. It's pretty standard right-hand convention.
 
 <img src="/assets/img/blog/2025/punchingshear/signconvention.png" style="width:40%;"/>
 
-When I specify `Vz, Mx, My` in wthisj, I am NOT referring to the reactive column reactions. Instead, I am referring to an equivalent set of nodal force/moment that has the same effect as the external forces that are applied on the slab - which is equal and opposite to the column reactions. I hope I don't confuse anyone. What I am getting at is that there aren't actually concentrated force/moment at the slab-column joint. With the current convention, a downward force (-Vz) produces shear stress arrows that also point downwards. 
+When I specify `Vz, Mx, My` in wthisj, I am NOT referring to the column reactions. Instead, I am referring to an equivalent set of nodal force/moment that has the same effect as the external forces that are applied on the slab - which is equal and opposite to the column reactions. I hope I don't confuse anyone. What I am getting at is that there aren't actually concentrated force/moment at the slab-column joint. With the current convention, a downward force (-Vz) produces shear stress arrows that also point downwards, which I felt was the most natural.
 
-An alternative convention is to consider`Vz, Mx, My` as forces on the underside of the column. With this perspective, the upward internal force on the underside of the column produces shear stress on the perimeter that is in equilibrium and thus points downwards. I suspect most people don't think of punching shear this way. I actually implemented this convention initially and it was very confusing.
+An alternative perspective is to consider`Vz, Mx, My` as forces on the underside of the column. With this convention, the upward internal force on the underside of the column produces shear stress on the perimeter that is in equilibrium and thus points downwards. I suspect most people don't think of punching shear this way. I actually implemented this convention initially and it was very confusing.
 
 
 

@@ -79,7 +79,8 @@
 
         <!-- Estimated Read time -->
         <div class="reading-time" title="Estimated read time">
-          <div>Published: {{page.date | date_to_string}}</div>
+          <div>Published: {{page.date | date: "%b %d, %Y"}}</div>
+          <div>By: Robert Wang</div>
           {% assign words = content | number_of_words %}
           {% if words < 360 %}
             1 min
@@ -87,7 +88,12 @@
             {{ words | divided_by:180 }} mins
           {% endif %}
           read
+          <div style="margin-bottom: 18px;"></div>
+
+          <div style="font-style:italic; font-size:0.9rem;">This post was written by hand without AI assistance. Every sentence is my own. Every letter was typed slowly and deliberately into a keyboard. Thank you for reading.</div>
+          
         </div>
+        
 
         <!-- Blog Content -->
         {{content}}
@@ -175,7 +181,8 @@
         </a> 
       </g>
     </svg>
-    <div class="copyright-footer">&copy; 2021 - {{ "now" | date: "%Y" }} Robert Wang. All rights reserved.</div>
+    <div class="copyright-footer">&copy; 2021 - {{ "now" | date: "%Y" }} Robert Wang</div>
+    <div class="copyright-footer">Designed by RW with love. Powered by Jekyll + GitHub Pages</div>
   </footer>
 
   <script id="dsq-count-scr" src="//robwang-io.disqus.com/count.js" async></script>

@@ -609,7 +609,7 @@ FOOTER
 	background-color: rgb(53, 49, 49);
 	font-family: lora, serif;
 	color: white;
-	height: 90px;
+	height: 115px;
 	font-size: 0.75rem;
 	text-align: center;
 }
@@ -897,6 +897,7 @@ BLOG POSTS
 }
 .blog-post p{
 	line-height: 1.6;
+	margin-top: 0.5rem;
 }
 .blog-post ul,ol{
 	line-height: 1.6;
@@ -905,7 +906,7 @@ BLOG POSTS
 	margin-bottom: 0.4rem;
 }
 .blog-post h2 {
-	margin-bottom: 21px;
+	margin-top: 2rem;
 	font-size: 1.46rem;
 	font-weight: bold;
 	color: black;
@@ -920,6 +921,8 @@ h2::after {
 .blog-post h3 {
 	font-size: 1.2rem;
 	color: black;
+	margin-top: 2rem;
+    margin-bottom: 0.1rem;
 }
 .blog-post h4 {
 	font-size: 1.0rem;

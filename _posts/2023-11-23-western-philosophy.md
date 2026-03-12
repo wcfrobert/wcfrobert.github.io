@@ -6,6 +6,7 @@ description: "One-paragraph summaries of important thinkers throughout history"
 image: assets/img/blog/westernphilosophy.png
 date: 2023-11-23
 tags: thoughts
+toc: true
 ---
 
 After reading Sophie's World, I thought it'd be interesting to learn more about the remarkable philosophers presented therein and summarize their ideas into a few bullet points. What started off as a curiosity-driven side project morphed into a monumental undertaking that's taking way too much of my spare time. Scholars spend their entire career on one or two philosophers. What hope is there for me to understand anything about anyone in six months? To understand A, you must first be acquainted with B, which requires familiarity in C and D, both presupposes knowledge of E which itself has four different interpretations. The tree of knowledge branches endlessly like this and everything is connected. What I've realized is that clarity is not found by digging deep into a subject, quite the opposite. 
