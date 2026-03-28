@@ -1,11 +1,11 @@
 //JS for Disqus
-function showdisqus() {
-    if (document.getElementById("disqus_thread").style.display === "block") {
-        document.getElementById("disqus_thread").style.display = "none";
-      } else {
-        document.getElementById("disqus_thread").style.display = "block";
-      }
-}
+// function showdisqus() {
+//     if (document.getElementById("disqus_thread").style.display === "block") {
+//         document.getElementById("disqus_thread").style.display = "none";
+//       } else {
+//         document.getElementById("disqus_thread").style.display = "block";
+//       }
+// }
 
 //JS for hamburger menu
 //https://codepen.io/AleksandrHovhannisyan/pen/xxwWama
@@ -74,4 +74,44 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   // Build the TOC
   tocContainer.innerHTML = `<ul>${tocItems.join("")}</ul>`;
+});
+
+
+
+//JS for footnote hover
+document.addEventListener("DOMContentLoaded", function() {
+  // 1. Create the tooltip box and add it to the page
+  const tooltip = document.createElement('div');
+  tooltip.className = 'custom-tooltip';
+  document.body.appendChild(tooltip);
+
+  // 2. Find all Kramdown footnote links
+  const footnotes = document.querySelectorAll('a.footnote');
+
+  footnotes.forEach(function(link) {
+    link.addEventListener('mouseenter', function(e) {
+      // Find the actual footnote text at the bottom using the ID
+      const targetId = this.getAttribute('href').substring(1); 
+      const footnoteTextEl = document.getElementById(targetId);
+      
+      if (footnoteTextEl) {
+        // Copy the text (removing the little 'return' arrow)
+        let text = footnoteTextEl.innerText.trim();
+        tooltip.innerHTML = text;
+        
+        // Position the tooltip slightly above the link
+        const rect = this.getBoundingClientRect();
+        tooltip.style.left = rect.left + window.scrollX + 'px';
+        tooltip.style.top = rect.top + window.scrollY - tooltip.offsetHeight - 10 + 'px';
+        
+        // Show it
+        tooltip.classList.add('show');
+      }
+    });
+
+    // Hide the tooltip when the mouse leaves
+    link.addEventListener('mouseleave', function() {
+      tooltip.classList.remove('show');
+    });
+  });
 });

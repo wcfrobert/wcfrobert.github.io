@@ -1065,15 +1065,39 @@ th, td {
 	font-size: 0.8rem;
 	color: #383535;
 }
+
+/* Footnote stuff */
 .blog-post sup[role="doc-noteref"] a {
     color: rgb(67, 91, 226);
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	text-decoration: none;
-	font-weight: bold;
 	vertical-align: baseline;
 	line-height: 0;
-	;
+	background: #f1f0f0;
+	border-radius: 4px;
+    padding-left: 2px;
+    padding-right: 2px;
   }
+.custom-tooltip {
+  position: absolute;
+  background: #ffffff;
+  color: rgb(34, 33, 33);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #737171;
+  font-size: 0.75rem;
+  max-width: 25%;
+  z-index: 1000;
+  pointer-events: none; /* Prevents flickering */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Open Sans', sans-serif;
+}
+.custom-tooltip.show {
+  opacity: 1;
+}
+
 /*Blog Comments And Subscribe Box*/
 .blog-comments {
 	color:rgb(67, 91, 226);
