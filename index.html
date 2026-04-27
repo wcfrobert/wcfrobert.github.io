@@ -1,6 +1,15 @@
 ---
 permalink: /index.html
 layout: typical
+curated_posts:
+  - /engineering/etabsapi.html
+  - /engineering/punching-shear.html
+  - /engineering/right-hand-rule.html
+  - /blog/models.html
+  - /blog/aliceinwonderland.html
+  - /blog/intelligence.html
+  - /blog/icarus.html
+  - /blog/goodbye-youtube.html
 ---
     <!-- JUMBOTRON -->
     <section class="jumbotron">
@@ -46,13 +55,13 @@ layout: typical
     </section>
     <hr class="hr-half">
 
-
-
-    <!-- BODY: Recent Posts -->
+    <!-- BODY: Top Posts -->
     <section class='resume-content'> 
-      <h1>Recent Posts</h1>
+      <h1>Curated Posts</h1>
       <div class="post-highlight">
-        {% for post in site.posts offset:0 limit:8 %}
+        {% for slug in page.curated_posts %}
+          {% assign post = site.posts | where: "url", slug | first %}
+          {% if post %}
           <a class="post-box" href="{{ post.url }}">
             <div style="display:flex; align-items: center;">
               <h3 class="post-title">{{ post.title }}</h3>
@@ -60,13 +69,11 @@ layout: typical
             </div>
             <p class="post-description">{{ post.description }}</p>
           </a>
+          {% endif %}
         {% endfor %}
-
         <a href="engineering.html" class="readmore">Read More</a>
       </div>
-
     </section>
-
 
 
     <!-- BODY: Projects -->

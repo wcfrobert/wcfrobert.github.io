@@ -15,11 +15,11 @@ typora-root-url: ./..
 
 ### 1.1 Introduction
 
-Two-way shear - also known as punching shear - is a force transfer mechanism between two-way spanning slabs and its supporting columns[^1]. It is especially prevalent in modern concrete construction where the preferred floor system tends to be flat plates[^2]- where the slab is supported directly on top of columns; no beams, no girders, just a smooth monolithic plate. The figure below illustrates the uniqueness of this approach vs. a more traditional system of intersecting beams.
+Two-way shear - also known as punching shear - is a force transfer mechanism between two-way slabs and its supporting columns[^1]. It is prevalent in modern concrete construction because no one builds traditional beam-supported slab anymore. The preferred system in concrete highrises today is flat plates[^2]- where the slab is supported directly on top of columns; no beams, no girders, just a smooth monolithic plate. The figure below illustrates the uniqueness of this approach vs. a more traditional system of intersecting beams.
 
 <img src="/assets/img/blog/2025/punchingshear/theory1.png" style="width:70%;"/> 
 
-The traditional approach has mostly fallen out of favor, especially in concrete high-rises. The presence of beams and girders results in deeper floors, more complicated formwork, more carpentry work, more labor, higher cost, and longer construction time. On the other hand, flat plates are much easier to construct (having a flat soffit), and much quicker to build[^3]. Furthermore, shallower floor depths - through the course of 20+ stories - could mean an additional floor within the same building height constraint.
+The traditional approach has mostly fallen out of favor because the presence of beams and girders results in deeper floors, more complicated formwork, more carpentry work, more labor, higher cost, and longer construction time. On the other hand, flat plates are much easier to construct (having a flat soffit), and much quicker to build[^3]. Furthermore, shallower floor depths - through the course of 20+ stories - could mean an additional floor within the same building height constraint.
 
 So what is the trade-off? The lack of supporting beams means **less redundancy** and **high shear stress** around the supporting columns. If improperly design, flat plates can fail suddenly without warning, often triggering [progressive collapse](https://en.wikipedia.org/wiki/Progressive_collapse). Below is an illustration of punching shear failure. The photo on the left is from the Piper's Row Car Park collapse, which occurred in Wolverhampton, UK in the 1960s. Images like these keep engineers up at night.
 

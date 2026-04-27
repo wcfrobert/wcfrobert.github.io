@@ -1,8 +1,7 @@
 ---
-permalink: /engineering.html
+permalink: /engineering2.html
 layout: typical
 ---
-
 
     <div class="blog-jumbotron">
       <h1 class="blog-h1">Engineering</h1>
@@ -16,7 +15,7 @@ layout: typical
 
   <div class="blog-index-page">
     
-    {% for post in site.categories["engineering"] limit:16 %}
+    {% for post in site.categories["engineering"] offset:16  limit:16 %}
       <a class="blog-post-box" href="{{ post.url }}">
         
         {% if post.image %}
@@ -52,6 +51,6 @@ layout: typical
   </div>
 
   <div class="pagination">
-    <a href="engineering.html" class="pagination-active">1</a> 
-    <a href="engineering2.html" class="pagination">2</a>
+    <a href="engineering.html" class="pagination">1</a> 
+    <a href="engineering2.html" class="pagination-active">2</a>
   </div>

@@ -15,7 +15,7 @@ typora-root-url: ./..
 >
 > "So, like an architect?"
 
-What do structural engineers even do? In essence, people pay us to calculate things. What is the shear stress of this? What is the buckling capacity of that? How much rebar do we need? Do we really need this column here?[^1] 
+What do structural engineers even do? In essence, people pay us to calculate things. What is the shear stress of this? How much rebar do we need? Do we really need this column here?[^1] 
 
 It might seem overly reductive to say *all* we do is calculate, but I really think it's true enough. If we strip away the meetings, emails, and administrative busywork, it's clear to me that we provide value by making well-informed engineering decisions, and all engineering decisions are made downstream of calculations. So it behooves us to calculate well.
 
@@ -46,16 +46,17 @@ Not long after Blodgett's textbook was published, we enter the electronic calcul
 <img src="/assets/img/blog/2025/etabs/etabs15.png" style="width:80%;"/>
 *Toolbox of a modern day structural engineers. A weird mélange of software and tools*
 
-Engineers of the past relied on slide rules, nomographs, and straight edges. Modern engineers rely on FEM software, intricate spreadsheets, acres of grasshopper scripts. Python, Rhino, Tekla, Speckle, Karamba, MathCAD - an assortment of tools that sounds like gibberish to any engineer born before the 1970s. 
+Engineers of the past relied on slide rules, and straight edges. Modern engineers rely on FEM, intricate spreadsheets, acres of grasshopper scripts. Python, Rhino, Tekla, Speckle, Karamba, MathCAD - an assortment of tools that sounds like gibberish to any engineer born before the 1980s. 
 
-Today's building projects require the design of thousands of elements, checking each for dozens of failure modes, under hundreds of load cases[^3], repetitively through an inexplicable number of iterations. We need to keep track of all this data, process it, visualize it, save it to a database, automate it, parametrize it, transfer it between software. 
+A building project today requires the design of thousands of elements, checking each for dozens of failure modes, under hundreds of load cases[^3], repetitively through an inexplicable number of iterations. We need to keep track of all this data, process it, visualize it, save it to a database, automate it, parametrize it, transfer it between software. Gone are the days of paper, pencils, and calculators. Nowadays, engineers are preoccupied with data, algorithms, and python. 
 
-Gone are the days of paper, pencils, and calculators. Nowadays, engineers are preoccupied with data, algorithms, and python. 
+While it may seem overwhelming[^4], much like slide rules and calculators, these new tools empower us, and are simply new additions to the structural engineer's ever-expanding toolbox.
 
-While it may seem overwhelming, without these tools, a modern building project would be even more overwhelming, if not completely untenable[^4]. Much like slide rules and calculators, these new tools empower us, and are simply the new additions to the structural engineer's ever-expanding toolbox.
 
-<hr>
+
+<hr style="margin-top: 5rem;">
 **Footnotes**
+
 
 [^1]: If you're an architect, the answer is always yes.
 [^2]: I think the restaurant industry provides an apt illustration of this efficiency-quality tradeoff. Some homogeneity is unavoidable at scale. Chipotle is not as good as the best Mexican street food in LA, but it's honestly not that bad. Not to mention that Chipotle serves millions of customers every day. Mike's Red Taco in San Diego is pretty amazing despite being a fast casual spot. Both are better than Taco Bell, which is to say that striving for efficiency at all cost usually leads to some place uninspiring.

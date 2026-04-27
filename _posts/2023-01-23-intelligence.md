@@ -18,6 +18,10 @@ Furthermore, we live in such a multi-faceted world. I prefer to think we are all
 
 No one knows everything about everything. No one person can make something as mundane as a pencil. Yet I am happy to report I just bought a dozen for $2 at Staples. The infinite complexity of our modern world only works because we rely on each other, and trust each other with our own unique skills and expertise.
 
+<iframe width="100%" height="420" src="https://www.youtube.com/embed/67tHtpac5ws" title="Milton Friedman - I, Pencil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
 
 I think I've come up with a good analogy for intelligence. Think of all your achievements and distinctions as **distance** from the starting line. Think of your skills in things like math, writing, programming, tennis as **velocity**. Lastly, think of how fast you are able to learn and improve those skills as **acceleration**. 
 
