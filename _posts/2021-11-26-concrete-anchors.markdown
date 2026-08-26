@@ -9,7 +9,7 @@ tags: primer concrete
 toc: true
 typora-root-url: ./..
 ---
-<p class="note-box">Disclaimer: Primers are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to organize and distill my thoughts. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.</p>
+Disclaimer: This post, and many others like it on my blog, is my personal study note on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
 
 - [Preface](#preface)
 - [1 - Fundamentals](#1---fundamentals)
@@ -38,11 +38,9 @@ typora-root-url: ./..
 
 ## Preface
 
-The subject of concrete anchorage is highly empirical and is guided entirely by experimental testing, much of which was performed at the University of Stuttgart. Because of its empirical nature, there is an overabundance of variables and factors that can be overwhelming for engineers. The good news is that all of the complexities of concrete anchorage mechanics has been abstracted away into factors; no gnarly math fully of Greek symbols. Concepts in concrete anchorage are all fairly intuitive and easy to understand. 
+Concrete anchorage is highly empirical and is informed by experimental testing, much of which was performed at the University of Stuttgart. Because it's so empirical, there is an overabundance of variables and factors that can be overwhelming for first-time users. Nevertheless, concepts in concrete anchorage are all fairly intuitive and easy to understand once you get over the hump of recognizing all the Greek symbols. ACI 318 covers concrete anchorage in Chapter 17. Anchorage calculation is *very* tedious. In practice, engineers tend to use anchor design softwares like HILTI PROFIS or Dewalt Anchor Designer. 
 
-If you ever want to do a deep dive into where these factors came from, check out this seminal textbook by Dr. R Eligehausen, R Mallee, and J Silva [[Amazon Link Here](https://www.amazon.com/Anchorage-Concrete-Construction-Rolf-Eligehausen/dp/3433011435)]. The textbook summarizes decades of research at the University of Stuttgart and is surprisingly readable. 
-
-ACI 318 covers concrete anchorage in Chapter 17. Truth of the matter is, anchorage calculation is *extremely* tedious. In practice, engineers just use anchor design softwares like HILTI PROFIS. The intent of this article is to provide a concise primer to the curious few who wants to peek under the curtain of these design software.
+If you ever want to do a deep dive into where these factors came from, please read this seminal textbook by Dr. R Eligehausen, R Mallee, and J Silva [[Amazon Link Here](https://www.amazon.com/Anchorage-Concrete-Construction-Rolf-Eligehausen/dp/3433011435)]. 
 
 
 <div style="page-break-after: always;"></div>

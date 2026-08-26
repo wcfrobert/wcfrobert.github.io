@@ -10,6 +10,7 @@ toc: true
 typora-root-url: ./..
 ---
 
+Disclaimer: This post, and many others like it on my blog, is my personal study note on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
 
 ## Part 1 - The Basics
 
@@ -475,9 +476,17 @@ An alternative perspective is to consider`Vz, Mx, My` as forces on the underside
 
 
 
+<hr>
 
+**References:**
 
+- Wight, J. K., & MacGregor, J. G. (2016). *Reinforced Concrete: Mechanics and Design* (7th ed.). Pearson.
 
+- Concrete Reinforcing Steel Institute. (2020). *Design Guide on the ACI 318 Building Code Requirements for Structural Concrete* (Publication No. DG-ACI318-19). Concrete Reinforcing Steel Institute.
+
+- Building Code Requirements for Structural Concrete (ACI 318-19) and Commentary (ACI 318R-19). American Concrete Institute.
+
+- Guide to Shear Reinforcement for Slabs (ACI 421.1R-20). American Concrete Institute.
 
 
 

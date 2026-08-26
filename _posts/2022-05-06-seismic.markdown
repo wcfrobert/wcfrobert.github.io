@@ -9,7 +9,7 @@ tags: primer analysis
 toc: true
 ---
 
-*"Primers" are my personal notes on various technical topics in structural engineering. Building codes are voluminous, wordy and often difficult to understand. I create these "Primer" to gather, organize, and distill. Please understand I made these for myself. Reader discretion is advised. No warranty is expressed or implied by me on the validity of the information presented herein.*
+Disclaimer: This post, and many others like it on my blog, is my personal study note on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
 
 
 - [1.0 Basic Earthquake Concepts](#10-basic-earthquake-concepts)
