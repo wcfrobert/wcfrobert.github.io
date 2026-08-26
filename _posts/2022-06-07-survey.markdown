@@ -9,7 +9,7 @@ tags: primer
 toc: true
 ---
 
-Disclaimer: This post, and many others like it on my blog, is my personal study note on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
+Disclaimer: This post, along with many others like it on my blog, are my personal study notes on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
 
 - [1.0 California Surveying Law](#10-california-surveying-law)
   * [1.1 Types of Surveys](#11-types-of-surveys)

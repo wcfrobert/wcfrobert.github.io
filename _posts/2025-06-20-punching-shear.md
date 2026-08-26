@@ -10,7 +10,7 @@ toc: true
 typora-root-url: ./..
 ---
 
-Disclaimer: This post, and many others like it on my blog, is my personal study note on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
+
 
 ## Part 1 - The Basics
 
@@ -474,7 +474,9 @@ An alternative perspective is to consider`Vz, Mx, My` as forces on the underside
 
 
 
+**Disclaimer:**
 
+This post, along with many others like it on my blog, are my personal study notes on various topics in structural engineering written in preparation for the SE Exam. I cannot guarantee that the contents here are 100% accurate and up-to-date. Reader's discretion is advised.
 
 <hr>
 
