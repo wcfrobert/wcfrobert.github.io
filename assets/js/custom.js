@@ -115,3 +115,42 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+// JS for copy button on code blocks
+document.addEventListener("DOMContentLoaded", () => {
+  // Target Jekyll's default Rouge code wrappers
+  const codeBlocks = document.querySelectorAll("pre.highlight");
+
+  codeBlocks.forEach((block) => {
+    // Ensure relative positioning for absolute positioning of the button
+    block.style.position = "relative";
+
+    // Create the copy button
+    const button = document.createElement("button");
+    button.className = "copy-code-button";
+    button.type = "button";
+    button.innerText = "Copy All";
+
+    // Append button inside the code wrapper
+    block.appendChild(button);
+
+    // Copy action
+    button.addEventListener("click", async () => {
+      const code = block.querySelector("code") ? block.querySelector("code").innerText : block.innerText;
+      
+      try {
+        await navigator.clipboard.writeText(code.trim());
+        button.innerText = "Copied!";
+        button.classList.add("copied");
+
+        setTimeout(() => {
+          button.innerText = "Copy All";
+          button.classList.remove("copied");
+        }, 2000);
+      } catch (err) {
+        console.error("Failed to copy code: ", err);
+      }
+    });
+  });
+});

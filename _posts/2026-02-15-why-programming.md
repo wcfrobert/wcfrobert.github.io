@@ -9,21 +9,11 @@ tags: thoughts
 typora-root-url: ./..
 ---
 
-> "What do you do for work?"
->
-> "I'm a structural engineer."
->
-> "So, like an architect?"
-
-What do structural engineers even do? In essence, people pay us to calculate things. What is the shear stress of this? How much rebar do we need? Do we really need this column here?[^1] 
-
-It might seem overly reductive to say *all* we do is calculate, but I really think it's true enough. If we strip away the meetings, emails, and administrative busywork, it's clear to me that we provide value by making well-informed engineering decisions, and all engineering decisions are made downstream of calculations. So it behooves us to calculate well.
+What do structural engineers even do? To oversimplify, people pay us to calculate things. What is the shear stress of this? How much rebar do we need? Do we really need this column here?[^1] It might seem overly reductive to say *all* we do is calculate, but I really think it's true enough. If we strip away the meetings, emails, and administrative busywork, it's clear to me that we provide value by making well-informed engineering decisions, and all engineering decisions are made downstream of calculations. So it behooves us to calculate well.
 
 But structural engineering is not just a curiosity-driven intellectual pursuit, it is also a business, with revenues, expenses, and operating margins. We simply cannot afford to turn everything into a research project. Efficiency is paramount - for an inescapable part of this profession is how repetitive the calculations can get. Modern building projects have many thousands of things to design and check. So it behooves us to calculate efficiently.
 
-"To calculate well, and to do so efficiently." What a nice mantra! But aren't they at odds with each other? Is it possible to increase efficiency while also maintain quality? Aren't they reciprocal of each other? My personal opinion is that they are not, but they certainly can be if you are not careful.[^2]
-
-It turns out every generation of structural engineers have had tools in their toolbox to ease the computational burden of repetitive number crunching. To use a modern jargon that makes me chuckle: **we've been streamlining our workflow since the very beginning.**
+"To calculate well, and to do so efficiently." is a nice mantra, but they are often at odds with each other. I don't think efficiency and quality have to be reciprocal of each other, but they certainly can be.[^2] It turns out every generation of structural engineers have had tools in their toolbox to ease the computational burden of repetitive number crunching. To use a modern jargon that makes me chuckle: we've been "streamlining workflow" since the very beginning.
 
 <img src="/assets/img/blog/2025/etabs/etabs11.png" style="width:60%;"/>
 *Graphic Statics was used in the 19th century to compute forces in truss structures graphically. The sketch above is the first working drawing of the Salginatobel Bridge by Robert Maillart in 1928. Figure from [(Fivet & Zastavni, 2011)](https://www.researchgate.net/publication/260123151_Robert_Maillart's_key_methods_from_the_Salginatobel_Bridge_design_process_1928])*
@@ -46,11 +36,9 @@ Not long after Blodgett's textbook was published, we enter the electronic calcul
 <img src="/assets/img/blog/2025/etabs/etabs15.png" style="width:80%;"/>
 *Toolbox of a modern day structural engineers. A weird mélange of software and tools*
 
-Engineers of the past relied on slide rules, and straight edges. Modern engineers rely on FEM, intricate spreadsheets, acres of grasshopper scripts. Python, Rhino, Tekla, Speckle, Karamba, MathCAD - an assortment of tools that sounds like gibberish to any engineer born before the 1980s. 
+Engineers of the past relied on slide rules and straight edges. Modern engineers rely on FEM, intricate spreadsheets, acres of grasshopper scripts. Python, Rhino, Tekla, Speckle, Karamba, MathCAD - an assortment of tools that sounds like gibberish to any engineer born before the 1980s. A building today requires the design of thousands of elements, checking each for dozens of failure modes, under hundreds of load cases[^3], repetitively through an inexplicable number of iterations. We need to keep track of all this data, process it, visualize it, save it to a database, automate it, parametrize it, transfer it between software. Gone are the days of paper, pencils, and calculators. Nowadays, engineers are preoccupied with data, algorithms, and python. 
 
-A building project today requires the design of thousands of elements, checking each for dozens of failure modes, under hundreds of load cases[^3], repetitively through an inexplicable number of iterations. We need to keep track of all this data, process it, visualize it, save it to a database, automate it, parametrize it, transfer it between software. Gone are the days of paper, pencils, and calculators. Nowadays, engineers are preoccupied with data, algorithms, and python. 
-
-While it may seem overwhelming[^4], much like slide rules and calculators, these new tools empower us, and are simply new additions to the structural engineer's ever-expanding toolbox.
+While it may seem overwhelming[^4], much like slide rules and calculators, these tools empower us to do more, and are simply new additions to the structural engineer's ever-expanding toolbox.
 
 
 
@@ -59,9 +47,9 @@ While it may seem overwhelming[^4], much like slide rules and calculators, these
 
 
 [^1]: If you're an architect, the answer is always yes.
-[^2]: I think the restaurant industry provides an apt illustration of this efficiency-quality tradeoff. Some homogeneity is unavoidable at scale. Chipotle is not as good as the best Mexican street food in LA, but it's honestly not that bad. Not to mention that Chipotle serves millions of customers every day. Mike's Red Taco in San Diego is pretty amazing despite being a fast casual spot. Both are better than Taco Bell, which is to say that striving for efficiency at all cost usually leads to some place uninspiring.
+[^2]: I think the restaurant industry provides an apt illustration of this efficiency-quality tradeoff. Some homogeneity is unavoidable at scale. Chipotle is not as good as the best Mexican street food in LA, but it's honestly not that bad. Not to mention that Chipotle serves millions of customers every day. Mike's Red Taco in San Diego is pretty amazing despite being a fast casual spot. Both are better than Taco Bell, which is to say that optimizing solely for efficiency usually leads to some place uninspiring.
 [^3]: Have you seen the ASCE 7 wind chapters lately?
-[^4]: Jevon's paradox is in full force here. There has been an absolute explosion in complexity over the last few decades. The first source of complexity is our better understanding of physics. Researchers are always discovering new insights and coming up with new and improved design methods. The other source of complexity is regulatory. See §3.11.5.1(a).i.2.2.3 Exception A 2022 Errata (i'm joking). The building code, regardless of how voluminous and labyrinthian you think it might be right now, is about as simple as it'll ever be. Unlike any other forms of regulation, the building code has its sanctity sealed by blood, sweat, and tears; blood of structural failure that could have been prevented, sweats of researchers, and tears of graduate students. 
+[^4]: Jevon's paradox. There has been an absolute explosion in complexity over the last few decades. The first source of complexity is our better understanding of physics. Researchers are always discovering new insights and coming up with new and improved design methods. The other source of complexity is regulatory. See §3.11.5.1(a).i.2.2.3 Exception A 2022 Errata (I'm joking). The building code, regardless of how voluminous and labyrinthian you think it might be right now, is about as simple as it'll ever be. Unlike any other forms of regulation, the building code has its sanctity sealed by blood, sweat, and tears; blood of structural failure that could have been prevented, sweats of researchers, and tears of graduate students. 
 
 
 
